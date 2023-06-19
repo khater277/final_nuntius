@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773328857906",
+    "project_id": "final-nuntius",
+    "storage_bucket": "final-nuntius.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773328857906:android:31c389382410612a50c52b",
+        "android_client_info": {
+          "package_name": "com.example.final_nuntius"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773328857906-5168k951mstejlkhqhvpu8b8dfpbenpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDgB_ETe9r7BF96MLzEgxk8S1zggGGofo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773328857906-5168k951mstejlkhqhvpu8b8dfpbenpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

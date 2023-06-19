@@ -1,0 +1,271 @@
+// coverage:ignore-file
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
+
+part of 'user_data.dart';
+
+// **************************************************************************
+// FreezedGenerator
+// **************************************************************************
+
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+UserData _$UserDataFromJson(Map<String, dynamic> json) {
+  return _UserData.fromJson(json);
+}
+
+/// @nodoc
+mixin _$UserData {
+  @HiveField(0)
+  String? get token => throw _privateConstructorUsedError;
+  @HiveField(1)
+  String? get name => throw _privateConstructorUsedError;
+  @HiveField(2)
+  String? get uId => throw _privateConstructorUsedError;
+  @HiveField(3)
+  String? get phone => throw _privateConstructorUsedError;
+  @HiveField(4)
+  String? get image => throw _privateConstructorUsedError;
+  @HiveField(5)
+  bool? get inCall => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $UserDataCopyWith<UserData> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $UserDataCopyWith<$Res> {
+  factory $UserDataCopyWith(UserData value, $Res Function(UserData) then) =
+      _$UserDataCopyWithImpl<$Res, UserData>;
+  @useResult
+  $Res call(
+      {@HiveField(0) String? token,
+      @HiveField(1) String? name,
+      @HiveField(2) String? uId,
+      @HiveField(3) String? phone,
+      @HiveField(4) String? image,
+      @HiveField(5) bool? inCall});
+}
+
+/// @nodoc
+class _$UserDataCopyWithImpl<$Res, $Val extends UserData>
+    implements $UserDataCopyWith<$Res> {
+  _$UserDataCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? token = freezed,
+    Object? name = freezed,
+    Object? uId = freezed,
+    Object? phone = freezed,
+    Object? image = freezed,
+    Object? inCall = freezed,
+  }) {
+    return _then(_value.copyWith(
+      token: freezed == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      uId: freezed == uId
+          ? _value.uId
+          : uId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      inCall: freezed == inCall
+          ? _value.inCall
+          : inCall // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$_UserDataCopyWith<$Res> implements $UserDataCopyWith<$Res> {
+  factory _$$_UserDataCopyWith(
+          _$_UserData value, $Res Function(_$_UserData) then) =
+      __$$_UserDataCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@HiveField(0) String? token,
+      @HiveField(1) String? name,
+      @HiveField(2) String? uId,
+      @HiveField(3) String? phone,
+      @HiveField(4) String? image,
+      @HiveField(5) bool? inCall});
+}
+
+/// @nodoc
+class __$$_UserDataCopyWithImpl<$Res>
+    extends _$UserDataCopyWithImpl<$Res, _$_UserData>
+    implements _$$_UserDataCopyWith<$Res> {
+  __$$_UserDataCopyWithImpl(
+      _$_UserData _value, $Res Function(_$_UserData) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? token = freezed,
+    Object? name = freezed,
+    Object? uId = freezed,
+    Object? phone = freezed,
+    Object? image = freezed,
+    Object? inCall = freezed,
+  }) {
+    return _then(_$_UserData(
+      token: freezed == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      uId: freezed == uId
+          ? _value.uId
+          : uId // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      inCall: freezed == inCall
+          ? _value.inCall
+          : inCall // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_UserData implements _UserData {
+  _$_UserData(
+      {@HiveField(0) this.token,
+      @HiveField(1) this.name,
+      @HiveField(2) this.uId,
+      @HiveField(3) this.phone,
+      @HiveField(4) this.image,
+      @HiveField(5) this.inCall});
+
+  factory _$_UserData.fromJson(Map<String, dynamic> json) =>
+      _$$_UserDataFromJson(json);
+
+  @override
+  @HiveField(0)
+  final String? token;
+  @override
+  @HiveField(1)
+  final String? name;
+  @override
+  @HiveField(2)
+  final String? uId;
+  @override
+  @HiveField(3)
+  final String? phone;
+  @override
+  @HiveField(4)
+  final String? image;
+  @override
+  @HiveField(5)
+  final bool? inCall;
+
+  @override
+  String toString() {
+    return 'UserData(token: $token, name: $name, uId: $uId, phone: $phone, image: $image, inCall: $inCall)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UserData &&
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.uId, uId) || other.uId == uId) &&
+            (identical(other.phone, phone) || other.phone == phone) &&
+            (identical(other.image, image) || other.image == image) &&
+            (identical(other.inCall, inCall) || other.inCall == inCall));
+  }
+
+  @JsonKey(ignore: true)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, token, name, uId, phone, image, inCall);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UserDataCopyWith<_$_UserData> get copyWith =>
+      __$$_UserDataCopyWithImpl<_$_UserData>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_UserDataToJson(
+      this,
+    );
+  }
+}
+
+abstract class _UserData implements UserData {
+  factory _UserData(
+      {@HiveField(0) final String? token,
+      @HiveField(1) final String? name,
+      @HiveField(2) final String? uId,
+      @HiveField(3) final String? phone,
+      @HiveField(4) final String? image,
+      @HiveField(5) final bool? inCall}) = _$_UserData;
+
+  factory _UserData.fromJson(Map<String, dynamic> json) = _$_UserData.fromJson;
+
+  @override
+  @HiveField(0)
+  String? get token;
+  @override
+  @HiveField(1)
+  String? get name;
+  @override
+  @HiveField(2)
+  String? get uId;
+  @override
+  @HiveField(3)
+  String? get phone;
+  @override
+  @HiveField(4)
+  String? get image;
+  @override
+  @HiveField(5)
+  bool? get inCall;
+  @override
+  @JsonKey(ignore: true)
+  _$$_UserDataCopyWith<_$_UserData> get copyWith =>
+      throw _privateConstructorUsedError;
+}
