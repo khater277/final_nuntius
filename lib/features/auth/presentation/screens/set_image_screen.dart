@@ -7,8 +7,8 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/cubit/auth_cubit.dart';
 import 'package:final_nuntius/features/auth/presentation/widgets/set_image/image_view.dart';
-import 'package:final_nuntius/features/auth/presentation/widgets/set_image/set_image_floating_button.dart';
 import 'package:final_nuntius/features/auth/presentation/widgets/set_image/set_image_head.dart';
+import 'package:final_nuntius/features/auth/presentation/widgets/set_image/set_image_next_button.dart';
 import 'package:final_nuntius/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -110,7 +110,7 @@ class _SetImageScreenState extends State<SetImageScreen> {
               ),
             ),
           ),
-          floatingActionButton: SetImageFloatingButton(cubit: cubit),
+          floatingActionButton: const SetImageNextButton(),
         );
       },
     );

@@ -174,13 +174,4 @@ class AuthCubit extends Cubit<AuthState> {
       },
     );
   }
-
-  void getUser() async {
-    final response = await authRepository.getUserFromFirestore(uid: '123');
-    response.fold((l) => emit(AuthState.pickProfileImageError(l.getMessage())),
-        (r) {
-      print("DONNNNNNE");
-      emit(const AuthState.pickProfileImage());
-    });
-  }
 }

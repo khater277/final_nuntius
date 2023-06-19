@@ -1,37 +1,30 @@
-import 'package:final_nuntius/core/shared_widgets/button.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
-import 'package:final_nuntius/core/utils/app_strings.dart';
-import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/cubit/auth_cubit.dart';
+import 'package:final_nuntius/features/auth/presentation/widgets/auth_floating_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginNextButton extends StatelessWidget {
   const LoginNextButton({
     super.key,
-    required this.controller,
   });
-
-  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<AuthCubit, AuthState>(
       builder: (context, state) {
         final cubit = AuthCubit.get(context);
-        return Align(
-          alignment: AlignmentDirectional.centerEnd,
-          child: SizedBox(
-            width: AppWidth.w90,
-            child: CustomButton(
+        return ValueListenableBuilder(
+          valueListenable: cubit.phoneController!,
+          builder: (BuildContext context, value, Widget? child) {
+            return AuthFloatingButton(
+              visibleCondition: value.text.length == 11,
               loadingCondition:
                   state == const AuthState.signInWithPhoneNumberLoading(),
-              text: AppStrings.next,
-              borderRadius: AppSize.s10,
               onPressed: () {
                 String? msg;
-                final text = controller.text;
+                final text = value.text;
                 if (text.isEmpty) {
                   msg = "phone number cant be empty";
                 } else if (text.startsWith('01') == false) {
@@ -50,8 +43,8 @@ class LoginNextButton extends StatelessWidget {
                   cubit.signInWithPhoneNumber();
                 }
               },
-            ),
-          ),
+            );
+          },
         );
       },
     );
