@@ -52,11 +52,16 @@ class AuthCubit extends Cubit<AuthState> {
   void signInWithPhoneNumber() async {
     emit(const AuthState.signInWithPhoneNumberLoading());
     print('+2${phoneController!.text}');
-    await authRepository.verifyPhoneNumber(
+    final response = await authRepository.verifyPhoneNumber(
       phoneNumber: phoneController!.text,
       verificationCompleted: _verificationCompleted,
       verificationFailed: _verificationFailed,
       codeSent: _codeSent,
+    );
+
+    response.fold(
+      (failure) => emit(AuthState.errorState(failure.getMessage())),
+      (result) {},
     );
   }
 
@@ -116,11 +121,14 @@ class AuthCubit extends Cubit<AuthState> {
     }
   }
 
-  void uploadImageToStorage() {
-    final response = authRepository.uploadImageToStorage(
+  void uploadImageToStorage() async {
+    emit(const AuthState.uploadImageToStorageLoading());
+    final response = await authRepository.uploadImageToStorage(
         collectionName: Collections.profileImages, image: profileImage!);
     response.fold(
-      (failure) {},
+      (failure) {
+        emit(AuthState.uploadImageToStorageError(failure.getMessage()));
+      },
       (taskSnapshot) {
         taskSnapshot!.listen((event) async {
           switch (event.state) {

@@ -1,8 +1,11 @@
 import 'package:dio/dio.dart';
 import 'package:final_nuntius/core/firebase/firebase_helper.dart';
+import 'package:final_nuntius/core/network/network_info.dart';
 import 'package:final_nuntius/features/auth/data/datasources/auth_remote_data_source.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository_impl.dart';
+import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
+import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:get_it/get_it.dart';
 import 'package:final_nuntius/core/apis/agora/agora_api.dart';
 import 'package:final_nuntius/core/apis/agora/agora_end_points.dart';
@@ -11,15 +14,21 @@ import 'package:final_nuntius/features/calls/cubit/calls_cubit.dart';
 import 'package:final_nuntius/features/calls/data/datasources/calls_remote_data_source.dart';
 import 'package:final_nuntius/features/calls/data/repositories/calls_repository.dart';
 import 'package:final_nuntius/features/calls/data/repositories/calls_repository_impl.dart';
+import 'package:internet_connection_checker/internet_connection_checker.dart';
+
+import '../features/chats/cubit/chats_cubit.dart';
+import '../features/stories/cubit/stories_cubit.dart';
 
 final di = GetIt.instance;
 
 void setupGetIt() {
   /// CUBITS
   di.registerLazySingleton<AuthCubit>(() => AuthCubit(authRepository: di()));
-  di.registerLazySingleton<CallsCubit>(() => CallsCubit(
-        callsRepository: di(),
-      ));
+  di.registerLazySingleton<HomeCubit>(() => HomeCubit());
+  di.registerLazySingleton<CallsCubit>(() => CallsCubit(callsRepository: di()));
+  di.registerLazySingleton<ChatsCubit>(() => ChatsCubit());
+  di.registerLazySingleton<StoriesCubit>(() => StoriesCubit());
+  di.registerLazySingleton<ContactsCubit>(() => ContactsCubit());
 
   /// DATASOURCES
   di.registerLazySingleton<CallsRemoteDataSource>(
@@ -36,7 +45,14 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl(
         authRemoteDataSource: di(),
+        networkInfo: di(),
       ));
+
+  /// NETWORK INFO
+  di.registerLazySingleton<NetworkInfo>(
+      () => NetworkInfoImpl(connectionChecker: di()));
+  di.registerLazySingleton<InternetConnectionChecker>(
+      () => InternetConnectionChecker());
 
   /// FIREBASE
   di.registerLazySingleton<FirebaseHelper>(() => FirebaseHelperImpl());

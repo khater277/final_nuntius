@@ -18,7 +18,7 @@ abstract class AuthRemoteDataSource {
     required String smsCode,
   });
 
-  Stream<TaskSnapshot>? uploadImageToStorage({
+  Future<Stream<TaskSnapshot>?> uploadImageToStorage({
     required String collectionName,
     required File image,
   });
@@ -56,8 +56,8 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   }
 
   @override
-  Stream<TaskSnapshot>? uploadImageToStorage(
-      {required String collectionName, required File image}) {
+  Future<Stream<TaskSnapshot>?> uploadImageToStorage(
+      {required String collectionName, required File image}) async {
     return firebaseHelper.uploadImageToStorage(
       collectionName: collectionName,
       image: image,

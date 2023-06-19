@@ -23,7 +23,7 @@ abstract class FirebaseHelper {
   });
   Future<void> addUserToFirestore({required UserData user});
   Future<UserData?> getUserFromFirestore({required String uid});
-  Stream<TaskSnapshot> uploadImageToStorage({
+  Future<Stream<TaskSnapshot>> uploadImageToStorage({
     required String collectionName,
     required File image,
   });
@@ -117,8 +117,8 @@ class FirebaseHelperImpl implements FirebaseHelper {
   }
 
   @override
-  Stream<TaskSnapshot> uploadImageToStorage(
-      {required String collectionName, required File image}) {
+  Future<Stream<TaskSnapshot>> uploadImageToStorage(
+      {required String collectionName, required File image}) async {
     return _storage
         .ref("$collectionName/${Uri.file(image.path).pathSegments.last}")
         .putFile(image)

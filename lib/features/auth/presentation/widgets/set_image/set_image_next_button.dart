@@ -23,8 +23,9 @@ class SetImageNextButton extends StatelessWidget {
                         value.text != HiveHelper.getCurrentUser()!.name)),
                 loadingCondition:
                     state == const AuthState.addUserToFirestoreLoading() ||
-                    state == const AuthState.uploadImageToStorageLoading() ,
+                        state == const AuthState.uploadImageToStorageLoading(),
                 onPressed: () {
+                  // print("asdfghjkl");
                   if (cubit.profileImage != null) {
                     cubit.uploadImageToStorage();
                   } else {

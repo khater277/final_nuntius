@@ -16,7 +16,7 @@ abstract class AuthRepository {
   Future<Either<Failure, UserCredential?>> signInWithPhoneNumber(
       {required String verificationId, required String smsCode});
 
-  Either<Failure, Stream<TaskSnapshot>?> uploadImageToStorage({
+  Future<Either<Failure, Stream<TaskSnapshot>?>> uploadImageToStorage({
     required String collectionName,
     required File image,
   });

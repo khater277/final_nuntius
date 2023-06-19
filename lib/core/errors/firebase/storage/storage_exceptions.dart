@@ -92,8 +92,8 @@ class StorageExceptionHandler with _$StorageExceptionHandler {
     String errorMessage = "";
 
     storageExceptionHandler.when(
-      noInternetConnection: () =>
-          errorMessage = "There is no internet connection",
+      noInternetConnection: () => errorMessage =
+          "There is no internet connection , please check your connection and try again later.",
       unknown: () => errorMessage = "An unknown error occurred.",
       objectNotFound: () =>
           errorMessage = "No object exists at the desired reference.",

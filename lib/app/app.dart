@@ -1,3 +1,7 @@
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
+import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
+import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
+import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -26,7 +30,19 @@ class MyApp extends StatelessWidget {
                 create: (BuildContext context) => di<AuthCubit>(),
               ),
               BlocProvider(
+                create: (BuildContext context) => di<HomeCubit>(),
+              ),
+              BlocProvider(
+                create: (BuildContext context) => di<ChatsCubit>(),
+              ),
+              BlocProvider(
+                create: (BuildContext context) => di<StoriesCubit>(),
+              ),
+              BlocProvider(
                 create: (BuildContext context) => di<CallsCubit>(),
+              ),
+              BlocProvider(
+                create: (BuildContext context) => di<ContactsCubit>(),
               ),
             ],
             child: MaterialApp(

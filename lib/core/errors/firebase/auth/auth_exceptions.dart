@@ -61,6 +61,9 @@ class AuthExceptionHandler with _$AuthExceptionHandler {
       case "account-exists-with-different-credential":
         status = const AuthExceptionHandler.requestCancelled();
         break;
+      case "no-internet-connection":
+        status = const AuthExceptionHandler.noInternetConnection();
+        break;
       default:
         status = const AuthExceptionHandler.undefined();
     }
