@@ -6,6 +6,9 @@ import 'package:final_nuntius/features/auth/data/repositories/auth_repository.da
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository_impl.dart';
 import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
+import 'package:final_nuntius/features/home/data/datasources/home_remote_data_source.dart';
+import 'package:final_nuntius/features/home/data/repositories/home_repository.dart';
+import 'package:final_nuntius/features/home/data/repositories/home_repository_impl.dart';
 import 'package:get_it/get_it.dart';
 import 'package:final_nuntius/core/apis/agora/agora_api.dart';
 import 'package:final_nuntius/core/apis/agora/agora_end_points.dart';
@@ -24,7 +27,7 @@ final di = GetIt.instance;
 void setupGetIt() {
   /// CUBITS
   di.registerLazySingleton<AuthCubit>(() => AuthCubit(authRepository: di()));
-  di.registerLazySingleton<HomeCubit>(() => HomeCubit());
+  di.registerLazySingleton<HomeCubit>(() => HomeCubit(homeRepository: di()));
   di.registerLazySingleton<CallsCubit>(() => CallsCubit(callsRepository: di()));
   di.registerLazySingleton<ChatsCubit>(() => ChatsCubit());
   di.registerLazySingleton<StoriesCubit>(() => StoriesCubit());
@@ -38,6 +41,9 @@ void setupGetIt() {
   di.registerLazySingleton<AuthRemoteDataSource>(() => AuthRemoteDataSourceImpl(
         firebaseHelper: di(),
       ));
+  di.registerLazySingleton<HomeRemoteDataSource>(() => HomeRemoteDataSourceImpl(
+        firebaseHelper: di(),
+      ));
 
   /// REPOSITORIES
   di.registerLazySingleton<CallsRepository>(() => CallsRepositoryImpl(
@@ -45,6 +51,10 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<AuthRepository>(() => AuthRepositoryImpl(
         authRemoteDataSource: di(),
+        networkInfo: di(),
+      ));
+  di.registerLazySingleton<HomeRepository>(() => HomeRepositoryImpl(
+        homeRemoteDataSource: di(),
         networkInfo: di(),
       ));
 

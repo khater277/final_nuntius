@@ -66,7 +66,8 @@ class AuthRepositoryImpl implements AuthRepository {
         );
         if (response != null) {
           SharedPrefHelper.setUid(uId: response.user!.uid);
-          final result = await getUserFromFirestore(uid: response.user!.uid);
+          final result = await getUserFromFirestore(
+              phoneNumber: response.user!.phoneNumber!);
           result.fold(
             (failure) {
               HiveHelper.setCurrentUser(user: null);
@@ -154,11 +155,11 @@ class AuthRepositoryImpl implements AuthRepository {
 
   @override
   Future<Either<Failure, UserData>> getUserFromFirestore(
-      {required String uid}) async {
+      {required String phoneNumber}) async {
     if (await networkInfo.connected()) {
       try {
-        final response =
-            await authRemoteDataSource.getUserFromFirestore(uid: uid);
+        final response = await authRemoteDataSource.getUserFromFirestore(
+            phoneNumber: phoneNumber);
         if (response != null) {
           return Right(response);
         } else {

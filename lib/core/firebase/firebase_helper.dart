@@ -22,7 +22,8 @@ abstract class FirebaseHelper {
     required Function(String verificationId, int? resendToken) codeSent,
   });
   Future<void> addUserToFirestore({required UserData user});
-  Future<UserData?> getUserFromFirestore({required String uid});
+  Future<UserData?> getUserFromFirestore({required String phoneNumber});
+  Future<List<UserData>?> getAllUsersFromFirestore();
   Future<Stream<TaskSnapshot>> uploadImageToStorage({
     required String collectionName,
     required File image,
@@ -101,14 +102,15 @@ class FirebaseHelperImpl implements FirebaseHelper {
 
   @override
   Future<void> addUserToFirestore({required UserData user}) {
-    return _db.collection(Collections.users).doc(user.uId).set(user.toJson());
+    return _db.collection(Collections.users).doc(user.phone).set(user.toJson());
   }
 
   @override
-  Future<UserData?> getUserFromFirestore({required String uid}) async {
+  Future<UserData?> getUserFromFirestore({required String phoneNumber}) async {
     UserData? user;
     try {
-      final result = await _db.collection(Collections.users).doc(uid).get();
+      final result =
+          await _db.collection(Collections.users).doc(phoneNumber).get();
       user = UserData.fromJson(result.data()!);
       return user;
     } catch (error) {
@@ -123,5 +125,25 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .ref("$collectionName/${Uri.file(image.path).pathSegments.last}")
         .putFile(image)
         .snapshotEvents;
+  }
+
+  @override
+  Future<List<UserData>?> getAllUsersFromFirestore() async {
+    List<UserData>? users;
+    try {
+      final response = await _db.collection(Collections.users).get();
+      final docs = response.docs;
+      if (docs.isEmpty) {
+        users = [];
+      } else {
+        users = [];
+        for (var element in docs) {
+          users.add(UserData.fromJson(element.data()));
+        }
+      }
+      return users;
+    } catch (error) {
+      return users;
+    }
   }
 }

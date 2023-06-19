@@ -21,6 +21,9 @@ mixin _$HomeState {
     required TResult Function() initial,
     required TResult Function() changeNavBarLoading,
     required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -28,6 +31,9 @@ mixin _$HomeState {
     TResult? Function()? initial,
     TResult? Function()? changeNavBarLoading,
     TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -35,6 +41,9 @@ mixin _$HomeState {
     TResult Function()? initial,
     TResult Function()? changeNavBarLoading,
     TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -43,6 +52,9 @@ mixin _$HomeState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
     required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +62,9 @@ mixin _$HomeState {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -57,6 +72,9 @@ mixin _$HomeState {
     TResult Function(_Initial value)? initial,
     TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -119,6 +137,9 @@ class _$_Initial implements _Initial {
     required TResult Function() initial,
     required TResult Function() changeNavBarLoading,
     required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
   }) {
     return initial();
   }
@@ -129,6 +150,9 @@ class _$_Initial implements _Initial {
     TResult? Function()? initial,
     TResult? Function()? changeNavBarLoading,
     TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
   }) {
     return initial?.call();
   }
@@ -139,6 +163,9 @@ class _$_Initial implements _Initial {
     TResult Function()? initial,
     TResult Function()? changeNavBarLoading,
     TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -153,6 +180,9 @@ class _$_Initial implements _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
     required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return initial(this);
   }
@@ -163,6 +193,9 @@ class _$_Initial implements _Initial {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return initial?.call(this);
   }
@@ -173,6 +206,9 @@ class _$_Initial implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -227,6 +263,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     required TResult Function() initial,
     required TResult Function() changeNavBarLoading,
     required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
   }) {
     return changeNavBarLoading();
   }
@@ -237,6 +276,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     TResult? Function()? initial,
     TResult? Function()? changeNavBarLoading,
     TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
   }) {
     return changeNavBarLoading?.call();
   }
@@ -247,6 +289,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     TResult Function()? initial,
     TResult Function()? changeNavBarLoading,
     TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
     required TResult orElse(),
   }) {
     if (changeNavBarLoading != null) {
@@ -261,6 +306,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     required TResult Function(_Initial value) initial,
     required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
     required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return changeNavBarLoading(this);
   }
@@ -271,6 +319,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return changeNavBarLoading?.call(this);
   }
@@ -281,6 +332,9 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
     TResult Function(_Initial value)? initial,
     TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (changeNavBarLoading != null) {
@@ -335,6 +389,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     required TResult Function() initial,
     required TResult Function() changeNavBarLoading,
     required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
   }) {
     return changeNavBar();
   }
@@ -345,6 +402,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     TResult? Function()? initial,
     TResult? Function()? changeNavBarLoading,
     TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
   }) {
     return changeNavBar?.call();
   }
@@ -355,6 +415,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     TResult Function()? initial,
     TResult Function()? changeNavBarLoading,
     TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
     required TResult orElse(),
   }) {
     if (changeNavBar != null) {
@@ -369,6 +432,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     required TResult Function(_Initial value) initial,
     required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
     required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return changeNavBar(this);
   }
@@ -379,6 +445,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return changeNavBar?.call(this);
   }
@@ -389,6 +458,9 @@ class _$_ChangeNavBar implements _ChangeNavBar {
     TResult Function(_Initial value)? initial,
     TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
     TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (changeNavBar != null) {
@@ -400,4 +472,382 @@ class _$_ChangeNavBar implements _ChangeNavBar {
 
 abstract class _ChangeNavBar implements HomeState {
   const factory _ChangeNavBar() = _$_ChangeNavBar;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsLoadingCopyWith<$Res> {
+  factory _$$_GetContactsLoadingCopyWith(_$_GetContactsLoading value,
+          $Res Function(_$_GetContactsLoading) then) =
+      __$$_GetContactsLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetContactsLoadingCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$_GetContactsLoading>
+    implements _$$_GetContactsLoadingCopyWith<$Res> {
+  __$$_GetContactsLoadingCopyWithImpl(
+      _$_GetContactsLoading _value, $Res Function(_$_GetContactsLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetContactsLoading implements _GetContactsLoading {
+  const _$_GetContactsLoading();
+
+  @override
+  String toString() {
+    return 'HomeState.getContactsLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetContactsLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() changeNavBarLoading,
+    required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+  }) {
+    return getContactsLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? changeNavBarLoading,
+    TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+  }) {
+    return getContactsLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? changeNavBarLoading,
+    TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsLoading != null) {
+      return getContactsLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
+    required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContactsLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContactsLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsLoading != null) {
+      return getContactsLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContactsLoading implements HomeState {
+  const factory _GetContactsLoading() = _$_GetContactsLoading;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsCopyWith<$Res> {
+  factory _$$_GetContactsCopyWith(
+          _$_GetContacts value, $Res Function(_$_GetContacts) then) =
+      __$$_GetContactsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetContactsCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$_GetContacts>
+    implements _$$_GetContactsCopyWith<$Res> {
+  __$$_GetContactsCopyWithImpl(
+      _$_GetContacts _value, $Res Function(_$_GetContacts) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetContacts implements _GetContacts {
+  const _$_GetContacts();
+
+  @override
+  String toString() {
+    return 'HomeState.getContacts()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetContacts);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() changeNavBarLoading,
+    required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+  }) {
+    return getContacts();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? changeNavBarLoading,
+    TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+  }) {
+    return getContacts?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? changeNavBarLoading,
+    TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContacts != null) {
+      return getContacts();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
+    required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContacts(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContacts?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContacts != null) {
+      return getContacts(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContacts implements HomeState {
+  const factory _GetContacts() = _$_GetContacts;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsErrorCopyWith<$Res> {
+  factory _$$_GetContactsErrorCopyWith(
+          _$_GetContactsError value, $Res Function(_$_GetContactsError) then) =
+      __$$_GetContactsErrorCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetContactsErrorCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$_GetContactsError>
+    implements _$$_GetContactsErrorCopyWith<$Res> {
+  __$$_GetContactsErrorCopyWithImpl(
+      _$_GetContactsError _value, $Res Function(_$_GetContactsError) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetContactsError implements _GetContactsError {
+  const _$_GetContactsError();
+
+  @override
+  String toString() {
+    return 'HomeState.getContactsError()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetContactsError);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() changeNavBarLoading,
+    required TResult Function() changeNavBar,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+  }) {
+    return getContactsError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? changeNavBarLoading,
+    TResult? Function()? changeNavBar,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+  }) {
+    return getContactsError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? changeNavBarLoading,
+    TResult Function()? changeNavBar,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsError != null) {
+      return getContactsError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ChangeNavBarLoading value) changeNavBarLoading,
+    required TResult Function(_ChangeNavBar value) changeNavBar,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContactsError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult? Function(_ChangeNavBar value)? changeNavBar,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContactsError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ChangeNavBarLoading value)? changeNavBarLoading,
+    TResult Function(_ChangeNavBar value)? changeNavBar,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsError != null) {
+      return getContactsError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContactsError implements HomeState {
+  const factory _GetContactsError() = _$_GetContactsError;
 }

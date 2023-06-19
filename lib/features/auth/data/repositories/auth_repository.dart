@@ -21,5 +21,6 @@ abstract class AuthRepository {
     required File image,
   });
   Future<Either<Failure, void>> addUserToFirestore({required UserData user});
-  Future<Either<Failure, UserData>> getUserFromFirestore({required String uid});
+  Future<Either<Failure, UserData>> getUserFromFirestore(
+      {required String phoneNumber});
 }

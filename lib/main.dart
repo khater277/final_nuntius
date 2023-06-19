@@ -8,6 +8,7 @@ import 'package:final_nuntius/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 
 void main() async {
@@ -17,6 +18,8 @@ void main() async {
   );
   await SharedPrefHelper.init();
   await HiveHelper.init();
+  await Permission.contacts.request();
+
   setupGetIt();
   Bloc.observer = MyBlocObserver();
   tz.initializeTimeZones();

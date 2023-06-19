@@ -5,6 +5,7 @@ import 'package:final_nuntius/core/utils/app_fonts.dart';
 class LargeHeadText extends StatelessWidget {
   final String text;
   final double? size;
+  final double? letterSpacing;
   final bool isEllipsis;
   final int maxLines;
   final Color? color;
@@ -12,6 +13,7 @@ class LargeHeadText extends StatelessWidget {
       {super.key,
       required this.text,
       this.size,
+      this.letterSpacing,
       this.isEllipsis = true,
       this.maxLines = 1,
       this.color});
@@ -23,6 +25,7 @@ class LargeHeadText extends StatelessWidget {
       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
             fontSize: size ?? FontSize.s16,
             color: color ?? Theme.of(context).textTheme.bodyLarge!.color,
+            letterSpacing: letterSpacing ?? 0,
           ),
       maxLines: maxLines,
       overflow: isEllipsis ? TextOverflow.ellipsis : null,

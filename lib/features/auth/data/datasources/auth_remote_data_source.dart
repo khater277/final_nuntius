@@ -24,7 +24,7 @@ abstract class AuthRemoteDataSource {
   });
 
   Future<void> addUserToFirestore({required UserData user});
-  Future<UserData?> getUserFromFirestore({required String uid});
+  Future<UserData?> getUserFromFirestore({required String phoneNumber});
 }
 
 class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
@@ -70,7 +70,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   }
 
   @override
-  Future<UserData?> getUserFromFirestore({required String uid}) {
-    return firebaseHelper.getUserFromFirestore(uid: uid);
+  Future<UserData?> getUserFromFirestore({required String phoneNumber}) {
+    return firebaseHelper.getUserFromFirestore(phoneNumber: phoneNumber);
   }
 }

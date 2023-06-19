@@ -1,18 +1,20 @@
-import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
-import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
-import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
-import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:final_nuntius/app/injector.dart';
 import 'package:final_nuntius/config/app_theme.dart';
+import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/features/auth/cubit/auth_cubit.dart';
 import 'package:final_nuntius/features/auth/presentation/screens/login_screen.dart';
 import 'package:final_nuntius/features/calls/cubit/calls_cubit.dart';
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
+import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
+import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
+import 'package:final_nuntius/features/home/presentation/screens/home_screen.dart';
+import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -30,7 +32,8 @@ class MyApp extends StatelessWidget {
                 create: (BuildContext context) => di<AuthCubit>(),
               ),
               BlocProvider(
-                create: (BuildContext context) => di<HomeCubit>(),
+                create: (BuildContext context) =>
+                    di<HomeCubit>()..getContacts(),
               ),
               BlocProvider(
                 create: (BuildContext context) => di<ChatsCubit>(),
@@ -42,13 +45,16 @@ class MyApp extends StatelessWidget {
                 create: (BuildContext context) => di<CallsCubit>(),
               ),
               BlocProvider(
-                create: (BuildContext context) => di<ContactsCubit>(),
+                create: (BuildContext context) =>
+                    di<ContactsCubit>()..getContacts(context),
               ),
             ],
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
               theme: AppTheme.darkTheme(),
-              home: const LoginScreen(),
+              home: HiveHelper.getCurrentUser() == null
+                  ? const LoginScreen()
+                  : const HomeScreen(),
             ),
           );
         });

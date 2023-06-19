@@ -1,4 +1,4 @@
-import 'package:final_nuntius/core/shared_widgets/text.dart';
+import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/home/presentation/widgets/app_nav_bar.dart';
 import 'package:flutter/material.dart';
@@ -13,9 +13,16 @@ class HomeScreen extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         final cubit = HomeCubit.get(context);
-        return Scaffold(
-          body: cubit.screens[cubit.navBarIndex],
-          bottomNavigationBar: AppBottomNavBar(cubit: cubit),
+        return state.maybeMap(
+          getContactsLoading: (value) => const Scaffold(
+            body: Center(
+              child: CustomCircleIndicator(),
+            ),
+          ),
+          orElse: () => Scaffold(
+            body: cubit.screens[cubit.navBarIndex],
+            bottomNavigationBar: AppBottomNavBar(cubit: cubit),
+          ),
         );
       },
     );
