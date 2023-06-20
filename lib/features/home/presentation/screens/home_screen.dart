@@ -15,12 +15,14 @@ class HomeScreen extends StatelessWidget {
         final cubit = HomeCubit.get(context);
         return state.maybeMap(
           getContactsLoading: (value) => const Scaffold(
+            extendBody: true,
             body: Center(
               child: CustomCircleIndicator(),
             ),
           ),
           orElse: () => Scaffold(
             body: cubit.screens[cubit.navBarIndex],
+            extendBody: true,
             bottomNavigationBar: AppBottomNavBar(cubit: cubit),
           ),
         );

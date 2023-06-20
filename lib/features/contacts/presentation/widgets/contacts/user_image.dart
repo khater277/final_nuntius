@@ -6,24 +6,25 @@ import 'package:flutter/material.dart';
 
 class UserImage extends StatelessWidget {
   final String image;
-  const UserImage({super.key, required this.image});
+  final bool isChat;
+  const UserImage({super.key, required this.image, this.isChat = false});
 
   @override
   Widget build(BuildContext context) {
     if (image == "") {
       return SizedBox(
-        width: AppWidth.w30,
+        width: isChat ? AppWidth.w40 : AppWidth.w30,
         child: Icon(
           IconBroken.Profile,
-          size: AppSize.s22,
+          size: isChat ? AppSize.s30 : AppSize.s22,
           color: AppColors.blue,
         ),
       );
     } else {
       return SizedBox(
-        width: AppWidth.w30,
+        width: isChat ? AppWidth.w40 : AppWidth.w30,
         child: CircleAvatar(
-          radius: AppSize.s20,
+          radius: isChat ? AppSize.s25 : AppSize.s20,
           backgroundColor: AppColors.blue,
           backgroundImage: CachedNetworkImageProvider(image),
         ),

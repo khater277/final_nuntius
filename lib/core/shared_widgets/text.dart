@@ -121,6 +121,7 @@ class SecondaryText extends StatelessWidget {
   final bool isEllipsis;
   final int? maxLines;
   final Color? color;
+  final bool italic;
   const SecondaryText({
     super.key,
     required this.text,
@@ -132,6 +133,7 @@ class SecondaryText extends StatelessWidget {
     this.isEllipsis = true,
     this.maxLines,
     this.color,
+    this.italic = false,
   });
 
   @override
@@ -139,18 +141,18 @@ class SecondaryText extends StatelessWidget {
     return Text(
       text,
       style: Theme.of(context).textTheme.bodySmall!.copyWith(
-            fontSize: size ?? FontSize.s14,
-            fontWeight: isButton ? FontWeightManager.semiBold : null,
-            color: color ??
-                (isLight
-                    ? Theme.of(context)
-                        .textTheme
-                        .bodySmall!
-                        .color!
-                        .withOpacity(0.8)
-                    : null),
-            letterSpacing: letterSpacing ?? 0,
-          ),
+          fontSize: size ?? FontSize.s14,
+          fontWeight: isButton ? FontWeightManager.semiBold : null,
+          color: color ??
+              (isLight
+                  ? Theme.of(context)
+                      .textTheme
+                      .bodySmall!
+                      .color!
+                      .withOpacity(0.8)
+                  : null),
+          letterSpacing: letterSpacing ?? 0,
+          fontStyle: italic ? FontStyle.italic : FontStyle.normal),
       textAlign: center ? TextAlign.center : null,
       overflow: isEllipsis ? TextOverflow.ellipsis : null,
       maxLines: maxLines,
