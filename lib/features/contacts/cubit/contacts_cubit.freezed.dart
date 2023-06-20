@@ -22,6 +22,11 @@ mixin _$ContactsState {
     required TResult Function() getContactsLoading,
     required TResult Function() getContacts,
     required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +35,11 @@ mixin _$ContactsState {
     TResult? Function()? getContactsLoading,
     TResult? Function()? getContacts,
     TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +48,11 @@ mixin _$ContactsState {
     TResult Function()? getContactsLoading,
     TResult Function()? getContacts,
     TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +62,11 @@ mixin _$ContactsState {
     required TResult Function(_GetContactsLoading value) getContactsLoading,
     required TResult Function(_GetContacts value) getContacts,
     required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +75,11 @@ mixin _$ContactsState {
     TResult? Function(_GetContactsLoading value)? getContactsLoading,
     TResult? Function(_GetContacts value)? getContacts,
     TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +88,11 @@ mixin _$ContactsState {
     TResult Function(_GetContactsLoading value)? getContactsLoading,
     TResult Function(_GetContacts value)? getContacts,
     TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -127,6 +157,11 @@ class _$_Initial implements _Initial {
     required TResult Function() getContactsLoading,
     required TResult Function() getContacts,
     required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
   }) {
     return initial();
   }
@@ -138,6 +173,11 @@ class _$_Initial implements _Initial {
     TResult? Function()? getContactsLoading,
     TResult? Function()? getContacts,
     TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
   }) {
     return initial?.call();
   }
@@ -149,6 +189,11 @@ class _$_Initial implements _Initial {
     TResult Function()? getContactsLoading,
     TResult Function()? getContacts,
     TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -164,6 +209,11 @@ class _$_Initial implements _Initial {
     required TResult Function(_GetContactsLoading value) getContactsLoading,
     required TResult Function(_GetContacts value) getContacts,
     required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
   }) {
     return initial(this);
   }
@@ -175,6 +225,11 @@ class _$_Initial implements _Initial {
     TResult? Function(_GetContactsLoading value)? getContactsLoading,
     TResult? Function(_GetContacts value)? getContacts,
     TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
   }) {
     return initial?.call(this);
   }
@@ -186,6 +241,11 @@ class _$_Initial implements _Initial {
     TResult Function(_GetContactsLoading value)? getContactsLoading,
     TResult Function(_GetContacts value)? getContacts,
     TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -241,6 +301,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     required TResult Function() getContactsLoading,
     required TResult Function() getContacts,
     required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
   }) {
     return getContactsLoading();
   }
@@ -252,6 +317,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     TResult? Function()? getContactsLoading,
     TResult? Function()? getContacts,
     TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
   }) {
     return getContactsLoading?.call();
   }
@@ -263,6 +333,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     TResult Function()? getContactsLoading,
     TResult Function()? getContacts,
     TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
     required TResult orElse(),
   }) {
     if (getContactsLoading != null) {
@@ -278,6 +353,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     required TResult Function(_GetContactsLoading value) getContactsLoading,
     required TResult Function(_GetContacts value) getContacts,
     required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
   }) {
     return getContactsLoading(this);
   }
@@ -289,6 +369,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     TResult? Function(_GetContactsLoading value)? getContactsLoading,
     TResult? Function(_GetContacts value)? getContacts,
     TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
   }) {
     return getContactsLoading?.call(this);
   }
@@ -300,6 +385,11 @@ class _$_GetContactsLoading implements _GetContactsLoading {
     TResult Function(_GetContactsLoading value)? getContactsLoading,
     TResult Function(_GetContacts value)? getContacts,
     TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
     required TResult orElse(),
   }) {
     if (getContactsLoading != null) {
@@ -355,6 +445,11 @@ class _$_GetContacts implements _GetContacts {
     required TResult Function() getContactsLoading,
     required TResult Function() getContacts,
     required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
   }) {
     return getContacts();
   }
@@ -366,6 +461,11 @@ class _$_GetContacts implements _GetContacts {
     TResult? Function()? getContactsLoading,
     TResult? Function()? getContacts,
     TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
   }) {
     return getContacts?.call();
   }
@@ -377,6 +477,11 @@ class _$_GetContacts implements _GetContacts {
     TResult Function()? getContactsLoading,
     TResult Function()? getContacts,
     TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
     required TResult orElse(),
   }) {
     if (getContacts != null) {
@@ -392,6 +497,11 @@ class _$_GetContacts implements _GetContacts {
     required TResult Function(_GetContactsLoading value) getContactsLoading,
     required TResult Function(_GetContacts value) getContacts,
     required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
   }) {
     return getContacts(this);
   }
@@ -403,6 +513,11 @@ class _$_GetContacts implements _GetContacts {
     TResult? Function(_GetContactsLoading value)? getContactsLoading,
     TResult? Function(_GetContacts value)? getContacts,
     TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
   }) {
     return getContacts?.call(this);
   }
@@ -414,6 +529,11 @@ class _$_GetContacts implements _GetContacts {
     TResult Function(_GetContactsLoading value)? getContactsLoading,
     TResult Function(_GetContacts value)? getContacts,
     TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
     required TResult orElse(),
   }) {
     if (getContacts != null) {
@@ -469,6 +589,11 @@ class _$_GetContactsError implements _GetContactsError {
     required TResult Function() getContactsLoading,
     required TResult Function() getContacts,
     required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
   }) {
     return getContactsError();
   }
@@ -480,6 +605,11 @@ class _$_GetContactsError implements _GetContactsError {
     TResult? Function()? getContactsLoading,
     TResult? Function()? getContacts,
     TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
   }) {
     return getContactsError?.call();
   }
@@ -491,6 +621,11 @@ class _$_GetContactsError implements _GetContactsError {
     TResult Function()? getContactsLoading,
     TResult Function()? getContacts,
     TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
     required TResult orElse(),
   }) {
     if (getContactsError != null) {
@@ -506,6 +641,11 @@ class _$_GetContactsError implements _GetContactsError {
     required TResult Function(_GetContactsLoading value) getContactsLoading,
     required TResult Function(_GetContacts value) getContacts,
     required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
   }) {
     return getContactsError(this);
   }
@@ -517,6 +657,11 @@ class _$_GetContactsError implements _GetContactsError {
     TResult? Function(_GetContactsLoading value)? getContactsLoading,
     TResult? Function(_GetContacts value)? getContacts,
     TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
   }) {
     return getContactsError?.call(this);
   }
@@ -528,6 +673,11 @@ class _$_GetContactsError implements _GetContactsError {
     TResult Function(_GetContactsLoading value)? getContactsLoading,
     TResult Function(_GetContacts value)? getContacts,
     TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
     required TResult orElse(),
   }) {
     if (getContactsError != null) {
@@ -539,4 +689,756 @@ class _$_GetContactsError implements _GetContactsError {
 
 abstract class _GetContactsError implements ContactsState {
   const factory _GetContactsError() = _$_GetContactsError;
+}
+
+/// @nodoc
+abstract class _$$_InitControllersCopyWith<$Res> {
+  factory _$$_InitControllersCopyWith(
+          _$_InitControllers value, $Res Function(_$_InitControllers) then) =
+      __$$_InitControllersCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_InitControllersCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$_InitControllers>
+    implements _$$_InitControllersCopyWith<$Res> {
+  __$$_InitControllersCopyWithImpl(
+      _$_InitControllers _value, $Res Function(_$_InitControllers) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_InitControllers implements _InitControllers {
+  const _$_InitControllers();
+
+  @override
+  String toString() {
+    return 'ContactsState.initControllers()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_InitControllers);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
+  }) {
+    return initControllers();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
+  }) {
+    return initControllers?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (initControllers != null) {
+      return initControllers();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
+  }) {
+    return initControllers(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
+  }) {
+    return initControllers?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (initControllers != null) {
+      return initControllers(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _InitControllers implements ContactsState {
+  const factory _InitControllers() = _$_InitControllers;
+}
+
+/// @nodoc
+abstract class _$$_DisposeControllersCopyWith<$Res> {
+  factory _$$_DisposeControllersCopyWith(_$_DisposeControllers value,
+          $Res Function(_$_DisposeControllers) then) =
+      __$$_DisposeControllersCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_DisposeControllersCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$_DisposeControllers>
+    implements _$$_DisposeControllersCopyWith<$Res> {
+  __$$_DisposeControllersCopyWithImpl(
+      _$_DisposeControllers _value, $Res Function(_$_DisposeControllers) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_DisposeControllers implements _DisposeControllers {
+  const _$_DisposeControllers();
+
+  @override
+  String toString() {
+    return 'ContactsState.disposeControllers()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_DisposeControllers);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
+  }) {
+    return disposeControllers();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
+  }) {
+    return disposeControllers?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (disposeControllers != null) {
+      return disposeControllers();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
+  }) {
+    return disposeControllers(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
+  }) {
+    return disposeControllers?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (disposeControllers != null) {
+      return disposeControllers(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DisposeControllers implements ContactsState {
+  const factory _DisposeControllers() = _$_DisposeControllers;
+}
+
+/// @nodoc
+abstract class _$$_AddContactLoadingCopyWith<$Res> {
+  factory _$$_AddContactLoadingCopyWith(_$_AddContactLoading value,
+          $Res Function(_$_AddContactLoading) then) =
+      __$$_AddContactLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_AddContactLoadingCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContactLoading>
+    implements _$$_AddContactLoadingCopyWith<$Res> {
+  __$$_AddContactLoadingCopyWithImpl(
+      _$_AddContactLoading _value, $Res Function(_$_AddContactLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_AddContactLoading implements _AddContactLoading {
+  const _$_AddContactLoading();
+
+  @override
+  String toString() {
+    return 'ContactsState.addContactLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_AddContactLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
+  }) {
+    return addContactLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
+  }) {
+    return addContactLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContactLoading != null) {
+      return addContactLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
+  }) {
+    return addContactLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
+  }) {
+    return addContactLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContactLoading != null) {
+      return addContactLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddContactLoading implements ContactsState {
+  const factory _AddContactLoading() = _$_AddContactLoading;
+}
+
+/// @nodoc
+abstract class _$$_AddContactCopyWith<$Res> {
+  factory _$$_AddContactCopyWith(
+          _$_AddContact value, $Res Function(_$_AddContact) then) =
+      __$$_AddContactCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_AddContactCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContact>
+    implements _$$_AddContactCopyWith<$Res> {
+  __$$_AddContactCopyWithImpl(
+      _$_AddContact _value, $Res Function(_$_AddContact) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_AddContact implements _AddContact {
+  const _$_AddContact();
+
+  @override
+  String toString() {
+    return 'ContactsState.addContact()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_AddContact);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
+  }) {
+    return addContact();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
+  }) {
+    return addContact?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContact != null) {
+      return addContact();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
+  }) {
+    return addContact(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
+  }) {
+    return addContact?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContact != null) {
+      return addContact(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddContact implements ContactsState {
+  const factory _AddContact() = _$_AddContact;
+}
+
+/// @nodoc
+abstract class _$$_AddContactErrorCopyWith<$Res> {
+  factory _$$_AddContactErrorCopyWith(
+          _$_AddContactError value, $Res Function(_$_AddContactError) then) =
+      __$$_AddContactErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_AddContactErrorCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContactError>
+    implements _$$_AddContactErrorCopyWith<$Res> {
+  __$$_AddContactErrorCopyWithImpl(
+      _$_AddContactError _value, $Res Function(_$_AddContactError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_AddContactError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_AddContactError implements _AddContactError {
+  const _$_AddContactError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'ContactsState.addContactError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_AddContactError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_AddContactErrorCopyWith<_$_AddContactError> get copyWith =>
+      __$$_AddContactErrorCopyWithImpl<_$_AddContactError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function() getContactsError,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() addContactLoading,
+    required TResult Function() addContact,
+    required TResult Function(String errorMsg) addContactError,
+  }) {
+    return addContactError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function()? getContactsError,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? addContactLoading,
+    TResult? Function()? addContact,
+    TResult? Function(String errorMsg)? addContactError,
+  }) {
+    return addContactError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function()? getContactsError,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? addContactLoading,
+    TResult Function()? addContact,
+    TResult Function(String errorMsg)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContactError != null) {
+      return addContactError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_AddContactLoading value) addContactLoading,
+    required TResult Function(_AddContact value) addContact,
+    required TResult Function(_AddContactError value) addContactError,
+  }) {
+    return addContactError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_AddContactLoading value)? addContactLoading,
+    TResult? Function(_AddContact value)? addContact,
+    TResult? Function(_AddContactError value)? addContactError,
+  }) {
+    return addContactError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_AddContactLoading value)? addContactLoading,
+    TResult Function(_AddContact value)? addContact,
+    TResult Function(_AddContactError value)? addContactError,
+    required TResult orElse(),
+  }) {
+    if (addContactError != null) {
+      return addContactError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _AddContactError implements ContactsState {
+  const factory _AddContactError(final String errorMsg) = _$_AddContactError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_AddContactErrorCopyWith<_$_AddContactError> get copyWith =>
+      throw _privateConstructorUsedError;
 }

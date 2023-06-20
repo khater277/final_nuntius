@@ -115,6 +115,7 @@ class SecondaryText extends StatelessWidget {
   final String text;
   final bool center;
   final double? size;
+  final double? letterSpacing;
   final bool isLight;
   final bool isButton;
   final bool isEllipsis;
@@ -124,6 +125,7 @@ class SecondaryText extends StatelessWidget {
     super.key,
     required this.text,
     this.size,
+    this.letterSpacing,
     this.center = false,
     this.isLight = false,
     this.isButton = false,
@@ -137,16 +139,18 @@ class SecondaryText extends StatelessWidget {
     return Text(
       text,
       style: Theme.of(context).textTheme.bodySmall!.copyWith(
-          fontSize: size ?? FontSize.s14,
-          fontWeight: isButton ? FontWeightManager.semiBold : null,
-          color: color ??
-              (isLight
-                  ? Theme.of(context)
-                      .textTheme
-                      .bodySmall!
-                      .color!
-                      .withOpacity(0.8)
-                  : null)),
+            fontSize: size ?? FontSize.s14,
+            fontWeight: isButton ? FontWeightManager.semiBold : null,
+            color: color ??
+                (isLight
+                    ? Theme.of(context)
+                        .textTheme
+                        .bodySmall!
+                        .color!
+                        .withOpacity(0.8)
+                    : null),
+            letterSpacing: letterSpacing ?? 0,
+          ),
       textAlign: center ? TextAlign.center : null,
       overflow: isEllipsis ? TextOverflow.ellipsis : null,
       maxLines: maxLines,

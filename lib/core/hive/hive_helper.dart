@@ -4,6 +4,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 
 class HiveHelper {
   static Box<UserData?>? userData;
+  static Box<UserData>? allUsers;
 
   static Future<void> init() async {
     await Hive.initFlutter();
@@ -13,14 +14,33 @@ class HiveHelper {
 
     /// Open Boxes
     userData = await Hive.openBox(HiveKeys.currentUser);
+    allUsers = await Hive.openBox(HiveKeys.allUsers);
   }
 
-  /// USER
+  /// CURRENT USER
   static Future<void> setCurrentUser({required UserData? user}) {
     return userData!.put(HiveKeys.currentUser, user);
   }
 
   static UserData? getCurrentUser() {
     return userData!.get(HiveKeys.currentUser);
+  }
+
+  /// ALL USERS
+  static Future<void> setAllUsers({required List<UserData> users}) async {
+    for (var element in users) {
+      allUsers!.put(element.phone, element);
+    }
+  }
+
+  static List<UserData>? getAllUsers() {
+    List<UserData>? result;
+    if (allUsers!.isNotEmpty) {
+      result = [];
+      for (int i = 0; i < allUsers!.length; i++) {
+        result.add(allUsers!.getAt(i)!);
+      }
+    }
+    return result;
   }
 }

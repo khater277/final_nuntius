@@ -3,7 +3,9 @@ import 'package:final_nuntius/core/shared_widgets/sliver_app_bar.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
-import 'package:final_nuntius/features/contacts/presentation/widgets/add_new_contact.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/no_contacts_founded.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/add_new_contact.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/contact_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -26,7 +28,8 @@ class ContactsScreen extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               slivers: [
                 const CustomSliverAppBar(),
-                SliverToBoxAdapter(
+                SliverFillRemaining(
+                  hasScrollBody: cubit.users.isNotEmpty,
                   child: Padding(
                     padding: EdgeInsets.only(
                       right: AppWidth.w10,
@@ -44,20 +47,19 @@ class ContactsScreen extends StatelessWidget {
                           text: "Contacts",
                           letterSpacing: 2,
                         ),
-                        // SizedBox(height: AppHeight.h5),
-                        // if(cubit.users.isNotEmpty)
-                        Flexible(
-                          fit: FlexFit.loose,
-                          child: ListView.builder(
-                            shrinkWrap: true,
-                            itemCount: cubit.users.length,
-                            physics: const NeverScrollableScrollPhysics(),
-                            itemBuilder: (context, index) =>
-                                LargeHeadText(text: cubit.users[index].name!),
-                          ),
-                        ),
-                        // else
-                        //   const NoContactsFounded(),
+                        if (cubit.users.isNotEmpty)
+                          Flexible(
+                            fit: FlexFit.loose,
+                            child: ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: cubit.users.length,
+                              physics: const NeverScrollableScrollPhysics(),
+                              itemBuilder: (context, index) =>
+                                  ContactView(user: cubit.users[index]),
+                            ),
+                          )
+                        else
+                          const NoContactsFounded(),
                       ],
                     ),
                   ),

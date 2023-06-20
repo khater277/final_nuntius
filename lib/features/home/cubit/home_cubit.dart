@@ -37,12 +37,13 @@ class HomeCubit extends Cubit<HomeState> {
 
   List<Contact> contacts = [];
   List<UserData> users = [];
-  void getContacts() async {
-    emit(const HomeState.getContactsLoading());
+  void getContacts({bool? isAddContact}) async {
+    if (isAddContact != true) emit(const HomeState.getContactsLoading());
     try {
       contacts = await ContactsService.getContacts(withThumbnails: false);
       await _handleContacts();
       await _handleUsers();
+      // print("=============>${HiveHelper.getAllUsers()!.length}");
       emit(const HomeState.getContacts());
     } catch (error) {
       emit(const HomeState.getContactsError());
@@ -72,7 +73,12 @@ class HomeCubit extends Cubit<HomeState> {
   Future<void> _handleUsers() async {
     final response = await homeRepository.getAllUsersFromFirestore();
     response.fold(
-      (failure) {},
+      (failure) {
+        users = HiveHelper.getAllUsers() ?? [];
+        users.sort(
+          (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
+        );
+      },
       (usersData) {
         for (int i = 0; i < contacts.length; i++) {
           final user = usersData.firstWhereOrNull(
@@ -87,6 +93,10 @@ class HomeCubit extends Cubit<HomeState> {
             }
           }
         }
+        HiveHelper.setAllUsers(users: users);
+        users.sort(
+          (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
+        );
       },
     );
   }

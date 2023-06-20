@@ -1,8 +1,10 @@
+import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
+import 'package:final_nuntius/features/contacts/presentation/screens/add_contact_screen.dart';
 import 'package:flutter/material.dart';
 
 class NewContact extends StatelessWidget {
@@ -12,7 +14,7 @@ class NewContact extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Get.to(()=>const AddNewContactScreen());
+        Go.to(context: context, screen: const AddContactsScreen());
       },
       child: Row(
         children: [

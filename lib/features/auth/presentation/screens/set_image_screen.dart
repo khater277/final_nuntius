@@ -95,7 +95,6 @@ class _SetImageScreenState extends State<SetImageScreen> {
                               EdgeInsets.symmetric(horizontal: AppWidth.w20),
                           child: CustomTextField(
                             hintText: "enter your name..",
-                            validatorText: "validatorText",
                             controller: cubit.nameController!,
                             inputType: TextInputType.name,
                           ),

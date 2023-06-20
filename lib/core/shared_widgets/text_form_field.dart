@@ -8,7 +8,6 @@ class CustomTextField extends StatelessWidget {
   final bool obscureText;
   final bool readOnly;
   final int? maxlength;
-  final String? validatorText;
   final IconData? prefixIcon;
   final IconData? suffixIcon;
   final void Function()? suffixTap;
@@ -25,7 +24,6 @@ class CustomTextField extends StatelessWidget {
     this.maxlength,
     this.obscureText = false,
     this.readOnly = false,
-    required this.validatorText,
     required this.controller,
     this.onChange,
     this.onFelidSubmitted,
