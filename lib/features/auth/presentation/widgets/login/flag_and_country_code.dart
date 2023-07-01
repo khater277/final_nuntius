@@ -12,15 +12,17 @@ class FlagAndCountryCode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(
-          vertical: AppHeight.h13, horizontal: AppWidth.w8),
+      height: AppHeight.h42,
+      padding: EdgeInsets.symmetric(horizontal: AppWidth.w10),
       decoration: BoxDecoration(
         color: AppColors.lightBlack,
         // border: Border.all(color: AppColors.grey),
         borderRadius: BorderRadius.circular(AppSize.s10),
       ),
-      child: SmallHeadText(
-        text: "${AppFunctions.generateCountryFlag(countryCode: 'eg')}  +20",
+      child: Center(
+        child: SmallHeadText(
+          text: "${AppFunctions.generateCountryFlag(countryCode: 'eg')}  +20",
+        ),
       ),
     );
   }

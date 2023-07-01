@@ -16,13 +16,13 @@ class MediaLastMessage extends StatelessWidget {
       children: [
         Icon(
           icon,
-          size: AppSize.s16,
+          size: AppSize.s15,
           color: AppColors.blue,
         ),
         SizedBox(width: AppWidth.w5),
         SecondaryText(
           text: name,
-          size: FontSize.s13,
+          size: FontSize.s12,
         ),
       ],
     );

@@ -11,7 +11,7 @@ class TextLastMessage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SecondaryText(
       text: message,
-      size: FontSize.s13,
+      size: FontSize.s12,
     );
   }
 }

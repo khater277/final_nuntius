@@ -9,8 +9,8 @@ class CustomTextField extends StatelessWidget {
   final bool readOnly;
   final int? maxlength;
   final IconData? prefixIcon;
-  final IconData? suffixIcon;
-  final void Function()? suffixTap;
+  final Widget? suffixIcon;
+
   final ValueChanged<String>? onChange;
   final ValueChanged<String>? onFelidSubmitted;
   final void Function()? onTap;
@@ -31,7 +31,6 @@ class CustomTextField extends StatelessWidget {
     required this.inputType,
     this.prefixIcon,
     this.suffixIcon,
-    this.suffixTap,
     this.validator,
   }) : super(key: key);
 
@@ -58,16 +57,7 @@ class CustomTextField extends StatelessWidget {
                 size: AppSize.s20,
               )
             : null,
-        suffixIcon: suffixIcon != null
-            ? IconButton(
-                onPressed: suffixTap,
-                icon: Icon(
-                  suffixIcon,
-                  color: AppColors.blue,
-                  size: AppSize.s20,
-                ),
-              )
-            : null,
+        suffixIcon: suffixIcon,
       ),
     );
   }

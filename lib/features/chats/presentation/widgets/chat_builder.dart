@@ -1,3 +1,4 @@
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/chats/presentation/widgets/chat_last_message/chat_last_message.dart';
@@ -21,17 +22,12 @@ class ChatBuilder extends StatelessWidget {
           swipeToDelete(context: context, rightPadding: AppWidth.w10),
       endActionPane: swipeToDelete(context: context, leftPadding: AppWidth.w10),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: AppHeight.h18),
+        padding: EdgeInsets.symmetric(vertical: AppHeight.h14),
         child: Column(
           children: [
             GestureDetector(
               onTap: () {
-                // Get.to(() =>
-                //     MessagesScreen(
-                //       user: chats[index],
-                //       isFirstMessage:
-                //           false,
-                //     ));
+                // Go.to(context: context, screen: const MessagesScreen());
               },
               child: Container(
                 color: Theme.of(context).scaffoldBackgroundColor,

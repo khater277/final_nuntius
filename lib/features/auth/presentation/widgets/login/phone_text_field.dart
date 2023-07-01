@@ -26,6 +26,8 @@ class PhoneTextField extends StatelessWidget {
           letterSpacing: 3,
         ),
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.symmetric(
+              vertical: AppHeight.h12, horizontal: AppWidth.w8),
           hintText: AppStrings.enterYourNumber,
           hintStyle: getMediumStyle(
             fontColor: AppColors.grey,

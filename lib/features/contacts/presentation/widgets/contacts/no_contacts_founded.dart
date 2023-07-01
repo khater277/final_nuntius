@@ -15,7 +15,7 @@ class NoContactsFounded extends StatelessWidget {
         children: [
           Icon(
             IconBroken.User1,
-            size: AppSize.s120,
+            size: AppSize.s100,
             color: AppColors.grey.withOpacity(0.4),
           ),
           Padding(
@@ -25,7 +25,7 @@ class NoContactsFounded extends StatelessWidget {
                   text: TextSpan(
                       text: "add new ",
                       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
-                          fontSize: FontSize.s14,
+                          fontSize: FontSize.s13,
                           color: AppColors.grey.withOpacity(0.5),
                           height: 1.5),
                       children: [
@@ -35,7 +35,7 @@ class NoContactsFounded extends StatelessWidget {
                               .textTheme
                               .bodyLarge!
                               .copyWith(
-                                  fontSize: FontSize.s16,
+                                  fontSize: FontSize.s15,
                                   color: AppColors.blue.withOpacity(0.7)),
                         ),
                         TextSpan(
@@ -45,7 +45,7 @@ class NoContactsFounded extends StatelessWidget {
                                 .textTheme
                                 .bodyMedium!
                                 .copyWith(
-                                  fontSize: FontSize.s14,
+                                  fontSize: FontSize.s13,
                                   color: AppColors.grey.withOpacity(0.5),
                                   height: 1.5,
                                 )),

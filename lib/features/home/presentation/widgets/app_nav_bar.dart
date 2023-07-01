@@ -35,25 +35,25 @@ class AppBottomNavBar extends StatelessWidget {
           DotNavigationBarItem(
             icon: Icon(
               IconBroken.Chat,
-              size: AppSize.s24,
+              size: AppSize.s20,
             ),
           ),
           DotNavigationBarItem(
             icon: Icon(
               IconBroken.Camera,
-              size: AppSize.s24,
+              size: AppSize.s20,
             ),
           ),
           DotNavigationBarItem(
             icon: Icon(
               IconBroken.Call,
-              size: AppSize.s24,
+              size: AppSize.s20,
             ),
           ),
           DotNavigationBarItem(
             icon: Icon(
               IconBroken.User1,
-              size: AppSize.s24,
+              size: AppSize.s20,
             ),
           ),
         ],

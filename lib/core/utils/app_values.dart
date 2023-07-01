@@ -73,6 +73,10 @@ class AppHeight {
   static double h25 = 25.h;
   static double h30 = 30.h;
   static double h40 = 40.h;
+  static double h41 = 41.h;
+  static double h42 = 42.h;
+  static double h43 = 43.h;
+  static double h44 = 44.h;
   static double h45 = 45.h;
   static double h50 = 50.h;
   static double h60 = 60.h;

@@ -23,10 +23,10 @@ class NewContact extends StatelessWidget {
             height: AppHeight.h40,
             decoration: BoxDecoration(
                 color: AppColors.blue,
-                borderRadius: BorderRadius.circular(AppSize.s10)),
+                borderRadius: BorderRadius.circular(AppSize.s5)),
             child: Icon(
               IconBroken.Add_User,
-              size: AppSize.s20,
+              size: AppSize.s18,
             ),
           ),
           SizedBox(

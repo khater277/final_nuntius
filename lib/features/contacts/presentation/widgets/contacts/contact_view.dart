@@ -1,8 +1,10 @@
+import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_name_and_phone_number.dart';
+import 'package:final_nuntius/features/messages/presentation/screens/messages_screen.dart';
 import 'package:flutter/material.dart';
 
 class ContactView extends StatelessWidget {
@@ -16,12 +18,8 @@ class ContactView extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: AppHeight.h10),
       child: GestureDetector(
-        onTap: () {
-          // Get.to(()=>MessagesScreen(
-          //   user: user,
-          //   isFirstMessage: true,
-          // ));
-        },
+        onTap: () =>
+            Go.to(context: context, screen: MessagesScreen(user: user)),
         child: Container(
           color: Theme.of(context).scaffoldBackgroundColor,
           child: Row(
@@ -37,7 +35,7 @@ class ContactView extends StatelessWidget {
               if (!fromSearch)
                 Icon(
                   IconBroken.Arrow___Right_2,
-                  size: AppSize.s18,
+                  size: AppSize.s17,
                   color: Colors.grey,
                 )
             ],

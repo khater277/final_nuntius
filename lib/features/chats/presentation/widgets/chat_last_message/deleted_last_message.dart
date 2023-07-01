@@ -13,14 +13,14 @@ class DeletedLastMessage extends StatelessWidget {
       children: [
         SecondaryText(
           text: "this message was deleted",
-          size: FontSize.s13,
+          size: FontSize.s12,
           italic: true,
         ),
         SizedBox(width: AppWidth.w4),
         Icon(
           IconBroken.Delete,
           color: Colors.red,
-          size: AppSize.s14,
+          size: AppSize.s13,
         ),
       ],
     );

@@ -48,10 +48,4 @@ class ServerFailure extends Failure {
 
   @override
   String getMessage() => handleException(error);
-  // "error is  NetworkExceptions.getErrorMessage(error)";
-}
-
-class CacheFailure extends Failure {
-  @override
-  String getMessage() => "CACHE FAILURE";
 }

@@ -17,11 +17,11 @@ class UserNameAndPhoneNumber extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          LargeHeadText(text: user.name!),
+          LargeHeadText(text: user.name!, size: FontSize.s13),
           SizedBox(height: AppHeight.h1),
           SecondaryText(
             text: "${user.phone}",
-            size: FontSize.s13,
+            size: FontSize.s12,
           ),
         ],
       ),

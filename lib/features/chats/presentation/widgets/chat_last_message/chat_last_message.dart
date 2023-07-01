@@ -1,5 +1,6 @@
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
@@ -7,8 +8,6 @@ import 'package:final_nuntius/features/chats/presentation/widgets/chat_last_mess
 import 'package:final_nuntius/features/chats/presentation/widgets/chat_last_message/media_last_message.dart';
 import 'package:final_nuntius/features/chats/presentation/widgets/chat_last_message/text_last_message.dart';
 import 'package:flutter/material.dart';
-
-enum MessageType { deleted, text, image, video, doc }
 
 class ChatLastMessage extends StatelessWidget {
   final MessageType messageType;
@@ -22,7 +21,7 @@ class ChatLastMessage extends StatelessWidget {
         // if(lastMessage.senderID==uId)
         SecondaryText(
           text: 'you : ',
-          size: FontSize.s13,
+          size: FontSize.s12,
         ),
         Expanded(
           child: messageType == MessageType.deleted
@@ -42,7 +41,7 @@ class ChatLastMessage extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: AppWidth.w2),
           child: CircleAvatar(
-            radius: AppSize.s4,
+            radius: AppSize.s3,
             backgroundColor: AppColors.blue,
           ),
         )

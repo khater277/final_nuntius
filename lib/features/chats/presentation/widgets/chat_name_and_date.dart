@@ -18,12 +18,12 @@ class ChatNameAndDate extends StatelessWidget {
         Expanded(
           child: LargeHeadText(
             text: name,
-            size: FontSize.s14,
+            size: FontSize.s13,
           ),
         ),
         SecondaryText(
           text: date,
-          size: FontSize.s13,
+          size: FontSize.s12,
         ),
       ],
     );
