@@ -1,5 +1,5 @@
 import 'package:final_nuntius/config/navigation.dart';
-import 'package:final_nuntius/core/hive/hive_helper.dart';
+import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/shared_widgets/text_form_field.dart';
@@ -55,6 +55,10 @@ class _SetImageScreenState extends State<SetImageScreen> {
             context: context,
             screen: const HomeScreen(),
           ),
+          updateUserToken: () => Go.off(
+            context: context,
+            screen: const HomeScreen(),
+          ),
           orElse: () {},
         );
       },
@@ -65,15 +69,15 @@ class _SetImageScreenState extends State<SetImageScreen> {
             actions: [
               TextButton(
                 onPressed: () {
-                  if (HiveHelper.getCurrentUser() == null) {
-                    cubit.addUserToFirestore();
-                  } else {
-                    Go.off(context: context, screen: const HomeScreen());
-                  }
+                  cubit.addUserToFirestore();
                 },
-                child: const LargeHeadText(
-                  text: "SKIP",
-                  color: AppColors.blue,
+                child: state.maybeWhen(
+                  addUserToFirestoreLoading: () =>
+                      CustomCircleIndicator(size: AppSize.s18, strokeWidth: 1),
+                  orElse: () => const LargeHeadText(
+                    text: "SKIP",
+                    color: AppColors.blue,
+                  ),
                 ),
               )
             ],

@@ -32,6 +32,8 @@ mixin _$UserData {
   String? get image => throw _privateConstructorUsedError;
   @HiveField(5)
   bool? get inCall => throw _privateConstructorUsedError;
+  @HiveField(6)
+  Map<String, String>? get contacts => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -50,7 +52,8 @@ abstract class $UserDataCopyWith<$Res> {
       @HiveField(2) String? uId,
       @HiveField(3) String? phone,
       @HiveField(4) String? image,
-      @HiveField(5) bool? inCall});
+      @HiveField(5) bool? inCall,
+      @HiveField(6) Map<String, String>? contacts});
 }
 
 /// @nodoc
@@ -72,6 +75,7 @@ class _$UserDataCopyWithImpl<$Res, $Val extends UserData>
     Object? phone = freezed,
     Object? image = freezed,
     Object? inCall = freezed,
+    Object? contacts = freezed,
   }) {
     return _then(_value.copyWith(
       token: freezed == token
@@ -98,6 +102,10 @@ class _$UserDataCopyWithImpl<$Res, $Val extends UserData>
           ? _value.inCall
           : inCall // ignore: cast_nullable_to_non_nullable
               as bool?,
+      contacts: freezed == contacts
+          ? _value.contacts
+          : contacts // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>?,
     ) as $Val);
   }
 }
@@ -115,7 +123,8 @@ abstract class _$$_UserDataCopyWith<$Res> implements $UserDataCopyWith<$Res> {
       @HiveField(2) String? uId,
       @HiveField(3) String? phone,
       @HiveField(4) String? image,
-      @HiveField(5) bool? inCall});
+      @HiveField(5) bool? inCall,
+      @HiveField(6) Map<String, String>? contacts});
 }
 
 /// @nodoc
@@ -135,6 +144,7 @@ class __$$_UserDataCopyWithImpl<$Res>
     Object? phone = freezed,
     Object? image = freezed,
     Object? inCall = freezed,
+    Object? contacts = freezed,
   }) {
     return _then(_$_UserData(
       token: freezed == token
@@ -161,6 +171,10 @@ class __$$_UserDataCopyWithImpl<$Res>
           ? _value.inCall
           : inCall // ignore: cast_nullable_to_non_nullable
               as bool?,
+      contacts: freezed == contacts
+          ? _value._contacts
+          : contacts // ignore: cast_nullable_to_non_nullable
+              as Map<String, String>?,
     ));
   }
 }
@@ -174,7 +188,9 @@ class _$_UserData implements _UserData {
       @HiveField(2) this.uId,
       @HiveField(3) this.phone,
       @HiveField(4) this.image,
-      @HiveField(5) this.inCall});
+      @HiveField(5) this.inCall,
+      @HiveField(6) final Map<String, String>? contacts})
+      : _contacts = contacts;
 
   factory _$_UserData.fromJson(Map<String, dynamic> json) =>
       _$$_UserDataFromJson(json);
@@ -197,10 +213,20 @@ class _$_UserData implements _UserData {
   @override
   @HiveField(5)
   final bool? inCall;
+  final Map<String, String>? _contacts;
+  @override
+  @HiveField(6)
+  Map<String, String>? get contacts {
+    final value = _contacts;
+    if (value == null) return null;
+    if (_contacts is EqualUnmodifiableMapView) return _contacts;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableMapView(value);
+  }
 
   @override
   String toString() {
-    return 'UserData(token: $token, name: $name, uId: $uId, phone: $phone, image: $image, inCall: $inCall)';
+    return 'UserData(token: $token, name: $name, uId: $uId, phone: $phone, image: $image, inCall: $inCall, contacts: $contacts)';
   }
 
   @override
@@ -213,13 +239,14 @@ class _$_UserData implements _UserData {
             (identical(other.uId, uId) || other.uId == uId) &&
             (identical(other.phone, phone) || other.phone == phone) &&
             (identical(other.image, image) || other.image == image) &&
-            (identical(other.inCall, inCall) || other.inCall == inCall));
+            (identical(other.inCall, inCall) || other.inCall == inCall) &&
+            const DeepCollectionEquality().equals(other._contacts, _contacts));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, token, name, uId, phone, image, inCall);
+  int get hashCode => Object.hash(runtimeType, token, name, uId, phone, image,
+      inCall, const DeepCollectionEquality().hash(_contacts));
 
   @JsonKey(ignore: true)
   @override
@@ -242,7 +269,8 @@ abstract class _UserData implements UserData {
       @HiveField(2) final String? uId,
       @HiveField(3) final String? phone,
       @HiveField(4) final String? image,
-      @HiveField(5) final bool? inCall}) = _$_UserData;
+      @HiveField(5) final bool? inCall,
+      @HiveField(6) final Map<String, String>? contacts}) = _$_UserData;
 
   factory _UserData.fromJson(Map<String, dynamic> json) = _$_UserData.fromJson;
 
@@ -264,6 +292,9 @@ abstract class _UserData implements UserData {
   @override
   @HiveField(5)
   bool? get inCall;
+  @override
+  @HiveField(6)
+  Map<String, String>? get contacts;
   @override
   @JsonKey(ignore: true)
   _$$_UserDataCopyWith<_$_UserData> get copyWith =>

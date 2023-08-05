@@ -37,6 +37,7 @@ class SmallHeadText extends StatelessWidget {
   final String text;
   final double? size;
   final bool isEllipsis;
+  final bool isUnderLine;
   final int maxLines;
   final Color? color;
   const SmallHeadText(
@@ -44,6 +45,7 @@ class SmallHeadText extends StatelessWidget {
       required this.text,
       this.size,
       this.isEllipsis = true,
+      this.isUnderLine = false,
       this.maxLines = 1,
       this.color});
 
@@ -54,6 +56,7 @@ class SmallHeadText extends StatelessWidget {
       style: Theme.of(context).textTheme.bodyMedium!.copyWith(
             fontSize: size ?? FontSize.s14,
             color: color ?? Theme.of(context).textTheme.bodyLarge!.color,
+            decoration: isUnderLine ? TextDecoration.underline : null,
           ),
       maxLines: maxLines,
       overflow: isEllipsis ? TextOverflow.ellipsis : null,

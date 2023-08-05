@@ -8,6 +8,8 @@ part of 'last_message_model.dart';
 
 _$_LastMessageModel _$$_LastMessageModelFromJson(Map<String, dynamic> json) =>
     _$_LastMessageModel(
+      token: json['token'] as String?,
+      image: json['image'] as String?,
       senderID: json['senderID'] as String?,
       receiverID: json['receiverID'] as String?,
       message: json['message'] as String?,
@@ -22,6 +24,8 @@ _$_LastMessageModel _$$_LastMessageModelFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$_LastMessageModelToJson(_$_LastMessageModel instance) =>
     <String, dynamic>{
+      'token': instance.token,
+      'image': instance.image,
       'senderID': instance.senderID,
       'receiverID': instance.receiverID,
       'message': instance.message,

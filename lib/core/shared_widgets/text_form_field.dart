@@ -40,6 +40,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: obscureText,
       keyboardType: inputType,
+      // onTapOutside: (event) => FocusScope.of(context).unfocus(),
       maxLength: maxlength,
       style: getSemiBoldStyle(
           fontColor: Theme.of(context).textTheme.bodyLarge!.color!),

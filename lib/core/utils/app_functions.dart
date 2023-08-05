@@ -1,3 +1,6 @@
+import 'package:final_nuntius/core/hive/hive_helper.dart';
+import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+
 class AppFunctions {
   static String? handleTextFieldValidator({
     required List<bool> conditions,
@@ -18,5 +21,52 @@ class AppFunctions {
         (match) => String.fromCharCode(match.group(0)!.codeUnitAt(0) + 127397));
 
     return flag;
+  }
+
+  static Map<String, dynamic> getFcmBody({required UserData user}) {
+    late String name;
+    try {
+      name = user.contacts![HiveHelper.getCurrentUser()!.phone!]!;
+    } catch (error) {
+      name = HiveHelper.getCurrentUser()!.phone!;
+    }
+    return {
+      "to": user.token!,
+      "priority": "high",
+      "notification": {
+        "title": "New Message",
+        "body": "$name sent you new message",
+        "sound": "default"
+      },
+      "data": {
+        "type": "message",
+        "id":
+            "${HiveHelper.getCurrentUser()!.uId!}${user.uId!}${DateTime.now().millisecondsSinceEpoch}",
+        "senderID": HiveHelper.getCurrentUser()!.uId!,
+        "phoneNumber": HiveHelper.getCurrentUser()!.phone!,
+        "click_action": "FLUTTER_NOTIFICATION_CLICK"
+      }
+    };
+  }
+
+  static String storyDate(String date) {
+    String? finalDate;
+    DateTime storyDate = DateTime.parse(date);
+    DateTime nowDate = DateTime.now();
+
+    int minutesDiff = nowDate.difference(storyDate).inMinutes;
+    if (minutesDiff >= 60) {
+      finalDate =
+          "${(minutesDiff / 60).floor()} ${(minutesDiff / 60).floor() == 1 ? "hour" : "hours"} ago";
+    } else {
+      if (minutesDiff == 0) {
+        finalDate = "just now";
+      } else {
+        finalDate =
+            "$minutesDiff ${minutesDiff == 1 ? "minute" : "minutes"} ago";
+      }
+    }
+
+    return finalDate;
   }
 }

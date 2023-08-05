@@ -1,6 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:final_nuntius/config/navigation.dart';
+import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
+import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
+import 'package:final_nuntius/features/messages/presentation/screens/messages_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -224,15 +229,21 @@ class NotificationsHelper {
   }
 
   static void configureSelectNotificationSubject(
-      // AppCubit cubit
-      ) {
+    ChatsCubit chatsCubit,
+    // MessagesCubit messagesCubit,
+    BuildContext context,
+  ) {
     NotificationsHelper.selectNotificationStream.stream
         .listen((String? payload) async {
       debugPrint("===============>$payload");
-      // cubit.getNotificationTasks();
-      // UserModel userModel = cubit.chats.firstWhere((element) => element.uId==payload);
-      // debugPrint("${userModel.name}");
-      // Get.to(()=> MessagesScreen(user: userModel, isFirstMessage: false));
+
+      UserData user =
+          chatsCubit.users.firstWhere((element) => element.uId == payload);
+      if (HomeCubit.get(context).user == null) {
+        Go.to(context: context, screen: MessagesScreen(user: user));
+      } else {
+        Go.off(context: context, screen: MessagesScreen(user: user));
+      }
       // cubit.changeCurrentChat(id: payload!);
     });
   }

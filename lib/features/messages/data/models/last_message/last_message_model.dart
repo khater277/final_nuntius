@@ -6,6 +6,8 @@ part 'last_message_model.g.dart';
 @freezed
 class LastMessageModel with _$LastMessageModel {
   factory LastMessageModel({
+    String? token,
+    String? image,
     String? senderID,
     String? receiverID,
     String? message,

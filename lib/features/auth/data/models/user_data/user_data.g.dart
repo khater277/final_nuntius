@@ -23,13 +23,14 @@ class UserDataAdapter extends TypeAdapter<UserData> {
       phone: fields[3] as String?,
       image: fields[4] as String?,
       inCall: fields[5] as bool?,
+      contacts: (fields[6] as Map?)?.cast<String, String>(),
     );
   }
 
   @override
   void write(BinaryWriter writer, UserData obj) {
     writer
-      ..writeByte(6)
+      ..writeByte(7)
       ..writeByte(0)
       ..write(obj.token)
       ..writeByte(1)
@@ -41,7 +42,9 @@ class UserDataAdapter extends TypeAdapter<UserData> {
       ..writeByte(4)
       ..write(obj.image)
       ..writeByte(5)
-      ..write(obj.inCall);
+      ..write(obj.inCall)
+      ..writeByte(6)
+      ..write(obj.contacts);
   }
 
   @override
@@ -66,6 +69,9 @@ _$_UserData _$$_UserDataFromJson(Map<String, dynamic> json) => _$_UserData(
       phone: json['phone'] as String?,
       image: json['image'] as String?,
       inCall: json['inCall'] as bool?,
+      contacts: (json['contacts'] as Map<String, dynamic>?)?.map(
+        (k, e) => MapEntry(k, e as String),
+      ),
     );
 
 Map<String, dynamic> _$$_UserDataToJson(_$_UserData instance) =>
@@ -76,4 +82,5 @@ Map<String, dynamic> _$$_UserDataToJson(_$_UserData instance) =>
       'phone': instance.phone,
       'image': instance.image,
       'inCall': instance.inCall,
+      'contacts': instance.contacts,
     };

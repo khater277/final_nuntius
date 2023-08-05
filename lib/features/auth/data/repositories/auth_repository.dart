@@ -16,11 +16,13 @@ abstract class AuthRepository {
   Future<Either<Failure, UserCredential?>> signInWithPhoneNumber(
       {required String verificationId, required String smsCode});
 
-  Future<Either<Failure, Stream<TaskSnapshot>?>> uploadImageToStorage({
+  Future<Either<Failure, Either<String, Stream<TaskSnapshot>>?>>
+      uploadImageToStorage({
     required String collectionName,
-    required File image,
+    required File file,
   });
   Future<Either<Failure, void>> addUserToFirestore({required UserData user});
+  Future<Either<Failure, void>> updateUserToken({required String token});
   Future<Either<Failure, UserData>> getUserFromFirestore(
       {required String phoneNumber});
 }

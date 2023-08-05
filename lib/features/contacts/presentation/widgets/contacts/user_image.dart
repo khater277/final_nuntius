@@ -22,9 +22,9 @@ class UserImage extends StatelessWidget {
       );
     } else {
       return SizedBox(
-        width: isChat ? AppWidth.w40 : AppWidth.w30,
+        width: isChat ? AppWidth.w45 : AppWidth.w30,
         child: CircleAvatar(
-          radius: isChat ? AppSize.s25 : AppSize.s20,
+          radius: isChat ? AppSize.s28 : AppSize.s20,
           backgroundColor: AppColors.blue,
           backgroundImage: CachedNetworkImageProvider(image),
         ),

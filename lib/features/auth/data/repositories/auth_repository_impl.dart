@@ -70,10 +70,13 @@ class AuthRepositoryImpl implements AuthRepository {
               phoneNumber: response.user!.phoneNumber!);
           result.fold(
             (failure) {
+              print(
+                  "===============>${failure.getMessage()} ${response.user!.phoneNumber!}");
               HiveHelper.setCurrentUser(user: null);
               return Right(response);
             },
             (user) {
+              print("DOOOONE");
               HiveHelper.setCurrentUser(user: user);
               return Right(response);
             },
@@ -104,13 +107,14 @@ class AuthRepositoryImpl implements AuthRepository {
   }
 
   @override
-  Future<Either<Failure, Stream<TaskSnapshot>?>> uploadImageToStorage(
-      {required String collectionName, required File image}) async {
+  Future<Either<Failure, Either<String, Stream<TaskSnapshot>>?>>
+      uploadImageToStorage(
+          {required String collectionName, required File file}) async {
     if (await networkInfo.connected()) {
       try {
         final response = await authRemoteDataSource.uploadImageToStorage(
           collectionName: collectionName,
-          image: image,
+          file: file,
         );
         return Right(response);
       } on FirebaseException catch (error) {
@@ -167,6 +171,34 @@ class AuthRepositoryImpl implements AuthRepository {
               FirebaseAuthException(code: 'not-found');
           return Left(ServerFailure(
               error: exception, type: NetworkErrorTypes.firestore));
+        }
+      } on FirebaseException catch (error) {
+        return Left(
+            ServerFailure(error: error, type: NetworkErrorTypes.firestore));
+      }
+    } else {
+      FirebaseException error = FirebaseException(
+        plugin: '',
+        code: 'no-internet-connection',
+      );
+      return Left(ServerFailure(
+        error: error,
+        type: NetworkErrorTypes.firestore,
+      ));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> updateUserToken({required String token}) async {
+    if (await networkInfo.connected()) {
+      try {
+        try {
+          final response =
+              await authRemoteDataSource.updateUserToken(token: token);
+          return Right(response);
+        } on FirebaseAuthException catch (error) {
+          return Left(
+              ServerFailure(error: error, type: NetworkErrorTypes.firestore));
         }
       } on FirebaseException catch (error) {
         return Left(

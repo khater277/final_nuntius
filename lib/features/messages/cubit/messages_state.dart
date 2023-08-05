@@ -14,4 +14,21 @@ class MessagesState with _$MessagesState {
       _GetMessages;
   const factory MessagesState.getMessagesError(String errorMsg) =
       _GetMessagesError;
+  const factory MessagesState.pickMessageImageLoading() =
+      _PickMessageImageLoading;
+  const factory MessagesState.pickMessageImage() = _PickMessageImage;
+  const factory MessagesState.pickMessageImageError(String errorMsg) =
+      _PickMessageImageError;
+  const factory MessagesState.pickMessageVideoLoading() =
+      _PickMessageVideoLoading;
+  const factory MessagesState.pickMessageVideo() = _PickMessageVideo;
+  const factory MessagesState.pickMessageVideoError(String errorMsg) =
+      _PickMessageVideoError;
+  const factory MessagesState.pickMessageFileLoading() =
+      _PickMessageFileLoading;
+  const factory MessagesState.pickMessageFile() = _PickMessageFile;
+  const factory MessagesState.pickMessageFileError(String errorMsg) =
+      _PickMessageFileError;
+  const factory MessagesState.closeMediaContainer() = _CloseMediaContainer;
+  const factory MessagesState.getFilePercentage() = _GetFilePercentage;
 }

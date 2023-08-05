@@ -8,4 +8,6 @@ class HomeState with _$HomeState {
   const factory HomeState.getContactsLoading() = _GetContactsLoading;
   const factory HomeState.getContacts() = _GetContacts;
   const factory HomeState.getContactsError() = _GetContactsError;
+  const factory HomeState.initUser() = _InitUser;
+  const factory HomeState.disposeUser() = _DisposeUser;
 }

@@ -20,6 +20,8 @@ LastMessageModel _$LastMessageModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$LastMessageModel {
+  String? get token => throw _privateConstructorUsedError;
+  String? get image => throw _privateConstructorUsedError;
   String? get senderID => throw _privateConstructorUsedError;
   String? get receiverID => throw _privateConstructorUsedError;
   String? get message => throw _privateConstructorUsedError;
@@ -44,7 +46,9 @@ abstract class $LastMessageModelCopyWith<$Res> {
       _$LastMessageModelCopyWithImpl<$Res, LastMessageModel>;
   @useResult
   $Res call(
-      {String? senderID,
+      {String? token,
+      String? image,
+      String? senderID,
       String? receiverID,
       String? message,
       String? date,
@@ -69,6 +73,8 @@ class _$LastMessageModelCopyWithImpl<$Res, $Val extends LastMessageModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? token = freezed,
+    Object? image = freezed,
     Object? senderID = freezed,
     Object? receiverID = freezed,
     Object? message = freezed,
@@ -81,6 +87,14 @@ class _$LastMessageModelCopyWithImpl<$Res, $Val extends LastMessageModel>
     Object? isRead = freezed,
   }) {
     return _then(_value.copyWith(
+      token: freezed == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
       senderID: freezed == senderID
           ? _value.senderID
           : senderID // ignore: cast_nullable_to_non_nullable
@@ -134,7 +148,9 @@ abstract class _$$_LastMessageModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? senderID,
+      {String? token,
+      String? image,
+      String? senderID,
       String? receiverID,
       String? message,
       String? date,
@@ -157,6 +173,8 @@ class __$$_LastMessageModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? token = freezed,
+    Object? image = freezed,
     Object? senderID = freezed,
     Object? receiverID = freezed,
     Object? message = freezed,
@@ -169,6 +187,14 @@ class __$$_LastMessageModelCopyWithImpl<$Res>
     Object? isRead = freezed,
   }) {
     return _then(_$_LastMessageModel(
+      token: freezed == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
       senderID: freezed == senderID
           ? _value.senderID
           : senderID // ignore: cast_nullable_to_non_nullable
@@ -217,7 +243,9 @@ class __$$_LastMessageModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_LastMessageModel implements _LastMessageModel {
   _$_LastMessageModel(
-      {this.senderID,
+      {this.token,
+      this.image,
+      this.senderID,
       this.receiverID,
       this.message,
       this.date,
@@ -231,6 +259,10 @@ class _$_LastMessageModel implements _LastMessageModel {
   factory _$_LastMessageModel.fromJson(Map<String, dynamic> json) =>
       _$$_LastMessageModelFromJson(json);
 
+  @override
+  final String? token;
+  @override
+  final String? image;
   @override
   final String? senderID;
   @override
@@ -254,7 +286,7 @@ class _$_LastMessageModel implements _LastMessageModel {
 
   @override
   String toString() {
-    return 'LastMessageModel(senderID: $senderID, receiverID: $receiverID, message: $message, date: $date, media: $media, isImage: $isImage, isVideo: $isVideo, isDoc: $isDoc, isDeleted: $isDeleted, isRead: $isRead)';
+    return 'LastMessageModel(token: $token, image: $image, senderID: $senderID, receiverID: $receiverID, message: $message, date: $date, media: $media, isImage: $isImage, isVideo: $isVideo, isDoc: $isDoc, isDeleted: $isDeleted, isRead: $isRead)';
   }
 
   @override
@@ -262,6 +294,8 @@ class _$_LastMessageModel implements _LastMessageModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LastMessageModel &&
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.image, image) || other.image == image) &&
             (identical(other.senderID, senderID) ||
                 other.senderID == senderID) &&
             (identical(other.receiverID, receiverID) ||
@@ -279,8 +313,20 @@ class _$_LastMessageModel implements _LastMessageModel {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, senderID, receiverID, message,
-      date, media, isImage, isVideo, isDoc, isDeleted, isRead);
+  int get hashCode => Object.hash(
+      runtimeType,
+      token,
+      image,
+      senderID,
+      receiverID,
+      message,
+      date,
+      media,
+      isImage,
+      isVideo,
+      isDoc,
+      isDeleted,
+      isRead);
 
   @JsonKey(ignore: true)
   @override
@@ -298,7 +344,9 @@ class _$_LastMessageModel implements _LastMessageModel {
 
 abstract class _LastMessageModel implements LastMessageModel {
   factory _LastMessageModel(
-      {final String? senderID,
+      {final String? token,
+      final String? image,
+      final String? senderID,
       final String? receiverID,
       final String? message,
       final String? date,
@@ -312,6 +360,10 @@ abstract class _LastMessageModel implements LastMessageModel {
   factory _LastMessageModel.fromJson(Map<String, dynamic> json) =
       _$_LastMessageModel.fromJson;
 
+  @override
+  String? get token;
+  @override
+  String? get image;
   @override
   String? get senderID;
   @override

@@ -14,6 +14,7 @@ class UserData with _$UserData {
     @HiveField(3) String? phone,
     @HiveField(4) String? image,
     @HiveField(5) bool? inCall,
+    @HiveField(6) Map<String, String>? contacts,
   }) = _UserData;
 
   factory UserData.fromJson(Map<String, dynamic> json) =>

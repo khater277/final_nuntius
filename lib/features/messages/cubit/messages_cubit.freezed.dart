@@ -27,6 +27,17 @@ mixin _$MessagesState {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,6 +51,17 @@ mixin _$MessagesState {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -53,6 +75,17 @@ mixin _$MessagesState {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -67,6 +100,22 @@ mixin _$MessagesState {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -80,6 +129,17 @@ mixin _$MessagesState {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -93,6 +153,17 @@ mixin _$MessagesState {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -162,6 +233,17 @@ class _$_Initial implements _Initial {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return initial();
   }
@@ -178,6 +260,17 @@ class _$_Initial implements _Initial {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return initial?.call();
   }
@@ -194,6 +287,17 @@ class _$_Initial implements _Initial {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -214,6 +318,22 @@ class _$_Initial implements _Initial {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return initial(this);
   }
@@ -230,6 +350,17 @@ class _$_Initial implements _Initial {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return initial?.call(this);
   }
@@ -246,6 +377,17 @@ class _$_Initial implements _Initial {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -306,6 +448,17 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return initControllers();
   }
@@ -322,6 +475,17 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return initControllers?.call();
   }
@@ -338,6 +502,17 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -358,6 +533,22 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return initControllers(this);
   }
@@ -374,6 +565,17 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return initControllers?.call(this);
   }
@@ -390,6 +592,17 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -450,6 +663,17 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return disposeControllers();
   }
@@ -466,6 +690,17 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return disposeControllers?.call();
   }
@@ -482,6 +717,17 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -502,6 +748,22 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return disposeControllers(this);
   }
@@ -518,6 +780,17 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return disposeControllers?.call(this);
   }
@@ -534,6 +807,17 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -594,6 +878,17 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return sendMessageLoading();
   }
@@ -610,6 +905,17 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return sendMessageLoading?.call();
   }
@@ -626,6 +932,17 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -646,6 +963,22 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return sendMessageLoading(this);
   }
@@ -662,6 +995,17 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return sendMessageLoading?.call(this);
   }
@@ -678,6 +1022,17 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -738,6 +1093,17 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return sendMessage();
   }
@@ -754,6 +1120,17 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return sendMessage?.call();
   }
@@ -770,6 +1147,17 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -790,6 +1178,22 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return sendMessage(this);
   }
@@ -806,6 +1210,17 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return sendMessage?.call(this);
   }
@@ -822,6 +1237,17 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -909,6 +1335,17 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return sendMessageError(errorMsg);
   }
@@ -925,6 +1362,17 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return sendMessageError?.call(errorMsg);
   }
@@ -941,6 +1389,17 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -961,6 +1420,22 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return sendMessageError(this);
   }
@@ -977,6 +1452,17 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return sendMessageError?.call(this);
   }
@@ -993,6 +1479,17 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -1058,6 +1555,17 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return getMessagesLoading();
   }
@@ -1074,6 +1582,17 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return getMessagesLoading?.call();
   }
@@ -1090,6 +1609,17 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -1110,6 +1640,22 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return getMessagesLoading(this);
   }
@@ -1126,6 +1672,17 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return getMessagesLoading?.call(this);
   }
@@ -1142,6 +1699,17 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -1235,6 +1803,17 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return getMessages(messages);
   }
@@ -1251,6 +1830,17 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return getMessages?.call(messages);
   }
@@ -1267,6 +1857,17 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -1287,6 +1888,22 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return getMessages(this);
   }
@@ -1303,6 +1920,17 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return getMessages?.call(this);
   }
@@ -1319,6 +1947,17 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -1412,6 +2051,17 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
   }) {
     return getMessagesError(errorMsg);
   }
@@ -1428,6 +2078,17 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
   }) {
     return getMessagesError?.call(errorMsg);
   }
@@ -1444,6 +2105,17 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -1464,6 +2136,22 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
   }) {
     return getMessagesError(this);
   }
@@ -1480,6 +2168,17 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
   }) {
     return getMessagesError?.call(this);
   }
@@ -1496,6 +2195,17 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -1512,4 +2222,2474 @@ abstract class _GetMessagesError implements MessagesState {
   @JsonKey(ignore: true)
   _$$_GetMessagesErrorCopyWith<_$_GetMessagesError> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageImageLoadingCopyWith<$Res> {
+  factory _$$_PickMessageImageLoadingCopyWith(_$_PickMessageImageLoading value,
+          $Res Function(_$_PickMessageImageLoading) then) =
+      __$$_PickMessageImageLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageImageLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImageLoading>
+    implements _$$_PickMessageImageLoadingCopyWith<$Res> {
+  __$$_PickMessageImageLoadingCopyWithImpl(_$_PickMessageImageLoading _value,
+      $Res Function(_$_PickMessageImageLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageImageLoading implements _PickMessageImageLoading {
+  const _$_PickMessageImageLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageImageLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageImageLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageImageLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageImageLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImageLoading != null) {
+      return pickMessageImageLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageImageLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageImageLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImageLoading != null) {
+      return pickMessageImageLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageImageLoading implements MessagesState {
+  const factory _PickMessageImageLoading() = _$_PickMessageImageLoading;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageImageCopyWith<$Res> {
+  factory _$$_PickMessageImageCopyWith(
+          _$_PickMessageImage value, $Res Function(_$_PickMessageImage) then) =
+      __$$_PickMessageImageCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageImageCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImage>
+    implements _$$_PickMessageImageCopyWith<$Res> {
+  __$$_PickMessageImageCopyWithImpl(
+      _$_PickMessageImage _value, $Res Function(_$_PickMessageImage) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageImage implements _PickMessageImage {
+  const _$_PickMessageImage();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageImage()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_PickMessageImage);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageImage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageImage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImage != null) {
+      return pickMessageImage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageImage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageImage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImage != null) {
+      return pickMessageImage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageImage implements MessagesState {
+  const factory _PickMessageImage() = _$_PickMessageImage;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageImageErrorCopyWith<$Res> {
+  factory _$$_PickMessageImageErrorCopyWith(_$_PickMessageImageError value,
+          $Res Function(_$_PickMessageImageError) then) =
+      __$$_PickMessageImageErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_PickMessageImageErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImageError>
+    implements _$$_PickMessageImageErrorCopyWith<$Res> {
+  __$$_PickMessageImageErrorCopyWithImpl(_$_PickMessageImageError _value,
+      $Res Function(_$_PickMessageImageError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_PickMessageImageError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_PickMessageImageError implements _PickMessageImageError {
+  const _$_PickMessageImageError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageImageError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageImageError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_PickMessageImageErrorCopyWith<_$_PickMessageImageError> get copyWith =>
+      __$$_PickMessageImageErrorCopyWithImpl<_$_PickMessageImageError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageImageError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageImageError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImageError != null) {
+      return pickMessageImageError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageImageError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageImageError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageImageError != null) {
+      return pickMessageImageError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageImageError implements MessagesState {
+  const factory _PickMessageImageError(final String errorMsg) =
+      _$_PickMessageImageError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_PickMessageImageErrorCopyWith<_$_PickMessageImageError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageVideoLoadingCopyWith<$Res> {
+  factory _$$_PickMessageVideoLoadingCopyWith(_$_PickMessageVideoLoading value,
+          $Res Function(_$_PickMessageVideoLoading) then) =
+      __$$_PickMessageVideoLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageVideoLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideoLoading>
+    implements _$$_PickMessageVideoLoadingCopyWith<$Res> {
+  __$$_PickMessageVideoLoadingCopyWithImpl(_$_PickMessageVideoLoading _value,
+      $Res Function(_$_PickMessageVideoLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
+  const _$_PickMessageVideoLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageVideoLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageVideoLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageVideoLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageVideoLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideoLoading != null) {
+      return pickMessageVideoLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageVideoLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageVideoLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideoLoading != null) {
+      return pickMessageVideoLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageVideoLoading implements MessagesState {
+  const factory _PickMessageVideoLoading() = _$_PickMessageVideoLoading;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageVideoCopyWith<$Res> {
+  factory _$$_PickMessageVideoCopyWith(
+          _$_PickMessageVideo value, $Res Function(_$_PickMessageVideo) then) =
+      __$$_PickMessageVideoCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageVideoCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideo>
+    implements _$$_PickMessageVideoCopyWith<$Res> {
+  __$$_PickMessageVideoCopyWithImpl(
+      _$_PickMessageVideo _value, $Res Function(_$_PickMessageVideo) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageVideo implements _PickMessageVideo {
+  const _$_PickMessageVideo();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageVideo()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_PickMessageVideo);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageVideo();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageVideo?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideo != null) {
+      return pickMessageVideo();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageVideo(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageVideo?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideo != null) {
+      return pickMessageVideo(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageVideo implements MessagesState {
+  const factory _PickMessageVideo() = _$_PickMessageVideo;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageVideoErrorCopyWith<$Res> {
+  factory _$$_PickMessageVideoErrorCopyWith(_$_PickMessageVideoError value,
+          $Res Function(_$_PickMessageVideoError) then) =
+      __$$_PickMessageVideoErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_PickMessageVideoErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideoError>
+    implements _$$_PickMessageVideoErrorCopyWith<$Res> {
+  __$$_PickMessageVideoErrorCopyWithImpl(_$_PickMessageVideoError _value,
+      $Res Function(_$_PickMessageVideoError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_PickMessageVideoError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_PickMessageVideoError implements _PickMessageVideoError {
+  const _$_PickMessageVideoError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageVideoError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageVideoError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_PickMessageVideoErrorCopyWith<_$_PickMessageVideoError> get copyWith =>
+      __$$_PickMessageVideoErrorCopyWithImpl<_$_PickMessageVideoError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageVideoError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageVideoError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideoError != null) {
+      return pickMessageVideoError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageVideoError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageVideoError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageVideoError != null) {
+      return pickMessageVideoError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageVideoError implements MessagesState {
+  const factory _PickMessageVideoError(final String errorMsg) =
+      _$_PickMessageVideoError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_PickMessageVideoErrorCopyWith<_$_PickMessageVideoError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageFileLoadingCopyWith<$Res> {
+  factory _$$_PickMessageFileLoadingCopyWith(_$_PickMessageFileLoading value,
+          $Res Function(_$_PickMessageFileLoading) then) =
+      __$$_PickMessageFileLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageFileLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFileLoading>
+    implements _$$_PickMessageFileLoadingCopyWith<$Res> {
+  __$$_PickMessageFileLoadingCopyWithImpl(_$_PickMessageFileLoading _value,
+      $Res Function(_$_PickMessageFileLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageFileLoading implements _PickMessageFileLoading {
+  const _$_PickMessageFileLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageFileLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageFileLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageFileLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageFileLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFileLoading != null) {
+      return pickMessageFileLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageFileLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageFileLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFileLoading != null) {
+      return pickMessageFileLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageFileLoading implements MessagesState {
+  const factory _PickMessageFileLoading() = _$_PickMessageFileLoading;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageFileCopyWith<$Res> {
+  factory _$$_PickMessageFileCopyWith(
+          _$_PickMessageFile value, $Res Function(_$_PickMessageFile) then) =
+      __$$_PickMessageFileCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_PickMessageFileCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFile>
+    implements _$$_PickMessageFileCopyWith<$Res> {
+  __$$_PickMessageFileCopyWithImpl(
+      _$_PickMessageFile _value, $Res Function(_$_PickMessageFile) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_PickMessageFile implements _PickMessageFile {
+  const _$_PickMessageFile();
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageFile()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_PickMessageFile);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageFile();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageFile?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFile != null) {
+      return pickMessageFile();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageFile(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageFile?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFile != null) {
+      return pickMessageFile(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageFile implements MessagesState {
+  const factory _PickMessageFile() = _$_PickMessageFile;
+}
+
+/// @nodoc
+abstract class _$$_PickMessageFileErrorCopyWith<$Res> {
+  factory _$$_PickMessageFileErrorCopyWith(_$_PickMessageFileError value,
+          $Res Function(_$_PickMessageFileError) then) =
+      __$$_PickMessageFileErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_PickMessageFileErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFileError>
+    implements _$$_PickMessageFileErrorCopyWith<$Res> {
+  __$$_PickMessageFileErrorCopyWithImpl(_$_PickMessageFileError _value,
+      $Res Function(_$_PickMessageFileError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_PickMessageFileError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_PickMessageFileError implements _PickMessageFileError {
+  const _$_PickMessageFileError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.pickMessageFileError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_PickMessageFileError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_PickMessageFileErrorCopyWith<_$_PickMessageFileError> get copyWith =>
+      __$$_PickMessageFileErrorCopyWithImpl<_$_PickMessageFileError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return pickMessageFileError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return pickMessageFileError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFileError != null) {
+      return pickMessageFileError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return pickMessageFileError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return pickMessageFileError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (pickMessageFileError != null) {
+      return pickMessageFileError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _PickMessageFileError implements MessagesState {
+  const factory _PickMessageFileError(final String errorMsg) =
+      _$_PickMessageFileError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_PickMessageFileErrorCopyWith<_$_PickMessageFileError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_CloseMediaContainerCopyWith<$Res> {
+  factory _$$_CloseMediaContainerCopyWith(_$_CloseMediaContainer value,
+          $Res Function(_$_CloseMediaContainer) then) =
+      __$$_CloseMediaContainerCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CloseMediaContainerCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_CloseMediaContainer>
+    implements _$$_CloseMediaContainerCopyWith<$Res> {
+  __$$_CloseMediaContainerCopyWithImpl(_$_CloseMediaContainer _value,
+      $Res Function(_$_CloseMediaContainer) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CloseMediaContainer implements _CloseMediaContainer {
+  const _$_CloseMediaContainer();
+
+  @override
+  String toString() {
+    return 'MessagesState.closeMediaContainer()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_CloseMediaContainer);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return closeMediaContainer();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return closeMediaContainer?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (closeMediaContainer != null) {
+      return closeMediaContainer();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return closeMediaContainer(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return closeMediaContainer?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (closeMediaContainer != null) {
+      return closeMediaContainer(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CloseMediaContainer implements MessagesState {
+  const factory _CloseMediaContainer() = _$_CloseMediaContainer;
+}
+
+/// @nodoc
+abstract class _$$_GetFilePercentageCopyWith<$Res> {
+  factory _$$_GetFilePercentageCopyWith(_$_GetFilePercentage value,
+          $Res Function(_$_GetFilePercentage) then) =
+      __$$_GetFilePercentageCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetFilePercentageCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_GetFilePercentage>
+    implements _$$_GetFilePercentageCopyWith<$Res> {
+  __$$_GetFilePercentageCopyWithImpl(
+      _$_GetFilePercentage _value, $Res Function(_$_GetFilePercentage) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetFilePercentage implements _GetFilePercentage {
+  const _$_GetFilePercentage();
+
+  @override
+  String toString() {
+    return 'MessagesState.getFilePercentage()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetFilePercentage);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+  }) {
+    return getFilePercentage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+  }) {
+    return getFilePercentage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (getFilePercentage != null) {
+      return getFilePercentage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+  }) {
+    return getFilePercentage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+  }) {
+    return getFilePercentage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    required TResult orElse(),
+  }) {
+    if (getFilePercentage != null) {
+      return getFilePercentage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetFilePercentage implements MessagesState {
+  const factory _GetFilePercentage() = _$_GetFilePercentage;
 }

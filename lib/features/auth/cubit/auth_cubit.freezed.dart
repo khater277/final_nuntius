@@ -36,6 +36,12 @@ mixin _$AuthState {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,6 +64,12 @@ mixin _$AuthState {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -80,6 +92,12 @@ mixin _$AuthState {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -106,11 +124,18 @@ mixin _$AuthState {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -133,10 +158,16 @@ mixin _$AuthState {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -159,10 +190,16 @@ mixin _$AuthState {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -240,6 +277,12 @@ class _$_Initial implements _Initial {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return initial();
   }
@@ -265,6 +308,12 @@ class _$_Initial implements _Initial {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return initial?.call();
   }
@@ -290,6 +339,12 @@ class _$_Initial implements _Initial {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -322,11 +377,18 @@ class _$_Initial implements _Initial {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return initial(this);
   }
@@ -352,10 +414,16 @@ class _$_Initial implements _Initial {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return initial?.call(this);
   }
@@ -381,10 +449,16 @@ class _$_Initial implements _Initial {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -454,6 +528,12 @@ class _$_InitController implements _InitController {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return initController();
   }
@@ -479,6 +559,12 @@ class _$_InitController implements _InitController {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return initController?.call();
   }
@@ -504,6 +590,12 @@ class _$_InitController implements _InitController {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (initController != null) {
@@ -536,11 +628,18 @@ class _$_InitController implements _InitController {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return initController(this);
   }
@@ -566,10 +665,16 @@ class _$_InitController implements _InitController {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return initController?.call(this);
   }
@@ -595,10 +700,16 @@ class _$_InitController implements _InitController {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (initController != null) {
@@ -668,6 +779,12 @@ class _$_DisposeController implements _DisposeController {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return disposeController();
   }
@@ -693,6 +810,12 @@ class _$_DisposeController implements _DisposeController {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return disposeController?.call();
   }
@@ -718,6 +841,12 @@ class _$_DisposeController implements _DisposeController {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (disposeController != null) {
@@ -750,11 +879,18 @@ class _$_DisposeController implements _DisposeController {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return disposeController(this);
   }
@@ -780,10 +916,16 @@ class _$_DisposeController implements _DisposeController {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return disposeController?.call(this);
   }
@@ -809,10 +951,16 @@ class _$_DisposeController implements _DisposeController {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (disposeController != null) {
@@ -885,6 +1033,12 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return signInWithPhoneNumberLoading();
   }
@@ -910,6 +1064,12 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return signInWithPhoneNumberLoading?.call();
   }
@@ -935,6 +1095,12 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (signInWithPhoneNumberLoading != null) {
@@ -967,11 +1133,18 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return signInWithPhoneNumberLoading(this);
   }
@@ -997,10 +1170,16 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return signInWithPhoneNumberLoading?.call(this);
   }
@@ -1026,10 +1205,16 @@ class _$_SignInWithPhoneNumberLoading implements _SignInWithPhoneNumberLoading {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (signInWithPhoneNumberLoading != null) {
@@ -1100,6 +1285,12 @@ class _$_CodeSent implements _CodeSent {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return codeSent();
   }
@@ -1125,6 +1316,12 @@ class _$_CodeSent implements _CodeSent {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return codeSent?.call();
   }
@@ -1150,6 +1347,12 @@ class _$_CodeSent implements _CodeSent {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (codeSent != null) {
@@ -1182,11 +1385,18 @@ class _$_CodeSent implements _CodeSent {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return codeSent(this);
   }
@@ -1212,10 +1422,16 @@ class _$_CodeSent implements _CodeSent {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return codeSent?.call(this);
   }
@@ -1241,10 +1457,16 @@ class _$_CodeSent implements _CodeSent {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (codeSent != null) {
@@ -1314,6 +1536,12 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return submitOtpLoading();
   }
@@ -1339,6 +1567,12 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return submitOtpLoading?.call();
   }
@@ -1364,6 +1598,12 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (submitOtpLoading != null) {
@@ -1396,11 +1636,18 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return submitOtpLoading(this);
   }
@@ -1426,10 +1673,16 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return submitOtpLoading?.call(this);
   }
@@ -1455,10 +1708,16 @@ class _$_SubmitOtpLoading implements _SubmitOtpLoading {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (submitOtpLoading != null) {
@@ -1528,6 +1787,12 @@ class _$_SubmitOtp implements _SubmitOtp {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return submitOtp();
   }
@@ -1553,6 +1818,12 @@ class _$_SubmitOtp implements _SubmitOtp {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return submitOtp?.call();
   }
@@ -1578,6 +1849,12 @@ class _$_SubmitOtp implements _SubmitOtp {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (submitOtp != null) {
@@ -1610,11 +1887,18 @@ class _$_SubmitOtp implements _SubmitOtp {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return submitOtp(this);
   }
@@ -1640,10 +1924,16 @@ class _$_SubmitOtp implements _SubmitOtp {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return submitOtp?.call(this);
   }
@@ -1669,10 +1959,16 @@ class _$_SubmitOtp implements _SubmitOtp {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (submitOtp != null) {
@@ -1742,6 +2038,12 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return verificationCompleted();
   }
@@ -1767,6 +2069,12 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return verificationCompleted?.call();
   }
@@ -1792,6 +2100,12 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (verificationCompleted != null) {
@@ -1824,11 +2138,18 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return verificationCompleted(this);
   }
@@ -1854,10 +2175,16 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return verificationCompleted?.call(this);
   }
@@ -1883,10 +2210,16 @@ class _$_VerificationCompleted implements _VerificationCompleted {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (verificationCompleted != null) {
@@ -1983,6 +2316,12 @@ class _$_ErrorState implements _ErrorState {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return errorState(errorMsg);
   }
@@ -2008,6 +2347,12 @@ class _$_ErrorState implements _ErrorState {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return errorState?.call(errorMsg);
   }
@@ -2033,6 +2378,12 @@ class _$_ErrorState implements _ErrorState {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (errorState != null) {
@@ -2065,11 +2416,18 @@ class _$_ErrorState implements _ErrorState {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return errorState(this);
   }
@@ -2095,10 +2453,16 @@ class _$_ErrorState implements _ErrorState {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return errorState?.call(this);
   }
@@ -2124,10 +2488,16 @@ class _$_ErrorState implements _ErrorState {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (errorState != null) {
@@ -2203,6 +2573,12 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return pickProfileImageLoading();
   }
@@ -2228,6 +2604,12 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return pickProfileImageLoading?.call();
   }
@@ -2253,6 +2635,12 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImageLoading != null) {
@@ -2285,11 +2673,18 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return pickProfileImageLoading(this);
   }
@@ -2315,10 +2710,16 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return pickProfileImageLoading?.call(this);
   }
@@ -2344,10 +2745,16 @@ class _$_PickProfileImageLoading implements _PickProfileImageLoading {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImageLoading != null) {
@@ -2417,6 +2824,12 @@ class _$_PickProfileImage implements _PickProfileImage {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return pickProfileImage();
   }
@@ -2442,6 +2855,12 @@ class _$_PickProfileImage implements _PickProfileImage {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return pickProfileImage?.call();
   }
@@ -2467,6 +2886,12 @@ class _$_PickProfileImage implements _PickProfileImage {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImage != null) {
@@ -2499,11 +2924,18 @@ class _$_PickProfileImage implements _PickProfileImage {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return pickProfileImage(this);
   }
@@ -2529,10 +2961,16 @@ class _$_PickProfileImage implements _PickProfileImage {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return pickProfileImage?.call(this);
   }
@@ -2558,10 +2996,16 @@ class _$_PickProfileImage implements _PickProfileImage {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImage != null) {
@@ -2659,6 +3103,12 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return pickProfileImageError(errorMsg);
   }
@@ -2684,6 +3134,12 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return pickProfileImageError?.call(errorMsg);
   }
@@ -2709,6 +3165,12 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImageError != null) {
@@ -2741,11 +3203,18 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return pickProfileImageError(this);
   }
@@ -2771,10 +3240,16 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return pickProfileImageError?.call(this);
   }
@@ -2800,10 +3275,16 @@ class _$_PickProfileImageError implements _PickProfileImageError {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (pickProfileImageError != null) {
@@ -2882,6 +3363,12 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return uploadImageToStorageLoading();
   }
@@ -2907,6 +3394,12 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return uploadImageToStorageLoading?.call();
   }
@@ -2932,6 +3425,12 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorageLoading != null) {
@@ -2964,11 +3463,18 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return uploadImageToStorageLoading(this);
   }
@@ -2994,10 +3500,16 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return uploadImageToStorageLoading?.call(this);
   }
@@ -3023,10 +3535,16 @@ class _$_UploadImageToStorageLoading implements _UploadImageToStorageLoading {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorageLoading != null) {
@@ -3096,6 +3614,12 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return uploadImageToStorage();
   }
@@ -3121,6 +3645,12 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return uploadImageToStorage?.call();
   }
@@ -3146,6 +3676,12 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorage != null) {
@@ -3178,11 +3714,18 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return uploadImageToStorage(this);
   }
@@ -3208,10 +3751,16 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return uploadImageToStorage?.call(this);
   }
@@ -3237,10 +3786,16 @@ class _$_UploadImageToStorage implements _UploadImageToStorage {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorage != null) {
@@ -3340,6 +3895,12 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return uploadImageToStorageError(errorMsg);
   }
@@ -3365,6 +3926,12 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return uploadImageToStorageError?.call(errorMsg);
   }
@@ -3390,6 +3957,12 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorageError != null) {
@@ -3422,11 +3995,18 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return uploadImageToStorageError(this);
   }
@@ -3452,10 +4032,16 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return uploadImageToStorageError?.call(this);
   }
@@ -3481,10 +4067,16 @@ class _$_UploadImageToStorageError implements _UploadImageToStorageError {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (uploadImageToStorageError != null) {
@@ -3505,26 +4097,27 @@ abstract class _UploadImageToStorageError implements AuthState {
 }
 
 /// @nodoc
-abstract class _$$AddUserToFirestoreLoadingCopyWith<$Res> {
-  factory _$$AddUserToFirestoreLoadingCopyWith(
-          _$AddUserToFirestoreLoading value,
-          $Res Function(_$AddUserToFirestoreLoading) then) =
-      __$$AddUserToFirestoreLoadingCopyWithImpl<$Res>;
+abstract class _$$_AddUserToFirestoreLoadingCopyWith<$Res> {
+  factory _$$_AddUserToFirestoreLoadingCopyWith(
+          _$_AddUserToFirestoreLoading value,
+          $Res Function(_$_AddUserToFirestoreLoading) then) =
+      __$$_AddUserToFirestoreLoadingCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AddUserToFirestoreLoadingCopyWithImpl<$Res>
-    extends _$AuthStateCopyWithImpl<$Res, _$AddUserToFirestoreLoading>
-    implements _$$AddUserToFirestoreLoadingCopyWith<$Res> {
-  __$$AddUserToFirestoreLoadingCopyWithImpl(_$AddUserToFirestoreLoading _value,
-      $Res Function(_$AddUserToFirestoreLoading) _then)
+class __$$_AddUserToFirestoreLoadingCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_AddUserToFirestoreLoading>
+    implements _$$_AddUserToFirestoreLoadingCopyWith<$Res> {
+  __$$_AddUserToFirestoreLoadingCopyWithImpl(
+      _$_AddUserToFirestoreLoading _value,
+      $Res Function(_$_AddUserToFirestoreLoading) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
-  const _$AddUserToFirestoreLoading();
+class _$_AddUserToFirestoreLoading implements _AddUserToFirestoreLoading {
+  const _$_AddUserToFirestoreLoading();
 
   @override
   String toString() {
@@ -3535,7 +4128,7 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$AddUserToFirestoreLoading);
+            other is _$_AddUserToFirestoreLoading);
   }
 
   @override
@@ -3562,6 +4155,12 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return addUserToFirestoreLoading();
   }
@@ -3587,6 +4186,12 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return addUserToFirestoreLoading?.call();
   }
@@ -3612,6 +4217,12 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestoreLoading != null) {
@@ -3644,11 +4255,18 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return addUserToFirestoreLoading(this);
   }
@@ -3674,10 +4292,16 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return addUserToFirestoreLoading?.call(this);
   }
@@ -3703,10 +4327,16 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestoreLoading != null) {
@@ -3716,8 +4346,8 @@ class _$AddUserToFirestoreLoading implements AddUserToFirestoreLoading {
   }
 }
 
-abstract class AddUserToFirestoreLoading implements AuthState {
-  const factory AddUserToFirestoreLoading() = _$AddUserToFirestoreLoading;
+abstract class _AddUserToFirestoreLoading implements AuthState {
+  const factory _AddUserToFirestoreLoading() = _$_AddUserToFirestoreLoading;
 }
 
 /// @nodoc
@@ -3776,6 +4406,12 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return addUserToFirestore();
   }
@@ -3801,6 +4437,12 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return addUserToFirestore?.call();
   }
@@ -3826,6 +4468,12 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestore != null) {
@@ -3858,11 +4506,18 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return addUserToFirestore(this);
   }
@@ -3888,10 +4543,16 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return addUserToFirestore?.call(this);
   }
@@ -3917,10 +4578,16 @@ class _$_AddUserToFirestore implements _AddUserToFirestore {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestore != null) {
@@ -4019,6 +4686,12 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     required TResult Function() addUserToFirestoreLoading,
     required TResult Function() addUserToFirestore,
     required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
   }) {
     return addUserToFirestoreError(errorMsg);
   }
@@ -4044,6 +4717,12 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     TResult? Function()? addUserToFirestoreLoading,
     TResult? Function()? addUserToFirestore,
     TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
   }) {
     return addUserToFirestoreError?.call(errorMsg);
   }
@@ -4069,6 +4748,12 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     TResult Function()? addUserToFirestoreLoading,
     TResult Function()? addUserToFirestore,
     TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestoreError != null) {
@@ -4101,11 +4786,18 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
     required TResult Function(_UploadImageToStorageError value)
         uploadImageToStorageError,
-    required TResult Function(AddUserToFirestoreLoading value)
+    required TResult Function(_AddUserToFirestoreLoading value)
         addUserToFirestoreLoading,
     required TResult Function(_AddUserToFirestore value) addUserToFirestore,
     required TResult Function(_AddUserToFirestoreError value)
         addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
   }) {
     return addUserToFirestoreError(this);
   }
@@ -4131,10 +4823,16 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult? Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult? Function(AddUserToFirestoreLoading value)?
+    TResult? Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
   }) {
     return addUserToFirestoreError?.call(this);
   }
@@ -4160,10 +4858,16 @@ class _$_AddUserToFirestoreError implements _AddUserToFirestoreError {
     TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
     TResult Function(_UploadImageToStorageError value)?
         uploadImageToStorageError,
-    TResult Function(AddUserToFirestoreLoading value)?
+    TResult Function(_AddUserToFirestoreLoading value)?
         addUserToFirestoreLoading,
     TResult Function(_AddUserToFirestore value)? addUserToFirestore,
     TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
     required TResult orElse(),
   }) {
     if (addUserToFirestoreError != null) {
@@ -4181,4 +4885,1577 @@ abstract class _AddUserToFirestoreError implements AuthState {
   @JsonKey(ignore: true)
   _$$_AddUserToFirestoreErrorCopyWith<_$_AddUserToFirestoreError>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_UpdateUserTokenLoadingCopyWith<$Res> {
+  factory _$$_UpdateUserTokenLoadingCopyWith(_$_UpdateUserTokenLoading value,
+          $Res Function(_$_UpdateUserTokenLoading) then) =
+      __$$_UpdateUserTokenLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_UpdateUserTokenLoadingCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_UpdateUserTokenLoading>
+    implements _$$_UpdateUserTokenLoadingCopyWith<$Res> {
+  __$$_UpdateUserTokenLoadingCopyWithImpl(_$_UpdateUserTokenLoading _value,
+      $Res Function(_$_UpdateUserTokenLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_UpdateUserTokenLoading implements _UpdateUserTokenLoading {
+  const _$_UpdateUserTokenLoading();
+
+  @override
+  String toString() {
+    return 'AuthState.updateUserTokenLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UpdateUserTokenLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return updateUserTokenLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return updateUserTokenLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserTokenLoading != null) {
+      return updateUserTokenLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return updateUserTokenLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return updateUserTokenLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserTokenLoading != null) {
+      return updateUserTokenLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UpdateUserTokenLoading implements AuthState {
+  const factory _UpdateUserTokenLoading() = _$_UpdateUserTokenLoading;
+}
+
+/// @nodoc
+abstract class _$$_UpdateUserTokenCopyWith<$Res> {
+  factory _$$_UpdateUserTokenCopyWith(
+          _$_UpdateUserToken value, $Res Function(_$_UpdateUserToken) then) =
+      __$$_UpdateUserTokenCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_UpdateUserTokenCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_UpdateUserToken>
+    implements _$$_UpdateUserTokenCopyWith<$Res> {
+  __$$_UpdateUserTokenCopyWithImpl(
+      _$_UpdateUserToken _value, $Res Function(_$_UpdateUserToken) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_UpdateUserToken implements _UpdateUserToken {
+  const _$_UpdateUserToken();
+
+  @override
+  String toString() {
+    return 'AuthState.updateUserToken()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_UpdateUserToken);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return updateUserToken();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return updateUserToken?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserToken != null) {
+      return updateUserToken();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return updateUserToken(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return updateUserToken?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserToken != null) {
+      return updateUserToken(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UpdateUserToken implements AuthState {
+  const factory _UpdateUserToken() = _$_UpdateUserToken;
+}
+
+/// @nodoc
+abstract class _$$_UpdateUserTokenErrorCopyWith<$Res> {
+  factory _$$_UpdateUserTokenErrorCopyWith(_$_UpdateUserTokenError value,
+          $Res Function(_$_UpdateUserTokenError) then) =
+      __$$_UpdateUserTokenErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_UpdateUserTokenErrorCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_UpdateUserTokenError>
+    implements _$$_UpdateUserTokenErrorCopyWith<$Res> {
+  __$$_UpdateUserTokenErrorCopyWithImpl(_$_UpdateUserTokenError _value,
+      $Res Function(_$_UpdateUserTokenError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_UpdateUserTokenError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_UpdateUserTokenError implements _UpdateUserTokenError {
+  const _$_UpdateUserTokenError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'AuthState.updateUserTokenError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UpdateUserTokenError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_UpdateUserTokenErrorCopyWith<_$_UpdateUserTokenError> get copyWith =>
+      __$$_UpdateUserTokenErrorCopyWithImpl<_$_UpdateUserTokenError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return updateUserTokenError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return updateUserTokenError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserTokenError != null) {
+      return updateUserTokenError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return updateUserTokenError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return updateUserTokenError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (updateUserTokenError != null) {
+      return updateUserTokenError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UpdateUserTokenError implements AuthState {
+  const factory _UpdateUserTokenError(final String errorMsg) =
+      _$_UpdateUserTokenError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_UpdateUserTokenErrorCopyWith<_$_UpdateUserTokenError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsLoadingCopyWith<$Res> {
+  factory _$$_GetContactsLoadingCopyWith(_$_GetContactsLoading value,
+          $Res Function(_$_GetContactsLoading) then) =
+      __$$_GetContactsLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetContactsLoadingCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_GetContactsLoading>
+    implements _$$_GetContactsLoadingCopyWith<$Res> {
+  __$$_GetContactsLoadingCopyWithImpl(
+      _$_GetContactsLoading _value, $Res Function(_$_GetContactsLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetContactsLoading implements _GetContactsLoading {
+  const _$_GetContactsLoading();
+
+  @override
+  String toString() {
+    return 'AuthState.getContactsLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetContactsLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return getContactsLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return getContactsLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsLoading != null) {
+      return getContactsLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContactsLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContactsLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsLoading != null) {
+      return getContactsLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContactsLoading implements AuthState {
+  const factory _GetContactsLoading() = _$_GetContactsLoading;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsCopyWith<$Res> {
+  factory _$$_GetContactsCopyWith(
+          _$_GetContacts value, $Res Function(_$_GetContacts) then) =
+      __$$_GetContactsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GetContactsCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_GetContacts>
+    implements _$$_GetContactsCopyWith<$Res> {
+  __$$_GetContactsCopyWithImpl(
+      _$_GetContacts _value, $Res Function(_$_GetContacts) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GetContacts implements _GetContacts {
+  const _$_GetContacts();
+
+  @override
+  String toString() {
+    return 'AuthState.getContacts()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GetContacts);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return getContacts();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return getContacts?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContacts != null) {
+      return getContacts();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContacts(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContacts?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContacts != null) {
+      return getContacts(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContacts implements AuthState {
+  const factory _GetContacts() = _$_GetContacts;
+}
+
+/// @nodoc
+abstract class _$$_GetContactsErrorCopyWith<$Res> {
+  factory _$$_GetContactsErrorCopyWith(
+          _$_GetContactsError value, $Res Function(_$_GetContactsError) then) =
+      __$$_GetContactsErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_GetContactsErrorCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$_GetContactsError>
+    implements _$$_GetContactsErrorCopyWith<$Res> {
+  __$$_GetContactsErrorCopyWithImpl(
+      _$_GetContactsError _value, $Res Function(_$_GetContactsError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_GetContactsError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GetContactsError implements _GetContactsError {
+  const _$_GetContactsError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'AuthState.getContactsError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GetContactsError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GetContactsErrorCopyWith<_$_GetContactsError> get copyWith =>
+      __$$_GetContactsErrorCopyWithImpl<_$_GetContactsError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initController,
+    required TResult Function() disposeController,
+    required TResult Function() signInWithPhoneNumberLoading,
+    required TResult Function() codeSent,
+    required TResult Function() submitOtpLoading,
+    required TResult Function() submitOtp,
+    required TResult Function() verificationCompleted,
+    required TResult Function(String errorMsg) errorState,
+    required TResult Function() pickProfileImageLoading,
+    required TResult Function() pickProfileImage,
+    required TResult Function(String errorMsg) pickProfileImageError,
+    required TResult Function() uploadImageToStorageLoading,
+    required TResult Function() uploadImageToStorage,
+    required TResult Function(String errorMsg) uploadImageToStorageError,
+    required TResult Function() addUserToFirestoreLoading,
+    required TResult Function() addUserToFirestore,
+    required TResult Function(String errorMsg) addUserToFirestoreError,
+    required TResult Function() updateUserTokenLoading,
+    required TResult Function() updateUserToken,
+    required TResult Function(String errorMsg) updateUserTokenError,
+    required TResult Function() getContactsLoading,
+    required TResult Function() getContacts,
+    required TResult Function(String errorMsg) getContactsError,
+  }) {
+    return getContactsError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initController,
+    TResult? Function()? disposeController,
+    TResult? Function()? signInWithPhoneNumberLoading,
+    TResult? Function()? codeSent,
+    TResult? Function()? submitOtpLoading,
+    TResult? Function()? submitOtp,
+    TResult? Function()? verificationCompleted,
+    TResult? Function(String errorMsg)? errorState,
+    TResult? Function()? pickProfileImageLoading,
+    TResult? Function()? pickProfileImage,
+    TResult? Function(String errorMsg)? pickProfileImageError,
+    TResult? Function()? uploadImageToStorageLoading,
+    TResult? Function()? uploadImageToStorage,
+    TResult? Function(String errorMsg)? uploadImageToStorageError,
+    TResult? Function()? addUserToFirestoreLoading,
+    TResult? Function()? addUserToFirestore,
+    TResult? Function(String errorMsg)? addUserToFirestoreError,
+    TResult? Function()? updateUserTokenLoading,
+    TResult? Function()? updateUserToken,
+    TResult? Function(String errorMsg)? updateUserTokenError,
+    TResult? Function()? getContactsLoading,
+    TResult? Function()? getContacts,
+    TResult? Function(String errorMsg)? getContactsError,
+  }) {
+    return getContactsError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initController,
+    TResult Function()? disposeController,
+    TResult Function()? signInWithPhoneNumberLoading,
+    TResult Function()? codeSent,
+    TResult Function()? submitOtpLoading,
+    TResult Function()? submitOtp,
+    TResult Function()? verificationCompleted,
+    TResult Function(String errorMsg)? errorState,
+    TResult Function()? pickProfileImageLoading,
+    TResult Function()? pickProfileImage,
+    TResult Function(String errorMsg)? pickProfileImageError,
+    TResult Function()? uploadImageToStorageLoading,
+    TResult Function()? uploadImageToStorage,
+    TResult Function(String errorMsg)? uploadImageToStorageError,
+    TResult Function()? addUserToFirestoreLoading,
+    TResult Function()? addUserToFirestore,
+    TResult Function(String errorMsg)? addUserToFirestoreError,
+    TResult Function()? updateUserTokenLoading,
+    TResult Function()? updateUserToken,
+    TResult Function(String errorMsg)? updateUserTokenError,
+    TResult Function()? getContactsLoading,
+    TResult Function()? getContacts,
+    TResult Function(String errorMsg)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsError != null) {
+      return getContactsError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitController value) initController,
+    required TResult Function(_DisposeController value) disposeController,
+    required TResult Function(_SignInWithPhoneNumberLoading value)
+        signInWithPhoneNumberLoading,
+    required TResult Function(_CodeSent value) codeSent,
+    required TResult Function(_SubmitOtpLoading value) submitOtpLoading,
+    required TResult Function(_SubmitOtp value) submitOtp,
+    required TResult Function(_VerificationCompleted value)
+        verificationCompleted,
+    required TResult Function(_ErrorState value) errorState,
+    required TResult Function(_PickProfileImageLoading value)
+        pickProfileImageLoading,
+    required TResult Function(_PickProfileImage value) pickProfileImage,
+    required TResult Function(_PickProfileImageError value)
+        pickProfileImageError,
+    required TResult Function(_UploadImageToStorageLoading value)
+        uploadImageToStorageLoading,
+    required TResult Function(_UploadImageToStorage value) uploadImageToStorage,
+    required TResult Function(_UploadImageToStorageError value)
+        uploadImageToStorageError,
+    required TResult Function(_AddUserToFirestoreLoading value)
+        addUserToFirestoreLoading,
+    required TResult Function(_AddUserToFirestore value) addUserToFirestore,
+    required TResult Function(_AddUserToFirestoreError value)
+        addUserToFirestoreError,
+    required TResult Function(_UpdateUserTokenLoading value)
+        updateUserTokenLoading,
+    required TResult Function(_UpdateUserToken value) updateUserToken,
+    required TResult Function(_UpdateUserTokenError value) updateUserTokenError,
+    required TResult Function(_GetContactsLoading value) getContactsLoading,
+    required TResult Function(_GetContacts value) getContacts,
+    required TResult Function(_GetContactsError value) getContactsError,
+  }) {
+    return getContactsError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitController value)? initController,
+    TResult? Function(_DisposeController value)? disposeController,
+    TResult? Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult? Function(_CodeSent value)? codeSent,
+    TResult? Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult? Function(_SubmitOtp value)? submitOtp,
+    TResult? Function(_VerificationCompleted value)? verificationCompleted,
+    TResult? Function(_ErrorState value)? errorState,
+    TResult? Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult? Function(_PickProfileImage value)? pickProfileImage,
+    TResult? Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult? Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult? Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult? Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult? Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult? Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult? Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult? Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult? Function(_UpdateUserToken value)? updateUserToken,
+    TResult? Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult? Function(_GetContactsLoading value)? getContactsLoading,
+    TResult? Function(_GetContacts value)? getContacts,
+    TResult? Function(_GetContactsError value)? getContactsError,
+  }) {
+    return getContactsError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitController value)? initController,
+    TResult Function(_DisposeController value)? disposeController,
+    TResult Function(_SignInWithPhoneNumberLoading value)?
+        signInWithPhoneNumberLoading,
+    TResult Function(_CodeSent value)? codeSent,
+    TResult Function(_SubmitOtpLoading value)? submitOtpLoading,
+    TResult Function(_SubmitOtp value)? submitOtp,
+    TResult Function(_VerificationCompleted value)? verificationCompleted,
+    TResult Function(_ErrorState value)? errorState,
+    TResult Function(_PickProfileImageLoading value)? pickProfileImageLoading,
+    TResult Function(_PickProfileImage value)? pickProfileImage,
+    TResult Function(_PickProfileImageError value)? pickProfileImageError,
+    TResult Function(_UploadImageToStorageLoading value)?
+        uploadImageToStorageLoading,
+    TResult Function(_UploadImageToStorage value)? uploadImageToStorage,
+    TResult Function(_UploadImageToStorageError value)?
+        uploadImageToStorageError,
+    TResult Function(_AddUserToFirestoreLoading value)?
+        addUserToFirestoreLoading,
+    TResult Function(_AddUserToFirestore value)? addUserToFirestore,
+    TResult Function(_AddUserToFirestoreError value)? addUserToFirestoreError,
+    TResult Function(_UpdateUserTokenLoading value)? updateUserTokenLoading,
+    TResult Function(_UpdateUserToken value)? updateUserToken,
+    TResult Function(_UpdateUserTokenError value)? updateUserTokenError,
+    TResult Function(_GetContactsLoading value)? getContactsLoading,
+    TResult Function(_GetContacts value)? getContacts,
+    TResult Function(_GetContactsError value)? getContactsError,
+    required TResult orElse(),
+  }) {
+    if (getContactsError != null) {
+      return getContactsError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetContactsError implements AuthState {
+  const factory _GetContactsError(final String errorMsg) = _$_GetContactsError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_GetContactsErrorCopyWith<_$_GetContactsError> get copyWith =>
+      throw _privateConstructorUsedError;
 }

@@ -6,8 +6,9 @@ class CustomCircleIndicator extends StatelessWidget {
   final double? size;
   final Color? color;
   final double? strokeWidth;
+  final double? percentage;
   const CustomCircleIndicator(
-      {super.key, this.size, this.color, this.strokeWidth});
+      {super.key, this.size, this.color, this.strokeWidth, this.percentage});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +18,8 @@ class CustomCircleIndicator extends StatelessWidget {
       child: CircularProgressIndicator(
         color: color ?? AppColors.blue,
         strokeWidth: strokeWidth ?? AppSize.s2,
+        backgroundColor: percentage != null ? AppColors.lightBlack : null,
+        value: percentage,
       ),
     );
   }

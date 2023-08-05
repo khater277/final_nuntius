@@ -23,8 +23,17 @@ class AuthState with _$AuthState {
       _UploadImageToStorageError;
 
   const factory AuthState.addUserToFirestoreLoading() =
-      AddUserToFirestoreLoading;
+      _AddUserToFirestoreLoading;
   const factory AuthState.addUserToFirestore() = _AddUserToFirestore;
   const factory AuthState.addUserToFirestoreError(String errorMsg) =
       _AddUserToFirestoreError;
+
+  const factory AuthState.updateUserTokenLoading() = _UpdateUserTokenLoading;
+  const factory AuthState.updateUserToken() = _UpdateUserToken;
+  const factory AuthState.updateUserTokenError(String errorMsg) =
+      _UpdateUserTokenError;
+
+  const factory AuthState.getContactsLoading() = _GetContactsLoading;
+  const factory AuthState.getContacts() = _GetContacts;
+  const factory AuthState.getContactsError(String errorMsg) = _GetContactsError;
 }

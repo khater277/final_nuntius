@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dartz/dartz.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
@@ -24,15 +25,20 @@ abstract class FirebaseHelper {
   Future<void> addUserToFirestore({required UserData user});
   Future<UserData?> getUserFromFirestore({required String phoneNumber});
   Future<List<UserData>?> getAllUsersFromFirestore();
-  Future<Stream<TaskSnapshot>> uploadImageToStorage({
+  Future<Either<String, Stream<TaskSnapshot>>> uploadImageToStorage({
     required String collectionName,
-    required File image,
+    required File file,
   });
+  Future<void> updateUserToken({required String token});
   Future<void> sendMessage(
-      {required String phoneNumber, required MessageModel messageModel});
+      {required String phoneNumber,
+      required LastMessageModel lastMessageModel,
+      required MessageModel messageModel});
 
   Stream<QuerySnapshot<Map<String, dynamic>>> getMessages(
       {required String phoneNumber});
+
+  Stream<QuerySnapshot<Map<String, dynamic>>> getChats();
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -92,12 +98,21 @@ class FirebaseHelperImpl implements FirebaseHelper {
   }
 
   @override
-  Future<Stream<TaskSnapshot>> uploadImageToStorage(
-      {required String collectionName, required File image}) async {
-    return _storage
-        .ref("$collectionName/${Uri.file(image.path).pathSegments.last}")
-        .putFile(image)
-        .snapshotEvents;
+  Future<Either<String, Stream<TaskSnapshot>>> uploadImageToStorage(
+      {required String collectionName, required File file}) async {
+    final reference = _storage
+        .ref("$collectionName/${Uri.file(file.path).pathSegments.last}");
+
+    try {
+      final result = await reference.getDownloadURL();
+      return Left(result);
+    } on FirebaseException {
+      final result = _storage
+          .ref("$collectionName/${Uri.file(file.path).pathSegments.last}")
+          .putFile(file)
+          .snapshotEvents;
+      return Right(result);
+    }
   }
 
   @override
@@ -123,21 +138,10 @@ class FirebaseHelperImpl implements FirebaseHelper {
   @override
   Future<void> sendMessage({
     required String phoneNumber,
+    required LastMessageModel lastMessageModel,
     required MessageModel messageModel,
   }) async {
     final String id = const Uuid().v4();
-    LastMessageModel lastMessageModel = LastMessageModel(
-      senderID: messageModel.senderId,
-      receiverID: messageModel.receiverId,
-      message: messageModel.message,
-      date: messageModel.date,
-      media: messageModel.media,
-      isImage: messageModel.isImage,
-      isVideo: messageModel.isVideo,
-      isDoc: messageModel.isDoc,
-      isDeleted: messageModel.isDeleted,
-      isRead: false,
-    );
 
     /// add message to my database
     await _db
@@ -185,5 +189,23 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.messages)
         .orderBy('date')
         .snapshots();
+  }
+
+  @override
+  Stream<QuerySnapshot<Map<String, dynamic>>> getChats() {
+    return _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone!)
+        .collection(Collections.chats)
+        .orderBy('date', descending: true)
+        .snapshots();
+  }
+
+  @override
+  Future<void> updateUserToken({required String token}) {
+    return _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone!)
+        .update({'token': token});
   }
 }

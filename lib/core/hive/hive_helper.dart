@@ -35,7 +35,7 @@ class HiveHelper {
 
   static List<UserData>? getAllUsers() {
     List<UserData>? result;
-    if (allUsers!.isNotEmpty) {
+    if (allUsers != null && allUsers!.isNotEmpty) {
       result = [];
       for (int i = 0; i < allUsers!.length; i++) {
         result.add(allUsers!.getAt(i)!);

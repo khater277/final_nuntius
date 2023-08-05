@@ -11,18 +11,27 @@ import 'package:flutter/material.dart';
 
 class ChatLastMessage extends StatelessWidget {
   final MessageType messageType;
-  const ChatLastMessage({Key? key, required this.messageType})
-      : super(key: key);
+  final String message;
+  final bool isMyMessage;
+  final bool isRead;
+
+  const ChatLastMessage({
+    Key? key,
+    required this.messageType,
+    required this.message,
+    required this.isMyMessage,
+    required this.isRead,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // if(lastMessage.senderID==uId)
-        SecondaryText(
-          text: 'you : ',
-          size: FontSize.s12,
-        ),
+        if (isMyMessage)
+          SecondaryText(
+            text: 'you : ',
+            size: FontSize.s12,
+          ),
         Expanded(
           child: messageType == MessageType.deleted
               ? const DeletedLastMessage()
@@ -35,16 +44,16 @@ class ChatLastMessage extends StatelessWidget {
                       : messageType == MessageType.doc
                           ? const MediaLastMessage(
                               icon: IconBroken.Document, name: 'document')
-                          : const TextLastMessage(message: "see you soon!"),
+                          : TextLastMessage(message: message),
         ),
-        // if (lastMessage.isRead == false)
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: AppWidth.w2),
-          child: CircleAvatar(
-            radius: AppSize.s3,
-            backgroundColor: AppColors.blue,
-          ),
-        )
+        if (!isRead)
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: AppWidth.w2),
+            child: CircleAvatar(
+              radius: AppSize.s3,
+              backgroundColor: AppColors.blue,
+            ),
+          )
       ],
     );
   }

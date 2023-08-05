@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:dartz/dartz.dart';
 import 'package:final_nuntius/core/firebase/firebase_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -18,10 +19,11 @@ abstract class AuthRemoteDataSource {
     required String smsCode,
   });
 
-  Future<Stream<TaskSnapshot>?> uploadImageToStorage({
+  Future<Either<String, Stream<TaskSnapshot>>?> uploadImageToStorage({
     required String collectionName,
-    required File image,
+    required File file,
   });
+  Future<void> updateUserToken({required String token});
 
   Future<void> addUserToFirestore({required UserData user});
   Future<UserData?> getUserFromFirestore({required String phoneNumber});
@@ -56,11 +58,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   }
 
   @override
-  Future<Stream<TaskSnapshot>?> uploadImageToStorage(
-      {required String collectionName, required File image}) async {
+  Future<Either<String, Stream<TaskSnapshot>>?> uploadImageToStorage(
+      {required String collectionName, required File file}) async {
     return firebaseHelper.uploadImageToStorage(
       collectionName: collectionName,
-      image: image,
+      file: file,
     );
   }
 
@@ -72,5 +74,10 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   @override
   Future<UserData?> getUserFromFirestore({required String phoneNumber}) {
     return firebaseHelper.getUserFromFirestore(phoneNumber: phoneNumber);
+  }
+
+  @override
+  Future<void> updateUserToken({required String token}) {
+    return firebaseHelper.updateUserToken(token: token);
   }
 }

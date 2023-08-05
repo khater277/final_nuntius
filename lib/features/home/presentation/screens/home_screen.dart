@@ -1,7 +1,12 @@
+import 'package:final_nuntius/core/firebase/fcm_helper.dart';
 import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
+import 'package:final_nuntius/core/utils/app_values.dart';
+import 'package:final_nuntius/core/utils/icons_broken.dart';
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/home/presentation/widgets/app_nav_bar.dart';
+import 'package:final_nuntius/features/home/presentation/widgets/stories_fab.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -15,11 +20,17 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    super.initState();
+    FcmHelper.handleForegroundNotification(homeCubit: HomeCubit.get(context));
+    FcmHelper.handelBackgroundNotification(
+        homeCubit: HomeCubit.get(context), context: context);
     NotificationsHelper.isAndroidPermissionGranted();
     NotificationsHelper.requestPermissions();
     NotificationsHelper.configureDidReceiveLocalNotificationSubject(context);
-    NotificationsHelper.configureSelectNotificationSubject();
+    NotificationsHelper.configureSelectNotificationSubject(
+      ChatsCubit.get(context),
+      context,
+    );
+    super.initState();
   }
 
   @override
@@ -46,6 +57,36 @@ class _HomeScreenState extends State<HomeScreen> {
             body: cubit.screens[cubit.navBarIndex],
             extendBody: true,
             bottomNavigationBar: AppBottomNavBar(cubit: cubit),
+            floatingActionButton: cubit.navBarIndex == 1
+                ? Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      StoriesFab(
+                        onPressed: () {
+                          // Get.to(()=>const AddTextStoryScreen());
+                        },
+                        icon: IconBroken.Edit,
+                        tag: "btn1",
+                      ),
+                      SizedBox(height: AppHeight.h6),
+                      StoriesFab(
+                        onPressed: () {
+                          // cubit.pickStoryImage();
+                        },
+                        icon: IconBroken.Image,
+                        tag: "btn2",
+                      ),
+                      SizedBox(height: AppHeight.h6),
+                      StoriesFab(
+                        onPressed: () {
+                          // cubit.pickStoryVideo();
+                        },
+                        icon: IconBroken.Video,
+                        tag: "btn3",
+                      ),
+                    ],
+                  )
+                : null,
           ),
         );
       },
