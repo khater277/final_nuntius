@@ -8,6 +8,7 @@ part of 'story_model.dart';
 
 _$_StoryModel _$$_StoryModelFromJson(Map<String, dynamic> json) =>
     _$_StoryModel(
+      id: json['id'] as String?,
       date: json['date'] as String?,
       isImage: json['isImage'] as bool?,
       isRead: json['isRead'] as bool?,
@@ -25,6 +26,7 @@ _$_StoryModel _$$_StoryModelFromJson(Map<String, dynamic> json) =>
 
 Map<String, dynamic> _$$_StoryModelToJson(_$_StoryModel instance) =>
     <String, dynamic>{
+      'id': instance.id,
       'date': instance.date,
       'isImage': instance.isImage,
       'isRead': instance.isRead,

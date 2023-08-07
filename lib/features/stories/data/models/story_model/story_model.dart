@@ -7,6 +7,7 @@ part 'story_model.g.dart';
 @freezed
 class StoryModel with _$StoryModel {
   factory StoryModel({
+    String? id,
     String? date,
     bool? isImage,
     bool? isRead,

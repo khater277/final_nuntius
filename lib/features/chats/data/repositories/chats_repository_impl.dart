@@ -14,7 +14,6 @@ class ChatsRepositoryImpl implements ChatsRepository {
   @override
   Future<Either<Failure, Stream<QuerySnapshot<Map<String, dynamic>>>>>
       getChats() async {
-    // if (await networkInfo.connected()) {
     try {
       final response = chatsRemoteDataSource.getChats();
       return Right(response);
@@ -22,15 +21,5 @@ class ChatsRepositoryImpl implements ChatsRepository {
       return Left(
           ServerFailure(error: error, type: NetworkErrorTypes.firestore));
     }
-    // } else {
-    //   FirebaseException error = FirebaseException(
-    //     plugin: '',
-    //     code: 'no-internet-connection',
-    //   );
-    //   return Left(ServerFailure(
-    //     error: error,
-    //     type: NetworkErrorTypes.firestore,
-    //   ));
-    // }
   }
 }

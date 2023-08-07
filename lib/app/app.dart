@@ -41,7 +41,8 @@ class MyApp extends StatelessWidget {
                 ,
               ),
               BlocProvider(
-                create: (BuildContext context) => di<StoriesCubit>(),
+                create: (BuildContext context) => di<StoriesCubit>()
+                  ..getPhones(HomeCubit.get(context).phones.keys.toList()),
               ),
               BlocProvider(
                 create: (BuildContext context) => di<CallsCubit>(),

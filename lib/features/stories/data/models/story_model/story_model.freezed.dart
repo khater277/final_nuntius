@@ -20,6 +20,7 @@ StoryModel _$StoryModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$StoryModel {
+  String? get id => throw _privateConstructorUsedError;
   String? get date => throw _privateConstructorUsedError;
   bool? get isImage => throw _privateConstructorUsedError;
   bool? get isRead => throw _privateConstructorUsedError;
@@ -44,7 +45,8 @@ abstract class $StoryModelCopyWith<$Res> {
       _$StoryModelCopyWithImpl<$Res, StoryModel>;
   @useResult
   $Res call(
-      {String? date,
+      {String? id,
+      String? date,
       bool? isImage,
       bool? isRead,
       bool? isVideo,
@@ -69,6 +71,7 @@ class _$StoryModelCopyWithImpl<$Res, $Val extends StoryModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = freezed,
     Object? date = freezed,
     Object? isImage = freezed,
     Object? isRead = freezed,
@@ -81,6 +84,10 @@ class _$StoryModelCopyWithImpl<$Res, $Val extends StoryModel>
     Object? canView = freezed,
   }) {
     return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -134,7 +141,8 @@ abstract class _$$_StoryModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String? date,
+      {String? id,
+      String? date,
       bool? isImage,
       bool? isRead,
       bool? isVideo,
@@ -157,6 +165,7 @@ class __$$_StoryModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? id = freezed,
     Object? date = freezed,
     Object? isImage = freezed,
     Object? isRead = freezed,
@@ -169,6 +178,10 @@ class __$$_StoryModelCopyWithImpl<$Res>
     Object? canView = freezed,
   }) {
     return _then(_$_StoryModel(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String?,
       date: freezed == date
           ? _value.date
           : date // ignore: cast_nullable_to_non_nullable
@@ -217,7 +230,8 @@ class __$$_StoryModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_StoryModel implements _StoryModel {
   _$_StoryModel(
-      {this.date,
+      {this.id,
+      this.date,
       this.isImage,
       this.isRead,
       this.isVideo,
@@ -233,6 +247,8 @@ class _$_StoryModel implements _StoryModel {
   factory _$_StoryModel.fromJson(Map<String, dynamic> json) =>
       _$$_StoryModelFromJson(json);
 
+  @override
+  final String? id;
   @override
   final String? date;
   @override
@@ -271,7 +287,7 @@ class _$_StoryModel implements _StoryModel {
 
   @override
   String toString() {
-    return 'StoryModel(date: $date, isImage: $isImage, isRead: $isRead, isVideo: $isVideo, videoDuration: $videoDuration, media: $media, phone: $phone, text: $text, viewers: $viewers, canView: $canView)';
+    return 'StoryModel(id: $id, date: $date, isImage: $isImage, isRead: $isRead, isVideo: $isVideo, videoDuration: $videoDuration, media: $media, phone: $phone, text: $text, viewers: $viewers, canView: $canView)';
   }
 
   @override
@@ -279,6 +295,7 @@ class _$_StoryModel implements _StoryModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_StoryModel &&
+            (identical(other.id, id) || other.id == id) &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.isImage, isImage) || other.isImage == isImage) &&
             (identical(other.isRead, isRead) || other.isRead == isRead) &&
@@ -296,6 +313,7 @@ class _$_StoryModel implements _StoryModel {
   @override
   int get hashCode => Object.hash(
       runtimeType,
+      id,
       date,
       isImage,
       isRead,
@@ -323,7 +341,8 @@ class _$_StoryModel implements _StoryModel {
 
 abstract class _StoryModel implements StoryModel {
   factory _StoryModel(
-      {final String? date,
+      {final String? id,
+      final String? date,
       final bool? isImage,
       final bool? isRead,
       final bool? isVideo,
@@ -337,6 +356,8 @@ abstract class _StoryModel implements StoryModel {
   factory _StoryModel.fromJson(Map<String, dynamic> json) =
       _$_StoryModel.fromJson;
 
+  @override
+  String? get id;
   @override
   String? get date;
   @override

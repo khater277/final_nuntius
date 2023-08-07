@@ -19,6 +19,9 @@ import 'package:final_nuntius/features/messages/data/datasources/messages_remote
 import 'package:final_nuntius/features/messages/data/repositories/messages_repository.dart';
 import 'package:final_nuntius/features/messages/data/repositories/messages_repository_impl.dart';
 import 'package:final_nuntius/features/search/cubit/search_cubit.dart';
+import 'package:final_nuntius/features/stories/data/datasources/stories_remote_data_source.dart';
+import 'package:final_nuntius/features/stories/data/repositories/stories_repository.dart';
+import 'package:final_nuntius/features/stories/data/repositories/stories_repository_impl.dart';
 import 'package:get_it/get_it.dart';
 import 'package:final_nuntius/core/apis/agora/agora_api.dart';
 import 'package:final_nuntius/core/apis/agora/agora_end_points.dart';
@@ -46,7 +49,10 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<CallsCubit>(() => CallsCubit(callsRepository: di()));
   di.registerLazySingleton<ChatsCubit>(() => ChatsCubit(chatsRepository: di()));
-  di.registerLazySingleton<StoriesCubit>(() => StoriesCubit());
+  di.registerLazySingleton<StoriesCubit>(() => StoriesCubit(
+        authRepository: di(),
+        storiesRepository: di(),
+      ));
   di.registerLazySingleton<ContactsCubit>(() => ContactsCubit());
   di.registerLazySingleton<MessagesCubit>(() => MessagesCubit(
         messagesRepository: di(),
@@ -74,6 +80,10 @@ void setupGetIt() {
       () => ChatsRemoteDataSourceImpl(
             firebaseHelper: di(),
           ));
+  di.registerLazySingleton<StoriesRemoteDataSource>(
+      () => StoriesRemoteDataSourceImpl(
+            firebaseHelper: di(),
+          ));
 
   /// REPOSITORIES
   di.registerLazySingleton<CallsRepository>(() => CallsRepositoryImpl(
@@ -93,6 +103,11 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<ChatsRepository>(() => ChatsRepositoryImpl(
         chatsRemoteDataSource: di(),
+        networkInfo: di(),
+      ));
+
+  di.registerLazySingleton<StoriesRepository>(() => StoriesRepositoryImpl(
+        storiesRemoteDataSource: di(),
         networkInfo: di(),
       ));
 

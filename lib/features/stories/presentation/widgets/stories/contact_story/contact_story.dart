@@ -1,8 +1,8 @@
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/features/stories/presentation/widgets/contact_story/story_date.dart';
-import 'package:final_nuntius/features/stories/presentation/widgets/contact_story/story_profile_image.dart';
+import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/story_date.dart';
+import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/story_profile_image.dart';
 import 'package:flutter/material.dart';
 
 class ContactStory extends StatelessWidget {

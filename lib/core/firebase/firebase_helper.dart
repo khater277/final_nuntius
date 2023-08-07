@@ -7,6 +7,7 @@ import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
+import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:uuid/uuid.dart';
@@ -35,10 +36,17 @@ abstract class FirebaseHelper {
       required LastMessageModel lastMessageModel,
       required MessageModel messageModel});
 
+  Future<void> setLastStory({required StoryModel storyModel});
+  Future<void> sendStory({required StoryModel storyModel});
+
   Stream<QuerySnapshot<Map<String, dynamic>>> getMessages(
       {required String phoneNumber});
 
   Stream<QuerySnapshot<Map<String, dynamic>>> getChats();
+
+  Stream<QuerySnapshot<Map<String, dynamic>>> getStories();
+
+  Future<void> deleteStory({required String storyId});
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -207,5 +215,43 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.users)
         .doc(HiveHelper.getCurrentUser()!.phone!)
         .update({'token': token});
+  }
+
+  @override
+  Future<void> setLastStory({required StoryModel storyModel}) async {
+    _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.uId)
+        .set(storyModel.toJson());
+  }
+
+  @override
+  Future<void> sendStory({required StoryModel storyModel}) async {
+    _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.uId)
+        .collection(Collections.currentStories)
+        .doc(storyModel.id)
+        .set(storyModel.toJson());
+  }
+
+  @override
+  Stream<QuerySnapshot<Map<String, dynamic>>> getStories() {
+    return _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.uId)
+        .collection(Collections.currentStories)
+        .orderBy('date')
+        .snapshots();
+  }
+
+  @override
+  Future<void> deleteStory({required String storyId}) async {
+    _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.uId)
+        .collection(Collections.currentStories)
+        .doc(storyId)
+        .delete();
   }
 }

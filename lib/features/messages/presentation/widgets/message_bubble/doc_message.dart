@@ -12,9 +12,6 @@ import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:intl/intl.dart';
 import 'package:open_file/open_file.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import 'package:path/path.dart';
 
 class DocMessage extends StatefulWidget {
   const DocMessage({
@@ -45,11 +42,11 @@ class _DocMessageState extends State<DocMessage> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
-        final file = await getFile();
+        // final file = await getFile();
 
-        final filePath = file.absolute.path;
+        // final filePath = file.absolute.path;
         // print(filePath);
-        String x = basename(file.path);
+        // String x = basename(file.path);
         // final directory = await getExternalStorageDirectory();
         // final y = '${directory!.absolute.path}/$x';
         // print('$y/$x');

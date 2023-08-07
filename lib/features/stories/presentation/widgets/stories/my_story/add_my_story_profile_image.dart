@@ -3,7 +3,7 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
-import 'package:final_nuntius/features/stories/presentation/widgets/my_story/no_stories_exist.dart';
+import 'package:final_nuntius/features/stories/presentation/widgets/stories/my_story/no_stories_exist.dart';
 import 'package:flutter/material.dart';
 
 class AddMyStoryProfileImage extends StatelessWidget {
