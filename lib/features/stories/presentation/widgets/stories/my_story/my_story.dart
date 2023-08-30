@@ -24,7 +24,10 @@ class MyStory extends StatelessWidget {
         if (cubit.myStories.isNotEmpty) {
           Go.to(
               context: context,
-              screen: StoryViewScreen(stories: cubit.myStories));
+              screen: StoryViewScreen(
+                stories: cubit.myStories,
+                user: HiveHelper.getCurrentUser()!,
+              ));
         } else {
           cubit.pickStoryImage();
         }
@@ -55,7 +58,12 @@ class MyStory extends StatelessWidget {
                       ),
               ],
             ),
-            LargeHeadText(text: "${cubit.myStories.length}"),
+            Expanded(
+              child: LargeHeadText(
+                text: "${cubit.contactsStories.length}",
+                maxLines: 1,
+              ),
+            ),
           ],
         ),
       ),

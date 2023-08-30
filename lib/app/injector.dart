@@ -52,6 +52,7 @@ void setupGetIt() {
   di.registerLazySingleton<StoriesCubit>(() => StoriesCubit(
         authRepository: di(),
         storiesRepository: di(),
+        messagesRepository: di(),
       ));
   di.registerLazySingleton<ContactsCubit>(() => ContactsCubit());
   di.registerLazySingleton<MessagesCubit>(() => MessagesCubit(

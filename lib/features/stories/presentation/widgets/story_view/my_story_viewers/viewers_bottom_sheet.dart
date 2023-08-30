@@ -28,17 +28,16 @@ class ViewersBottomSheet extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Padding(
-              padding: EdgeInsets.only(
-                  top: AppHeight.h8,
-                  bottom: users.isNotEmpty ? AppHeight.h3 : AppHeight.h8),
+              padding:
+                  EdgeInsets.only(top: AppHeight.h13, bottom: AppHeight.h8),
               child: LargeHeadText(
                 text: "Total viewers ${users.length}",
                 letterSpacing: 1.0,
               ),
             ),
             SizedBox(
-              height: users.length < 6
-                  ? (users.length * (users.length * 11)).h
+              height: users.length < 10
+                  ? 8.h + (users.length * 31.h)
                   : MediaQuery.sizeOf(context).height * 0.5,
               child: ListView.separated(
                   shrinkWrap: true,

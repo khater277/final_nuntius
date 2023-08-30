@@ -4,7 +4,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'story_model.freezed.dart';
 part 'story_model.g.dart';
 
-@freezed
+@Freezed(makeCollectionsUnmodifiable: false)
 class StoryModel with _$StoryModel {
   factory StoryModel({
     String? id,
@@ -16,7 +16,8 @@ class StoryModel with _$StoryModel {
     String? media,
     String? phone,
     String? text,
-    List<ViewerModel>? viewers,
+    List<Map<String, dynamic>>? viewers,
+    List<String>? viewersPhones,
     List<String>? canView,
   }) = _StoryModel;
 

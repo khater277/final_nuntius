@@ -42,7 +42,12 @@ class MyApp extends StatelessWidget {
               ),
               BlocProvider(
                 create: (BuildContext context) => di<StoriesCubit>()
-                  ..getPhones(HomeCubit.get(context).phones.keys.toList()),
+                  ..getPhones(
+                    HomeCubit.get(context).phones.keys.toList(),
+                    HomeCubit.get(context).users,
+                  )
+                  ..getContactsCurrentStories(
+                      users: HomeCubit.get(context).users),
               ),
               BlocProvider(
                 create: (BuildContext context) => di<CallsCubit>(),
@@ -61,9 +66,11 @@ class MyApp extends StatelessWidget {
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
               theme: AppTheme.darkTheme(),
-              home: HiveHelper.getCurrentUser() == null
-                  ? const LoginScreen()
-                  : const HomeScreen(),
+              home:
+                  // const LoginScreen(),
+                  HiveHelper.getCurrentUser() == null
+                      ? const LoginScreen()
+                      : const HomeScreen(),
             ),
           );
         });

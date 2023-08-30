@@ -7,6 +7,7 @@ import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
+import 'package:final_nuntius/features/stories/data/models/contact_story_model/contact_story_model.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
@@ -47,6 +48,15 @@ abstract class FirebaseHelper {
   Stream<QuerySnapshot<Map<String, dynamic>>> getStories();
 
   Future<void> deleteStory({required String storyId});
+
+  Stream<QuerySnapshot<Map<String, dynamic>>> getContactsLastStories();
+  Future<List<ContactStoryModel>?> getContactsCurrentStories(
+      {required List<UserData> users});
+
+  Future<void> updateLastStory({required StoryModel storyModel});
+  Future<void> deleteLastStory();
+  Future<void> updateStory(
+      {required StoryModel storyModel, required String phoneNumber});
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -221,7 +231,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
   Future<void> setLastStory({required StoryModel storyModel}) async {
     _db
         .collection(Collections.stories)
-        .doc(HiveHelper.getCurrentUser()!.uId)
+        .doc(HiveHelper.getCurrentUser()!.phone)
         .set(storyModel.toJson());
   }
 
@@ -229,7 +239,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
   Future<void> sendStory({required StoryModel storyModel}) async {
     _db
         .collection(Collections.stories)
-        .doc(HiveHelper.getCurrentUser()!.uId)
+        .doc(HiveHelper.getCurrentUser()!.phone)
         .collection(Collections.currentStories)
         .doc(storyModel.id)
         .set(storyModel.toJson());
@@ -239,7 +249,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
   Stream<QuerySnapshot<Map<String, dynamic>>> getStories() {
     return _db
         .collection(Collections.stories)
-        .doc(HiveHelper.getCurrentUser()!.uId)
+        .doc(HiveHelper.getCurrentUser()!.phone)
         .collection(Collections.currentStories)
         .orderBy('date')
         .snapshots();
@@ -249,9 +259,91 @@ class FirebaseHelperImpl implements FirebaseHelper {
   Future<void> deleteStory({required String storyId}) async {
     _db
         .collection(Collections.stories)
-        .doc(HiveHelper.getCurrentUser()!.uId)
+        .doc(HiveHelper.getCurrentUser()!.phone)
         .collection(Collections.currentStories)
         .doc(storyId)
         .delete();
+  }
+
+  @override
+  Stream<QuerySnapshot<Map<String, dynamic>>> getContactsLastStories() {
+    return _db
+        .collection(Collections.stories)
+        .orderBy('date', descending: true)
+        .snapshots();
+  }
+
+  @override
+  Future<List<ContactStoryModel>?> getContactsCurrentStories(
+      {required List<UserData> users}) async {
+    try {
+      List<ContactStoryModel> contactsStories = [];
+      for (int i = 0; i < users.length; i++) {
+        List<StoryModel> stories = [];
+        final response = await _db
+            .collection(Collections.stories)
+            .doc(users[i].phone)
+            .collection(Collections.currentStories)
+            .orderBy('date', descending: true)
+            .get();
+
+        final docs = response.docs;
+        if (docs.isNotEmpty) {
+          for (var element in docs) {
+            final storyModel = StoryModel.fromJson(element.data());
+            // print("=============>${storyModel.toString()}");
+            if (storyModel.canView!
+                .contains(HiveHelper.getCurrentUser()!.phone)) {
+              stories.add(storyModel);
+              // print(
+              //     "canView====>${storyModel.canView} ----- myPhone====>${HiveHelper.getCurrentUser()!.phone}");
+            }
+          }
+        }
+        final contactStoryModel = ContactStoryModel(
+          user: users[i],
+          stories: stories,
+        );
+        if (contactStoryModel.stories != null &&
+            contactStoryModel.stories!.isNotEmpty) {
+          contactsStories.add(
+            ContactStoryModel(
+              user: users[i],
+              stories: stories,
+            ),
+          );
+        }
+      }
+      return contactsStories;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  @override
+  Future<void> updateLastStory({required StoryModel storyModel}) async {
+    _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .update(storyModel.toJson());
+  }
+
+  @override
+  Future<void> deleteLastStory() async {
+    _db
+        .collection(Collections.stories)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .delete();
+  }
+
+  @override
+  Future<void> updateStory(
+      {required StoryModel storyModel, required String phoneNumber}) async {
+    _db
+        .collection(Collections.stories)
+        .doc(phoneNumber)
+        .collection(Collections.currentStories)
+        .doc(storyModel.id)
+        .update(storyModel.toJson());
   }
 }

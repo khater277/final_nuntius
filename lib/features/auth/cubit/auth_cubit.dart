@@ -190,7 +190,7 @@ class AuthCubit extends Cubit<AuthState> {
         name: nameController!.text.isNotEmpty ? nameController!.text : 'user',
         uId: await SharedPrefHelper.getUid(),
         phone: "+2${phoneController!.text}",
-        image: image ?? "",
+        image: image ?? HiveHelper.getCurrentUser()!.image,
         inCall: false,
         contacts: phones,
       );

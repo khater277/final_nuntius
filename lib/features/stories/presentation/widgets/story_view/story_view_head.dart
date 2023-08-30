@@ -8,18 +8,21 @@ import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
-import 'package:final_nuntius/features/stories/presentation/screens/story_view_screen.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/story_date.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../auth/data/models/user_data/user_data.dart';
 
 class StoryViewHead extends StatelessWidget {
   const StoryViewHead({
     super.key,
     required this.stories,
+    required this.user,
     required this.cubit,
   });
 
   final List<StoryModel> stories;
+  final UserData user;
   final StoriesCubit cubit;
 
   @override
@@ -30,7 +33,7 @@ class StoryViewHead extends StatelessWidget {
       child: Row(
         children: [
           UserImage(
-            image: HiveHelper.getCurrentUser()!.image!,
+            image: user.image!,
             isChat: true,
           ),
           SizedBox(width: AppWidth.w4),
@@ -38,7 +41,9 @@ class StoryViewHead extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               LargeHeadText(
-                text: "My story",
+                text: user == HiveHelper.getCurrentUser()
+                    ? "My story"
+                    : user.name!,
                 size: FontSize.s14,
               ),
               SizedBox(height: AppHeight.h2),
@@ -46,23 +51,24 @@ class StoryViewHead extends StatelessWidget {
             ],
           ),
           const Spacer(),
-          IconButton(
-              onPressed: () {
-                cubit.storyController!.pause();
-                showAlertDialog(
-                  context: context,
-                  okPressed: () => cubit.deleteStory(
+          if (user.uId == HiveHelper.getCurrentUser()!.uId)
+            IconButton(
+                onPressed: () {
+                  cubit.storyController!.pause();
+                  showAlertDialog(
                     context: context,
-                    stories: stories,
-                    storyId: stories[cubit.storyIndex].id!,
-                  ),
-                ).then((value) => cubit.storyController!.play());
-              },
-              icon: Icon(
-                IconBroken.Delete,
-                color: AppColors.red,
-                size: AppSize.s18,
-              ))
+                    okPressed: () => cubit.deleteStory(
+                      context: context,
+                      stories: stories,
+                      storyId: stories[cubit.storyIndex].id!,
+                    ),
+                  ).then((value) => cubit.storyController!.play());
+                },
+                icon: Icon(
+                  IconBroken.Delete,
+                  color: AppColors.red,
+                  size: AppSize.s18,
+                ))
         ],
       ),
     );

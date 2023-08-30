@@ -3,7 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'viewer_model.freezed.dart';
 part 'viewer_model.g.dart';
 
-@freezed
+@Freezed(makeCollectionsUnmodifiable: false)
 class ViewerModel with _$ViewerModel {
   factory ViewerModel({
     String? id,

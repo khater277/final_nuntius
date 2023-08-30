@@ -1,13 +1,12 @@
 import 'package:final_nuntius/config/navigation.dart';
-import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
+import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
+import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:final_nuntius/features/stories/presentation/screens/add_media_story_screen.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/story_status.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/my_story/my_story.dart';
@@ -25,46 +24,25 @@ class _StoriesScreenState extends State<StoriesScreen> {
   @override
   void initState() {
     StoriesCubit.get(context).getStories(context);
+    StoriesCubit.get(context).contactsStoriesChanged();
+
+    // StoriesCubit.get(context).getContactsLastStories();
+    // StoriesCubit.get(context).getContactsCurrentStories(phoneNumber: ''),
+
+    // StoriesCubit.get(context).getContactsStories();
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    List<StoryModel> recentStories = [
-      StoryModel(
-        date: DateTime.now().toString(),
-        phone: HiveHelper.getCurrentUser()!.phone,
-        text: "AHMED KHATER",
-      ),
-      StoryModel(
-        date: DateTime.now().toString(),
-        phone: HiveHelper.getCurrentUser()!.phone,
-        text: "AHMED KHATER",
-      ),
-    ];
-    List<StoryModel> viewedStories = [
-      StoryModel(
-        date: DateTime.now().toString(),
-        phone: HiveHelper.getCurrentUser()!.phone,
-        text: "AHMED KHATER",
-      ),
-      StoryModel(
-        date: DateTime.now().toString(),
-        phone: HiveHelper.getCurrentUser()!.phone,
-        text: "AHMED KHATER",
-      ),
-    ];
-    List<UserData> viewedInfo = [
-      HiveHelper.getCurrentUser()!,
-      HiveHelper.getCurrentUser()!,
-    ];
-    List<UserData> recentInfo = [
-      HiveHelper.getCurrentUser()!,
-      HiveHelper.getCurrentUser()!,
-    ];
     return BlocConsumer<StoriesCubit, StoriesState>(
       listener: (context, state) {
         state.maybeWhen(
+          getContactsCurrentStoriesError: (errorMsg) => showSnackBar(
+            context: context,
+            message: errorMsg,
+            color: AppColors.red,
+          ),
           pickStoryImage: () => Go.to(
               context: context,
               screen:
@@ -83,6 +61,10 @@ class _StoriesScreenState extends State<StoriesScreen> {
                 const Center(child: CustomCircleIndicator()),
             getMyStoriesLoading: () =>
                 const Center(child: CustomCircleIndicator()),
+            // getContactsLastStoryLoading: () =>
+            //     const Center(child: CustomCircleIndicator()),
+            getContactsCurrentStoriesLoading: () =>
+                const Center(child: CustomCircleIndicator()),
             orElse: () => SliverScrollableView(
                 hasScrollBody: true,
                 child: Column(
@@ -95,33 +77,48 @@ class _StoriesScreenState extends State<StoriesScreen> {
                       color: AppColors.grey.withOpacity(0.3),
                     ),
                     SizedBox(height: AppHeight.h5),
-                    Flexible(
-                      fit: FlexFit.loose,
-                      child: Column(
-                        children: [
-                          if (recentStories.isNotEmpty)
-                            StoryStatus(
-                              storyList: recentStories,
-                              infoList: recentInfo,
-                              isViewed: false,
-                            ),
-                          if (viewedStories.isNotEmpty)
-                            Column(
-                              children: [
-                                SizedBox(height: AppHeight.h10),
-                                StoryStatus(
-                                  storyList: viewedStories,
-                                  infoList: viewedInfo,
-                                  isViewed: true,
-                                ),
-                              ],
-                            ),
-                        ],
-                      ),
-                    )
+                    state.maybeWhen(
+                      getContactsCurrentStoriesLoading: () =>
+                          const Center(child: CustomCircleIndicator()),
+                      orElse: () => CurrentStories(cubit: cubit),
+                    ),
                   ],
                 )));
       },
+    );
+  }
+}
+
+class CurrentStories extends StatelessWidget {
+  const CurrentStories({
+    super.key,
+    required this.cubit,
+  });
+
+  final StoriesCubit cubit;
+
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+      fit: FlexFit.loose,
+      child: Column(
+        children: [
+          if (cubit.recentStories.isNotEmpty)
+            StoryStatus(
+              contactStories: cubit.recentStories,
+              isViewed: false,
+            ),
+          if (cubit.viewedStories.isNotEmpty)
+            Column(
+              children: [
+                StoryStatus(
+                  contactStories: cubit.viewedStories,
+                  isViewed: true,
+                ),
+              ],
+            ),
+        ],
+      ),
     );
   }
 }

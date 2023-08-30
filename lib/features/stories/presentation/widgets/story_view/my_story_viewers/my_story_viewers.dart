@@ -7,7 +7,7 @@ import 'package:final_nuntius/features/stories/data/models/viewer_model/viewer_m
 import 'package:flutter/material.dart';
 
 class MyStoryViewers extends StatelessWidget {
-  final List<ViewerModel> viewers;
+  final List<Map<String, dynamic>> viewers;
 
   const MyStoryViewers({Key? key, required this.viewers}) : super(key: key);
 

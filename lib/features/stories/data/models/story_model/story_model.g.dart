@@ -18,7 +18,10 @@ _$_StoryModel _$$_StoryModelFromJson(Map<String, dynamic> json) =>
       phone: json['phone'] as String?,
       text: json['text'] as String?,
       viewers: (json['viewers'] as List<dynamic>?)
-          ?.map((e) => ViewerModel.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => e as Map<String, dynamic>)
+          .toList(),
+      viewersPhones: (json['viewersPhones'] as List<dynamic>?)
+          ?.map((e) => e as String)
           .toList(),
       canView:
           (json['canView'] as List<dynamic>?)?.map((e) => e as String).toList(),
@@ -36,5 +39,6 @@ Map<String, dynamic> _$$_StoryModelToJson(_$_StoryModel instance) =>
       'phone': instance.phone,
       'text': instance.text,
       'viewers': instance.viewers,
+      'viewersPhones': instance.viewersPhones,
       'canView': instance.canView,
     };

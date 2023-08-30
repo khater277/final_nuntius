@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:bloc/bloc.dart';
+import 'package:collection/collection.dart';
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
@@ -9,6 +9,10 @@ import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_functions.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository.dart';
+import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
+import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
+import 'package:final_nuntius/features/messages/data/repositories/messages_repository.dart';
+import 'package:final_nuntius/features/stories/data/models/contact_story_model/contact_story_model.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:final_nuntius/features/stories/data/models/viewer_model/viewer_model.dart';
 import 'package:final_nuntius/features/stories/data/repositories/stories_repository.dart';
@@ -21,23 +25,29 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:story_view/story_view.dart';
 import 'package:uuid/uuid.dart';
-import 'package:collection/collection.dart';
 
-part 'stories_state.dart';
 part 'stories_cubit.freezed.dart';
+part 'stories_state.dart';
 
 class StoriesCubit extends Cubit<StoriesState> {
   final StoriesRepository storiesRepository;
+  final MessagesRepository messagesRepository;
+
   final AuthRepository authRepository;
 
-  StoriesCubit({required this.storiesRepository, required this.authRepository})
-      : super(const StoriesState.initial());
+  StoriesCubit({
+    required this.storiesRepository,
+    required this.authRepository,
+    required this.messagesRepository,
+  }) : super(const StoriesState.initial());
 
   static StoriesCubit get(context) => BlocProvider.of(context);
 
   List<String> phones = [];
-  void getPhones(List<String> phones) {
+  List<UserData> users = [];
+  void getPhones(List<String> phones, List<UserData> users) {
     this.phones = phones;
+    this.users = users;
     emit(const StoriesState.getPhones());
   }
 
@@ -112,6 +122,7 @@ class StoriesCubit extends Cubit<StoriesState> {
       phone: HiveHelper.getCurrentUser()!.phone,
       text: controller!.text,
       viewers: [],
+      viewersPhones: [],
       canView: phones,
     );
     final response =
@@ -197,7 +208,7 @@ class StoriesCubit extends Cubit<StoriesState> {
         // List<UserData> viewedInfo = [];
         // List<UserData> recentInfo = [];
         snapshots.listen((event) async {
-          emit(const StoriesState.initAddTextStory());
+          emit(const StoriesState.getMyStoriesLoading());
           List<StoryModel> myStories = [];
           for (var doc in event.docs) {
             final story = StoryModel.fromJson(doc.data());
@@ -205,7 +216,7 @@ class StoriesCubit extends Cubit<StoriesState> {
           }
           this.myStories = myStories;
           print("================>${this.myStories.length}");
-          emit(const StoriesState.getMyStories());
+          // emit(const StoriesState.getMyStories());
         });
       },
     );
@@ -278,7 +289,7 @@ class StoriesCubit extends Cubit<StoriesState> {
 
   void showStoryViewers({
     required BuildContext context,
-    required List<ViewerModel> viewers,
+    required List<Map<String, dynamic>> viewers,
   }) {
     storyController!.pause();
     showModalBottomSheet(
@@ -289,20 +300,21 @@ class StoriesCubit extends Cubit<StoriesState> {
         List<UserData> users = [];
         List<String> viewsDateTime = [];
         for (var viewer in viewers) {
-          UserData? userData =
-              users.firstWhereOrNull((element) => element.uId == viewer.id);
+          final viewerModel = ViewerModel.fromJson(viewer);
+          UserData? userData = users
+              .firstWhereOrNull((element) => element.uId == viewerModel.id);
           if (userData != null) {
             users.add(userData);
           } else {
             UserData notContactUser = UserData(
-              uId: viewer.id,
-              name: viewer.phoneNumber,
-              phone: viewer.phoneNumber,
+              uId: viewerModel.id,
+              name: viewerModel.phoneNumber,
+              phone: viewerModel.phoneNumber,
               image: "",
             );
             users.add(notContactUser);
+            viewsDateTime.add(viewerModel.dateTime!);
           }
-          viewsDateTime.add(viewer.dateTime!);
         }
         return ViewersBottomSheet(
           users: users,
@@ -320,20 +332,190 @@ class StoriesCubit extends Cubit<StoriesState> {
     final response = await storiesRepository.deleteStory(storyId: storyId);
     response.fold(
       (failure) => emit(StoriesState.deleteStoryError(failure.getMessage())),
-      (result) {
+      (result) async {
         if (stories.length == 1) {
-          Go.back(context: context);
-          Go.back(context: context);
-          emit(const StoriesState.deleteStory());
+          final response = await storiesRepository.deleteLastStory();
+          response.fold(
+            (failure) =>
+                emit(StoriesState.deleteStoryError(failure.getMessage())),
+            (result) {
+              Go.back(context: context);
+              Go.back(context: context);
+              emit(const StoriesState.deleteStory());
+            },
+          );
         } else {
           stories.removeAt(storyIndex);
-          storyController!.play();
-          initStoryView(
-            stories: stories,
-            context: context,
-            isDeleted: true,
+          final response =
+              await storiesRepository.updateLastStory(storyModel: stories.last);
+          response.fold(
+            (failure) =>
+                emit(StoriesState.deleteStoryError(failure.getMessage())),
+            (result) {
+              storyController!.play();
+              initStoryView(
+                stories: stories,
+                context: context,
+                isDeleted: true,
+              );
+            },
           );
         }
+      },
+    );
+  }
+
+  ContactStoryModel? contactStoryModel;
+  List<ContactStoryModel> contactsStories = [];
+  List<ContactStoryModel> recentStories = [];
+  List<ContactStoryModel> viewedStories = [];
+  List<String> contactsStoriesPhones = [];
+  bool empty = true;
+  void openContactStory({required ContactStoryModel contactStoryModel}) {
+    this.contactStoryModel = contactStoryModel;
+    emit(const StoriesState.openContactStory());
+  }
+
+  void getContactsCurrentStories(
+      {required List<UserData> users, bool? isStream}) async {
+    if (isStream != true) {
+      emit(const StoriesState.getContactsCurrentStoriesLoading());
+    }
+    final response =
+        await storiesRepository.getContactsCurrentStories(users: users);
+    response.fold(
+      (failure) => emit(
+          StoriesState.getContactsCurrentStoriesError(failure.getMessage())),
+      (stories) {
+        if (stories!.isEmpty) {
+          empty = true;
+        } else {
+          empty = false;
+        }
+        contactsStories = stories;
+        viewedStories = [];
+        recentStories = [];
+        for (var contactStory in stories) {
+          if (contactStory.stories!.last.viewersPhones!
+              .contains(HiveHelper.getCurrentUser()!.phone)) {
+            viewedStories.add(contactStory);
+          } else {
+            recentStories.add(contactStory);
+          }
+        }
+        viewedStories.sort(
+          (a, b) => DateTime.parse(a.stories!.last.date!)
+              .compareTo(DateTime.parse(b.stories!.last.date!)),
+        );
+
+        recentStories.sort(
+          (a, b) => DateTime.parse(a.stories!.last.date!)
+              .compareTo(DateTime.parse(b.stories!.last.date!)),
+        );
+
+        recentStories = recentStories.reversed.toList();
+        viewedStories = viewedStories.reversed.toList();
+
+        emit(const StoriesState.getContactsCurrentStories());
+      },
+    );
+  }
+
+  void contactsStoriesChanged() async {
+    final response = await storiesRepository.getContactsLastStories();
+    response.fold(
+      (failure) =>
+          emit(StoriesState.contactsStoriesChangedError(failure.getMessage())),
+      (stream) {
+        stream.listen((event) {
+          if (!empty) {
+            emit(const StoriesState.contactsStoriesChanged());
+          }
+          getContactsCurrentStories(users: users, isStream: true);
+        });
+      },
+    );
+  }
+
+  TextEditingController? replyController;
+  void initReplyToStory() {
+    replyController = TextEditingController();
+    emit(const StoriesState.initReplyToStory());
+  }
+
+  void viewContactStory(
+      {required StoryModel storyModel, required String phoneNumber}) async {
+    emit(const StoriesState.viewContactStoryLoading());
+    storyModel.viewers!.add(ViewerModel(
+      id: HiveHelper.getCurrentUser()!.uId,
+      phoneNumber: HiveHelper.getCurrentUser()!.phone,
+      dateTime: DateTime.now().toString(),
+    ).toJson());
+
+    storyModel.viewersPhones!.add(HiveHelper.getCurrentUser()!.phone!);
+
+    // print("=========>${storyModel.toJson()}");
+    final response = await storiesRepository.updateStory(
+      storyModel: storyModel,
+      phoneNumber: contactStoryModel!.user!.phone!,
+    );
+
+    response.fold(
+      (failure) => null,
+      (result) {
+        emit(const StoriesState.viewContactStory());
+        contactsStoriesChanged();
+        // emit(const StoriesState.viewContactStory());
+      },
+    );
+  }
+
+  void replyToStory({
+    required UserData user,
+    required StoryModel story,
+  }) async {
+    emit(const StoriesState.replyToStoryLoading());
+
+    MessageModel messageModel = MessageModel(
+      senderId: HiveHelper.getCurrentUser()!.uId,
+      receiverId: user.uId,
+      message: replyController!.text,
+      date: DateTime.now().toString(),
+      media: "",
+      isImage: false,
+      isVideo: false,
+      isDoc: false,
+      isStoryReply: true,
+      storyMedia: story.media,
+      storyDate: story.date,
+      isStoryImageReply: story.isImage,
+    );
+
+    LastMessageModel lastMessageModel = LastMessageModel(
+      token: user.token,
+      image: user.image,
+      senderID: messageModel.senderId,
+      receiverID: messageModel.receiverId,
+      message: messageModel.message,
+      date: messageModel.date,
+      media: messageModel.media,
+      isImage: messageModel.isImage,
+      isVideo: messageModel.isVideo,
+      isDoc: messageModel.isDoc,
+      isDeleted: messageModel.isDeleted,
+      isRead: false,
+    );
+
+    final response = await messagesRepository.sendMessage(
+      phoneNumber: user.phone!,
+      lastMessageModel: lastMessageModel,
+      messageModel: messageModel,
+    );
+
+    response.fold(
+      (failure) => emit(StoriesState.replyToStoryError(failure.getMessage())),
+      (result) {
+        emit(const StoriesState.replyToStory());
       },
     );
   }

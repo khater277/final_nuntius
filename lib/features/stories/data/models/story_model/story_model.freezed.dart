@@ -29,7 +29,8 @@ mixin _$StoryModel {
   String? get media => throw _privateConstructorUsedError;
   String? get phone => throw _privateConstructorUsedError;
   String? get text => throw _privateConstructorUsedError;
-  List<ViewerModel>? get viewers => throw _privateConstructorUsedError;
+  List<Map<String, dynamic>>? get viewers => throw _privateConstructorUsedError;
+  List<String>? get viewersPhones => throw _privateConstructorUsedError;
   List<String>? get canView => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -54,7 +55,8 @@ abstract class $StoryModelCopyWith<$Res> {
       String? media,
       String? phone,
       String? text,
-      List<ViewerModel>? viewers,
+      List<Map<String, dynamic>>? viewers,
+      List<String>? viewersPhones,
       List<String>? canView});
 }
 
@@ -81,6 +83,7 @@ class _$StoryModelCopyWithImpl<$Res, $Val extends StoryModel>
     Object? phone = freezed,
     Object? text = freezed,
     Object? viewers = freezed,
+    Object? viewersPhones = freezed,
     Object? canView = freezed,
   }) {
     return _then(_value.copyWith(
@@ -123,7 +126,11 @@ class _$StoryModelCopyWithImpl<$Res, $Val extends StoryModel>
       viewers: freezed == viewers
           ? _value.viewers
           : viewers // ignore: cast_nullable_to_non_nullable
-              as List<ViewerModel>?,
+              as List<Map<String, dynamic>>?,
+      viewersPhones: freezed == viewersPhones
+          ? _value.viewersPhones
+          : viewersPhones // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
       canView: freezed == canView
           ? _value.canView
           : canView // ignore: cast_nullable_to_non_nullable
@@ -150,7 +157,8 @@ abstract class _$$_StoryModelCopyWith<$Res>
       String? media,
       String? phone,
       String? text,
-      List<ViewerModel>? viewers,
+      List<Map<String, dynamic>>? viewers,
+      List<String>? viewersPhones,
       List<String>? canView});
 }
 
@@ -175,6 +183,7 @@ class __$$_StoryModelCopyWithImpl<$Res>
     Object? phone = freezed,
     Object? text = freezed,
     Object? viewers = freezed,
+    Object? viewersPhones = freezed,
     Object? canView = freezed,
   }) {
     return _then(_$_StoryModel(
@@ -215,11 +224,15 @@ class __$$_StoryModelCopyWithImpl<$Res>
           : text // ignore: cast_nullable_to_non_nullable
               as String?,
       viewers: freezed == viewers
-          ? _value._viewers
+          ? _value.viewers
           : viewers // ignore: cast_nullable_to_non_nullable
-              as List<ViewerModel>?,
+              as List<Map<String, dynamic>>?,
+      viewersPhones: freezed == viewersPhones
+          ? _value.viewersPhones
+          : viewersPhones // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
       canView: freezed == canView
-          ? _value._canView
+          ? _value.canView
           : canView // ignore: cast_nullable_to_non_nullable
               as List<String>?,
     ));
@@ -239,10 +252,9 @@ class _$_StoryModel implements _StoryModel {
       this.media,
       this.phone,
       this.text,
-      final List<ViewerModel>? viewers,
-      final List<String>? canView})
-      : _viewers = viewers,
-        _canView = canView;
+      this.viewers,
+      this.viewersPhones,
+      this.canView});
 
   factory _$_StoryModel.fromJson(Map<String, dynamic> json) =>
       _$$_StoryModelFromJson(json);
@@ -265,29 +277,16 @@ class _$_StoryModel implements _StoryModel {
   final String? phone;
   @override
   final String? text;
-  final List<ViewerModel>? _viewers;
   @override
-  List<ViewerModel>? get viewers {
-    final value = _viewers;
-    if (value == null) return null;
-    if (_viewers is EqualUnmodifiableListView) return _viewers;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  final List<String>? _canView;
+  final List<Map<String, dynamic>>? viewers;
   @override
-  List<String>? get canView {
-    final value = _canView;
-    if (value == null) return null;
-    if (_canView is EqualUnmodifiableListView) return _canView;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
+  final List<String>? viewersPhones;
+  @override
+  final List<String>? canView;
 
   @override
   String toString() {
-    return 'StoryModel(id: $id, date: $date, isImage: $isImage, isRead: $isRead, isVideo: $isVideo, videoDuration: $videoDuration, media: $media, phone: $phone, text: $text, viewers: $viewers, canView: $canView)';
+    return 'StoryModel(id: $id, date: $date, isImage: $isImage, isRead: $isRead, isVideo: $isVideo, videoDuration: $videoDuration, media: $media, phone: $phone, text: $text, viewers: $viewers, viewersPhones: $viewersPhones, canView: $canView)';
   }
 
   @override
@@ -305,8 +304,10 @@ class _$_StoryModel implements _StoryModel {
             (identical(other.media, media) || other.media == media) &&
             (identical(other.phone, phone) || other.phone == phone) &&
             (identical(other.text, text) || other.text == text) &&
-            const DeepCollectionEquality().equals(other._viewers, _viewers) &&
-            const DeepCollectionEquality().equals(other._canView, _canView));
+            const DeepCollectionEquality().equals(other.viewers, viewers) &&
+            const DeepCollectionEquality()
+                .equals(other.viewersPhones, viewersPhones) &&
+            const DeepCollectionEquality().equals(other.canView, canView));
   }
 
   @JsonKey(ignore: true)
@@ -322,8 +323,9 @@ class _$_StoryModel implements _StoryModel {
       media,
       phone,
       text,
-      const DeepCollectionEquality().hash(_viewers),
-      const DeepCollectionEquality().hash(_canView));
+      const DeepCollectionEquality().hash(viewers),
+      const DeepCollectionEquality().hash(viewersPhones),
+      const DeepCollectionEquality().hash(canView));
 
   @JsonKey(ignore: true)
   @override
@@ -350,7 +352,8 @@ abstract class _StoryModel implements StoryModel {
       final String? media,
       final String? phone,
       final String? text,
-      final List<ViewerModel>? viewers,
+      final List<Map<String, dynamic>>? viewers,
+      final List<String>? viewersPhones,
       final List<String>? canView}) = _$_StoryModel;
 
   factory _StoryModel.fromJson(Map<String, dynamic> json) =
@@ -375,7 +378,9 @@ abstract class _StoryModel implements StoryModel {
   @override
   String? get text;
   @override
-  List<ViewerModel>? get viewers;
+  List<Map<String, dynamic>>? get viewers;
+  @override
+  List<String>? get viewersPhones;
   @override
   List<String>? get canView;
   @override
