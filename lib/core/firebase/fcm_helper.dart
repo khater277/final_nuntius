@@ -5,7 +5,6 @@ import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/presentation/screens/messages_screen.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class FcmHelper {

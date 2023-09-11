@@ -2,9 +2,7 @@ import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
-import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/story_view/reply_to_story/reply_story_textfield.dart';
 import 'package:flutter/material.dart';
 
@@ -50,7 +48,7 @@ class _ReplyToStoryState extends State<ReplyToStory> {
                       bottom: AppHeight.h3,
                       left: AppWidth.w6,
                       right: AppWidth.w6),
-                  child: Column(
+                  child: const Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.end,

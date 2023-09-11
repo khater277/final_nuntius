@@ -8,7 +8,6 @@ import 'package:final_nuntius/features/stories/data/models/contact_story_model/c
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:final_nuntius/features/stories/data/repositories/stories_repository.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class StoriesRepositoryImpl implements StoriesRepository {
   final StoriesRemoteDataSource storiesRemoteDataSource;

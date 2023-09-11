@@ -1,10 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_functions.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:flutter/material.dart';

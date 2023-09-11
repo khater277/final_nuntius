@@ -226,13 +226,15 @@ class StoriesCubit extends Cubit<StoriesState> {
   List<StoryItem> storyItems = [];
 
   void initStoryView({
-    required List<StoryModel> stories,
     required BuildContext context,
     bool isDeleted = false,
   }) {
+    // storyController.
+    // if (!isDeleted) {
     storyController = StoryController();
-    handleStoryItems(stories: stories, context: context);
-    if (isDeleted) {
+    // }
+    handleStoryItems(context: context);
+    if (!isDeleted) {
       emit(const StoriesState.initStoryView());
     } else {
       emit(const StoriesState.deleteStory());
@@ -245,30 +247,29 @@ class StoriesCubit extends Cubit<StoriesState> {
   }
 
   void handleStoryItems({
-    required List<StoryModel> stories,
     required BuildContext context,
   }) {
     storyItems = [];
-    for (int i = 0; i < stories.length; i++) {
-      if (stories[i].media != "") {
-        if (stories[i].isImage == true) {
+    for (int i = 0; i < myStories.length; i++) {
+      if (myStories[i].media != "") {
+        if (myStories[i].isImage == true) {
           storyItems.add(StoryItem.pageImage(
-            url: stories[i].media!,
+            url: myStories[i].media!,
             controller: storyController!,
-            caption: stories[i].text == "" ? null : stories[i].text,
+            caption: myStories[i].text == "" ? null : myStories[i].text,
           ));
         } else {
           storyItems.add(StoryItem.pageVideo(
-            stories[i].media!,
+            myStories[i].media!,
             controller: storyController!,
             duration: AppFunctions.durationParser(
-                duration: stories[i].videoDuration!),
-            caption: stories[i].text == "" ? null : stories[i].text,
+                duration: myStories[i].videoDuration!),
+            caption: myStories[i].text == "" ? null : myStories[i].text,
           ));
         }
       } else {
         storyItems.add(StoryItem.text(
-          title: stories[i].text!,
+          title: myStories[i].text!,
           backgroundColor: AppColors.black,
         ));
       }
@@ -276,9 +277,13 @@ class StoriesCubit extends Cubit<StoriesState> {
   }
 
   int storyIndex = 0;
-  void changeStoryIndex({required int index}) {
+  void changeStoryIndex({required int index, bool? isDeleted}) {
     emit(const StoriesState.changeStoryIndexLoading());
     storyIndex = index;
+    // if (index == 0 && isDeleted == true) {
+    //   print("A7A");
+    // }
+    // print("==================>$index ${myStories.length}");
     emit(const StoriesState.changeStoryIndex());
   }
 
@@ -325,15 +330,13 @@ class StoriesCubit extends Cubit<StoriesState> {
   }
 
   void deleteStory(
-      {required BuildContext context,
-      required List<StoryModel> stories,
-      required String storyId}) async {
+      {required BuildContext context, required String storyId}) async {
     emit(const StoriesState.deleteStoryLoading());
     final response = await storiesRepository.deleteStory(storyId: storyId);
     response.fold(
       (failure) => emit(StoriesState.deleteStoryError(failure.getMessage())),
       (result) async {
-        if (stories.length == 1) {
+        if (myStories.length == 1) {
           final response = await storiesRepository.deleteLastStory();
           response.fold(
             (failure) =>
@@ -345,19 +348,23 @@ class StoriesCubit extends Cubit<StoriesState> {
             },
           );
         } else {
-          stories.removeAt(storyIndex);
-          final response =
-              await storiesRepository.updateLastStory(storyModel: stories.last);
+          myStories.removeAt(storyIndex);
+          final response = await storiesRepository.updateLastStory(
+              storyModel: myStories.last);
           response.fold(
             (failure) =>
                 emit(StoriesState.deleteStoryError(failure.getMessage())),
             (result) {
+              handleStoryItems(context: context);
+              changeStoryIndex(index: 0);
+              Go.back(context: context);
               storyController!.play();
-              initStoryView(
-                stories: stories,
-                context: context,
-                isDeleted: true,
-              );
+              // storyController!.play();
+
+              print("asdfghjkl=======>${storyItems.length}");
+              // if (storyItems.length > 1) {
+              //   storyController!.next();
+              // }
             },
           );
         }
@@ -486,6 +493,7 @@ class StoriesCubit extends Cubit<StoriesState> {
       isVideo: false,
       isDoc: false,
       isStoryReply: true,
+      storyText: story.text,
       storyMedia: story.media,
       storyDate: story.date,
       isStoryImageReply: story.isImage,

@@ -1,9 +1,9 @@
+import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
-import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/app_bar/messages_app_bar.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/day_date.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/message_bubble/message_bubble.dart';
@@ -50,13 +50,17 @@ class _MessagesScreenState extends State<MessagesScreen> {
     super.dispose();
   }
 
-  List<MessageModel> messages = [];
+  // List<MessageModel> messages = [];
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<MessagesCubit, MessagesState>(
       listener: (context, state) {
         state.maybeWhen(
-          getMessages: (messages) => this.messages = messages,
+          deleteMessage: () {
+            Go.back(context: context);
+            Go.back(context: context);
+          },
+          // getMessages: (messages) => this.messages = messages,
           orElse: () {},
         );
       },
@@ -86,23 +90,43 @@ class _MessagesScreenState extends State<MessagesScreen> {
                               controller: cubit.scrollController!,
                               shrinkWrap: true,
                               physics: const BouncingScrollPhysics(),
-                              itemCount: messages.length,
+                              itemCount: cubit.messages.length,
                               itemBuilder: (BuildContext context, int index) =>
                                   Column(
                                 children: [
                                   if (index == 0 ||
                                       DateFormat.yMMMEd().format(
                                             DateTime.parse(
-                                                messages[index].date!),
+                                                cubit.messages[index].date!),
                                           ) !=
                                           DateFormat.yMMMEd().format(
-                                            DateTime.parse(
-                                                messages[index - 1].date!),
+                                            DateTime.parse(cubit
+                                                .messages[index - 1].date!),
                                           ))
-                                    DayDate(date: messages[index].date!),
-                                  MessageBubble(
-                                    message: messages[index],
-                                    isLastMessage: index == messages.length - 1,
+                                    DayDate(date: cubit.messages[index].date!),
+                                  Row(
+                                    children: [
+                                      Flexible(
+                                        child: MessageBubble(
+                                          message: cubit.messages[index],
+                                          isLastMessage: index ==
+                                              cubit.messages.length - 1,
+                                        ),
+                                      ),
+                                      if (state ==
+                                              const MessagesState
+                                                  .openDocMessageLoading() &&
+                                          cubit.openedDocMessageId ==
+                                              cubit.messages[index].messageId)
+                                        Padding(
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: AppWidth.w5),
+                                          child: CustomCircleIndicator(
+                                            size: AppSize.s18,
+                                            strokeWidth: AppSize.s1,
+                                          ),
+                                        ),
+                                    ],
                                   ),
                                 ],
                               ),

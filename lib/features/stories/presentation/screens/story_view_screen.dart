@@ -26,7 +26,6 @@ class _StoryViewScreenState extends State<StoryViewScreen> {
     storiesCubit = StoriesCubit.get(context);
     storiesCubit.initStoryView(
       context: context,
-      stories: widget.stories,
     );
     super.initState();
   }

@@ -31,4 +31,12 @@ class MessagesState with _$MessagesState {
       _PickMessageFileError;
   const factory MessagesState.closeMediaContainer() = _CloseMediaContainer;
   const factory MessagesState.getFilePercentage() = _GetFilePercentage;
+  const factory MessagesState.openDocMessageLoading() = _OpenDocMessageLoading;
+  const factory MessagesState.openDocMessage() = _OpenDocMessage;
+  const factory MessagesState.openDocMessageError(String errorMsg) =
+      _OpenDocMessageError;
+  const factory MessagesState.deleteMessageLoading() = _DeleteMessageLoading;
+  const factory MessagesState.deleteMessage() = _DeleteMessage;
+  const factory MessagesState.deleteMessageError(String errorMsg) =
+      _DeleteMessageError;
 }

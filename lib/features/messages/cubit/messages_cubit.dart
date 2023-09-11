@@ -13,11 +13,15 @@ import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 import 'package:final_nuntius/features/messages/data/repositories/messages_repository.dart';
+import 'package:final_nuntius/features/messages/presentation/widgets/delete_message/delete_message_bottom_sheet.dart';
+import 'package:final_nuntius/features/messages/presentation/widgets/message_bubble/doc_message.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:open_file/open_file.dart';
 
 part 'messages_cubit.freezed.dart';
 part 'messages_state.dart';
@@ -56,6 +60,7 @@ class MessagesCubit extends Cubit<MessagesState> {
     emit(const MessagesState.disposeControllers());
   }
 
+  List<MessageModel> messages = [];
   void getMessages({bool? isInit}) async {
     emit(const MessagesState.getMessagesLoading());
     final response =
@@ -66,11 +71,13 @@ class MessagesCubit extends Cubit<MessagesState> {
       },
       (snapshots) {
         snapshots.listen((event) {
+          emit(const MessagesState.initControllers());
           List<MessageModel> messages = [];
           for (var doc in event.docs) {
             messages.add(MessageModel.fromJson(doc.data()));
           }
           if (isInit == true) scrollDown();
+          this.messages = messages;
           emit(MessagesState.getMessages(messages));
         });
       },
@@ -240,6 +247,66 @@ class MessagesCubit extends Cubit<MessagesState> {
             });
           },
         );
+      },
+    );
+  }
+
+  String openedDocMessageId = "";
+  void openDocMessage({required String url, required String id}) async {
+    emit(const MessagesState.openDocMessageLoading());
+    openedDocMessageId = id;
+    DefaultCacheManager defaultCacheManager = DefaultCacheManager();
+    try {
+      final file =
+          await CachedFileControllerService(defaultCacheManager).getFile(url);
+      final filePath = file.absolute.path;
+      try {
+        await OpenFile.open(filePath);
+        emit(const MessagesState.openDocMessage());
+      } catch (error) {
+        emit(const MessagesState.openDocMessageError("can't open file"));
+      }
+    } catch (error) {
+      emit(const MessagesState.openDocMessageError("can't get file"));
+    }
+  }
+
+  void showDeleteMessageBottomSheet(
+      {required BuildContext context, required String messageId}) {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      backgroundColor: Colors.transparent,
+      builder: (BuildContext context) {
+        return DeleteMessageBottomSheet(
+          messageId: messageId,
+        );
+      },
+    );
+  }
+
+  void deleteMessage({required String messageId}) async {
+    emit(const MessagesState.deleteMessageLoading());
+    final response = await messagesRepository.deleteMessage(
+      messageId: messageId,
+      userPhone: user!.phone!,
+    );
+    response.fold(
+      (failure) => emit(MessagesState.deleteMessageError(failure.getMessage())),
+      (result) async {
+        if (messageId == messages.last.messageId) {
+          final response = await messagesRepository.deleteLastMessage(
+              userPhone: user!.phone!);
+          response.fold(
+            (failure) =>
+                emit(MessagesState.deleteMessageError(failure.getMessage())),
+            (result) {
+              emit(const MessagesState.deleteMessage());
+            },
+          );
+        } else {
+          emit(const MessagesState.deleteMessage());
+        }
       },
     );
   }

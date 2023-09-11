@@ -57,6 +57,13 @@ abstract class FirebaseHelper {
   Future<void> deleteLastStory();
   Future<void> updateStory(
       {required StoryModel storyModel, required String phoneNumber});
+
+  Future<void> deleteMessage({
+    required String messageId,
+    required String userPhone,
+  });
+
+  Future<void> deleteLastMessage({required String userPhone});
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -176,7 +183,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .doc(phoneNumber)
         .collection(Collections.messages)
         .doc(id)
-        .set(messageModel.toJson());
+        .set(messageModel.copyWith(messageId: id).toJson());
 
     /// add message to friend database
 
@@ -193,7 +200,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .doc(HiveHelper.getCurrentUser()!.phone!)
         .collection(Collections.messages)
         .doc(id)
-        .set(messageModel.toJson());
+        .set(messageModel.copyWith(messageId: id).toJson());
   }
 
   @override
@@ -284,7 +291,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
             .collection(Collections.stories)
             .doc(users[i].phone)
             .collection(Collections.currentStories)
-            .orderBy('date', descending: true)
+            .orderBy('date')
             .get();
 
         final docs = response.docs;
@@ -345,5 +352,48 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.currentStories)
         .doc(storyModel.id)
         .update(storyModel.toJson());
+  }
+
+  @override
+  Future<void> deleteMessage({
+    required String messageId,
+    required String userPhone,
+  }) async {
+    await _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .collection(Collections.chats)
+        .doc(userPhone)
+        .collection(Collections.messages)
+        .doc(messageId)
+        .update({"isDeleted": true});
+
+    await _db
+        .collection(Collections.users)
+        .doc(userPhone)
+        .collection(Collections.chats)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .collection(Collections.messages)
+        .doc(messageId)
+        .update({"isDeleted": true});
+  }
+
+  @override
+  Future<void> deleteLastMessage({
+    required String userPhone,
+  }) async {
+    await _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .collection(Collections.chats)
+        .doc(userPhone)
+        .update({"isDeleted": true});
+
+    await _db
+        .collection(Collections.users)
+        .doc(userPhone)
+        .collection(Collections.chats)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .update({"isDeleted": true});
   }
 }

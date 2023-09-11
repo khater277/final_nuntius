@@ -26,7 +26,7 @@ class SendMessageTextField extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     if (MessagesCubit.get(context).file != null)
-                      MediaContainer(),
+                      const MediaContainer(),
                     CustomTextField(
                       hintText: 'enter your message',
                       controller: MessagesCubit.get(context).messageController!,

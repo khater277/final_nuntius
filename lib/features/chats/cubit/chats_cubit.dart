@@ -1,10 +1,8 @@
-import 'package:bloc/bloc.dart';
+import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_preferences/shared_pref_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/chats/data/repositories/chats_repository.dart';
-import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:collection/collection.dart';
@@ -18,11 +16,12 @@ class ChatsCubit extends Cubit<ChatsState> {
       : super(const ChatsState.initial());
 
   static ChatsCubit get(context) => BlocProvider.of(context);
-  List<UserData>? allUsers;
+  List<UserData> allUsers = HiveHelper.getAllUsers() ?? [];
 
   void initChats(context) {
-    allUsers = HomeCubit.get(context).users;
-    emit(const ChatsState.initChats());
+    // allUsers = HiveHelper.getAllUsers() ?? [];
+    // // allUsers = HomeCubit.get(context).users;
+    // emit(const ChatsState.initChats());
   }
 
   List<LastMessageModel> lastMessages = [];
@@ -42,8 +41,7 @@ class ChatsCubit extends Cubit<ChatsState> {
           for (var doc in event.docs) {
             final phoneNumber = doc.id;
             final lastMessage = LastMessageModel.fromJson(doc.data());
-            final user = allUsers!
-                    .firstWhereOrNull((user) => user.phone == phoneNumber) ??
+            final user = allUsers.firstWhereOrNull((user) => user.phone == phoneNumber) ??
                 UserData(
                   token: lastMessage.token,
                   name: phoneNumber,

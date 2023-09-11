@@ -112,6 +112,7 @@ class HomeCubit extends Cubit<HomeState> {
         users.sort(
           (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
         );
+        print("asd=======>${users.first.name}");
       },
       (usersData) {
         for (int i = 0; i < contacts.length; i++) {
@@ -133,6 +134,7 @@ class HomeCubit extends Cubit<HomeState> {
           }
         }
         HiveHelper.setAllUsers(users: users);
+
         users.sort(
           (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
         );

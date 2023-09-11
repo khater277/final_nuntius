@@ -6,12 +6,11 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
+import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:intl/intl.dart';
-import 'package:open_file/open_file.dart';
-import 'package:path_provider/path_provider.dart';
 
 class DocMessage extends StatefulWidget {
   const DocMessage({
@@ -28,37 +27,17 @@ class DocMessage extends StatefulWidget {
 class _DocMessageState extends State<DocMessage> {
   DefaultCacheManager defaultCacheManager = DefaultCacheManager();
   Future<File> getFile() async {
-    return await CachedFileService(defaultCacheManager)
+    return await CachedFileControllerService(defaultCacheManager)
         .getFile(widget.message.media!);
   }
-
-  // @override
-  // void initState() {
-
-  //   super.initState();
-  // }
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () async {
-        // final file = await getFile();
-
-        // final filePath = file.absolute.path;
-        // print(filePath);
-        // String x = basename(file.path);
-        // final directory = await getExternalStorageDirectory();
-        // final y = '${directory!.absolute.path}/$x';
-        // print('$y/$x');
-        // await DefaultCacheManager().getSingleFile(widget.message.media!);
-        // final filex = File(y);
-        // await filex.open();
-        // print(filex.open());
-        // OpenFile.open(y);
-
-        final Directory? directory = await getExternalStorageDirectory();
-        OpenFile.open("${directory!.path}/${widget.message.message!}");
-      },
+      onTap: () => MessagesCubit.get(context).openDocMessage(
+        url: widget.message.media!,
+        id: widget.message.messageId!,
+      ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -94,25 +73,24 @@ abstract class FileService {
   Future<File> getFile(String fileUrl);
 }
 
-class CachedFileService extends FileService {
+class CachedFileControllerService extends FileService {
   final BaseCacheManager _cacheManager;
 
-  CachedFileService(this._cacheManager);
+  CachedFileControllerService(this._cacheManager);
 
   @override
   Future<File> getFile(String fileUrl) async {
     final fileInfo = await _cacheManager.getFileFromCache(fileUrl);
 
     if (fileInfo == null) {
-      print('[VideoControllerService]: No file in cache');
+      print('[FileControllerService]: No file in cache');
 
-      print('[VideoControllerService]: Saving file to cache');
+      print('[FileControllerService]: Saving file to cache');
       await _cacheManager.downloadFile(fileUrl);
       // unawaited(_cacheManager.downloadFile(fileUrl));
-
       return _cacheManager.getSingleFile(fileUrl);
     } else {
-      print('[VideoControllerService]: Loading file from cache');
+      print('[FileControllerService]: Loading file from cache');
       return _cacheManager.getSingleFile(fileUrl);
     }
   }

@@ -3,7 +3,6 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:final_nuntius/features/stories/data/models/viewer_model/viewer_model.dart';
 import 'package:flutter/material.dart';
 
 class MyStoryViewers extends StatelessWidget {

@@ -38,6 +38,12 @@ mixin _$MessagesState {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,6 +68,12 @@ mixin _$MessagesState {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -86,6 +98,12 @@ mixin _$MessagesState {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -116,6 +134,13 @@ mixin _$MessagesState {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -140,6 +165,12 @@ mixin _$MessagesState {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -164,6 +195,12 @@ mixin _$MessagesState {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -244,6 +281,12 @@ class _$_Initial implements _Initial {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return initial();
   }
@@ -271,6 +314,12 @@ class _$_Initial implements _Initial {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return initial?.call();
   }
@@ -298,6 +347,12 @@ class _$_Initial implements _Initial {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -334,6 +389,13 @@ class _$_Initial implements _Initial {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return initial(this);
   }
@@ -361,6 +423,12 @@ class _$_Initial implements _Initial {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return initial?.call(this);
   }
@@ -388,6 +456,12 @@ class _$_Initial implements _Initial {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -459,6 +533,12 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return initControllers();
   }
@@ -486,6 +566,12 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return initControllers?.call();
   }
@@ -513,6 +599,12 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -549,6 +641,13 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return initControllers(this);
   }
@@ -576,6 +675,12 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return initControllers?.call(this);
   }
@@ -603,6 +708,12 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -674,6 +785,12 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return disposeControllers();
   }
@@ -701,6 +818,12 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return disposeControllers?.call();
   }
@@ -728,6 +851,12 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -764,6 +893,13 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return disposeControllers(this);
   }
@@ -791,6 +927,12 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return disposeControllers?.call(this);
   }
@@ -818,6 +960,12 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -889,6 +1037,12 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return sendMessageLoading();
   }
@@ -916,6 +1070,12 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return sendMessageLoading?.call();
   }
@@ -943,6 +1103,12 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -979,6 +1145,13 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return sendMessageLoading(this);
   }
@@ -1006,6 +1179,12 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return sendMessageLoading?.call(this);
   }
@@ -1033,6 +1212,12 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -1104,6 +1289,12 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return sendMessage();
   }
@@ -1131,6 +1322,12 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return sendMessage?.call();
   }
@@ -1158,6 +1355,12 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -1194,6 +1397,13 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return sendMessage(this);
   }
@@ -1221,6 +1431,12 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return sendMessage?.call(this);
   }
@@ -1248,6 +1464,12 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -1346,6 +1568,12 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return sendMessageError(errorMsg);
   }
@@ -1373,6 +1601,12 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return sendMessageError?.call(errorMsg);
   }
@@ -1400,6 +1634,12 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -1436,6 +1676,13 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return sendMessageError(this);
   }
@@ -1463,6 +1710,12 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return sendMessageError?.call(this);
   }
@@ -1490,6 +1743,12 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -1566,6 +1825,12 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return getMessagesLoading();
   }
@@ -1593,6 +1858,12 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return getMessagesLoading?.call();
   }
@@ -1620,6 +1891,12 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -1656,6 +1933,13 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return getMessagesLoading(this);
   }
@@ -1683,6 +1967,12 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return getMessagesLoading?.call(this);
   }
@@ -1710,6 +2000,12 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -1814,6 +2110,12 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return getMessages(messages);
   }
@@ -1841,6 +2143,12 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return getMessages?.call(messages);
   }
@@ -1868,6 +2176,12 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -1904,6 +2218,13 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return getMessages(this);
   }
@@ -1931,6 +2252,12 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return getMessages?.call(this);
   }
@@ -1958,6 +2285,12 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -2062,6 +2395,12 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return getMessagesError(errorMsg);
   }
@@ -2089,6 +2428,12 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return getMessagesError?.call(errorMsg);
   }
@@ -2116,6 +2461,12 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -2152,6 +2503,13 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return getMessagesError(this);
   }
@@ -2179,6 +2537,12 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return getMessagesError?.call(this);
   }
@@ -2206,6 +2570,12 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -2283,6 +2653,12 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageImageLoading();
   }
@@ -2310,6 +2686,12 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageImageLoading?.call();
   }
@@ -2337,6 +2719,12 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -2373,6 +2761,13 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageImageLoading(this);
   }
@@ -2400,6 +2795,12 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageImageLoading?.call(this);
   }
@@ -2427,6 +2828,12 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -2498,6 +2905,12 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageImage();
   }
@@ -2525,6 +2938,12 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageImage?.call();
   }
@@ -2552,6 +2971,12 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -2588,6 +3013,13 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageImage(this);
   }
@@ -2615,6 +3047,12 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageImage?.call(this);
   }
@@ -2642,6 +3080,12 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -2741,6 +3185,12 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageImageError(errorMsg);
   }
@@ -2768,6 +3218,12 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageImageError?.call(errorMsg);
   }
@@ -2795,6 +3251,12 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -2831,6 +3293,13 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageImageError(this);
   }
@@ -2858,6 +3327,12 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageImageError?.call(this);
   }
@@ -2885,6 +3360,12 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -2963,6 +3444,12 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageVideoLoading();
   }
@@ -2990,6 +3477,12 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageVideoLoading?.call();
   }
@@ -3017,6 +3510,12 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -3053,6 +3552,13 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageVideoLoading(this);
   }
@@ -3080,6 +3586,12 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageVideoLoading?.call(this);
   }
@@ -3107,6 +3619,12 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -3178,6 +3696,12 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageVideo();
   }
@@ -3205,6 +3729,12 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageVideo?.call();
   }
@@ -3232,6 +3762,12 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -3268,6 +3804,13 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageVideo(this);
   }
@@ -3295,6 +3838,12 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageVideo?.call(this);
   }
@@ -3322,6 +3871,12 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -3421,6 +3976,12 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageVideoError(errorMsg);
   }
@@ -3448,6 +4009,12 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageVideoError?.call(errorMsg);
   }
@@ -3475,6 +4042,12 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -3511,6 +4084,13 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageVideoError(this);
   }
@@ -3538,6 +4118,12 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageVideoError?.call(this);
   }
@@ -3565,6 +4151,12 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -3643,6 +4235,12 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageFileLoading();
   }
@@ -3670,6 +4268,12 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageFileLoading?.call();
   }
@@ -3697,6 +4301,12 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -3733,6 +4343,13 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageFileLoading(this);
   }
@@ -3760,6 +4377,12 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageFileLoading?.call(this);
   }
@@ -3787,6 +4410,12 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -3858,6 +4487,12 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageFile();
   }
@@ -3885,6 +4520,12 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageFile?.call();
   }
@@ -3912,6 +4553,12 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -3948,6 +4595,13 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageFile(this);
   }
@@ -3975,6 +4629,12 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageFile?.call(this);
   }
@@ -4002,6 +4662,12 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -4101,6 +4767,12 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return pickMessageFileError(errorMsg);
   }
@@ -4128,6 +4800,12 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return pickMessageFileError?.call(errorMsg);
   }
@@ -4155,6 +4833,12 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -4191,6 +4875,13 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return pickMessageFileError(this);
   }
@@ -4218,6 +4909,12 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return pickMessageFileError?.call(this);
   }
@@ -4245,6 +4942,12 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -4322,6 +5025,12 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return closeMediaContainer();
   }
@@ -4349,6 +5058,12 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return closeMediaContainer?.call();
   }
@@ -4376,6 +5091,12 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -4412,6 +5133,13 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return closeMediaContainer(this);
   }
@@ -4439,6 +5167,12 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return closeMediaContainer?.call(this);
   }
@@ -4466,6 +5200,12 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -4537,6 +5277,12 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(String errorMsg) pickMessageFileError,
     required TResult Function() closeMediaContainer,
     required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
   }) {
     return getFilePercentage();
   }
@@ -4564,6 +5310,12 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(String errorMsg)? pickMessageFileError,
     TResult? Function()? closeMediaContainer,
     TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
   }) {
     return getFilePercentage?.call();
   }
@@ -4591,6 +5343,12 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(String errorMsg)? pickMessageFileError,
     TResult Function()? closeMediaContainer,
     TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -4627,6 +5385,13 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(_PickMessageFileError value) pickMessageFileError,
     required TResult Function(_CloseMediaContainer value) closeMediaContainer,
     required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
   }) {
     return getFilePercentage(this);
   }
@@ -4654,6 +5419,12 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(_PickMessageFileError value)? pickMessageFileError,
     TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
   }) {
     return getFilePercentage?.call(this);
   }
@@ -4681,6 +5452,12 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(_PickMessageFileError value)? pickMessageFileError,
     TResult Function(_CloseMediaContainer value)? closeMediaContainer,
     TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -4692,4 +5469,1584 @@ class _$_GetFilePercentage implements _GetFilePercentage {
 
 abstract class _GetFilePercentage implements MessagesState {
   const factory _GetFilePercentage() = _$_GetFilePercentage;
+}
+
+/// @nodoc
+abstract class _$$_OpenDocMessageLoadingCopyWith<$Res> {
+  factory _$$_OpenDocMessageLoadingCopyWith(_$_OpenDocMessageLoading value,
+          $Res Function(_$_OpenDocMessageLoading) then) =
+      __$$_OpenDocMessageLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_OpenDocMessageLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessageLoading>
+    implements _$$_OpenDocMessageLoadingCopyWith<$Res> {
+  __$$_OpenDocMessageLoadingCopyWithImpl(_$_OpenDocMessageLoading _value,
+      $Res Function(_$_OpenDocMessageLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
+  const _$_OpenDocMessageLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.openDocMessageLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_OpenDocMessageLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return openDocMessageLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return openDocMessageLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessageLoading != null) {
+      return openDocMessageLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return openDocMessageLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return openDocMessageLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessageLoading != null) {
+      return openDocMessageLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OpenDocMessageLoading implements MessagesState {
+  const factory _OpenDocMessageLoading() = _$_OpenDocMessageLoading;
+}
+
+/// @nodoc
+abstract class _$$_OpenDocMessageCopyWith<$Res> {
+  factory _$$_OpenDocMessageCopyWith(
+          _$_OpenDocMessage value, $Res Function(_$_OpenDocMessage) then) =
+      __$$_OpenDocMessageCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_OpenDocMessageCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessage>
+    implements _$$_OpenDocMessageCopyWith<$Res> {
+  __$$_OpenDocMessageCopyWithImpl(
+      _$_OpenDocMessage _value, $Res Function(_$_OpenDocMessage) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_OpenDocMessage implements _OpenDocMessage {
+  const _$_OpenDocMessage();
+
+  @override
+  String toString() {
+    return 'MessagesState.openDocMessage()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_OpenDocMessage);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return openDocMessage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return openDocMessage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessage != null) {
+      return openDocMessage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return openDocMessage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return openDocMessage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessage != null) {
+      return openDocMessage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OpenDocMessage implements MessagesState {
+  const factory _OpenDocMessage() = _$_OpenDocMessage;
+}
+
+/// @nodoc
+abstract class _$$_OpenDocMessageErrorCopyWith<$Res> {
+  factory _$$_OpenDocMessageErrorCopyWith(_$_OpenDocMessageError value,
+          $Res Function(_$_OpenDocMessageError) then) =
+      __$$_OpenDocMessageErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_OpenDocMessageErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessageError>
+    implements _$$_OpenDocMessageErrorCopyWith<$Res> {
+  __$$_OpenDocMessageErrorCopyWithImpl(_$_OpenDocMessageError _value,
+      $Res Function(_$_OpenDocMessageError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_OpenDocMessageError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_OpenDocMessageError implements _OpenDocMessageError {
+  const _$_OpenDocMessageError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.openDocMessageError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_OpenDocMessageError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_OpenDocMessageErrorCopyWith<_$_OpenDocMessageError> get copyWith =>
+      __$$_OpenDocMessageErrorCopyWithImpl<_$_OpenDocMessageError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return openDocMessageError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return openDocMessageError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessageError != null) {
+      return openDocMessageError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return openDocMessageError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return openDocMessageError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (openDocMessageError != null) {
+      return openDocMessageError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OpenDocMessageError implements MessagesState {
+  const factory _OpenDocMessageError(final String errorMsg) =
+      _$_OpenDocMessageError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_OpenDocMessageErrorCopyWith<_$_OpenDocMessageError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_DeleteMessageLoadingCopyWith<$Res> {
+  factory _$$_DeleteMessageLoadingCopyWith(_$_DeleteMessageLoading value,
+          $Res Function(_$_DeleteMessageLoading) then) =
+      __$$_DeleteMessageLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_DeleteMessageLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessageLoading>
+    implements _$$_DeleteMessageLoadingCopyWith<$Res> {
+  __$$_DeleteMessageLoadingCopyWithImpl(_$_DeleteMessageLoading _value,
+      $Res Function(_$_DeleteMessageLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_DeleteMessageLoading implements _DeleteMessageLoading {
+  const _$_DeleteMessageLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.deleteMessageLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_DeleteMessageLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return deleteMessageLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return deleteMessageLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessageLoading != null) {
+      return deleteMessageLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return deleteMessageLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return deleteMessageLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessageLoading != null) {
+      return deleteMessageLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteMessageLoading implements MessagesState {
+  const factory _DeleteMessageLoading() = _$_DeleteMessageLoading;
+}
+
+/// @nodoc
+abstract class _$$_DeleteMessageCopyWith<$Res> {
+  factory _$$_DeleteMessageCopyWith(
+          _$_DeleteMessage value, $Res Function(_$_DeleteMessage) then) =
+      __$$_DeleteMessageCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_DeleteMessageCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessage>
+    implements _$$_DeleteMessageCopyWith<$Res> {
+  __$$_DeleteMessageCopyWithImpl(
+      _$_DeleteMessage _value, $Res Function(_$_DeleteMessage) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_DeleteMessage implements _DeleteMessage {
+  const _$_DeleteMessage();
+
+  @override
+  String toString() {
+    return 'MessagesState.deleteMessage()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_DeleteMessage);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return deleteMessage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return deleteMessage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessage != null) {
+      return deleteMessage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return deleteMessage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return deleteMessage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessage != null) {
+      return deleteMessage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteMessage implements MessagesState {
+  const factory _DeleteMessage() = _$_DeleteMessage;
+}
+
+/// @nodoc
+abstract class _$$_DeleteMessageErrorCopyWith<$Res> {
+  factory _$$_DeleteMessageErrorCopyWith(_$_DeleteMessageError value,
+          $Res Function(_$_DeleteMessageError) then) =
+      __$$_DeleteMessageErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_DeleteMessageErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessageError>
+    implements _$$_DeleteMessageErrorCopyWith<$Res> {
+  __$$_DeleteMessageErrorCopyWithImpl(
+      _$_DeleteMessageError _value, $Res Function(_$_DeleteMessageError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_DeleteMessageError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_DeleteMessageError implements _DeleteMessageError {
+  const _$_DeleteMessageError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.deleteMessageError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_DeleteMessageError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DeleteMessageErrorCopyWith<_$_DeleteMessageError> get copyWith =>
+      __$$_DeleteMessageErrorCopyWithImpl<_$_DeleteMessageError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+  }) {
+    return deleteMessageError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+  }) {
+    return deleteMessageError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessageError != null) {
+      return deleteMessageError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+  }) {
+    return deleteMessageError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+  }) {
+    return deleteMessageError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    required TResult orElse(),
+  }) {
+    if (deleteMessageError != null) {
+      return deleteMessageError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _DeleteMessageError implements MessagesState {
+  const factory _DeleteMessageError(final String errorMsg) =
+      _$_DeleteMessageError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_DeleteMessageErrorCopyWith<_$_DeleteMessageError> get copyWith =>
+      throw _privateConstructorUsedError;
 }

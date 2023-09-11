@@ -2,9 +2,7 @@ import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/data/models/contact_story_model/contact_story_model.dart';
-import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/contact_story.dart';
 import 'package:flutter/material.dart';
 

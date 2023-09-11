@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 
 Future<T?> showAlertDialog<T>({
   required BuildContext context,
+  required String text,
   required void Function()? okPressed,
 }) {
   AlertDialog alert = AlertDialog(
@@ -15,7 +16,7 @@ Future<T?> showAlertDialog<T>({
       borderRadius: BorderRadius.circular(AppSize.s10),
     ),
     content: SmallHeadText(
-      text: "Are you sure you want to delete the story?",
+      text: text,
       size: FontSize.s13,
       maxLines: 3,
       center: true,

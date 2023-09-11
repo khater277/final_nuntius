@@ -1,4 +1,3 @@
-import 'package:final_nuntius/features/stories/data/models/viewer_model/viewer_model.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'story_model.freezed.dart';

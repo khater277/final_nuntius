@@ -7,7 +7,6 @@ import 'package:final_nuntius/features/messages/data/datasources/messages_remote
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 import 'package:final_nuntius/features/messages/data/repositories/messages_repository.dart';
-import 'package:firebase_core/firebase_core.dart';
 
 class MessagesRepositoryImpl implements MessagesRepository {
   final MessagesRemoteDataSource messagesRemoteDataSource;
@@ -68,6 +67,43 @@ class MessagesRepositoryImpl implements MessagesRepository {
       return Right(response);
     } on DioException catch (error) {
       return Left(ServerFailure(error: error, type: NetworkErrorTypes.api));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteLastMessage(
+      {required String userPhone}) async {
+    try {
+      final response = await messagesRemoteDataSource.deleteLastMessage(
+          userPhone: userPhone);
+      return Right(response);
+    } on DioException catch (error) {
+      return Left(
+          ServerFailure(error: error, type: NetworkErrorTypes.firestore));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> deleteMessage(
+      {required String messageId, required String userPhone}) async {
+    if (await networkInfo.connected()) {
+      try {
+        final response = messagesRemoteDataSource.deleteMessage(
+            messageId: messageId, userPhone: userPhone);
+        return Right(response);
+      } on FirebaseException catch (error) {
+        return Left(
+            ServerFailure(error: error, type: NetworkErrorTypes.firestore));
+      }
+    } else {
+      FirebaseException error = FirebaseException(
+        plugin: '',
+        code: 'no-internet-connection',
+      );
+      return Left(ServerFailure(
+        error: error,
+        type: NetworkErrorTypes.firestore,
+      ));
     }
   }
 }

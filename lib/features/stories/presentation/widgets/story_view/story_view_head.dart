@@ -57,9 +57,9 @@ class StoryViewHead extends StatelessWidget {
                   cubit.storyController!.pause();
                   showAlertDialog(
                     context: context,
+                    text: "Are you sure you want to delete this story?",
                     okPressed: () => cubit.deleteStory(
                       context: context,
-                      stories: stories,
                       storyId: stories[cubit.storyIndex].id!,
                     ),
                   ).then((value) => cubit.storyController!.play());

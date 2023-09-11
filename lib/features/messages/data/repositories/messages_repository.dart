@@ -16,4 +16,11 @@ abstract class MessagesRepository {
   Future<Either<Failure, Map<String, dynamic>>> pushNotification({
     required Map<String, dynamic> fcmBody,
   });
+
+  Future<Either<Failure, void>> deleteMessage({
+    required String messageId,
+    required String userPhone,
+  });
+
+  Future<Either<Failure, void>> deleteLastMessage({required String userPhone});
 }

@@ -17,6 +17,13 @@ abstract class MessagesRemoteDataSource {
   Future<Map<String, dynamic>> pushNotification({
     required Map<String, dynamic> fcmBody,
   });
+
+  Future<void> deleteMessage({
+    required String messageId,
+    required String userPhone,
+  });
+
+  Future<void> deleteLastMessage({required String userPhone});
 }
 
 class MessagesRemoteDataSourceImpl implements MessagesRemoteDataSource {
@@ -48,5 +55,17 @@ class MessagesRemoteDataSourceImpl implements MessagesRemoteDataSource {
   Future<Map<String, dynamic>> pushNotification(
       {required Map<String, dynamic> fcmBody}) {
     return fcmApi.pushNotification(fcmBody: fcmBody);
+  }
+
+  @override
+  Future<void> deleteLastMessage({required String userPhone}) {
+    return firebaseHelper.deleteLastMessage(userPhone: userPhone);
+  }
+
+  @override
+  Future<void> deleteMessage(
+      {required String messageId, required String userPhone}) {
+    return firebaseHelper.deleteMessage(
+        messageId: messageId, userPhone: userPhone);
   }
 }

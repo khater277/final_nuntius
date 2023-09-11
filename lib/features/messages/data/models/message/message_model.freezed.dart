@@ -23,6 +23,7 @@ mixin _$MessageModel {
   String? get senderId => throw _privateConstructorUsedError;
   String? get receiverId => throw _privateConstructorUsedError;
   String? get message => throw _privateConstructorUsedError;
+  String? get messageId => throw _privateConstructorUsedError;
   String? get date => throw _privateConstructorUsedError;
   bool? get isDeleted => throw _privateConstructorUsedError;
   String? get media => throw _privateConstructorUsedError;
@@ -30,6 +31,7 @@ mixin _$MessageModel {
   bool? get isVideo => throw _privateConstructorUsedError;
   bool? get isDoc => throw _privateConstructorUsedError;
   bool? get isStoryReply => throw _privateConstructorUsedError;
+  String? get storyText => throw _privateConstructorUsedError;
   String? get storyMedia => throw _privateConstructorUsedError;
   String? get storyDate => throw _privateConstructorUsedError;
   bool? get isStoryImageReply => throw _privateConstructorUsedError;
@@ -50,6 +52,7 @@ abstract class $MessageModelCopyWith<$Res> {
       {String? senderId,
       String? receiverId,
       String? message,
+      String? messageId,
       String? date,
       bool? isDeleted,
       String? media,
@@ -57,6 +60,7 @@ abstract class $MessageModelCopyWith<$Res> {
       bool? isVideo,
       bool? isDoc,
       bool? isStoryReply,
+      String? storyText,
       String? storyMedia,
       String? storyDate,
       bool? isStoryImageReply});
@@ -78,6 +82,7 @@ class _$MessageModelCopyWithImpl<$Res, $Val extends MessageModel>
     Object? senderId = freezed,
     Object? receiverId = freezed,
     Object? message = freezed,
+    Object? messageId = freezed,
     Object? date = freezed,
     Object? isDeleted = freezed,
     Object? media = freezed,
@@ -85,6 +90,7 @@ class _$MessageModelCopyWithImpl<$Res, $Val extends MessageModel>
     Object? isVideo = freezed,
     Object? isDoc = freezed,
     Object? isStoryReply = freezed,
+    Object? storyText = freezed,
     Object? storyMedia = freezed,
     Object? storyDate = freezed,
     Object? isStoryImageReply = freezed,
@@ -101,6 +107,10 @@ class _$MessageModelCopyWithImpl<$Res, $Val extends MessageModel>
       message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      messageId: freezed == messageId
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
               as String?,
       date: freezed == date
           ? _value.date
@@ -130,6 +140,10 @@ class _$MessageModelCopyWithImpl<$Res, $Val extends MessageModel>
           ? _value.isStoryReply
           : isStoryReply // ignore: cast_nullable_to_non_nullable
               as bool?,
+      storyText: freezed == storyText
+          ? _value.storyText
+          : storyText // ignore: cast_nullable_to_non_nullable
+              as String?,
       storyMedia: freezed == storyMedia
           ? _value.storyMedia
           : storyMedia // ignore: cast_nullable_to_non_nullable
@@ -158,6 +172,7 @@ abstract class _$$_MessageModelCopyWith<$Res>
       {String? senderId,
       String? receiverId,
       String? message,
+      String? messageId,
       String? date,
       bool? isDeleted,
       String? media,
@@ -165,6 +180,7 @@ abstract class _$$_MessageModelCopyWith<$Res>
       bool? isVideo,
       bool? isDoc,
       bool? isStoryReply,
+      String? storyText,
       String? storyMedia,
       String? storyDate,
       bool? isStoryImageReply});
@@ -184,6 +200,7 @@ class __$$_MessageModelCopyWithImpl<$Res>
     Object? senderId = freezed,
     Object? receiverId = freezed,
     Object? message = freezed,
+    Object? messageId = freezed,
     Object? date = freezed,
     Object? isDeleted = freezed,
     Object? media = freezed,
@@ -191,6 +208,7 @@ class __$$_MessageModelCopyWithImpl<$Res>
     Object? isVideo = freezed,
     Object? isDoc = freezed,
     Object? isStoryReply = freezed,
+    Object? storyText = freezed,
     Object? storyMedia = freezed,
     Object? storyDate = freezed,
     Object? isStoryImageReply = freezed,
@@ -207,6 +225,10 @@ class __$$_MessageModelCopyWithImpl<$Res>
       message: freezed == message
           ? _value.message
           : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      messageId: freezed == messageId
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
               as String?,
       date: freezed == date
           ? _value.date
@@ -236,6 +258,10 @@ class __$$_MessageModelCopyWithImpl<$Res>
           ? _value.isStoryReply
           : isStoryReply // ignore: cast_nullable_to_non_nullable
               as bool?,
+      storyText: freezed == storyText
+          ? _value.storyText
+          : storyText // ignore: cast_nullable_to_non_nullable
+              as String?,
       storyMedia: freezed == storyMedia
           ? _value.storyMedia
           : storyMedia // ignore: cast_nullable_to_non_nullable
@@ -259,6 +285,7 @@ class _$_MessageModel implements _MessageModel {
       {this.senderId,
       this.receiverId,
       this.message,
+      this.messageId,
       this.date,
       this.isDeleted,
       this.media,
@@ -266,6 +293,7 @@ class _$_MessageModel implements _MessageModel {
       this.isVideo,
       this.isDoc,
       this.isStoryReply,
+      this.storyText,
       this.storyMedia,
       this.storyDate,
       this.isStoryImageReply});
@@ -279,6 +307,8 @@ class _$_MessageModel implements _MessageModel {
   final String? receiverId;
   @override
   final String? message;
+  @override
+  final String? messageId;
   @override
   final String? date;
   @override
@@ -294,6 +324,8 @@ class _$_MessageModel implements _MessageModel {
   @override
   final bool? isStoryReply;
   @override
+  final String? storyText;
+  @override
   final String? storyMedia;
   @override
   final String? storyDate;
@@ -302,7 +334,7 @@ class _$_MessageModel implements _MessageModel {
 
   @override
   String toString() {
-    return 'MessageModel(senderId: $senderId, receiverId: $receiverId, message: $message, date: $date, isDeleted: $isDeleted, media: $media, isImage: $isImage, isVideo: $isVideo, isDoc: $isDoc, isStoryReply: $isStoryReply, storyMedia: $storyMedia, storyDate: $storyDate, isStoryImageReply: $isStoryImageReply)';
+    return 'MessageModel(senderId: $senderId, receiverId: $receiverId, message: $message, messageId: $messageId, date: $date, isDeleted: $isDeleted, media: $media, isImage: $isImage, isVideo: $isVideo, isDoc: $isDoc, isStoryReply: $isStoryReply, storyText: $storyText, storyMedia: $storyMedia, storyDate: $storyDate, isStoryImageReply: $isStoryImageReply)';
   }
 
   @override
@@ -315,6 +347,8 @@ class _$_MessageModel implements _MessageModel {
             (identical(other.receiverId, receiverId) ||
                 other.receiverId == receiverId) &&
             (identical(other.message, message) || other.message == message) &&
+            (identical(other.messageId, messageId) ||
+                other.messageId == messageId) &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.isDeleted, isDeleted) ||
                 other.isDeleted == isDeleted) &&
@@ -324,6 +358,8 @@ class _$_MessageModel implements _MessageModel {
             (identical(other.isDoc, isDoc) || other.isDoc == isDoc) &&
             (identical(other.isStoryReply, isStoryReply) ||
                 other.isStoryReply == isStoryReply) &&
+            (identical(other.storyText, storyText) ||
+                other.storyText == storyText) &&
             (identical(other.storyMedia, storyMedia) ||
                 other.storyMedia == storyMedia) &&
             (identical(other.storyDate, storyDate) ||
@@ -339,6 +375,7 @@ class _$_MessageModel implements _MessageModel {
       senderId,
       receiverId,
       message,
+      messageId,
       date,
       isDeleted,
       media,
@@ -346,6 +383,7 @@ class _$_MessageModel implements _MessageModel {
       isVideo,
       isDoc,
       isStoryReply,
+      storyText,
       storyMedia,
       storyDate,
       isStoryImageReply);
@@ -369,6 +407,7 @@ abstract class _MessageModel implements MessageModel {
       {final String? senderId,
       final String? receiverId,
       final String? message,
+      final String? messageId,
       final String? date,
       final bool? isDeleted,
       final String? media,
@@ -376,6 +415,7 @@ abstract class _MessageModel implements MessageModel {
       final bool? isVideo,
       final bool? isDoc,
       final bool? isStoryReply,
+      final String? storyText,
       final String? storyMedia,
       final String? storyDate,
       final bool? isStoryImageReply}) = _$_MessageModel;
@@ -390,6 +430,8 @@ abstract class _MessageModel implements MessageModel {
   @override
   String? get message;
   @override
+  String? get messageId;
+  @override
   String? get date;
   @override
   bool? get isDeleted;
@@ -403,6 +445,8 @@ abstract class _MessageModel implements MessageModel {
   bool? get isDoc;
   @override
   bool? get isStoryReply;
+  @override
+  String? get storyText;
   @override
   String? get storyMedia;
   @override

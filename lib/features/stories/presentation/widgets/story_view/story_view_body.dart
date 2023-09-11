@@ -52,6 +52,10 @@ class StoryViewBody extends StatelessWidget {
                     phoneNumber: HiveHelper.getCurrentUser()!.phone!,
                   );
                 }
+
+                print("index=========>${cubit.storyIndex}");
+
+                print("index=========>${cubit.storyItems.length}");
               },
               onComplete: () {
                 debugPrint("COMPLETED");

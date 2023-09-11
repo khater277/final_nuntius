@@ -2,9 +2,7 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
-import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

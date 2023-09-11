@@ -39,6 +39,7 @@ class SmallHeadText extends StatelessWidget {
   final bool center;
   final bool isEllipsis;
   final bool isUnderLine;
+  final bool italic;
   final int maxLines;
   final Color? color;
   const SmallHeadText(
@@ -48,6 +49,7 @@ class SmallHeadText extends StatelessWidget {
       this.center = false,
       this.isEllipsis = true,
       this.isUnderLine = false,
+      this.italic = false,
       this.maxLines = 1,
       this.color});
 
@@ -59,6 +61,7 @@ class SmallHeadText extends StatelessWidget {
             fontSize: size ?? FontSize.s14,
             color: color ?? Theme.of(context).textTheme.bodyLarge!.color,
             decoration: isUnderLine ? TextDecoration.underline : null,
+            fontStyle: italic ? FontStyle.italic : FontStyle.normal,
           ),
       textAlign: center ? TextAlign.center : null,
       maxLines: maxLines,
@@ -69,12 +72,14 @@ class SmallHeadText extends StatelessWidget {
 
 class PrimaryText extends StatelessWidget {
   final String text;
+  final Color? color;
   final bool center;
   final double? size;
   final bool isEllipsis;
   const PrimaryText(
       {super.key,
       required this.text,
+      this.color,
       this.size,
       this.center = false,
       this.isEllipsis = true});
@@ -84,6 +89,7 @@ class PrimaryText extends StatelessWidget {
     return Text(
       text,
       style: Theme.of(context).textTheme.displaySmall!.copyWith(
+            color: color,
             fontSize: size ?? FontSize.s14,
           ),
       textAlign: center ? TextAlign.center : null,
