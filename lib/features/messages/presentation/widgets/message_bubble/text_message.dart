@@ -23,6 +23,7 @@ class TextMessage extends StatelessWidget {
         Flexible(
           fit: FlexFit.loose,
           child: SmallHeadText(
+            // text: "${DateTime.parse(message.date!).toUtc()}",
             text: message.message!,
             size: FontSize.s13,
             maxLines: 1000000,
@@ -30,7 +31,7 @@ class TextMessage extends StatelessWidget {
         ),
         SizedBox(width: AppWidth.w5),
         SecondaryText(
-          text: DateFormat.jm().format(DateTime.parse(message.date!)),
+          text: DateFormat.jm().format(DateTime.parse(message.date!).toLocal()),
           color: AppColors.grey,
           size: FontSize.s10,
         )

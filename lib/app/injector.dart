@@ -58,6 +58,7 @@ void setupGetIt() {
   di.registerLazySingleton<MessagesCubit>(() => MessagesCubit(
         messagesRepository: di(),
         authRepository: di(),
+        callsRepository: di(),
       ));
   di.registerLazySingleton<SearchCubit>(() => SearchCubit());
 

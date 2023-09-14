@@ -1,7 +1,10 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
+import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
+import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:final_nuntius/features/calls/presentation/screens/voice_call_screen.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/app_bar/messages_app_bar.dart';
@@ -60,7 +63,17 @@ class _MessagesScreenState extends State<MessagesScreen> {
             Go.back(context: context);
             Go.back(context: context);
           },
-          // getMessages: (messages) => this.messages = messages,
+          generateToken: (token, channelName) => Go.to(
+              context: context,
+              screen: VoiceCallScreen(
+                token: token,
+                channelName: channelName,
+              )),
+          generateTokenError: (errorMsg) => showSnackBar(
+            context: context,
+            message: "$errorMsg , please check agora token server.",
+            color: AppColors.red,
+          ),
           orElse: () {},
         );
       },

@@ -1,5 +1,7 @@
 import 'package:final_nuntius/core/hive/hive_helper.dart';
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:uuid/uuid.dart';
 
 class AppFunctions {
   static String? handleTextFieldValidator({
@@ -23,7 +25,8 @@ class AppFunctions {
     return flag;
   }
 
-  static Map<String, dynamic> getFcmBody({required UserData user}) {
+  static Map<String, dynamic> getMessageNotificationFcmBody(
+      {required UserData user}) {
     late String name;
     try {
       name = user.contacts![HiveHelper.getCurrentUser()!.phone!]!;
@@ -47,6 +50,30 @@ class AppFunctions {
         "click_action": "FLUTTER_NOTIFICATION_CLICK"
       }
     };
+  }
+
+  static Map<String, dynamic> getCallNotificationFcmBody({
+    required CallType callType,
+    required String userToken,
+    required String rtcToken,
+    required String channelName,
+  }) {
+    String callId = const Uuid().v4();
+    final Map<String, dynamic> fcmBody = {
+      "to": userToken,
+      "priority": "high",
+      "data": {
+        "type": callType == CallType.voice ? "voice" : "video",
+        "callId": callId,
+        "token": rtcToken,
+        "channelName": channelName,
+        "senderID": HiveHelper.getCurrentUser()!.uId,
+        "phoneNumber": HiveHelper.getCurrentUser()!.phone,
+        "click_action": "FLUTTER_NOTIFICATION_CLICK"
+      }
+    };
+
+    return fcmBody;
   }
 
   static String storyDate(String date) {

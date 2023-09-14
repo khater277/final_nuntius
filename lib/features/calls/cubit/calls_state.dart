@@ -8,4 +8,14 @@ class CallsState with _$CallsState {
       _GenerateTokenSuccess;
   const factory CallsState.generateTokenError(String errorMsg) =
       _GenerateTokenError;
+  const factory CallsState.setupVoiceSDKEngine() = _SetupVoiceSDKEngine;
+  const factory CallsState.onJoinChannelSuccess() = _OnJoinChannelSuccess;
+  const factory CallsState.onUserJoined() = _OnUserJoined;
+  const factory CallsState.onUserOffline() = _OnUserOffline;
+  const factory CallsState.joinVoiceCallLoading() = _JoinVoiceCallLoading;
+  const factory CallsState.joinVoiceCall() = _JoinVoiceCall;
+  const factory CallsState.joinVoiceCallError(String errorMsg) =
+      _JoinVoiceCallError;
+  const factory CallsState.leaveVoiceCallLoading() = _LeaveVoiceCallLoading;
+  const factory CallsState.leaveVoiceCall() = _LeaveVoiceCall;
 }

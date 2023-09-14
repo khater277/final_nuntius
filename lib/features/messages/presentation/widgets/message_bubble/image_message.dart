@@ -51,7 +51,8 @@ class ImageMessage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(
                     vertical: AppHeight.h3, horizontal: AppWidth.w5),
                 child: SecondaryText(
-                  text: DateFormat.jm().format(DateTime.parse(message.date!)),
+                  text: DateFormat.jm()
+                      .format(DateTime.parse(message.date!).toLocal()),
                   color: AppColors.grey,
                   size: FontSize.s10,
                 ),

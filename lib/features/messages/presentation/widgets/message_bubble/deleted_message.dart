@@ -31,7 +31,7 @@ class DeletedMessage extends StatelessWidget {
         ),
         SizedBox(width: AppWidth.w5),
         SecondaryText(
-          text: DateFormat.jm().format(DateTime.parse(date)),
+          text: DateFormat.jm().format(DateTime.parse(date).toLocal()),
           color: AppColors.grey,
           size: FontSize.s10,
         )

@@ -44,6 +44,18 @@ mixin _$MessagesState {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -74,6 +86,18 @@ mixin _$MessagesState {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -104,6 +128,18 @@ mixin _$MessagesState {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -141,6 +177,19 @@ mixin _$MessagesState {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -171,6 +220,18 @@ mixin _$MessagesState {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -201,6 +262,18 @@ mixin _$MessagesState {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -287,6 +360,18 @@ class _$_Initial implements _Initial {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return initial();
   }
@@ -320,6 +405,18 @@ class _$_Initial implements _Initial {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return initial?.call();
   }
@@ -353,6 +450,18 @@ class _$_Initial implements _Initial {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -396,6 +505,19 @@ class _$_Initial implements _Initial {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return initial(this);
   }
@@ -429,6 +551,18 @@ class _$_Initial implements _Initial {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return initial?.call(this);
   }
@@ -462,6 +596,18 @@ class _$_Initial implements _Initial {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -539,6 +685,18 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return initControllers();
   }
@@ -572,6 +730,18 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return initControllers?.call();
   }
@@ -605,6 +775,18 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -648,6 +830,19 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return initControllers(this);
   }
@@ -681,6 +876,18 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return initControllers?.call(this);
   }
@@ -714,6 +921,18 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -791,6 +1010,18 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return disposeControllers();
   }
@@ -824,6 +1055,18 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return disposeControllers?.call();
   }
@@ -857,6 +1100,18 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -900,6 +1155,19 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return disposeControllers(this);
   }
@@ -933,6 +1201,18 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return disposeControllers?.call(this);
   }
@@ -966,6 +1246,18 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -1043,6 +1335,18 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return sendMessageLoading();
   }
@@ -1076,6 +1380,18 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return sendMessageLoading?.call();
   }
@@ -1109,6 +1425,18 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -1152,6 +1480,19 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return sendMessageLoading(this);
   }
@@ -1185,6 +1526,18 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return sendMessageLoading?.call(this);
   }
@@ -1218,6 +1571,18 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -1295,6 +1660,18 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return sendMessage();
   }
@@ -1328,6 +1705,18 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return sendMessage?.call();
   }
@@ -1361,6 +1750,18 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -1404,6 +1805,19 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return sendMessage(this);
   }
@@ -1437,6 +1851,18 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return sendMessage?.call(this);
   }
@@ -1470,6 +1896,18 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -1574,6 +2012,18 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return sendMessageError(errorMsg);
   }
@@ -1607,6 +2057,18 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return sendMessageError?.call(errorMsg);
   }
@@ -1640,6 +2102,18 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -1683,6 +2157,19 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return sendMessageError(this);
   }
@@ -1716,6 +2203,18 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return sendMessageError?.call(this);
   }
@@ -1749,6 +2248,18 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -1831,6 +2342,18 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return getMessagesLoading();
   }
@@ -1864,6 +2387,18 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return getMessagesLoading?.call();
   }
@@ -1897,6 +2432,18 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -1940,6 +2487,19 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return getMessagesLoading(this);
   }
@@ -1973,6 +2533,18 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return getMessagesLoading?.call(this);
   }
@@ -2006,6 +2578,18 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -2116,6 +2700,18 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return getMessages(messages);
   }
@@ -2149,6 +2745,18 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return getMessages?.call(messages);
   }
@@ -2182,6 +2790,18 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -2225,6 +2845,19 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return getMessages(this);
   }
@@ -2258,6 +2891,18 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return getMessages?.call(this);
   }
@@ -2291,6 +2936,18 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -2401,6 +3058,18 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return getMessagesError(errorMsg);
   }
@@ -2434,6 +3103,18 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return getMessagesError?.call(errorMsg);
   }
@@ -2467,6 +3148,18 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -2510,6 +3203,19 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return getMessagesError(this);
   }
@@ -2543,6 +3249,18 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return getMessagesError?.call(this);
   }
@@ -2576,6 +3294,18 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -2659,6 +3389,18 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageImageLoading();
   }
@@ -2692,6 +3434,18 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageImageLoading?.call();
   }
@@ -2725,6 +3479,18 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -2768,6 +3534,19 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageImageLoading(this);
   }
@@ -2801,6 +3580,18 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageImageLoading?.call(this);
   }
@@ -2834,6 +3625,18 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -2911,6 +3714,18 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageImage();
   }
@@ -2944,6 +3759,18 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageImage?.call();
   }
@@ -2977,6 +3804,18 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -3020,6 +3859,19 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageImage(this);
   }
@@ -3053,6 +3905,18 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageImage?.call(this);
   }
@@ -3086,6 +3950,18 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -3191,6 +4067,18 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageImageError(errorMsg);
   }
@@ -3224,6 +4112,18 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageImageError?.call(errorMsg);
   }
@@ -3257,6 +4157,18 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -3300,6 +4212,19 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageImageError(this);
   }
@@ -3333,6 +4258,18 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageImageError?.call(this);
   }
@@ -3366,6 +4303,18 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -3450,6 +4399,18 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageVideoLoading();
   }
@@ -3483,6 +4444,18 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageVideoLoading?.call();
   }
@@ -3516,6 +4489,18 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -3559,6 +4544,19 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageVideoLoading(this);
   }
@@ -3592,6 +4590,18 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageVideoLoading?.call(this);
   }
@@ -3625,6 +4635,18 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -3702,6 +4724,18 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageVideo();
   }
@@ -3735,6 +4769,18 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageVideo?.call();
   }
@@ -3768,6 +4814,18 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -3811,6 +4869,19 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageVideo(this);
   }
@@ -3844,6 +4915,18 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageVideo?.call(this);
   }
@@ -3877,6 +4960,18 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -3982,6 +5077,18 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageVideoError(errorMsg);
   }
@@ -4015,6 +5122,18 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageVideoError?.call(errorMsg);
   }
@@ -4048,6 +5167,18 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -4091,6 +5222,19 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageVideoError(this);
   }
@@ -4124,6 +5268,18 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageVideoError?.call(this);
   }
@@ -4157,6 +5313,18 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -4241,6 +5409,18 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageFileLoading();
   }
@@ -4274,6 +5454,18 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageFileLoading?.call();
   }
@@ -4307,6 +5499,18 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -4350,6 +5554,19 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageFileLoading(this);
   }
@@ -4383,6 +5600,18 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageFileLoading?.call(this);
   }
@@ -4416,6 +5645,18 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -4493,6 +5734,18 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageFile();
   }
@@ -4526,6 +5779,18 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageFile?.call();
   }
@@ -4559,6 +5824,18 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -4602,6 +5879,19 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageFile(this);
   }
@@ -4635,6 +5925,18 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageFile?.call(this);
   }
@@ -4668,6 +5970,18 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -4773,6 +6087,18 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return pickMessageFileError(errorMsg);
   }
@@ -4806,6 +6132,18 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return pickMessageFileError?.call(errorMsg);
   }
@@ -4839,6 +6177,18 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -4882,6 +6232,19 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return pickMessageFileError(this);
   }
@@ -4915,6 +6278,18 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return pickMessageFileError?.call(this);
   }
@@ -4948,6 +6323,18 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -5031,6 +6418,18 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return closeMediaContainer();
   }
@@ -5064,6 +6463,18 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return closeMediaContainer?.call();
   }
@@ -5097,6 +6508,18 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -5140,6 +6563,19 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return closeMediaContainer(this);
   }
@@ -5173,6 +6609,18 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return closeMediaContainer?.call(this);
   }
@@ -5206,6 +6654,18 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -5283,6 +6743,18 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return getFilePercentage();
   }
@@ -5316,6 +6788,18 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return getFilePercentage?.call();
   }
@@ -5349,6 +6833,18 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -5392,6 +6888,19 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return getFilePercentage(this);
   }
@@ -5425,6 +6934,18 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return getFilePercentage?.call(this);
   }
@@ -5458,6 +6979,18 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -5535,6 +7068,18 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return openDocMessageLoading();
   }
@@ -5568,6 +7113,18 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return openDocMessageLoading?.call();
   }
@@ -5601,6 +7158,18 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessageLoading != null) {
@@ -5644,6 +7213,19 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return openDocMessageLoading(this);
   }
@@ -5677,6 +7259,18 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return openDocMessageLoading?.call(this);
   }
@@ -5710,6 +7304,18 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessageLoading != null) {
@@ -5787,6 +7393,18 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return openDocMessage();
   }
@@ -5820,6 +7438,18 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return openDocMessage?.call();
   }
@@ -5853,6 +7483,18 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessage != null) {
@@ -5896,6 +7538,19 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return openDocMessage(this);
   }
@@ -5929,6 +7584,18 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return openDocMessage?.call(this);
   }
@@ -5962,6 +7629,18 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessage != null) {
@@ -6067,6 +7746,18 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return openDocMessageError(errorMsg);
   }
@@ -6100,6 +7791,18 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return openDocMessageError?.call(errorMsg);
   }
@@ -6133,6 +7836,18 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessageError != null) {
@@ -6176,6 +7891,19 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return openDocMessageError(this);
   }
@@ -6209,6 +7937,18 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return openDocMessageError?.call(this);
   }
@@ -6242,6 +7982,18 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (openDocMessageError != null) {
@@ -6325,6 +8077,18 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return deleteMessageLoading();
   }
@@ -6358,6 +8122,18 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return deleteMessageLoading?.call();
   }
@@ -6391,6 +8167,18 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessageLoading != null) {
@@ -6434,6 +8222,19 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return deleteMessageLoading(this);
   }
@@ -6467,6 +8268,18 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return deleteMessageLoading?.call(this);
   }
@@ -6500,6 +8313,18 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessageLoading != null) {
@@ -6577,6 +8402,18 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return deleteMessage();
   }
@@ -6610,6 +8447,18 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return deleteMessage?.call();
   }
@@ -6643,6 +8492,18 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessage != null) {
@@ -6686,6 +8547,19 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return deleteMessage(this);
   }
@@ -6719,6 +8593,18 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return deleteMessage?.call(this);
   }
@@ -6752,6 +8638,18 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessage != null) {
@@ -6857,6 +8755,18 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
   }) {
     return deleteMessageError(errorMsg);
   }
@@ -6890,6 +8800,18 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
   }) {
     return deleteMessageError?.call(errorMsg);
   }
@@ -6923,6 +8845,18 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessageError != null) {
@@ -6966,6 +8900,19 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
     required TResult Function(_DeleteMessage value) deleteMessage,
     required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
   }) {
     return deleteMessageError(this);
   }
@@ -6999,6 +8946,18 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult? Function(_DeleteMessage value)? deleteMessage,
     TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
   }) {
     return deleteMessageError?.call(this);
   }
@@ -7032,6 +8991,18 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
     TResult Function(_DeleteMessage value)? deleteMessage,
     TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
     required TResult orElse(),
   }) {
     if (deleteMessageError != null) {
@@ -7049,4 +9020,4012 @@ abstract class _DeleteMessageError implements MessagesState {
   @JsonKey(ignore: true)
   _$$_DeleteMessageErrorCopyWith<_$_DeleteMessageError> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_GenerateTokenLoadingCopyWith<$Res> {
+  factory _$$_GenerateTokenLoadingCopyWith(_$_GenerateTokenLoading value,
+          $Res Function(_$_GenerateTokenLoading) then) =
+      __$$_GenerateTokenLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateTokenLoading>
+    implements _$$_GenerateTokenLoadingCopyWith<$Res> {
+  __$$_GenerateTokenLoadingCopyWithImpl(_$_GenerateTokenLoading _value,
+      $Res Function(_$_GenerateTokenLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_GenerateTokenLoading implements _GenerateTokenLoading {
+  const _$_GenerateTokenLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.generateTokenLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_GenerateTokenLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return generateTokenLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return generateTokenLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateTokenLoading != null) {
+      return generateTokenLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return generateTokenLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return generateTokenLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateTokenLoading != null) {
+      return generateTokenLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateTokenLoading implements MessagesState {
+  const factory _GenerateTokenLoading() = _$_GenerateTokenLoading;
+}
+
+/// @nodoc
+abstract class _$$_GenerateTokenCopyWith<$Res> {
+  factory _$$_GenerateTokenCopyWith(
+          _$_GenerateToken value, $Res Function(_$_GenerateToken) then) =
+      __$$_GenerateTokenCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String token, dynamic channelName});
+}
+
+/// @nodoc
+class __$$_GenerateTokenCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateToken>
+    implements _$$_GenerateTokenCopyWith<$Res> {
+  __$$_GenerateTokenCopyWithImpl(
+      _$_GenerateToken _value, $Res Function(_$_GenerateToken) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? token = null,
+    Object? channelName = freezed,
+  }) {
+    return _then(_$_GenerateToken(
+      null == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String,
+      freezed == channelName ? _value.channelName! : channelName,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GenerateToken implements _GenerateToken {
+  const _$_GenerateToken(this.token, this.channelName);
+
+  @override
+  final String token;
+  @override
+  final dynamic channelName;
+
+  @override
+  String toString() {
+    return 'MessagesState.generateToken(token: $token, channelName: $channelName)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GenerateToken &&
+            (identical(other.token, token) || other.token == token) &&
+            const DeepCollectionEquality()
+                .equals(other.channelName, channelName));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, token, const DeepCollectionEquality().hash(channelName));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GenerateTokenCopyWith<_$_GenerateToken> get copyWith =>
+      __$$_GenerateTokenCopyWithImpl<_$_GenerateToken>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return generateToken(token, channelName);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return generateToken?.call(token, channelName);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateToken != null) {
+      return generateToken(token, channelName);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return generateToken(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return generateToken?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateToken != null) {
+      return generateToken(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateToken implements MessagesState {
+  const factory _GenerateToken(final String token, final dynamic channelName) =
+      _$_GenerateToken;
+
+  String get token;
+  dynamic get channelName;
+  @JsonKey(ignore: true)
+  _$$_GenerateTokenCopyWith<_$_GenerateToken> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_GenerateTokenErrorCopyWith<$Res> {
+  factory _$$_GenerateTokenErrorCopyWith(_$_GenerateTokenError value,
+          $Res Function(_$_GenerateTokenError) then) =
+      __$$_GenerateTokenErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_GenerateTokenErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateTokenError>
+    implements _$$_GenerateTokenErrorCopyWith<$Res> {
+  __$$_GenerateTokenErrorCopyWithImpl(
+      _$_GenerateTokenError _value, $Res Function(_$_GenerateTokenError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_GenerateTokenError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GenerateTokenError implements _GenerateTokenError {
+  const _$_GenerateTokenError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.generateTokenError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GenerateTokenError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
+      __$$_GenerateTokenErrorCopyWithImpl<_$_GenerateTokenError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return generateTokenError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return generateTokenError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateTokenError != null) {
+      return generateTokenError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return generateTokenError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return generateTokenError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (generateTokenError != null) {
+      return generateTokenError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GenerateTokenError implements MessagesState {
+  const factory _GenerateTokenError(final String errorMsg) =
+      _$_GenerateTokenError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_SetupVoiceSDKEngineCopyWith<$Res> {
+  factory _$$_SetupVoiceSDKEngineCopyWith(_$_SetupVoiceSDKEngine value,
+          $Res Function(_$_SetupVoiceSDKEngine) then) =
+      __$$_SetupVoiceSDKEngineCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_SetupVoiceSDKEngineCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_SetupVoiceSDKEngine>
+    implements _$$_SetupVoiceSDKEngineCopyWith<$Res> {
+  __$$_SetupVoiceSDKEngineCopyWithImpl(_$_SetupVoiceSDKEngine _value,
+      $Res Function(_$_SetupVoiceSDKEngine) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
+  const _$_SetupVoiceSDKEngine();
+
+  @override
+  String toString() {
+    return 'MessagesState.setupVoiceSDKEngine()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_SetupVoiceSDKEngine);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return setupVoiceSDKEngine();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return setupVoiceSDKEngine?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (setupVoiceSDKEngine != null) {
+      return setupVoiceSDKEngine();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return setupVoiceSDKEngine(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return setupVoiceSDKEngine?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (setupVoiceSDKEngine != null) {
+      return setupVoiceSDKEngine(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SetupVoiceSDKEngine implements MessagesState {
+  const factory _SetupVoiceSDKEngine() = _$_SetupVoiceSDKEngine;
+}
+
+/// @nodoc
+abstract class _$$_OnJoinChannelSuccessCopyWith<$Res> {
+  factory _$$_OnJoinChannelSuccessCopyWith(_$_OnJoinChannelSuccess value,
+          $Res Function(_$_OnJoinChannelSuccess) then) =
+      __$$_OnJoinChannelSuccessCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_OnJoinChannelSuccessCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OnJoinChannelSuccess>
+    implements _$$_OnJoinChannelSuccessCopyWith<$Res> {
+  __$$_OnJoinChannelSuccessCopyWithImpl(_$_OnJoinChannelSuccess _value,
+      $Res Function(_$_OnJoinChannelSuccess) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
+  const _$_OnJoinChannelSuccess();
+
+  @override
+  String toString() {
+    return 'MessagesState.onJoinChannelSuccess()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_OnJoinChannelSuccess);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return onJoinChannelSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return onJoinChannelSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onJoinChannelSuccess != null) {
+      return onJoinChannelSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return onJoinChannelSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return onJoinChannelSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onJoinChannelSuccess != null) {
+      return onJoinChannelSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnJoinChannelSuccess implements MessagesState {
+  const factory _OnJoinChannelSuccess() = _$_OnJoinChannelSuccess;
+}
+
+/// @nodoc
+abstract class _$$_OnUserJoinedCopyWith<$Res> {
+  factory _$$_OnUserJoinedCopyWith(
+          _$_OnUserJoined value, $Res Function(_$_OnUserJoined) then) =
+      __$$_OnUserJoinedCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_OnUserJoinedCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OnUserJoined>
+    implements _$$_OnUserJoinedCopyWith<$Res> {
+  __$$_OnUserJoinedCopyWithImpl(
+      _$_OnUserJoined _value, $Res Function(_$_OnUserJoined) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_OnUserJoined implements _OnUserJoined {
+  const _$_OnUserJoined();
+
+  @override
+  String toString() {
+    return 'MessagesState.onUserJoined()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_OnUserJoined);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return onUserJoined();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return onUserJoined?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onUserJoined != null) {
+      return onUserJoined();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return onUserJoined(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return onUserJoined?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onUserJoined != null) {
+      return onUserJoined(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnUserJoined implements MessagesState {
+  const factory _OnUserJoined() = _$_OnUserJoined;
+}
+
+/// @nodoc
+abstract class _$$_OnUserOfflineCopyWith<$Res> {
+  factory _$$_OnUserOfflineCopyWith(
+          _$_OnUserOffline value, $Res Function(_$_OnUserOffline) then) =
+      __$$_OnUserOfflineCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_OnUserOfflineCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_OnUserOffline>
+    implements _$$_OnUserOfflineCopyWith<$Res> {
+  __$$_OnUserOfflineCopyWithImpl(
+      _$_OnUserOffline _value, $Res Function(_$_OnUserOffline) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_OnUserOffline implements _OnUserOffline {
+  const _$_OnUserOffline();
+
+  @override
+  String toString() {
+    return 'MessagesState.onUserOffline()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_OnUserOffline);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return onUserOffline();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return onUserOffline?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onUserOffline != null) {
+      return onUserOffline();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return onUserOffline(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return onUserOffline?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (onUserOffline != null) {
+      return onUserOffline(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _OnUserOffline implements MessagesState {
+  const factory _OnUserOffline() = _$_OnUserOffline;
+}
+
+/// @nodoc
+abstract class _$$_JoinVoiceCallLoadingCopyWith<$Res> {
+  factory _$$_JoinVoiceCallLoadingCopyWith(_$_JoinVoiceCallLoading value,
+          $Res Function(_$_JoinVoiceCallLoading) then) =
+      __$$_JoinVoiceCallLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_JoinVoiceCallLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCallLoading>
+    implements _$$_JoinVoiceCallLoadingCopyWith<$Res> {
+  __$$_JoinVoiceCallLoadingCopyWithImpl(_$_JoinVoiceCallLoading _value,
+      $Res Function(_$_JoinVoiceCallLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
+  const _$_JoinVoiceCallLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.joinVoiceCallLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_JoinVoiceCallLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return joinVoiceCallLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return joinVoiceCallLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCallLoading != null) {
+      return joinVoiceCallLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return joinVoiceCallLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return joinVoiceCallLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCallLoading != null) {
+      return joinVoiceCallLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _JoinVoiceCallLoading implements MessagesState {
+  const factory _JoinVoiceCallLoading() = _$_JoinVoiceCallLoading;
+}
+
+/// @nodoc
+abstract class _$$_JoinVoiceCallCopyWith<$Res> {
+  factory _$$_JoinVoiceCallCopyWith(
+          _$_JoinVoiceCall value, $Res Function(_$_JoinVoiceCall) then) =
+      __$$_JoinVoiceCallCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_JoinVoiceCallCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCall>
+    implements _$$_JoinVoiceCallCopyWith<$Res> {
+  __$$_JoinVoiceCallCopyWithImpl(
+      _$_JoinVoiceCall _value, $Res Function(_$_JoinVoiceCall) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_JoinVoiceCall implements _JoinVoiceCall {
+  const _$_JoinVoiceCall();
+
+  @override
+  String toString() {
+    return 'MessagesState.joinVoiceCall()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_JoinVoiceCall);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return joinVoiceCall();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return joinVoiceCall?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCall != null) {
+      return joinVoiceCall();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return joinVoiceCall(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return joinVoiceCall?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCall != null) {
+      return joinVoiceCall(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _JoinVoiceCall implements MessagesState {
+  const factory _JoinVoiceCall() = _$_JoinVoiceCall;
+}
+
+/// @nodoc
+abstract class _$$_JoinVoiceCallErrorCopyWith<$Res> {
+  factory _$$_JoinVoiceCallErrorCopyWith(_$_JoinVoiceCallError value,
+          $Res Function(_$_JoinVoiceCallError) then) =
+      __$$_JoinVoiceCallErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_JoinVoiceCallErrorCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCallError>
+    implements _$$_JoinVoiceCallErrorCopyWith<$Res> {
+  __$$_JoinVoiceCallErrorCopyWithImpl(
+      _$_JoinVoiceCallError _value, $Res Function(_$_JoinVoiceCallError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_JoinVoiceCallError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_JoinVoiceCallError implements _JoinVoiceCallError {
+  const _$_JoinVoiceCallError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'MessagesState.joinVoiceCallError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_JoinVoiceCallError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_JoinVoiceCallErrorCopyWith<_$_JoinVoiceCallError> get copyWith =>
+      __$$_JoinVoiceCallErrorCopyWithImpl<_$_JoinVoiceCallError>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return joinVoiceCallError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return joinVoiceCallError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCallError != null) {
+      return joinVoiceCallError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return joinVoiceCallError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return joinVoiceCallError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (joinVoiceCallError != null) {
+      return joinVoiceCallError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _JoinVoiceCallError implements MessagesState {
+  const factory _JoinVoiceCallError(final String errorMsg) =
+      _$_JoinVoiceCallError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_JoinVoiceCallErrorCopyWith<_$_JoinVoiceCallError> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_LeaveVoiceCallLoadingCopyWith<$Res> {
+  factory _$$_LeaveVoiceCallLoadingCopyWith(_$_LeaveVoiceCallLoading value,
+          $Res Function(_$_LeaveVoiceCallLoading) then) =
+      __$$_LeaveVoiceCallLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_LeaveVoiceCallLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_LeaveVoiceCallLoading>
+    implements _$$_LeaveVoiceCallLoadingCopyWith<$Res> {
+  __$$_LeaveVoiceCallLoadingCopyWithImpl(_$_LeaveVoiceCallLoading _value,
+      $Res Function(_$_LeaveVoiceCallLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
+  const _$_LeaveVoiceCallLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.leaveVoiceCallLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LeaveVoiceCallLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return leaveVoiceCallLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return leaveVoiceCallLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (leaveVoiceCallLoading != null) {
+      return leaveVoiceCallLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return leaveVoiceCallLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return leaveVoiceCallLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (leaveVoiceCallLoading != null) {
+      return leaveVoiceCallLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _LeaveVoiceCallLoading implements MessagesState {
+  const factory _LeaveVoiceCallLoading() = _$_LeaveVoiceCallLoading;
+}
+
+/// @nodoc
+abstract class _$$_LeaveVoiceCallCopyWith<$Res> {
+  factory _$$_LeaveVoiceCallCopyWith(
+          _$_LeaveVoiceCall value, $Res Function(_$_LeaveVoiceCall) then) =
+      __$$_LeaveVoiceCallCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_LeaveVoiceCallCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_LeaveVoiceCall>
+    implements _$$_LeaveVoiceCallCopyWith<$Res> {
+  __$$_LeaveVoiceCallCopyWithImpl(
+      _$_LeaveVoiceCall _value, $Res Function(_$_LeaveVoiceCall) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_LeaveVoiceCall implements _LeaveVoiceCall {
+  const _$_LeaveVoiceCall();
+
+  @override
+  String toString() {
+    return 'MessagesState.leaveVoiceCall()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_LeaveVoiceCall);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+  }) {
+    return leaveVoiceCall();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+  }) {
+    return leaveVoiceCall?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (leaveVoiceCall != null) {
+      return leaveVoiceCall();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+  }) {
+    return leaveVoiceCall(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+  }) {
+    return leaveVoiceCall?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    required TResult orElse(),
+  }) {
+    if (leaveVoiceCall != null) {
+      return leaveVoiceCall(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _LeaveVoiceCall implements MessagesState {
+  const factory _LeaveVoiceCall() = _$_LeaveVoiceCall;
 }

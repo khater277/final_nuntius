@@ -41,7 +41,8 @@ class ChatsCubit extends Cubit<ChatsState> {
           for (var doc in event.docs) {
             final phoneNumber = doc.id;
             final lastMessage = LastMessageModel.fromJson(doc.data());
-            final user = allUsers.firstWhereOrNull((user) => user.phone == phoneNumber) ??
+            final user = allUsers
+                    .firstWhereOrNull((user) => user.phone == phoneNumber) ??
                 UserData(
                   token: lastMessage.token,
                   name: phoneNumber,

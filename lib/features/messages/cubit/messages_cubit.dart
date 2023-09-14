@@ -9,6 +9,7 @@ import 'package:final_nuntius/core/utils/app_functions.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository.dart';
+import 'package:final_nuntius/features/calls/data/repositories/calls_repository.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
@@ -22,6 +23,7 @@ import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:open_file/open_file.dart';
+import 'package:uuid/uuid.dart';
 
 part 'messages_cubit.freezed.dart';
 part 'messages_state.dart';
@@ -29,9 +31,11 @@ part 'messages_state.dart';
 class MessagesCubit extends Cubit<MessagesState> {
   final MessagesRepository messagesRepository;
   final AuthRepository authRepository;
+  final CallsRepository callsRepository;
   MessagesCubit({
     required this.messagesRepository,
     required this.authRepository,
+    required this.callsRepository,
   }) : super(const MessagesState.initial());
 
   static MessagesCubit get(context) => BlocProvider.of(context);
@@ -78,6 +82,11 @@ class MessagesCubit extends Cubit<MessagesState> {
           }
           if (isInit == true) scrollDown();
           this.messages = messages;
+          print("==============>${messages.last.message}");
+          // this.messages.sort(
+          //       (a, b) =>
+          //           DateTime.parse(a.date!).compareTo(DateTime.parse(b.date!)),
+          //     );
           emit(MessagesState.getMessages(messages));
         });
       },
@@ -96,7 +105,7 @@ class MessagesCubit extends Cubit<MessagesState> {
       message: messageType == MessageType.doc
           ? Uri.file(file!.path).pathSegments.last
           : messageController!.text,
-      date: DateTime.now().toString(),
+      date: DateTime.now().toUtc().toString(),
       media: media,
       isImage: messageType == MessageType.image ? true : false,
       isVideo: messageType == MessageType.video ? true : false,
@@ -133,9 +142,9 @@ class MessagesCubit extends Cubit<MessagesState> {
         file = null;
         emit(const MessagesState.sendMessage());
         if (user!.token != HiveHelper.getCurrentUser()!.token) {
-          final x = await messagesRepository.pushNotification(
-              fcmBody: AppFunctions.getFcmBody(user: user!));
-          x.fold((l) => print("NOT SENT"), (r) => print("SENT"));
+          final pushNotification = await messagesRepository.pushNotification(
+              fcmBody: AppFunctions.getMessageNotificationFcmBody(user: user!));
+          pushNotification.fold((l) => print("NOT SENT"), (r) => print("SENT"));
         }
       },
     );
@@ -306,6 +315,39 @@ class MessagesCubit extends Cubit<MessagesState> {
           );
         } else {
           emit(const MessagesState.deleteMessage());
+        }
+      },
+    );
+  }
+
+  void generateToken({required CallType callType}) async {
+    emit(const MessagesState.generateTokenLoading());
+    String channelName = const Uuid().v4();
+    final response = await callsRepository.generateToken(
+      channel: channelName,
+      uid: "0",
+    );
+    response.fold(
+      (failure) {
+        emit(MessagesState.generateTokenError(failure.getMessage()));
+      },
+      (agoraTokenModel) async {
+        if (user!.token != HiveHelper.getCurrentUser()!.token) {
+          Map<String, dynamic> fcmBody =
+              AppFunctions.getCallNotificationFcmBody(
+            callType: callType,
+            userToken: user!.token!,
+            rtcToken: agoraTokenModel.rtcToken!,
+            channelName: channelName,
+          );
+          final response =
+              await messagesRepository.pushNotification(fcmBody: fcmBody);
+          response.fold(
+            (failure) =>
+                emit(MessagesState.generateTokenError(failure.getMessage())),
+            (result) => emit(MessagesState.generateToken(
+                agoraTokenModel.rtcToken!, channelName)),
+          );
         }
       },
     );

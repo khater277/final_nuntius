@@ -1,7 +1,9 @@
 import 'package:final_nuntius/core/apis/agora/agora_api.dart';
+import 'package:final_nuntius/features/messages/data/models/agora_token/agora_token_model/agora_token_model.dart';
 
 abstract class CallsRemoteDataSource {
-  Future<String> generateToken();
+  Future<AgoraTokenModel> generateToken(
+      {required String channel, required String uid});
 }
 
 class CallsRemoteDataSourceImpl implements CallsRemoteDataSource {
@@ -9,7 +11,8 @@ class CallsRemoteDataSourceImpl implements CallsRemoteDataSource {
 
   CallsRemoteDataSourceImpl({required this.agoraApi});
   @override
-  Future<String> generateToken() {
-    return agoraApi.generateToken();
+  Future<AgoraTokenModel> generateToken(
+      {required String channel, required String uid}) {
+    return agoraApi.generateToken(channel, uid);
   }
 }

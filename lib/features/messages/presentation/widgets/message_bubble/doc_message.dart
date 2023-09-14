@@ -59,7 +59,8 @@ class _DocMessageState extends State<DocMessage> {
           ),
           SizedBox(width: AppWidth.w5),
           SecondaryText(
-            text: DateFormat.jm().format(DateTime.parse(widget.message.date!)),
+            text: DateFormat.jm()
+                .format(DateTime.parse(widget.message.date!).toLocal()),
             color: AppColors.grey,
             size: FontSize.s10,
           )

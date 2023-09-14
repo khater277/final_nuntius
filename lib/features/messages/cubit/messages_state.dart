@@ -39,4 +39,20 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.deleteMessage() = _DeleteMessage;
   const factory MessagesState.deleteMessageError(String errorMsg) =
       _DeleteMessageError;
+
+  const factory MessagesState.generateTokenLoading() = _GenerateTokenLoading;
+  const factory MessagesState.generateToken(String token, channelName) =
+      _GenerateToken;
+  const factory MessagesState.generateTokenError(String errorMsg) =
+      _GenerateTokenError;
+  const factory MessagesState.setupVoiceSDKEngine() = _SetupVoiceSDKEngine;
+  const factory MessagesState.onJoinChannelSuccess() = _OnJoinChannelSuccess;
+  const factory MessagesState.onUserJoined() = _OnUserJoined;
+  const factory MessagesState.onUserOffline() = _OnUserOffline;
+  const factory MessagesState.joinVoiceCallLoading() = _JoinVoiceCallLoading;
+  const factory MessagesState.joinVoiceCall() = _JoinVoiceCall;
+  const factory MessagesState.joinVoiceCallError(String errorMsg) =
+      _JoinVoiceCallError;
+  const factory MessagesState.leaveVoiceCallLoading() = _LeaveVoiceCallLoading;
+  const factory MessagesState.leaveVoiceCall() = _LeaveVoiceCall;
 }
