@@ -106,4 +106,17 @@ class MessagesRepositoryImpl implements MessagesRepository {
       ));
     }
   }
+
+  @override
+  Future<Either<Failure, Stream<DocumentSnapshot<Map<String, dynamic>>>>>
+      getUser({required String phoneNumber}) async {
+    try {
+      final response =
+          messagesRemoteDataSource.getUser(phoneNumber: phoneNumber);
+      return Right(response);
+    } on FirebaseException catch (error) {
+      return Left(
+          ServerFailure(error: error, type: NetworkErrorTypes.firestore));
+    }
+  }
 }

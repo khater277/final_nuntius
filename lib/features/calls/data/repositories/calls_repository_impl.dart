@@ -23,4 +23,16 @@ class CallsRepositoryImpl implements CallsRepository {
       ));
     }
   }
+
+  @override
+  Future<Either<Failure, Map<String, dynamic>>> pushNotification(
+      {required Map<String, dynamic> fcmBody}) async {
+    try {
+      final response =
+          await callsRemoteDataSource.pushNotification(fcmBody: fcmBody);
+      return Right(response);
+    } on DioException catch (error) {
+      return Left(ServerFailure(error: error, type: NetworkErrorTypes.api));
+    }
+  }
 }

@@ -38,7 +38,12 @@ class _MessagesScreenState extends State<MessagesScreen> {
     userData = widget.user;
     messagesCubit = MessagesCubit.get(context);
     homeCubit = HomeCubit.get(context);
-    messagesCubit.initMessages(user: widget.user, homeCubit: homeCubit);
+    messagesCubit.initMessages(
+      homeCubit: homeCubit,
+      user: widget.user,
+      phoneNumber: widget.user.phone!,
+    );
+    // messagesCubit.getUser(phoneNumber: widget.user.phone!);
     print("AAAAAAA777777777777777AAAAAAAAAAAAAAAAAAA");
     super.initState();
   }
@@ -63,11 +68,14 @@ class _MessagesScreenState extends State<MessagesScreen> {
             Go.back(context: context);
             Go.back(context: context);
           },
-          generateToken: (token, channelName) => Go.to(
+          generateToken: (rtcToken, channelName) => Go.to(
               context: context,
               screen: VoiceCallScreen(
-                token: token,
+                userToken: MessagesCubit.get(context).user!.token!,
+                rtcToken: rtcToken,
                 channelName: channelName,
+                image: MessagesCubit.get(context).user!.image!,
+                name: MessagesCubit.get(context).user!.name!,
               )),
           generateTokenError: (errorMsg) => showSnackBar(
             context: context,
@@ -86,7 +94,10 @@ class _MessagesScreenState extends State<MessagesScreen> {
             orElse: () => GestureDetector(
                   onTap: () => FocusScope.of(context).unfocus(),
                   child: Scaffold(
-                    appBar: messagesAppBar(name: cubit.user!.name!),
+                    appBar: messagesAppBar(
+                      name: cubit.user!.name!,
+                      token: cubit.user!.token!,
+                    ),
                     body: Padding(
                       padding: EdgeInsets.only(
                         top: AppHeight.h5,

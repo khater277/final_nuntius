@@ -5,6 +5,9 @@ import 'package:final_nuntius/features/messages/data/models/last_message/last_me
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 
 abstract class MessagesRepository {
+  Future<Either<Failure, Stream<DocumentSnapshot<Map<String, dynamic>>>>>
+      getUser({required String phoneNumber});
+
   Future<Either<Failure, void>> sendMessage({
     required String phoneNumber,
     required LastMessageModel lastMessageModel,

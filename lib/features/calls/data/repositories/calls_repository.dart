@@ -5,4 +5,7 @@ import 'package:final_nuntius/features/messages/data/models/agora_token/agora_to
 abstract class CallsRepository {
   Future<Either<Failure, AgoraTokenModel>> generateToken(
       {required String channel, required String uid});
+  Future<Either<Failure, Map<String, dynamic>>> pushNotification({
+    required Map<String, dynamic> fcmBody,
+  });
 }

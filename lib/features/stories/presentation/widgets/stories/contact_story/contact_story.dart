@@ -13,7 +13,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ContactStory extends StatefulWidget {
   final ContactStoryModel contactStoryModel;
-
   final bool isViewed;
   const ContactStory({
     Key? key,

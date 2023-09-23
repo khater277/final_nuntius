@@ -23,7 +23,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
-    FcmHelper.handleForegroundNotification(homeCubit: HomeCubit.get(context));
+    FcmHelper.handleForegroundNotification(
+        homeCubit: HomeCubit.get(context), context: context);
     FcmHelper.handelBackgroundNotification(
         homeCubit: HomeCubit.get(context), context: context);
     NotificationsHelper.isAndroidPermissionGranted();

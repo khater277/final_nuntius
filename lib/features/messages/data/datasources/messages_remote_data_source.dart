@@ -5,6 +5,9 @@ import 'package:final_nuntius/features/messages/data/models/last_message/last_me
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 
 abstract class MessagesRemoteDataSource {
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getUser(
+      {required String phoneNumber});
+
   Future<void> sendMessage({
     required String phoneNumber,
     required LastMessageModel lastMessageModel,
@@ -32,6 +35,13 @@ class MessagesRemoteDataSourceImpl implements MessagesRemoteDataSource {
 
   MessagesRemoteDataSourceImpl(
       {required this.firebaseHelper, required this.fcmApi});
+
+  @override
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getUser(
+      {required String phoneNumber}) {
+    return firebaseHelper.getUser(phoneNumber: phoneNumber);
+  }
+
   @override
   Future<void> sendMessage({
     required String phoneNumber,

@@ -12,6 +12,10 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.getMessagesLoading() = _GetMessagesLoading;
   const factory MessagesState.getMessages(List<MessageModel> messages) =
       _GetMessages;
+
+  const factory MessagesState.getUserLoading() = _GetUserLoading;
+  const factory MessagesState.getUser() = _GetUser;
+
   const factory MessagesState.getMessagesError(String errorMsg) =
       _GetMessagesError;
   const factory MessagesState.pickMessageImageLoading() =

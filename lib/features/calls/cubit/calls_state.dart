@@ -9,6 +9,8 @@ class CallsState with _$CallsState {
   const factory CallsState.generateTokenError(String errorMsg) =
       _GenerateTokenError;
   const factory CallsState.setupVoiceSDKEngine() = _SetupVoiceSDKEngine;
+  const factory CallsState.pushNotificationError(String errorMsg) =
+      _PushNotificationError;
   const factory CallsState.onJoinChannelSuccess() = _OnJoinChannelSuccess;
   const factory CallsState.onUserJoined() = _OnUserJoined;
   const factory CallsState.onUserOffline() = _OnUserOffline;

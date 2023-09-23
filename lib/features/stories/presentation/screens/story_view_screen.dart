@@ -1,6 +1,7 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
+import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
@@ -26,6 +27,7 @@ class _StoryViewScreenState extends State<StoryViewScreen> {
     storiesCubit = StoriesCubit.get(context);
     storiesCubit.initStoryView(
       context: context,
+      stories: widget.stories,
     );
     super.initState();
   }

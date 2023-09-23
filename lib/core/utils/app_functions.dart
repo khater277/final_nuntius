@@ -111,4 +111,25 @@ class AppFunctions {
     micros = (double.parse(parts[parts.length - 1]) * 1000000).round();
     return Duration(hours: hours, minutes: minutes, microseconds: micros);
   }
+
+  static String timeFormat(int time) {
+    return time.toString().length == 1 ? "0$time" : "$time";
+  }
+
+  static String calculateCallTime({required int? data}) {
+    int seconds = 0;
+    int minutes = 0;
+    int hours = 0;
+    int total = 0;
+
+    total = data != null ? int.parse(data.toString()) : 0;
+
+    seconds = total % 60;
+    minutes = (total / 60).floor() % 60;
+    hours = (total / 3600).floor() % 3600;
+
+    String text =
+        "${timeFormat(hours) != "00" ? "${timeFormat(hours)}:" : ""}${timeFormat(minutes)}:${timeFormat(seconds)}";
+    return text;
+  }
 }

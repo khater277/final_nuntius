@@ -66,6 +66,7 @@ void setupGetIt() {
   di.registerLazySingleton<CallsRemoteDataSource>(
       () => CallsRemoteDataSourceImpl(
             agoraApi: di(),
+            fcmApi: di(),
           ));
   di.registerLazySingleton<AuthRemoteDataSource>(() => AuthRemoteDataSourceImpl(
         firebaseHelper: di(),

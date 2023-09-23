@@ -2,6 +2,7 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
+import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
@@ -108,6 +109,7 @@ class CurrentStories extends StatelessWidget {
               isViewed: false,
             ),
           if (cubit.viewedStories.isNotEmpty)
+            // LargeHeadText(text: cubit.viewedStories.first.stories!.length.toString())
             Column(
               children: [
                 StoryStatus(

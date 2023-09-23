@@ -54,15 +54,15 @@ class StoryViewHead extends StatelessWidget {
           if (user.uId == HiveHelper.getCurrentUser()!.uId)
             IconButton(
                 onPressed: () {
-                  cubit.storyController!.pause();
-                  showAlertDialog(
-                    context: context,
-                    text: "Are you sure you want to delete this story?",
-                    okPressed: () => cubit.deleteStory(
-                      context: context,
-                      storyId: stories[cubit.storyIndex].id!,
-                    ),
-                  ).then((value) => cubit.storyController!.play());
+                  // cubit.storyController!.pause();
+                  // showAlertDialog(
+                  //   context: context,
+                  //   text: "Are you sure you want to delete this story?",
+                  //   okPressed: () => cubit.deleteStory(
+                  //     context: context,
+                  //     storyId: stories[cubit.storyIndex].id!,
+                  //   ),
+                  // ).then((value) => cubit.storyController!.play());
                 },
                 icon: Icon(
                   IconBroken.Delete,

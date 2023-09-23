@@ -22,6 +22,7 @@ class MyStory extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (cubit.myStories.isNotEmpty) {
+          // cubit.open
           Go.to(
               context: context,
               screen: StoryViewScreen(

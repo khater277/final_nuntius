@@ -42,21 +42,23 @@ class MessagesCubit extends Cubit<MessagesState> {
 
   TextEditingController? messageController;
   ScrollController? scrollController;
-  UserData? user;
+
   void initMessages({
-    required UserData user,
+    required String phoneNumber,
     required HomeCubit homeCubit,
-  }) {
+    required UserData user,
+  }) async {
     messageController = TextEditingController();
     scrollController = ScrollController();
     this.user = user;
     homeCubit.initUser(user: user);
-    getMessages(isInit: true);
+    getMessages(isInit: true, phoneNumber: phoneNumber);
+    getUser(phoneNumber: phoneNumber);
   }
 
   void disposeMessages({required HomeCubit homeCubit}) {
     // messageController!.dispose();
-    // scrollController!.dispose();
+    scrollController!.dispose();
     // user = null;
     messageType = null;
     file = null;
@@ -64,8 +66,23 @@ class MessagesCubit extends Cubit<MessagesState> {
     emit(const MessagesState.disposeControllers());
   }
 
+  UserData? user;
+  void getUser({required String phoneNumber}) async {
+    final response = await messagesRepository.getUser(phoneNumber: phoneNumber);
+    response.fold(
+      (failure) => null,
+      (stream) {
+        stream.listen((event) {
+          emit(const MessagesState.getMessagesLoading());
+          user = UserData.fromJson(event.data()!);
+          emit(const MessagesState.initControllers());
+        });
+      },
+    );
+  }
+
   List<MessageModel> messages = [];
-  void getMessages({bool? isInit}) async {
+  void getMessages({bool? isInit, required String phoneNumber}) async {
     emit(const MessagesState.getMessagesLoading());
     final response =
         await messagesRepository.getMessages(phoneNumber: user!.phone!);
@@ -82,7 +99,7 @@ class MessagesCubit extends Cubit<MessagesState> {
           }
           if (isInit == true) scrollDown();
           this.messages = messages;
-          print("==============>${messages.last.message}");
+          // print("==============>${messages.last.message}");
           // this.messages.sort(
           //       (a, b) =>
           //           DateTime.parse(a.date!).compareTo(DateTime.parse(b.date!)),
@@ -152,11 +169,13 @@ class MessagesCubit extends Cubit<MessagesState> {
 
   void scrollDown() {
     Future.delayed(const Duration(milliseconds: 500)).then((value) {
-      scrollController!.animateTo(
-        scrollController!.position.maxScrollExtent + AppHeight.h40,
-        duration: const Duration(milliseconds: 500),
-        curve: Curves.fastOutSlowIn,
-      );
+      if (scrollController!.positions.isNotEmpty) {
+        scrollController!.animateTo(
+          scrollController!.position.maxScrollExtent + AppHeight.h40,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.fastOutSlowIn,
+        );
+      }
     });
   }
 
@@ -328,28 +347,9 @@ class MessagesCubit extends Cubit<MessagesState> {
       uid: "0",
     );
     response.fold(
-      (failure) {
-        emit(MessagesState.generateTokenError(failure.getMessage()));
-      },
-      (agoraTokenModel) async {
-        if (user!.token != HiveHelper.getCurrentUser()!.token) {
-          Map<String, dynamic> fcmBody =
-              AppFunctions.getCallNotificationFcmBody(
-            callType: callType,
-            userToken: user!.token!,
-            rtcToken: agoraTokenModel.rtcToken!,
-            channelName: channelName,
-          );
-          final response =
-              await messagesRepository.pushNotification(fcmBody: fcmBody);
-          response.fold(
-            (failure) =>
-                emit(MessagesState.generateTokenError(failure.getMessage())),
-            (result) => emit(MessagesState.generateToken(
-                agoraTokenModel.rtcToken!, channelName)),
-          );
-        }
-      },
+      (failure) => emit(MessagesState.generateTokenError(failure.getMessage())),
+      (agoraTokenModel) => emit(
+          MessagesState.generateToken(agoraTokenModel.rtcToken!, channelName)),
     );
   }
 }

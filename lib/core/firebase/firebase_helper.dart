@@ -43,6 +43,9 @@ abstract class FirebaseHelper {
   Stream<QuerySnapshot<Map<String, dynamic>>> getMessages(
       {required String phoneNumber});
 
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getUser(
+      {required String phoneNumber});
+
   Stream<QuerySnapshot<Map<String, dynamic>>> getChats();
 
   Stream<QuerySnapshot<Map<String, dynamic>>> getStories();
@@ -395,5 +398,11 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.chats)
         .doc(HiveHelper.getCurrentUser()!.phone)
         .update({"isDeleted": true});
+  }
+
+  @override
+  Stream<DocumentSnapshot<Map<String, dynamic>>> getUser(
+      {required String phoneNumber}) {
+    return _db.collection(Collections.users).doc(phoneNumber).snapshots();
   }
 }
