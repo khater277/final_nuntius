@@ -76,6 +76,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                 channelName: channelName,
                 image: MessagesCubit.get(context).user!.image!,
                 name: MessagesCubit.get(context).user!.name!,
+                phoneNumber: MessagesCubit.get(context).user!.phone!,
               )),
           generateTokenError: (errorMsg) => showSnackBar(
             context: context,
@@ -94,10 +95,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
             orElse: () => GestureDetector(
                   onTap: () => FocusScope.of(context).unfocus(),
                   child: Scaffold(
-                    appBar: messagesAppBar(
-                      name: cubit.user!.name!,
-                      token: cubit.user!.token!,
-                    ),
+                    appBar: messagesAppBar(name: cubit.user!.name!),
                     body: Padding(
                       padding: EdgeInsets.only(
                         top: AppHeight.h5,

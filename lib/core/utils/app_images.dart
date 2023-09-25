@@ -6,4 +6,5 @@ class AppImages {
   static const error = "$_sourceImage/error.gif";
   static const inbound = "$_sourceImage/inbound.png";
   static const missed = "$_sourceImage/missed.png";
+  static const missedVideoCall = "$_sourceImage/missed-video-call.png";
 }

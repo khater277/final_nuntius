@@ -9,8 +9,10 @@ part 'call_data.g.dart';
 class CallData with _$CallData {
   factory CallData({
     String? type,
+    String? callType,
     String? callId,
     String? token,
+    String? userToken,
     String? channelName,
     @JsonKey(name: 'senderID') String? senderId,
     String? phoneNumber,

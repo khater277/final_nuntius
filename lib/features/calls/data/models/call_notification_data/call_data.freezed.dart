@@ -21,8 +21,10 @@ CallData _$CallDataFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$CallData {
   String? get type => throw _privateConstructorUsedError;
+  String? get callType => throw _privateConstructorUsedError;
   String? get callId => throw _privateConstructorUsedError;
   String? get token => throw _privateConstructorUsedError;
+  String? get userToken => throw _privateConstructorUsedError;
   String? get channelName => throw _privateConstructorUsedError;
   @JsonKey(name: 'senderID')
   String? get senderId => throw _privateConstructorUsedError;
@@ -43,8 +45,10 @@ abstract class $CallDataCopyWith<$Res> {
   @useResult
   $Res call(
       {String? type,
+      String? callType,
       String? callId,
       String? token,
+      String? userToken,
       String? channelName,
       @JsonKey(name: 'senderID') String? senderId,
       String? phoneNumber,
@@ -65,8 +69,10 @@ class _$CallDataCopyWithImpl<$Res, $Val extends CallData>
   @override
   $Res call({
     Object? type = freezed,
+    Object? callType = freezed,
     Object? callId = freezed,
     Object? token = freezed,
+    Object? userToken = freezed,
     Object? channelName = freezed,
     Object? senderId = freezed,
     Object? phoneNumber = freezed,
@@ -77,6 +83,10 @@ class _$CallDataCopyWithImpl<$Res, $Val extends CallData>
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
+      callType: freezed == callType
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
       callId: freezed == callId
           ? _value.callId
           : callId // ignore: cast_nullable_to_non_nullable
@@ -84,6 +94,10 @@ class _$CallDataCopyWithImpl<$Res, $Val extends CallData>
       token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      userToken: freezed == userToken
+          ? _value.userToken
+          : userToken // ignore: cast_nullable_to_non_nullable
               as String?,
       channelName: freezed == channelName
           ? _value.channelName
@@ -114,8 +128,10 @@ abstract class _$$_CallDataCopyWith<$Res> implements $CallDataCopyWith<$Res> {
   @useResult
   $Res call(
       {String? type,
+      String? callType,
       String? callId,
       String? token,
+      String? userToken,
       String? channelName,
       @JsonKey(name: 'senderID') String? senderId,
       String? phoneNumber,
@@ -134,8 +150,10 @@ class __$$_CallDataCopyWithImpl<$Res>
   @override
   $Res call({
     Object? type = freezed,
+    Object? callType = freezed,
     Object? callId = freezed,
     Object? token = freezed,
+    Object? userToken = freezed,
     Object? channelName = freezed,
     Object? senderId = freezed,
     Object? phoneNumber = freezed,
@@ -146,6 +164,10 @@ class __$$_CallDataCopyWithImpl<$Res>
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as String?,
+      callType: freezed == callType
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as String?,
       callId: freezed == callId
           ? _value.callId
           : callId // ignore: cast_nullable_to_non_nullable
@@ -153,6 +175,10 @@ class __$$_CallDataCopyWithImpl<$Res>
       token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
+              as String?,
+      userToken: freezed == userToken
+          ? _value.userToken
+          : userToken // ignore: cast_nullable_to_non_nullable
               as String?,
       channelName: freezed == channelName
           ? _value.channelName
@@ -179,8 +205,10 @@ class __$$_CallDataCopyWithImpl<$Res>
 class _$_CallData implements _CallData {
   _$_CallData(
       {this.type,
+      this.callType,
       this.callId,
       this.token,
+      this.userToken,
       this.channelName,
       @JsonKey(name: 'senderID') this.senderId,
       this.phoneNumber,
@@ -192,9 +220,13 @@ class _$_CallData implements _CallData {
   @override
   final String? type;
   @override
+  final String? callType;
+  @override
   final String? callId;
   @override
   final String? token;
+  @override
+  final String? userToken;
   @override
   final String? channelName;
   @override
@@ -208,7 +240,7 @@ class _$_CallData implements _CallData {
 
   @override
   String toString() {
-    return 'CallData(type: $type, callId: $callId, token: $token, channelName: $channelName, senderId: $senderId, phoneNumber: $phoneNumber, clickAction: $clickAction)';
+    return 'CallData(type: $type, callType: $callType, callId: $callId, token: $token, userToken: $userToken, channelName: $channelName, senderId: $senderId, phoneNumber: $phoneNumber, clickAction: $clickAction)';
   }
 
   @override
@@ -217,8 +249,12 @@ class _$_CallData implements _CallData {
         (other.runtimeType == runtimeType &&
             other is _$_CallData &&
             (identical(other.type, type) || other.type == type) &&
+            (identical(other.callType, callType) ||
+                other.callType == callType) &&
             (identical(other.callId, callId) || other.callId == callId) &&
             (identical(other.token, token) || other.token == token) &&
+            (identical(other.userToken, userToken) ||
+                other.userToken == userToken) &&
             (identical(other.channelName, channelName) ||
                 other.channelName == channelName) &&
             (identical(other.senderId, senderId) ||
@@ -231,8 +267,8 @@ class _$_CallData implements _CallData {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, type, callId, token, channelName,
-      senderId, phoneNumber, clickAction);
+  int get hashCode => Object.hash(runtimeType, type, callType, callId, token,
+      userToken, channelName, senderId, phoneNumber, clickAction);
 
   @JsonKey(ignore: true)
   @override
@@ -251,8 +287,10 @@ class _$_CallData implements _CallData {
 abstract class _CallData implements CallData {
   factory _CallData(
       {final String? type,
+      final String? callType,
       final String? callId,
       final String? token,
+      final String? userToken,
       final String? channelName,
       @JsonKey(name: 'senderID') final String? senderId,
       final String? phoneNumber,
@@ -263,9 +301,13 @@ abstract class _CallData implements CallData {
   @override
   String? get type;
   @override
+  String? get callType;
+  @override
   String? get callId;
   @override
   String? get token;
+  @override
+  String? get userToken;
   @override
   String? get channelName;
   @override

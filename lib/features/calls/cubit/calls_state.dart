@@ -20,4 +20,7 @@ class CallsState with _$CallsState {
       _JoinVoiceCallError;
   const factory CallsState.leaveVoiceCallLoading() = _LeaveVoiceCallLoading;
   const factory CallsState.leaveVoiceCall() = _LeaveVoiceCall;
+  const factory CallsState.cancelCallLoading() = _CancelCallLoading;
+  const factory CallsState.cancelCall() = _CancelCall;
+  const factory CallsState.cancelCallError(String errorMsg) = _CancelCallError;
 }

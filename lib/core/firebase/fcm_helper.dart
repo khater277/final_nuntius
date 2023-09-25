@@ -3,6 +3,7 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/calls/data/models/call_notification_data/call_data.dart';
+import 'package:final_nuntius/features/calls/presentation/screens/receive_call_screen.dart';
 import 'package:final_nuntius/features/calls/presentation/screens/voice_call_screen.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/presentation/screens/messages_screen.dart';
@@ -35,17 +36,18 @@ class FcmHelper {
           NotificationsHelper.showNotification(
               id: id, name: name!, senderID: message.data['senderID']);
         }
-      } else {
-        print("ASSSSSSSSSSSSSSSSSSSSSD");
+      } else if (message.data['type'] == 'call') {
         CallData callData = CallData.fromJson(message.data);
+        print("=======================>${callData.userToken!}");
         Go.to(
             context: context,
-            screen: VoiceCallScreen(
+            screen: ReceiveCallScreen(
+              userToken: callData.userToken!,
               rtcToken: callData.token!,
               channelName: callData.channelName!,
               image: userModel == null ? "" : userModel.image!,
               name: name!,
-              receiveCall: true,
+              phoneNumber: callData.phoneNumber!,
             ));
       }
     });

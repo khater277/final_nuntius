@@ -64,6 +64,7 @@ dependencies:
   image_picker: ^0.8.9
   internet_connection_checker: ^1.0.0+1
   intl: ^0.18.0
+  just_audio: ^0.9.35
   json_annotation: ^4.8.1
   network_info_plus: ^4.0.2
   open_file: ^3.3.2
@@ -104,6 +105,7 @@ flutter:
   assets:
     - assets/fonts/
     - assets/images/
+    - assets/sounds/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

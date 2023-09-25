@@ -7,7 +7,7 @@ import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/app_bar/call_button.dart';
 import 'package:flutter/material.dart';
 
-AppBar messagesAppBar({required String name, required String token}) {
+AppBar messagesAppBar({required String name}) {
   return AppBar(
     toolbarHeight: AppHeight.h60,
     backgroundColor: AppColors.darkBlack,
@@ -18,7 +18,7 @@ AppBar messagesAppBar({required String name, required String token}) {
       bottomRight: Radius.circular(AppSize.s20),
     )),
     title: LargeHeadText(
-      text: token,
+      text: name,
       size: FontSize.s15,
     ),
     leading: Builder(builder: (context) {

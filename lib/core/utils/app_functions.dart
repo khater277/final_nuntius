@@ -63,9 +63,11 @@ class AppFunctions {
       "to": userToken,
       "priority": "high",
       "data": {
-        "type": callType == CallType.voice ? "voice" : "video",
+        "type": "call",
+        "callType": callType == CallType.voice ? "voice" : "video",
         "callId": callId,
         "token": rtcToken,
+        "userToken": HiveHelper.getCurrentUser()!.token!,
         "channelName": channelName,
         "senderID": HiveHelper.getCurrentUser()!.uId,
         "phoneNumber": HiveHelper.getCurrentUser()!.phone,

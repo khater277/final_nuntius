@@ -74,7 +74,10 @@ class MessagesCubit extends Cubit<MessagesState> {
       (stream) {
         stream.listen((event) {
           emit(const MessagesState.getMessagesLoading());
-          user = UserData.fromJson(event.data()!);
+          user = user!.copyWith(
+            token: UserData.fromJson(event.data()!).token,
+            image: UserData.fromJson(event.data()!).image,
+          );
           emit(const MessagesState.initControllers());
         });
       },

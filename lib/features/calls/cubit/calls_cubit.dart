@@ -118,13 +118,27 @@ class CallsCubit extends Cubit<CallsState> {
     emit(const CallsState.leaveVoiceCallLoading());
     isJoined = false;
     remoteUid = null;
-    // Future.delayed(const Duration(seconds: 0)).then((value) async {
     await agoraEngine!.leaveChannel();
     await agoraEngine!.release();
-    // agoraEngine = null;
-    // await agoraEngine!.destroy();
-    // });
-
     emit(const CallsState.leaveVoiceCall());
+  }
+
+  void cancelCall({required String userToken}) async {
+    emit(const CallsState.cancelCallLoading());
+    Map<String, dynamic> fcmBody = {
+      "to": userToken,
+      "priority": "high",
+      "data": {
+        "type": "cancel-call",
+        "userToken": HiveHelper.getCurrentUser()!.token!,
+        "senderID": HiveHelper.getCurrentUser()!.uId!,
+        "phoneNumber": HiveHelper.getCurrentUser()!.phone!,
+      }
+    };
+    final response = await callsRepository.pushNotification(fcmBody: fcmBody);
+    response.fold(
+      (failure) => emit(CallsState.cancelCallError(failure.getMessage())),
+      (result) => emit(const CallsState.cancelCall()),
+    );
   }
 }

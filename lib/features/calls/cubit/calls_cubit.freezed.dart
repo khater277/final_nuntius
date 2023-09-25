@@ -32,6 +32,9 @@ mixin _$CallsState {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -50,6 +53,9 @@ mixin _$CallsState {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,6 +74,9 @@ mixin _$CallsState {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -89,6 +98,9 @@ mixin _$CallsState {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -107,6 +119,9 @@ mixin _$CallsState {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -125,6 +140,9 @@ mixin _$CallsState {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -199,6 +217,9 @@ class _$_Initial implements _Initial {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return initial();
   }
@@ -220,6 +241,9 @@ class _$_Initial implements _Initial {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return initial?.call();
   }
@@ -241,6 +265,9 @@ class _$_Initial implements _Initial {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -268,6 +295,9 @@ class _$_Initial implements _Initial {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return initial(this);
   }
@@ -289,6 +319,9 @@ class _$_Initial implements _Initial {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return initial?.call(this);
   }
@@ -310,6 +343,9 @@ class _$_Initial implements _Initial {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -375,6 +411,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return generateTokenLoading();
   }
@@ -396,6 +435,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return generateTokenLoading?.call();
   }
@@ -417,6 +459,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenLoading != null) {
@@ -444,6 +489,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return generateTokenLoading(this);
   }
@@ -465,6 +513,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return generateTokenLoading?.call(this);
   }
@@ -486,6 +537,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenLoading != null) {
@@ -578,6 +632,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return generateTokenSuccess(token);
   }
@@ -599,6 +656,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return generateTokenSuccess?.call(token);
   }
@@ -620,6 +680,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenSuccess != null) {
@@ -647,6 +710,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return generateTokenSuccess(this);
   }
@@ -668,6 +734,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return generateTokenSuccess?.call(this);
   }
@@ -689,6 +758,9 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenSuccess != null) {
@@ -788,6 +860,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return generateTokenError(errorMsg);
   }
@@ -809,6 +884,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return generateTokenError?.call(errorMsg);
   }
@@ -830,6 +908,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenError != null) {
@@ -857,6 +938,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return generateTokenError(this);
   }
@@ -878,6 +962,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return generateTokenError?.call(this);
   }
@@ -899,6 +986,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (generateTokenError != null) {
@@ -970,6 +1060,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return setupVoiceSDKEngine();
   }
@@ -991,6 +1084,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return setupVoiceSDKEngine?.call();
   }
@@ -1012,6 +1108,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (setupVoiceSDKEngine != null) {
@@ -1039,6 +1138,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return setupVoiceSDKEngine(this);
   }
@@ -1060,6 +1162,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return setupVoiceSDKEngine?.call(this);
   }
@@ -1081,6 +1186,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (setupVoiceSDKEngine != null) {
@@ -1174,6 +1282,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return pushNotificationError(errorMsg);
   }
@@ -1195,6 +1306,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return pushNotificationError?.call(errorMsg);
   }
@@ -1216,6 +1330,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (pushNotificationError != null) {
@@ -1243,6 +1360,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return pushNotificationError(this);
   }
@@ -1264,6 +1384,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return pushNotificationError?.call(this);
   }
@@ -1285,6 +1408,9 @@ class _$_PushNotificationError implements _PushNotificationError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (pushNotificationError != null) {
@@ -1356,6 +1482,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return onJoinChannelSuccess();
   }
@@ -1377,6 +1506,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return onJoinChannelSuccess?.call();
   }
@@ -1398,6 +1530,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onJoinChannelSuccess != null) {
@@ -1425,6 +1560,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return onJoinChannelSuccess(this);
   }
@@ -1446,6 +1584,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return onJoinChannelSuccess?.call(this);
   }
@@ -1467,6 +1608,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onJoinChannelSuccess != null) {
@@ -1532,6 +1676,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return onUserJoined();
   }
@@ -1553,6 +1700,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return onUserJoined?.call();
   }
@@ -1574,6 +1724,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onUserJoined != null) {
@@ -1601,6 +1754,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return onUserJoined(this);
   }
@@ -1622,6 +1778,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return onUserJoined?.call(this);
   }
@@ -1643,6 +1802,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onUserJoined != null) {
@@ -1708,6 +1870,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return onUserOffline();
   }
@@ -1729,6 +1894,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return onUserOffline?.call();
   }
@@ -1750,6 +1918,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onUserOffline != null) {
@@ -1777,6 +1948,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return onUserOffline(this);
   }
@@ -1798,6 +1972,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return onUserOffline?.call(this);
   }
@@ -1819,6 +1996,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (onUserOffline != null) {
@@ -1884,6 +2064,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return joinVoiceCallLoading();
   }
@@ -1905,6 +2088,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return joinVoiceCallLoading?.call();
   }
@@ -1926,6 +2112,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCallLoading != null) {
@@ -1953,6 +2142,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return joinVoiceCallLoading(this);
   }
@@ -1974,6 +2166,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return joinVoiceCallLoading?.call(this);
   }
@@ -1995,6 +2190,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCallLoading != null) {
@@ -2060,6 +2258,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return joinVoiceCall();
   }
@@ -2081,6 +2282,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return joinVoiceCall?.call();
   }
@@ -2102,6 +2306,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCall != null) {
@@ -2129,6 +2336,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return joinVoiceCall(this);
   }
@@ -2150,6 +2360,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return joinVoiceCall?.call(this);
   }
@@ -2171,6 +2384,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCall != null) {
@@ -2264,6 +2480,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return joinVoiceCallError(errorMsg);
   }
@@ -2285,6 +2504,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return joinVoiceCallError?.call(errorMsg);
   }
@@ -2306,6 +2528,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCallError != null) {
@@ -2333,6 +2558,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return joinVoiceCallError(this);
   }
@@ -2354,6 +2582,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return joinVoiceCallError?.call(this);
   }
@@ -2375,6 +2606,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (joinVoiceCallError != null) {
@@ -2446,6 +2680,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return leaveVoiceCallLoading();
   }
@@ -2467,6 +2704,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return leaveVoiceCallLoading?.call();
   }
@@ -2488,6 +2728,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (leaveVoiceCallLoading != null) {
@@ -2515,6 +2758,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return leaveVoiceCallLoading(this);
   }
@@ -2536,6 +2782,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return leaveVoiceCallLoading?.call(this);
   }
@@ -2557,6 +2806,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (leaveVoiceCallLoading != null) {
@@ -2622,6 +2874,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
   }) {
     return leaveVoiceCall();
   }
@@ -2643,6 +2898,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
   }) {
     return leaveVoiceCall?.call();
   }
@@ -2664,6 +2922,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
     required TResult orElse(),
   }) {
     if (leaveVoiceCall != null) {
@@ -2691,6 +2952,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
   }) {
     return leaveVoiceCall(this);
   }
@@ -2712,6 +2976,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
   }) {
     return leaveVoiceCall?.call(this);
   }
@@ -2733,6 +3000,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
     required TResult orElse(),
   }) {
     if (leaveVoiceCall != null) {
@@ -2744,4 +3014,618 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
 
 abstract class _LeaveVoiceCall implements CallsState {
   const factory _LeaveVoiceCall() = _$_LeaveVoiceCall;
+}
+
+/// @nodoc
+abstract class _$$_CancelCallLoadingCopyWith<$Res> {
+  factory _$$_CancelCallLoadingCopyWith(_$_CancelCallLoading value,
+          $Res Function(_$_CancelCallLoading) then) =
+      __$$_CancelCallLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CancelCallLoadingCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCallLoading>
+    implements _$$_CancelCallLoadingCopyWith<$Res> {
+  __$$_CancelCallLoadingCopyWithImpl(
+      _$_CancelCallLoading _value, $Res Function(_$_CancelCallLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CancelCallLoading implements _CancelCallLoading {
+  const _$_CancelCallLoading();
+
+  @override
+  String toString() {
+    return 'CallsState.cancelCallLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_CancelCallLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token) generateTokenSuccess,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function(String errorMsg) pushNotificationError,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
+  }) {
+    return cancelCallLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token)? generateTokenSuccess,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function(String errorMsg)? pushNotificationError,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
+  }) {
+    return cancelCallLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token)? generateTokenSuccess,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function(String errorMsg)? pushNotificationError,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCallLoading != null) {
+      return cancelCallLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateTokenSuccess value) generateTokenSuccess,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_PushNotificationError value)
+        pushNotificationError,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
+  }) {
+    return cancelCallLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_PushNotificationError value)? pushNotificationError,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
+  }) {
+    return cancelCallLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_PushNotificationError value)? pushNotificationError,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCallLoading != null) {
+      return cancelCallLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CancelCallLoading implements CallsState {
+  const factory _CancelCallLoading() = _$_CancelCallLoading;
+}
+
+/// @nodoc
+abstract class _$$_CancelCallCopyWith<$Res> {
+  factory _$$_CancelCallCopyWith(
+          _$_CancelCall value, $Res Function(_$_CancelCall) then) =
+      __$$_CancelCallCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CancelCallCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCall>
+    implements _$$_CancelCallCopyWith<$Res> {
+  __$$_CancelCallCopyWithImpl(
+      _$_CancelCall _value, $Res Function(_$_CancelCall) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CancelCall implements _CancelCall {
+  const _$_CancelCall();
+
+  @override
+  String toString() {
+    return 'CallsState.cancelCall()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_CancelCall);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token) generateTokenSuccess,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function(String errorMsg) pushNotificationError,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
+  }) {
+    return cancelCall();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token)? generateTokenSuccess,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function(String errorMsg)? pushNotificationError,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
+  }) {
+    return cancelCall?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token)? generateTokenSuccess,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function(String errorMsg)? pushNotificationError,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCall != null) {
+      return cancelCall();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateTokenSuccess value) generateTokenSuccess,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_PushNotificationError value)
+        pushNotificationError,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
+  }) {
+    return cancelCall(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_PushNotificationError value)? pushNotificationError,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
+  }) {
+    return cancelCall?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_PushNotificationError value)? pushNotificationError,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCall != null) {
+      return cancelCall(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CancelCall implements CallsState {
+  const factory _CancelCall() = _$_CancelCall;
+}
+
+/// @nodoc
+abstract class _$$_CancelCallErrorCopyWith<$Res> {
+  factory _$$_CancelCallErrorCopyWith(
+          _$_CancelCallError value, $Res Function(_$_CancelCallError) then) =
+      __$$_CancelCallErrorCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMsg});
+}
+
+/// @nodoc
+class __$$_CancelCallErrorCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCallError>
+    implements _$$_CancelCallErrorCopyWith<$Res> {
+  __$$_CancelCallErrorCopyWithImpl(
+      _$_CancelCallError _value, $Res Function(_$_CancelCallError) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMsg = null,
+  }) {
+    return _then(_$_CancelCallError(
+      null == errorMsg
+          ? _value.errorMsg
+          : errorMsg // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_CancelCallError implements _CancelCallError {
+  const _$_CancelCallError(this.errorMsg);
+
+  @override
+  final String errorMsg;
+
+  @override
+  String toString() {
+    return 'CallsState.cancelCallError(errorMsg: $errorMsg)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_CancelCallError &&
+            (identical(other.errorMsg, errorMsg) ||
+                other.errorMsg == errorMsg));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMsg);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_CancelCallErrorCopyWith<_$_CancelCallError> get copyWith =>
+      __$$_CancelCallErrorCopyWithImpl<_$_CancelCallError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() generateTokenLoading,
+    required TResult Function(String token) generateTokenSuccess,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function(String errorMsg) pushNotificationError,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() cancelCallLoading,
+    required TResult Function() cancelCall,
+    required TResult Function(String errorMsg) cancelCallError,
+  }) {
+    return cancelCallError(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? generateTokenLoading,
+    TResult? Function(String token)? generateTokenSuccess,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function(String errorMsg)? pushNotificationError,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? cancelCallLoading,
+    TResult? Function()? cancelCall,
+    TResult? Function(String errorMsg)? cancelCallError,
+  }) {
+    return cancelCallError?.call(errorMsg);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? generateTokenLoading,
+    TResult Function(String token)? generateTokenSuccess,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function(String errorMsg)? pushNotificationError,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? cancelCallLoading,
+    TResult Function()? cancelCall,
+    TResult Function(String errorMsg)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCallError != null) {
+      return cancelCallError(errorMsg);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateTokenSuccess value) generateTokenSuccess,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_PushNotificationError value)
+        pushNotificationError,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_CancelCallLoading value) cancelCallLoading,
+    required TResult Function(_CancelCall value) cancelCall,
+    required TResult Function(_CancelCallError value) cancelCallError,
+  }) {
+    return cancelCallError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_PushNotificationError value)? pushNotificationError,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult? Function(_CancelCall value)? cancelCall,
+    TResult? Function(_CancelCallError value)? cancelCallError,
+  }) {
+    return cancelCallError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateTokenSuccess value)? generateTokenSuccess,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_PushNotificationError value)? pushNotificationError,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_CancelCallLoading value)? cancelCallLoading,
+    TResult Function(_CancelCall value)? cancelCall,
+    TResult Function(_CancelCallError value)? cancelCallError,
+    required TResult orElse(),
+  }) {
+    if (cancelCallError != null) {
+      return cancelCallError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CancelCallError implements CallsState {
+  const factory _CancelCallError(final String errorMsg) = _$_CancelCallError;
+
+  String get errorMsg;
+  @JsonKey(ignore: true)
+  _$$_CancelCallErrorCopyWith<_$_CancelCallError> get copyWith =>
+      throw _privateConstructorUsedError;
 }
