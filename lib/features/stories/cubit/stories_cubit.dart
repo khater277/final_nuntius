@@ -113,7 +113,7 @@ class StoriesCubit extends Cubit<StoriesState> {
     emit(const StoriesState.sendStoryLoading());
     final storyModel = StoryModel(
       id: const Uuid().v4(),
-      date: DateTime.now().toString(),
+      date: DateTime.now().toUtc().toString(),
       isImage: mediaType == MessageType.image ? true : false,
       isVideo: mediaType == MessageType.video ? true : false,
       isRead: false,
@@ -203,16 +203,18 @@ class StoriesCubit extends Cubit<StoriesState> {
         emit(StoriesState.getMyStoriesError(failure.getMessage()));
       },
       (snapshots) {
-        // List<StoryModel> recentStories = [];
-        // List<StoryModel> viewedStories = [];
-        // List<UserData> viewedInfo = [];
-        // List<UserData> recentInfo = [];
         snapshots.listen((event) async {
           emit(const StoriesState.getMyStoriesLoading());
           List<StoryModel> myStories = [];
           for (var doc in event.docs) {
             final story = StoryModel.fromJson(doc.data());
-            myStories.add(story);
+            if (DateTime.now()
+                    .toUtc()
+                    .difference(DateTime.parse(story.date!))
+                    .inHours <
+                24) {
+              myStories.add(story);
+            }
           }
           this.myStories = myStories;
           print("================>${this.myStories.length}");
@@ -399,11 +401,17 @@ class StoriesCubit extends Cubit<StoriesState> {
         viewedStories = [];
         recentStories = [];
         for (var contactStory in stories) {
-          if (contactStory.stories!.last.viewersPhones!
-              .contains(HiveHelper.getCurrentUser()!.phone)) {
-            viewedStories.add(contactStory);
-          } else {
-            recentStories.add(contactStory);
+          if (DateTime.now()
+                  .toUtc()
+                  .difference(DateTime.parse(contactStory.stories!.last.date!))
+                  .inHours <
+              24) {
+            if (contactStory.stories!.last.viewersPhones!
+                .contains(HiveHelper.getCurrentUser()!.phone)) {
+              viewedStories.add(contactStory);
+            } else {
+              recentStories.add(contactStory);
+            }
           }
         }
         viewedStories.sort(
@@ -418,8 +426,6 @@ class StoriesCubit extends Cubit<StoriesState> {
 
         recentStories = recentStories.reversed.toList();
         viewedStories = viewedStories.reversed.toList();
-
-        print("==============>${viewedStories.last.stories!.length}");
 
         emit(const StoriesState.getContactsCurrentStories());
       },
@@ -485,7 +491,7 @@ class StoriesCubit extends Cubit<StoriesState> {
       senderId: HiveHelper.getCurrentUser()!.uId,
       receiverId: user.uId,
       message: replyController!.text,
-      date: DateTime.now().toString(),
+      date: DateTime.now().toUtc().toString(),
       media: "",
       isImage: false,
       isVideo: false,

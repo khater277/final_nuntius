@@ -3,6 +3,7 @@ part of 'calls_cubit.dart';
 @freezed
 class CallsState with _$CallsState {
   const factory CallsState.initial() = _Initial;
+  const factory CallsState.initCalls() = _InitCalls;
   const factory CallsState.generateTokenLoading() = _GenerateTokenLoading;
   const factory CallsState.generateTokenSuccess(String token) =
       _GenerateTokenSuccess;
@@ -23,4 +24,7 @@ class CallsState with _$CallsState {
   const factory CallsState.cancelCallLoading() = _CancelCallLoading;
   const factory CallsState.cancelCall() = _CancelCall;
   const factory CallsState.cancelCallError(String errorMsg) = _CancelCallError;
+  const factory CallsState.getCallsLoading() = _GetCallsLoading;
+  const factory CallsState.getCalls() = _GetCalls;
+  const factory CallsState.getCallsError(String errorMsg) = _GetCallsError;
 }

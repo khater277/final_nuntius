@@ -5,30 +5,23 @@ import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class CallsNameAndCaption extends StatelessWidget {
   final CallType callType;
   final CallStatus callStatus;
-  const CallsNameAndCaption(
-      {Key? key, required this.callType, required this.callStatus})
-      : super(key: key);
+  final String name;
+  final String date;
+  const CallsNameAndCaption({
+    Key? key,
+    required this.callType,
+    required this.callStatus,
+    required this.name,
+    required this.date,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // late String name;
-
-    // UserModel? userModel = cubit.users
-    //     .firstWhereOrNull((element) => element.uId == callModel.userID);
-
-    // if (userModel == null) {
-    //   name = callModel.phoneNumber!;
-    // } else {
-    //   name = userModel.name!;
-    // }
-
-    // bool condition =
-    //     DateTime.parse(callModel.dateTime!).day == DateTime.now().day;
-
     late String status;
 
     switch (callStatus) {
@@ -51,7 +44,7 @@ class CallsNameAndCaption extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           LargeHeadText(
-            text: ' Ahmed khater',
+            text: ' $name',
             size: FontSize.s13,
           ),
           SizedBox(height: AppHeight.h3),
@@ -67,7 +60,9 @@ class CallsNameAndCaption extends StatelessWidget {
               ),
               Flexible(
                 child: SecondaryText(
-                    text: "$status - 15/10/2023", size: FontSize.s12),
+                    text:
+                        "$status - ${DateFormat('yyyy/MM/dd').format(DateTime.parse(date).toLocal())} at ${DateFormat.jm().format(DateTime.parse(date).toLocal())}",
+                    size: FontSize.s12),
               ),
               SizedBox(
                 width: AppWidth.w2,

@@ -1,15 +1,19 @@
 // ignore_for_file: unused_field, prefer_final_fields
-
 import 'package:agora_rtc_engine/agora_rtc_engine.dart';
+import 'package:collection/collection.dart';
 import 'package:final_nuntius/core/apis/agora/agora_end_points.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_functions.dart';
+import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:final_nuntius/features/calls/data/models/call_info/call_info.dart';
+import 'package:final_nuntius/features/calls/data/models/call_model/call_model.dart';
 import 'package:final_nuntius/features/calls/data/repositories/calls_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:permission_handler/permission_handler.dart';
+import 'package:uuid/uuid.dart';
 
 part 'calls_cubit.freezed.dart';
 part 'calls_state.dart';
@@ -21,6 +25,12 @@ class CallsCubit extends Cubit<CallsState> {
       : super(const CallsState.initial());
 
   static CallsCubit get(context) => BlocProvider.of(context);
+
+  List<UserData> users = HiveHelper.getAllUsers() ?? [];
+  void initCalls({required List<UserData> users}) {
+    // this.users = users;
+    emit(const CallsState.initCalls());
+  }
 
   int uid = 0;
   int? remoteUid;
@@ -36,13 +46,15 @@ class CallsCubit extends Cubit<CallsState> {
     ));
   }
 
-  void setupVoiceSDKEngine(
-      {String? userToken,
-      required String rtcToken,
-      required String channelName}) async {
+  void setupVoiceSDKEngine({
+    String? userToken,
+    required String rtcToken,
+    required String channelName,
+    required String friendPhoneNumber,
+  }) async {
     emit(const CallsState.joinVoiceCallLoading());
+    final callId = const Uuid().v4();
     await [Permission.microphone].request();
-
     agoraEngine = createAgoraRtcEngine();
     await agoraEngine!
         .initialize(const RtcEngineContext(appId: AgoraEndPoints.appId));
@@ -60,6 +72,11 @@ class CallsCubit extends Cubit<CallsState> {
               rtcToken: rtcToken,
               channelName: channelName,
             );
+            addNewCall(
+              friendPhoneNumber: friendPhoneNumber,
+              callId: callId,
+              callType: CallType.voice,
+            );
           } else {
             emit(const CallsState.onJoinChannelSuccess());
           }
@@ -67,6 +84,10 @@ class CallsCubit extends Cubit<CallsState> {
         onUserJoined: (RtcConnection connection, int remoteUid, int elapsed) {
           showMessage("Remote user uid:$remoteUid joined the channel");
           this.remoteUid = remoteUid;
+          updateCall(
+            callId: callId,
+            friendPhoneNumber: friendPhoneNumber,
+          );
           emit(const CallsState.onUserJoined());
         },
         onUserOffline: (RtcConnection connection, int remoteUid,
@@ -139,6 +160,65 @@ class CallsCubit extends Cubit<CallsState> {
     response.fold(
       (failure) => emit(CallsState.cancelCallError(failure.getMessage())),
       (result) => emit(const CallsState.cancelCall()),
+    );
+  }
+
+  void addNewCall({
+    required String friendPhoneNumber,
+    required String callId,
+    required CallType callType,
+  }) async {
+    final response = await callsRepository.addNewCall(
+      friendPhoneNumber: friendPhoneNumber,
+      callId: callId,
+      callType: callType,
+    );
+
+    response.fold(
+      (failure) => null,
+      (result) => print("==============>CALL ADDED SUCCESSFULLY"),
+    );
+  }
+
+  void updateCall({
+    required String callId,
+    required String friendPhoneNumber,
+  }) async {
+    final response = await callsRepository.updateCall(
+      callId: callId,
+      friendPhoneNumber: friendPhoneNumber,
+    );
+    response.fold(
+      (failure) => null,
+      (result) => print("==============>CALL UPDATED SUCCESSFULLY"),
+    );
+  }
+
+  List<CallInfo>? calls;
+  void getCalls() async {
+    emit(const CallsState.getCallsLoading());
+    final response = await callsRepository.getCalls();
+    response.fold(
+      (failure) => emit(CallsState.getCallsError(failure.getMessage())),
+      (stream) {
+        stream.listen((event) {
+          emit(const CallsState.initCalls());
+          List<CallInfo> calls = [];
+          for (var element in event.docs) {
+            final callModel = CallModel.fromJson(element.data());
+            final user = users.firstWhereOrNull(
+                (element) => element.phone == callModel.phoneNumber);
+            CallInfo callInfo = CallInfo(
+              callModel: callModel,
+              name: user != null ? user.name! : callModel.phoneNumber!,
+              image: user != null ? user.image! : "",
+            );
+            calls.add(callInfo);
+          }
+          this.calls = calls;
+          emit(const CallsState.getCalls());
+        });
+      },
     );
   }
 }

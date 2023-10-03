@@ -1,6 +1,24 @@
-enum CallType { voice, video }
+// ignore_for_file: invalid_annotation_target
 
-enum CallStatus { inComing, outComing, inComingNoResponse, outComingNoResponse }
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+enum CallType {
+  @JsonKey(name: 'voice')
+  voice,
+  @JsonKey(name: 'video')
+  video,
+}
+
+enum CallStatus {
+  @JsonKey(name: 'inComing')
+  inComing,
+  @JsonKey(name: 'outComing')
+  outComing,
+  @JsonKey(name: 'inComingNoResponse')
+  inComingNoResponse,
+  @JsonKey(name: 'outComingNoResponse')
+  outComingNoResponse,
+}
 
 enum MessageType {
   deleted,

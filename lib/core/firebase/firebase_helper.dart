@@ -4,7 +4,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:dartz/dartz.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:final_nuntius/features/calls/data/models/call_model/call_model.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/data/models/message/message_model.dart';
 import 'package:final_nuntius/features/stories/data/models/contact_story_model/contact_story_model.dart';
@@ -67,6 +69,19 @@ abstract class FirebaseHelper {
   });
 
   Future<void> deleteLastMessage({required String userPhone});
+
+  Future<void> addNewCall({
+    required String friendPhoneNumber,
+    required String callId,
+    required CallType callType,
+  });
+
+  Future<void> updateCall({
+    required String callId,
+    required String friendPhoneNumber,
+  });
+
+  Stream<QuerySnapshot<Map<String, dynamic>>> getCalls();
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -404,5 +419,68 @@ class FirebaseHelperImpl implements FirebaseHelper {
   Stream<DocumentSnapshot<Map<String, dynamic>>> getUser(
       {required String phoneNumber}) {
     return _db.collection(Collections.users).doc(phoneNumber).snapshots();
+  }
+
+  @override
+  Future<void> addNewCall({
+    required String friendPhoneNumber,
+    required String callId,
+    required CallType callType,
+  }) async {
+    final dateTime = DateTime.now().toUtc().toString();
+    _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone!)
+        .collection(Collections.calls)
+        .doc(callId)
+        .set(CallModel(
+          callId: callId,
+          phoneNumber: friendPhoneNumber,
+          callType: callType,
+          callStatus: CallStatus.outComingNoResponse,
+          dateTime: dateTime,
+        ).toJson());
+
+    _db
+        .collection(Collections.users)
+        .doc(friendPhoneNumber)
+        .collection(Collections.calls)
+        .doc(callId)
+        .set(CallModel(
+          callId: callId,
+          phoneNumber: HiveHelper.getCurrentUser()!.phone!,
+          callType: callType,
+          callStatus: CallStatus.inComingNoResponse,
+          dateTime: dateTime,
+        ).toJson());
+  }
+
+  @override
+  Future<void> updateCall({
+    required String callId,
+    required String friendPhoneNumber,
+  }) async {
+    _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone!)
+        .collection(Collections.calls)
+        .doc(callId)
+        .update({"callStatus": CallStatus.outComing.name});
+
+    _db
+        .collection(Collections.users)
+        .doc(friendPhoneNumber)
+        .collection(Collections.calls)
+        .doc(callId)
+        .update({"callStatus": CallStatus.inComing.name});
+  }
+
+  @override
+  Stream<QuerySnapshot<Map<String, dynamic>>> getCalls() {
+    return _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone!)
+        .collection(Collections.calls)
+        .snapshots();
   }
 }

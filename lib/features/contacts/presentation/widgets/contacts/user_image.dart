@@ -7,22 +7,40 @@ import 'package:flutter/material.dart';
 class UserImage extends StatelessWidget {
   final String image;
   final bool isChat;
-  const UserImage({super.key, required this.image, this.isChat = false});
+  final bool isCalls;
+  const UserImage({
+    super.key,
+    required this.image,
+    this.isChat = false,
+    this.isCalls = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     if (image == "") {
       return SizedBox(
-        width: isChat ? AppWidth.w40 : AppWidth.w30,
+        width: isChat
+            ? AppWidth.w40
+            : isCalls
+                ? AppWidth.w35
+                : AppWidth.w30,
         child: Icon(
           IconBroken.Profile,
-          size: isChat ? AppSize.s30 : AppSize.s22,
+          size: isChat
+              ? AppSize.s30
+              : isCalls
+                  ? AppSize.s25
+                  : AppSize.s22,
           color: AppColors.blue,
         ),
       );
     } else {
       return SizedBox(
-        width: isChat ? AppWidth.w45 : AppWidth.w30,
+        width: isChat
+            ? AppWidth.w45
+            : isCalls
+                ? AppWidth.w40
+                : AppWidth.w30,
         child: CircleAvatar(
           radius: isChat ? AppSize.s28 : AppSize.s20,
           backgroundColor: AppColors.blue,

@@ -6,6 +6,7 @@ import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
+import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:final_nuntius/features/stories/presentation/screens/add_media_story_screen.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/contact_story/story_status.dart';
@@ -25,11 +26,6 @@ class _StoriesScreenState extends State<StoriesScreen> {
   void initState() {
     StoriesCubit.get(context).getStories(context);
     StoriesCubit.get(context).contactsStoriesChanged();
-
-    // StoriesCubit.get(context).getContactsLastStories();
-    // StoriesCubit.get(context).getContactsCurrentStories(phoneNumber: ''),
-
-    // StoriesCubit.get(context).getContactsStories();
     super.initState();
   }
 
@@ -61,8 +57,6 @@ class _StoriesScreenState extends State<StoriesScreen> {
                 const Center(child: CustomCircleIndicator()),
             getMyStoriesLoading: () =>
                 const Center(child: CustomCircleIndicator()),
-            // getContactsLastStoryLoading: () =>
-            //     const Center(child: CustomCircleIndicator()),
             getContactsCurrentStoriesLoading: () =>
                 const Center(child: CustomCircleIndicator()),
             orElse: () => SliverScrollableView(
@@ -99,27 +93,47 @@ class CurrentStories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      fit: FlexFit.loose,
-      child: Column(
-        children: [
-          if (cubit.recentStories.isNotEmpty)
-            StoryStatus(
-              contactStories: cubit.recentStories,
-              isViewed: false,
+    if (cubit.recentStories.isEmpty && cubit.viewedStories.isEmpty) {
+      return Expanded(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              IconBroken.Camera,
+              color: AppColors.grey.withOpacity(0.7),
+              size: AppSize.s100,
             ),
-          if (cubit.viewedStories.isNotEmpty)
-            // LargeHeadText(text: cubit.viewedStories.first.stories!.length.toString())
-            Column(
-              children: [
-                StoryStatus(
-                  contactStories: cubit.viewedStories,
-                  isViewed: true,
-                ),
-              ],
+            SizedBox(height: AppHeight.h8),
+            const SecondaryText(
+              text: "There is no stories to show yet.",
+              // isButton: true,
             ),
-        ],
-      ),
-    );
+          ],
+        ),
+      );
+    } else {
+      return Flexible(
+        fit: FlexFit.loose,
+        child: Column(
+          children: [
+            if (cubit.recentStories.isNotEmpty)
+              StoryStatus(
+                contactStories: cubit.recentStories,
+                isViewed: false,
+              ),
+            if (cubit.viewedStories.isNotEmpty)
+              // LargeHeadText(text: cubit.viewedStories.first.stories!.length.toString())
+              Column(
+                children: [
+                  StoryStatus(
+                    contactStories: cubit.viewedStories,
+                    isViewed: true,
+                  ),
+                ],
+              ),
+          ],
+        ),
+      );
+    }
   }
 }

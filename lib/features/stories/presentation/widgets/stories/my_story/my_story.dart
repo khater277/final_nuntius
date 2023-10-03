@@ -59,12 +59,6 @@ class MyStory extends StatelessWidget {
                       ),
               ],
             ),
-            Expanded(
-              child: LargeHeadText(
-                text: "${cubit.contactsStories.length}",
-                maxLines: 1,
-              ),
-            ),
           ],
         ),
       ),

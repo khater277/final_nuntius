@@ -53,6 +53,7 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
       userToken: widget.userToken,
       rtcToken: widget.rtcToken,
       channelName: widget.channelName,
+      friendPhoneNumber: widget.phoneNumber,
     );
 
     Future.delayed(const Duration(seconds: 0)).then((value) async {

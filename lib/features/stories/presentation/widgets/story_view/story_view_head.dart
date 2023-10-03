@@ -1,5 +1,4 @@
 import 'package:final_nuntius/core/hive/hive_helper.dart';
-import 'package:final_nuntius/core/shared_widgets/alert_dialog.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
