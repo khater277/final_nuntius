@@ -53,6 +53,7 @@ class MessagesCubit extends Cubit<MessagesState> {
     this.user = user;
     homeCubit.initUser(user: user);
     getMessages(isInit: true, phoneNumber: phoneNumber);
+    
     getUser(phoneNumber: phoneNumber);
   }
 
@@ -100,7 +101,7 @@ class MessagesCubit extends Cubit<MessagesState> {
           for (var doc in event.docs) {
             messages.add(MessageModel.fromJson(doc.data()));
           }
-          if (isInit == true) scrollDown();
+          // if (isInit == true) scrollDown();
           this.messages = messages;
           // print("==============>${messages.last.message}");
           // this.messages.sort(
@@ -343,7 +344,7 @@ class MessagesCubit extends Cubit<MessagesState> {
   }
 
   void generateToken({required CallType callType}) async {
-    emit(const MessagesState.generateTokenLoading());
+    emit(MessagesState.generateTokenLoading(callType));
     String channelName = const Uuid().v4();
     final response = await callsRepository.generateToken(
       channel: channelName,
@@ -351,8 +352,11 @@ class MessagesCubit extends Cubit<MessagesState> {
     );
     response.fold(
       (failure) => emit(MessagesState.generateTokenError(failure.getMessage())),
-      (agoraTokenModel) => emit(
-          MessagesState.generateToken(agoraTokenModel.rtcToken!, channelName)),
+      (agoraTokenModel) => emit(MessagesState.generateToken(
+        agoraTokenModel.rtcToken!,
+        channelName,
+        callType,
+      )),
     );
   }
 }

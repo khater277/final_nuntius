@@ -3,8 +3,9 @@ import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/calls/cubit/calls_cubit.dart';
-import 'package:final_nuntius/features/calls/presentation/widgets/call_name_and_caption.dart';
-import 'package:final_nuntius/features/calls/presentation/widgets/call_status_icon.dart';
+import 'package:final_nuntius/features/calls/presentation/widgets/calls/call_name_and_caption.dart';
+import 'package:final_nuntius/features/calls/presentation/widgets/calls/call_status_icon.dart';
+
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

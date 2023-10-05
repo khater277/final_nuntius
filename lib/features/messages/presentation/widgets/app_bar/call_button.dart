@@ -17,15 +17,22 @@ class CallButton extends StatelessWidget {
     return BlocBuilder<MessagesCubit, MessagesState>(
       builder: (context, state) {
         return IconButton(
-          onPressed: () async {
-            // Go.to(context: context, screen: const ReceiveCallScreen());
-            CallType.video == callType
-                ? null
-                : MessagesCubit.get(context).generateToken(callType: callType);
-          },
+          onPressed: () =>
+              MessagesCubit.get(context).generateToken(callType: callType),
           icon: state.maybeWhen(
-            generateTokenLoading: () =>
-                CustomCircleIndicator(size: AppSize.s17),
+            generateTokenLoading: (callType) {
+              if (callType == this.callType) {
+                return CustomCircleIndicator(size: AppSize.s17);
+              } else {
+                return Icon(
+                  this.callType == CallType.video
+                      ? IconBroken.Video
+                      : IconBroken.Call,
+                  color: AppColors.blue,
+                  size: AppSize.s20,
+                );
+              }
+            },
             orElse: () => Icon(
               callType == CallType.video ? IconBroken.Video : IconBroken.Call,
               color: AppColors.blue,

@@ -2,8 +2,10 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
+import 'package:final_nuntius/features/calls/presentation/screens/video_call_screen.dart';
 import 'package:final_nuntius/features/calls/presentation/screens/voice_call_screen.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
@@ -68,16 +70,33 @@ class _MessagesScreenState extends State<MessagesScreen> {
             Go.back(context: context);
             Go.back(context: context);
           },
-          generateToken: (rtcToken, channelName) => Go.to(
-              context: context,
-              screen: VoiceCallScreen(
-                userToken: MessagesCubit.get(context).user!.token!,
-                rtcToken: rtcToken,
-                channelName: channelName,
-                image: MessagesCubit.get(context).user!.image!,
-                name: MessagesCubit.get(context).user!.name!,
-                phoneNumber: MessagesCubit.get(context).user!.phone!,
-              )),
+          generateToken: (rtcToken, channelName, callType) {
+            if (callType == CallType.voice) {
+              Go.to(
+                context: context,
+                screen: VoiceCallScreen(
+                  userToken: MessagesCubit.get(context).user!.token!,
+                  rtcToken: rtcToken,
+                  channelName: channelName,
+                  image: MessagesCubit.get(context).user!.image!,
+                  name: MessagesCubit.get(context).user!.name!,
+                  phoneNumber: MessagesCubit.get(context).user!.phone!,
+                ),
+              );
+            } else {
+              Go.to(
+                context: context,
+                screen: VideoCallScreen(
+                  userToken: MessagesCubit.get(context).user!.token!,
+                  rtcToken: rtcToken,
+                  channelName: channelName,
+                  image: MessagesCubit.get(context).user!.image!,
+                  name: MessagesCubit.get(context).user!.name!,
+                  phoneNumber: MessagesCubit.get(context).user!.phone!,
+                ),
+              );
+            }
+          },
           generateTokenError: (errorMsg) => showSnackBar(
             context: context,
             message: "$errorMsg , please check agora token server.",

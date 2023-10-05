@@ -481,6 +481,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.users)
         .doc(HiveHelper.getCurrentUser()!.phone!)
         .collection(Collections.calls)
+        .orderBy('dateTime', descending: true)
         .snapshots();
   }
 }

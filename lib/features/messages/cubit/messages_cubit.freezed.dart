@@ -46,8 +46,10 @@ mixin _$MessagesState {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -90,8 +92,9 @@ mixin _$MessagesState {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -134,8 +137,9 @@ mixin _$MessagesState {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -374,8 +378,10 @@ class _$_Initial implements _Initial {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -421,8 +427,9 @@ class _$_Initial implements _Initial {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -468,8 +475,9 @@ class _$_Initial implements _Initial {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -711,8 +719,10 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -758,8 +768,9 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -805,8 +816,9 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -1048,8 +1060,10 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -1095,8 +1109,9 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -1142,8 +1157,9 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -1385,8 +1401,10 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -1432,8 +1450,9 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -1479,8 +1498,9 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -1722,8 +1742,10 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -1769,8 +1791,9 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -1816,8 +1839,9 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -2086,8 +2110,10 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -2133,8 +2159,9 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -2180,8 +2207,9 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -2428,8 +2456,10 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -2475,8 +2505,9 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -2522,8 +2553,9 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -2798,8 +2830,10 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -2845,8 +2879,9 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -2892,8 +2927,9 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -3141,8 +3177,10 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -3188,8 +3226,9 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -3235,8 +3274,9 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -3477,8 +3517,10 @@ class _$_GetUser implements _GetUser {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -3524,8 +3566,9 @@ class _$_GetUser implements _GetUser {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -3571,8 +3614,9 @@ class _$_GetUser implements _GetUser {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -3841,8 +3885,10 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -3888,8 +3934,9 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -3935,8 +3982,9 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -4184,8 +4232,10 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -4231,8 +4281,9 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -4278,8 +4329,9 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -4521,8 +4573,10 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -4568,8 +4622,9 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -4615,8 +4670,9 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -4886,8 +4942,10 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -4933,8 +4991,9 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -4980,8 +5039,9 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -5230,8 +5290,10 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -5277,8 +5339,9 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -5324,8 +5387,9 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -5567,8 +5631,10 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -5614,8 +5680,9 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -5661,8 +5728,9 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -5932,8 +6000,10 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -5979,8 +6049,9 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -6026,8 +6097,9 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -6276,8 +6348,10 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -6323,8 +6397,9 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -6370,8 +6445,9 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -6613,8 +6689,10 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -6660,8 +6738,9 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -6707,8 +6786,9 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -6978,8 +7058,10 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -7025,8 +7107,9 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -7072,8 +7155,9 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -7321,8 +7405,10 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -7368,8 +7454,9 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -7415,8 +7502,9 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -7658,8 +7746,10 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -7705,8 +7795,9 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -7752,8 +7843,9 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -7995,8 +8087,10 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -8042,8 +8136,9 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -8089,8 +8184,9 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -8332,8 +8428,10 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -8379,8 +8477,9 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -8426,8 +8525,9 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -8697,8 +8797,10 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -8744,8 +8846,9 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -8791,8 +8894,9 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -9040,8 +9144,10 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -9087,8 +9193,9 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -9134,8 +9241,9 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -9377,8 +9485,10 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -9424,8 +9534,9 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -9471,8 +9582,9 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -9742,8 +9854,10 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -9789,8 +9903,9 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -9836,8 +9951,9 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -10024,6 +10140,8 @@ abstract class _$$_GenerateTokenLoadingCopyWith<$Res> {
   factory _$$_GenerateTokenLoadingCopyWith(_$_GenerateTokenLoading value,
           $Res Function(_$_GenerateTokenLoading) then) =
       __$$_GenerateTokenLoadingCopyWithImpl<$Res>;
+  @useResult
+  $Res call({CallType callType});
 }
 
 /// @nodoc
@@ -10033,26 +10151,52 @@ class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
   __$$_GenerateTokenLoadingCopyWithImpl(_$_GenerateTokenLoading _value,
       $Res Function(_$_GenerateTokenLoading) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? callType = null,
+  }) {
+    return _then(_$_GenerateTokenLoading(
+      null == callType
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as CallType,
+    ));
+  }
 }
 
 /// @nodoc
 
 class _$_GenerateTokenLoading implements _GenerateTokenLoading {
-  const _$_GenerateTokenLoading();
+  const _$_GenerateTokenLoading(this.callType);
+
+  @override
+  final CallType callType;
 
   @override
   String toString() {
-    return 'MessagesState.generateTokenLoading()';
+    return 'MessagesState.generateTokenLoading(callType: $callType)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GenerateTokenLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$_GenerateTokenLoading &&
+            (identical(other.callType, callType) ||
+                other.callType == callType));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, callType);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GenerateTokenLoadingCopyWith<_$_GenerateTokenLoading> get copyWith =>
+      __$$_GenerateTokenLoadingCopyWithImpl<_$_GenerateTokenLoading>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10085,8 +10229,10 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -10098,7 +10244,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
   }) {
-    return generateTokenLoading();
+    return generateTokenLoading(callType);
   }
 
   @override
@@ -10132,8 +10278,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -10145,7 +10292,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
   }) {
-    return generateTokenLoading?.call();
+    return generateTokenLoading?.call(callType);
   }
 
   @override
@@ -10179,8 +10326,9 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -10194,7 +10342,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult orElse(),
   }) {
     if (generateTokenLoading != null) {
-      return generateTokenLoading();
+      return generateTokenLoading(callType);
     }
     return orElse();
   }
@@ -10353,7 +10501,13 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
 }
 
 abstract class _GenerateTokenLoading implements MessagesState {
-  const factory _GenerateTokenLoading() = _$_GenerateTokenLoading;
+  const factory _GenerateTokenLoading(final CallType callType) =
+      _$_GenerateTokenLoading;
+
+  CallType get callType;
+  @JsonKey(ignore: true)
+  _$$_GenerateTokenLoadingCopyWith<_$_GenerateTokenLoading> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -10362,7 +10516,7 @@ abstract class _$$_GenerateTokenCopyWith<$Res> {
           _$_GenerateToken value, $Res Function(_$_GenerateToken) then) =
       __$$_GenerateTokenCopyWithImpl<$Res>;
   @useResult
-  $Res call({String token, dynamic channelName});
+  $Res call({String token, String channelName, CallType callType});
 }
 
 /// @nodoc
@@ -10377,14 +10531,22 @@ class __$$_GenerateTokenCopyWithImpl<$Res>
   @override
   $Res call({
     Object? token = null,
-    Object? channelName = freezed,
+    Object? channelName = null,
+    Object? callType = null,
   }) {
     return _then(_$_GenerateToken(
       null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
               as String,
-      freezed == channelName ? _value.channelName! : channelName,
+      null == channelName
+          ? _value.channelName
+          : channelName // ignore: cast_nullable_to_non_nullable
+              as String,
+      null == callType
+          ? _value.callType
+          : callType // ignore: cast_nullable_to_non_nullable
+              as CallType,
     ));
   }
 }
@@ -10392,16 +10554,18 @@ class __$$_GenerateTokenCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_GenerateToken implements _GenerateToken {
-  const _$_GenerateToken(this.token, this.channelName);
+  const _$_GenerateToken(this.token, this.channelName, this.callType);
 
   @override
   final String token;
   @override
-  final dynamic channelName;
+  final String channelName;
+  @override
+  final CallType callType;
 
   @override
   String toString() {
-    return 'MessagesState.generateToken(token: $token, channelName: $channelName)';
+    return 'MessagesState.generateToken(token: $token, channelName: $channelName, callType: $callType)';
   }
 
   @override
@@ -10410,13 +10574,14 @@ class _$_GenerateToken implements _GenerateToken {
         (other.runtimeType == runtimeType &&
             other is _$_GenerateToken &&
             (identical(other.token, token) || other.token == token) &&
-            const DeepCollectionEquality()
-                .equals(other.channelName, channelName));
+            (identical(other.channelName, channelName) ||
+                other.channelName == channelName) &&
+            (identical(other.callType, callType) ||
+                other.callType == callType));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, token, const DeepCollectionEquality().hash(channelName));
+  int get hashCode => Object.hash(runtimeType, token, channelName, callType);
 
   @JsonKey(ignore: true)
   @override
@@ -10455,8 +10620,10 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -10468,7 +10635,7 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
   }) {
-    return generateToken(token, channelName);
+    return generateToken(token, channelName, callType);
   }
 
   @override
@@ -10502,8 +10669,9 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -10515,7 +10683,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
   }) {
-    return generateToken?.call(token, channelName);
+    return generateToken?.call(token, channelName, callType);
   }
 
   @override
@@ -10549,8 +10717,9 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -10564,7 +10733,7 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult orElse(),
   }) {
     if (generateToken != null) {
-      return generateToken(token, channelName);
+      return generateToken(token, channelName, callType);
     }
     return orElse();
   }
@@ -10723,11 +10892,12 @@ class _$_GenerateToken implements _GenerateToken {
 }
 
 abstract class _GenerateToken implements MessagesState {
-  const factory _GenerateToken(final String token, final dynamic channelName) =
-      _$_GenerateToken;
+  const factory _GenerateToken(final String token, final String channelName,
+      final CallType callType) = _$_GenerateToken;
 
   String get token;
-  dynamic get channelName;
+  String get channelName;
+  CallType get callType;
   @JsonKey(ignore: true)
   _$$_GenerateTokenCopyWith<_$_GenerateToken> get copyWith =>
       throw _privateConstructorUsedError;
@@ -10827,8 +10997,10 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -10874,8 +11046,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -10921,8 +11094,9 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -11170,8 +11344,10 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -11217,8 +11393,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -11264,8 +11441,9 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -11507,8 +11685,10 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -11554,8 +11734,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -11601,8 +11782,9 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -11844,8 +12026,10 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -11891,8 +12075,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -11938,8 +12123,9 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -12181,8 +12367,10 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -12228,8 +12416,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -12275,8 +12464,9 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -12518,8 +12708,10 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -12565,8 +12757,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -12612,8 +12805,9 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -12855,8 +13049,10 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -12902,8 +13098,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -12949,8 +13146,9 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -13220,8 +13418,10 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -13267,8 +13467,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -13314,8 +13515,9 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -13563,8 +13765,10 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -13610,8 +13814,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -13657,8 +13862,9 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,
@@ -13900,8 +14106,10 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function() deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
-    required TResult Function() generateTokenLoading,
-    required TResult Function(String token, dynamic channelName) generateToken,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
     required TResult Function(String errorMsg) generateTokenError,
     required TResult Function() setupVoiceSDKEngine,
     required TResult Function() onJoinChannelSuccess,
@@ -13947,8 +14155,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function()? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
-    TResult? Function()? generateTokenLoading,
-    TResult? Function(String token, dynamic channelName)? generateToken,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult? Function(String errorMsg)? generateTokenError,
     TResult? Function()? setupVoiceSDKEngine,
     TResult? Function()? onJoinChannelSuccess,
@@ -13994,8 +14203,9 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function()? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
-    TResult Function()? generateTokenLoading,
-    TResult Function(String token, dynamic channelName)? generateToken,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
     TResult Function(String errorMsg)? generateTokenError,
     TResult Function()? setupVoiceSDKEngine,
     TResult Function()? onJoinChannelSuccess,

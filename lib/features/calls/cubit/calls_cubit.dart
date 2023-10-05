@@ -46,18 +46,24 @@ class CallsCubit extends Cubit<CallsState> {
     ));
   }
 
-  void setupVoiceSDKEngine({
+  void setupAgoraSDKEngine({
     String? userToken,
     required String rtcToken,
     required String channelName,
     required String friendPhoneNumber,
+    required CallType callType,
   }) async {
-    emit(const CallsState.joinVoiceCallLoading());
+    emit(const CallsState.joinCallLoading());
     final callId = const Uuid().v4();
-    await [Permission.microphone].request();
+    if (callType == CallType.video) {
+      await [Permission.microphone, Permission.camera].request();
+    } else {
+      await [Permission.microphone].request();
+    }
     agoraEngine = createAgoraRtcEngine();
     await agoraEngine!
         .initialize(const RtcEngineContext(appId: AgoraEndPoints.appId));
+    if (callType == CallType.video) await agoraEngine!.enableVideo();
     agoraEngine!.registerEventHandler(
       RtcEngineEventHandler(
         onJoinChannelSuccess: (RtcConnection connection, int elapsed) async {
@@ -67,16 +73,16 @@ class CallsCubit extends Cubit<CallsState> {
           if (userToken != HiveHelper.getCurrentUser()!.token &&
               userToken != null) {
             pushCallNotification(
-              callType: CallType.voice,
+              callType: callType,
               userToken: userToken,
               rtcToken: rtcToken,
               channelName: channelName,
             );
-            addNewCall(
-              friendPhoneNumber: friendPhoneNumber,
-              callId: callId,
-              callType: CallType.voice,
-            );
+            // addNewCall(
+            //   friendPhoneNumber: friendPhoneNumber,
+            //   callId: callId,
+            //   callType: callType,
+            // );
           } else {
             emit(const CallsState.onJoinChannelSuccess());
           }
@@ -95,6 +101,9 @@ class CallsCubit extends Cubit<CallsState> {
           showMessage("Remote user uid:$remoteUid left the channel");
           this.remoteUid = null;
           emit(const CallsState.onUserOffline());
+        },
+        onRtcStats: (RtcConnection rtcConnection, RtcStats rtcStats) {
+          print("=================>${rtcStats.duration}");
         },
         onError: (ErrorCodeType err, String msg) {
           debugPrint(
@@ -135,13 +144,13 @@ class CallsCubit extends Cubit<CallsState> {
     );
   }
 
-  void leaveVoiceCall() async {
-    emit(const CallsState.leaveVoiceCallLoading());
+  void leaveCall() async {
+    emit(const CallsState.leaveCallLoading());
     isJoined = false;
     remoteUid = null;
     await agoraEngine!.leaveChannel();
     await agoraEngine!.release();
-    emit(const CallsState.leaveVoiceCall());
+    emit(const CallsState.leaveCall());
   }
 
   void cancelCall({required String userToken}) async {

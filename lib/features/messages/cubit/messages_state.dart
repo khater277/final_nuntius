@@ -44,9 +44,13 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.deleteMessageError(String errorMsg) =
       _DeleteMessageError;
 
-  const factory MessagesState.generateTokenLoading() = _GenerateTokenLoading;
-  const factory MessagesState.generateToken(String token, channelName) =
-      _GenerateToken;
+  const factory MessagesState.generateTokenLoading(CallType callType) =
+      _GenerateTokenLoading;
+  const factory MessagesState.generateToken(
+    String token,
+    String channelName,
+    CallType callType,
+  ) = _GenerateToken;
   const factory MessagesState.generateTokenError(String errorMsg) =
       _GenerateTokenError;
   const factory MessagesState.setupVoiceSDKEngine() = _SetupVoiceSDKEngine;
