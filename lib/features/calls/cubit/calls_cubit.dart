@@ -225,6 +225,7 @@ class CallsCubit extends Cubit<CallsState> {
             calls.add(callInfo);
           }
           this.calls = calls;
+          // this.calls = [];
           emit(const CallsState.getCalls());
         });
       },

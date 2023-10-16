@@ -48,7 +48,7 @@ mixin _$StoriesState {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -60,6 +60,8 @@ mixin _$StoriesState {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -94,7 +96,7 @@ mixin _$StoriesState {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -106,6 +108,8 @@ mixin _$StoriesState {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -140,7 +144,7 @@ mixin _$StoriesState {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -152,6 +156,8 @@ mixin _$StoriesState {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -211,6 +217,10 @@ mixin _$StoriesState {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -264,6 +274,9 @@ mixin _$StoriesState {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -317,6 +330,9 @@ mixin _$StoriesState {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -413,7 +429,7 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -425,6 +441,8 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return initial();
   }
@@ -462,7 +480,7 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -474,6 +492,8 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return initial?.call();
   }
@@ -511,7 +531,7 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -523,6 +543,8 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -588,6 +610,10 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return initial(this);
   }
@@ -644,6 +670,9 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return initial?.call(this);
   }
@@ -700,6 +729,9 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -787,7 +819,7 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -799,6 +831,8 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getPhones();
   }
@@ -836,7 +870,7 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -848,6 +882,8 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getPhones?.call();
   }
@@ -885,7 +921,7 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -897,6 +933,8 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getPhones != null) {
@@ -962,6 +1000,10 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getPhones(this);
   }
@@ -1018,6 +1060,9 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getPhones?.call(this);
   }
@@ -1074,6 +1119,9 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getPhones != null) {
@@ -1164,7 +1212,7 @@ class _$_InitAddTextStory
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -1176,6 +1224,8 @@ class _$_InitAddTextStory
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return initAddTextStory();
   }
@@ -1213,7 +1263,7 @@ class _$_InitAddTextStory
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -1225,6 +1275,8 @@ class _$_InitAddTextStory
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return initAddTextStory?.call();
   }
@@ -1262,7 +1314,7 @@ class _$_InitAddTextStory
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -1274,6 +1326,8 @@ class _$_InitAddTextStory
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initAddTextStory != null) {
@@ -1339,6 +1393,10 @@ class _$_InitAddTextStory
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return initAddTextStory(this);
   }
@@ -1395,6 +1453,9 @@ class _$_InitAddTextStory
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return initAddTextStory?.call(this);
   }
@@ -1451,6 +1512,9 @@ class _$_InitAddTextStory
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initAddTextStory != null) {
@@ -1541,7 +1605,7 @@ class _$_DisposeAddTextStory
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -1553,6 +1617,8 @@ class _$_DisposeAddTextStory
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return disposeAddTextStory();
   }
@@ -1590,7 +1656,7 @@ class _$_DisposeAddTextStory
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -1602,6 +1668,8 @@ class _$_DisposeAddTextStory
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return disposeAddTextStory?.call();
   }
@@ -1639,7 +1707,7 @@ class _$_DisposeAddTextStory
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -1651,6 +1719,8 @@ class _$_DisposeAddTextStory
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (disposeAddTextStory != null) {
@@ -1716,6 +1786,10 @@ class _$_DisposeAddTextStory
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return disposeAddTextStory(this);
   }
@@ -1772,6 +1846,9 @@ class _$_DisposeAddTextStory
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return disposeAddTextStory?.call(this);
   }
@@ -1828,6 +1905,9 @@ class _$_DisposeAddTextStory
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (disposeAddTextStory != null) {
@@ -1918,7 +1998,7 @@ class _$_PickStoryMediaLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -1930,6 +2010,8 @@ class _$_PickStoryMediaLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return pickStoryMediaLoading();
   }
@@ -1967,7 +2049,7 @@ class _$_PickStoryMediaLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -1979,6 +2061,8 @@ class _$_PickStoryMediaLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return pickStoryMediaLoading?.call();
   }
@@ -2016,7 +2100,7 @@ class _$_PickStoryMediaLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -2028,6 +2112,8 @@ class _$_PickStoryMediaLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryMediaLoading != null) {
@@ -2093,6 +2179,10 @@ class _$_PickStoryMediaLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return pickStoryMediaLoading(this);
   }
@@ -2149,6 +2239,9 @@ class _$_PickStoryMediaLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return pickStoryMediaLoading?.call(this);
   }
@@ -2205,6 +2298,9 @@ class _$_PickStoryMediaLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryMediaLoading != null) {
@@ -2294,7 +2390,7 @@ class _$_PickStoryImage
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -2306,6 +2402,8 @@ class _$_PickStoryImage
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return pickStoryImage();
   }
@@ -2343,7 +2441,7 @@ class _$_PickStoryImage
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -2355,6 +2453,8 @@ class _$_PickStoryImage
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return pickStoryImage?.call();
   }
@@ -2392,7 +2492,7 @@ class _$_PickStoryImage
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -2404,6 +2504,8 @@ class _$_PickStoryImage
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryImage != null) {
@@ -2469,6 +2571,10 @@ class _$_PickStoryImage
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return pickStoryImage(this);
   }
@@ -2525,6 +2631,9 @@ class _$_PickStoryImage
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return pickStoryImage?.call(this);
   }
@@ -2581,6 +2690,9 @@ class _$_PickStoryImage
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryImage != null) {
@@ -2671,7 +2783,7 @@ class _$_PickStoryImageError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -2683,6 +2795,8 @@ class _$_PickStoryImageError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return pickStoryImageError();
   }
@@ -2720,7 +2834,7 @@ class _$_PickStoryImageError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -2732,6 +2846,8 @@ class _$_PickStoryImageError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return pickStoryImageError?.call();
   }
@@ -2769,7 +2885,7 @@ class _$_PickStoryImageError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -2781,6 +2897,8 @@ class _$_PickStoryImageError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryImageError != null) {
@@ -2846,6 +2964,10 @@ class _$_PickStoryImageError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return pickStoryImageError(this);
   }
@@ -2902,6 +3024,9 @@ class _$_PickStoryImageError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return pickStoryImageError?.call(this);
   }
@@ -2958,6 +3083,9 @@ class _$_PickStoryImageError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryImageError != null) {
@@ -3047,7 +3175,7 @@ class _$_PickStoryVideo
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -3059,6 +3187,8 @@ class _$_PickStoryVideo
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return pickStoryVideo();
   }
@@ -3096,7 +3226,7 @@ class _$_PickStoryVideo
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -3108,6 +3238,8 @@ class _$_PickStoryVideo
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return pickStoryVideo?.call();
   }
@@ -3145,7 +3277,7 @@ class _$_PickStoryVideo
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -3157,6 +3289,8 @@ class _$_PickStoryVideo
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryVideo != null) {
@@ -3222,6 +3356,10 @@ class _$_PickStoryVideo
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return pickStoryVideo(this);
   }
@@ -3278,6 +3416,9 @@ class _$_PickStoryVideo
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return pickStoryVideo?.call(this);
   }
@@ -3334,6 +3475,9 @@ class _$_PickStoryVideo
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryVideo != null) {
@@ -3424,7 +3568,7 @@ class _$_PickStoryVideoError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -3436,6 +3580,8 @@ class _$_PickStoryVideoError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return pickStoryVideoError();
   }
@@ -3473,7 +3619,7 @@ class _$_PickStoryVideoError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -3485,6 +3631,8 @@ class _$_PickStoryVideoError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return pickStoryVideoError?.call();
   }
@@ -3522,7 +3670,7 @@ class _$_PickStoryVideoError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -3534,6 +3682,8 @@ class _$_PickStoryVideoError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryVideoError != null) {
@@ -3599,6 +3749,10 @@ class _$_PickStoryVideoError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return pickStoryVideoError(this);
   }
@@ -3655,6 +3809,9 @@ class _$_PickStoryVideoError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return pickStoryVideoError?.call(this);
   }
@@ -3711,6 +3868,9 @@ class _$_PickStoryVideoError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (pickStoryVideoError != null) {
@@ -3801,7 +3961,7 @@ class _$_SetVideoDuration
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -3813,6 +3973,8 @@ class _$_SetVideoDuration
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return setVideoDuration();
   }
@@ -3850,7 +4012,7 @@ class _$_SetVideoDuration
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -3862,6 +4024,8 @@ class _$_SetVideoDuration
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return setVideoDuration?.call();
   }
@@ -3899,7 +4063,7 @@ class _$_SetVideoDuration
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -3911,6 +4075,8 @@ class _$_SetVideoDuration
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (setVideoDuration != null) {
@@ -3976,6 +4142,10 @@ class _$_SetVideoDuration
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return setVideoDuration(this);
   }
@@ -4032,6 +4202,9 @@ class _$_SetVideoDuration
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return setVideoDuration?.call(this);
   }
@@ -4088,6 +4261,9 @@ class _$_SetVideoDuration
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (setVideoDuration != null) {
@@ -4178,7 +4354,7 @@ class _$_SendStoryLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -4190,6 +4366,8 @@ class _$_SendStoryLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return sendStoryLoading();
   }
@@ -4227,7 +4405,7 @@ class _$_SendStoryLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -4239,6 +4417,8 @@ class _$_SendStoryLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return sendStoryLoading?.call();
   }
@@ -4276,7 +4456,7 @@ class _$_SendStoryLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -4288,6 +4468,8 @@ class _$_SendStoryLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStoryLoading != null) {
@@ -4353,6 +4535,10 @@ class _$_SendStoryLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return sendStoryLoading(this);
   }
@@ -4409,6 +4595,9 @@ class _$_SendStoryLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return sendStoryLoading?.call(this);
   }
@@ -4465,6 +4654,9 @@ class _$_SendStoryLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStoryLoading != null) {
@@ -4552,7 +4744,7 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -4564,6 +4756,8 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return sendStory();
   }
@@ -4601,7 +4795,7 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -4613,6 +4807,8 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return sendStory?.call();
   }
@@ -4650,7 +4846,7 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -4662,6 +4858,8 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStory != null) {
@@ -4727,6 +4925,10 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return sendStory(this);
   }
@@ -4783,6 +4985,9 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return sendStory?.call(this);
   }
@@ -4839,6 +5044,9 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStory != null) {
@@ -4957,7 +5165,7 @@ class _$_SendStoryError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -4969,6 +5177,8 @@ class _$_SendStoryError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return sendStoryError(errorMsg);
   }
@@ -5006,7 +5216,7 @@ class _$_SendStoryError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -5018,6 +5228,8 @@ class _$_SendStoryError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return sendStoryError?.call(errorMsg);
   }
@@ -5055,7 +5267,7 @@ class _$_SendStoryError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -5067,6 +5279,8 @@ class _$_SendStoryError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStoryError != null) {
@@ -5132,6 +5346,10 @@ class _$_SendStoryError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return sendStoryError(this);
   }
@@ -5188,6 +5406,9 @@ class _$_SendStoryError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return sendStoryError?.call(this);
   }
@@ -5244,6 +5465,9 @@ class _$_SendStoryError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (sendStoryError != null) {
@@ -5339,7 +5563,7 @@ class _$_GetFilePercentage
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -5351,6 +5575,8 @@ class _$_GetFilePercentage
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getFilePercentage();
   }
@@ -5388,7 +5614,7 @@ class _$_GetFilePercentage
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -5400,6 +5626,8 @@ class _$_GetFilePercentage
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getFilePercentage?.call();
   }
@@ -5437,7 +5665,7 @@ class _$_GetFilePercentage
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -5449,6 +5677,8 @@ class _$_GetFilePercentage
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -5514,6 +5744,10 @@ class _$_GetFilePercentage
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getFilePercentage(this);
   }
@@ -5570,6 +5804,9 @@ class _$_GetFilePercentage
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getFilePercentage?.call(this);
   }
@@ -5626,6 +5863,9 @@ class _$_GetFilePercentage
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -5716,7 +5956,7 @@ class _$_SetImageDimensions
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -5728,6 +5968,8 @@ class _$_SetImageDimensions
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return setImageDimensions();
   }
@@ -5765,7 +6007,7 @@ class _$_SetImageDimensions
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -5777,6 +6019,8 @@ class _$_SetImageDimensions
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return setImageDimensions?.call();
   }
@@ -5814,7 +6058,7 @@ class _$_SetImageDimensions
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -5826,6 +6070,8 @@ class _$_SetImageDimensions
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (setImageDimensions != null) {
@@ -5891,6 +6137,10 @@ class _$_SetImageDimensions
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return setImageDimensions(this);
   }
@@ -5947,6 +6197,9 @@ class _$_SetImageDimensions
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return setImageDimensions?.call(this);
   }
@@ -6003,6 +6256,9 @@ class _$_SetImageDimensions
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (setImageDimensions != null) {
@@ -6093,7 +6349,7 @@ class _$_GetMyStoriesLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -6105,6 +6361,8 @@ class _$_GetMyStoriesLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getMyStoriesLoading();
   }
@@ -6142,7 +6400,7 @@ class _$_GetMyStoriesLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -6154,6 +6412,8 @@ class _$_GetMyStoriesLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getMyStoriesLoading?.call();
   }
@@ -6191,7 +6451,7 @@ class _$_GetMyStoriesLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -6203,6 +6463,8 @@ class _$_GetMyStoriesLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStoriesLoading != null) {
@@ -6268,6 +6530,10 @@ class _$_GetMyStoriesLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getMyStoriesLoading(this);
   }
@@ -6324,6 +6590,9 @@ class _$_GetMyStoriesLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getMyStoriesLoading?.call(this);
   }
@@ -6380,6 +6649,9 @@ class _$_GetMyStoriesLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStoriesLoading != null) {
@@ -6467,7 +6739,7 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -6479,6 +6751,8 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getMyStories();
   }
@@ -6516,7 +6790,7 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -6528,6 +6802,8 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getMyStories?.call();
   }
@@ -6565,7 +6841,7 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -6577,6 +6853,8 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStories != null) {
@@ -6642,6 +6920,10 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getMyStories(this);
   }
@@ -6698,6 +6980,9 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getMyStories?.call(this);
   }
@@ -6754,6 +7039,9 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStories != null) {
@@ -6873,7 +7161,7 @@ class _$_GetMyStoriesError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -6885,6 +7173,8 @@ class _$_GetMyStoriesError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getMyStoriesError(errorMsg);
   }
@@ -6922,7 +7212,7 @@ class _$_GetMyStoriesError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -6934,6 +7224,8 @@ class _$_GetMyStoriesError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getMyStoriesError?.call(errorMsg);
   }
@@ -6971,7 +7263,7 @@ class _$_GetMyStoriesError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -6983,6 +7275,8 @@ class _$_GetMyStoriesError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStoriesError != null) {
@@ -7048,6 +7342,10 @@ class _$_GetMyStoriesError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getMyStoriesError(this);
   }
@@ -7104,6 +7402,9 @@ class _$_GetMyStoriesError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getMyStoriesError?.call(this);
   }
@@ -7160,6 +7461,9 @@ class _$_GetMyStoriesError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getMyStoriesError != null) {
@@ -7259,7 +7563,7 @@ class _$_GetContactsLastStoriesLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -7271,6 +7575,8 @@ class _$_GetContactsLastStoriesLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsLastStoriesLoading();
   }
@@ -7308,7 +7614,7 @@ class _$_GetContactsLastStoriesLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -7320,6 +7626,8 @@ class _$_GetContactsLastStoriesLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsLastStoriesLoading?.call();
   }
@@ -7357,7 +7665,7 @@ class _$_GetContactsLastStoriesLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -7369,6 +7677,8 @@ class _$_GetContactsLastStoriesLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStoriesLoading != null) {
@@ -7434,6 +7744,10 @@ class _$_GetContactsLastStoriesLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsLastStoriesLoading(this);
   }
@@ -7490,6 +7804,9 @@ class _$_GetContactsLastStoriesLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsLastStoriesLoading?.call(this);
   }
@@ -7546,6 +7863,9 @@ class _$_GetContactsLastStoriesLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStoriesLoading != null) {
@@ -7638,7 +7958,7 @@ class _$_GetContactsLastStories
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -7650,6 +7970,8 @@ class _$_GetContactsLastStories
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsLastStories();
   }
@@ -7687,7 +8009,7 @@ class _$_GetContactsLastStories
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -7699,6 +8021,8 @@ class _$_GetContactsLastStories
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsLastStories?.call();
   }
@@ -7736,7 +8060,7 @@ class _$_GetContactsLastStories
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -7748,6 +8072,8 @@ class _$_GetContactsLastStories
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStories != null) {
@@ -7813,6 +8139,10 @@ class _$_GetContactsLastStories
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsLastStories(this);
   }
@@ -7869,6 +8199,9 @@ class _$_GetContactsLastStories
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsLastStories?.call(this);
   }
@@ -7925,6 +8258,9 @@ class _$_GetContactsLastStories
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStories != null) {
@@ -8047,7 +8383,7 @@ class _$_GetContactsLastStoriesError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -8059,6 +8395,8 @@ class _$_GetContactsLastStoriesError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsLastStoriesError(errorMsg);
   }
@@ -8096,7 +8434,7 @@ class _$_GetContactsLastStoriesError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -8108,6 +8446,8 @@ class _$_GetContactsLastStoriesError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsLastStoriesError?.call(errorMsg);
   }
@@ -8145,7 +8485,7 @@ class _$_GetContactsLastStoriesError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -8157,6 +8497,8 @@ class _$_GetContactsLastStoriesError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStoriesError != null) {
@@ -8222,6 +8564,10 @@ class _$_GetContactsLastStoriesError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsLastStoriesError(this);
   }
@@ -8278,6 +8624,9 @@ class _$_GetContactsLastStoriesError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsLastStoriesError?.call(this);
   }
@@ -8334,6 +8683,9 @@ class _$_GetContactsLastStoriesError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsLastStoriesError != null) {
@@ -8430,7 +8782,7 @@ class _$_OpenContactStory
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -8442,6 +8794,8 @@ class _$_OpenContactStory
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return openContactStory();
   }
@@ -8479,7 +8833,7 @@ class _$_OpenContactStory
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -8491,6 +8845,8 @@ class _$_OpenContactStory
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return openContactStory?.call();
   }
@@ -8528,7 +8884,7 @@ class _$_OpenContactStory
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -8540,6 +8896,8 @@ class _$_OpenContactStory
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (openContactStory != null) {
@@ -8605,6 +8963,10 @@ class _$_OpenContactStory
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return openContactStory(this);
   }
@@ -8661,6 +9023,9 @@ class _$_OpenContactStory
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return openContactStory?.call(this);
   }
@@ -8717,6 +9082,9 @@ class _$_OpenContactStory
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (openContactStory != null) {
@@ -8811,7 +9179,7 @@ class _$_GetContactsCurrentStoriesLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -8823,6 +9191,8 @@ class _$_GetContactsCurrentStoriesLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesLoading();
   }
@@ -8860,7 +9230,7 @@ class _$_GetContactsCurrentStoriesLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -8872,6 +9242,8 @@ class _$_GetContactsCurrentStoriesLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesLoading?.call();
   }
@@ -8909,7 +9281,7 @@ class _$_GetContactsCurrentStoriesLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -8921,6 +9293,8 @@ class _$_GetContactsCurrentStoriesLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStoriesLoading != null) {
@@ -8986,6 +9360,10 @@ class _$_GetContactsCurrentStoriesLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesLoading(this);
   }
@@ -9042,6 +9420,9 @@ class _$_GetContactsCurrentStoriesLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesLoading?.call(this);
   }
@@ -9098,6 +9479,9 @@ class _$_GetContactsCurrentStoriesLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStoriesLoading != null) {
@@ -9192,7 +9576,7 @@ class _$_GetContactsCurrentStories
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -9204,6 +9588,8 @@ class _$_GetContactsCurrentStories
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsCurrentStories();
   }
@@ -9241,7 +9627,7 @@ class _$_GetContactsCurrentStories
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -9253,6 +9639,8 @@ class _$_GetContactsCurrentStories
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsCurrentStories?.call();
   }
@@ -9290,7 +9678,7 @@ class _$_GetContactsCurrentStories
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -9302,6 +9690,8 @@ class _$_GetContactsCurrentStories
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStories != null) {
@@ -9367,6 +9757,10 @@ class _$_GetContactsCurrentStories
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsCurrentStories(this);
   }
@@ -9423,6 +9817,9 @@ class _$_GetContactsCurrentStories
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsCurrentStories?.call(this);
   }
@@ -9479,6 +9876,9 @@ class _$_GetContactsCurrentStories
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStories != null) {
@@ -9601,7 +10001,7 @@ class _$_GetContactsCurrentStoriesError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -9613,6 +10013,8 @@ class _$_GetContactsCurrentStoriesError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesError(errorMsg);
   }
@@ -9650,7 +10052,7 @@ class _$_GetContactsCurrentStoriesError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -9662,6 +10064,8 @@ class _$_GetContactsCurrentStoriesError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesError?.call(errorMsg);
   }
@@ -9699,7 +10103,7 @@ class _$_GetContactsCurrentStoriesError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -9711,6 +10115,8 @@ class _$_GetContactsCurrentStoriesError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStoriesError != null) {
@@ -9776,6 +10182,10 @@ class _$_GetContactsCurrentStoriesError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesError(this);
   }
@@ -9832,6 +10242,9 @@ class _$_GetContactsCurrentStoriesError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return getContactsCurrentStoriesError?.call(this);
   }
@@ -9888,6 +10301,9 @@ class _$_GetContactsCurrentStoriesError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (getContactsCurrentStoriesError != null) {
@@ -9981,7 +10397,7 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -9993,6 +10409,8 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return initStoryView();
   }
@@ -10030,7 +10448,7 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -10042,6 +10460,8 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return initStoryView?.call();
   }
@@ -10079,7 +10499,7 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -10091,6 +10511,8 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initStoryView != null) {
@@ -10156,6 +10578,10 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return initStoryView(this);
   }
@@ -10212,6 +10638,9 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return initStoryView?.call(this);
   }
@@ -10268,6 +10697,9 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initStoryView != null) {
@@ -10358,7 +10790,7 @@ class _$_DisposeStoryView
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -10370,6 +10802,8 @@ class _$_DisposeStoryView
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return disposeStoryView();
   }
@@ -10407,7 +10841,7 @@ class _$_DisposeStoryView
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -10419,6 +10853,8 @@ class _$_DisposeStoryView
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return disposeStoryView?.call();
   }
@@ -10456,7 +10892,7 @@ class _$_DisposeStoryView
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -10468,6 +10904,8 @@ class _$_DisposeStoryView
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (disposeStoryView != null) {
@@ -10533,6 +10971,10 @@ class _$_DisposeStoryView
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return disposeStoryView(this);
   }
@@ -10589,6 +11031,9 @@ class _$_DisposeStoryView
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return disposeStoryView?.call(this);
   }
@@ -10645,6 +11090,9 @@ class _$_DisposeStoryView
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (disposeStoryView != null) {
@@ -10736,7 +11184,7 @@ class _$_ChangeStoryIndexLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -10748,6 +11196,8 @@ class _$_ChangeStoryIndexLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return changeStoryIndexLoading();
   }
@@ -10785,7 +11235,7 @@ class _$_ChangeStoryIndexLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -10797,6 +11247,8 @@ class _$_ChangeStoryIndexLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return changeStoryIndexLoading?.call();
   }
@@ -10834,7 +11286,7 @@ class _$_ChangeStoryIndexLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -10846,6 +11298,8 @@ class _$_ChangeStoryIndexLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (changeStoryIndexLoading != null) {
@@ -10911,6 +11365,10 @@ class _$_ChangeStoryIndexLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return changeStoryIndexLoading(this);
   }
@@ -10967,6 +11425,9 @@ class _$_ChangeStoryIndexLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return changeStoryIndexLoading?.call(this);
   }
@@ -11023,6 +11484,9 @@ class _$_ChangeStoryIndexLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (changeStoryIndexLoading != null) {
@@ -11113,7 +11577,7 @@ class _$_ChangeStoryIndex
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -11125,6 +11589,8 @@ class _$_ChangeStoryIndex
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return changeStoryIndex();
   }
@@ -11162,7 +11628,7 @@ class _$_ChangeStoryIndex
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -11174,6 +11640,8 @@ class _$_ChangeStoryIndex
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return changeStoryIndex?.call();
   }
@@ -11211,7 +11679,7 @@ class _$_ChangeStoryIndex
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -11223,6 +11691,8 @@ class _$_ChangeStoryIndex
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (changeStoryIndex != null) {
@@ -11288,6 +11758,10 @@ class _$_ChangeStoryIndex
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return changeStoryIndex(this);
   }
@@ -11344,6 +11818,9 @@ class _$_ChangeStoryIndex
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return changeStoryIndex?.call(this);
   }
@@ -11400,6 +11877,9 @@ class _$_ChangeStoryIndex
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (changeStoryIndex != null) {
@@ -11489,7 +11969,7 @@ class _$_ResetStoryIndex
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -11501,6 +11981,8 @@ class _$_ResetStoryIndex
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return resetStoryIndex();
   }
@@ -11538,7 +12020,7 @@ class _$_ResetStoryIndex
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -11550,6 +12032,8 @@ class _$_ResetStoryIndex
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return resetStoryIndex?.call();
   }
@@ -11587,7 +12071,7 @@ class _$_ResetStoryIndex
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -11599,6 +12083,8 @@ class _$_ResetStoryIndex
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (resetStoryIndex != null) {
@@ -11664,6 +12150,10 @@ class _$_ResetStoryIndex
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return resetStoryIndex(this);
   }
@@ -11720,6 +12210,9 @@ class _$_ResetStoryIndex
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return resetStoryIndex?.call(this);
   }
@@ -11776,6 +12269,9 @@ class _$_ResetStoryIndex
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (resetStoryIndex != null) {
@@ -11794,6 +12290,8 @@ abstract class _$$_DeleteStoryLoadingCopyWith<$Res> {
   factory _$$_DeleteStoryLoadingCopyWith(_$_DeleteStoryLoading value,
           $Res Function(_$_DeleteStoryLoading) then) =
       __$$_DeleteStoryLoadingCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String storyId});
 }
 
 /// @nodoc
@@ -11803,6 +12301,19 @@ class __$$_DeleteStoryLoadingCopyWithImpl<$Res>
   __$$_DeleteStoryLoadingCopyWithImpl(
       _$_DeleteStoryLoading _value, $Res Function(_$_DeleteStoryLoading) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? storyId = null,
+  }) {
+    return _then(_$_DeleteStoryLoading(
+      null == storyId
+          ? _value.storyId
+          : storyId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
@@ -11810,28 +12321,41 @@ class __$$_DeleteStoryLoadingCopyWithImpl<$Res>
 class _$_DeleteStoryLoading
     with DiagnosticableTreeMixin
     implements _DeleteStoryLoading {
-  const _$_DeleteStoryLoading();
+  const _$_DeleteStoryLoading(this.storyId);
+
+  @override
+  final String storyId;
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
-    return 'StoriesState.deleteStoryLoading()';
+    return 'StoriesState.deleteStoryLoading(storyId: $storyId)';
   }
 
   @override
   void debugFillProperties(DiagnosticPropertiesBuilder properties) {
     super.debugFillProperties(properties);
     properties
-        .add(DiagnosticsProperty('type', 'StoriesState.deleteStoryLoading'));
+      ..add(DiagnosticsProperty('type', 'StoriesState.deleteStoryLoading'))
+      ..add(DiagnosticsProperty('storyId', storyId));
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DeleteStoryLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$_DeleteStoryLoading &&
+            (identical(other.storyId, storyId) || other.storyId == storyId));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, storyId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_DeleteStoryLoadingCopyWith<_$_DeleteStoryLoading> get copyWith =>
+      __$$_DeleteStoryLoadingCopyWithImpl<_$_DeleteStoryLoading>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -11866,7 +12390,7 @@ class _$_DeleteStoryLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -11878,8 +12402,10 @@ class _$_DeleteStoryLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
-    return deleteStoryLoading();
+    return deleteStoryLoading(storyId);
   }
 
   @override
@@ -11915,7 +12441,7 @@ class _$_DeleteStoryLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -11927,8 +12453,10 @@ class _$_DeleteStoryLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
-    return deleteStoryLoading?.call();
+    return deleteStoryLoading?.call(storyId);
   }
 
   @override
@@ -11964,7 +12492,7 @@ class _$_DeleteStoryLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -11976,10 +12504,12 @@ class _$_DeleteStoryLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStoryLoading != null) {
-      return deleteStoryLoading();
+      return deleteStoryLoading(storyId);
     }
     return orElse();
   }
@@ -12041,6 +12571,10 @@ class _$_DeleteStoryLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return deleteStoryLoading(this);
   }
@@ -12097,6 +12631,9 @@ class _$_DeleteStoryLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return deleteStoryLoading?.call(this);
   }
@@ -12153,6 +12690,9 @@ class _$_DeleteStoryLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStoryLoading != null) {
@@ -12163,7 +12703,13 @@ class _$_DeleteStoryLoading
 }
 
 abstract class _DeleteStoryLoading implements StoriesState {
-  const factory _DeleteStoryLoading() = _$_DeleteStoryLoading;
+  const factory _DeleteStoryLoading(final String storyId) =
+      _$_DeleteStoryLoading;
+
+  String get storyId;
+  @JsonKey(ignore: true)
+  _$$_DeleteStoryLoadingCopyWith<_$_DeleteStoryLoading> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -12240,7 +12786,7 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -12252,6 +12798,8 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return deleteStory();
   }
@@ -12289,7 +12837,7 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -12301,6 +12849,8 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return deleteStory?.call();
   }
@@ -12338,7 +12888,7 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -12350,6 +12900,8 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStory != null) {
@@ -12415,6 +12967,10 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return deleteStory(this);
   }
@@ -12471,6 +13027,9 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return deleteStory?.call(this);
   }
@@ -12527,6 +13086,9 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStory != null) {
@@ -12645,7 +13207,7 @@ class _$_DeleteStoryError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -12657,6 +13219,8 @@ class _$_DeleteStoryError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return deleteStoryError(errorMsg);
   }
@@ -12694,7 +13258,7 @@ class _$_DeleteStoryError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -12706,6 +13270,8 @@ class _$_DeleteStoryError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return deleteStoryError?.call(errorMsg);
   }
@@ -12743,7 +13309,7 @@ class _$_DeleteStoryError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -12755,6 +13321,8 @@ class _$_DeleteStoryError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStoryError != null) {
@@ -12820,6 +13388,10 @@ class _$_DeleteStoryError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return deleteStoryError(this);
   }
@@ -12876,6 +13448,9 @@ class _$_DeleteStoryError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return deleteStoryError?.call(this);
   }
@@ -12932,6 +13507,9 @@ class _$_DeleteStoryError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (deleteStoryError != null) {
@@ -13030,7 +13608,7 @@ class _$_ContactsStoriesChangedLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -13042,6 +13620,8 @@ class _$_ContactsStoriesChangedLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return contactsStoriesChangedLoading();
   }
@@ -13079,7 +13659,7 @@ class _$_ContactsStoriesChangedLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -13091,6 +13671,8 @@ class _$_ContactsStoriesChangedLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return contactsStoriesChangedLoading?.call();
   }
@@ -13128,7 +13710,7 @@ class _$_ContactsStoriesChangedLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -13140,6 +13722,8 @@ class _$_ContactsStoriesChangedLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChangedLoading != null) {
@@ -13205,6 +13789,10 @@ class _$_ContactsStoriesChangedLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return contactsStoriesChangedLoading(this);
   }
@@ -13261,6 +13849,9 @@ class _$_ContactsStoriesChangedLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return contactsStoriesChangedLoading?.call(this);
   }
@@ -13317,6 +13908,9 @@ class _$_ContactsStoriesChangedLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChangedLoading != null) {
@@ -13409,7 +14003,7 @@ class _$_ContactsStoriesChanged
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -13421,6 +14015,8 @@ class _$_ContactsStoriesChanged
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return contactsStoriesChanged();
   }
@@ -13458,7 +14054,7 @@ class _$_ContactsStoriesChanged
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -13470,6 +14066,8 @@ class _$_ContactsStoriesChanged
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return contactsStoriesChanged?.call();
   }
@@ -13507,7 +14105,7 @@ class _$_ContactsStoriesChanged
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -13519,6 +14117,8 @@ class _$_ContactsStoriesChanged
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChanged != null) {
@@ -13584,6 +14184,10 @@ class _$_ContactsStoriesChanged
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return contactsStoriesChanged(this);
   }
@@ -13640,6 +14244,9 @@ class _$_ContactsStoriesChanged
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return contactsStoriesChanged?.call(this);
   }
@@ -13696,6 +14303,9 @@ class _$_ContactsStoriesChanged
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChanged != null) {
@@ -13818,7 +14428,7 @@ class _$_ContactsStoriesChangedError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -13830,6 +14440,8 @@ class _$_ContactsStoriesChangedError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return contactsStoriesChangedError(errorMsg);
   }
@@ -13867,7 +14479,7 @@ class _$_ContactsStoriesChangedError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -13879,6 +14491,8 @@ class _$_ContactsStoriesChangedError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return contactsStoriesChangedError?.call(errorMsg);
   }
@@ -13916,7 +14530,7 @@ class _$_ContactsStoriesChangedError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -13928,6 +14542,8 @@ class _$_ContactsStoriesChangedError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChangedError != null) {
@@ -13993,6 +14609,10 @@ class _$_ContactsStoriesChangedError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return contactsStoriesChangedError(this);
   }
@@ -14049,6 +14669,9 @@ class _$_ContactsStoriesChangedError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return contactsStoriesChangedError?.call(this);
   }
@@ -14105,6 +14728,9 @@ class _$_ContactsStoriesChangedError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (contactsStoriesChangedError != null) {
@@ -14201,7 +14827,7 @@ class _$_InitReplyToStory
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -14213,6 +14839,8 @@ class _$_InitReplyToStory
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return initReplyToStory();
   }
@@ -14250,7 +14878,7 @@ class _$_InitReplyToStory
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -14262,6 +14890,8 @@ class _$_InitReplyToStory
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return initReplyToStory?.call();
   }
@@ -14299,7 +14929,7 @@ class _$_InitReplyToStory
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -14311,6 +14941,8 @@ class _$_InitReplyToStory
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initReplyToStory != null) {
@@ -14376,6 +15008,10 @@ class _$_InitReplyToStory
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return initReplyToStory(this);
   }
@@ -14432,6 +15068,9 @@ class _$_InitReplyToStory
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return initReplyToStory?.call(this);
   }
@@ -14488,6 +15127,9 @@ class _$_InitReplyToStory
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (initReplyToStory != null) {
@@ -14579,7 +15221,7 @@ class _$_viewContactStoryLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -14591,6 +15233,8 @@ class _$_viewContactStoryLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return viewContactStoryLoading();
   }
@@ -14628,7 +15272,7 @@ class _$_viewContactStoryLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -14640,6 +15284,8 @@ class _$_viewContactStoryLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return viewContactStoryLoading?.call();
   }
@@ -14677,7 +15323,7 @@ class _$_viewContactStoryLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -14689,6 +15335,8 @@ class _$_viewContactStoryLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (viewContactStoryLoading != null) {
@@ -14754,6 +15402,10 @@ class _$_viewContactStoryLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return viewContactStoryLoading(this);
   }
@@ -14810,6 +15462,9 @@ class _$_viewContactStoryLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return viewContactStoryLoading?.call(this);
   }
@@ -14866,6 +15521,9 @@ class _$_viewContactStoryLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (viewContactStoryLoading != null) {
@@ -14956,7 +15614,7 @@ class _$_viewContactStory
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -14968,6 +15626,8 @@ class _$_viewContactStory
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return viewContactStory();
   }
@@ -15005,7 +15665,7 @@ class _$_viewContactStory
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -15017,6 +15677,8 @@ class _$_viewContactStory
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return viewContactStory?.call();
   }
@@ -15054,7 +15716,7 @@ class _$_viewContactStory
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -15066,6 +15728,8 @@ class _$_viewContactStory
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (viewContactStory != null) {
@@ -15131,6 +15795,10 @@ class _$_viewContactStory
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return viewContactStory(this);
   }
@@ -15187,6 +15855,9 @@ class _$_viewContactStory
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return viewContactStory?.call(this);
   }
@@ -15243,6 +15914,9 @@ class _$_viewContactStory
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (viewContactStory != null) {
@@ -15333,7 +16007,7 @@ class _$_ReplyToStoryLoading
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -15345,6 +16019,8 @@ class _$_ReplyToStoryLoading
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return replyToStoryLoading();
   }
@@ -15382,7 +16058,7 @@ class _$_ReplyToStoryLoading
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -15394,6 +16070,8 @@ class _$_ReplyToStoryLoading
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return replyToStoryLoading?.call();
   }
@@ -15431,7 +16109,7 @@ class _$_ReplyToStoryLoading
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -15443,6 +16121,8 @@ class _$_ReplyToStoryLoading
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStoryLoading != null) {
@@ -15508,6 +16188,10 @@ class _$_ReplyToStoryLoading
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return replyToStoryLoading(this);
   }
@@ -15564,6 +16248,9 @@ class _$_ReplyToStoryLoading
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return replyToStoryLoading?.call(this);
   }
@@ -15620,6 +16307,9 @@ class _$_ReplyToStoryLoading
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStoryLoading != null) {
@@ -15707,7 +16397,7 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -15719,6 +16409,8 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return replyToStory();
   }
@@ -15756,7 +16448,7 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -15768,6 +16460,8 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return replyToStory?.call();
   }
@@ -15805,7 +16499,7 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -15817,6 +16511,8 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStory != null) {
@@ -15882,6 +16578,10 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return replyToStory(this);
   }
@@ -15938,6 +16638,9 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return replyToStory?.call(this);
   }
@@ -15994,6 +16697,9 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStory != null) {
@@ -16113,7 +16819,7 @@ class _$_ReplyToStoryError
     required TResult Function() changeStoryIndexLoading,
     required TResult Function() changeStoryIndex,
     required TResult Function() resetStoryIndex,
-    required TResult Function() deleteStoryLoading,
+    required TResult Function(String storyId) deleteStoryLoading,
     required TResult Function() deleteStory,
     required TResult Function(String errorMsg) deleteStoryError,
     required TResult Function() contactsStoriesChangedLoading,
@@ -16125,6 +16831,8 @@ class _$_ReplyToStoryError
     required TResult Function() replyToStoryLoading,
     required TResult Function() replyToStory,
     required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
   }) {
     return replyToStoryError(errorMsg);
   }
@@ -16162,7 +16870,7 @@ class _$_ReplyToStoryError
     TResult? Function()? changeStoryIndexLoading,
     TResult? Function()? changeStoryIndex,
     TResult? Function()? resetStoryIndex,
-    TResult? Function()? deleteStoryLoading,
+    TResult? Function(String storyId)? deleteStoryLoading,
     TResult? Function()? deleteStory,
     TResult? Function(String errorMsg)? deleteStoryError,
     TResult? Function()? contactsStoriesChangedLoading,
@@ -16174,6 +16882,8 @@ class _$_ReplyToStoryError
     TResult? Function()? replyToStoryLoading,
     TResult? Function()? replyToStory,
     TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
   }) {
     return replyToStoryError?.call(errorMsg);
   }
@@ -16211,7 +16921,7 @@ class _$_ReplyToStoryError
     TResult Function()? changeStoryIndexLoading,
     TResult Function()? changeStoryIndex,
     TResult Function()? resetStoryIndex,
-    TResult Function()? deleteStoryLoading,
+    TResult Function(String storyId)? deleteStoryLoading,
     TResult Function()? deleteStory,
     TResult Function(String errorMsg)? deleteStoryError,
     TResult Function()? contactsStoriesChangedLoading,
@@ -16223,6 +16933,8 @@ class _$_ReplyToStoryError
     TResult Function()? replyToStoryLoading,
     TResult Function()? replyToStory,
     TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStoryError != null) {
@@ -16288,6 +17000,10 @@ class _$_ReplyToStoryError
     required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
     required TResult Function(_ReplyToStory value) replyToStory,
     required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
   }) {
     return replyToStoryError(this);
   }
@@ -16344,6 +17060,9 @@ class _$_ReplyToStoryError
     TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult? Function(_ReplyToStory value)? replyToStory,
     TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
   }) {
     return replyToStoryError?.call(this);
   }
@@ -16400,6 +17119,9 @@ class _$_ReplyToStoryError
     TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
     TResult Function(_ReplyToStory value)? replyToStory,
     TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     required TResult orElse(),
   }) {
     if (replyToStoryError != null) {
@@ -16417,4 +17139,795 @@ abstract class _ReplyToStoryError implements StoriesState {
   @JsonKey(ignore: true)
   _$$_ReplyToStoryErrorCopyWith<_$_ReplyToStoryError> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_CreateVideosThumbnailsLoadingCopyWith<$Res> {
+  factory _$$_CreateVideosThumbnailsLoadingCopyWith(
+          _$_CreateVideosThumbnailsLoading value,
+          $Res Function(_$_CreateVideosThumbnailsLoading) then) =
+      __$$_CreateVideosThumbnailsLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CreateVideosThumbnailsLoadingCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$_CreateVideosThumbnailsLoading>
+    implements _$$_CreateVideosThumbnailsLoadingCopyWith<$Res> {
+  __$$_CreateVideosThumbnailsLoadingCopyWithImpl(
+      _$_CreateVideosThumbnailsLoading _value,
+      $Res Function(_$_CreateVideosThumbnailsLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CreateVideosThumbnailsLoading
+    with DiagnosticableTreeMixin
+    implements _CreateVideosThumbnailsLoading {
+  const _$_CreateVideosThumbnailsLoading();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'StoriesState.createVideosThumbnailsLoading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty(
+        'type', 'StoriesState.createVideosThumbnailsLoading'));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_CreateVideosThumbnailsLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getPhones,
+    required TResult Function() initAddTextStory,
+    required TResult Function() disposeAddTextStory,
+    required TResult Function() pickStoryMediaLoading,
+    required TResult Function() pickStoryImage,
+    required TResult Function() pickStoryImageError,
+    required TResult Function() pickStoryVideo,
+    required TResult Function() pickStoryVideoError,
+    required TResult Function() setVideoDuration,
+    required TResult Function() sendStoryLoading,
+    required TResult Function() sendStory,
+    required TResult Function(String errorMsg) sendStoryError,
+    required TResult Function() getFilePercentage,
+    required TResult Function() setImageDimensions,
+    required TResult Function() getMyStoriesLoading,
+    required TResult Function() getMyStories,
+    required TResult Function(String errorMsg) getMyStoriesError,
+    required TResult Function() getContactsLastStoriesLoading,
+    required TResult Function() getContactsLastStories,
+    required TResult Function(String errorMsg) getContactsLastStoriesError,
+    required TResult Function() openContactStory,
+    required TResult Function() getContactsCurrentStoriesLoading,
+    required TResult Function() getContactsCurrentStories,
+    required TResult Function(String errorMsg) getContactsCurrentStoriesError,
+    required TResult Function() initStoryView,
+    required TResult Function() disposeStoryView,
+    required TResult Function() changeStoryIndexLoading,
+    required TResult Function() changeStoryIndex,
+    required TResult Function() resetStoryIndex,
+    required TResult Function(String storyId) deleteStoryLoading,
+    required TResult Function() deleteStory,
+    required TResult Function(String errorMsg) deleteStoryError,
+    required TResult Function() contactsStoriesChangedLoading,
+    required TResult Function() contactsStoriesChanged,
+    required TResult Function(String errorMsg) contactsStoriesChangedError,
+    required TResult Function() initReplyToStory,
+    required TResult Function() viewContactStoryLoading,
+    required TResult Function() viewContactStory,
+    required TResult Function() replyToStoryLoading,
+    required TResult Function() replyToStory,
+    required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
+  }) {
+    return createVideosThumbnailsLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getPhones,
+    TResult? Function()? initAddTextStory,
+    TResult? Function()? disposeAddTextStory,
+    TResult? Function()? pickStoryMediaLoading,
+    TResult? Function()? pickStoryImage,
+    TResult? Function()? pickStoryImageError,
+    TResult? Function()? pickStoryVideo,
+    TResult? Function()? pickStoryVideoError,
+    TResult? Function()? setVideoDuration,
+    TResult? Function()? sendStoryLoading,
+    TResult? Function()? sendStory,
+    TResult? Function(String errorMsg)? sendStoryError,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? setImageDimensions,
+    TResult? Function()? getMyStoriesLoading,
+    TResult? Function()? getMyStories,
+    TResult? Function(String errorMsg)? getMyStoriesError,
+    TResult? Function()? getContactsLastStoriesLoading,
+    TResult? Function()? getContactsLastStories,
+    TResult? Function(String errorMsg)? getContactsLastStoriesError,
+    TResult? Function()? openContactStory,
+    TResult? Function()? getContactsCurrentStoriesLoading,
+    TResult? Function()? getContactsCurrentStories,
+    TResult? Function(String errorMsg)? getContactsCurrentStoriesError,
+    TResult? Function()? initStoryView,
+    TResult? Function()? disposeStoryView,
+    TResult? Function()? changeStoryIndexLoading,
+    TResult? Function()? changeStoryIndex,
+    TResult? Function()? resetStoryIndex,
+    TResult? Function(String storyId)? deleteStoryLoading,
+    TResult? Function()? deleteStory,
+    TResult? Function(String errorMsg)? deleteStoryError,
+    TResult? Function()? contactsStoriesChangedLoading,
+    TResult? Function()? contactsStoriesChanged,
+    TResult? Function(String errorMsg)? contactsStoriesChangedError,
+    TResult? Function()? initReplyToStory,
+    TResult? Function()? viewContactStoryLoading,
+    TResult? Function()? viewContactStory,
+    TResult? Function()? replyToStoryLoading,
+    TResult? Function()? replyToStory,
+    TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
+  }) {
+    return createVideosThumbnailsLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getPhones,
+    TResult Function()? initAddTextStory,
+    TResult Function()? disposeAddTextStory,
+    TResult Function()? pickStoryMediaLoading,
+    TResult Function()? pickStoryImage,
+    TResult Function()? pickStoryImageError,
+    TResult Function()? pickStoryVideo,
+    TResult Function()? pickStoryVideoError,
+    TResult Function()? setVideoDuration,
+    TResult Function()? sendStoryLoading,
+    TResult Function()? sendStory,
+    TResult Function(String errorMsg)? sendStoryError,
+    TResult Function()? getFilePercentage,
+    TResult Function()? setImageDimensions,
+    TResult Function()? getMyStoriesLoading,
+    TResult Function()? getMyStories,
+    TResult Function(String errorMsg)? getMyStoriesError,
+    TResult Function()? getContactsLastStoriesLoading,
+    TResult Function()? getContactsLastStories,
+    TResult Function(String errorMsg)? getContactsLastStoriesError,
+    TResult Function()? openContactStory,
+    TResult Function()? getContactsCurrentStoriesLoading,
+    TResult Function()? getContactsCurrentStories,
+    TResult Function(String errorMsg)? getContactsCurrentStoriesError,
+    TResult Function()? initStoryView,
+    TResult Function()? disposeStoryView,
+    TResult Function()? changeStoryIndexLoading,
+    TResult Function()? changeStoryIndex,
+    TResult Function()? resetStoryIndex,
+    TResult Function(String storyId)? deleteStoryLoading,
+    TResult Function()? deleteStory,
+    TResult Function(String errorMsg)? deleteStoryError,
+    TResult Function()? contactsStoriesChangedLoading,
+    TResult Function()? contactsStoriesChanged,
+    TResult Function(String errorMsg)? contactsStoriesChangedError,
+    TResult Function()? initReplyToStory,
+    TResult Function()? viewContactStoryLoading,
+    TResult Function()? viewContactStory,
+    TResult Function()? replyToStoryLoading,
+    TResult Function()? replyToStory,
+    TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnailsLoading != null) {
+      return createVideosThumbnailsLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetPhones value) getPhones,
+    required TResult Function(_InitAddTextStory value) initAddTextStory,
+    required TResult Function(_DisposeAddTextStory value) disposeAddTextStory,
+    required TResult Function(_PickStoryMediaLoading value)
+        pickStoryMediaLoading,
+    required TResult Function(_PickStoryImage value) pickStoryImage,
+    required TResult Function(_PickStoryImageError value) pickStoryImageError,
+    required TResult Function(_PickStoryVideo value) pickStoryVideo,
+    required TResult Function(_PickStoryVideoError value) pickStoryVideoError,
+    required TResult Function(_SetVideoDuration value) setVideoDuration,
+    required TResult Function(_SendStoryLoading value) sendStoryLoading,
+    required TResult Function(_SendStory value) sendStory,
+    required TResult Function(_SendStoryError value) sendStoryError,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_SetImageDimensions value) setImageDimensions,
+    required TResult Function(_GetMyStoriesLoading value) getMyStoriesLoading,
+    required TResult Function(_GetMyStories value) getMyStories,
+    required TResult Function(_GetMyStoriesError value) getMyStoriesError,
+    required TResult Function(_GetContactsLastStoriesLoading value)
+        getContactsLastStoriesLoading,
+    required TResult Function(_GetContactsLastStories value)
+        getContactsLastStories,
+    required TResult Function(_GetContactsLastStoriesError value)
+        getContactsLastStoriesError,
+    required TResult Function(_OpenContactStory value) openContactStory,
+    required TResult Function(_GetContactsCurrentStoriesLoading value)
+        getContactsCurrentStoriesLoading,
+    required TResult Function(_GetContactsCurrentStories value)
+        getContactsCurrentStories,
+    required TResult Function(_GetContactsCurrentStoriesError value)
+        getContactsCurrentStoriesError,
+    required TResult Function(_InitStoryView value) initStoryView,
+    required TResult Function(_DisposeStoryView value) disposeStoryView,
+    required TResult Function(_ChangeStoryIndexLoading value)
+        changeStoryIndexLoading,
+    required TResult Function(_ChangeStoryIndex value) changeStoryIndex,
+    required TResult Function(_ResetStoryIndex value) resetStoryIndex,
+    required TResult Function(_DeleteStoryLoading value) deleteStoryLoading,
+    required TResult Function(_DeleteStory value) deleteStory,
+    required TResult Function(_DeleteStoryError value) deleteStoryError,
+    required TResult Function(_ContactsStoriesChangedLoading value)
+        contactsStoriesChangedLoading,
+    required TResult Function(_ContactsStoriesChanged value)
+        contactsStoriesChanged,
+    required TResult Function(_ContactsStoriesChangedError value)
+        contactsStoriesChangedError,
+    required TResult Function(_InitReplyToStory value) initReplyToStory,
+    required TResult Function(_viewContactStoryLoading value)
+        viewContactStoryLoading,
+    required TResult Function(_viewContactStory value) viewContactStory,
+    required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
+    required TResult Function(_ReplyToStory value) replyToStory,
+    required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+  }) {
+    return createVideosThumbnailsLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetPhones value)? getPhones,
+    TResult? Function(_InitAddTextStory value)? initAddTextStory,
+    TResult? Function(_DisposeAddTextStory value)? disposeAddTextStory,
+    TResult? Function(_PickStoryMediaLoading value)? pickStoryMediaLoading,
+    TResult? Function(_PickStoryImage value)? pickStoryImage,
+    TResult? Function(_PickStoryImageError value)? pickStoryImageError,
+    TResult? Function(_PickStoryVideo value)? pickStoryVideo,
+    TResult? Function(_PickStoryVideoError value)? pickStoryVideoError,
+    TResult? Function(_SetVideoDuration value)? setVideoDuration,
+    TResult? Function(_SendStoryLoading value)? sendStoryLoading,
+    TResult? Function(_SendStory value)? sendStory,
+    TResult? Function(_SendStoryError value)? sendStoryError,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_SetImageDimensions value)? setImageDimensions,
+    TResult? Function(_GetMyStoriesLoading value)? getMyStoriesLoading,
+    TResult? Function(_GetMyStories value)? getMyStories,
+    TResult? Function(_GetMyStoriesError value)? getMyStoriesError,
+    TResult? Function(_GetContactsLastStoriesLoading value)?
+        getContactsLastStoriesLoading,
+    TResult? Function(_GetContactsLastStories value)? getContactsLastStories,
+    TResult? Function(_GetContactsLastStoriesError value)?
+        getContactsLastStoriesError,
+    TResult? Function(_OpenContactStory value)? openContactStory,
+    TResult? Function(_GetContactsCurrentStoriesLoading value)?
+        getContactsCurrentStoriesLoading,
+    TResult? Function(_GetContactsCurrentStories value)?
+        getContactsCurrentStories,
+    TResult? Function(_GetContactsCurrentStoriesError value)?
+        getContactsCurrentStoriesError,
+    TResult? Function(_InitStoryView value)? initStoryView,
+    TResult? Function(_DisposeStoryView value)? disposeStoryView,
+    TResult? Function(_ChangeStoryIndexLoading value)? changeStoryIndexLoading,
+    TResult? Function(_ChangeStoryIndex value)? changeStoryIndex,
+    TResult? Function(_ResetStoryIndex value)? resetStoryIndex,
+    TResult? Function(_DeleteStoryLoading value)? deleteStoryLoading,
+    TResult? Function(_DeleteStory value)? deleteStory,
+    TResult? Function(_DeleteStoryError value)? deleteStoryError,
+    TResult? Function(_ContactsStoriesChangedLoading value)?
+        contactsStoriesChangedLoading,
+    TResult? Function(_ContactsStoriesChanged value)? contactsStoriesChanged,
+    TResult? Function(_ContactsStoriesChangedError value)?
+        contactsStoriesChangedError,
+    TResult? Function(_InitReplyToStory value)? initReplyToStory,
+    TResult? Function(_viewContactStoryLoading value)? viewContactStoryLoading,
+    TResult? Function(_viewContactStory value)? viewContactStory,
+    TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
+    TResult? Function(_ReplyToStory value)? replyToStory,
+    TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+  }) {
+    return createVideosThumbnailsLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetPhones value)? getPhones,
+    TResult Function(_InitAddTextStory value)? initAddTextStory,
+    TResult Function(_DisposeAddTextStory value)? disposeAddTextStory,
+    TResult Function(_PickStoryMediaLoading value)? pickStoryMediaLoading,
+    TResult Function(_PickStoryImage value)? pickStoryImage,
+    TResult Function(_PickStoryImageError value)? pickStoryImageError,
+    TResult Function(_PickStoryVideo value)? pickStoryVideo,
+    TResult Function(_PickStoryVideoError value)? pickStoryVideoError,
+    TResult Function(_SetVideoDuration value)? setVideoDuration,
+    TResult Function(_SendStoryLoading value)? sendStoryLoading,
+    TResult Function(_SendStory value)? sendStory,
+    TResult Function(_SendStoryError value)? sendStoryError,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_SetImageDimensions value)? setImageDimensions,
+    TResult Function(_GetMyStoriesLoading value)? getMyStoriesLoading,
+    TResult Function(_GetMyStories value)? getMyStories,
+    TResult Function(_GetMyStoriesError value)? getMyStoriesError,
+    TResult Function(_GetContactsLastStoriesLoading value)?
+        getContactsLastStoriesLoading,
+    TResult Function(_GetContactsLastStories value)? getContactsLastStories,
+    TResult Function(_GetContactsLastStoriesError value)?
+        getContactsLastStoriesError,
+    TResult Function(_OpenContactStory value)? openContactStory,
+    TResult Function(_GetContactsCurrentStoriesLoading value)?
+        getContactsCurrentStoriesLoading,
+    TResult Function(_GetContactsCurrentStories value)?
+        getContactsCurrentStories,
+    TResult Function(_GetContactsCurrentStoriesError value)?
+        getContactsCurrentStoriesError,
+    TResult Function(_InitStoryView value)? initStoryView,
+    TResult Function(_DisposeStoryView value)? disposeStoryView,
+    TResult Function(_ChangeStoryIndexLoading value)? changeStoryIndexLoading,
+    TResult Function(_ChangeStoryIndex value)? changeStoryIndex,
+    TResult Function(_ResetStoryIndex value)? resetStoryIndex,
+    TResult Function(_DeleteStoryLoading value)? deleteStoryLoading,
+    TResult Function(_DeleteStory value)? deleteStory,
+    TResult Function(_DeleteStoryError value)? deleteStoryError,
+    TResult Function(_ContactsStoriesChangedLoading value)?
+        contactsStoriesChangedLoading,
+    TResult Function(_ContactsStoriesChanged value)? contactsStoriesChanged,
+    TResult Function(_ContactsStoriesChangedError value)?
+        contactsStoriesChangedError,
+    TResult Function(_InitReplyToStory value)? initReplyToStory,
+    TResult Function(_viewContactStoryLoading value)? viewContactStoryLoading,
+    TResult Function(_viewContactStory value)? viewContactStory,
+    TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
+    TResult Function(_ReplyToStory value)? replyToStory,
+    TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnailsLoading != null) {
+      return createVideosThumbnailsLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CreateVideosThumbnailsLoading implements StoriesState {
+  const factory _CreateVideosThumbnailsLoading() =
+      _$_CreateVideosThumbnailsLoading;
+}
+
+/// @nodoc
+abstract class _$$_CreateVideosThumbnailsCopyWith<$Res> {
+  factory _$$_CreateVideosThumbnailsCopyWith(_$_CreateVideosThumbnails value,
+          $Res Function(_$_CreateVideosThumbnails) then) =
+      __$$_CreateVideosThumbnailsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CreateVideosThumbnailsCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$_CreateVideosThumbnails>
+    implements _$$_CreateVideosThumbnailsCopyWith<$Res> {
+  __$$_CreateVideosThumbnailsCopyWithImpl(_$_CreateVideosThumbnails _value,
+      $Res Function(_$_CreateVideosThumbnails) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CreateVideosThumbnails
+    with DiagnosticableTreeMixin
+    implements _CreateVideosThumbnails {
+  const _$_CreateVideosThumbnails();
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'StoriesState.createVideosThumbnails()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(
+        DiagnosticsProperty('type', 'StoriesState.createVideosThumbnails'));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_CreateVideosThumbnails);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() getPhones,
+    required TResult Function() initAddTextStory,
+    required TResult Function() disposeAddTextStory,
+    required TResult Function() pickStoryMediaLoading,
+    required TResult Function() pickStoryImage,
+    required TResult Function() pickStoryImageError,
+    required TResult Function() pickStoryVideo,
+    required TResult Function() pickStoryVideoError,
+    required TResult Function() setVideoDuration,
+    required TResult Function() sendStoryLoading,
+    required TResult Function() sendStory,
+    required TResult Function(String errorMsg) sendStoryError,
+    required TResult Function() getFilePercentage,
+    required TResult Function() setImageDimensions,
+    required TResult Function() getMyStoriesLoading,
+    required TResult Function() getMyStories,
+    required TResult Function(String errorMsg) getMyStoriesError,
+    required TResult Function() getContactsLastStoriesLoading,
+    required TResult Function() getContactsLastStories,
+    required TResult Function(String errorMsg) getContactsLastStoriesError,
+    required TResult Function() openContactStory,
+    required TResult Function() getContactsCurrentStoriesLoading,
+    required TResult Function() getContactsCurrentStories,
+    required TResult Function(String errorMsg) getContactsCurrentStoriesError,
+    required TResult Function() initStoryView,
+    required TResult Function() disposeStoryView,
+    required TResult Function() changeStoryIndexLoading,
+    required TResult Function() changeStoryIndex,
+    required TResult Function() resetStoryIndex,
+    required TResult Function(String storyId) deleteStoryLoading,
+    required TResult Function() deleteStory,
+    required TResult Function(String errorMsg) deleteStoryError,
+    required TResult Function() contactsStoriesChangedLoading,
+    required TResult Function() contactsStoriesChanged,
+    required TResult Function(String errorMsg) contactsStoriesChangedError,
+    required TResult Function() initReplyToStory,
+    required TResult Function() viewContactStoryLoading,
+    required TResult Function() viewContactStory,
+    required TResult Function() replyToStoryLoading,
+    required TResult Function() replyToStory,
+    required TResult Function(String errorMsg) replyToStoryError,
+    required TResult Function() createVideosThumbnailsLoading,
+    required TResult Function() createVideosThumbnails,
+  }) {
+    return createVideosThumbnails();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? getPhones,
+    TResult? Function()? initAddTextStory,
+    TResult? Function()? disposeAddTextStory,
+    TResult? Function()? pickStoryMediaLoading,
+    TResult? Function()? pickStoryImage,
+    TResult? Function()? pickStoryImageError,
+    TResult? Function()? pickStoryVideo,
+    TResult? Function()? pickStoryVideoError,
+    TResult? Function()? setVideoDuration,
+    TResult? Function()? sendStoryLoading,
+    TResult? Function()? sendStory,
+    TResult? Function(String errorMsg)? sendStoryError,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? setImageDimensions,
+    TResult? Function()? getMyStoriesLoading,
+    TResult? Function()? getMyStories,
+    TResult? Function(String errorMsg)? getMyStoriesError,
+    TResult? Function()? getContactsLastStoriesLoading,
+    TResult? Function()? getContactsLastStories,
+    TResult? Function(String errorMsg)? getContactsLastStoriesError,
+    TResult? Function()? openContactStory,
+    TResult? Function()? getContactsCurrentStoriesLoading,
+    TResult? Function()? getContactsCurrentStories,
+    TResult? Function(String errorMsg)? getContactsCurrentStoriesError,
+    TResult? Function()? initStoryView,
+    TResult? Function()? disposeStoryView,
+    TResult? Function()? changeStoryIndexLoading,
+    TResult? Function()? changeStoryIndex,
+    TResult? Function()? resetStoryIndex,
+    TResult? Function(String storyId)? deleteStoryLoading,
+    TResult? Function()? deleteStory,
+    TResult? Function(String errorMsg)? deleteStoryError,
+    TResult? Function()? contactsStoriesChangedLoading,
+    TResult? Function()? contactsStoriesChanged,
+    TResult? Function(String errorMsg)? contactsStoriesChangedError,
+    TResult? Function()? initReplyToStory,
+    TResult? Function()? viewContactStoryLoading,
+    TResult? Function()? viewContactStory,
+    TResult? Function()? replyToStoryLoading,
+    TResult? Function()? replyToStory,
+    TResult? Function(String errorMsg)? replyToStoryError,
+    TResult? Function()? createVideosThumbnailsLoading,
+    TResult? Function()? createVideosThumbnails,
+  }) {
+    return createVideosThumbnails?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? getPhones,
+    TResult Function()? initAddTextStory,
+    TResult Function()? disposeAddTextStory,
+    TResult Function()? pickStoryMediaLoading,
+    TResult Function()? pickStoryImage,
+    TResult Function()? pickStoryImageError,
+    TResult Function()? pickStoryVideo,
+    TResult Function()? pickStoryVideoError,
+    TResult Function()? setVideoDuration,
+    TResult Function()? sendStoryLoading,
+    TResult Function()? sendStory,
+    TResult Function(String errorMsg)? sendStoryError,
+    TResult Function()? getFilePercentage,
+    TResult Function()? setImageDimensions,
+    TResult Function()? getMyStoriesLoading,
+    TResult Function()? getMyStories,
+    TResult Function(String errorMsg)? getMyStoriesError,
+    TResult Function()? getContactsLastStoriesLoading,
+    TResult Function()? getContactsLastStories,
+    TResult Function(String errorMsg)? getContactsLastStoriesError,
+    TResult Function()? openContactStory,
+    TResult Function()? getContactsCurrentStoriesLoading,
+    TResult Function()? getContactsCurrentStories,
+    TResult Function(String errorMsg)? getContactsCurrentStoriesError,
+    TResult Function()? initStoryView,
+    TResult Function()? disposeStoryView,
+    TResult Function()? changeStoryIndexLoading,
+    TResult Function()? changeStoryIndex,
+    TResult Function()? resetStoryIndex,
+    TResult Function(String storyId)? deleteStoryLoading,
+    TResult Function()? deleteStory,
+    TResult Function(String errorMsg)? deleteStoryError,
+    TResult Function()? contactsStoriesChangedLoading,
+    TResult Function()? contactsStoriesChanged,
+    TResult Function(String errorMsg)? contactsStoriesChangedError,
+    TResult Function()? initReplyToStory,
+    TResult Function()? viewContactStoryLoading,
+    TResult Function()? viewContactStory,
+    TResult Function()? replyToStoryLoading,
+    TResult Function()? replyToStory,
+    TResult Function(String errorMsg)? replyToStoryError,
+    TResult Function()? createVideosThumbnailsLoading,
+    TResult Function()? createVideosThumbnails,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnails != null) {
+      return createVideosThumbnails();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_GetPhones value) getPhones,
+    required TResult Function(_InitAddTextStory value) initAddTextStory,
+    required TResult Function(_DisposeAddTextStory value) disposeAddTextStory,
+    required TResult Function(_PickStoryMediaLoading value)
+        pickStoryMediaLoading,
+    required TResult Function(_PickStoryImage value) pickStoryImage,
+    required TResult Function(_PickStoryImageError value) pickStoryImageError,
+    required TResult Function(_PickStoryVideo value) pickStoryVideo,
+    required TResult Function(_PickStoryVideoError value) pickStoryVideoError,
+    required TResult Function(_SetVideoDuration value) setVideoDuration,
+    required TResult Function(_SendStoryLoading value) sendStoryLoading,
+    required TResult Function(_SendStory value) sendStory,
+    required TResult Function(_SendStoryError value) sendStoryError,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_SetImageDimensions value) setImageDimensions,
+    required TResult Function(_GetMyStoriesLoading value) getMyStoriesLoading,
+    required TResult Function(_GetMyStories value) getMyStories,
+    required TResult Function(_GetMyStoriesError value) getMyStoriesError,
+    required TResult Function(_GetContactsLastStoriesLoading value)
+        getContactsLastStoriesLoading,
+    required TResult Function(_GetContactsLastStories value)
+        getContactsLastStories,
+    required TResult Function(_GetContactsLastStoriesError value)
+        getContactsLastStoriesError,
+    required TResult Function(_OpenContactStory value) openContactStory,
+    required TResult Function(_GetContactsCurrentStoriesLoading value)
+        getContactsCurrentStoriesLoading,
+    required TResult Function(_GetContactsCurrentStories value)
+        getContactsCurrentStories,
+    required TResult Function(_GetContactsCurrentStoriesError value)
+        getContactsCurrentStoriesError,
+    required TResult Function(_InitStoryView value) initStoryView,
+    required TResult Function(_DisposeStoryView value) disposeStoryView,
+    required TResult Function(_ChangeStoryIndexLoading value)
+        changeStoryIndexLoading,
+    required TResult Function(_ChangeStoryIndex value) changeStoryIndex,
+    required TResult Function(_ResetStoryIndex value) resetStoryIndex,
+    required TResult Function(_DeleteStoryLoading value) deleteStoryLoading,
+    required TResult Function(_DeleteStory value) deleteStory,
+    required TResult Function(_DeleteStoryError value) deleteStoryError,
+    required TResult Function(_ContactsStoriesChangedLoading value)
+        contactsStoriesChangedLoading,
+    required TResult Function(_ContactsStoriesChanged value)
+        contactsStoriesChanged,
+    required TResult Function(_ContactsStoriesChangedError value)
+        contactsStoriesChangedError,
+    required TResult Function(_InitReplyToStory value) initReplyToStory,
+    required TResult Function(_viewContactStoryLoading value)
+        viewContactStoryLoading,
+    required TResult Function(_viewContactStory value) viewContactStory,
+    required TResult Function(_ReplyToStoryLoading value) replyToStoryLoading,
+    required TResult Function(_ReplyToStory value) replyToStory,
+    required TResult Function(_ReplyToStoryError value) replyToStoryError,
+    required TResult Function(_CreateVideosThumbnailsLoading value)
+        createVideosThumbnailsLoading,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+  }) {
+    return createVideosThumbnails(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_GetPhones value)? getPhones,
+    TResult? Function(_InitAddTextStory value)? initAddTextStory,
+    TResult? Function(_DisposeAddTextStory value)? disposeAddTextStory,
+    TResult? Function(_PickStoryMediaLoading value)? pickStoryMediaLoading,
+    TResult? Function(_PickStoryImage value)? pickStoryImage,
+    TResult? Function(_PickStoryImageError value)? pickStoryImageError,
+    TResult? Function(_PickStoryVideo value)? pickStoryVideo,
+    TResult? Function(_PickStoryVideoError value)? pickStoryVideoError,
+    TResult? Function(_SetVideoDuration value)? setVideoDuration,
+    TResult? Function(_SendStoryLoading value)? sendStoryLoading,
+    TResult? Function(_SendStory value)? sendStory,
+    TResult? Function(_SendStoryError value)? sendStoryError,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_SetImageDimensions value)? setImageDimensions,
+    TResult? Function(_GetMyStoriesLoading value)? getMyStoriesLoading,
+    TResult? Function(_GetMyStories value)? getMyStories,
+    TResult? Function(_GetMyStoriesError value)? getMyStoriesError,
+    TResult? Function(_GetContactsLastStoriesLoading value)?
+        getContactsLastStoriesLoading,
+    TResult? Function(_GetContactsLastStories value)? getContactsLastStories,
+    TResult? Function(_GetContactsLastStoriesError value)?
+        getContactsLastStoriesError,
+    TResult? Function(_OpenContactStory value)? openContactStory,
+    TResult? Function(_GetContactsCurrentStoriesLoading value)?
+        getContactsCurrentStoriesLoading,
+    TResult? Function(_GetContactsCurrentStories value)?
+        getContactsCurrentStories,
+    TResult? Function(_GetContactsCurrentStoriesError value)?
+        getContactsCurrentStoriesError,
+    TResult? Function(_InitStoryView value)? initStoryView,
+    TResult? Function(_DisposeStoryView value)? disposeStoryView,
+    TResult? Function(_ChangeStoryIndexLoading value)? changeStoryIndexLoading,
+    TResult? Function(_ChangeStoryIndex value)? changeStoryIndex,
+    TResult? Function(_ResetStoryIndex value)? resetStoryIndex,
+    TResult? Function(_DeleteStoryLoading value)? deleteStoryLoading,
+    TResult? Function(_DeleteStory value)? deleteStory,
+    TResult? Function(_DeleteStoryError value)? deleteStoryError,
+    TResult? Function(_ContactsStoriesChangedLoading value)?
+        contactsStoriesChangedLoading,
+    TResult? Function(_ContactsStoriesChanged value)? contactsStoriesChanged,
+    TResult? Function(_ContactsStoriesChangedError value)?
+        contactsStoriesChangedError,
+    TResult? Function(_InitReplyToStory value)? initReplyToStory,
+    TResult? Function(_viewContactStoryLoading value)? viewContactStoryLoading,
+    TResult? Function(_viewContactStory value)? viewContactStory,
+    TResult? Function(_ReplyToStoryLoading value)? replyToStoryLoading,
+    TResult? Function(_ReplyToStory value)? replyToStory,
+    TResult? Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult? Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+  }) {
+    return createVideosThumbnails?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_GetPhones value)? getPhones,
+    TResult Function(_InitAddTextStory value)? initAddTextStory,
+    TResult Function(_DisposeAddTextStory value)? disposeAddTextStory,
+    TResult Function(_PickStoryMediaLoading value)? pickStoryMediaLoading,
+    TResult Function(_PickStoryImage value)? pickStoryImage,
+    TResult Function(_PickStoryImageError value)? pickStoryImageError,
+    TResult Function(_PickStoryVideo value)? pickStoryVideo,
+    TResult Function(_PickStoryVideoError value)? pickStoryVideoError,
+    TResult Function(_SetVideoDuration value)? setVideoDuration,
+    TResult Function(_SendStoryLoading value)? sendStoryLoading,
+    TResult Function(_SendStory value)? sendStory,
+    TResult Function(_SendStoryError value)? sendStoryError,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_SetImageDimensions value)? setImageDimensions,
+    TResult Function(_GetMyStoriesLoading value)? getMyStoriesLoading,
+    TResult Function(_GetMyStories value)? getMyStories,
+    TResult Function(_GetMyStoriesError value)? getMyStoriesError,
+    TResult Function(_GetContactsLastStoriesLoading value)?
+        getContactsLastStoriesLoading,
+    TResult Function(_GetContactsLastStories value)? getContactsLastStories,
+    TResult Function(_GetContactsLastStoriesError value)?
+        getContactsLastStoriesError,
+    TResult Function(_OpenContactStory value)? openContactStory,
+    TResult Function(_GetContactsCurrentStoriesLoading value)?
+        getContactsCurrentStoriesLoading,
+    TResult Function(_GetContactsCurrentStories value)?
+        getContactsCurrentStories,
+    TResult Function(_GetContactsCurrentStoriesError value)?
+        getContactsCurrentStoriesError,
+    TResult Function(_InitStoryView value)? initStoryView,
+    TResult Function(_DisposeStoryView value)? disposeStoryView,
+    TResult Function(_ChangeStoryIndexLoading value)? changeStoryIndexLoading,
+    TResult Function(_ChangeStoryIndex value)? changeStoryIndex,
+    TResult Function(_ResetStoryIndex value)? resetStoryIndex,
+    TResult Function(_DeleteStoryLoading value)? deleteStoryLoading,
+    TResult Function(_DeleteStory value)? deleteStory,
+    TResult Function(_DeleteStoryError value)? deleteStoryError,
+    TResult Function(_ContactsStoriesChangedLoading value)?
+        contactsStoriesChangedLoading,
+    TResult Function(_ContactsStoriesChanged value)? contactsStoriesChanged,
+    TResult Function(_ContactsStoriesChangedError value)?
+        contactsStoriesChangedError,
+    TResult Function(_InitReplyToStory value)? initReplyToStory,
+    TResult Function(_viewContactStoryLoading value)? viewContactStoryLoading,
+    TResult Function(_viewContactStory value)? viewContactStory,
+    TResult Function(_ReplyToStoryLoading value)? replyToStoryLoading,
+    TResult Function(_ReplyToStory value)? replyToStory,
+    TResult Function(_ReplyToStoryError value)? replyToStoryError,
+    TResult Function(_CreateVideosThumbnailsLoading value)?
+        createVideosThumbnailsLoading,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnails != null) {
+      return createVideosThumbnails(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CreateVideosThumbnails implements StoriesState {
+  const factory _CreateVideosThumbnails() = _$_CreateVideosThumbnails;
 }

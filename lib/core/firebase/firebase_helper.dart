@@ -82,6 +82,12 @@ abstract class FirebaseHelper {
   });
 
   Stream<QuerySnapshot<Map<String, dynamic>>> getCalls();
+
+  Future<void> seeMessage({
+    required String phoneNumber,
+  });
+
+  Future<void> updateProfileData({required Map<String, dynamic> data});
 }
 
 class FirebaseHelperImpl implements FirebaseHelper {
@@ -483,5 +489,23 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.calls)
         .orderBy('dateTime', descending: true)
         .snapshots();
+  }
+
+  @override
+  Future<void> seeMessage({required String phoneNumber}) async {
+    _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .collection(Collections.chats)
+        .doc(phoneNumber)
+        .update({"isRead": true});
+  }
+
+  @override
+  Future<void> updateProfileData({required Map<String, dynamic> data}) async {
+    _db
+        .collection(Collections.users)
+        .doc(HiveHelper.getCurrentUser()!.phone)
+        .update(data);
   }
 }

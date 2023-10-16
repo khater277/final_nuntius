@@ -1,9 +1,9 @@
 import 'package:final_nuntius/config/navigation.dart';
-import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
+import 'package:final_nuntius/features/edit_profile/presentation/screens/edit_profile_screen.dart';
 import 'package:final_nuntius/features/search/presentation/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -25,14 +25,8 @@ class CustomSliverAppBar extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: AppWidth.w5),
                 child: IconButton(
-                    onPressed: () async {
-                      await NotificationsHelper.showNotification(
-                        id: 1,
-                        name: 'Khater',
-                        senderID: '123',
-                      );
-                      // Get.to(()=>const ProfileScreen());
-                    },
+                    onPressed: () => Go.to(
+                        context: context, screen: const EditProfileScreen()),
                     icon: Icon(
                       IconBroken.Edit_Square,
                       size: AppSize.s20,

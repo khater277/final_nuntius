@@ -9,6 +9,8 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.sendMessage() = _SendMessage;
   const factory MessagesState.sendMessageError(String errorMsg) =
       _SendMessageError;
+  const factory MessagesState.createVideosThumbnails() =
+      _CreateVideosThumbnails;
   const factory MessagesState.getMessagesLoading() = _GetMessagesLoading;
   const factory MessagesState.getMessages(List<MessageModel> messages) =
       _GetMessages;
@@ -63,4 +65,6 @@ class MessagesState with _$MessagesState {
       _JoinVoiceCallError;
   const factory MessagesState.leaveVoiceCallLoading() = _LeaveVoiceCallLoading;
   const factory MessagesState.leaveVoiceCall() = _LeaveVoiceCall;
+  const factory MessagesState.scrollDownLoading() = _ScrollDownLoading;
+  const factory MessagesState.scrollDown() = _ScrollDown;
 }

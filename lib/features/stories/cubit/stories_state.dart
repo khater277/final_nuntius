@@ -39,7 +39,8 @@ class StoriesState with _$StoriesState {
       _ChangeStoryIndexLoading;
   const factory StoriesState.changeStoryIndex() = _ChangeStoryIndex;
   const factory StoriesState.resetStoryIndex() = _ResetStoryIndex;
-  const factory StoriesState.deleteStoryLoading() = _DeleteStoryLoading;
+  const factory StoriesState.deleteStoryLoading(String storyId) =
+      _DeleteStoryLoading;
   const factory StoriesState.deleteStory() = _DeleteStory;
   const factory StoriesState.deleteStoryError(String errorMsg) =
       _DeleteStoryError;
@@ -56,4 +57,8 @@ class StoriesState with _$StoriesState {
   const factory StoriesState.replyToStory() = _ReplyToStory;
   const factory StoriesState.replyToStoryError(String errorMsg) =
       _ReplyToStoryError;
+
+  const factory StoriesState.createVideosThumbnailsLoading() =
+      _CreateVideosThumbnailsLoading;
+  const factory StoriesState.createVideosThumbnails() = _CreateVideosThumbnails;
 }

@@ -3,10 +3,10 @@ import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:flutter/material.dart';
 
 class SliverScrollableView extends StatelessWidget {
-  final bool hasScrollBody;
   final Widget child;
+  final bool isScrollable;
   const SliverScrollableView(
-      {super.key, required this.hasScrollBody, required this.child});
+      {super.key, required this.child, required this.isScrollable});
 
   @override
   Widget build(BuildContext context) {
@@ -14,17 +14,29 @@ class SliverScrollableView extends StatelessWidget {
       physics: const BouncingScrollPhysics(),
       slivers: [
         const CustomSliverAppBar(),
-        SliverFillRemaining(
-          hasScrollBody: hasScrollBody,
-          child: Padding(
-            padding: EdgeInsets.only(
-              right: AppWidth.w10,
-              left: AppWidth.w10,
-              top: AppHeight.h5,
+        if (isScrollable)
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: EdgeInsets.only(
+                right: AppWidth.w10,
+                left: AppWidth.w10,
+                top: AppHeight.h5,
+              ),
+              child: child,
             ),
-            child: child,
-          ),
-        )
+          )
+        else
+          SliverFillRemaining(
+            hasScrollBody: false,
+            child: Padding(
+              padding: EdgeInsets.only(
+                right: AppWidth.w10,
+                left: AppWidth.w10,
+                top: AppHeight.h5,
+              ),
+              child: child,
+            ),
+          )
       ],
     );
   }

@@ -24,6 +24,7 @@ mixin _$MessagesState {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -60,6 +61,8 @@ mixin _$MessagesState {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -70,6 +73,7 @@ mixin _$MessagesState {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -105,6 +109,8 @@ mixin _$MessagesState {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -115,6 +121,7 @@ mixin _$MessagesState {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -150,6 +157,8 @@ mixin _$MessagesState {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -161,6 +170,8 @@ mixin _$MessagesState {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -202,6 +213,8 @@ mixin _$MessagesState {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -212,6 +225,7 @@ mixin _$MessagesState {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -246,6 +260,8 @@ mixin _$MessagesState {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -256,6 +272,7 @@ mixin _$MessagesState {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -290,6 +307,8 @@ mixin _$MessagesState {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -356,6 +375,7 @@ class _$_Initial implements _Initial {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -392,6 +412,8 @@ class _$_Initial implements _Initial {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return initial();
   }
@@ -405,6 +427,7 @@ class _$_Initial implements _Initial {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -440,6 +463,8 @@ class _$_Initial implements _Initial {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return initial?.call();
   }
@@ -453,6 +478,7 @@ class _$_Initial implements _Initial {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -488,6 +514,8 @@ class _$_Initial implements _Initial {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -505,6 +533,8 @@ class _$_Initial implements _Initial {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -546,6 +576,8 @@ class _$_Initial implements _Initial {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return initial(this);
   }
@@ -559,6 +591,7 @@ class _$_Initial implements _Initial {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -593,6 +626,8 @@ class _$_Initial implements _Initial {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return initial?.call(this);
   }
@@ -606,6 +641,7 @@ class _$_Initial implements _Initial {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -640,6 +676,8 @@ class _$_Initial implements _Initial {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -697,6 +735,7 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -733,6 +772,8 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return initControllers();
   }
@@ -746,6 +787,7 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -781,6 +823,8 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return initControllers?.call();
   }
@@ -794,6 +838,7 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -829,6 +874,8 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -846,6 +893,8 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -887,6 +936,8 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return initControllers(this);
   }
@@ -900,6 +951,7 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -934,6 +986,8 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return initControllers?.call(this);
   }
@@ -947,6 +1001,7 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -981,6 +1036,8 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (initControllers != null) {
@@ -1038,6 +1095,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -1074,6 +1132,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return disposeControllers();
   }
@@ -1087,6 +1147,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -1122,6 +1183,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return disposeControllers?.call();
   }
@@ -1135,6 +1198,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -1170,6 +1234,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -1187,6 +1253,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -1228,6 +1296,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return disposeControllers(this);
   }
@@ -1241,6 +1311,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -1275,6 +1346,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return disposeControllers?.call(this);
   }
@@ -1288,6 +1361,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -1322,6 +1396,8 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (disposeControllers != null) {
@@ -1379,6 +1455,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -1415,6 +1492,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return sendMessageLoading();
   }
@@ -1428,6 +1507,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -1463,6 +1543,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return sendMessageLoading?.call();
   }
@@ -1476,6 +1558,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -1511,6 +1594,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -1528,6 +1613,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -1569,6 +1656,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return sendMessageLoading(this);
   }
@@ -1582,6 +1671,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -1616,6 +1706,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return sendMessageLoading?.call(this);
   }
@@ -1629,6 +1721,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -1663,6 +1756,8 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessageLoading != null) {
@@ -1720,6 +1815,7 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -1756,6 +1852,8 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return sendMessage();
   }
@@ -1769,6 +1867,7 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -1804,6 +1903,8 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return sendMessage?.call();
   }
@@ -1817,6 +1918,7 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -1852,6 +1954,8 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -1869,6 +1973,8 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -1910,6 +2016,8 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return sendMessage(this);
   }
@@ -1923,6 +2031,7 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -1957,6 +2066,8 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return sendMessage?.call(this);
   }
@@ -1970,6 +2081,7 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -2004,6 +2116,8 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessage != null) {
@@ -2088,6 +2202,7 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -2124,6 +2239,8 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return sendMessageError(errorMsg);
   }
@@ -2137,6 +2254,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -2172,6 +2290,8 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return sendMessageError?.call(errorMsg);
   }
@@ -2185,6 +2305,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -2220,6 +2341,8 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -2237,6 +2360,8 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -2278,6 +2403,8 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return sendMessageError(this);
   }
@@ -2291,6 +2418,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -2325,6 +2453,8 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return sendMessageError?.call(this);
   }
@@ -2338,6 +2468,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -2372,6 +2503,8 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (sendMessageError != null) {
@@ -2388,6 +2521,367 @@ abstract class _SendMessageError implements MessagesState {
   @JsonKey(ignore: true)
   _$$_SendMessageErrorCopyWith<_$_SendMessageError> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_CreateVideosThumbnailsCopyWith<$Res> {
+  factory _$$_CreateVideosThumbnailsCopyWith(_$_CreateVideosThumbnails value,
+          $Res Function(_$_CreateVideosThumbnails) then) =
+      __$$_CreateVideosThumbnailsCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_CreateVideosThumbnailsCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_CreateVideosThumbnails>
+    implements _$$_CreateVideosThumbnailsCopyWith<$Res> {
+  __$$_CreateVideosThumbnailsCopyWithImpl(_$_CreateVideosThumbnails _value,
+      $Res Function(_$_CreateVideosThumbnails) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
+  const _$_CreateVideosThumbnails();
+
+  @override
+  String toString() {
+    return 'MessagesState.createVideosThumbnails()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_CreateVideosThumbnails);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() getUserLoading,
+    required TResult Function() getUser,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
+  }) {
+    return createVideosThumbnails();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? getUserLoading,
+    TResult? Function()? getUser,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
+  }) {
+    return createVideosThumbnails?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? getUserLoading,
+    TResult Function()? getUser,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnails != null) {
+      return createVideosThumbnails();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetUserLoading value) getUserLoading,
+    required TResult Function(_GetUser value) getUser,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
+  }) {
+    return createVideosThumbnails(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetUserLoading value)? getUserLoading,
+    TResult? Function(_GetUser value)? getUser,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
+  }) {
+    return createVideosThumbnails?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetUserLoading value)? getUserLoading,
+    TResult Function(_GetUser value)? getUser,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (createVideosThumbnails != null) {
+      return createVideosThumbnails(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CreateVideosThumbnails implements MessagesState {
+  const factory _CreateVideosThumbnails() = _$_CreateVideosThumbnails;
 }
 
 /// @nodoc
@@ -2434,6 +2928,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -2470,6 +2965,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getMessagesLoading();
   }
@@ -2483,6 +2980,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -2518,6 +3016,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getMessagesLoading?.call();
   }
@@ -2531,6 +3031,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -2566,6 +3067,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -2583,6 +3086,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -2624,6 +3129,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getMessagesLoading(this);
   }
@@ -2637,6 +3144,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -2671,6 +3179,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getMessagesLoading?.call(this);
   }
@@ -2684,6 +3194,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -2718,6 +3229,8 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessagesLoading != null) {
@@ -2808,6 +3321,7 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -2844,6 +3358,8 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getMessages(messages);
   }
@@ -2857,6 +3373,7 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -2892,6 +3409,8 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getMessages?.call(messages);
   }
@@ -2905,6 +3424,7 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -2940,6 +3460,8 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -2957,6 +3479,8 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -2998,6 +3522,8 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getMessages(this);
   }
@@ -3011,6 +3537,7 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -3045,6 +3572,8 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getMessages?.call(this);
   }
@@ -3058,6 +3587,7 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -3092,6 +3622,8 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessages != null) {
@@ -3155,6 +3687,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -3191,6 +3724,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getUserLoading();
   }
@@ -3204,6 +3739,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -3239,6 +3775,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getUserLoading?.call();
   }
@@ -3252,6 +3790,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -3287,6 +3826,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getUserLoading != null) {
@@ -3304,6 +3845,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -3345,6 +3888,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getUserLoading(this);
   }
@@ -3358,6 +3903,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -3392,6 +3938,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getUserLoading?.call(this);
   }
@@ -3405,6 +3953,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -3439,6 +3988,8 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getUserLoading != null) {
@@ -3495,6 +4046,7 @@ class _$_GetUser implements _GetUser {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -3531,6 +4083,8 @@ class _$_GetUser implements _GetUser {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getUser();
   }
@@ -3544,6 +4098,7 @@ class _$_GetUser implements _GetUser {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -3579,6 +4134,8 @@ class _$_GetUser implements _GetUser {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getUser?.call();
   }
@@ -3592,6 +4149,7 @@ class _$_GetUser implements _GetUser {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -3627,6 +4185,8 @@ class _$_GetUser implements _GetUser {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getUser != null) {
@@ -3644,6 +4204,8 @@ class _$_GetUser implements _GetUser {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -3685,6 +4247,8 @@ class _$_GetUser implements _GetUser {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getUser(this);
   }
@@ -3698,6 +4262,7 @@ class _$_GetUser implements _GetUser {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -3732,6 +4297,8 @@ class _$_GetUser implements _GetUser {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getUser?.call(this);
   }
@@ -3745,6 +4312,7 @@ class _$_GetUser implements _GetUser {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -3779,6 +4347,8 @@ class _$_GetUser implements _GetUser {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getUser != null) {
@@ -3863,6 +4433,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -3899,6 +4470,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getMessagesError(errorMsg);
   }
@@ -3912,6 +4485,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -3947,6 +4521,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getMessagesError?.call(errorMsg);
   }
@@ -3960,6 +4536,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -3995,6 +4572,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -4012,6 +4591,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -4053,6 +4634,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getMessagesError(this);
   }
@@ -4066,6 +4649,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -4100,6 +4684,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getMessagesError?.call(this);
   }
@@ -4113,6 +4699,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -4147,6 +4734,8 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getMessagesError != null) {
@@ -4210,6 +4799,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -4246,6 +4836,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageImageLoading();
   }
@@ -4259,6 +4851,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -4294,6 +4887,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageImageLoading?.call();
   }
@@ -4307,6 +4902,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -4342,6 +4938,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -4359,6 +4957,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -4400,6 +5000,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageImageLoading(this);
   }
@@ -4413,6 +5015,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -4447,6 +5050,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageImageLoading?.call(this);
   }
@@ -4460,6 +5065,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -4494,6 +5100,8 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImageLoading != null) {
@@ -4551,6 +5159,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -4587,6 +5196,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageImage();
   }
@@ -4600,6 +5211,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -4635,6 +5247,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageImage?.call();
   }
@@ -4648,6 +5262,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -4683,6 +5298,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -4700,6 +5317,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -4741,6 +5360,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageImage(this);
   }
@@ -4754,6 +5375,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -4788,6 +5410,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageImage?.call(this);
   }
@@ -4801,6 +5425,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -4835,6 +5460,8 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImage != null) {
@@ -4920,6 +5547,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -4956,6 +5584,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageImageError(errorMsg);
   }
@@ -4969,6 +5599,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -5004,6 +5635,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageImageError?.call(errorMsg);
   }
@@ -5017,6 +5650,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -5052,6 +5686,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -5069,6 +5705,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -5110,6 +5748,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageImageError(this);
   }
@@ -5123,6 +5763,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -5157,6 +5798,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageImageError?.call(this);
   }
@@ -5170,6 +5813,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -5204,6 +5848,8 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageImageError != null) {
@@ -5268,6 +5914,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -5304,6 +5951,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageVideoLoading();
   }
@@ -5317,6 +5966,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -5352,6 +6002,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageVideoLoading?.call();
   }
@@ -5365,6 +6017,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -5400,6 +6053,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -5417,6 +6072,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -5458,6 +6115,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageVideoLoading(this);
   }
@@ -5471,6 +6130,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -5505,6 +6165,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageVideoLoading?.call(this);
   }
@@ -5518,6 +6180,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -5552,6 +6215,8 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideoLoading != null) {
@@ -5609,6 +6274,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -5645,6 +6311,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageVideo();
   }
@@ -5658,6 +6326,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -5693,6 +6362,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageVideo?.call();
   }
@@ -5706,6 +6377,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -5741,6 +6413,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -5758,6 +6432,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -5799,6 +6475,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageVideo(this);
   }
@@ -5812,6 +6490,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -5846,6 +6525,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageVideo?.call(this);
   }
@@ -5859,6 +6540,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -5893,6 +6575,8 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideo != null) {
@@ -5978,6 +6662,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -6014,6 +6699,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageVideoError(errorMsg);
   }
@@ -6027,6 +6714,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -6062,6 +6750,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageVideoError?.call(errorMsg);
   }
@@ -6075,6 +6765,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -6110,6 +6801,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -6127,6 +6820,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -6168,6 +6863,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageVideoError(this);
   }
@@ -6181,6 +6878,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -6215,6 +6913,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageVideoError?.call(this);
   }
@@ -6228,6 +6928,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -6262,6 +6963,8 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageVideoError != null) {
@@ -6326,6 +7029,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -6362,6 +7066,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageFileLoading();
   }
@@ -6375,6 +7081,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -6410,6 +7117,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageFileLoading?.call();
   }
@@ -6423,6 +7132,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -6458,6 +7168,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -6475,6 +7187,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -6516,6 +7230,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageFileLoading(this);
   }
@@ -6529,6 +7245,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -6563,6 +7280,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageFileLoading?.call(this);
   }
@@ -6576,6 +7295,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -6610,6 +7330,8 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFileLoading != null) {
@@ -6667,6 +7389,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -6703,6 +7426,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageFile();
   }
@@ -6716,6 +7441,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -6751,6 +7477,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageFile?.call();
   }
@@ -6764,6 +7492,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -6799,6 +7528,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -6816,6 +7547,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -6857,6 +7590,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageFile(this);
   }
@@ -6870,6 +7605,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -6904,6 +7640,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageFile?.call(this);
   }
@@ -6917,6 +7655,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -6951,6 +7690,8 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFile != null) {
@@ -7036,6 +7777,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -7072,6 +7814,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return pickMessageFileError(errorMsg);
   }
@@ -7085,6 +7829,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -7120,6 +7865,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return pickMessageFileError?.call(errorMsg);
   }
@@ -7133,6 +7880,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -7168,6 +7916,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -7185,6 +7935,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -7226,6 +7978,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return pickMessageFileError(this);
   }
@@ -7239,6 +7993,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -7273,6 +8028,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return pickMessageFileError?.call(this);
   }
@@ -7286,6 +8043,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -7320,6 +8078,8 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (pickMessageFileError != null) {
@@ -7383,6 +8143,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -7419,6 +8180,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return closeMediaContainer();
   }
@@ -7432,6 +8195,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -7467,6 +8231,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return closeMediaContainer?.call();
   }
@@ -7480,6 +8246,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -7515,6 +8282,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -7532,6 +8301,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -7573,6 +8344,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return closeMediaContainer(this);
   }
@@ -7586,6 +8359,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -7620,6 +8394,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return closeMediaContainer?.call(this);
   }
@@ -7633,6 +8409,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -7667,6 +8444,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (closeMediaContainer != null) {
@@ -7724,6 +8503,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -7760,6 +8540,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return getFilePercentage();
   }
@@ -7773,6 +8555,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -7808,6 +8591,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return getFilePercentage?.call();
   }
@@ -7821,6 +8606,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -7856,6 +8642,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -7873,6 +8661,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -7914,6 +8704,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return getFilePercentage(this);
   }
@@ -7927,6 +8719,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -7961,6 +8754,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return getFilePercentage?.call(this);
   }
@@ -7974,6 +8769,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -8008,6 +8804,8 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (getFilePercentage != null) {
@@ -8065,6 +8863,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -8101,6 +8900,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return openDocMessageLoading();
   }
@@ -8114,6 +8915,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -8149,6 +8951,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return openDocMessageLoading?.call();
   }
@@ -8162,6 +8966,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -8197,6 +9002,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessageLoading != null) {
@@ -8214,6 +9021,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -8255,6 +9064,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return openDocMessageLoading(this);
   }
@@ -8268,6 +9079,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -8302,6 +9114,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return openDocMessageLoading?.call(this);
   }
@@ -8315,6 +9129,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -8349,6 +9164,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessageLoading != null) {
@@ -8406,6 +9223,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -8442,6 +9260,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return openDocMessage();
   }
@@ -8455,6 +9275,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -8490,6 +9311,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return openDocMessage?.call();
   }
@@ -8503,6 +9326,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -8538,6 +9362,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessage != null) {
@@ -8555,6 +9381,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -8596,6 +9424,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return openDocMessage(this);
   }
@@ -8609,6 +9439,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -8643,6 +9474,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return openDocMessage?.call(this);
   }
@@ -8656,6 +9489,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -8690,6 +9524,8 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessage != null) {
@@ -8775,6 +9611,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -8811,6 +9648,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return openDocMessageError(errorMsg);
   }
@@ -8824,6 +9663,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -8859,6 +9699,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return openDocMessageError?.call(errorMsg);
   }
@@ -8872,6 +9714,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -8907,6 +9750,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessageError != null) {
@@ -8924,6 +9769,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -8965,6 +9812,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return openDocMessageError(this);
   }
@@ -8978,6 +9827,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -9012,6 +9862,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return openDocMessageError?.call(this);
   }
@@ -9025,6 +9877,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -9059,6 +9912,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (openDocMessageError != null) {
@@ -9122,6 +9977,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -9158,6 +10014,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return deleteMessageLoading();
   }
@@ -9171,6 +10029,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -9206,6 +10065,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return deleteMessageLoading?.call();
   }
@@ -9219,6 +10080,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -9254,6 +10116,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessageLoading != null) {
@@ -9271,6 +10135,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -9312,6 +10178,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return deleteMessageLoading(this);
   }
@@ -9325,6 +10193,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -9359,6 +10228,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return deleteMessageLoading?.call(this);
   }
@@ -9372,6 +10243,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -9406,6 +10278,8 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessageLoading != null) {
@@ -9463,6 +10337,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -9499,6 +10374,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return deleteMessage();
   }
@@ -9512,6 +10389,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -9547,6 +10425,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return deleteMessage?.call();
   }
@@ -9560,6 +10440,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -9595,6 +10476,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessage != null) {
@@ -9612,6 +10495,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -9653,6 +10538,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return deleteMessage(this);
   }
@@ -9666,6 +10553,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -9700,6 +10588,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return deleteMessage?.call(this);
   }
@@ -9713,6 +10603,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -9747,6 +10638,8 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessage != null) {
@@ -9832,6 +10725,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -9868,6 +10762,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return deleteMessageError(errorMsg);
   }
@@ -9881,6 +10777,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -9916,6 +10813,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return deleteMessageError?.call(errorMsg);
   }
@@ -9929,6 +10828,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -9964,6 +10864,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessageError != null) {
@@ -9981,6 +10883,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -10022,6 +10926,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return deleteMessageError(this);
   }
@@ -10035,6 +10941,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -10069,6 +10976,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return deleteMessageError?.call(this);
   }
@@ -10082,6 +10991,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -10116,6 +11026,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (deleteMessageError != null) {
@@ -10207,6 +11119,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -10243,6 +11156,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return generateTokenLoading(callType);
   }
@@ -10256,6 +11171,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -10291,6 +11207,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return generateTokenLoading?.call(callType);
   }
@@ -10304,6 +11222,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -10339,6 +11258,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (generateTokenLoading != null) {
@@ -10356,6 +11277,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -10397,6 +11320,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return generateTokenLoading(this);
   }
@@ -10410,6 +11335,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -10444,6 +11370,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return generateTokenLoading?.call(this);
   }
@@ -10457,6 +11385,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -10491,6 +11420,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (generateTokenLoading != null) {
@@ -10598,6 +11529,7 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -10634,6 +11566,8 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return generateToken(token, channelName, callType);
   }
@@ -10647,6 +11581,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -10682,6 +11617,8 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return generateToken?.call(token, channelName, callType);
   }
@@ -10695,6 +11632,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -10730,6 +11668,8 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (generateToken != null) {
@@ -10747,6 +11687,8 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -10788,6 +11730,8 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return generateToken(this);
   }
@@ -10801,6 +11745,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -10835,6 +11780,8 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return generateToken?.call(this);
   }
@@ -10848,6 +11795,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -10882,6 +11830,8 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (generateToken != null) {
@@ -10975,6 +11925,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -11011,6 +11962,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return generateTokenError(errorMsg);
   }
@@ -11024,6 +11977,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -11059,6 +12013,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return generateTokenError?.call(errorMsg);
   }
@@ -11072,6 +12028,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -11107,6 +12064,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (generateTokenError != null) {
@@ -11124,6 +12083,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -11165,6 +12126,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return generateTokenError(this);
   }
@@ -11178,6 +12141,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -11212,6 +12176,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return generateTokenError?.call(this);
   }
@@ -11225,6 +12191,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -11259,6 +12226,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (generateTokenError != null) {
@@ -11322,6 +12291,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -11358,6 +12328,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return setupVoiceSDKEngine();
   }
@@ -11371,6 +12343,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -11406,6 +12379,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return setupVoiceSDKEngine?.call();
   }
@@ -11419,6 +12394,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -11454,6 +12430,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (setupVoiceSDKEngine != null) {
@@ -11471,6 +12449,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -11512,6 +12492,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return setupVoiceSDKEngine(this);
   }
@@ -11525,6 +12507,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -11559,6 +12542,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return setupVoiceSDKEngine?.call(this);
   }
@@ -11572,6 +12557,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -11606,6 +12592,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (setupVoiceSDKEngine != null) {
@@ -11663,6 +12651,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -11699,6 +12688,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return onJoinChannelSuccess();
   }
@@ -11712,6 +12703,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -11747,6 +12739,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return onJoinChannelSuccess?.call();
   }
@@ -11760,6 +12754,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -11795,6 +12790,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (onJoinChannelSuccess != null) {
@@ -11812,6 +12809,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -11853,6 +12852,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return onJoinChannelSuccess(this);
   }
@@ -11866,6 +12867,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -11900,6 +12902,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return onJoinChannelSuccess?.call(this);
   }
@@ -11913,6 +12917,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -11947,6 +12952,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (onJoinChannelSuccess != null) {
@@ -12004,6 +13011,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -12040,6 +13048,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return onUserJoined();
   }
@@ -12053,6 +13063,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -12088,6 +13099,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return onUserJoined?.call();
   }
@@ -12101,6 +13114,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -12136,6 +13150,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (onUserJoined != null) {
@@ -12153,6 +13169,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -12194,6 +13212,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return onUserJoined(this);
   }
@@ -12207,6 +13227,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -12241,6 +13262,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return onUserJoined?.call(this);
   }
@@ -12254,6 +13277,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -12288,6 +13312,8 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (onUserJoined != null) {
@@ -12345,6 +13371,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -12381,6 +13408,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return onUserOffline();
   }
@@ -12394,6 +13423,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -12429,6 +13459,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return onUserOffline?.call();
   }
@@ -12442,6 +13474,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -12477,6 +13510,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (onUserOffline != null) {
@@ -12494,6 +13529,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -12535,6 +13572,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return onUserOffline(this);
   }
@@ -12548,6 +13587,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -12582,6 +13622,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return onUserOffline?.call(this);
   }
@@ -12595,6 +13637,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -12629,6 +13672,8 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (onUserOffline != null) {
@@ -12686,6 +13731,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -12722,6 +13768,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return joinVoiceCallLoading();
   }
@@ -12735,6 +13783,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -12770,6 +13819,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return joinVoiceCallLoading?.call();
   }
@@ -12783,6 +13834,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -12818,6 +13870,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCallLoading != null) {
@@ -12835,6 +13889,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -12876,6 +13932,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return joinVoiceCallLoading(this);
   }
@@ -12889,6 +13947,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -12923,6 +13982,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return joinVoiceCallLoading?.call(this);
   }
@@ -12936,6 +13997,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -12970,6 +14032,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCallLoading != null) {
@@ -13027,6 +14091,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -13063,6 +14128,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return joinVoiceCall();
   }
@@ -13076,6 +14143,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -13111,6 +14179,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return joinVoiceCall?.call();
   }
@@ -13124,6 +14194,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -13159,6 +14230,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCall != null) {
@@ -13176,6 +14249,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -13217,6 +14292,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return joinVoiceCall(this);
   }
@@ -13230,6 +14307,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -13264,6 +14342,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return joinVoiceCall?.call(this);
   }
@@ -13277,6 +14357,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -13311,6 +14392,8 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCall != null) {
@@ -13396,6 +14479,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -13432,6 +14516,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return joinVoiceCallError(errorMsg);
   }
@@ -13445,6 +14531,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -13480,6 +14567,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return joinVoiceCallError?.call(errorMsg);
   }
@@ -13493,6 +14582,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -13528,6 +14618,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCallError != null) {
@@ -13545,6 +14637,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -13586,6 +14680,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return joinVoiceCallError(this);
   }
@@ -13599,6 +14695,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -13633,6 +14730,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return joinVoiceCallError?.call(this);
   }
@@ -13646,6 +14745,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -13680,6 +14780,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (joinVoiceCallError != null) {
@@ -13743,6 +14845,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -13779,6 +14882,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return leaveVoiceCallLoading();
   }
@@ -13792,6 +14897,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -13827,6 +14933,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return leaveVoiceCallLoading?.call();
   }
@@ -13840,6 +14948,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -13875,6 +14984,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (leaveVoiceCallLoading != null) {
@@ -13892,6 +15003,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -13933,6 +15046,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return leaveVoiceCallLoading(this);
   }
@@ -13946,6 +15061,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -13980,6 +15096,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return leaveVoiceCallLoading?.call(this);
   }
@@ -13993,6 +15111,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -14027,6 +15146,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (leaveVoiceCallLoading != null) {
@@ -14084,6 +15205,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function() sendMessageLoading,
     required TResult Function() sendMessage,
     required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
     required TResult Function() getUserLoading,
@@ -14120,6 +15242,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function(String errorMsg) joinVoiceCallError,
     required TResult Function() leaveVoiceCallLoading,
     required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
   }) {
     return leaveVoiceCall();
   }
@@ -14133,6 +15257,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function()? sendMessageLoading,
     TResult? Function()? sendMessage,
     TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
     TResult? Function()? getUserLoading,
@@ -14168,6 +15293,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(String errorMsg)? joinVoiceCallError,
     TResult? Function()? leaveVoiceCallLoading,
     TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
   }) {
     return leaveVoiceCall?.call();
   }
@@ -14181,6 +15308,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function()? sendMessageLoading,
     TResult Function()? sendMessage,
     TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
     TResult Function()? getUserLoading,
@@ -14216,6 +15344,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(String errorMsg)? joinVoiceCallError,
     TResult Function()? leaveVoiceCallLoading,
     TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
     required TResult orElse(),
   }) {
     if (leaveVoiceCall != null) {
@@ -14233,6 +15363,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function(_SendMessageLoading value) sendMessageLoading,
     required TResult Function(_SendMessage value) sendMessage,
     required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
     required TResult Function(_GetUserLoading value) getUserLoading,
@@ -14274,6 +15406,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function(_LeaveVoiceCallLoading value)
         leaveVoiceCallLoading,
     required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
   }) {
     return leaveVoiceCall(this);
   }
@@ -14287,6 +15421,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(_SendMessageLoading value)? sendMessageLoading,
     TResult? Function(_SendMessage value)? sendMessage,
     TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
     TResult? Function(_GetUserLoading value)? getUserLoading,
@@ -14321,6 +15456,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
   }) {
     return leaveVoiceCall?.call(this);
   }
@@ -14334,6 +15471,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(_SendMessageLoading value)? sendMessageLoading,
     TResult Function(_SendMessage value)? sendMessage,
     TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
     TResult Function(_GetUserLoading value)? getUserLoading,
@@ -14368,6 +15506,8 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
     TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
     TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
     required TResult orElse(),
   }) {
     if (leaveVoiceCall != null) {
@@ -14379,4 +15519,724 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
 
 abstract class _LeaveVoiceCall implements MessagesState {
   const factory _LeaveVoiceCall() = _$_LeaveVoiceCall;
+}
+
+/// @nodoc
+abstract class _$$_ScrollDownLoadingCopyWith<$Res> {
+  factory _$$_ScrollDownLoadingCopyWith(_$_ScrollDownLoading value,
+          $Res Function(_$_ScrollDownLoading) then) =
+      __$$_ScrollDownLoadingCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_ScrollDownLoadingCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_ScrollDownLoading>
+    implements _$$_ScrollDownLoadingCopyWith<$Res> {
+  __$$_ScrollDownLoadingCopyWithImpl(
+      _$_ScrollDownLoading _value, $Res Function(_$_ScrollDownLoading) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_ScrollDownLoading implements _ScrollDownLoading {
+  const _$_ScrollDownLoading();
+
+  @override
+  String toString() {
+    return 'MessagesState.scrollDownLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_ScrollDownLoading);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() getUserLoading,
+    required TResult Function() getUser,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
+  }) {
+    return scrollDownLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? getUserLoading,
+    TResult? Function()? getUser,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
+  }) {
+    return scrollDownLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? getUserLoading,
+    TResult Function()? getUser,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (scrollDownLoading != null) {
+      return scrollDownLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetUserLoading value) getUserLoading,
+    required TResult Function(_GetUser value) getUser,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
+  }) {
+    return scrollDownLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetUserLoading value)? getUserLoading,
+    TResult? Function(_GetUser value)? getUser,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
+  }) {
+    return scrollDownLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetUserLoading value)? getUserLoading,
+    TResult Function(_GetUser value)? getUser,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (scrollDownLoading != null) {
+      return scrollDownLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ScrollDownLoading implements MessagesState {
+  const factory _ScrollDownLoading() = _$_ScrollDownLoading;
+}
+
+/// @nodoc
+abstract class _$$_ScrollDownCopyWith<$Res> {
+  factory _$$_ScrollDownCopyWith(
+          _$_ScrollDown value, $Res Function(_$_ScrollDown) then) =
+      __$$_ScrollDownCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$_ScrollDownCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$_ScrollDown>
+    implements _$$_ScrollDownCopyWith<$Res> {
+  __$$_ScrollDownCopyWithImpl(
+      _$_ScrollDown _value, $Res Function(_$_ScrollDown) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$_ScrollDown implements _ScrollDown {
+  const _$_ScrollDown();
+
+  @override
+  String toString() {
+    return 'MessagesState.scrollDown()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$_ScrollDown);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() getUserLoading,
+    required TResult Function() getUser,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function() deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
+  }) {
+    return scrollDown();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? getUserLoading,
+    TResult? Function()? getUser,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function()? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
+  }) {
+    return scrollDown?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? getUserLoading,
+    TResult Function()? getUser,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function()? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (scrollDown != null) {
+      return scrollDown();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_GetUserLoading value) getUserLoading,
+    required TResult Function(_GetUser value) getUser,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
+  }) {
+    return scrollDown(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_GetUserLoading value)? getUserLoading,
+    TResult? Function(_GetUser value)? getUser,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
+  }) {
+    return scrollDown?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_GetUserLoading value)? getUserLoading,
+    TResult Function(_GetUser value)? getUser,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (scrollDown != null) {
+      return scrollDown(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ScrollDown implements MessagesState {
+  const factory _ScrollDown() = _$_ScrollDown;
 }

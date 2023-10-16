@@ -1,4 +1,5 @@
 import 'package:final_nuntius/config/navigation.dart';
+import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
@@ -9,6 +10,7 @@ Future<T?> showAlertDialog<T>({
   required BuildContext context,
   required String text,
   required void Function()? okPressed,
+  bool loadingCondition = false,
 }) {
   AlertDialog alert = AlertDialog(
     backgroundColor: AppColors.lightBlack,
@@ -27,23 +29,29 @@ Future<T?> showAlertDialog<T>({
       right: AppWidth.w15,
       left: AppWidth.w15,
     ),
-    actionsPadding: EdgeInsets.only(bottom: AppHeight.h5),
+    actionsPadding: EdgeInsets.only(bottom: AppHeight.h8, top: AppHeight.h5),
     actions: [
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Expanded(
             child: TextButton(
-              onPressed: okPressed,
-              child: const Text("Ok"),
-            ),
-          ),
-          Expanded(
-            child: TextButton(
               child: const Text("Cancel"),
               onPressed: () => Go.back(context: context),
             ),
-          )
+          ),
+          Expanded(
+            child: loadingCondition
+                ? Center(
+                    child: CustomCircleIndicator(
+                    size: AppSize.s15,
+                    strokeWidth: 1.2,
+                  ))
+                : TextButton(
+                    onPressed: okPressed,
+                    child: const Text("Ok"),
+                  ),
+          ),
         ],
       ),
     ],

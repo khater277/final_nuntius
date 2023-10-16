@@ -24,7 +24,7 @@ class ContactsScreen extends StatelessWidget {
           getContactsError: () =>
               const Center(child: LargeHeadText(text: "ERROR")),
           orElse: () => SliverScrollableView(
-            hasScrollBody: cubit.users.isNotEmpty,
+            isScrollable: cubit.users.isNotEmpty,
             child: Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,

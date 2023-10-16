@@ -19,7 +19,11 @@ class ChatsCubit extends Cubit<ChatsState> {
   List<UserData> allUsers = HiveHelper.getAllUsers() ?? [];
 
   void initChats({required List<UserData> users}) {
-    // allUsers = users;
+    if (users.isEmpty) {
+      allUsers = HiveHelper.getAllUsers() ?? [];
+    } else {
+      allUsers = users;
+    }
     emit(const ChatsState.initChats());
   }
 

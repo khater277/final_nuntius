@@ -119,4 +119,17 @@ class MessagesRepositoryImpl implements MessagesRepository {
           ServerFailure(error: error, type: NetworkErrorTypes.firestore));
     }
   }
+
+  @override
+  Future<Either<Failure, void>> seeMessage(
+      {required String phoneNumber}) async {
+    try {
+      final response =
+          messagesRemoteDataSource.seeMessage(phoneNumber: phoneNumber);
+      return Right(response);
+    } on FirebaseException catch (error) {
+      return Left(
+          ServerFailure(error: error, type: NetworkErrorTypes.firestore));
+    }
+  }
 }

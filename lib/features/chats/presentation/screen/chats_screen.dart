@@ -1,8 +1,7 @@
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
+import 'package:final_nuntius/core/shared_widgets/no_items_founded.dart';
 import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
-import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
-import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
 import 'package:final_nuntius/features/chats/presentation/widgets/chat_builder.dart';
@@ -40,10 +39,15 @@ class _ChatsScreenState extends State<ChatsScreen> {
         final ChatsCubit cubit = ChatsCubit.get(context);
         return state.maybeWhen(
           getChatsLoading: () => const Center(child: CustomCircleIndicator()),
+          initChats: () => const Center(child: CustomCircleIndicator()),
           orElse: () => SliverScrollableView(
-            hasScrollBody: true,
+            isScrollable: cubit.users.isNotEmpty,
             child: cubit.users.isEmpty
-                ? const NoChatsFounded()
+                ? const NoItemsFounded(
+                    text:
+                        "no chats founded , start now new chats with your friends.",
+                    icon: IconBroken.Chat,
+                  )
                 : Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
@@ -68,36 +72,6 @@ class _ChatsScreenState extends State<ChatsScreen> {
           ),
         );
       },
-    );
-  }
-}
-
-class NoChatsFounded extends StatelessWidget {
-  const NoChatsFounded({
-    super.key,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Icon(
-            IconBroken.Chat,
-            size: AppSize.s100,
-            color: AppColors.grey.withOpacity(0.4),
-          ),
-          Padding(
-              padding: EdgeInsets.symmetric(horizontal: AppWidth.w5),
-              child: const SecondaryText(
-                text:
-                    "no chats founded , start now new chats with your friends.",
-                maxLines: 10,
-                center: true,
-              )),
-        ],
-      ),
     );
   }
 }

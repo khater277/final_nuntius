@@ -26,4 +26,6 @@ abstract class MessagesRepository {
   });
 
   Future<Either<Failure, void>> deleteLastMessage({required String userPhone});
+
+  Future<Either<Failure, void>> seeMessage({required String phoneNumber});
 }

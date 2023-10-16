@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:collection/collection.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
@@ -23,7 +23,9 @@ import 'package:flutter_cache_manager/flutter_cache_manager.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:open_file/open_file.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:uuid/uuid.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 
 part 'messages_cubit.freezed.dart';
 part 'messages_state.dart';
@@ -53,17 +55,16 @@ class MessagesCubit extends Cubit<MessagesState> {
     this.user = user;
     homeCubit.initUser(user: user);
     getMessages(isInit: true, phoneNumber: phoneNumber);
-    
     getUser(phoneNumber: phoneNumber);
   }
 
   void disposeMessages({required HomeCubit homeCubit}) {
-    // messageController!.dispose();
     scrollController!.dispose();
-    // user = null;
+    videosThumbnails = {};
     messageType = null;
     file = null;
     homeCubit.disposeUser();
+
     emit(const MessagesState.disposeControllers());
   }
 
@@ -98,20 +99,49 @@ class MessagesCubit extends Cubit<MessagesState> {
         snapshots.listen((event) {
           emit(const MessagesState.initControllers());
           List<MessageModel> messages = [];
+
           for (var doc in event.docs) {
             messages.add(MessageModel.fromJson(doc.data()));
           }
-          // if (isInit == true) scrollDown();
+
           this.messages = messages;
-          // print("==============>${messages.last.message}");
-          // this.messages.sort(
-          //       (a, b) =>
-          //           DateTime.parse(a.date!).compareTo(DateTime.parse(b.date!)),
-          //     );
+          final replyToStoryVideoMessages = messages
+              .where((element) =>
+                  (element.isStoryReply == true &&
+                      element.storyMedia!.isNotEmpty &&
+                      element.isStoryImageReply != true) &&
+                  (!videosThumbnails.containsKey(element.messageId)))
+              .toList();
+          createVideosThumbnails(
+            replyToStoryVideoMessages: replyToStoryVideoMessages,
+            // messages: messages,
+          );
           emit(MessagesState.getMessages(messages));
         });
       },
     );
+  }
+
+  Map<String, String> videosThumbnails = {};
+  void createVideosThumbnails(
+      {required List<MessageModel> replyToStoryVideoMessages}) async {
+    for (var message in replyToStoryVideoMessages) {
+      String? videoThumbnail;
+      try {
+        videoThumbnail = await VideoThumbnail.thumbnailFile(
+          video: message.storyMedia!,
+          thumbnailPath: (await getTemporaryDirectory()).path,
+          imageFormat: ImageFormat.WEBP,
+          maxHeight: 64,
+          quality: 75,
+        );
+      } catch (error) {
+        videoThumbnail = "";
+        print("===========>Error in get video thumbnail");
+      }
+      videosThumbnails[message.messageId!] = videoThumbnail!;
+    }
+    emit(const MessagesState.createVideosThumbnails());
   }
 
   Future<void> sendMessage({
@@ -162,6 +192,7 @@ class MessagesCubit extends Cubit<MessagesState> {
         messageType = null;
         file = null;
         emit(const MessagesState.sendMessage());
+
         if (user!.token != HiveHelper.getCurrentUser()!.token) {
           final pushNotification = await messagesRepository.pushNotification(
               fcmBody: AppFunctions.getMessageNotificationFcmBody(user: user!));
@@ -172,7 +203,7 @@ class MessagesCubit extends Cubit<MessagesState> {
   }
 
   void scrollDown() {
-    Future.delayed(const Duration(milliseconds: 500)).then((value) {
+    Future.delayed(const Duration(milliseconds: 600)).then((value) {
       if (scrollController!.positions.isNotEmpty) {
         scrollController!.animateTo(
           scrollController!.position.maxScrollExtent + AppHeight.h40,
@@ -180,6 +211,7 @@ class MessagesCubit extends Cubit<MessagesState> {
           curve: Curves.fastOutSlowIn,
         );
       }
+      emit(const MessagesState.scrollDown());
     });
   }
 
@@ -358,5 +390,22 @@ class MessagesCubit extends Cubit<MessagesState> {
         callType,
       )),
     );
+  }
+
+  void seeMessage({required String phoneNumber}) async {
+    final response =
+        await messagesRepository.seeMessage(phoneNumber: phoneNumber);
+    response.fold(
+      (failure) => null,
+      (result) => print("====================>See Message Done"),
+    );
+  }
+
+  void readMessage({required List<LastMessageModel> lastMessages}) {
+    final lastMessage = lastMessages.firstWhereOrNull(
+        (lastMessageModel) => lastMessageModel.senderID == user!.uId);
+    if (lastMessage != null && lastMessage.isRead != true) {
+      seeMessage(phoneNumber: user!.phone!);
+    }
   }
 }

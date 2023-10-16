@@ -30,7 +30,7 @@ class ChatBuilder extends StatelessWidget {
           swipeToDelete(context: context, rightPadding: AppWidth.w10),
       endActionPane: swipeToDelete(context: context, leftPadding: AppWidth.w10),
       child: Padding(
-        padding: EdgeInsets.symmetric(vertical: AppHeight.h14),
+        padding: EdgeInsets.symmetric(vertical: AppHeight.h10),
         child: Column(
           children: [
             GestureDetector(
@@ -54,7 +54,7 @@ class ChatBuilder extends StatelessWidget {
                             date: DateFormat('d MMM , yyyy')
                                 .format(DateTime.parse(lastMessage.date!)),
                           ),
-                          SizedBox(height: AppHeight.h4),
+                          SizedBox(height: AppHeight.h2),
                           ChatLastMessage(
                             messageType: lastMessage.isImage == true
                                 ? MessageType.image

@@ -1,8 +1,8 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
+import 'package:final_nuntius/core/shared_widgets/no_items_founded.dart';
 import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
@@ -24,7 +24,7 @@ class StoriesScreen extends StatefulWidget {
 class _StoriesScreenState extends State<StoriesScreen> {
   @override
   void initState() {
-    StoriesCubit.get(context).getStories(context);
+    StoriesCubit.get(context).getStories(context: context);
     StoriesCubit.get(context).contactsStoriesChanged();
     super.initState();
   }
@@ -60,21 +60,21 @@ class _StoriesScreenState extends State<StoriesScreen> {
             getContactsCurrentStoriesLoading: () =>
                 const Center(child: CustomCircleIndicator()),
             orElse: () => SliverScrollableView(
-                hasScrollBody: true,
+                isScrollable: cubit.viewedStories.isNotEmpty ||
+                    cubit.recentStories.isNotEmpty,
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(height: AppHeight.h5),
                     MyStory(cubit: cubit),
                     SizedBox(height: AppHeight.h5),
-                    Divider(
-                      color: AppColors.grey.withOpacity(0.3),
-                    ),
+                    Divider(color: AppColors.grey.withOpacity(0.3)),
                     SizedBox(height: AppHeight.h5),
                     state.maybeWhen(
                       getContactsCurrentStoriesLoading: () =>
                           const Center(child: CustomCircleIndicator()),
                       orElse: () => CurrentStories(cubit: cubit),
+                      // CurrentStories(cubit: cubit),
                     ),
                   ],
                 )));
@@ -94,21 +94,10 @@ class CurrentStories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (cubit.recentStories.isEmpty && cubit.viewedStories.isEmpty) {
-      return Expanded(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              IconBroken.Camera,
-              color: AppColors.grey.withOpacity(0.7),
-              size: AppSize.s100,
-            ),
-            SizedBox(height: AppHeight.h8),
-            const SecondaryText(
-              text: "There is no stories to show yet.",
-              // isButton: true,
-            ),
-          ],
+      return const Expanded(
+        child: NoItemsFounded(
+          text: "There is no stories to show yet.",
+          icon: IconBroken.Camera,
         ),
       );
     } else {

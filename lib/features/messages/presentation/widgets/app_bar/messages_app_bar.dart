@@ -4,6 +4,8 @@ import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
+import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/app_bar/call_button.dart';
 import 'package:flutter/material.dart';
 
@@ -22,6 +24,8 @@ AppBar messagesAppBar({required String name}) {
       size: FontSize.s15,
     ),
     leading: Builder(builder: (context) {
+      MessagesCubit.get(context)
+          .readMessage(lastMessages: ChatsCubit.get(context).lastMessages);
       return const CustomBackButton();
     }),
     actions: [

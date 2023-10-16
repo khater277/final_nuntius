@@ -7,6 +7,7 @@ import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:final_nuntius/features/stories/presentation/screens/story_view_screen.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/my_story/add_my_story_profile_image.dart';
+import 'package:final_nuntius/features/stories/presentation/widgets/stories/my_story/edit_my_stories.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/stories/my_story/my_story_date.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,6 @@ class MyStory extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (cubit.myStories.isNotEmpty) {
-          // cubit.open
           Go.to(
               context: context,
               screen: StoryViewScreen(
@@ -51,7 +51,7 @@ class MyStory extends StatelessWidget {
                 ),
                 SizedBox(height: AppHeight.h2),
                 cubit.myStories.isNotEmpty
-                    ? MyStoryDate(stories: cubit.myStories)
+                    ? MyStoryDate(date: cubit.myStories.last.date!)
                     : SmallHeadText(
                         text: "tab to add stories update",
                         size: FontSize.s11,
@@ -59,6 +59,8 @@ class MyStory extends StatelessWidget {
                       ),
               ],
             ),
+            const Spacer(),
+            EditMyStories(),
           ],
         ),
       ),

@@ -1,4 +1,3 @@
-import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
@@ -15,7 +14,8 @@ class NoItemsFounded extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Center(
+        child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
@@ -23,14 +23,16 @@ class NoItemsFounded extends StatelessWidget {
           size: AppSize.s100,
           color: AppColors.grey.withOpacity(0.4),
         ),
-        SizedBox(
-          height: AppHeight.h4,
-        ),
-        SecondaryText(
-          text: text,
-          size: FontSize.s13,
+        Text(
+          text,
+          style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                fontSize: FontSize.s13,
+                color: AppColors.grey.withOpacity(0.5),
+                height: 1.5,
+              ),
+          textAlign: TextAlign.center,
         ),
       ],
-    );
+    ));
   }
 }

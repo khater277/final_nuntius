@@ -9,13 +9,12 @@ import 'package:flutter/material.dart';
 class StoryUserNameAndText extends StatelessWidget {
   final String name;
   final String text;
-
-  final MessageType messageType;
+  final MessageType storyType;
   const StoryUserNameAndText({
     super.key,
     required this.name,
     required this.text,
-    required this.messageType,
+    required this.storyType,
   });
 
   @override
@@ -34,9 +33,9 @@ class StoryUserNameAndText extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
-                messageType == MessageType.video
+                storyType == MessageType.video
                     ? IconBroken.Video
-                    : messageType == MessageType.image
+                    : storyType == MessageType.image
                         ? IconBroken.Image
                         : IconBroken.Document,
                 color: AppColors.grey,

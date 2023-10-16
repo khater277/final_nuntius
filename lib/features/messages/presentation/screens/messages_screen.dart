@@ -7,6 +7,7 @@ import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/calls/presentation/screens/video_call_screen.dart';
 import 'package:final_nuntius/features/calls/presentation/screens/voice_call_screen.dart';
+import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
 import 'package:final_nuntius/features/messages/presentation/widgets/app_bar/messages_app_bar.dart';
@@ -45,22 +46,22 @@ class _MessagesScreenState extends State<MessagesScreen> {
       user: widget.user,
       phoneNumber: widget.user.phone!,
     );
-    // messagesCubit.getUser(phoneNumber: widget.user.phone!);
-    print("AAAAAAA777777777777777AAAAAAAAAAAAAAAAAAA");
+    MessagesCubit.get(context)
+        .readMessage(lastMessages: ChatsCubit.get(context).lastMessages);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      messagesCubit.scrollDown();
+    });
     super.initState();
   }
 
   @override
   void dispose() {
     if (widget.fromNotification == false) {
-      print("555555555555555555555555555555");
       messagesCubit.disposeMessages(homeCubit: homeCubit);
     }
-
     super.dispose();
   }
 
-  // List<MessageModel> messages = [];
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<MessagesCubit, MessagesState>(
@@ -111,79 +112,86 @@ class _MessagesScreenState extends State<MessagesScreen> {
             getMessagesLoading: () => const Scaffold(
                   body: Center(child: CustomCircleIndicator()),
                 ),
-            orElse: () => GestureDetector(
-                  onTap: () => FocusScope.of(context).unfocus(),
-                  child: Scaffold(
-                    appBar: messagesAppBar(name: cubit.user!.name!),
-                    body: Padding(
-                      padding: EdgeInsets.only(
-                        top: AppHeight.h5,
-                        right: AppWidth.w5,
-                        left: AppWidth.w5,
-                        // bottom: MediaQuery.of(context).viewInsets.bottom,
-                      ),
-                      child: Column(
-                        // alignment: AlignmentDirectional.bottomCenter,
-                        children: [
-                          Expanded(
-                            // height: double.infinity,
-                            child: ListView.separated(
-                              controller: cubit.scrollController!,
-                              shrinkWrap: true,
-                              physics: const BouncingScrollPhysics(),
-                              itemCount: cubit.messages.length,
-                              itemBuilder: (BuildContext context, int index) =>
-                                  Column(
-                                children: [
-                                  if (index == 0 ||
-                                      DateFormat.yMMMEd().format(
-                                            DateTime.parse(
-                                                cubit.messages[index].date!),
-                                          ) !=
-                                          DateFormat.yMMMEd().format(
-                                            DateTime.parse(cubit
-                                                .messages[index - 1].date!),
-                                          ))
-                                    DayDate(date: cubit.messages[index].date!),
-                                  Row(
-                                    children: [
-                                      Flexible(
-                                        child: MessageBubble(
-                                          message: cubit.messages[index],
-                                          isLastMessage: index ==
-                                              cubit.messages.length - 1,
-                                        ),
-                                      ),
-                                      if (state ==
-                                              const MessagesState
-                                                  .openDocMessageLoading() &&
-                                          cubit.openedDocMessageId ==
-                                              cubit.messages[index].messageId)
-                                        Padding(
-                                          padding: EdgeInsets.symmetric(
-                                              horizontal: AppWidth.w5),
-                                          child: CustomCircleIndicator(
-                                            size: AppSize.s18,
-                                            strokeWidth: AppSize.s1,
+            orElse: () => WillPopScope(
+                  onWillPop: () async {
+                    cubit.readMessage(
+                        lastMessages: ChatsCubit.get(context).lastMessages);
+                    return true;
+                  },
+                  child: GestureDetector(
+                    onTap: () => FocusScope.of(context).unfocus(),
+                    child: Scaffold(
+                      appBar: messagesAppBar(name: cubit.user!.name!),
+                      body: Padding(
+                        padding: EdgeInsets.only(
+                          top: AppHeight.h5,
+                          right: AppWidth.w5,
+                          left: AppWidth.w5,
+                        ),
+                        child: Column(
+                          children: [
+                            Expanded(
+                              child: ListView.separated(
+                                controller: cubit.scrollController!,
+                                shrinkWrap: true,
+                                physics: const BouncingScrollPhysics(),
+                                itemCount: cubit.messages.length,
+                                itemBuilder:
+                                    (BuildContext context, int index) => Column(
+                                  children: [
+                                    if (index == 0 ||
+                                        DateFormat.yMMMEd().format(
+                                              DateTime.parse(
+                                                  cubit.messages[index].date!),
+                                            ) !=
+                                            DateFormat.yMMMEd().format(
+                                              DateTime.parse(cubit
+                                                  .messages[index - 1].date!),
+                                            ))
+                                      DayDate(
+                                          date: cubit.messages[index].date!),
+                                    Row(
+                                      children: [
+                                        Flexible(
+                                          child: MessageBubble(
+                                            message: cubit.messages[index],
+                                            isLastMessage: index ==
+                                                cubit.messages.length - 1,
                                           ),
                                         ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              separatorBuilder:
-                                  (BuildContext context, int index) => SizedBox(
-                                height: AppHeight.h8,
+                                        if (state ==
+                                                const MessagesState
+                                                    .openDocMessageLoading() &&
+                                            cubit.openedDocMessageId ==
+                                                cubit.messages[index].messageId)
+                                          Padding(
+                                            padding: EdgeInsets.symmetric(
+                                                horizontal: AppWidth.w5),
+                                            child: CustomCircleIndicator(
+                                              size: AppSize.s18,
+                                              strokeWidth: AppSize.s1,
+                                            ),
+                                          ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                                separatorBuilder:
+                                    (BuildContext context, int index) =>
+                                        SizedBox(
+                                  height: AppHeight.h8,
+                                ),
                               ),
                             ),
-                          ),
-                          SendMessageTextField(
-                            loadingCondition: state ==
-                                    const MessagesState.sendMessageLoading() ||
-                                state ==
-                                    const MessagesState.getFilePercentage(),
-                          ),
-                        ],
+                            SendMessageTextField(
+                              loadingCondition: state ==
+                                      const MessagesState
+                                          .sendMessageLoading() ||
+                                  state ==
+                                      const MessagesState.getFilePercentage(),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

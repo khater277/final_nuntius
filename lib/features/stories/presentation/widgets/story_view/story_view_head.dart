@@ -1,9 +1,7 @@
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
@@ -49,25 +47,6 @@ class StoryViewHead extends StatelessWidget {
               StoryDate(storyDate: stories[cubit.storyIndex].date!)
             ],
           ),
-          const Spacer(),
-          if (user.uId == HiveHelper.getCurrentUser()!.uId)
-            IconButton(
-                onPressed: () {
-                  // cubit.storyController!.pause();
-                  // showAlertDialog(
-                  //   context: context,
-                  //   text: "Are you sure you want to delete this story?",
-                  //   okPressed: () => cubit.deleteStory(
-                  //     context: context,
-                  //     storyId: stories[cubit.storyIndex].id!,
-                  //   ),
-                  // ).then((value) => cubit.storyController!.play());
-                },
-                icon: Icon(
-                  IconBroken.Delete,
-                  color: AppColors.red,
-                  size: AppSize.s18,
-                ))
         ],
       ),
     );

@@ -27,6 +27,8 @@ abstract class MessagesRemoteDataSource {
   });
 
   Future<void> deleteLastMessage({required String userPhone});
+
+  Future<void> seeMessage({required String phoneNumber});
 }
 
 class MessagesRemoteDataSourceImpl implements MessagesRemoteDataSource {
@@ -77,5 +79,10 @@ class MessagesRemoteDataSourceImpl implements MessagesRemoteDataSource {
       {required String messageId, required String userPhone}) {
     return firebaseHelper.deleteMessage(
         messageId: messageId, userPhone: userPhone);
+  }
+
+  @override
+  Future<void> seeMessage({required String phoneNumber}) {
+    return firebaseHelper.seeMessage(phoneNumber: phoneNumber);
   }
 }

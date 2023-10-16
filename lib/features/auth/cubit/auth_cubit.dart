@@ -281,6 +281,8 @@ class AuthCubit extends Cubit<AuthState> {
         emit(AuthState.updateUserTokenError(failure.getMessage()));
       },
       (result) {
+        HiveHelper.setCurrentUser(
+            user: HiveHelper.getCurrentUser()!.copyWith(token: token));
         emit(const AuthState.updateUserToken());
       },
     );

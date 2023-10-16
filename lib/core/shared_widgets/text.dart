@@ -76,13 +76,16 @@ class PrimaryText extends StatelessWidget {
   final bool center;
   final double? size;
   final bool isEllipsis;
-  const PrimaryText(
-      {super.key,
-      required this.text,
-      this.color,
-      this.size,
-      this.center = false,
-      this.isEllipsis = true});
+  final int maxLines;
+  const PrimaryText({
+    super.key,
+    required this.text,
+    this.color,
+    this.size,
+    this.center = false,
+    this.isEllipsis = true,
+    this.maxLines = 1,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -93,6 +96,7 @@ class PrimaryText extends StatelessWidget {
             fontSize: size ?? FontSize.s14,
           ),
       textAlign: center ? TextAlign.center : null,
+      maxLines: maxLines,
       overflow: isEllipsis ? TextOverflow.ellipsis : null,
     );
   }

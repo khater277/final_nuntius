@@ -10,6 +10,10 @@ import 'package:final_nuntius/features/chats/data/datasources/chats_remote_data_
 import 'package:final_nuntius/features/chats/data/repositories/chats_repository.dart';
 import 'package:final_nuntius/features/chats/data/repositories/chats_repository_impl.dart';
 import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
+import 'package:final_nuntius/features/edit_profile/cubit/edit_profile_cubit.dart';
+import 'package:final_nuntius/features/edit_profile/data/datasources/edit_profile_remote_data_source.dart';
+import 'package:final_nuntius/features/edit_profile/data/repositories/edit_profile_repository.dart';
+import 'package:final_nuntius/features/edit_profile/data/repositories/edit_profile_repository_impl.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/home/data/datasources/home_remote_data_source.dart';
 import 'package:final_nuntius/features/home/data/repositories/home_repository.dart';
@@ -62,6 +66,11 @@ void setupGetIt() {
       ));
   di.registerLazySingleton<SearchCubit>(() => SearchCubit());
 
+  di.registerLazySingleton<EditProfileCubit>(() => EditProfileCubit(
+        editProfileRepository: di(),
+        authRepository: di(),
+      ));
+
   /// DATASOURCES
   di.registerLazySingleton<CallsRemoteDataSource>(
       () => CallsRemoteDataSourceImpl(
@@ -86,6 +95,11 @@ void setupGetIt() {
           ));
   di.registerLazySingleton<StoriesRemoteDataSource>(
       () => StoriesRemoteDataSourceImpl(
+            firebaseHelper: di(),
+          ));
+
+  di.registerLazySingleton<EditProfileRemoteDataSource>(
+      () => EditProfileRemoteDataSourceImpl(
             firebaseHelper: di(),
           ));
 
@@ -115,6 +129,12 @@ void setupGetIt() {
         storiesRemoteDataSource: di(),
         networkInfo: di(),
       ));
+
+  di.registerLazySingleton<EditProfileRepository>(
+      () => EditProfileRepositoryImpl(
+            editProfileRemoteDataSource: di(),
+            networkInfo: di(),
+          ));
 
   /// NETWORK INFO
   di.registerLazySingleton<NetworkInfo>(

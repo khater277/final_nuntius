@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:collection/collection.dart';
-import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
@@ -23,8 +22,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:story_view/story_view.dart';
 import 'package:uuid/uuid.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 
 part 'stories_cubit.freezed.dart';
 part 'stories_state.dart';
@@ -111,6 +112,7 @@ class StoriesCubit extends Cubit<StoriesState> {
 
   void sendStory({String? media, MessageType? mediaType}) async {
     emit(const StoriesState.sendStoryLoading());
+
     final storyModel = StoryModel(
       id: const Uuid().v4(),
       date: DateTime.now().toUtc().toString(),
@@ -195,7 +197,13 @@ class StoriesCubit extends Cubit<StoriesState> {
   }
 
   List<StoryModel> myStories = [];
-  void getStories(context) async {
+  bool stopLoading = false;
+  void cancelLoading() {
+    stopLoading = true;
+    emit(const StoriesState.initAddTextStory());
+  }
+
+  void getStories({required BuildContext context}) async {
     emit(const StoriesState.getMyStoriesLoading());
     final response = await storiesRepository.getStories();
     response.fold(
@@ -218,7 +226,10 @@ class StoriesCubit extends Cubit<StoriesState> {
           }
           this.myStories = myStories;
           print("================>${this.myStories.length}");
-          // emit(const StoriesState.getMyStories());
+          if (stopLoading) {
+            emit(const StoriesState.getMyStories());
+          }
+          stopLoading = false;
         });
       },
     );
@@ -327,44 +338,14 @@ class StoriesCubit extends Cubit<StoriesState> {
     ).then((value) => storyController!.play());
   }
 
-  void deleteStory(
-      {required BuildContext context, required String storyId}) async {
-    emit(const StoriesState.deleteStoryLoading());
+  void deleteStory({required String storyId}) async {
+    emit(StoriesState.deleteStoryLoading(storyId));
     final response = await storiesRepository.deleteStory(storyId: storyId);
     response.fold(
       (failure) => emit(StoriesState.deleteStoryError(failure.getMessage())),
-      (result) async {
-        if (myStories.length == 1) {
-          final response = await storiesRepository.deleteLastStory();
-          response.fold(
-            (failure) =>
-                emit(StoriesState.deleteStoryError(failure.getMessage())),
-            (result) {
-              Go.back(context: context);
-              Go.back(context: context);
-              emit(const StoriesState.deleteStory());
-            },
-          );
-        } else {
-          myStories.removeAt(storyIndex);
-          final response = await storiesRepository.updateLastStory(
-              storyModel: myStories.last);
-          response.fold(
-            (failure) =>
-                emit(StoriesState.deleteStoryError(failure.getMessage())),
-            (result) {
-              // changeStoryIndex(index: 0);
-              // Go.back(context: context);
-              // storyController!.play();
-              // storyController!.play();
-
-              // print("asdfghjkl=======>${storyItems.length}");
-              // if (storyItems.length > 1) {
-              //   storyController!.next();
-              // }
-            },
-          );
-        }
+      (result) {
+        myStories.removeWhere((element) => element.id == storyId);
+        emit(const StoriesState.deleteStory());
       },
     );
   }
@@ -401,16 +382,19 @@ class StoriesCubit extends Cubit<StoriesState> {
         viewedStories = [];
         recentStories = [];
         for (var contactStory in stories) {
-          if (DateTime.now()
-                  .toUtc()
-                  .difference(DateTime.parse(contactStory.stories!.last.date!))
-                  .inHours <
-              24) {
-            if (contactStory.stories!.last.viewersPhones!
+          final validStories = contactStory.stories!
+              .where((element) => (DateTime.now()
+                      .toUtc()
+                      .difference(DateTime.parse(element.date!))
+                      .inHours <
+                  24))
+              .toList();
+          if (validStories.isNotEmpty) {
+            if (validStories.last.viewersPhones!
                 .contains(HiveHelper.getCurrentUser()!.phone)) {
-              viewedStories.add(contactStory);
+              viewedStories.add(contactStory.copyWith(stories: validStories));
             } else {
-              recentStories.add(contactStory);
+              recentStories.add(contactStory.copyWith(stories: validStories));
             }
           }
         }
@@ -439,9 +423,9 @@ class StoriesCubit extends Cubit<StoriesState> {
           emit(StoriesState.contactsStoriesChangedError(failure.getMessage())),
       (stream) {
         stream.listen((event) {
-          if (!empty) {
-            emit(const StoriesState.contactsStoriesChanged());
-          }
+          // if (!empty) {
+          //   emit(const StoriesState.contactsStoriesChanged());
+          // }
           getContactsCurrentStories(users: users, isStream: true);
         });
       },
@@ -530,5 +514,34 @@ class StoriesCubit extends Cubit<StoriesState> {
         emit(const StoriesState.replyToStory());
       },
     );
+  }
+
+  Map<String, String> videosThumbnails = {};
+  void createVideosThumbnails() async {
+    final videoStories =
+        myStories.where((element) => element.isVideo == true).toList();
+
+    if (videoStories.isNotEmpty) {
+      for (var story in videoStories) {
+        if (!videosThumbnails.keys.contains(story.id!)) {
+          String? videoThumbnail;
+          try {
+            videoThumbnail = await VideoThumbnail.thumbnailFile(
+              video: story.media!,
+              thumbnailPath: (await getTemporaryDirectory()).path,
+              imageFormat: ImageFormat.WEBP,
+              maxHeight: 64,
+              quality: 75,
+            );
+          } catch (error) {
+            videoThumbnail = "";
+            print("===========>Error in get video thumbnail");
+          }
+
+          videosThumbnails[story.id!] = videoThumbnail!;
+        }
+      }
+    }
+    emit(const StoriesState.createVideosThumbnails());
   }
 }

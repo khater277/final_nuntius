@@ -6,11 +6,13 @@ import 'package:final_nuntius/features/auth/presentation/screens/login_screen.da
 import 'package:final_nuntius/features/calls/cubit/calls_cubit.dart';
 import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
 import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
+import 'package:final_nuntius/features/edit_profile/cubit/edit_profile_cubit.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/home/presentation/screens/home_screen.dart';
 import 'package:final_nuntius/features/messages/cubit/messages_cubit.dart';
 import 'package:final_nuntius/features/search/cubit/search_cubit.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
+import 'package:final_nuntius/features/stories/presentation/screens/asd.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -61,6 +63,9 @@ class MyApp extends StatelessWidget {
               ),
               BlocProvider(
                 create: (BuildContext context) => di<SearchCubit>(),
+              ),
+              BlocProvider(
+                create: (BuildContext context) => di<EditProfileCubit>(),
               ),
             ],
             child: MaterialApp(
