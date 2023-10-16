@@ -1,6 +1,7 @@
 import 'package:collection/collection.dart';
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
+import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_sounds.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/calls/data/models/call_notification_data/call_data.dart';
@@ -53,6 +54,9 @@ class FcmHelper {
               image: userModel == null ? "" : userModel.image!,
               name: name!,
               phoneNumber: callData.phoneNumber!,
+              callType: callData.callType == 'voice'
+                  ? CallType.voice
+                  : CallType.video,
             ));
       }
     });

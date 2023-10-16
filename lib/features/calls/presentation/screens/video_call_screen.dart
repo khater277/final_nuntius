@@ -1,7 +1,6 @@
 // ignore_for_file: use_build_context_synchronously
 
 import 'package:final_nuntius/config/navigation.dart';
-import 'package:final_nuntius/core/shared_widgets/back_button.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
@@ -120,9 +119,9 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
       builder: (context, state) {
         final cubit = CallsCubit.get(context);
         return Scaffold(
-          appBar: AppBar(
-            leading: const CustomBackButton(),
-          ),
+          // appBar: AppBar(
+          //   leading: const CustomBackButton(),
+          // ),
           body: Stack(
             children: [
               if (!cubit.isJoined || cubit.remoteUid == null)
@@ -150,9 +149,12 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
                 )
               else
                 FriendVideoCallView(channelName: widget.channelName),
-              const Align(
+              Align(
                 alignment: AlignmentDirectional.topEnd,
-                child: MyVideoCallView(),
+                child: Padding(
+                  padding: EdgeInsets.only(top: AppHeight.h20),
+                  child: const MyVideoCallView(),
+                ),
               ),
             ],
           ),

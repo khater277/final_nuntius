@@ -236,7 +236,7 @@ class FirebaseHelperImpl implements FirebaseHelper {
         .collection(Collections.chats)
         .doc(phoneNumber)
         .collection(Collections.messages)
-        .orderBy('date')
+        .orderBy('date', descending: true)
         .snapshots();
   }
 

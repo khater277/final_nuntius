@@ -6,7 +6,6 @@ import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_preferences/shared_pref_helper.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_functions.dart';
-import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository.dart';
 import 'package:final_nuntius/features/calls/data/repositories/calls_repository.dart';
@@ -99,7 +98,6 @@ class MessagesCubit extends Cubit<MessagesState> {
         snapshots.listen((event) {
           emit(const MessagesState.initControllers());
           List<MessageModel> messages = [];
-
           for (var doc in event.docs) {
             messages.add(MessageModel.fromJson(doc.data()));
           }
@@ -113,9 +111,7 @@ class MessagesCubit extends Cubit<MessagesState> {
                   (!videosThumbnails.containsKey(element.messageId)))
               .toList();
           createVideosThumbnails(
-            replyToStoryVideoMessages: replyToStoryVideoMessages,
-            // messages: messages,
-          );
+              replyToStoryVideoMessages: replyToStoryVideoMessages);
           emit(MessagesState.getMessages(messages));
         });
       },
@@ -206,7 +202,7 @@ class MessagesCubit extends Cubit<MessagesState> {
     Future.delayed(const Duration(milliseconds: 600)).then((value) {
       if (scrollController!.positions.isNotEmpty) {
         scrollController!.animateTo(
-          scrollController!.position.maxScrollExtent + AppHeight.h40,
+          scrollController!.position.minScrollExtent,
           duration: const Duration(milliseconds: 500),
           curve: Curves.fastOutSlowIn,
         );

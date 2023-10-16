@@ -25,6 +25,7 @@ class ReceiveCallScreen extends StatefulWidget {
   final String image;
   final String name;
   final String phoneNumber;
+  final CallType callType;
   const ReceiveCallScreen({
     Key? key,
     required this.userToken,
@@ -33,6 +34,7 @@ class ReceiveCallScreen extends StatefulWidget {
     required this.image,
     required this.name,
     required this.phoneNumber,
+    required this.callType,
   }) : super(key: key);
 
   @override
@@ -112,7 +114,7 @@ class _ReceiveCallScreenState extends State<ReceiveCallScreen> {
                           userToken: widget.userToken,
                         ),
                         AcceptButton(
-                          callType: CallType.video,
+                          callType: widget.callType,
                           rtcToken: widget.rtcToken,
                           channelName: widget.channelName,
                           image: widget.image,

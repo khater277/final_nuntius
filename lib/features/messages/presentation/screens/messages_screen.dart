@@ -49,7 +49,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
     MessagesCubit.get(context)
         .readMessage(lastMessages: ChatsCubit.get(context).lastMessages);
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      messagesCubit.scrollDown();
+      // messagesCubit.scrollDown();
     });
     super.initState();
   }
@@ -103,6 +103,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
             message: "$errorMsg , please check agora token server.",
             color: AppColors.red,
           ),
+          // sendMessage: () => MessagesCubit.get(context).scrollDown(),
           orElse: () {},
         );
       },
@@ -133,20 +134,21 @@ class _MessagesScreenState extends State<MessagesScreen> {
                             Expanded(
                               child: ListView.separated(
                                 controller: cubit.scrollController!,
+                                reverse: true,
                                 shrinkWrap: true,
                                 physics: const BouncingScrollPhysics(),
                                 itemCount: cubit.messages.length,
                                 itemBuilder:
                                     (BuildContext context, int index) => Column(
                                   children: [
-                                    if (index == 0 ||
+                                    if (index == cubit.messages.length - 1 ||
                                         DateFormat.yMMMEd().format(
                                               DateTime.parse(
                                                   cubit.messages[index].date!),
                                             ) !=
                                             DateFormat.yMMMEd().format(
                                               DateTime.parse(cubit
-                                                  .messages[index - 1].date!),
+                                                  .messages[index + 1].date!),
                                             ))
                                       DayDate(
                                           date: cubit.messages[index].date!),
@@ -174,6 +176,8 @@ class _MessagesScreenState extends State<MessagesScreen> {
                                           ),
                                       ],
                                     ),
+                                    if (0 == index)
+                                      SizedBox(height: AppHeight.h5),
                                   ],
                                 ),
                                 separatorBuilder:

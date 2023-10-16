@@ -60,7 +60,7 @@ class MyStory extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            EditMyStories(),
+            const EditMyStories(),
           ],
         ),
       ),

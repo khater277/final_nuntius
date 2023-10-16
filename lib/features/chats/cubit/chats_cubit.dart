@@ -1,5 +1,4 @@
 import 'package:collection/collection.dart';
-import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_preferences/shared_pref_helper.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/chats/data/repositories/chats_repository.dart';
@@ -16,14 +15,10 @@ class ChatsCubit extends Cubit<ChatsState> {
       : super(const ChatsState.initial());
 
   static ChatsCubit get(context) => BlocProvider.of(context);
-  List<UserData> allUsers = HiveHelper.getAllUsers() ?? [];
+  List<UserData> allUsers = [];
 
   void initChats({required List<UserData> users}) {
-    if (users.isEmpty) {
-      allUsers = HiveHelper.getAllUsers() ?? [];
-    } else {
-      allUsers = users;
-    }
+    allUsers = users;
     emit(const ChatsState.initChats());
   }
 

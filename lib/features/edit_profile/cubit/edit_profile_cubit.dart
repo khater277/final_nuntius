@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:bloc/bloc.dart';
 import 'package:final_nuntius/core/firebase/collections_keys.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/features/auth/data/repositories/auth_repository.dart';
