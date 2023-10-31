@@ -166,25 +166,26 @@ class _$StorageExceptionHandlerCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$NoInternetConnectionCopyWith<$Res> {
-  factory _$$NoInternetConnectionCopyWith(_$NoInternetConnection value,
-          $Res Function(_$NoInternetConnection) then) =
-      __$$NoInternetConnectionCopyWithImpl<$Res>;
+abstract class _$$NoInternetConnectionImplCopyWith<$Res> {
+  factory _$$NoInternetConnectionImplCopyWith(_$NoInternetConnectionImpl value,
+          $Res Function(_$NoInternetConnectionImpl) then) =
+      __$$NoInternetConnectionImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NoInternetConnectionCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$NoInternetConnection>
-    implements _$$NoInternetConnectionCopyWith<$Res> {
-  __$$NoInternetConnectionCopyWithImpl(_$NoInternetConnection _value,
-      $Res Function(_$NoInternetConnection) _then)
+class __$$NoInternetConnectionImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res,
+        _$NoInternetConnectionImpl>
+    implements _$$NoInternetConnectionImplCopyWith<$Res> {
+  __$$NoInternetConnectionImplCopyWithImpl(_$NoInternetConnectionImpl _value,
+      $Res Function(_$NoInternetConnectionImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NoInternetConnection implements NoInternetConnection {
-  const _$NoInternetConnection();
+class _$NoInternetConnectionImpl implements NoInternetConnection {
+  const _$NoInternetConnectionImpl();
 
   @override
   String toString() {
@@ -194,7 +195,8 @@ class _$NoInternetConnection implements NoInternetConnection {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NoInternetConnection);
+        (other.runtimeType == runtimeType &&
+            other is _$NoInternetConnectionImpl);
   }
 
   @override
@@ -354,27 +356,29 @@ class _$NoInternetConnection implements NoInternetConnection {
 }
 
 abstract class NoInternetConnection implements StorageExceptionHandler {
-  const factory NoInternetConnection() = _$NoInternetConnection;
+  const factory NoInternetConnection() = _$NoInternetConnectionImpl;
 }
 
 /// @nodoc
-abstract class _$$UnknownCopyWith<$Res> {
-  factory _$$UnknownCopyWith(_$Unknown value, $Res Function(_$Unknown) then) =
-      __$$UnknownCopyWithImpl<$Res>;
+abstract class _$$UnknownImplCopyWith<$Res> {
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnknownCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$Unknown>
-    implements _$$UnknownCopyWith<$Res> {
-  __$$UnknownCopyWithImpl(_$Unknown _value, $Res Function(_$Unknown) _then)
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unknown implements Unknown {
-  const _$Unknown();
+class _$UnknownImpl implements Unknown {
+  const _$UnknownImpl();
 
   @override
   String toString() {
@@ -384,7 +388,7 @@ class _$Unknown implements Unknown {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unknown);
+        (other.runtimeType == runtimeType && other is _$UnknownImpl);
   }
 
   @override
@@ -544,29 +548,29 @@ class _$Unknown implements Unknown {
 }
 
 abstract class Unknown implements StorageExceptionHandler {
-  const factory Unknown() = _$Unknown;
+  const factory Unknown() = _$UnknownImpl;
 }
 
 /// @nodoc
-abstract class _$$ObjectNotFoundCopyWith<$Res> {
-  factory _$$ObjectNotFoundCopyWith(
-          _$ObjectNotFound value, $Res Function(_$ObjectNotFound) then) =
-      __$$ObjectNotFoundCopyWithImpl<$Res>;
+abstract class _$$ObjectNotFoundImplCopyWith<$Res> {
+  factory _$$ObjectNotFoundImplCopyWith(_$ObjectNotFoundImpl value,
+          $Res Function(_$ObjectNotFoundImpl) then) =
+      __$$ObjectNotFoundImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ObjectNotFoundCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$ObjectNotFound>
-    implements _$$ObjectNotFoundCopyWith<$Res> {
-  __$$ObjectNotFoundCopyWithImpl(
-      _$ObjectNotFound _value, $Res Function(_$ObjectNotFound) _then)
+class __$$ObjectNotFoundImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$ObjectNotFoundImpl>
+    implements _$$ObjectNotFoundImplCopyWith<$Res> {
+  __$$ObjectNotFoundImplCopyWithImpl(
+      _$ObjectNotFoundImpl _value, $Res Function(_$ObjectNotFoundImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ObjectNotFound implements ObjectNotFound {
-  const _$ObjectNotFound();
+class _$ObjectNotFoundImpl implements ObjectNotFound {
+  const _$ObjectNotFoundImpl();
 
   @override
   String toString() {
@@ -576,7 +580,7 @@ class _$ObjectNotFound implements ObjectNotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ObjectNotFound);
+        (other.runtimeType == runtimeType && other is _$ObjectNotFoundImpl);
   }
 
   @override
@@ -736,29 +740,29 @@ class _$ObjectNotFound implements ObjectNotFound {
 }
 
 abstract class ObjectNotFound implements StorageExceptionHandler {
-  const factory ObjectNotFound() = _$ObjectNotFound;
+  const factory ObjectNotFound() = _$ObjectNotFoundImpl;
 }
 
 /// @nodoc
-abstract class _$$BucketNotFoundCopyWith<$Res> {
-  factory _$$BucketNotFoundCopyWith(
-          _$BucketNotFound value, $Res Function(_$BucketNotFound) then) =
-      __$$BucketNotFoundCopyWithImpl<$Res>;
+abstract class _$$BucketNotFoundImplCopyWith<$Res> {
+  factory _$$BucketNotFoundImplCopyWith(_$BucketNotFoundImpl value,
+          $Res Function(_$BucketNotFoundImpl) then) =
+      __$$BucketNotFoundImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$BucketNotFoundCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$BucketNotFound>
-    implements _$$BucketNotFoundCopyWith<$Res> {
-  __$$BucketNotFoundCopyWithImpl(
-      _$BucketNotFound _value, $Res Function(_$BucketNotFound) _then)
+class __$$BucketNotFoundImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$BucketNotFoundImpl>
+    implements _$$BucketNotFoundImplCopyWith<$Res> {
+  __$$BucketNotFoundImplCopyWithImpl(
+      _$BucketNotFoundImpl _value, $Res Function(_$BucketNotFoundImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$BucketNotFound implements BucketNotFound {
-  const _$BucketNotFound();
+class _$BucketNotFoundImpl implements BucketNotFound {
+  const _$BucketNotFoundImpl();
 
   @override
   String toString() {
@@ -768,7 +772,7 @@ class _$BucketNotFound implements BucketNotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$BucketNotFound);
+        (other.runtimeType == runtimeType && other is _$BucketNotFoundImpl);
   }
 
   @override
@@ -928,29 +932,29 @@ class _$BucketNotFound implements BucketNotFound {
 }
 
 abstract class BucketNotFound implements StorageExceptionHandler {
-  const factory BucketNotFound() = _$BucketNotFound;
+  const factory BucketNotFound() = _$BucketNotFoundImpl;
 }
 
 /// @nodoc
-abstract class _$$ProjectNotFoundCopyWith<$Res> {
-  factory _$$ProjectNotFoundCopyWith(
-          _$ProjectNotFound value, $Res Function(_$ProjectNotFound) then) =
-      __$$ProjectNotFoundCopyWithImpl<$Res>;
+abstract class _$$ProjectNotFoundImplCopyWith<$Res> {
+  factory _$$ProjectNotFoundImplCopyWith(_$ProjectNotFoundImpl value,
+          $Res Function(_$ProjectNotFoundImpl) then) =
+      __$$ProjectNotFoundImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ProjectNotFoundCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$ProjectNotFound>
-    implements _$$ProjectNotFoundCopyWith<$Res> {
-  __$$ProjectNotFoundCopyWithImpl(
-      _$ProjectNotFound _value, $Res Function(_$ProjectNotFound) _then)
+class __$$ProjectNotFoundImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$ProjectNotFoundImpl>
+    implements _$$ProjectNotFoundImplCopyWith<$Res> {
+  __$$ProjectNotFoundImplCopyWithImpl(
+      _$ProjectNotFoundImpl _value, $Res Function(_$ProjectNotFoundImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ProjectNotFound implements ProjectNotFound {
-  const _$ProjectNotFound();
+class _$ProjectNotFoundImpl implements ProjectNotFound {
+  const _$ProjectNotFoundImpl();
 
   @override
   String toString() {
@@ -960,7 +964,7 @@ class _$ProjectNotFound implements ProjectNotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ProjectNotFound);
+        (other.runtimeType == runtimeType && other is _$ProjectNotFoundImpl);
   }
 
   @override
@@ -1120,29 +1124,29 @@ class _$ProjectNotFound implements ProjectNotFound {
 }
 
 abstract class ProjectNotFound implements StorageExceptionHandler {
-  const factory ProjectNotFound() = _$ProjectNotFound;
+  const factory ProjectNotFound() = _$ProjectNotFoundImpl;
 }
 
 /// @nodoc
-abstract class _$$QuotaExceededCopyWith<$Res> {
-  factory _$$QuotaExceededCopyWith(
-          _$QuotaExceeded value, $Res Function(_$QuotaExceeded) then) =
-      __$$QuotaExceededCopyWithImpl<$Res>;
+abstract class _$$QuotaExceededImplCopyWith<$Res> {
+  factory _$$QuotaExceededImplCopyWith(
+          _$QuotaExceededImpl value, $Res Function(_$QuotaExceededImpl) then) =
+      __$$QuotaExceededImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$QuotaExceededCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$QuotaExceeded>
-    implements _$$QuotaExceededCopyWith<$Res> {
-  __$$QuotaExceededCopyWithImpl(
-      _$QuotaExceeded _value, $Res Function(_$QuotaExceeded) _then)
+class __$$QuotaExceededImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$QuotaExceededImpl>
+    implements _$$QuotaExceededImplCopyWith<$Res> {
+  __$$QuotaExceededImplCopyWithImpl(
+      _$QuotaExceededImpl _value, $Res Function(_$QuotaExceededImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$QuotaExceeded implements QuotaExceeded {
-  const _$QuotaExceeded();
+class _$QuotaExceededImpl implements QuotaExceeded {
+  const _$QuotaExceededImpl();
 
   @override
   String toString() {
@@ -1152,7 +1156,7 @@ class _$QuotaExceeded implements QuotaExceeded {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$QuotaExceeded);
+        (other.runtimeType == runtimeType && other is _$QuotaExceededImpl);
   }
 
   @override
@@ -1312,29 +1316,29 @@ class _$QuotaExceeded implements QuotaExceeded {
 }
 
 abstract class QuotaExceeded implements StorageExceptionHandler {
-  const factory QuotaExceeded() = _$QuotaExceeded;
+  const factory QuotaExceeded() = _$QuotaExceededImpl;
 }
 
 /// @nodoc
-abstract class _$$UnauthenticatedCopyWith<$Res> {
-  factory _$$UnauthenticatedCopyWith(
-          _$Unauthenticated value, $Res Function(_$Unauthenticated) then) =
-      __$$UnauthenticatedCopyWithImpl<$Res>;
+abstract class _$$UnauthenticatedImplCopyWith<$Res> {
+  factory _$$UnauthenticatedImplCopyWith(_$UnauthenticatedImpl value,
+          $Res Function(_$UnauthenticatedImpl) then) =
+      __$$UnauthenticatedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnauthenticatedCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$Unauthenticated>
-    implements _$$UnauthenticatedCopyWith<$Res> {
-  __$$UnauthenticatedCopyWithImpl(
-      _$Unauthenticated _value, $Res Function(_$Unauthenticated) _then)
+class __$$UnauthenticatedImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$UnauthenticatedImpl>
+    implements _$$UnauthenticatedImplCopyWith<$Res> {
+  __$$UnauthenticatedImplCopyWithImpl(
+      _$UnauthenticatedImpl _value, $Res Function(_$UnauthenticatedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unauthenticated implements Unauthenticated {
-  const _$Unauthenticated();
+class _$UnauthenticatedImpl implements Unauthenticated {
+  const _$UnauthenticatedImpl();
 
   @override
   String toString() {
@@ -1344,7 +1348,7 @@ class _$Unauthenticated implements Unauthenticated {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unauthenticated);
+        (other.runtimeType == runtimeType && other is _$UnauthenticatedImpl);
   }
 
   @override
@@ -1504,29 +1508,29 @@ class _$Unauthenticated implements Unauthenticated {
 }
 
 abstract class Unauthenticated implements StorageExceptionHandler {
-  const factory Unauthenticated() = _$Unauthenticated;
+  const factory Unauthenticated() = _$UnauthenticatedImpl;
 }
 
 /// @nodoc
-abstract class _$$UnauthorizedCopyWith<$Res> {
-  factory _$$UnauthorizedCopyWith(
-          _$Unauthorized value, $Res Function(_$Unauthorized) then) =
-      __$$UnauthorizedCopyWithImpl<$Res>;
+abstract class _$$UnauthorizedImplCopyWith<$Res> {
+  factory _$$UnauthorizedImplCopyWith(
+          _$UnauthorizedImpl value, $Res Function(_$UnauthorizedImpl) then) =
+      __$$UnauthorizedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnauthorizedCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$Unauthorized>
-    implements _$$UnauthorizedCopyWith<$Res> {
-  __$$UnauthorizedCopyWithImpl(
-      _$Unauthorized _value, $Res Function(_$Unauthorized) _then)
+class __$$UnauthorizedImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$UnauthorizedImpl>
+    implements _$$UnauthorizedImplCopyWith<$Res> {
+  __$$UnauthorizedImplCopyWithImpl(
+      _$UnauthorizedImpl _value, $Res Function(_$UnauthorizedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unauthorized implements Unauthorized {
-  const _$Unauthorized();
+class _$UnauthorizedImpl implements Unauthorized {
+  const _$UnauthorizedImpl();
 
   @override
   String toString() {
@@ -1536,7 +1540,7 @@ class _$Unauthorized implements Unauthorized {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unauthorized);
+        (other.runtimeType == runtimeType && other is _$UnauthorizedImpl);
   }
 
   @override
@@ -1696,29 +1700,30 @@ class _$Unauthorized implements Unauthorized {
 }
 
 abstract class Unauthorized implements StorageExceptionHandler {
-  const factory Unauthorized() = _$Unauthorized;
+  const factory Unauthorized() = _$UnauthorizedImpl;
 }
 
 /// @nodoc
-abstract class _$$RetryLimitExceededCopyWith<$Res> {
-  factory _$$RetryLimitExceededCopyWith(_$RetryLimitExceeded value,
-          $Res Function(_$RetryLimitExceeded) then) =
-      __$$RetryLimitExceededCopyWithImpl<$Res>;
+abstract class _$$RetryLimitExceededImplCopyWith<$Res> {
+  factory _$$RetryLimitExceededImplCopyWith(_$RetryLimitExceededImpl value,
+          $Res Function(_$RetryLimitExceededImpl) then) =
+      __$$RetryLimitExceededImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$RetryLimitExceededCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$RetryLimitExceeded>
-    implements _$$RetryLimitExceededCopyWith<$Res> {
-  __$$RetryLimitExceededCopyWithImpl(
-      _$RetryLimitExceeded _value, $Res Function(_$RetryLimitExceeded) _then)
+class __$$RetryLimitExceededImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res,
+        _$RetryLimitExceededImpl>
+    implements _$$RetryLimitExceededImplCopyWith<$Res> {
+  __$$RetryLimitExceededImplCopyWithImpl(_$RetryLimitExceededImpl _value,
+      $Res Function(_$RetryLimitExceededImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$RetryLimitExceeded implements RetryLimitExceeded {
-  const _$RetryLimitExceeded();
+class _$RetryLimitExceededImpl implements RetryLimitExceeded {
+  const _$RetryLimitExceededImpl();
 
   @override
   String toString() {
@@ -1728,7 +1733,7 @@ class _$RetryLimitExceeded implements RetryLimitExceeded {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$RetryLimitExceeded);
+        (other.runtimeType == runtimeType && other is _$RetryLimitExceededImpl);
   }
 
   @override
@@ -1888,29 +1893,29 @@ class _$RetryLimitExceeded implements RetryLimitExceeded {
 }
 
 abstract class RetryLimitExceeded implements StorageExceptionHandler {
-  const factory RetryLimitExceeded() = _$RetryLimitExceeded;
+  const factory RetryLimitExceeded() = _$RetryLimitExceededImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidChecksumCopyWith<$Res> {
-  factory _$$InvalidChecksumCopyWith(
-          _$InvalidChecksum value, $Res Function(_$InvalidChecksum) then) =
-      __$$InvalidChecksumCopyWithImpl<$Res>;
+abstract class _$$InvalidChecksumImplCopyWith<$Res> {
+  factory _$$InvalidChecksumImplCopyWith(_$InvalidChecksumImpl value,
+          $Res Function(_$InvalidChecksumImpl) then) =
+      __$$InvalidChecksumImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidChecksumCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidChecksum>
-    implements _$$InvalidChecksumCopyWith<$Res> {
-  __$$InvalidChecksumCopyWithImpl(
-      _$InvalidChecksum _value, $Res Function(_$InvalidChecksum) _then)
+class __$$InvalidChecksumImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidChecksumImpl>
+    implements _$$InvalidChecksumImplCopyWith<$Res> {
+  __$$InvalidChecksumImplCopyWithImpl(
+      _$InvalidChecksumImpl _value, $Res Function(_$InvalidChecksumImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidChecksum implements InvalidChecksum {
-  const _$InvalidChecksum();
+class _$InvalidChecksumImpl implements InvalidChecksum {
+  const _$InvalidChecksumImpl();
 
   @override
   String toString() {
@@ -1920,7 +1925,7 @@ class _$InvalidChecksum implements InvalidChecksum {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InvalidChecksum);
+        (other.runtimeType == runtimeType && other is _$InvalidChecksumImpl);
   }
 
   @override
@@ -2080,29 +2085,29 @@ class _$InvalidChecksum implements InvalidChecksum {
 }
 
 abstract class InvalidChecksum implements StorageExceptionHandler {
-  const factory InvalidChecksum() = _$InvalidChecksum;
+  const factory InvalidChecksum() = _$InvalidChecksumImpl;
 }
 
 /// @nodoc
-abstract class _$$CancelledCopyWith<$Res> {
-  factory _$$CancelledCopyWith(
-          _$Cancelled value, $Res Function(_$Cancelled) then) =
-      __$$CancelledCopyWithImpl<$Res>;
+abstract class _$$CancelledImplCopyWith<$Res> {
+  factory _$$CancelledImplCopyWith(
+          _$CancelledImpl value, $Res Function(_$CancelledImpl) then) =
+      __$$CancelledImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$CancelledCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$Cancelled>
-    implements _$$CancelledCopyWith<$Res> {
-  __$$CancelledCopyWithImpl(
-      _$Cancelled _value, $Res Function(_$Cancelled) _then)
+class __$$CancelledImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$CancelledImpl>
+    implements _$$CancelledImplCopyWith<$Res> {
+  __$$CancelledImplCopyWithImpl(
+      _$CancelledImpl _value, $Res Function(_$CancelledImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Cancelled implements Cancelled {
-  const _$Cancelled();
+class _$CancelledImpl implements Cancelled {
+  const _$CancelledImpl();
 
   @override
   String toString() {
@@ -2112,7 +2117,7 @@ class _$Cancelled implements Cancelled {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Cancelled);
+        (other.runtimeType == runtimeType && other is _$CancelledImpl);
   }
 
   @override
@@ -2272,29 +2277,29 @@ class _$Cancelled implements Cancelled {
 }
 
 abstract class Cancelled implements StorageExceptionHandler {
-  const factory Cancelled() = _$Cancelled;
+  const factory Cancelled() = _$CancelledImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidEventNameCopyWith<$Res> {
-  factory _$$InvalidEventNameCopyWith(
-          _$InvalidEventName value, $Res Function(_$InvalidEventName) then) =
-      __$$InvalidEventNameCopyWithImpl<$Res>;
+abstract class _$$InvalidEventNameImplCopyWith<$Res> {
+  factory _$$InvalidEventNameImplCopyWith(_$InvalidEventNameImpl value,
+          $Res Function(_$InvalidEventNameImpl) then) =
+      __$$InvalidEventNameImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidEventNameCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidEventName>
-    implements _$$InvalidEventNameCopyWith<$Res> {
-  __$$InvalidEventNameCopyWithImpl(
-      _$InvalidEventName _value, $Res Function(_$InvalidEventName) _then)
+class __$$InvalidEventNameImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidEventNameImpl>
+    implements _$$InvalidEventNameImplCopyWith<$Res> {
+  __$$InvalidEventNameImplCopyWithImpl(_$InvalidEventNameImpl _value,
+      $Res Function(_$InvalidEventNameImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidEventName implements InvalidEventName {
-  const _$InvalidEventName();
+class _$InvalidEventNameImpl implements InvalidEventName {
+  const _$InvalidEventNameImpl();
 
   @override
   String toString() {
@@ -2304,7 +2309,7 @@ class _$InvalidEventName implements InvalidEventName {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InvalidEventName);
+        (other.runtimeType == runtimeType && other is _$InvalidEventNameImpl);
   }
 
   @override
@@ -2464,29 +2469,29 @@ class _$InvalidEventName implements InvalidEventName {
 }
 
 abstract class InvalidEventName implements StorageExceptionHandler {
-  const factory InvalidEventName() = _$InvalidEventName;
+  const factory InvalidEventName() = _$InvalidEventNameImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidUrlCopyWith<$Res> {
-  factory _$$InvalidUrlCopyWith(
-          _$InvalidUrl value, $Res Function(_$InvalidUrl) then) =
-      __$$InvalidUrlCopyWithImpl<$Res>;
+abstract class _$$InvalidUrlImplCopyWith<$Res> {
+  factory _$$InvalidUrlImplCopyWith(
+          _$InvalidUrlImpl value, $Res Function(_$InvalidUrlImpl) then) =
+      __$$InvalidUrlImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidUrlCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidUrl>
-    implements _$$InvalidUrlCopyWith<$Res> {
-  __$$InvalidUrlCopyWithImpl(
-      _$InvalidUrl _value, $Res Function(_$InvalidUrl) _then)
+class __$$InvalidUrlImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidUrlImpl>
+    implements _$$InvalidUrlImplCopyWith<$Res> {
+  __$$InvalidUrlImplCopyWithImpl(
+      _$InvalidUrlImpl _value, $Res Function(_$InvalidUrlImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidUrl implements InvalidUrl {
-  const _$InvalidUrl();
+class _$InvalidUrlImpl implements InvalidUrl {
+  const _$InvalidUrlImpl();
 
   @override
   String toString() {
@@ -2496,7 +2501,7 @@ class _$InvalidUrl implements InvalidUrl {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InvalidUrl);
+        (other.runtimeType == runtimeType && other is _$InvalidUrlImpl);
   }
 
   @override
@@ -2656,29 +2661,29 @@ class _$InvalidUrl implements InvalidUrl {
 }
 
 abstract class InvalidUrl implements StorageExceptionHandler {
-  const factory InvalidUrl() = _$InvalidUrl;
+  const factory InvalidUrl() = _$InvalidUrlImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidArgumentCopyWith<$Res> {
-  factory _$$InvalidArgumentCopyWith(
-          _$InvalidArgument value, $Res Function(_$InvalidArgument) then) =
-      __$$InvalidArgumentCopyWithImpl<$Res>;
+abstract class _$$InvalidArgumentImplCopyWith<$Res> {
+  factory _$$InvalidArgumentImplCopyWith(_$InvalidArgumentImpl value,
+          $Res Function(_$InvalidArgumentImpl) then) =
+      __$$InvalidArgumentImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidArgumentCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidArgument>
-    implements _$$InvalidArgumentCopyWith<$Res> {
-  __$$InvalidArgumentCopyWithImpl(
-      _$InvalidArgument _value, $Res Function(_$InvalidArgument) _then)
+class __$$InvalidArgumentImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$InvalidArgumentImpl>
+    implements _$$InvalidArgumentImplCopyWith<$Res> {
+  __$$InvalidArgumentImplCopyWithImpl(
+      _$InvalidArgumentImpl _value, $Res Function(_$InvalidArgumentImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidArgument implements InvalidArgument {
-  const _$InvalidArgument();
+class _$InvalidArgumentImpl implements InvalidArgument {
+  const _$InvalidArgumentImpl();
 
   @override
   String toString() {
@@ -2688,7 +2693,7 @@ class _$InvalidArgument implements InvalidArgument {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InvalidArgument);
+        (other.runtimeType == runtimeType && other is _$InvalidArgumentImpl);
   }
 
   @override
@@ -2848,29 +2853,29 @@ class _$InvalidArgument implements InvalidArgument {
 }
 
 abstract class InvalidArgument implements StorageExceptionHandler {
-  const factory InvalidArgument() = _$InvalidArgument;
+  const factory InvalidArgument() = _$InvalidArgumentImpl;
 }
 
 /// @nodoc
-abstract class _$$NoDefaultBucketCopyWith<$Res> {
-  factory _$$NoDefaultBucketCopyWith(
-          _$NoDefaultBucket value, $Res Function(_$NoDefaultBucket) then) =
-      __$$NoDefaultBucketCopyWithImpl<$Res>;
+abstract class _$$NoDefaultBucketImplCopyWith<$Res> {
+  factory _$$NoDefaultBucketImplCopyWith(_$NoDefaultBucketImpl value,
+          $Res Function(_$NoDefaultBucketImpl) then) =
+      __$$NoDefaultBucketImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NoDefaultBucketCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$NoDefaultBucket>
-    implements _$$NoDefaultBucketCopyWith<$Res> {
-  __$$NoDefaultBucketCopyWithImpl(
-      _$NoDefaultBucket _value, $Res Function(_$NoDefaultBucket) _then)
+class __$$NoDefaultBucketImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$NoDefaultBucketImpl>
+    implements _$$NoDefaultBucketImplCopyWith<$Res> {
+  __$$NoDefaultBucketImplCopyWithImpl(
+      _$NoDefaultBucketImpl _value, $Res Function(_$NoDefaultBucketImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NoDefaultBucket implements NoDefaultBucket {
-  const _$NoDefaultBucket();
+class _$NoDefaultBucketImpl implements NoDefaultBucket {
+  const _$NoDefaultBucketImpl();
 
   @override
   String toString() {
@@ -2880,7 +2885,7 @@ class _$NoDefaultBucket implements NoDefaultBucket {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NoDefaultBucket);
+        (other.runtimeType == runtimeType && other is _$NoDefaultBucketImpl);
   }
 
   @override
@@ -3040,29 +3045,29 @@ class _$NoDefaultBucket implements NoDefaultBucket {
 }
 
 abstract class NoDefaultBucket implements StorageExceptionHandler {
-  const factory NoDefaultBucket() = _$NoDefaultBucket;
+  const factory NoDefaultBucket() = _$NoDefaultBucketImpl;
 }
 
 /// @nodoc
-abstract class _$$CannotSliceBlobCopyWith<$Res> {
-  factory _$$CannotSliceBlobCopyWith(
-          _$CannotSliceBlob value, $Res Function(_$CannotSliceBlob) then) =
-      __$$CannotSliceBlobCopyWithImpl<$Res>;
+abstract class _$$CannotSliceBlobImplCopyWith<$Res> {
+  factory _$$CannotSliceBlobImplCopyWith(_$CannotSliceBlobImpl value,
+          $Res Function(_$CannotSliceBlobImpl) then) =
+      __$$CannotSliceBlobImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$CannotSliceBlobCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$CannotSliceBlob>
-    implements _$$CannotSliceBlobCopyWith<$Res> {
-  __$$CannotSliceBlobCopyWithImpl(
-      _$CannotSliceBlob _value, $Res Function(_$CannotSliceBlob) _then)
+class __$$CannotSliceBlobImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$CannotSliceBlobImpl>
+    implements _$$CannotSliceBlobImplCopyWith<$Res> {
+  __$$CannotSliceBlobImplCopyWithImpl(
+      _$CannotSliceBlobImpl _value, $Res Function(_$CannotSliceBlobImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$CannotSliceBlob implements CannotSliceBlob {
-  const _$CannotSliceBlob();
+class _$CannotSliceBlobImpl implements CannotSliceBlob {
+  const _$CannotSliceBlobImpl();
 
   @override
   String toString() {
@@ -3072,7 +3077,7 @@ class _$CannotSliceBlob implements CannotSliceBlob {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$CannotSliceBlob);
+        (other.runtimeType == runtimeType && other is _$CannotSliceBlobImpl);
   }
 
   @override
@@ -3232,29 +3237,30 @@ class _$CannotSliceBlob implements CannotSliceBlob {
 }
 
 abstract class CannotSliceBlob implements StorageExceptionHandler {
-  const factory CannotSliceBlob() = _$CannotSliceBlob;
+  const factory CannotSliceBlob() = _$CannotSliceBlobImpl;
 }
 
 /// @nodoc
-abstract class _$$ServerFileWrongSizeCopyWith<$Res> {
-  factory _$$ServerFileWrongSizeCopyWith(_$ServerFileWrongSize value,
-          $Res Function(_$ServerFileWrongSize) then) =
-      __$$ServerFileWrongSizeCopyWithImpl<$Res>;
+abstract class _$$ServerFileWrongSizeImplCopyWith<$Res> {
+  factory _$$ServerFileWrongSizeImplCopyWith(_$ServerFileWrongSizeImpl value,
+          $Res Function(_$ServerFileWrongSizeImpl) then) =
+      __$$ServerFileWrongSizeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ServerFileWrongSizeCopyWithImpl<$Res>
-    extends _$StorageExceptionHandlerCopyWithImpl<$Res, _$ServerFileWrongSize>
-    implements _$$ServerFileWrongSizeCopyWith<$Res> {
-  __$$ServerFileWrongSizeCopyWithImpl(
-      _$ServerFileWrongSize _value, $Res Function(_$ServerFileWrongSize) _then)
+class __$$ServerFileWrongSizeImplCopyWithImpl<$Res>
+    extends _$StorageExceptionHandlerCopyWithImpl<$Res,
+        _$ServerFileWrongSizeImpl>
+    implements _$$ServerFileWrongSizeImplCopyWith<$Res> {
+  __$$ServerFileWrongSizeImplCopyWithImpl(_$ServerFileWrongSizeImpl _value,
+      $Res Function(_$ServerFileWrongSizeImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ServerFileWrongSize implements ServerFileWrongSize {
-  const _$ServerFileWrongSize();
+class _$ServerFileWrongSizeImpl implements ServerFileWrongSize {
+  const _$ServerFileWrongSizeImpl();
 
   @override
   String toString() {
@@ -3264,7 +3270,8 @@ class _$ServerFileWrongSize implements ServerFileWrongSize {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ServerFileWrongSize);
+        (other.runtimeType == runtimeType &&
+            other is _$ServerFileWrongSizeImpl);
   }
 
   @override
@@ -3424,5 +3431,5 @@ class _$ServerFileWrongSize implements ServerFileWrongSize {
 }
 
 abstract class ServerFileWrongSize implements StorageExceptionHandler {
-  const factory ServerFileWrongSize() = _$ServerFileWrongSize;
+  const factory ServerFileWrongSize() = _$ServerFileWrongSizeImpl;
 }

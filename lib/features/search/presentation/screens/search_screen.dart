@@ -32,8 +32,7 @@ class _SearchScreenState extends State<SearchScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<SearchCubit, SearchState>(
-      listener: (context, state) {},
+    return BlocBuilder<SearchCubit, SearchState>(
       builder: (context, state) {
         SearchCubit cubit = SearchCubit.get(context);
         return SafeArea(

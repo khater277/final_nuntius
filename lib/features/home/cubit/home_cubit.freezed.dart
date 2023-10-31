@@ -110,24 +110,25 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -137,7 +138,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -243,29 +244,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements HomeState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_ChangeNavBarLoadingCopyWith<$Res> {
-  factory _$$_ChangeNavBarLoadingCopyWith(_$_ChangeNavBarLoading value,
-          $Res Function(_$_ChangeNavBarLoading) then) =
-      __$$_ChangeNavBarLoadingCopyWithImpl<$Res>;
+abstract class _$$ChangeNavBarLoadingImplCopyWith<$Res> {
+  factory _$$ChangeNavBarLoadingImplCopyWith(_$ChangeNavBarLoadingImpl value,
+          $Res Function(_$ChangeNavBarLoadingImpl) then) =
+      __$$ChangeNavBarLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ChangeNavBarLoadingCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_ChangeNavBarLoading>
-    implements _$$_ChangeNavBarLoadingCopyWith<$Res> {
-  __$$_ChangeNavBarLoadingCopyWithImpl(_$_ChangeNavBarLoading _value,
-      $Res Function(_$_ChangeNavBarLoading) _then)
+class __$$ChangeNavBarLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ChangeNavBarLoadingImpl>
+    implements _$$ChangeNavBarLoadingImplCopyWith<$Res> {
+  __$$ChangeNavBarLoadingImplCopyWithImpl(_$ChangeNavBarLoadingImpl _value,
+      $Res Function(_$ChangeNavBarLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
-  const _$_ChangeNavBarLoading();
+class _$ChangeNavBarLoadingImpl implements _ChangeNavBarLoading {
+  const _$ChangeNavBarLoadingImpl();
 
   @override
   String toString() {
@@ -275,7 +276,8 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ChangeNavBarLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$ChangeNavBarLoadingImpl);
   }
 
   @override
@@ -381,29 +383,29 @@ class _$_ChangeNavBarLoading implements _ChangeNavBarLoading {
 }
 
 abstract class _ChangeNavBarLoading implements HomeState {
-  const factory _ChangeNavBarLoading() = _$_ChangeNavBarLoading;
+  const factory _ChangeNavBarLoading() = _$ChangeNavBarLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ChangeNavBarCopyWith<$Res> {
-  factory _$$_ChangeNavBarCopyWith(
-          _$_ChangeNavBar value, $Res Function(_$_ChangeNavBar) then) =
-      __$$_ChangeNavBarCopyWithImpl<$Res>;
+abstract class _$$ChangeNavBarImplCopyWith<$Res> {
+  factory _$$ChangeNavBarImplCopyWith(
+          _$ChangeNavBarImpl value, $Res Function(_$ChangeNavBarImpl) then) =
+      __$$ChangeNavBarImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ChangeNavBarCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_ChangeNavBar>
-    implements _$$_ChangeNavBarCopyWith<$Res> {
-  __$$_ChangeNavBarCopyWithImpl(
-      _$_ChangeNavBar _value, $Res Function(_$_ChangeNavBar) _then)
+class __$$ChangeNavBarImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ChangeNavBarImpl>
+    implements _$$ChangeNavBarImplCopyWith<$Res> {
+  __$$ChangeNavBarImplCopyWithImpl(
+      _$ChangeNavBarImpl _value, $Res Function(_$ChangeNavBarImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ChangeNavBar implements _ChangeNavBar {
-  const _$_ChangeNavBar();
+class _$ChangeNavBarImpl implements _ChangeNavBar {
+  const _$ChangeNavBarImpl();
 
   @override
   String toString() {
@@ -413,7 +415,7 @@ class _$_ChangeNavBar implements _ChangeNavBar {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ChangeNavBar);
+        (other.runtimeType == runtimeType && other is _$ChangeNavBarImpl);
   }
 
   @override
@@ -519,29 +521,29 @@ class _$_ChangeNavBar implements _ChangeNavBar {
 }
 
 abstract class _ChangeNavBar implements HomeState {
-  const factory _ChangeNavBar() = _$_ChangeNavBar;
+  const factory _ChangeNavBar() = _$ChangeNavBarImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsLoadingCopyWith<$Res> {
-  factory _$$_GetContactsLoadingCopyWith(_$_GetContactsLoading value,
-          $Res Function(_$_GetContactsLoading) then) =
-      __$$_GetContactsLoadingCopyWithImpl<$Res>;
+abstract class _$$GetContactsLoadingImplCopyWith<$Res> {
+  factory _$$GetContactsLoadingImplCopyWith(_$GetContactsLoadingImpl value,
+          $Res Function(_$GetContactsLoadingImpl) then) =
+      __$$GetContactsLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsLoadingCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_GetContactsLoading>
-    implements _$$_GetContactsLoadingCopyWith<$Res> {
-  __$$_GetContactsLoadingCopyWithImpl(
-      _$_GetContactsLoading _value, $Res Function(_$_GetContactsLoading) _then)
+class __$$GetContactsLoadingImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$GetContactsLoadingImpl>
+    implements _$$GetContactsLoadingImplCopyWith<$Res> {
+  __$$GetContactsLoadingImplCopyWithImpl(_$GetContactsLoadingImpl _value,
+      $Res Function(_$GetContactsLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsLoading implements _GetContactsLoading {
-  const _$_GetContactsLoading();
+class _$GetContactsLoadingImpl implements _GetContactsLoading {
+  const _$GetContactsLoadingImpl();
 
   @override
   String toString() {
@@ -551,7 +553,7 @@ class _$_GetContactsLoading implements _GetContactsLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContactsLoading);
+        (other.runtimeType == runtimeType && other is _$GetContactsLoadingImpl);
   }
 
   @override
@@ -657,29 +659,29 @@ class _$_GetContactsLoading implements _GetContactsLoading {
 }
 
 abstract class _GetContactsLoading implements HomeState {
-  const factory _GetContactsLoading() = _$_GetContactsLoading;
+  const factory _GetContactsLoading() = _$GetContactsLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsCopyWith<$Res> {
-  factory _$$_GetContactsCopyWith(
-          _$_GetContacts value, $Res Function(_$_GetContacts) then) =
-      __$$_GetContactsCopyWithImpl<$Res>;
+abstract class _$$GetContactsImplCopyWith<$Res> {
+  factory _$$GetContactsImplCopyWith(
+          _$GetContactsImpl value, $Res Function(_$GetContactsImpl) then) =
+      __$$GetContactsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_GetContacts>
-    implements _$$_GetContactsCopyWith<$Res> {
-  __$$_GetContactsCopyWithImpl(
-      _$_GetContacts _value, $Res Function(_$_GetContacts) _then)
+class __$$GetContactsImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$GetContactsImpl>
+    implements _$$GetContactsImplCopyWith<$Res> {
+  __$$GetContactsImplCopyWithImpl(
+      _$GetContactsImpl _value, $Res Function(_$GetContactsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContacts implements _GetContacts {
-  const _$_GetContacts();
+class _$GetContactsImpl implements _GetContacts {
+  const _$GetContactsImpl();
 
   @override
   String toString() {
@@ -689,7 +691,7 @@ class _$_GetContacts implements _GetContacts {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContacts);
+        (other.runtimeType == runtimeType && other is _$GetContactsImpl);
   }
 
   @override
@@ -795,29 +797,29 @@ class _$_GetContacts implements _GetContacts {
 }
 
 abstract class _GetContacts implements HomeState {
-  const factory _GetContacts() = _$_GetContacts;
+  const factory _GetContacts() = _$GetContactsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsErrorCopyWith<$Res> {
-  factory _$$_GetContactsErrorCopyWith(
-          _$_GetContactsError value, $Res Function(_$_GetContactsError) then) =
-      __$$_GetContactsErrorCopyWithImpl<$Res>;
+abstract class _$$GetContactsErrorImplCopyWith<$Res> {
+  factory _$$GetContactsErrorImplCopyWith(_$GetContactsErrorImpl value,
+          $Res Function(_$GetContactsErrorImpl) then) =
+      __$$GetContactsErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsErrorCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_GetContactsError>
-    implements _$$_GetContactsErrorCopyWith<$Res> {
-  __$$_GetContactsErrorCopyWithImpl(
-      _$_GetContactsError _value, $Res Function(_$_GetContactsError) _then)
+class __$$GetContactsErrorImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$GetContactsErrorImpl>
+    implements _$$GetContactsErrorImplCopyWith<$Res> {
+  __$$GetContactsErrorImplCopyWithImpl(_$GetContactsErrorImpl _value,
+      $Res Function(_$GetContactsErrorImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsError implements _GetContactsError {
-  const _$_GetContactsError();
+class _$GetContactsErrorImpl implements _GetContactsError {
+  const _$GetContactsErrorImpl();
 
   @override
   String toString() {
@@ -827,7 +829,7 @@ class _$_GetContactsError implements _GetContactsError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContactsError);
+        (other.runtimeType == runtimeType && other is _$GetContactsErrorImpl);
   }
 
   @override
@@ -933,29 +935,29 @@ class _$_GetContactsError implements _GetContactsError {
 }
 
 abstract class _GetContactsError implements HomeState {
-  const factory _GetContactsError() = _$_GetContactsError;
+  const factory _GetContactsError() = _$GetContactsErrorImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitUserCopyWith<$Res> {
-  factory _$$_InitUserCopyWith(
-          _$_InitUser value, $Res Function(_$_InitUser) then) =
-      __$$_InitUserCopyWithImpl<$Res>;
+abstract class _$$InitUserImplCopyWith<$Res> {
+  factory _$$InitUserImplCopyWith(
+          _$InitUserImpl value, $Res Function(_$InitUserImpl) then) =
+      __$$InitUserImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitUserCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_InitUser>
-    implements _$$_InitUserCopyWith<$Res> {
-  __$$_InitUserCopyWithImpl(
-      _$_InitUser _value, $Res Function(_$_InitUser) _then)
+class __$$InitUserImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$InitUserImpl>
+    implements _$$InitUserImplCopyWith<$Res> {
+  __$$InitUserImplCopyWithImpl(
+      _$InitUserImpl _value, $Res Function(_$InitUserImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitUser implements _InitUser {
-  const _$_InitUser();
+class _$InitUserImpl implements _InitUser {
+  const _$InitUserImpl();
 
   @override
   String toString() {
@@ -965,7 +967,7 @@ class _$_InitUser implements _InitUser {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitUser);
+        (other.runtimeType == runtimeType && other is _$InitUserImpl);
   }
 
   @override
@@ -1071,29 +1073,29 @@ class _$_InitUser implements _InitUser {
 }
 
 abstract class _InitUser implements HomeState {
-  const factory _InitUser() = _$_InitUser;
+  const factory _InitUser() = _$InitUserImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeUserCopyWith<$Res> {
-  factory _$$_DisposeUserCopyWith(
-          _$_DisposeUser value, $Res Function(_$_DisposeUser) then) =
-      __$$_DisposeUserCopyWithImpl<$Res>;
+abstract class _$$DisposeUserImplCopyWith<$Res> {
+  factory _$$DisposeUserImplCopyWith(
+          _$DisposeUserImpl value, $Res Function(_$DisposeUserImpl) then) =
+      __$$DisposeUserImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeUserCopyWithImpl<$Res>
-    extends _$HomeStateCopyWithImpl<$Res, _$_DisposeUser>
-    implements _$$_DisposeUserCopyWith<$Res> {
-  __$$_DisposeUserCopyWithImpl(
-      _$_DisposeUser _value, $Res Function(_$_DisposeUser) _then)
+class __$$DisposeUserImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$DisposeUserImpl>
+    implements _$$DisposeUserImplCopyWith<$Res> {
+  __$$DisposeUserImplCopyWithImpl(
+      _$DisposeUserImpl _value, $Res Function(_$DisposeUserImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeUser implements _DisposeUser {
-  const _$_DisposeUser();
+class _$DisposeUserImpl implements _DisposeUser {
+  const _$DisposeUserImpl();
 
   @override
   String toString() {
@@ -1103,7 +1105,7 @@ class _$_DisposeUser implements _DisposeUser {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeUser);
+        (other.runtimeType == runtimeType && other is _$DisposeUserImpl);
   }
 
   @override
@@ -1209,5 +1211,5 @@ class _$_DisposeUser implements _DisposeUser {
 }
 
 abstract class _DisposeUser implements HomeState {
-  const factory _DisposeUser() = _$_DisposeUser;
+  const factory _DisposeUser() = _$DisposeUserImpl;
 }

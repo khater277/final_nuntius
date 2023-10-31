@@ -1,7 +1,6 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
@@ -43,11 +42,8 @@ class _AddMediaStoryScreenState extends State<AddMediaStoryScreen> {
     return BlocConsumer<StoriesCubit, StoriesState>(
       listener: (context, state) {
         state.maybeWhen(
-          sendStoryError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          sendStoryError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           sendStory: () => Go.back(context: context),
           orElse: () {},
         );
@@ -87,15 +83,6 @@ class _AddMediaStoryScreenState extends State<AddMediaStoryScreen> {
                       ),
                     ),
                   ),
-                  // if (state is AppSendLastStoryLoadingState)
-                  //   Center(
-                  //       child: CircularProgressIndicator(
-                  //     value: cubit.storyFilePercentage == 0.0
-                  //         ? 0.05
-                  //         : cubit.storyFilePercentage,
-                  //     color: AppColors.blue,
-                  //     backgroundColor: AppColors.grey,
-                  //   )),
                 ],
               ),
             ),

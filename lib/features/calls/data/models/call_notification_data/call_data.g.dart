@@ -6,7 +6,8 @@ part of 'call_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CallData _$$_CallDataFromJson(Map<String, dynamic> json) => _$_CallData(
+_$CallDataImpl _$$CallDataImplFromJson(Map<String, dynamic> json) =>
+    _$CallDataImpl(
       type: json['type'] as String?,
       callType: json['callType'] as String?,
       callId: json['callId'] as String?,
@@ -18,7 +19,7 @@ _$_CallData _$$_CallDataFromJson(Map<String, dynamic> json) => _$_CallData(
       clickAction: json['click_action'] as String?,
     );
 
-Map<String, dynamic> _$$_CallDataToJson(_$_CallData instance) =>
+Map<String, dynamic> _$$CallDataImplToJson(_$CallDataImpl instance) =>
     <String, dynamic>{
       'type': instance.type,
       'callType': instance.callType,

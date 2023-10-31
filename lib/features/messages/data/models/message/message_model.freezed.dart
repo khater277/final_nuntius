@@ -161,11 +161,11 @@ class _$MessageModelCopyWithImpl<$Res, $Val extends MessageModel>
 }
 
 /// @nodoc
-abstract class _$$_MessageModelCopyWith<$Res>
+abstract class _$$MessageModelImplCopyWith<$Res>
     implements $MessageModelCopyWith<$Res> {
-  factory _$$_MessageModelCopyWith(
-          _$_MessageModel value, $Res Function(_$_MessageModel) then) =
-      __$$_MessageModelCopyWithImpl<$Res>;
+  factory _$$MessageModelImplCopyWith(
+          _$MessageModelImpl value, $Res Function(_$MessageModelImpl) then) =
+      __$$MessageModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -187,11 +187,11 @@ abstract class _$$_MessageModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_MessageModelCopyWithImpl<$Res>
-    extends _$MessageModelCopyWithImpl<$Res, _$_MessageModel>
-    implements _$$_MessageModelCopyWith<$Res> {
-  __$$_MessageModelCopyWithImpl(
-      _$_MessageModel _value, $Res Function(_$_MessageModel) _then)
+class __$$MessageModelImplCopyWithImpl<$Res>
+    extends _$MessageModelCopyWithImpl<$Res, _$MessageModelImpl>
+    implements _$$MessageModelImplCopyWith<$Res> {
+  __$$MessageModelImplCopyWithImpl(
+      _$MessageModelImpl _value, $Res Function(_$MessageModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -213,7 +213,7 @@ class __$$_MessageModelCopyWithImpl<$Res>
     Object? storyDate = freezed,
     Object? isStoryImageReply = freezed,
   }) {
-    return _then(_$_MessageModel(
+    return _then(_$MessageModelImpl(
       senderId: freezed == senderId
           ? _value.senderId
           : senderId // ignore: cast_nullable_to_non_nullable
@@ -280,8 +280,8 @@ class __$$_MessageModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_MessageModel implements _MessageModel {
-  _$_MessageModel(
+class _$MessageModelImpl implements _MessageModel {
+  _$MessageModelImpl(
       {this.senderId,
       this.receiverId,
       this.message,
@@ -298,8 +298,8 @@ class _$_MessageModel implements _MessageModel {
       this.storyDate,
       this.isStoryImageReply});
 
-  factory _$_MessageModel.fromJson(Map<String, dynamic> json) =>
-      _$$_MessageModelFromJson(json);
+  factory _$MessageModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$MessageModelImplFromJson(json);
 
   @override
   final String? senderId;
@@ -341,7 +341,7 @@ class _$_MessageModel implements _MessageModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_MessageModel &&
+            other is _$MessageModelImpl &&
             (identical(other.senderId, senderId) ||
                 other.senderId == senderId) &&
             (identical(other.receiverId, receiverId) ||
@@ -391,12 +391,12 @@ class _$_MessageModel implements _MessageModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_MessageModelCopyWith<_$_MessageModel> get copyWith =>
-      __$$_MessageModelCopyWithImpl<_$_MessageModel>(this, _$identity);
+  _$$MessageModelImplCopyWith<_$MessageModelImpl> get copyWith =>
+      __$$MessageModelImplCopyWithImpl<_$MessageModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MessageModelToJson(
+    return _$$MessageModelImplToJson(
       this,
     );
   }
@@ -418,10 +418,10 @@ abstract class _MessageModel implements MessageModel {
       final String? storyText,
       final String? storyMedia,
       final String? storyDate,
-      final bool? isStoryImageReply}) = _$_MessageModel;
+      final bool? isStoryImageReply}) = _$MessageModelImpl;
 
   factory _MessageModel.fromJson(Map<String, dynamic> json) =
-      _$_MessageModel.fromJson;
+      _$MessageModelImpl.fromJson;
 
   @override
   String? get senderId;
@@ -455,6 +455,6 @@ abstract class _MessageModel implements MessageModel {
   bool? get isStoryImageReply;
   @override
   @JsonKey(ignore: true)
-  _$$_MessageModelCopyWith<_$_MessageModel> get copyWith =>
+  _$$MessageModelImplCopyWith<_$MessageModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

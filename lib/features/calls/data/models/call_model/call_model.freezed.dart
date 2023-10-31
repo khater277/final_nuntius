@@ -90,10 +90,11 @@ class _$CallModelCopyWithImpl<$Res, $Val extends CallModel>
 }
 
 /// @nodoc
-abstract class _$$_CallModelCopyWith<$Res> implements $CallModelCopyWith<$Res> {
-  factory _$$_CallModelCopyWith(
-          _$_CallModel value, $Res Function(_$_CallModel) then) =
-      __$$_CallModelCopyWithImpl<$Res>;
+abstract class _$$CallModelImplCopyWith<$Res>
+    implements $CallModelCopyWith<$Res> {
+  factory _$$CallModelImplCopyWith(
+          _$CallModelImpl value, $Res Function(_$CallModelImpl) then) =
+      __$$CallModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -105,11 +106,11 @@ abstract class _$$_CallModelCopyWith<$Res> implements $CallModelCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_CallModelCopyWithImpl<$Res>
-    extends _$CallModelCopyWithImpl<$Res, _$_CallModel>
-    implements _$$_CallModelCopyWith<$Res> {
-  __$$_CallModelCopyWithImpl(
-      _$_CallModel _value, $Res Function(_$_CallModel) _then)
+class __$$CallModelImplCopyWithImpl<$Res>
+    extends _$CallModelCopyWithImpl<$Res, _$CallModelImpl>
+    implements _$$CallModelImplCopyWith<$Res> {
+  __$$CallModelImplCopyWithImpl(
+      _$CallModelImpl _value, $Res Function(_$CallModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -121,7 +122,7 @@ class __$$_CallModelCopyWithImpl<$Res>
     Object? callStatus = freezed,
     Object? dateTime = freezed,
   }) {
-    return _then(_$_CallModel(
+    return _then(_$CallModelImpl(
       callId: freezed == callId
           ? _value.callId
           : callId // ignore: cast_nullable_to_non_nullable
@@ -148,16 +149,16 @@ class __$$_CallModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CallModel implements _CallModel {
-  _$_CallModel(
+class _$CallModelImpl implements _CallModel {
+  _$CallModelImpl(
       {this.callId,
       this.phoneNumber,
       this.callType,
       this.callStatus,
       this.dateTime});
 
-  factory _$_CallModel.fromJson(Map<String, dynamic> json) =>
-      _$$_CallModelFromJson(json);
+  factory _$CallModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CallModelImplFromJson(json);
 
   @override
   final String? callId;
@@ -179,7 +180,7 @@ class _$_CallModel implements _CallModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CallModel &&
+            other is _$CallModelImpl &&
             (identical(other.callId, callId) || other.callId == callId) &&
             (identical(other.phoneNumber, phoneNumber) ||
                 other.phoneNumber == phoneNumber) &&
@@ -199,12 +200,12 @@ class _$_CallModel implements _CallModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CallModelCopyWith<_$_CallModel> get copyWith =>
-      __$$_CallModelCopyWithImpl<_$_CallModel>(this, _$identity);
+  _$$CallModelImplCopyWith<_$CallModelImpl> get copyWith =>
+      __$$CallModelImplCopyWithImpl<_$CallModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CallModelToJson(
+    return _$$CallModelImplToJson(
       this,
     );
   }
@@ -216,10 +217,10 @@ abstract class _CallModel implements CallModel {
       final String? phoneNumber,
       final CallType? callType,
       final CallStatus? callStatus,
-      final String? dateTime}) = _$_CallModel;
+      final String? dateTime}) = _$CallModelImpl;
 
   factory _CallModel.fromJson(Map<String, dynamic> json) =
-      _$_CallModel.fromJson;
+      _$CallModelImpl.fromJson;
 
   @override
   String? get callId;
@@ -233,6 +234,6 @@ abstract class _CallModel implements CallModel {
   String? get dateTime;
   @override
   @JsonKey(ignore: true)
-  _$$_CallModelCopyWith<_$_CallModel> get copyWith =>
+  _$$CallModelImplCopyWith<_$CallModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

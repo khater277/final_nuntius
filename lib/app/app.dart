@@ -70,11 +70,9 @@ class MyApp extends StatelessWidget {
             child: MaterialApp(
               debugShowCheckedModeBanner: false,
               theme: AppTheme.darkTheme(),
-              home:
-                  // const LoginScreen(),
-                  HiveHelper.getCurrentUser() == null
-                      ? const LoginScreen()
-                      : const HomeScreen(),
+              home: HiveHelper.getCurrentUser() == null
+                  ? const LoginScreen()
+                  : const HomeScreen(),
             ),
           );
         });

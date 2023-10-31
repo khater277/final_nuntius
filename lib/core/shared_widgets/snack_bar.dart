@@ -24,3 +24,11 @@ showSnackBar({
     ),
   );
 }
+
+errorSnackBar({required BuildContext context, required String errorMsg}) {
+  return showSnackBar(
+    context: context,
+    message: errorMsg,
+    color: AppColors.red,
+  );
+}

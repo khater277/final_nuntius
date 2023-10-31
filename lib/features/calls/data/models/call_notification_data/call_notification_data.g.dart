@@ -6,9 +6,9 @@ part of 'call_notification_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CallNotificationData _$$_CallNotificationDataFromJson(
+_$CallNotificationDataImpl _$$CallNotificationDataImplFromJson(
         Map<String, dynamic> json) =>
-    _$_CallNotificationData(
+    _$CallNotificationDataImpl(
       to: json['to'] as String?,
       priority: json['priority'] as String?,
       callData: json['data'] == null
@@ -16,8 +16,8 @@ _$_CallNotificationData _$$_CallNotificationDataFromJson(
           : CallData.fromJson(json['data'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_CallNotificationDataToJson(
-        _$_CallNotificationData instance) =>
+Map<String, dynamic> _$$CallNotificationDataImplToJson(
+        _$CallNotificationDataImpl instance) =>
     <String, dynamic>{
       'to': instance.to,
       'priority': instance.priority,

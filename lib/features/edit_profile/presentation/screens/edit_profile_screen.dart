@@ -1,12 +1,10 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
-import 'package:final_nuntius/core/shared_widgets/back_button.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
-import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/edit_profile/cubit/edit_profile_cubit.dart';
+import 'package:final_nuntius/features/edit_profile/presentation/widgets/app_bar.dart';
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_name.dart';
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_phone_number.dart';
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_profile_image.dart';
@@ -33,65 +31,25 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
       listener: (context, state) {
         state.maybeWhen(
           updateProfileName: () => Go.back(context: context),
-          pickProfileImageError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
-          updateProfileNameError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
-          updateProfileImageError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          pickProfileImageError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
+          updateProfileNameError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
+          updateProfileImageError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           orElse: () {},
         );
       },
       builder: (context, state) {
         final cubit = EditProfileCubit.get(context);
         return Scaffold(
-          appBar: AppBar(
-            titleSpacing: 0,
-            leading: const CustomBackButton(),
-            title: LargeHeadText(
-              text: "Profile",
-              color: AppColors.blue,
-              size: FontSize.s17,
-              letterSpacing: 1.5,
-            ),
-            actions: [
-              if (cubit.profileImage != null)
-                TextButton(
-                    onPressed: () => (state ==
-                                const EditProfileState
-                                    .updateProfileImageLoading() ||
-                            state ==
-                                const EditProfileState
-                                    .getProfileImagePercentage())
-                        ? () {}
-                        : cubit.uploadProfileImage(),
-                    child: const Text(
-                      "UPLOAD",
-                      style: TextStyle(
-                        color: AppColors.white,
-                        //fontSize: 10.sp
-                      ),
-                    ))
-            ],
-          ),
-          body:
-              //  snapshot.hasData?
-              Padding(
+          appBar: editProfileAppBar(cubit: cubit, state: state),
+          body: Padding(
             padding: EdgeInsets.symmetric(
                 vertical: AppHeight.h8, horizontal: AppWidth.w10),
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  // LargeHeadText(text: "${cubit.profileImage}"),
                   MyProfileImage(image: HiveHelper.getCurrentUser()!.image!),
                   SizedBox(height: AppHeight.h6),
                   if (state ==
@@ -112,8 +70,6 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               ),
             ),
           ),
-          //     :
-          // const DefaultProgressIndicator(icon: IconBroken.Profile),
         );
       },
     );

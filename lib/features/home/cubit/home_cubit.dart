@@ -78,6 +78,7 @@ class HomeCubit extends Cubit<HomeState> {
       );
       print(contacts.length);
     } catch (error) {
+      // users = HiveHelper.getAllUsers() ?? [];
       emit(const HomeState.getContactsError());
     }
   }

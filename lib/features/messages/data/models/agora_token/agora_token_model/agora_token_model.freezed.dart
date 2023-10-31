@@ -62,22 +62,22 @@ class _$AgoraTokenModelCopyWithImpl<$Res, $Val extends AgoraTokenModel>
 }
 
 /// @nodoc
-abstract class _$$_AgoraTokenModelCopyWith<$Res>
+abstract class _$$AgoraTokenModelImplCopyWith<$Res>
     implements $AgoraTokenModelCopyWith<$Res> {
-  factory _$$_AgoraTokenModelCopyWith(
-          _$_AgoraTokenModel value, $Res Function(_$_AgoraTokenModel) then) =
-      __$$_AgoraTokenModelCopyWithImpl<$Res>;
+  factory _$$AgoraTokenModelImplCopyWith(_$AgoraTokenModelImpl value,
+          $Res Function(_$AgoraTokenModelImpl) then) =
+      __$$AgoraTokenModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? rtcToken});
 }
 
 /// @nodoc
-class __$$_AgoraTokenModelCopyWithImpl<$Res>
-    extends _$AgoraTokenModelCopyWithImpl<$Res, _$_AgoraTokenModel>
-    implements _$$_AgoraTokenModelCopyWith<$Res> {
-  __$$_AgoraTokenModelCopyWithImpl(
-      _$_AgoraTokenModel _value, $Res Function(_$_AgoraTokenModel) _then)
+class __$$AgoraTokenModelImplCopyWithImpl<$Res>
+    extends _$AgoraTokenModelCopyWithImpl<$Res, _$AgoraTokenModelImpl>
+    implements _$$AgoraTokenModelImplCopyWith<$Res> {
+  __$$AgoraTokenModelImplCopyWithImpl(
+      _$AgoraTokenModelImpl _value, $Res Function(_$AgoraTokenModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -85,7 +85,7 @@ class __$$_AgoraTokenModelCopyWithImpl<$Res>
   $Res call({
     Object? rtcToken = freezed,
   }) {
-    return _then(_$_AgoraTokenModel(
+    return _then(_$AgoraTokenModelImpl(
       rtcToken: freezed == rtcToken
           ? _value.rtcToken
           : rtcToken // ignore: cast_nullable_to_non_nullable
@@ -96,11 +96,11 @@ class __$$_AgoraTokenModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_AgoraTokenModel implements _AgoraTokenModel {
-  _$_AgoraTokenModel({this.rtcToken});
+class _$AgoraTokenModelImpl implements _AgoraTokenModel {
+  _$AgoraTokenModelImpl({this.rtcToken});
 
-  factory _$_AgoraTokenModel.fromJson(Map<String, dynamic> json) =>
-      _$$_AgoraTokenModelFromJson(json);
+  factory _$AgoraTokenModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$AgoraTokenModelImplFromJson(json);
 
   @override
   final String? rtcToken;
@@ -114,7 +114,7 @@ class _$_AgoraTokenModel implements _AgoraTokenModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AgoraTokenModel &&
+            other is _$AgoraTokenModelImpl &&
             (identical(other.rtcToken, rtcToken) ||
                 other.rtcToken == rtcToken));
   }
@@ -126,27 +126,28 @@ class _$_AgoraTokenModel implements _AgoraTokenModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AgoraTokenModelCopyWith<_$_AgoraTokenModel> get copyWith =>
-      __$$_AgoraTokenModelCopyWithImpl<_$_AgoraTokenModel>(this, _$identity);
+  _$$AgoraTokenModelImplCopyWith<_$AgoraTokenModelImpl> get copyWith =>
+      __$$AgoraTokenModelImplCopyWithImpl<_$AgoraTokenModelImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AgoraTokenModelToJson(
+    return _$$AgoraTokenModelImplToJson(
       this,
     );
   }
 }
 
 abstract class _AgoraTokenModel implements AgoraTokenModel {
-  factory _AgoraTokenModel({final String? rtcToken}) = _$_AgoraTokenModel;
+  factory _AgoraTokenModel({final String? rtcToken}) = _$AgoraTokenModelImpl;
 
   factory _AgoraTokenModel.fromJson(Map<String, dynamic> json) =
-      _$_AgoraTokenModel.fromJson;
+      _$AgoraTokenModelImpl.fromJson;
 
   @override
   String? get rtcToken;
   @override
   @JsonKey(ignore: true)
-  _$$_AgoraTokenModelCopyWith<_$_AgoraTokenModel> get copyWith =>
+  _$$AgoraTokenModelImplCopyWith<_$AgoraTokenModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -68,22 +68,22 @@ class _$ErrorModelCopyWithImpl<$Res, $Val extends ErrorModel>
 }
 
 /// @nodoc
-abstract class _$$_ErrorModelCopyWith<$Res>
+abstract class _$$ErrorModelImplCopyWith<$Res>
     implements $ErrorModelCopyWith<$Res> {
-  factory _$$_ErrorModelCopyWith(
-          _$_ErrorModel value, $Res Function(_$_ErrorModel) then) =
-      __$$_ErrorModelCopyWithImpl<$Res>;
+  factory _$$ErrorModelImplCopyWith(
+          _$ErrorModelImpl value, $Res Function(_$ErrorModelImpl) then) =
+      __$$ErrorModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? code, String? message});
 }
 
 /// @nodoc
-class __$$_ErrorModelCopyWithImpl<$Res>
-    extends _$ErrorModelCopyWithImpl<$Res, _$_ErrorModel>
-    implements _$$_ErrorModelCopyWith<$Res> {
-  __$$_ErrorModelCopyWithImpl(
-      _$_ErrorModel _value, $Res Function(_$_ErrorModel) _then)
+class __$$ErrorModelImplCopyWithImpl<$Res>
+    extends _$ErrorModelCopyWithImpl<$Res, _$ErrorModelImpl>
+    implements _$$ErrorModelImplCopyWith<$Res> {
+  __$$ErrorModelImplCopyWithImpl(
+      _$ErrorModelImpl _value, $Res Function(_$ErrorModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -92,7 +92,7 @@ class __$$_ErrorModelCopyWithImpl<$Res>
     Object? code = freezed,
     Object? message = freezed,
   }) {
-    return _then(_$_ErrorModel(
+    return _then(_$ErrorModelImpl(
       code: freezed == code
           ? _value.code
           : code // ignore: cast_nullable_to_non_nullable
@@ -107,11 +107,11 @@ class __$$_ErrorModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ErrorModel implements _ErrorModel {
-  _$_ErrorModel({this.code, this.message});
+class _$ErrorModelImpl implements _ErrorModel {
+  _$ErrorModelImpl({this.code, this.message});
 
-  factory _$_ErrorModel.fromJson(Map<String, dynamic> json) =>
-      _$$_ErrorModelFromJson(json);
+  factory _$ErrorModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ErrorModelImplFromJson(json);
 
   @override
   final String? code;
@@ -127,7 +127,7 @@ class _$_ErrorModel implements _ErrorModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ErrorModel &&
+            other is _$ErrorModelImpl &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.message, message) || other.message == message));
   }
@@ -139,12 +139,12 @@ class _$_ErrorModel implements _ErrorModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ErrorModelCopyWith<_$_ErrorModel> get copyWith =>
-      __$$_ErrorModelCopyWithImpl<_$_ErrorModel>(this, _$identity);
+  _$$ErrorModelImplCopyWith<_$ErrorModelImpl> get copyWith =>
+      __$$ErrorModelImplCopyWithImpl<_$ErrorModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ErrorModelToJson(
+    return _$$ErrorModelImplToJson(
       this,
     );
   }
@@ -152,10 +152,10 @@ class _$_ErrorModel implements _ErrorModel {
 
 abstract class _ErrorModel implements ErrorModel {
   factory _ErrorModel({final String? code, final String? message}) =
-      _$_ErrorModel;
+      _$ErrorModelImpl;
 
   factory _ErrorModel.fromJson(Map<String, dynamic> json) =
-      _$_ErrorModel.fromJson;
+      _$ErrorModelImpl.fromJson;
 
   @override
   String? get code;
@@ -163,6 +163,6 @@ abstract class _ErrorModel implements ErrorModel {
   String? get message;
   @override
   @JsonKey(ignore: true)
-  _$$_ErrorModelCopyWith<_$_ErrorModel> get copyWith =>
+  _$$ErrorModelImplCopyWith<_$ErrorModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -6,8 +6,8 @@ part of 'story_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_StoryModel _$$_StoryModelFromJson(Map<String, dynamic> json) =>
-    _$_StoryModel(
+_$StoryModelImpl _$$StoryModelImplFromJson(Map<String, dynamic> json) =>
+    _$StoryModelImpl(
       id: json['id'] as String?,
       date: json['date'] as String?,
       isImage: json['isImage'] as bool?,
@@ -27,7 +27,7 @@ _$_StoryModel _$$_StoryModelFromJson(Map<String, dynamic> json) =>
           (json['canView'] as List<dynamic>?)?.map((e) => e as String).toList(),
     );
 
-Map<String, dynamic> _$$_StoryModelToJson(_$_StoryModel instance) =>
+Map<String, dynamic> _$$StoryModelImplToJson(_$StoryModelImpl instance) =>
     <String, dynamic>{
       'id': instance.id,
       'date': instance.date,

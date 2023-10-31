@@ -2,7 +2,6 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/back_button.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
@@ -38,11 +37,8 @@ class _AddTextStoryScreenState extends State<AddTextStoryScreen> {
     return BlocConsumer<StoriesCubit, StoriesState>(
       listener: (context, state) {
         state.maybeWhen(
-          sendStoryError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          sendStoryError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           sendStory: () => Go.back(context: context),
           orElse: () {},
         );

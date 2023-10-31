@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 
 class DeleteMessageBottomSheet extends StatelessWidget {
   final String messageId;
-  const DeleteMessageBottomSheet({super.key, required this.messageId});
+  final bool loadingCondition;
+  const DeleteMessageBottomSheet(
+      {super.key, required this.messageId, required this.loadingCondition});
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +29,10 @@ class DeleteMessageBottomSheet extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
-              DeleteMessageWidget(messageId: messageId),
+              DeleteMessageWidget(
+                messageId: messageId,
+                loadingCondition: loadingCondition,
+              ),
             ],
           ),
         ),

@@ -19,7 +19,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
 
 class VoiceCallScreen extends StatefulWidget {
-  final String? userToken;
+  final String userToken;
   final String rtcToken;
   final String channelName;
   final String image;
@@ -28,7 +28,7 @@ class VoiceCallScreen extends StatefulWidget {
   final bool receiveCall;
   const VoiceCallScreen({
     super.key,
-    this.userToken,
+    required this.userToken,
     required this.rtcToken,
     required this.channelName,
     required this.image,
@@ -55,6 +55,7 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
       channelName: widget.channelName,
       friendPhoneNumber: widget.phoneNumber,
       callType: CallType.voice,
+      receiveCall: widget.receiveCall,
     );
 
     Future.delayed(const Duration(seconds: 0)).then((value) async {
@@ -67,10 +68,11 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
     });
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      print("AAAAAAAASSSSSSSSSSSSSDDDDDDDDDD");
       if (message.data['type'] == 'cancel-call' &&
           message.data['phoneNumber'] == widget.phoneNumber) {
-        Go.back(context: context);
+        if (mounted) {
+          Go.back(context: context);
+        }
       }
     });
     super.initState();
@@ -95,10 +97,8 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
           callingPlayer.play();
           Future.delayed(const Duration(seconds: 30)).then((value) {
             callingPlayer.stop();
-            try {
+            if (mounted && CallsCubit.get(context).remoteUid == null) {
               Go.back(context: context);
-            } catch (error) {
-              null;
             }
           });
         } else {
@@ -145,7 +145,7 @@ class _VoiceCallScreenState extends State<VoiceCallScreen> {
               ],
             ),
           ),
-          floatingActionButton: CancelOngoingCall(userToken: widget.userToken!),
+          floatingActionButton: CancelOngoingCall(userToken: widget.userToken),
         );
       },
     );

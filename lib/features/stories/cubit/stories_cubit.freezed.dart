@@ -357,24 +357,25 @@ class _$StoriesStateCopyWithImpl<$Res, $Val extends StoriesState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial with DiagnosticableTreeMixin implements _Initial {
-  const _$_Initial();
+class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -390,7 +391,7 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -742,29 +743,29 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
 }
 
 abstract class _Initial implements StoriesState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetPhonesCopyWith<$Res> {
-  factory _$$_GetPhonesCopyWith(
-          _$_GetPhones value, $Res Function(_$_GetPhones) then) =
-      __$$_GetPhonesCopyWithImpl<$Res>;
+abstract class _$$GetPhonesImplCopyWith<$Res> {
+  factory _$$GetPhonesImplCopyWith(
+          _$GetPhonesImpl value, $Res Function(_$GetPhonesImpl) then) =
+      __$$GetPhonesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetPhonesCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetPhones>
-    implements _$$_GetPhonesCopyWith<$Res> {
-  __$$_GetPhonesCopyWithImpl(
-      _$_GetPhones _value, $Res Function(_$_GetPhones) _then)
+class __$$GetPhonesImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetPhonesImpl>
+    implements _$$GetPhonesImplCopyWith<$Res> {
+  __$$GetPhonesImplCopyWithImpl(
+      _$GetPhonesImpl _value, $Res Function(_$GetPhonesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
-  const _$_GetPhones();
+class _$GetPhonesImpl with DiagnosticableTreeMixin implements _GetPhones {
+  const _$GetPhonesImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -780,7 +781,7 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetPhones);
+        (other.runtimeType == runtimeType && other is _$GetPhonesImpl);
   }
 
   @override
@@ -1132,31 +1133,31 @@ class _$_GetPhones with DiagnosticableTreeMixin implements _GetPhones {
 }
 
 abstract class _GetPhones implements StoriesState {
-  const factory _GetPhones() = _$_GetPhones;
+  const factory _GetPhones() = _$GetPhonesImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitAddTextStoryCopyWith<$Res> {
-  factory _$$_InitAddTextStoryCopyWith(
-          _$_InitAddTextStory value, $Res Function(_$_InitAddTextStory) then) =
-      __$$_InitAddTextStoryCopyWithImpl<$Res>;
+abstract class _$$InitAddTextStoryImplCopyWith<$Res> {
+  factory _$$InitAddTextStoryImplCopyWith(_$InitAddTextStoryImpl value,
+          $Res Function(_$InitAddTextStoryImpl) then) =
+      __$$InitAddTextStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitAddTextStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_InitAddTextStory>
-    implements _$$_InitAddTextStoryCopyWith<$Res> {
-  __$$_InitAddTextStoryCopyWithImpl(
-      _$_InitAddTextStory _value, $Res Function(_$_InitAddTextStory) _then)
+class __$$InitAddTextStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$InitAddTextStoryImpl>
+    implements _$$InitAddTextStoryImplCopyWith<$Res> {
+  __$$InitAddTextStoryImplCopyWithImpl(_$InitAddTextStoryImpl _value,
+      $Res Function(_$InitAddTextStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitAddTextStory
+class _$InitAddTextStoryImpl
     with DiagnosticableTreeMixin
     implements _InitAddTextStory {
-  const _$_InitAddTextStory();
+  const _$InitAddTextStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1173,7 +1174,7 @@ class _$_InitAddTextStory
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitAddTextStory);
+        (other.runtimeType == runtimeType && other is _$InitAddTextStoryImpl);
   }
 
   @override
@@ -1525,31 +1526,31 @@ class _$_InitAddTextStory
 }
 
 abstract class _InitAddTextStory implements StoriesState {
-  const factory _InitAddTextStory() = _$_InitAddTextStory;
+  const factory _InitAddTextStory() = _$InitAddTextStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeAddTextStoryCopyWith<$Res> {
-  factory _$$_DisposeAddTextStoryCopyWith(_$_DisposeAddTextStory value,
-          $Res Function(_$_DisposeAddTextStory) then) =
-      __$$_DisposeAddTextStoryCopyWithImpl<$Res>;
+abstract class _$$DisposeAddTextStoryImplCopyWith<$Res> {
+  factory _$$DisposeAddTextStoryImplCopyWith(_$DisposeAddTextStoryImpl value,
+          $Res Function(_$DisposeAddTextStoryImpl) then) =
+      __$$DisposeAddTextStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeAddTextStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_DisposeAddTextStory>
-    implements _$$_DisposeAddTextStoryCopyWith<$Res> {
-  __$$_DisposeAddTextStoryCopyWithImpl(_$_DisposeAddTextStory _value,
-      $Res Function(_$_DisposeAddTextStory) _then)
+class __$$DisposeAddTextStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$DisposeAddTextStoryImpl>
+    implements _$$DisposeAddTextStoryImplCopyWith<$Res> {
+  __$$DisposeAddTextStoryImplCopyWithImpl(_$DisposeAddTextStoryImpl _value,
+      $Res Function(_$DisposeAddTextStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeAddTextStory
+class _$DisposeAddTextStoryImpl
     with DiagnosticableTreeMixin
     implements _DisposeAddTextStory {
-  const _$_DisposeAddTextStory();
+  const _$DisposeAddTextStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1566,7 +1567,8 @@ class _$_DisposeAddTextStory
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeAddTextStory);
+        (other.runtimeType == runtimeType &&
+            other is _$DisposeAddTextStoryImpl);
   }
 
   @override
@@ -1918,31 +1920,32 @@ class _$_DisposeAddTextStory
 }
 
 abstract class _DisposeAddTextStory implements StoriesState {
-  const factory _DisposeAddTextStory() = _$_DisposeAddTextStory;
+  const factory _DisposeAddTextStory() = _$DisposeAddTextStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickStoryMediaLoadingCopyWith<$Res> {
-  factory _$$_PickStoryMediaLoadingCopyWith(_$_PickStoryMediaLoading value,
-          $Res Function(_$_PickStoryMediaLoading) then) =
-      __$$_PickStoryMediaLoadingCopyWithImpl<$Res>;
+abstract class _$$PickStoryMediaLoadingImplCopyWith<$Res> {
+  factory _$$PickStoryMediaLoadingImplCopyWith(
+          _$PickStoryMediaLoadingImpl value,
+          $Res Function(_$PickStoryMediaLoadingImpl) then) =
+      __$$PickStoryMediaLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickStoryMediaLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_PickStoryMediaLoading>
-    implements _$$_PickStoryMediaLoadingCopyWith<$Res> {
-  __$$_PickStoryMediaLoadingCopyWithImpl(_$_PickStoryMediaLoading _value,
-      $Res Function(_$_PickStoryMediaLoading) _then)
+class __$$PickStoryMediaLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$PickStoryMediaLoadingImpl>
+    implements _$$PickStoryMediaLoadingImplCopyWith<$Res> {
+  __$$PickStoryMediaLoadingImplCopyWithImpl(_$PickStoryMediaLoadingImpl _value,
+      $Res Function(_$PickStoryMediaLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickStoryMediaLoading
+class _$PickStoryMediaLoadingImpl
     with DiagnosticableTreeMixin
     implements _PickStoryMediaLoading {
-  const _$_PickStoryMediaLoading();
+  const _$PickStoryMediaLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1959,7 +1962,8 @@ class _$_PickStoryMediaLoading
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickStoryMediaLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$PickStoryMediaLoadingImpl);
   }
 
   @override
@@ -2311,31 +2315,31 @@ class _$_PickStoryMediaLoading
 }
 
 abstract class _PickStoryMediaLoading implements StoriesState {
-  const factory _PickStoryMediaLoading() = _$_PickStoryMediaLoading;
+  const factory _PickStoryMediaLoading() = _$PickStoryMediaLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickStoryImageCopyWith<$Res> {
-  factory _$$_PickStoryImageCopyWith(
-          _$_PickStoryImage value, $Res Function(_$_PickStoryImage) then) =
-      __$$_PickStoryImageCopyWithImpl<$Res>;
+abstract class _$$PickStoryImageImplCopyWith<$Res> {
+  factory _$$PickStoryImageImplCopyWith(_$PickStoryImageImpl value,
+          $Res Function(_$PickStoryImageImpl) then) =
+      __$$PickStoryImageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickStoryImageCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_PickStoryImage>
-    implements _$$_PickStoryImageCopyWith<$Res> {
-  __$$_PickStoryImageCopyWithImpl(
-      _$_PickStoryImage _value, $Res Function(_$_PickStoryImage) _then)
+class __$$PickStoryImageImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$PickStoryImageImpl>
+    implements _$$PickStoryImageImplCopyWith<$Res> {
+  __$$PickStoryImageImplCopyWithImpl(
+      _$PickStoryImageImpl _value, $Res Function(_$PickStoryImageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickStoryImage
+class _$PickStoryImageImpl
     with DiagnosticableTreeMixin
     implements _PickStoryImage {
-  const _$_PickStoryImage();
+  const _$PickStoryImageImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -2351,7 +2355,7 @@ class _$_PickStoryImage
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickStoryImage);
+        (other.runtimeType == runtimeType && other is _$PickStoryImageImpl);
   }
 
   @override
@@ -2703,31 +2707,31 @@ class _$_PickStoryImage
 }
 
 abstract class _PickStoryImage implements StoriesState {
-  const factory _PickStoryImage() = _$_PickStoryImage;
+  const factory _PickStoryImage() = _$PickStoryImageImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickStoryImageErrorCopyWith<$Res> {
-  factory _$$_PickStoryImageErrorCopyWith(_$_PickStoryImageError value,
-          $Res Function(_$_PickStoryImageError) then) =
-      __$$_PickStoryImageErrorCopyWithImpl<$Res>;
+abstract class _$$PickStoryImageErrorImplCopyWith<$Res> {
+  factory _$$PickStoryImageErrorImplCopyWith(_$PickStoryImageErrorImpl value,
+          $Res Function(_$PickStoryImageErrorImpl) then) =
+      __$$PickStoryImageErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickStoryImageErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_PickStoryImageError>
-    implements _$$_PickStoryImageErrorCopyWith<$Res> {
-  __$$_PickStoryImageErrorCopyWithImpl(_$_PickStoryImageError _value,
-      $Res Function(_$_PickStoryImageError) _then)
+class __$$PickStoryImageErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$PickStoryImageErrorImpl>
+    implements _$$PickStoryImageErrorImplCopyWith<$Res> {
+  __$$PickStoryImageErrorImplCopyWithImpl(_$PickStoryImageErrorImpl _value,
+      $Res Function(_$PickStoryImageErrorImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickStoryImageError
+class _$PickStoryImageErrorImpl
     with DiagnosticableTreeMixin
     implements _PickStoryImageError {
-  const _$_PickStoryImageError();
+  const _$PickStoryImageErrorImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -2744,7 +2748,8 @@ class _$_PickStoryImageError
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickStoryImageError);
+        (other.runtimeType == runtimeType &&
+            other is _$PickStoryImageErrorImpl);
   }
 
   @override
@@ -3096,31 +3101,31 @@ class _$_PickStoryImageError
 }
 
 abstract class _PickStoryImageError implements StoriesState {
-  const factory _PickStoryImageError() = _$_PickStoryImageError;
+  const factory _PickStoryImageError() = _$PickStoryImageErrorImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickStoryVideoCopyWith<$Res> {
-  factory _$$_PickStoryVideoCopyWith(
-          _$_PickStoryVideo value, $Res Function(_$_PickStoryVideo) then) =
-      __$$_PickStoryVideoCopyWithImpl<$Res>;
+abstract class _$$PickStoryVideoImplCopyWith<$Res> {
+  factory _$$PickStoryVideoImplCopyWith(_$PickStoryVideoImpl value,
+          $Res Function(_$PickStoryVideoImpl) then) =
+      __$$PickStoryVideoImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickStoryVideoCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_PickStoryVideo>
-    implements _$$_PickStoryVideoCopyWith<$Res> {
-  __$$_PickStoryVideoCopyWithImpl(
-      _$_PickStoryVideo _value, $Res Function(_$_PickStoryVideo) _then)
+class __$$PickStoryVideoImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$PickStoryVideoImpl>
+    implements _$$PickStoryVideoImplCopyWith<$Res> {
+  __$$PickStoryVideoImplCopyWithImpl(
+      _$PickStoryVideoImpl _value, $Res Function(_$PickStoryVideoImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickStoryVideo
+class _$PickStoryVideoImpl
     with DiagnosticableTreeMixin
     implements _PickStoryVideo {
-  const _$_PickStoryVideo();
+  const _$PickStoryVideoImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -3136,7 +3141,7 @@ class _$_PickStoryVideo
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickStoryVideo);
+        (other.runtimeType == runtimeType && other is _$PickStoryVideoImpl);
   }
 
   @override
@@ -3488,31 +3493,31 @@ class _$_PickStoryVideo
 }
 
 abstract class _PickStoryVideo implements StoriesState {
-  const factory _PickStoryVideo() = _$_PickStoryVideo;
+  const factory _PickStoryVideo() = _$PickStoryVideoImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickStoryVideoErrorCopyWith<$Res> {
-  factory _$$_PickStoryVideoErrorCopyWith(_$_PickStoryVideoError value,
-          $Res Function(_$_PickStoryVideoError) then) =
-      __$$_PickStoryVideoErrorCopyWithImpl<$Res>;
+abstract class _$$PickStoryVideoErrorImplCopyWith<$Res> {
+  factory _$$PickStoryVideoErrorImplCopyWith(_$PickStoryVideoErrorImpl value,
+          $Res Function(_$PickStoryVideoErrorImpl) then) =
+      __$$PickStoryVideoErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickStoryVideoErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_PickStoryVideoError>
-    implements _$$_PickStoryVideoErrorCopyWith<$Res> {
-  __$$_PickStoryVideoErrorCopyWithImpl(_$_PickStoryVideoError _value,
-      $Res Function(_$_PickStoryVideoError) _then)
+class __$$PickStoryVideoErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$PickStoryVideoErrorImpl>
+    implements _$$PickStoryVideoErrorImplCopyWith<$Res> {
+  __$$PickStoryVideoErrorImplCopyWithImpl(_$PickStoryVideoErrorImpl _value,
+      $Res Function(_$PickStoryVideoErrorImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickStoryVideoError
+class _$PickStoryVideoErrorImpl
     with DiagnosticableTreeMixin
     implements _PickStoryVideoError {
-  const _$_PickStoryVideoError();
+  const _$PickStoryVideoErrorImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -3529,7 +3534,8 @@ class _$_PickStoryVideoError
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickStoryVideoError);
+        (other.runtimeType == runtimeType &&
+            other is _$PickStoryVideoErrorImpl);
   }
 
   @override
@@ -3881,31 +3887,31 @@ class _$_PickStoryVideoError
 }
 
 abstract class _PickStoryVideoError implements StoriesState {
-  const factory _PickStoryVideoError() = _$_PickStoryVideoError;
+  const factory _PickStoryVideoError() = _$PickStoryVideoErrorImpl;
 }
 
 /// @nodoc
-abstract class _$$_SetVideoDurationCopyWith<$Res> {
-  factory _$$_SetVideoDurationCopyWith(
-          _$_SetVideoDuration value, $Res Function(_$_SetVideoDuration) then) =
-      __$$_SetVideoDurationCopyWithImpl<$Res>;
+abstract class _$$SetVideoDurationImplCopyWith<$Res> {
+  factory _$$SetVideoDurationImplCopyWith(_$SetVideoDurationImpl value,
+          $Res Function(_$SetVideoDurationImpl) then) =
+      __$$SetVideoDurationImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SetVideoDurationCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_SetVideoDuration>
-    implements _$$_SetVideoDurationCopyWith<$Res> {
-  __$$_SetVideoDurationCopyWithImpl(
-      _$_SetVideoDuration _value, $Res Function(_$_SetVideoDuration) _then)
+class __$$SetVideoDurationImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$SetVideoDurationImpl>
+    implements _$$SetVideoDurationImplCopyWith<$Res> {
+  __$$SetVideoDurationImplCopyWithImpl(_$SetVideoDurationImpl _value,
+      $Res Function(_$SetVideoDurationImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SetVideoDuration
+class _$SetVideoDurationImpl
     with DiagnosticableTreeMixin
     implements _SetVideoDuration {
-  const _$_SetVideoDuration();
+  const _$SetVideoDurationImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -3922,7 +3928,7 @@ class _$_SetVideoDuration
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SetVideoDuration);
+        (other.runtimeType == runtimeType && other is _$SetVideoDurationImpl);
   }
 
   @override
@@ -4274,31 +4280,31 @@ class _$_SetVideoDuration
 }
 
 abstract class _SetVideoDuration implements StoriesState {
-  const factory _SetVideoDuration() = _$_SetVideoDuration;
+  const factory _SetVideoDuration() = _$SetVideoDurationImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendStoryLoadingCopyWith<$Res> {
-  factory _$$_SendStoryLoadingCopyWith(
-          _$_SendStoryLoading value, $Res Function(_$_SendStoryLoading) then) =
-      __$$_SendStoryLoadingCopyWithImpl<$Res>;
+abstract class _$$SendStoryLoadingImplCopyWith<$Res> {
+  factory _$$SendStoryLoadingImplCopyWith(_$SendStoryLoadingImpl value,
+          $Res Function(_$SendStoryLoadingImpl) then) =
+      __$$SendStoryLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SendStoryLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_SendStoryLoading>
-    implements _$$_SendStoryLoadingCopyWith<$Res> {
-  __$$_SendStoryLoadingCopyWithImpl(
-      _$_SendStoryLoading _value, $Res Function(_$_SendStoryLoading) _then)
+class __$$SendStoryLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$SendStoryLoadingImpl>
+    implements _$$SendStoryLoadingImplCopyWith<$Res> {
+  __$$SendStoryLoadingImplCopyWithImpl(_$SendStoryLoadingImpl _value,
+      $Res Function(_$SendStoryLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SendStoryLoading
+class _$SendStoryLoadingImpl
     with DiagnosticableTreeMixin
     implements _SendStoryLoading {
-  const _$_SendStoryLoading();
+  const _$SendStoryLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -4315,7 +4321,7 @@ class _$_SendStoryLoading
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SendStoryLoading);
+        (other.runtimeType == runtimeType && other is _$SendStoryLoadingImpl);
   }
 
   @override
@@ -4667,29 +4673,29 @@ class _$_SendStoryLoading
 }
 
 abstract class _SendStoryLoading implements StoriesState {
-  const factory _SendStoryLoading() = _$_SendStoryLoading;
+  const factory _SendStoryLoading() = _$SendStoryLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendStoryCopyWith<$Res> {
-  factory _$$_SendStoryCopyWith(
-          _$_SendStory value, $Res Function(_$_SendStory) then) =
-      __$$_SendStoryCopyWithImpl<$Res>;
+abstract class _$$SendStoryImplCopyWith<$Res> {
+  factory _$$SendStoryImplCopyWith(
+          _$SendStoryImpl value, $Res Function(_$SendStoryImpl) then) =
+      __$$SendStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SendStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_SendStory>
-    implements _$$_SendStoryCopyWith<$Res> {
-  __$$_SendStoryCopyWithImpl(
-      _$_SendStory _value, $Res Function(_$_SendStory) _then)
+class __$$SendStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$SendStoryImpl>
+    implements _$$SendStoryImplCopyWith<$Res> {
+  __$$SendStoryImplCopyWithImpl(
+      _$SendStoryImpl _value, $Res Function(_$SendStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
-  const _$_SendStory();
+class _$SendStoryImpl with DiagnosticableTreeMixin implements _SendStory {
+  const _$SendStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -4705,7 +4711,7 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SendStory);
+        (other.runtimeType == runtimeType && other is _$SendStoryImpl);
   }
 
   @override
@@ -5057,24 +5063,24 @@ class _$_SendStory with DiagnosticableTreeMixin implements _SendStory {
 }
 
 abstract class _SendStory implements StoriesState {
-  const factory _SendStory() = _$_SendStory;
+  const factory _SendStory() = _$SendStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendStoryErrorCopyWith<$Res> {
-  factory _$$_SendStoryErrorCopyWith(
-          _$_SendStoryError value, $Res Function(_$_SendStoryError) then) =
-      __$$_SendStoryErrorCopyWithImpl<$Res>;
+abstract class _$$SendStoryErrorImplCopyWith<$Res> {
+  factory _$$SendStoryErrorImplCopyWith(_$SendStoryErrorImpl value,
+          $Res Function(_$SendStoryErrorImpl) then) =
+      __$$SendStoryErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_SendStoryErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_SendStoryError>
-    implements _$$_SendStoryErrorCopyWith<$Res> {
-  __$$_SendStoryErrorCopyWithImpl(
-      _$_SendStoryError _value, $Res Function(_$_SendStoryError) _then)
+class __$$SendStoryErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$SendStoryErrorImpl>
+    implements _$$SendStoryErrorImplCopyWith<$Res> {
+  __$$SendStoryErrorImplCopyWithImpl(
+      _$SendStoryErrorImpl _value, $Res Function(_$SendStoryErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5082,7 +5088,7 @@ class __$$_SendStoryErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_SendStoryError(
+    return _then(_$SendStoryErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -5093,10 +5099,10 @@ class __$$_SendStoryErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SendStoryError
+class _$SendStoryErrorImpl
     with DiagnosticableTreeMixin
     implements _SendStoryError {
-  const _$_SendStoryError(this.errorMsg);
+  const _$SendStoryErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -5118,7 +5124,7 @@ class _$_SendStoryError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SendStoryError &&
+            other is _$SendStoryErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -5129,8 +5135,9 @@ class _$_SendStoryError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SendStoryErrorCopyWith<_$_SendStoryError> get copyWith =>
-      __$$_SendStoryErrorCopyWithImpl<_$_SendStoryError>(this, _$identity);
+  _$$SendStoryErrorImplCopyWith<_$SendStoryErrorImpl> get copyWith =>
+      __$$SendStoryErrorImplCopyWithImpl<_$SendStoryErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5478,36 +5485,36 @@ class _$_SendStoryError
 }
 
 abstract class _SendStoryError implements StoriesState {
-  const factory _SendStoryError(final String errorMsg) = _$_SendStoryError;
+  const factory _SendStoryError(final String errorMsg) = _$SendStoryErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_SendStoryErrorCopyWith<_$_SendStoryError> get copyWith =>
+  _$$SendStoryErrorImplCopyWith<_$SendStoryErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GetFilePercentageCopyWith<$Res> {
-  factory _$$_GetFilePercentageCopyWith(_$_GetFilePercentage value,
-          $Res Function(_$_GetFilePercentage) then) =
-      __$$_GetFilePercentageCopyWithImpl<$Res>;
+abstract class _$$GetFilePercentageImplCopyWith<$Res> {
+  factory _$$GetFilePercentageImplCopyWith(_$GetFilePercentageImpl value,
+          $Res Function(_$GetFilePercentageImpl) then) =
+      __$$GetFilePercentageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetFilePercentageCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetFilePercentage>
-    implements _$$_GetFilePercentageCopyWith<$Res> {
-  __$$_GetFilePercentageCopyWithImpl(
-      _$_GetFilePercentage _value, $Res Function(_$_GetFilePercentage) _then)
+class __$$GetFilePercentageImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetFilePercentageImpl>
+    implements _$$GetFilePercentageImplCopyWith<$Res> {
+  __$$GetFilePercentageImplCopyWithImpl(_$GetFilePercentageImpl _value,
+      $Res Function(_$GetFilePercentageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetFilePercentage
+class _$GetFilePercentageImpl
     with DiagnosticableTreeMixin
     implements _GetFilePercentage {
-  const _$_GetFilePercentage();
+  const _$GetFilePercentageImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -5524,7 +5531,7 @@ class _$_GetFilePercentage
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetFilePercentage);
+        (other.runtimeType == runtimeType && other is _$GetFilePercentageImpl);
   }
 
   @override
@@ -5876,31 +5883,31 @@ class _$_GetFilePercentage
 }
 
 abstract class _GetFilePercentage implements StoriesState {
-  const factory _GetFilePercentage() = _$_GetFilePercentage;
+  const factory _GetFilePercentage() = _$GetFilePercentageImpl;
 }
 
 /// @nodoc
-abstract class _$$_SetImageDimensionsCopyWith<$Res> {
-  factory _$$_SetImageDimensionsCopyWith(_$_SetImageDimensions value,
-          $Res Function(_$_SetImageDimensions) then) =
-      __$$_SetImageDimensionsCopyWithImpl<$Res>;
+abstract class _$$SetImageDimensionsImplCopyWith<$Res> {
+  factory _$$SetImageDimensionsImplCopyWith(_$SetImageDimensionsImpl value,
+          $Res Function(_$SetImageDimensionsImpl) then) =
+      __$$SetImageDimensionsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SetImageDimensionsCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_SetImageDimensions>
-    implements _$$_SetImageDimensionsCopyWith<$Res> {
-  __$$_SetImageDimensionsCopyWithImpl(
-      _$_SetImageDimensions _value, $Res Function(_$_SetImageDimensions) _then)
+class __$$SetImageDimensionsImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$SetImageDimensionsImpl>
+    implements _$$SetImageDimensionsImplCopyWith<$Res> {
+  __$$SetImageDimensionsImplCopyWithImpl(_$SetImageDimensionsImpl _value,
+      $Res Function(_$SetImageDimensionsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SetImageDimensions
+class _$SetImageDimensionsImpl
     with DiagnosticableTreeMixin
     implements _SetImageDimensions {
-  const _$_SetImageDimensions();
+  const _$SetImageDimensionsImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -5917,7 +5924,7 @@ class _$_SetImageDimensions
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SetImageDimensions);
+        (other.runtimeType == runtimeType && other is _$SetImageDimensionsImpl);
   }
 
   @override
@@ -6269,31 +6276,31 @@ class _$_SetImageDimensions
 }
 
 abstract class _SetImageDimensions implements StoriesState {
-  const factory _SetImageDimensions() = _$_SetImageDimensions;
+  const factory _SetImageDimensions() = _$SetImageDimensionsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMyStoriesLoadingCopyWith<$Res> {
-  factory _$$_GetMyStoriesLoadingCopyWith(_$_GetMyStoriesLoading value,
-          $Res Function(_$_GetMyStoriesLoading) then) =
-      __$$_GetMyStoriesLoadingCopyWithImpl<$Res>;
+abstract class _$$GetMyStoriesLoadingImplCopyWith<$Res> {
+  factory _$$GetMyStoriesLoadingImplCopyWith(_$GetMyStoriesLoadingImpl value,
+          $Res Function(_$GetMyStoriesLoadingImpl) then) =
+      __$$GetMyStoriesLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetMyStoriesLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetMyStoriesLoading>
-    implements _$$_GetMyStoriesLoadingCopyWith<$Res> {
-  __$$_GetMyStoriesLoadingCopyWithImpl(_$_GetMyStoriesLoading _value,
-      $Res Function(_$_GetMyStoriesLoading) _then)
+class __$$GetMyStoriesLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetMyStoriesLoadingImpl>
+    implements _$$GetMyStoriesLoadingImplCopyWith<$Res> {
+  __$$GetMyStoriesLoadingImplCopyWithImpl(_$GetMyStoriesLoadingImpl _value,
+      $Res Function(_$GetMyStoriesLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetMyStoriesLoading
+class _$GetMyStoriesLoadingImpl
     with DiagnosticableTreeMixin
     implements _GetMyStoriesLoading {
-  const _$_GetMyStoriesLoading();
+  const _$GetMyStoriesLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -6310,7 +6317,8 @@ class _$_GetMyStoriesLoading
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetMyStoriesLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$GetMyStoriesLoadingImpl);
   }
 
   @override
@@ -6662,29 +6670,29 @@ class _$_GetMyStoriesLoading
 }
 
 abstract class _GetMyStoriesLoading implements StoriesState {
-  const factory _GetMyStoriesLoading() = _$_GetMyStoriesLoading;
+  const factory _GetMyStoriesLoading() = _$GetMyStoriesLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMyStoriesCopyWith<$Res> {
-  factory _$$_GetMyStoriesCopyWith(
-          _$_GetMyStories value, $Res Function(_$_GetMyStories) then) =
-      __$$_GetMyStoriesCopyWithImpl<$Res>;
+abstract class _$$GetMyStoriesImplCopyWith<$Res> {
+  factory _$$GetMyStoriesImplCopyWith(
+          _$GetMyStoriesImpl value, $Res Function(_$GetMyStoriesImpl) then) =
+      __$$GetMyStoriesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetMyStoriesCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetMyStories>
-    implements _$$_GetMyStoriesCopyWith<$Res> {
-  __$$_GetMyStoriesCopyWithImpl(
-      _$_GetMyStories _value, $Res Function(_$_GetMyStories) _then)
+class __$$GetMyStoriesImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetMyStoriesImpl>
+    implements _$$GetMyStoriesImplCopyWith<$Res> {
+  __$$GetMyStoriesImplCopyWithImpl(
+      _$GetMyStoriesImpl _value, $Res Function(_$GetMyStoriesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
-  const _$_GetMyStories();
+class _$GetMyStoriesImpl with DiagnosticableTreeMixin implements _GetMyStories {
+  const _$GetMyStoriesImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -6700,7 +6708,7 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetMyStories);
+        (other.runtimeType == runtimeType && other is _$GetMyStoriesImpl);
   }
 
   @override
@@ -7052,24 +7060,24 @@ class _$_GetMyStories with DiagnosticableTreeMixin implements _GetMyStories {
 }
 
 abstract class _GetMyStories implements StoriesState {
-  const factory _GetMyStories() = _$_GetMyStories;
+  const factory _GetMyStories() = _$GetMyStoriesImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMyStoriesErrorCopyWith<$Res> {
-  factory _$$_GetMyStoriesErrorCopyWith(_$_GetMyStoriesError value,
-          $Res Function(_$_GetMyStoriesError) then) =
-      __$$_GetMyStoriesErrorCopyWithImpl<$Res>;
+abstract class _$$GetMyStoriesErrorImplCopyWith<$Res> {
+  factory _$$GetMyStoriesErrorImplCopyWith(_$GetMyStoriesErrorImpl value,
+          $Res Function(_$GetMyStoriesErrorImpl) then) =
+      __$$GetMyStoriesErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GetMyStoriesErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetMyStoriesError>
-    implements _$$_GetMyStoriesErrorCopyWith<$Res> {
-  __$$_GetMyStoriesErrorCopyWithImpl(
-      _$_GetMyStoriesError _value, $Res Function(_$_GetMyStoriesError) _then)
+class __$$GetMyStoriesErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetMyStoriesErrorImpl>
+    implements _$$GetMyStoriesErrorImplCopyWith<$Res> {
+  __$$GetMyStoriesErrorImplCopyWithImpl(_$GetMyStoriesErrorImpl _value,
+      $Res Function(_$GetMyStoriesErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7077,7 +7085,7 @@ class __$$_GetMyStoriesErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GetMyStoriesError(
+    return _then(_$GetMyStoriesErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -7088,10 +7096,10 @@ class __$$_GetMyStoriesErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetMyStoriesError
+class _$GetMyStoriesErrorImpl
     with DiagnosticableTreeMixin
     implements _GetMyStoriesError {
-  const _$_GetMyStoriesError(this.errorMsg);
+  const _$GetMyStoriesErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -7113,7 +7121,7 @@ class _$_GetMyStoriesError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetMyStoriesError &&
+            other is _$GetMyStoriesErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -7124,8 +7132,8 @@ class _$_GetMyStoriesError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetMyStoriesErrorCopyWith<_$_GetMyStoriesError> get copyWith =>
-      __$$_GetMyStoriesErrorCopyWithImpl<_$_GetMyStoriesError>(
+  _$$GetMyStoriesErrorImplCopyWith<_$GetMyStoriesErrorImpl> get copyWith =>
+      __$$GetMyStoriesErrorImplCopyWithImpl<_$GetMyStoriesErrorImpl>(
           this, _$identity);
 
   @override
@@ -7475,38 +7483,39 @@ class _$_GetMyStoriesError
 
 abstract class _GetMyStoriesError implements StoriesState {
   const factory _GetMyStoriesError(final String errorMsg) =
-      _$_GetMyStoriesError;
+      _$GetMyStoriesErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GetMyStoriesErrorCopyWith<_$_GetMyStoriesError> get copyWith =>
+  _$$GetMyStoriesErrorImplCopyWith<_$GetMyStoriesErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsLastStoriesLoadingCopyWith<$Res> {
-  factory _$$_GetContactsLastStoriesLoadingCopyWith(
-          _$_GetContactsLastStoriesLoading value,
-          $Res Function(_$_GetContactsLastStoriesLoading) then) =
-      __$$_GetContactsLastStoriesLoadingCopyWithImpl<$Res>;
+abstract class _$$GetContactsLastStoriesLoadingImplCopyWith<$Res> {
+  factory _$$GetContactsLastStoriesLoadingImplCopyWith(
+          _$GetContactsLastStoriesLoadingImpl value,
+          $Res Function(_$GetContactsLastStoriesLoadingImpl) then) =
+      __$$GetContactsLastStoriesLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsLastStoriesLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetContactsLastStoriesLoading>
-    implements _$$_GetContactsLastStoriesLoadingCopyWith<$Res> {
-  __$$_GetContactsLastStoriesLoadingCopyWithImpl(
-      _$_GetContactsLastStoriesLoading _value,
-      $Res Function(_$_GetContactsLastStoriesLoading) _then)
+class __$$GetContactsLastStoriesLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res,
+        _$GetContactsLastStoriesLoadingImpl>
+    implements _$$GetContactsLastStoriesLoadingImplCopyWith<$Res> {
+  __$$GetContactsLastStoriesLoadingImplCopyWithImpl(
+      _$GetContactsLastStoriesLoadingImpl _value,
+      $Res Function(_$GetContactsLastStoriesLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsLastStoriesLoading
+class _$GetContactsLastStoriesLoadingImpl
     with DiagnosticableTreeMixin
     implements _GetContactsLastStoriesLoading {
-  const _$_GetContactsLastStoriesLoading();
+  const _$GetContactsLastStoriesLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -7524,7 +7533,7 @@ class _$_GetContactsLastStoriesLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsLastStoriesLoading);
+            other is _$GetContactsLastStoriesLoadingImpl);
   }
 
   @override
@@ -7877,31 +7886,33 @@ class _$_GetContactsLastStoriesLoading
 
 abstract class _GetContactsLastStoriesLoading implements StoriesState {
   const factory _GetContactsLastStoriesLoading() =
-      _$_GetContactsLastStoriesLoading;
+      _$GetContactsLastStoriesLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsLastStoriesCopyWith<$Res> {
-  factory _$$_GetContactsLastStoriesCopyWith(_$_GetContactsLastStories value,
-          $Res Function(_$_GetContactsLastStories) then) =
-      __$$_GetContactsLastStoriesCopyWithImpl<$Res>;
+abstract class _$$GetContactsLastStoriesImplCopyWith<$Res> {
+  factory _$$GetContactsLastStoriesImplCopyWith(
+          _$GetContactsLastStoriesImpl value,
+          $Res Function(_$GetContactsLastStoriesImpl) then) =
+      __$$GetContactsLastStoriesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsLastStoriesCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetContactsLastStories>
-    implements _$$_GetContactsLastStoriesCopyWith<$Res> {
-  __$$_GetContactsLastStoriesCopyWithImpl(_$_GetContactsLastStories _value,
-      $Res Function(_$_GetContactsLastStories) _then)
+class __$$GetContactsLastStoriesImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetContactsLastStoriesImpl>
+    implements _$$GetContactsLastStoriesImplCopyWith<$Res> {
+  __$$GetContactsLastStoriesImplCopyWithImpl(
+      _$GetContactsLastStoriesImpl _value,
+      $Res Function(_$GetContactsLastStoriesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsLastStories
+class _$GetContactsLastStoriesImpl
     with DiagnosticableTreeMixin
     implements _GetContactsLastStories {
-  const _$_GetContactsLastStories();
+  const _$GetContactsLastStoriesImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -7919,7 +7930,7 @@ class _$_GetContactsLastStories
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsLastStories);
+            other is _$GetContactsLastStoriesImpl);
   }
 
   @override
@@ -8271,26 +8282,26 @@ class _$_GetContactsLastStories
 }
 
 abstract class _GetContactsLastStories implements StoriesState {
-  const factory _GetContactsLastStories() = _$_GetContactsLastStories;
+  const factory _GetContactsLastStories() = _$GetContactsLastStoriesImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsLastStoriesErrorCopyWith<$Res> {
-  factory _$$_GetContactsLastStoriesErrorCopyWith(
-          _$_GetContactsLastStoriesError value,
-          $Res Function(_$_GetContactsLastStoriesError) then) =
-      __$$_GetContactsLastStoriesErrorCopyWithImpl<$Res>;
+abstract class _$$GetContactsLastStoriesErrorImplCopyWith<$Res> {
+  factory _$$GetContactsLastStoriesErrorImplCopyWith(
+          _$GetContactsLastStoriesErrorImpl value,
+          $Res Function(_$GetContactsLastStoriesErrorImpl) then) =
+      __$$GetContactsLastStoriesErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GetContactsLastStoriesErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetContactsLastStoriesError>
-    implements _$$_GetContactsLastStoriesErrorCopyWith<$Res> {
-  __$$_GetContactsLastStoriesErrorCopyWithImpl(
-      _$_GetContactsLastStoriesError _value,
-      $Res Function(_$_GetContactsLastStoriesError) _then)
+class __$$GetContactsLastStoriesErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetContactsLastStoriesErrorImpl>
+    implements _$$GetContactsLastStoriesErrorImplCopyWith<$Res> {
+  __$$GetContactsLastStoriesErrorImplCopyWithImpl(
+      _$GetContactsLastStoriesErrorImpl _value,
+      $Res Function(_$GetContactsLastStoriesErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -8298,7 +8309,7 @@ class __$$_GetContactsLastStoriesErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GetContactsLastStoriesError(
+    return _then(_$GetContactsLastStoriesErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -8309,10 +8320,10 @@ class __$$_GetContactsLastStoriesErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetContactsLastStoriesError
+class _$GetContactsLastStoriesErrorImpl
     with DiagnosticableTreeMixin
     implements _GetContactsLastStoriesError {
-  const _$_GetContactsLastStoriesError(this.errorMsg);
+  const _$GetContactsLastStoriesErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -8335,7 +8346,7 @@ class _$_GetContactsLastStoriesError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsLastStoriesError &&
+            other is _$GetContactsLastStoriesErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -8346,9 +8357,9 @@ class _$_GetContactsLastStoriesError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetContactsLastStoriesErrorCopyWith<_$_GetContactsLastStoriesError>
-      get copyWith => __$$_GetContactsLastStoriesErrorCopyWithImpl<
-          _$_GetContactsLastStoriesError>(this, _$identity);
+  _$$GetContactsLastStoriesErrorImplCopyWith<_$GetContactsLastStoriesErrorImpl>
+      get copyWith => __$$GetContactsLastStoriesErrorImplCopyWithImpl<
+          _$GetContactsLastStoriesErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -8697,36 +8708,36 @@ class _$_GetContactsLastStoriesError
 
 abstract class _GetContactsLastStoriesError implements StoriesState {
   const factory _GetContactsLastStoriesError(final String errorMsg) =
-      _$_GetContactsLastStoriesError;
+      _$GetContactsLastStoriesErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GetContactsLastStoriesErrorCopyWith<_$_GetContactsLastStoriesError>
+  _$$GetContactsLastStoriesErrorImplCopyWith<_$GetContactsLastStoriesErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_OpenContactStoryCopyWith<$Res> {
-  factory _$$_OpenContactStoryCopyWith(
-          _$_OpenContactStory value, $Res Function(_$_OpenContactStory) then) =
-      __$$_OpenContactStoryCopyWithImpl<$Res>;
+abstract class _$$OpenContactStoryImplCopyWith<$Res> {
+  factory _$$OpenContactStoryImplCopyWith(_$OpenContactStoryImpl value,
+          $Res Function(_$OpenContactStoryImpl) then) =
+      __$$OpenContactStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OpenContactStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_OpenContactStory>
-    implements _$$_OpenContactStoryCopyWith<$Res> {
-  __$$_OpenContactStoryCopyWithImpl(
-      _$_OpenContactStory _value, $Res Function(_$_OpenContactStory) _then)
+class __$$OpenContactStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$OpenContactStoryImpl>
+    implements _$$OpenContactStoryImplCopyWith<$Res> {
+  __$$OpenContactStoryImplCopyWithImpl(_$OpenContactStoryImpl _value,
+      $Res Function(_$OpenContactStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OpenContactStory
+class _$OpenContactStoryImpl
     with DiagnosticableTreeMixin
     implements _OpenContactStory {
-  const _$_OpenContactStory();
+  const _$OpenContactStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -8743,7 +8754,7 @@ class _$_OpenContactStory
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OpenContactStory);
+        (other.runtimeType == runtimeType && other is _$OpenContactStoryImpl);
   }
 
   @override
@@ -9095,34 +9106,34 @@ class _$_OpenContactStory
 }
 
 abstract class _OpenContactStory implements StoriesState {
-  const factory _OpenContactStory() = _$_OpenContactStory;
+  const factory _OpenContactStory() = _$OpenContactStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsCurrentStoriesLoadingCopyWith<$Res> {
-  factory _$$_GetContactsCurrentStoriesLoadingCopyWith(
-          _$_GetContactsCurrentStoriesLoading value,
-          $Res Function(_$_GetContactsCurrentStoriesLoading) then) =
-      __$$_GetContactsCurrentStoriesLoadingCopyWithImpl<$Res>;
+abstract class _$$GetContactsCurrentStoriesLoadingImplCopyWith<$Res> {
+  factory _$$GetContactsCurrentStoriesLoadingImplCopyWith(
+          _$GetContactsCurrentStoriesLoadingImpl value,
+          $Res Function(_$GetContactsCurrentStoriesLoadingImpl) then) =
+      __$$GetContactsCurrentStoriesLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsCurrentStoriesLoadingCopyWithImpl<$Res>
+class __$$GetContactsCurrentStoriesLoadingImplCopyWithImpl<$Res>
     extends _$StoriesStateCopyWithImpl<$Res,
-        _$_GetContactsCurrentStoriesLoading>
-    implements _$$_GetContactsCurrentStoriesLoadingCopyWith<$Res> {
-  __$$_GetContactsCurrentStoriesLoadingCopyWithImpl(
-      _$_GetContactsCurrentStoriesLoading _value,
-      $Res Function(_$_GetContactsCurrentStoriesLoading) _then)
+        _$GetContactsCurrentStoriesLoadingImpl>
+    implements _$$GetContactsCurrentStoriesLoadingImplCopyWith<$Res> {
+  __$$GetContactsCurrentStoriesLoadingImplCopyWithImpl(
+      _$GetContactsCurrentStoriesLoadingImpl _value,
+      $Res Function(_$GetContactsCurrentStoriesLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsCurrentStoriesLoading
+class _$GetContactsCurrentStoriesLoadingImpl
     with DiagnosticableTreeMixin
     implements _GetContactsCurrentStoriesLoading {
-  const _$_GetContactsCurrentStoriesLoading();
+  const _$GetContactsCurrentStoriesLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -9140,7 +9151,7 @@ class _$_GetContactsCurrentStoriesLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsCurrentStoriesLoading);
+            other is _$GetContactsCurrentStoriesLoadingImpl);
   }
 
   @override
@@ -9493,33 +9504,33 @@ class _$_GetContactsCurrentStoriesLoading
 
 abstract class _GetContactsCurrentStoriesLoading implements StoriesState {
   const factory _GetContactsCurrentStoriesLoading() =
-      _$_GetContactsCurrentStoriesLoading;
+      _$GetContactsCurrentStoriesLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsCurrentStoriesCopyWith<$Res> {
-  factory _$$_GetContactsCurrentStoriesCopyWith(
-          _$_GetContactsCurrentStories value,
-          $Res Function(_$_GetContactsCurrentStories) then) =
-      __$$_GetContactsCurrentStoriesCopyWithImpl<$Res>;
+abstract class _$$GetContactsCurrentStoriesImplCopyWith<$Res> {
+  factory _$$GetContactsCurrentStoriesImplCopyWith(
+          _$GetContactsCurrentStoriesImpl value,
+          $Res Function(_$GetContactsCurrentStoriesImpl) then) =
+      __$$GetContactsCurrentStoriesImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsCurrentStoriesCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetContactsCurrentStories>
-    implements _$$_GetContactsCurrentStoriesCopyWith<$Res> {
-  __$$_GetContactsCurrentStoriesCopyWithImpl(
-      _$_GetContactsCurrentStories _value,
-      $Res Function(_$_GetContactsCurrentStories) _then)
+class __$$GetContactsCurrentStoriesImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$GetContactsCurrentStoriesImpl>
+    implements _$$GetContactsCurrentStoriesImplCopyWith<$Res> {
+  __$$GetContactsCurrentStoriesImplCopyWithImpl(
+      _$GetContactsCurrentStoriesImpl _value,
+      $Res Function(_$GetContactsCurrentStoriesImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsCurrentStories
+class _$GetContactsCurrentStoriesImpl
     with DiagnosticableTreeMixin
     implements _GetContactsCurrentStories {
-  const _$_GetContactsCurrentStories();
+  const _$GetContactsCurrentStoriesImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -9537,7 +9548,7 @@ class _$_GetContactsCurrentStories
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsCurrentStories);
+            other is _$GetContactsCurrentStoriesImpl);
   }
 
   @override
@@ -9889,26 +9900,27 @@ class _$_GetContactsCurrentStories
 }
 
 abstract class _GetContactsCurrentStories implements StoriesState {
-  const factory _GetContactsCurrentStories() = _$_GetContactsCurrentStories;
+  const factory _GetContactsCurrentStories() = _$GetContactsCurrentStoriesImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsCurrentStoriesErrorCopyWith<$Res> {
-  factory _$$_GetContactsCurrentStoriesErrorCopyWith(
-          _$_GetContactsCurrentStoriesError value,
-          $Res Function(_$_GetContactsCurrentStoriesError) then) =
-      __$$_GetContactsCurrentStoriesErrorCopyWithImpl<$Res>;
+abstract class _$$GetContactsCurrentStoriesErrorImplCopyWith<$Res> {
+  factory _$$GetContactsCurrentStoriesErrorImplCopyWith(
+          _$GetContactsCurrentStoriesErrorImpl value,
+          $Res Function(_$GetContactsCurrentStoriesErrorImpl) then) =
+      __$$GetContactsCurrentStoriesErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GetContactsCurrentStoriesErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_GetContactsCurrentStoriesError>
-    implements _$$_GetContactsCurrentStoriesErrorCopyWith<$Res> {
-  __$$_GetContactsCurrentStoriesErrorCopyWithImpl(
-      _$_GetContactsCurrentStoriesError _value,
-      $Res Function(_$_GetContactsCurrentStoriesError) _then)
+class __$$GetContactsCurrentStoriesErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res,
+        _$GetContactsCurrentStoriesErrorImpl>
+    implements _$$GetContactsCurrentStoriesErrorImplCopyWith<$Res> {
+  __$$GetContactsCurrentStoriesErrorImplCopyWithImpl(
+      _$GetContactsCurrentStoriesErrorImpl _value,
+      $Res Function(_$GetContactsCurrentStoriesErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9916,7 +9928,7 @@ class __$$_GetContactsCurrentStoriesErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GetContactsCurrentStoriesError(
+    return _then(_$GetContactsCurrentStoriesErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -9927,10 +9939,10 @@ class __$$_GetContactsCurrentStoriesErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetContactsCurrentStoriesError
+class _$GetContactsCurrentStoriesErrorImpl
     with DiagnosticableTreeMixin
     implements _GetContactsCurrentStoriesError {
-  const _$_GetContactsCurrentStoriesError(this.errorMsg);
+  const _$GetContactsCurrentStoriesErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -9953,7 +9965,7 @@ class _$_GetContactsCurrentStoriesError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetContactsCurrentStoriesError &&
+            other is _$GetContactsCurrentStoriesErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -9964,9 +9976,10 @@ class _$_GetContactsCurrentStoriesError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetContactsCurrentStoriesErrorCopyWith<_$_GetContactsCurrentStoriesError>
-      get copyWith => __$$_GetContactsCurrentStoriesErrorCopyWithImpl<
-          _$_GetContactsCurrentStoriesError>(this, _$identity);
+  _$$GetContactsCurrentStoriesErrorImplCopyWith<
+          _$GetContactsCurrentStoriesErrorImpl>
+      get copyWith => __$$GetContactsCurrentStoriesErrorImplCopyWithImpl<
+          _$GetContactsCurrentStoriesErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -10315,34 +10328,37 @@ class _$_GetContactsCurrentStoriesError
 
 abstract class _GetContactsCurrentStoriesError implements StoriesState {
   const factory _GetContactsCurrentStoriesError(final String errorMsg) =
-      _$_GetContactsCurrentStoriesError;
+      _$GetContactsCurrentStoriesErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GetContactsCurrentStoriesErrorCopyWith<_$_GetContactsCurrentStoriesError>
+  _$$GetContactsCurrentStoriesErrorImplCopyWith<
+          _$GetContactsCurrentStoriesErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_InitStoryViewCopyWith<$Res> {
-  factory _$$_InitStoryViewCopyWith(
-          _$_InitStoryView value, $Res Function(_$_InitStoryView) then) =
-      __$$_InitStoryViewCopyWithImpl<$Res>;
+abstract class _$$InitStoryViewImplCopyWith<$Res> {
+  factory _$$InitStoryViewImplCopyWith(
+          _$InitStoryViewImpl value, $Res Function(_$InitStoryViewImpl) then) =
+      __$$InitStoryViewImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitStoryViewCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_InitStoryView>
-    implements _$$_InitStoryViewCopyWith<$Res> {
-  __$$_InitStoryViewCopyWithImpl(
-      _$_InitStoryView _value, $Res Function(_$_InitStoryView) _then)
+class __$$InitStoryViewImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$InitStoryViewImpl>
+    implements _$$InitStoryViewImplCopyWith<$Res> {
+  __$$InitStoryViewImplCopyWithImpl(
+      _$InitStoryViewImpl _value, $Res Function(_$InitStoryViewImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
-  const _$_InitStoryView();
+class _$InitStoryViewImpl
+    with DiagnosticableTreeMixin
+    implements _InitStoryView {
+  const _$InitStoryViewImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -10358,7 +10374,7 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitStoryView);
+        (other.runtimeType == runtimeType && other is _$InitStoryViewImpl);
   }
 
   @override
@@ -10710,31 +10726,31 @@ class _$_InitStoryView with DiagnosticableTreeMixin implements _InitStoryView {
 }
 
 abstract class _InitStoryView implements StoriesState {
-  const factory _InitStoryView() = _$_InitStoryView;
+  const factory _InitStoryView() = _$InitStoryViewImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeStoryViewCopyWith<$Res> {
-  factory _$$_DisposeStoryViewCopyWith(
-          _$_DisposeStoryView value, $Res Function(_$_DisposeStoryView) then) =
-      __$$_DisposeStoryViewCopyWithImpl<$Res>;
+abstract class _$$DisposeStoryViewImplCopyWith<$Res> {
+  factory _$$DisposeStoryViewImplCopyWith(_$DisposeStoryViewImpl value,
+          $Res Function(_$DisposeStoryViewImpl) then) =
+      __$$DisposeStoryViewImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeStoryViewCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_DisposeStoryView>
-    implements _$$_DisposeStoryViewCopyWith<$Res> {
-  __$$_DisposeStoryViewCopyWithImpl(
-      _$_DisposeStoryView _value, $Res Function(_$_DisposeStoryView) _then)
+class __$$DisposeStoryViewImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$DisposeStoryViewImpl>
+    implements _$$DisposeStoryViewImplCopyWith<$Res> {
+  __$$DisposeStoryViewImplCopyWithImpl(_$DisposeStoryViewImpl _value,
+      $Res Function(_$DisposeStoryViewImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeStoryView
+class _$DisposeStoryViewImpl
     with DiagnosticableTreeMixin
     implements _DisposeStoryView {
-  const _$_DisposeStoryView();
+  const _$DisposeStoryViewImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -10751,7 +10767,7 @@ class _$_DisposeStoryView
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeStoryView);
+        (other.runtimeType == runtimeType && other is _$DisposeStoryViewImpl);
   }
 
   @override
@@ -11103,31 +11119,33 @@ class _$_DisposeStoryView
 }
 
 abstract class _DisposeStoryView implements StoriesState {
-  const factory _DisposeStoryView() = _$_DisposeStoryView;
+  const factory _DisposeStoryView() = _$DisposeStoryViewImpl;
 }
 
 /// @nodoc
-abstract class _$$_ChangeStoryIndexLoadingCopyWith<$Res> {
-  factory _$$_ChangeStoryIndexLoadingCopyWith(_$_ChangeStoryIndexLoading value,
-          $Res Function(_$_ChangeStoryIndexLoading) then) =
-      __$$_ChangeStoryIndexLoadingCopyWithImpl<$Res>;
+abstract class _$$ChangeStoryIndexLoadingImplCopyWith<$Res> {
+  factory _$$ChangeStoryIndexLoadingImplCopyWith(
+          _$ChangeStoryIndexLoadingImpl value,
+          $Res Function(_$ChangeStoryIndexLoadingImpl) then) =
+      __$$ChangeStoryIndexLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ChangeStoryIndexLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ChangeStoryIndexLoading>
-    implements _$$_ChangeStoryIndexLoadingCopyWith<$Res> {
-  __$$_ChangeStoryIndexLoadingCopyWithImpl(_$_ChangeStoryIndexLoading _value,
-      $Res Function(_$_ChangeStoryIndexLoading) _then)
+class __$$ChangeStoryIndexLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ChangeStoryIndexLoadingImpl>
+    implements _$$ChangeStoryIndexLoadingImplCopyWith<$Res> {
+  __$$ChangeStoryIndexLoadingImplCopyWithImpl(
+      _$ChangeStoryIndexLoadingImpl _value,
+      $Res Function(_$ChangeStoryIndexLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ChangeStoryIndexLoading
+class _$ChangeStoryIndexLoadingImpl
     with DiagnosticableTreeMixin
     implements _ChangeStoryIndexLoading {
-  const _$_ChangeStoryIndexLoading();
+  const _$ChangeStoryIndexLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -11145,7 +11163,7 @@ class _$_ChangeStoryIndexLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ChangeStoryIndexLoading);
+            other is _$ChangeStoryIndexLoadingImpl);
   }
 
   @override
@@ -11497,31 +11515,31 @@ class _$_ChangeStoryIndexLoading
 }
 
 abstract class _ChangeStoryIndexLoading implements StoriesState {
-  const factory _ChangeStoryIndexLoading() = _$_ChangeStoryIndexLoading;
+  const factory _ChangeStoryIndexLoading() = _$ChangeStoryIndexLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ChangeStoryIndexCopyWith<$Res> {
-  factory _$$_ChangeStoryIndexCopyWith(
-          _$_ChangeStoryIndex value, $Res Function(_$_ChangeStoryIndex) then) =
-      __$$_ChangeStoryIndexCopyWithImpl<$Res>;
+abstract class _$$ChangeStoryIndexImplCopyWith<$Res> {
+  factory _$$ChangeStoryIndexImplCopyWith(_$ChangeStoryIndexImpl value,
+          $Res Function(_$ChangeStoryIndexImpl) then) =
+      __$$ChangeStoryIndexImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ChangeStoryIndexCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ChangeStoryIndex>
-    implements _$$_ChangeStoryIndexCopyWith<$Res> {
-  __$$_ChangeStoryIndexCopyWithImpl(
-      _$_ChangeStoryIndex _value, $Res Function(_$_ChangeStoryIndex) _then)
+class __$$ChangeStoryIndexImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ChangeStoryIndexImpl>
+    implements _$$ChangeStoryIndexImplCopyWith<$Res> {
+  __$$ChangeStoryIndexImplCopyWithImpl(_$ChangeStoryIndexImpl _value,
+      $Res Function(_$ChangeStoryIndexImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ChangeStoryIndex
+class _$ChangeStoryIndexImpl
     with DiagnosticableTreeMixin
     implements _ChangeStoryIndex {
-  const _$_ChangeStoryIndex();
+  const _$ChangeStoryIndexImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -11538,7 +11556,7 @@ class _$_ChangeStoryIndex
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ChangeStoryIndex);
+        (other.runtimeType == runtimeType && other is _$ChangeStoryIndexImpl);
   }
 
   @override
@@ -11890,31 +11908,31 @@ class _$_ChangeStoryIndex
 }
 
 abstract class _ChangeStoryIndex implements StoriesState {
-  const factory _ChangeStoryIndex() = _$_ChangeStoryIndex;
+  const factory _ChangeStoryIndex() = _$ChangeStoryIndexImpl;
 }
 
 /// @nodoc
-abstract class _$$_ResetStoryIndexCopyWith<$Res> {
-  factory _$$_ResetStoryIndexCopyWith(
-          _$_ResetStoryIndex value, $Res Function(_$_ResetStoryIndex) then) =
-      __$$_ResetStoryIndexCopyWithImpl<$Res>;
+abstract class _$$ResetStoryIndexImplCopyWith<$Res> {
+  factory _$$ResetStoryIndexImplCopyWith(_$ResetStoryIndexImpl value,
+          $Res Function(_$ResetStoryIndexImpl) then) =
+      __$$ResetStoryIndexImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ResetStoryIndexCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ResetStoryIndex>
-    implements _$$_ResetStoryIndexCopyWith<$Res> {
-  __$$_ResetStoryIndexCopyWithImpl(
-      _$_ResetStoryIndex _value, $Res Function(_$_ResetStoryIndex) _then)
+class __$$ResetStoryIndexImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ResetStoryIndexImpl>
+    implements _$$ResetStoryIndexImplCopyWith<$Res> {
+  __$$ResetStoryIndexImplCopyWithImpl(
+      _$ResetStoryIndexImpl _value, $Res Function(_$ResetStoryIndexImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ResetStoryIndex
+class _$ResetStoryIndexImpl
     with DiagnosticableTreeMixin
     implements _ResetStoryIndex {
-  const _$_ResetStoryIndex();
+  const _$ResetStoryIndexImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -11930,7 +11948,7 @@ class _$_ResetStoryIndex
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ResetStoryIndex);
+        (other.runtimeType == runtimeType && other is _$ResetStoryIndexImpl);
   }
 
   @override
@@ -12282,24 +12300,24 @@ class _$_ResetStoryIndex
 }
 
 abstract class _ResetStoryIndex implements StoriesState {
-  const factory _ResetStoryIndex() = _$_ResetStoryIndex;
+  const factory _ResetStoryIndex() = _$ResetStoryIndexImpl;
 }
 
 /// @nodoc
-abstract class _$$_DeleteStoryLoadingCopyWith<$Res> {
-  factory _$$_DeleteStoryLoadingCopyWith(_$_DeleteStoryLoading value,
-          $Res Function(_$_DeleteStoryLoading) then) =
-      __$$_DeleteStoryLoadingCopyWithImpl<$Res>;
+abstract class _$$DeleteStoryLoadingImplCopyWith<$Res> {
+  factory _$$DeleteStoryLoadingImplCopyWith(_$DeleteStoryLoadingImpl value,
+          $Res Function(_$DeleteStoryLoadingImpl) then) =
+      __$$DeleteStoryLoadingImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String storyId});
 }
 
 /// @nodoc
-class __$$_DeleteStoryLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_DeleteStoryLoading>
-    implements _$$_DeleteStoryLoadingCopyWith<$Res> {
-  __$$_DeleteStoryLoadingCopyWithImpl(
-      _$_DeleteStoryLoading _value, $Res Function(_$_DeleteStoryLoading) _then)
+class __$$DeleteStoryLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$DeleteStoryLoadingImpl>
+    implements _$$DeleteStoryLoadingImplCopyWith<$Res> {
+  __$$DeleteStoryLoadingImplCopyWithImpl(_$DeleteStoryLoadingImpl _value,
+      $Res Function(_$DeleteStoryLoadingImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -12307,7 +12325,7 @@ class __$$_DeleteStoryLoadingCopyWithImpl<$Res>
   $Res call({
     Object? storyId = null,
   }) {
-    return _then(_$_DeleteStoryLoading(
+    return _then(_$DeleteStoryLoadingImpl(
       null == storyId
           ? _value.storyId
           : storyId // ignore: cast_nullable_to_non_nullable
@@ -12318,10 +12336,10 @@ class __$$_DeleteStoryLoadingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DeleteStoryLoading
+class _$DeleteStoryLoadingImpl
     with DiagnosticableTreeMixin
     implements _DeleteStoryLoading {
-  const _$_DeleteStoryLoading(this.storyId);
+  const _$DeleteStoryLoadingImpl(this.storyId);
 
   @override
   final String storyId;
@@ -12343,7 +12361,7 @@ class _$_DeleteStoryLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DeleteStoryLoading &&
+            other is _$DeleteStoryLoadingImpl &&
             (identical(other.storyId, storyId) || other.storyId == storyId));
   }
 
@@ -12353,8 +12371,8 @@ class _$_DeleteStoryLoading
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DeleteStoryLoadingCopyWith<_$_DeleteStoryLoading> get copyWith =>
-      __$$_DeleteStoryLoadingCopyWithImpl<_$_DeleteStoryLoading>(
+  _$$DeleteStoryLoadingImplCopyWith<_$DeleteStoryLoadingImpl> get copyWith =>
+      __$$DeleteStoryLoadingImplCopyWithImpl<_$DeleteStoryLoadingImpl>(
           this, _$identity);
 
   @override
@@ -12704,34 +12722,34 @@ class _$_DeleteStoryLoading
 
 abstract class _DeleteStoryLoading implements StoriesState {
   const factory _DeleteStoryLoading(final String storyId) =
-      _$_DeleteStoryLoading;
+      _$DeleteStoryLoadingImpl;
 
   String get storyId;
   @JsonKey(ignore: true)
-  _$$_DeleteStoryLoadingCopyWith<_$_DeleteStoryLoading> get copyWith =>
+  _$$DeleteStoryLoadingImplCopyWith<_$DeleteStoryLoadingImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_DeleteStoryCopyWith<$Res> {
-  factory _$$_DeleteStoryCopyWith(
-          _$_DeleteStory value, $Res Function(_$_DeleteStory) then) =
-      __$$_DeleteStoryCopyWithImpl<$Res>;
+abstract class _$$DeleteStoryImplCopyWith<$Res> {
+  factory _$$DeleteStoryImplCopyWith(
+          _$DeleteStoryImpl value, $Res Function(_$DeleteStoryImpl) then) =
+      __$$DeleteStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DeleteStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_DeleteStory>
-    implements _$$_DeleteStoryCopyWith<$Res> {
-  __$$_DeleteStoryCopyWithImpl(
-      _$_DeleteStory _value, $Res Function(_$_DeleteStory) _then)
+class __$$DeleteStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$DeleteStoryImpl>
+    implements _$$DeleteStoryImplCopyWith<$Res> {
+  __$$DeleteStoryImplCopyWithImpl(
+      _$DeleteStoryImpl _value, $Res Function(_$DeleteStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
-  const _$_DeleteStory();
+class _$DeleteStoryImpl with DiagnosticableTreeMixin implements _DeleteStory {
+  const _$DeleteStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -12747,7 +12765,7 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DeleteStory);
+        (other.runtimeType == runtimeType && other is _$DeleteStoryImpl);
   }
 
   @override
@@ -13099,24 +13117,24 @@ class _$_DeleteStory with DiagnosticableTreeMixin implements _DeleteStory {
 }
 
 abstract class _DeleteStory implements StoriesState {
-  const factory _DeleteStory() = _$_DeleteStory;
+  const factory _DeleteStory() = _$DeleteStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_DeleteStoryErrorCopyWith<$Res> {
-  factory _$$_DeleteStoryErrorCopyWith(
-          _$_DeleteStoryError value, $Res Function(_$_DeleteStoryError) then) =
-      __$$_DeleteStoryErrorCopyWithImpl<$Res>;
+abstract class _$$DeleteStoryErrorImplCopyWith<$Res> {
+  factory _$$DeleteStoryErrorImplCopyWith(_$DeleteStoryErrorImpl value,
+          $Res Function(_$DeleteStoryErrorImpl) then) =
+      __$$DeleteStoryErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_DeleteStoryErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_DeleteStoryError>
-    implements _$$_DeleteStoryErrorCopyWith<$Res> {
-  __$$_DeleteStoryErrorCopyWithImpl(
-      _$_DeleteStoryError _value, $Res Function(_$_DeleteStoryError) _then)
+class __$$DeleteStoryErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$DeleteStoryErrorImpl>
+    implements _$$DeleteStoryErrorImplCopyWith<$Res> {
+  __$$DeleteStoryErrorImplCopyWithImpl(_$DeleteStoryErrorImpl _value,
+      $Res Function(_$DeleteStoryErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -13124,7 +13142,7 @@ class __$$_DeleteStoryErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_DeleteStoryError(
+    return _then(_$DeleteStoryErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -13135,10 +13153,10 @@ class __$$_DeleteStoryErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DeleteStoryError
+class _$DeleteStoryErrorImpl
     with DiagnosticableTreeMixin
     implements _DeleteStoryError {
-  const _$_DeleteStoryError(this.errorMsg);
+  const _$DeleteStoryErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -13160,7 +13178,7 @@ class _$_DeleteStoryError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DeleteStoryError &&
+            other is _$DeleteStoryErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -13171,8 +13189,9 @@ class _$_DeleteStoryError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DeleteStoryErrorCopyWith<_$_DeleteStoryError> get copyWith =>
-      __$$_DeleteStoryErrorCopyWithImpl<_$_DeleteStoryError>(this, _$identity);
+  _$$DeleteStoryErrorImplCopyWith<_$DeleteStoryErrorImpl> get copyWith =>
+      __$$DeleteStoryErrorImplCopyWithImpl<_$DeleteStoryErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -13520,38 +13539,40 @@ class _$_DeleteStoryError
 }
 
 abstract class _DeleteStoryError implements StoriesState {
-  const factory _DeleteStoryError(final String errorMsg) = _$_DeleteStoryError;
+  const factory _DeleteStoryError(final String errorMsg) =
+      _$DeleteStoryErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_DeleteStoryErrorCopyWith<_$_DeleteStoryError> get copyWith =>
+  _$$DeleteStoryErrorImplCopyWith<_$DeleteStoryErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_ContactsStoriesChangedLoadingCopyWith<$Res> {
-  factory _$$_ContactsStoriesChangedLoadingCopyWith(
-          _$_ContactsStoriesChangedLoading value,
-          $Res Function(_$_ContactsStoriesChangedLoading) then) =
-      __$$_ContactsStoriesChangedLoadingCopyWithImpl<$Res>;
+abstract class _$$ContactsStoriesChangedLoadingImplCopyWith<$Res> {
+  factory _$$ContactsStoriesChangedLoadingImplCopyWith(
+          _$ContactsStoriesChangedLoadingImpl value,
+          $Res Function(_$ContactsStoriesChangedLoadingImpl) then) =
+      __$$ContactsStoriesChangedLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ContactsStoriesChangedLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ContactsStoriesChangedLoading>
-    implements _$$_ContactsStoriesChangedLoadingCopyWith<$Res> {
-  __$$_ContactsStoriesChangedLoadingCopyWithImpl(
-      _$_ContactsStoriesChangedLoading _value,
-      $Res Function(_$_ContactsStoriesChangedLoading) _then)
+class __$$ContactsStoriesChangedLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res,
+        _$ContactsStoriesChangedLoadingImpl>
+    implements _$$ContactsStoriesChangedLoadingImplCopyWith<$Res> {
+  __$$ContactsStoriesChangedLoadingImplCopyWithImpl(
+      _$ContactsStoriesChangedLoadingImpl _value,
+      $Res Function(_$ContactsStoriesChangedLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ContactsStoriesChangedLoading
+class _$ContactsStoriesChangedLoadingImpl
     with DiagnosticableTreeMixin
     implements _ContactsStoriesChangedLoading {
-  const _$_ContactsStoriesChangedLoading();
+  const _$ContactsStoriesChangedLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -13569,7 +13590,7 @@ class _$_ContactsStoriesChangedLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ContactsStoriesChangedLoading);
+            other is _$ContactsStoriesChangedLoadingImpl);
   }
 
   @override
@@ -13922,31 +13943,33 @@ class _$_ContactsStoriesChangedLoading
 
 abstract class _ContactsStoriesChangedLoading implements StoriesState {
   const factory _ContactsStoriesChangedLoading() =
-      _$_ContactsStoriesChangedLoading;
+      _$ContactsStoriesChangedLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ContactsStoriesChangedCopyWith<$Res> {
-  factory _$$_ContactsStoriesChangedCopyWith(_$_ContactsStoriesChanged value,
-          $Res Function(_$_ContactsStoriesChanged) then) =
-      __$$_ContactsStoriesChangedCopyWithImpl<$Res>;
+abstract class _$$ContactsStoriesChangedImplCopyWith<$Res> {
+  factory _$$ContactsStoriesChangedImplCopyWith(
+          _$ContactsStoriesChangedImpl value,
+          $Res Function(_$ContactsStoriesChangedImpl) then) =
+      __$$ContactsStoriesChangedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ContactsStoriesChangedCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ContactsStoriesChanged>
-    implements _$$_ContactsStoriesChangedCopyWith<$Res> {
-  __$$_ContactsStoriesChangedCopyWithImpl(_$_ContactsStoriesChanged _value,
-      $Res Function(_$_ContactsStoriesChanged) _then)
+class __$$ContactsStoriesChangedImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ContactsStoriesChangedImpl>
+    implements _$$ContactsStoriesChangedImplCopyWith<$Res> {
+  __$$ContactsStoriesChangedImplCopyWithImpl(
+      _$ContactsStoriesChangedImpl _value,
+      $Res Function(_$ContactsStoriesChangedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ContactsStoriesChanged
+class _$ContactsStoriesChangedImpl
     with DiagnosticableTreeMixin
     implements _ContactsStoriesChanged {
-  const _$_ContactsStoriesChanged();
+  const _$ContactsStoriesChangedImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -13964,7 +13987,7 @@ class _$_ContactsStoriesChanged
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ContactsStoriesChanged);
+            other is _$ContactsStoriesChangedImpl);
   }
 
   @override
@@ -14316,26 +14339,26 @@ class _$_ContactsStoriesChanged
 }
 
 abstract class _ContactsStoriesChanged implements StoriesState {
-  const factory _ContactsStoriesChanged() = _$_ContactsStoriesChanged;
+  const factory _ContactsStoriesChanged() = _$ContactsStoriesChangedImpl;
 }
 
 /// @nodoc
-abstract class _$$_ContactsStoriesChangedErrorCopyWith<$Res> {
-  factory _$$_ContactsStoriesChangedErrorCopyWith(
-          _$_ContactsStoriesChangedError value,
-          $Res Function(_$_ContactsStoriesChangedError) then) =
-      __$$_ContactsStoriesChangedErrorCopyWithImpl<$Res>;
+abstract class _$$ContactsStoriesChangedErrorImplCopyWith<$Res> {
+  factory _$$ContactsStoriesChangedErrorImplCopyWith(
+          _$ContactsStoriesChangedErrorImpl value,
+          $Res Function(_$ContactsStoriesChangedErrorImpl) then) =
+      __$$ContactsStoriesChangedErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_ContactsStoriesChangedErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ContactsStoriesChangedError>
-    implements _$$_ContactsStoriesChangedErrorCopyWith<$Res> {
-  __$$_ContactsStoriesChangedErrorCopyWithImpl(
-      _$_ContactsStoriesChangedError _value,
-      $Res Function(_$_ContactsStoriesChangedError) _then)
+class __$$ContactsStoriesChangedErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ContactsStoriesChangedErrorImpl>
+    implements _$$ContactsStoriesChangedErrorImplCopyWith<$Res> {
+  __$$ContactsStoriesChangedErrorImplCopyWithImpl(
+      _$ContactsStoriesChangedErrorImpl _value,
+      $Res Function(_$ContactsStoriesChangedErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -14343,7 +14366,7 @@ class __$$_ContactsStoriesChangedErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_ContactsStoriesChangedError(
+    return _then(_$ContactsStoriesChangedErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -14354,10 +14377,10 @@ class __$$_ContactsStoriesChangedErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ContactsStoriesChangedError
+class _$ContactsStoriesChangedErrorImpl
     with DiagnosticableTreeMixin
     implements _ContactsStoriesChangedError {
-  const _$_ContactsStoriesChangedError(this.errorMsg);
+  const _$ContactsStoriesChangedErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -14380,7 +14403,7 @@ class _$_ContactsStoriesChangedError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ContactsStoriesChangedError &&
+            other is _$ContactsStoriesChangedErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -14391,9 +14414,9 @@ class _$_ContactsStoriesChangedError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ContactsStoriesChangedErrorCopyWith<_$_ContactsStoriesChangedError>
-      get copyWith => __$$_ContactsStoriesChangedErrorCopyWithImpl<
-          _$_ContactsStoriesChangedError>(this, _$identity);
+  _$$ContactsStoriesChangedErrorImplCopyWith<_$ContactsStoriesChangedErrorImpl>
+      get copyWith => __$$ContactsStoriesChangedErrorImplCopyWithImpl<
+          _$ContactsStoriesChangedErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -14742,36 +14765,36 @@ class _$_ContactsStoriesChangedError
 
 abstract class _ContactsStoriesChangedError implements StoriesState {
   const factory _ContactsStoriesChangedError(final String errorMsg) =
-      _$_ContactsStoriesChangedError;
+      _$ContactsStoriesChangedErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_ContactsStoriesChangedErrorCopyWith<_$_ContactsStoriesChangedError>
+  _$$ContactsStoriesChangedErrorImplCopyWith<_$ContactsStoriesChangedErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_InitReplyToStoryCopyWith<$Res> {
-  factory _$$_InitReplyToStoryCopyWith(
-          _$_InitReplyToStory value, $Res Function(_$_InitReplyToStory) then) =
-      __$$_InitReplyToStoryCopyWithImpl<$Res>;
+abstract class _$$InitReplyToStoryImplCopyWith<$Res> {
+  factory _$$InitReplyToStoryImplCopyWith(_$InitReplyToStoryImpl value,
+          $Res Function(_$InitReplyToStoryImpl) then) =
+      __$$InitReplyToStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitReplyToStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_InitReplyToStory>
-    implements _$$_InitReplyToStoryCopyWith<$Res> {
-  __$$_InitReplyToStoryCopyWithImpl(
-      _$_InitReplyToStory _value, $Res Function(_$_InitReplyToStory) _then)
+class __$$InitReplyToStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$InitReplyToStoryImpl>
+    implements _$$InitReplyToStoryImplCopyWith<$Res> {
+  __$$InitReplyToStoryImplCopyWithImpl(_$InitReplyToStoryImpl _value,
+      $Res Function(_$InitReplyToStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitReplyToStory
+class _$InitReplyToStoryImpl
     with DiagnosticableTreeMixin
     implements _InitReplyToStory {
-  const _$_InitReplyToStory();
+  const _$InitReplyToStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -14788,7 +14811,7 @@ class _$_InitReplyToStory
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitReplyToStory);
+        (other.runtimeType == runtimeType && other is _$InitReplyToStoryImpl);
   }
 
   @override
@@ -15140,31 +15163,33 @@ class _$_InitReplyToStory
 }
 
 abstract class _InitReplyToStory implements StoriesState {
-  const factory _InitReplyToStory() = _$_InitReplyToStory;
+  const factory _InitReplyToStory() = _$InitReplyToStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_viewContactStoryLoadingCopyWith<$Res> {
-  factory _$$_viewContactStoryLoadingCopyWith(_$_viewContactStoryLoading value,
-          $Res Function(_$_viewContactStoryLoading) then) =
-      __$$_viewContactStoryLoadingCopyWithImpl<$Res>;
+abstract class _$$viewContactStoryLoadingImplCopyWith<$Res> {
+  factory _$$viewContactStoryLoadingImplCopyWith(
+          _$viewContactStoryLoadingImpl value,
+          $Res Function(_$viewContactStoryLoadingImpl) then) =
+      __$$viewContactStoryLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_viewContactStoryLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_viewContactStoryLoading>
-    implements _$$_viewContactStoryLoadingCopyWith<$Res> {
-  __$$_viewContactStoryLoadingCopyWithImpl(_$_viewContactStoryLoading _value,
-      $Res Function(_$_viewContactStoryLoading) _then)
+class __$$viewContactStoryLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$viewContactStoryLoadingImpl>
+    implements _$$viewContactStoryLoadingImplCopyWith<$Res> {
+  __$$viewContactStoryLoadingImplCopyWithImpl(
+      _$viewContactStoryLoadingImpl _value,
+      $Res Function(_$viewContactStoryLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_viewContactStoryLoading
+class _$viewContactStoryLoadingImpl
     with DiagnosticableTreeMixin
     implements _viewContactStoryLoading {
-  const _$_viewContactStoryLoading();
+  const _$viewContactStoryLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -15182,7 +15207,7 @@ class _$_viewContactStoryLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_viewContactStoryLoading);
+            other is _$viewContactStoryLoadingImpl);
   }
 
   @override
@@ -15534,31 +15559,31 @@ class _$_viewContactStoryLoading
 }
 
 abstract class _viewContactStoryLoading implements StoriesState {
-  const factory _viewContactStoryLoading() = _$_viewContactStoryLoading;
+  const factory _viewContactStoryLoading() = _$viewContactStoryLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_viewContactStoryCopyWith<$Res> {
-  factory _$$_viewContactStoryCopyWith(
-          _$_viewContactStory value, $Res Function(_$_viewContactStory) then) =
-      __$$_viewContactStoryCopyWithImpl<$Res>;
+abstract class _$$viewContactStoryImplCopyWith<$Res> {
+  factory _$$viewContactStoryImplCopyWith(_$viewContactStoryImpl value,
+          $Res Function(_$viewContactStoryImpl) then) =
+      __$$viewContactStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_viewContactStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_viewContactStory>
-    implements _$$_viewContactStoryCopyWith<$Res> {
-  __$$_viewContactStoryCopyWithImpl(
-      _$_viewContactStory _value, $Res Function(_$_viewContactStory) _then)
+class __$$viewContactStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$viewContactStoryImpl>
+    implements _$$viewContactStoryImplCopyWith<$Res> {
+  __$$viewContactStoryImplCopyWithImpl(_$viewContactStoryImpl _value,
+      $Res Function(_$viewContactStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_viewContactStory
+class _$viewContactStoryImpl
     with DiagnosticableTreeMixin
     implements _viewContactStory {
-  const _$_viewContactStory();
+  const _$viewContactStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -15575,7 +15600,7 @@ class _$_viewContactStory
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_viewContactStory);
+        (other.runtimeType == runtimeType && other is _$viewContactStoryImpl);
   }
 
   @override
@@ -15927,31 +15952,31 @@ class _$_viewContactStory
 }
 
 abstract class _viewContactStory implements StoriesState {
-  const factory _viewContactStory() = _$_viewContactStory;
+  const factory _viewContactStory() = _$viewContactStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_ReplyToStoryLoadingCopyWith<$Res> {
-  factory _$$_ReplyToStoryLoadingCopyWith(_$_ReplyToStoryLoading value,
-          $Res Function(_$_ReplyToStoryLoading) then) =
-      __$$_ReplyToStoryLoadingCopyWithImpl<$Res>;
+abstract class _$$ReplyToStoryLoadingImplCopyWith<$Res> {
+  factory _$$ReplyToStoryLoadingImplCopyWith(_$ReplyToStoryLoadingImpl value,
+          $Res Function(_$ReplyToStoryLoadingImpl) then) =
+      __$$ReplyToStoryLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ReplyToStoryLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ReplyToStoryLoading>
-    implements _$$_ReplyToStoryLoadingCopyWith<$Res> {
-  __$$_ReplyToStoryLoadingCopyWithImpl(_$_ReplyToStoryLoading _value,
-      $Res Function(_$_ReplyToStoryLoading) _then)
+class __$$ReplyToStoryLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ReplyToStoryLoadingImpl>
+    implements _$$ReplyToStoryLoadingImplCopyWith<$Res> {
+  __$$ReplyToStoryLoadingImplCopyWithImpl(_$ReplyToStoryLoadingImpl _value,
+      $Res Function(_$ReplyToStoryLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ReplyToStoryLoading
+class _$ReplyToStoryLoadingImpl
     with DiagnosticableTreeMixin
     implements _ReplyToStoryLoading {
-  const _$_ReplyToStoryLoading();
+  const _$ReplyToStoryLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -15968,7 +15993,8 @@ class _$_ReplyToStoryLoading
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ReplyToStoryLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$ReplyToStoryLoadingImpl);
   }
 
   @override
@@ -16320,29 +16346,29 @@ class _$_ReplyToStoryLoading
 }
 
 abstract class _ReplyToStoryLoading implements StoriesState {
-  const factory _ReplyToStoryLoading() = _$_ReplyToStoryLoading;
+  const factory _ReplyToStoryLoading() = _$ReplyToStoryLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ReplyToStoryCopyWith<$Res> {
-  factory _$$_ReplyToStoryCopyWith(
-          _$_ReplyToStory value, $Res Function(_$_ReplyToStory) then) =
-      __$$_ReplyToStoryCopyWithImpl<$Res>;
+abstract class _$$ReplyToStoryImplCopyWith<$Res> {
+  factory _$$ReplyToStoryImplCopyWith(
+          _$ReplyToStoryImpl value, $Res Function(_$ReplyToStoryImpl) then) =
+      __$$ReplyToStoryImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ReplyToStoryCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ReplyToStory>
-    implements _$$_ReplyToStoryCopyWith<$Res> {
-  __$$_ReplyToStoryCopyWithImpl(
-      _$_ReplyToStory _value, $Res Function(_$_ReplyToStory) _then)
+class __$$ReplyToStoryImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ReplyToStoryImpl>
+    implements _$$ReplyToStoryImplCopyWith<$Res> {
+  __$$ReplyToStoryImplCopyWithImpl(
+      _$ReplyToStoryImpl _value, $Res Function(_$ReplyToStoryImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
-  const _$_ReplyToStory();
+class _$ReplyToStoryImpl with DiagnosticableTreeMixin implements _ReplyToStory {
+  const _$ReplyToStoryImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -16358,7 +16384,7 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ReplyToStory);
+        (other.runtimeType == runtimeType && other is _$ReplyToStoryImpl);
   }
 
   @override
@@ -16710,24 +16736,24 @@ class _$_ReplyToStory with DiagnosticableTreeMixin implements _ReplyToStory {
 }
 
 abstract class _ReplyToStory implements StoriesState {
-  const factory _ReplyToStory() = _$_ReplyToStory;
+  const factory _ReplyToStory() = _$ReplyToStoryImpl;
 }
 
 /// @nodoc
-abstract class _$$_ReplyToStoryErrorCopyWith<$Res> {
-  factory _$$_ReplyToStoryErrorCopyWith(_$_ReplyToStoryError value,
-          $Res Function(_$_ReplyToStoryError) then) =
-      __$$_ReplyToStoryErrorCopyWithImpl<$Res>;
+abstract class _$$ReplyToStoryErrorImplCopyWith<$Res> {
+  factory _$$ReplyToStoryErrorImplCopyWith(_$ReplyToStoryErrorImpl value,
+          $Res Function(_$ReplyToStoryErrorImpl) then) =
+      __$$ReplyToStoryErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_ReplyToStoryErrorCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_ReplyToStoryError>
-    implements _$$_ReplyToStoryErrorCopyWith<$Res> {
-  __$$_ReplyToStoryErrorCopyWithImpl(
-      _$_ReplyToStoryError _value, $Res Function(_$_ReplyToStoryError) _then)
+class __$$ReplyToStoryErrorImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$ReplyToStoryErrorImpl>
+    implements _$$ReplyToStoryErrorImplCopyWith<$Res> {
+  __$$ReplyToStoryErrorImplCopyWithImpl(_$ReplyToStoryErrorImpl _value,
+      $Res Function(_$ReplyToStoryErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -16735,7 +16761,7 @@ class __$$_ReplyToStoryErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_ReplyToStoryError(
+    return _then(_$ReplyToStoryErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -16746,10 +16772,10 @@ class __$$_ReplyToStoryErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_ReplyToStoryError
+class _$ReplyToStoryErrorImpl
     with DiagnosticableTreeMixin
     implements _ReplyToStoryError {
-  const _$_ReplyToStoryError(this.errorMsg);
+  const _$ReplyToStoryErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -16771,7 +16797,7 @@ class _$_ReplyToStoryError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ReplyToStoryError &&
+            other is _$ReplyToStoryErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -16782,8 +16808,8 @@ class _$_ReplyToStoryError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ReplyToStoryErrorCopyWith<_$_ReplyToStoryError> get copyWith =>
-      __$$_ReplyToStoryErrorCopyWithImpl<_$_ReplyToStoryError>(
+  _$$ReplyToStoryErrorImplCopyWith<_$ReplyToStoryErrorImpl> get copyWith =>
+      __$$ReplyToStoryErrorImplCopyWithImpl<_$ReplyToStoryErrorImpl>(
           this, _$identity);
 
   @override
@@ -17133,38 +17159,39 @@ class _$_ReplyToStoryError
 
 abstract class _ReplyToStoryError implements StoriesState {
   const factory _ReplyToStoryError(final String errorMsg) =
-      _$_ReplyToStoryError;
+      _$ReplyToStoryErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_ReplyToStoryErrorCopyWith<_$_ReplyToStoryError> get copyWith =>
+  _$$ReplyToStoryErrorImplCopyWith<_$ReplyToStoryErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_CreateVideosThumbnailsLoadingCopyWith<$Res> {
-  factory _$$_CreateVideosThumbnailsLoadingCopyWith(
-          _$_CreateVideosThumbnailsLoading value,
-          $Res Function(_$_CreateVideosThumbnailsLoading) then) =
-      __$$_CreateVideosThumbnailsLoadingCopyWithImpl<$Res>;
+abstract class _$$CreateVideosThumbnailsLoadingImplCopyWith<$Res> {
+  factory _$$CreateVideosThumbnailsLoadingImplCopyWith(
+          _$CreateVideosThumbnailsLoadingImpl value,
+          $Res Function(_$CreateVideosThumbnailsLoadingImpl) then) =
+      __$$CreateVideosThumbnailsLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CreateVideosThumbnailsLoadingCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_CreateVideosThumbnailsLoading>
-    implements _$$_CreateVideosThumbnailsLoadingCopyWith<$Res> {
-  __$$_CreateVideosThumbnailsLoadingCopyWithImpl(
-      _$_CreateVideosThumbnailsLoading _value,
-      $Res Function(_$_CreateVideosThumbnailsLoading) _then)
+class __$$CreateVideosThumbnailsLoadingImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res,
+        _$CreateVideosThumbnailsLoadingImpl>
+    implements _$$CreateVideosThumbnailsLoadingImplCopyWith<$Res> {
+  __$$CreateVideosThumbnailsLoadingImplCopyWithImpl(
+      _$CreateVideosThumbnailsLoadingImpl _value,
+      $Res Function(_$CreateVideosThumbnailsLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CreateVideosThumbnailsLoading
+class _$CreateVideosThumbnailsLoadingImpl
     with DiagnosticableTreeMixin
     implements _CreateVideosThumbnailsLoading {
-  const _$_CreateVideosThumbnailsLoading();
+  const _$CreateVideosThumbnailsLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -17182,7 +17209,7 @@ class _$_CreateVideosThumbnailsLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreateVideosThumbnailsLoading);
+            other is _$CreateVideosThumbnailsLoadingImpl);
   }
 
   @override
@@ -17535,31 +17562,33 @@ class _$_CreateVideosThumbnailsLoading
 
 abstract class _CreateVideosThumbnailsLoading implements StoriesState {
   const factory _CreateVideosThumbnailsLoading() =
-      _$_CreateVideosThumbnailsLoading;
+      _$CreateVideosThumbnailsLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_CreateVideosThumbnailsCopyWith<$Res> {
-  factory _$$_CreateVideosThumbnailsCopyWith(_$_CreateVideosThumbnails value,
-          $Res Function(_$_CreateVideosThumbnails) then) =
-      __$$_CreateVideosThumbnailsCopyWithImpl<$Res>;
+abstract class _$$CreateVideosThumbnailsImplCopyWith<$Res> {
+  factory _$$CreateVideosThumbnailsImplCopyWith(
+          _$CreateVideosThumbnailsImpl value,
+          $Res Function(_$CreateVideosThumbnailsImpl) then) =
+      __$$CreateVideosThumbnailsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CreateVideosThumbnailsCopyWithImpl<$Res>
-    extends _$StoriesStateCopyWithImpl<$Res, _$_CreateVideosThumbnails>
-    implements _$$_CreateVideosThumbnailsCopyWith<$Res> {
-  __$$_CreateVideosThumbnailsCopyWithImpl(_$_CreateVideosThumbnails _value,
-      $Res Function(_$_CreateVideosThumbnails) _then)
+class __$$CreateVideosThumbnailsImplCopyWithImpl<$Res>
+    extends _$StoriesStateCopyWithImpl<$Res, _$CreateVideosThumbnailsImpl>
+    implements _$$CreateVideosThumbnailsImplCopyWith<$Res> {
+  __$$CreateVideosThumbnailsImplCopyWithImpl(
+      _$CreateVideosThumbnailsImpl _value,
+      $Res Function(_$CreateVideosThumbnailsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CreateVideosThumbnails
+class _$CreateVideosThumbnailsImpl
     with DiagnosticableTreeMixin
     implements _CreateVideosThumbnails {
-  const _$_CreateVideosThumbnails();
+  const _$CreateVideosThumbnailsImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -17577,7 +17606,7 @@ class _$_CreateVideosThumbnails
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreateVideosThumbnails);
+            other is _$CreateVideosThumbnailsImpl);
   }
 
   @override
@@ -17929,5 +17958,5 @@ class _$_CreateVideosThumbnails
 }
 
 abstract class _CreateVideosThumbnails implements StoriesState {
-  const factory _CreateVideosThumbnails() = _$_CreateVideosThumbnails;
+  const factory _CreateVideosThumbnails() = _$CreateVideosThumbnailsImpl;
 }

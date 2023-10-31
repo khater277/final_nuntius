@@ -6,8 +6,9 @@ part of 'last_message_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_LastMessageModel _$$_LastMessageModelFromJson(Map<String, dynamic> json) =>
-    _$_LastMessageModel(
+_$LastMessageModelImpl _$$LastMessageModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$LastMessageModelImpl(
       token: json['token'] as String?,
       image: json['image'] as String?,
       senderID: json['senderID'] as String?,
@@ -22,7 +23,8 @@ _$_LastMessageModel _$$_LastMessageModelFromJson(Map<String, dynamic> json) =>
       isRead: json['isRead'] as bool?,
     );
 
-Map<String, dynamic> _$$_LastMessageModelToJson(_$_LastMessageModel instance) =>
+Map<String, dynamic> _$$LastMessageModelImplToJson(
+        _$LastMessageModelImpl instance) =>
     <String, dynamic>{
       'token': instance.token,
       'image': instance.image,

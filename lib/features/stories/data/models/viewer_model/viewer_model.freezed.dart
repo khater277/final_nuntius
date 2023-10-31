@@ -74,22 +74,22 @@ class _$ViewerModelCopyWithImpl<$Res, $Val extends ViewerModel>
 }
 
 /// @nodoc
-abstract class _$$_ViewerModelCopyWith<$Res>
+abstract class _$$ViewerModelImplCopyWith<$Res>
     implements $ViewerModelCopyWith<$Res> {
-  factory _$$_ViewerModelCopyWith(
-          _$_ViewerModel value, $Res Function(_$_ViewerModel) then) =
-      __$$_ViewerModelCopyWithImpl<$Res>;
+  factory _$$ViewerModelImplCopyWith(
+          _$ViewerModelImpl value, $Res Function(_$ViewerModelImpl) then) =
+      __$$ViewerModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? id, String? phoneNumber, String? dateTime});
 }
 
 /// @nodoc
-class __$$_ViewerModelCopyWithImpl<$Res>
-    extends _$ViewerModelCopyWithImpl<$Res, _$_ViewerModel>
-    implements _$$_ViewerModelCopyWith<$Res> {
-  __$$_ViewerModelCopyWithImpl(
-      _$_ViewerModel _value, $Res Function(_$_ViewerModel) _then)
+class __$$ViewerModelImplCopyWithImpl<$Res>
+    extends _$ViewerModelCopyWithImpl<$Res, _$ViewerModelImpl>
+    implements _$$ViewerModelImplCopyWith<$Res> {
+  __$$ViewerModelImplCopyWithImpl(
+      _$ViewerModelImpl _value, $Res Function(_$ViewerModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -99,7 +99,7 @@ class __$$_ViewerModelCopyWithImpl<$Res>
     Object? phoneNumber = freezed,
     Object? dateTime = freezed,
   }) {
-    return _then(_$_ViewerModel(
+    return _then(_$ViewerModelImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -118,11 +118,11 @@ class __$$_ViewerModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ViewerModel implements _ViewerModel {
-  _$_ViewerModel({this.id, this.phoneNumber, this.dateTime});
+class _$ViewerModelImpl implements _ViewerModel {
+  _$ViewerModelImpl({this.id, this.phoneNumber, this.dateTime});
 
-  factory _$_ViewerModel.fromJson(Map<String, dynamic> json) =>
-      _$$_ViewerModelFromJson(json);
+  factory _$ViewerModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ViewerModelImplFromJson(json);
 
   @override
   final String? id;
@@ -140,7 +140,7 @@ class _$_ViewerModel implements _ViewerModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ViewerModel &&
+            other is _$ViewerModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.phoneNumber, phoneNumber) ||
                 other.phoneNumber == phoneNumber) &&
@@ -155,12 +155,12 @@ class _$_ViewerModel implements _ViewerModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ViewerModelCopyWith<_$_ViewerModel> get copyWith =>
-      __$$_ViewerModelCopyWithImpl<_$_ViewerModel>(this, _$identity);
+  _$$ViewerModelImplCopyWith<_$ViewerModelImpl> get copyWith =>
+      __$$ViewerModelImplCopyWithImpl<_$ViewerModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ViewerModelToJson(
+    return _$$ViewerModelImplToJson(
       this,
     );
   }
@@ -170,10 +170,10 @@ abstract class _ViewerModel implements ViewerModel {
   factory _ViewerModel(
       {final String? id,
       final String? phoneNumber,
-      final String? dateTime}) = _$_ViewerModel;
+      final String? dateTime}) = _$ViewerModelImpl;
 
   factory _ViewerModel.fromJson(Map<String, dynamic> json) =
-      _$_ViewerModel.fromJson;
+      _$ViewerModelImpl.fromJson;
 
   @override
   String? get id;
@@ -183,6 +183,6 @@ abstract class _ViewerModel implements ViewerModel {
   String? get dateTime;
   @override
   @JsonKey(ignore: true)
-  _$$_ViewerModelCopyWith<_$_ViewerModel> get copyWith =>
+  _$$ViewerModelImplCopyWith<_$ViewerModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

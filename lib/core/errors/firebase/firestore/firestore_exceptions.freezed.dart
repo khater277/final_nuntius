@@ -178,26 +178,26 @@ class _$FirestoreExceptionHandlerCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$NoInternetConnectionCopyWith<$Res> {
-  factory _$$NoInternetConnectionCopyWith(_$NoInternetConnection value,
-          $Res Function(_$NoInternetConnection) then) =
-      __$$NoInternetConnectionCopyWithImpl<$Res>;
+abstract class _$$NoInternetConnectionImplCopyWith<$Res> {
+  factory _$$NoInternetConnectionImplCopyWith(_$NoInternetConnectionImpl value,
+          $Res Function(_$NoInternetConnectionImpl) then) =
+      __$$NoInternetConnectionImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NoInternetConnectionCopyWithImpl<$Res>
+class __$$NoInternetConnectionImplCopyWithImpl<$Res>
     extends _$FirestoreExceptionHandlerCopyWithImpl<$Res,
-        _$NoInternetConnection>
-    implements _$$NoInternetConnectionCopyWith<$Res> {
-  __$$NoInternetConnectionCopyWithImpl(_$NoInternetConnection _value,
-      $Res Function(_$NoInternetConnection) _then)
+        _$NoInternetConnectionImpl>
+    implements _$$NoInternetConnectionImplCopyWith<$Res> {
+  __$$NoInternetConnectionImplCopyWithImpl(_$NoInternetConnectionImpl _value,
+      $Res Function(_$NoInternetConnectionImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NoInternetConnection implements NoInternetConnection {
-  const _$NoInternetConnection();
+class _$NoInternetConnectionImpl implements NoInternetConnection {
+  const _$NoInternetConnectionImpl();
 
   @override
   String toString() {
@@ -207,7 +207,8 @@ class _$NoInternetConnection implements NoInternetConnection {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NoInternetConnection);
+        (other.runtimeType == runtimeType &&
+            other is _$NoInternetConnectionImpl);
   }
 
   @override
@@ -379,27 +380,29 @@ class _$NoInternetConnection implements NoInternetConnection {
 }
 
 abstract class NoInternetConnection implements FirestoreExceptionHandler {
-  const factory NoInternetConnection() = _$NoInternetConnection;
+  const factory NoInternetConnection() = _$NoInternetConnectionImpl;
 }
 
 /// @nodoc
-abstract class _$$AbortedCopyWith<$Res> {
-  factory _$$AbortedCopyWith(_$Aborted value, $Res Function(_$Aborted) then) =
-      __$$AbortedCopyWithImpl<$Res>;
+abstract class _$$AbortedImplCopyWith<$Res> {
+  factory _$$AbortedImplCopyWith(
+          _$AbortedImpl value, $Res Function(_$AbortedImpl) then) =
+      __$$AbortedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AbortedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Aborted>
-    implements _$$AbortedCopyWith<$Res> {
-  __$$AbortedCopyWithImpl(_$Aborted _value, $Res Function(_$Aborted) _then)
+class __$$AbortedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$AbortedImpl>
+    implements _$$AbortedImplCopyWith<$Res> {
+  __$$AbortedImplCopyWithImpl(
+      _$AbortedImpl _value, $Res Function(_$AbortedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Aborted implements Aborted {
-  const _$Aborted();
+class _$AbortedImpl implements Aborted {
+  const _$AbortedImpl();
 
   @override
   String toString() {
@@ -409,7 +412,7 @@ class _$Aborted implements Aborted {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Aborted);
+        (other.runtimeType == runtimeType && other is _$AbortedImpl);
   }
 
   @override
@@ -581,29 +584,29 @@ class _$Aborted implements Aborted {
 }
 
 abstract class Aborted implements FirestoreExceptionHandler {
-  const factory Aborted() = _$Aborted;
+  const factory Aborted() = _$AbortedImpl;
 }
 
 /// @nodoc
-abstract class _$$AlreadyExistsCopyWith<$Res> {
-  factory _$$AlreadyExistsCopyWith(
-          _$AlreadyExists value, $Res Function(_$AlreadyExists) then) =
-      __$$AlreadyExistsCopyWithImpl<$Res>;
+abstract class _$$AlreadyExistsImplCopyWith<$Res> {
+  factory _$$AlreadyExistsImplCopyWith(
+          _$AlreadyExistsImpl value, $Res Function(_$AlreadyExistsImpl) then) =
+      __$$AlreadyExistsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$AlreadyExistsCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$AlreadyExists>
-    implements _$$AlreadyExistsCopyWith<$Res> {
-  __$$AlreadyExistsCopyWithImpl(
-      _$AlreadyExists _value, $Res Function(_$AlreadyExists) _then)
+class __$$AlreadyExistsImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$AlreadyExistsImpl>
+    implements _$$AlreadyExistsImplCopyWith<$Res> {
+  __$$AlreadyExistsImplCopyWithImpl(
+      _$AlreadyExistsImpl _value, $Res Function(_$AlreadyExistsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$AlreadyExists implements AlreadyExists {
-  const _$AlreadyExists();
+class _$AlreadyExistsImpl implements AlreadyExists {
+  const _$AlreadyExistsImpl();
 
   @override
   String toString() {
@@ -613,7 +616,7 @@ class _$AlreadyExists implements AlreadyExists {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$AlreadyExists);
+        (other.runtimeType == runtimeType && other is _$AlreadyExistsImpl);
   }
 
   @override
@@ -785,29 +788,29 @@ class _$AlreadyExists implements AlreadyExists {
 }
 
 abstract class AlreadyExists implements FirestoreExceptionHandler {
-  const factory AlreadyExists() = _$AlreadyExists;
+  const factory AlreadyExists() = _$AlreadyExistsImpl;
 }
 
 /// @nodoc
-abstract class _$$CancelledCopyWith<$Res> {
-  factory _$$CancelledCopyWith(
-          _$Cancelled value, $Res Function(_$Cancelled) then) =
-      __$$CancelledCopyWithImpl<$Res>;
+abstract class _$$CancelledImplCopyWith<$Res> {
+  factory _$$CancelledImplCopyWith(
+          _$CancelledImpl value, $Res Function(_$CancelledImpl) then) =
+      __$$CancelledImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$CancelledCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Cancelled>
-    implements _$$CancelledCopyWith<$Res> {
-  __$$CancelledCopyWithImpl(
-      _$Cancelled _value, $Res Function(_$Cancelled) _then)
+class __$$CancelledImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$CancelledImpl>
+    implements _$$CancelledImplCopyWith<$Res> {
+  __$$CancelledImplCopyWithImpl(
+      _$CancelledImpl _value, $Res Function(_$CancelledImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Cancelled implements Cancelled {
-  const _$Cancelled();
+class _$CancelledImpl implements Cancelled {
+  const _$CancelledImpl();
 
   @override
   String toString() {
@@ -817,7 +820,7 @@ class _$Cancelled implements Cancelled {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Cancelled);
+        (other.runtimeType == runtimeType && other is _$CancelledImpl);
   }
 
   @override
@@ -989,28 +992,29 @@ class _$Cancelled implements Cancelled {
 }
 
 abstract class Cancelled implements FirestoreExceptionHandler {
-  const factory Cancelled() = _$Cancelled;
+  const factory Cancelled() = _$CancelledImpl;
 }
 
 /// @nodoc
-abstract class _$$DataLossCopyWith<$Res> {
-  factory _$$DataLossCopyWith(
-          _$DataLoss value, $Res Function(_$DataLoss) then) =
-      __$$DataLossCopyWithImpl<$Res>;
+abstract class _$$DataLossImplCopyWith<$Res> {
+  factory _$$DataLossImplCopyWith(
+          _$DataLossImpl value, $Res Function(_$DataLossImpl) then) =
+      __$$DataLossImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$DataLossCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$DataLoss>
-    implements _$$DataLossCopyWith<$Res> {
-  __$$DataLossCopyWithImpl(_$DataLoss _value, $Res Function(_$DataLoss) _then)
+class __$$DataLossImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$DataLossImpl>
+    implements _$$DataLossImplCopyWith<$Res> {
+  __$$DataLossImplCopyWithImpl(
+      _$DataLossImpl _value, $Res Function(_$DataLossImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$DataLoss implements DataLoss {
-  const _$DataLoss();
+class _$DataLossImpl implements DataLoss {
+  const _$DataLossImpl();
 
   @override
   String toString() {
@@ -1020,7 +1024,7 @@ class _$DataLoss implements DataLoss {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$DataLoss);
+        (other.runtimeType == runtimeType && other is _$DataLossImpl);
   }
 
   @override
@@ -1192,29 +1196,30 @@ class _$DataLoss implements DataLoss {
 }
 
 abstract class DataLoss implements FirestoreExceptionHandler {
-  const factory DataLoss() = _$DataLoss;
+  const factory DataLoss() = _$DataLossImpl;
 }
 
 /// @nodoc
-abstract class _$$DeadLineExceededCopyWith<$Res> {
-  factory _$$DeadLineExceededCopyWith(
-          _$DeadLineExceeded value, $Res Function(_$DeadLineExceeded) then) =
-      __$$DeadLineExceededCopyWithImpl<$Res>;
+abstract class _$$DeadLineExceededImplCopyWith<$Res> {
+  factory _$$DeadLineExceededImplCopyWith(_$DeadLineExceededImpl value,
+          $Res Function(_$DeadLineExceededImpl) then) =
+      __$$DeadLineExceededImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$DeadLineExceededCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$DeadLineExceeded>
-    implements _$$DeadLineExceededCopyWith<$Res> {
-  __$$DeadLineExceededCopyWithImpl(
-      _$DeadLineExceeded _value, $Res Function(_$DeadLineExceeded) _then)
+class __$$DeadLineExceededImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res,
+        _$DeadLineExceededImpl>
+    implements _$$DeadLineExceededImplCopyWith<$Res> {
+  __$$DeadLineExceededImplCopyWithImpl(_$DeadLineExceededImpl _value,
+      $Res Function(_$DeadLineExceededImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$DeadLineExceeded implements DeadLineExceeded {
-  const _$DeadLineExceeded();
+class _$DeadLineExceededImpl implements DeadLineExceeded {
+  const _$DeadLineExceededImpl();
 
   @override
   String toString() {
@@ -1224,7 +1229,7 @@ class _$DeadLineExceeded implements DeadLineExceeded {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$DeadLineExceeded);
+        (other.runtimeType == runtimeType && other is _$DeadLineExceededImpl);
   }
 
   @override
@@ -1396,29 +1401,30 @@ class _$DeadLineExceeded implements DeadLineExceeded {
 }
 
 abstract class DeadLineExceeded implements FirestoreExceptionHandler {
-  const factory DeadLineExceeded() = _$DeadLineExceeded;
+  const factory DeadLineExceeded() = _$DeadLineExceededImpl;
 }
 
 /// @nodoc
-abstract class _$$FailedPreconditionCopyWith<$Res> {
-  factory _$$FailedPreconditionCopyWith(_$FailedPrecondition value,
-          $Res Function(_$FailedPrecondition) then) =
-      __$$FailedPreconditionCopyWithImpl<$Res>;
+abstract class _$$FailedPreconditionImplCopyWith<$Res> {
+  factory _$$FailedPreconditionImplCopyWith(_$FailedPreconditionImpl value,
+          $Res Function(_$FailedPreconditionImpl) then) =
+      __$$FailedPreconditionImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$FailedPreconditionCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$FailedPrecondition>
-    implements _$$FailedPreconditionCopyWith<$Res> {
-  __$$FailedPreconditionCopyWithImpl(
-      _$FailedPrecondition _value, $Res Function(_$FailedPrecondition) _then)
+class __$$FailedPreconditionImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res,
+        _$FailedPreconditionImpl>
+    implements _$$FailedPreconditionImplCopyWith<$Res> {
+  __$$FailedPreconditionImplCopyWithImpl(_$FailedPreconditionImpl _value,
+      $Res Function(_$FailedPreconditionImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$FailedPrecondition implements FailedPrecondition {
-  const _$FailedPrecondition();
+class _$FailedPreconditionImpl implements FailedPrecondition {
+  const _$FailedPreconditionImpl();
 
   @override
   String toString() {
@@ -1428,7 +1434,7 @@ class _$FailedPrecondition implements FailedPrecondition {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$FailedPrecondition);
+        (other.runtimeType == runtimeType && other is _$FailedPreconditionImpl);
   }
 
   @override
@@ -1600,28 +1606,29 @@ class _$FailedPrecondition implements FailedPrecondition {
 }
 
 abstract class FailedPrecondition implements FirestoreExceptionHandler {
-  const factory FailedPrecondition() = _$FailedPrecondition;
+  const factory FailedPrecondition() = _$FailedPreconditionImpl;
 }
 
 /// @nodoc
-abstract class _$$InternalCopyWith<$Res> {
-  factory _$$InternalCopyWith(
-          _$Internal value, $Res Function(_$Internal) then) =
-      __$$InternalCopyWithImpl<$Res>;
+abstract class _$$InternalImplCopyWith<$Res> {
+  factory _$$InternalImplCopyWith(
+          _$InternalImpl value, $Res Function(_$InternalImpl) then) =
+      __$$InternalImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InternalCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Internal>
-    implements _$$InternalCopyWith<$Res> {
-  __$$InternalCopyWithImpl(_$Internal _value, $Res Function(_$Internal) _then)
+class __$$InternalImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$InternalImpl>
+    implements _$$InternalImplCopyWith<$Res> {
+  __$$InternalImplCopyWithImpl(
+      _$InternalImpl _value, $Res Function(_$InternalImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Internal implements Internal {
-  const _$Internal();
+class _$InternalImpl implements Internal {
+  const _$InternalImpl();
 
   @override
   String toString() {
@@ -1631,7 +1638,7 @@ class _$Internal implements Internal {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Internal);
+        (other.runtimeType == runtimeType && other is _$InternalImpl);
   }
 
   @override
@@ -1803,29 +1810,29 @@ class _$Internal implements Internal {
 }
 
 abstract class Internal implements FirestoreExceptionHandler {
-  const factory Internal() = _$Internal;
+  const factory Internal() = _$InternalImpl;
 }
 
 /// @nodoc
-abstract class _$$InvalidArgumentCopyWith<$Res> {
-  factory _$$InvalidArgumentCopyWith(
-          _$InvalidArgument value, $Res Function(_$InvalidArgument) then) =
-      __$$InvalidArgumentCopyWithImpl<$Res>;
+abstract class _$$InvalidArgumentImplCopyWith<$Res> {
+  factory _$$InvalidArgumentImplCopyWith(_$InvalidArgumentImpl value,
+          $Res Function(_$InvalidArgumentImpl) then) =
+      __$$InvalidArgumentImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$InvalidArgumentCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$InvalidArgument>
-    implements _$$InvalidArgumentCopyWith<$Res> {
-  __$$InvalidArgumentCopyWithImpl(
-      _$InvalidArgument _value, $Res Function(_$InvalidArgument) _then)
+class __$$InvalidArgumentImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$InvalidArgumentImpl>
+    implements _$$InvalidArgumentImplCopyWith<$Res> {
+  __$$InvalidArgumentImplCopyWithImpl(
+      _$InvalidArgumentImpl _value, $Res Function(_$InvalidArgumentImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$InvalidArgument implements InvalidArgument {
-  const _$InvalidArgument();
+class _$InvalidArgumentImpl implements InvalidArgument {
+  const _$InvalidArgumentImpl();
 
   @override
   String toString() {
@@ -1835,7 +1842,7 @@ class _$InvalidArgument implements InvalidArgument {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$InvalidArgument);
+        (other.runtimeType == runtimeType && other is _$InvalidArgumentImpl);
   }
 
   @override
@@ -2007,28 +2014,29 @@ class _$InvalidArgument implements InvalidArgument {
 }
 
 abstract class InvalidArgument implements FirestoreExceptionHandler {
-  const factory InvalidArgument() = _$InvalidArgument;
+  const factory InvalidArgument() = _$InvalidArgumentImpl;
 }
 
 /// @nodoc
-abstract class _$$NotFoundCopyWith<$Res> {
-  factory _$$NotFoundCopyWith(
-          _$NotFound value, $Res Function(_$NotFound) then) =
-      __$$NotFoundCopyWithImpl<$Res>;
+abstract class _$$NotFoundImplCopyWith<$Res> {
+  factory _$$NotFoundImplCopyWith(
+          _$NotFoundImpl value, $Res Function(_$NotFoundImpl) then) =
+      __$$NotFoundImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$NotFoundCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$NotFound>
-    implements _$$NotFoundCopyWith<$Res> {
-  __$$NotFoundCopyWithImpl(_$NotFound _value, $Res Function(_$NotFound) _then)
+class __$$NotFoundImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$NotFoundImpl>
+    implements _$$NotFoundImplCopyWith<$Res> {
+  __$$NotFoundImplCopyWithImpl(
+      _$NotFoundImpl _value, $Res Function(_$NotFoundImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$NotFound implements NotFound {
-  const _$NotFound();
+class _$NotFoundImpl implements NotFound {
+  const _$NotFoundImpl();
 
   @override
   String toString() {
@@ -2038,7 +2046,7 @@ class _$NotFound implements NotFound {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$NotFound);
+        (other.runtimeType == runtimeType && other is _$NotFoundImpl);
   }
 
   @override
@@ -2210,27 +2218,27 @@ class _$NotFound implements NotFound {
 }
 
 abstract class NotFound implements FirestoreExceptionHandler {
-  const factory NotFound() = _$NotFound;
+  const factory NotFound() = _$NotFoundImpl;
 }
 
 /// @nodoc
-abstract class _$$OkCopyWith<$Res> {
-  factory _$$OkCopyWith(_$Ok value, $Res Function(_$Ok) then) =
-      __$$OkCopyWithImpl<$Res>;
+abstract class _$$OkImplCopyWith<$Res> {
+  factory _$$OkImplCopyWith(_$OkImpl value, $Res Function(_$OkImpl) then) =
+      __$$OkImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OkCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Ok>
-    implements _$$OkCopyWith<$Res> {
-  __$$OkCopyWithImpl(_$Ok _value, $Res Function(_$Ok) _then)
+class __$$OkImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$OkImpl>
+    implements _$$OkImplCopyWith<$Res> {
+  __$$OkImplCopyWithImpl(_$OkImpl _value, $Res Function(_$OkImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Ok implements Ok {
-  const _$Ok();
+class _$OkImpl implements Ok {
+  const _$OkImpl();
 
   @override
   String toString() {
@@ -2240,7 +2248,7 @@ class _$Ok implements Ok {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Ok);
+        (other.runtimeType == runtimeType && other is _$OkImpl);
   }
 
   @override
@@ -2412,29 +2420,29 @@ class _$Ok implements Ok {
 }
 
 abstract class Ok implements FirestoreExceptionHandler {
-  const factory Ok() = _$Ok;
+  const factory Ok() = _$OkImpl;
 }
 
 /// @nodoc
-abstract class _$$OutOfRangeCopyWith<$Res> {
-  factory _$$OutOfRangeCopyWith(
-          _$OutOfRange value, $Res Function(_$OutOfRange) then) =
-      __$$OutOfRangeCopyWithImpl<$Res>;
+abstract class _$$OutOfRangeImplCopyWith<$Res> {
+  factory _$$OutOfRangeImplCopyWith(
+          _$OutOfRangeImpl value, $Res Function(_$OutOfRangeImpl) then) =
+      __$$OutOfRangeImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$OutOfRangeCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$OutOfRange>
-    implements _$$OutOfRangeCopyWith<$Res> {
-  __$$OutOfRangeCopyWithImpl(
-      _$OutOfRange _value, $Res Function(_$OutOfRange) _then)
+class __$$OutOfRangeImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$OutOfRangeImpl>
+    implements _$$OutOfRangeImplCopyWith<$Res> {
+  __$$OutOfRangeImplCopyWithImpl(
+      _$OutOfRangeImpl _value, $Res Function(_$OutOfRangeImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$OutOfRange implements OutOfRange {
-  const _$OutOfRange();
+class _$OutOfRangeImpl implements OutOfRange {
+  const _$OutOfRangeImpl();
 
   @override
   String toString() {
@@ -2444,7 +2452,7 @@ class _$OutOfRange implements OutOfRange {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$OutOfRange);
+        (other.runtimeType == runtimeType && other is _$OutOfRangeImpl);
   }
 
   @override
@@ -2616,29 +2624,30 @@ class _$OutOfRange implements OutOfRange {
 }
 
 abstract class OutOfRange implements FirestoreExceptionHandler {
-  const factory OutOfRange() = _$OutOfRange;
+  const factory OutOfRange() = _$OutOfRangeImpl;
 }
 
 /// @nodoc
-abstract class _$$PermissionDeniedCopyWith<$Res> {
-  factory _$$PermissionDeniedCopyWith(
-          _$PermissionDenied value, $Res Function(_$PermissionDenied) then) =
-      __$$PermissionDeniedCopyWithImpl<$Res>;
+abstract class _$$PermissionDeniedImplCopyWith<$Res> {
+  factory _$$PermissionDeniedImplCopyWith(_$PermissionDeniedImpl value,
+          $Res Function(_$PermissionDeniedImpl) then) =
+      __$$PermissionDeniedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$PermissionDeniedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$PermissionDenied>
-    implements _$$PermissionDeniedCopyWith<$Res> {
-  __$$PermissionDeniedCopyWithImpl(
-      _$PermissionDenied _value, $Res Function(_$PermissionDenied) _then)
+class __$$PermissionDeniedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res,
+        _$PermissionDeniedImpl>
+    implements _$$PermissionDeniedImplCopyWith<$Res> {
+  __$$PermissionDeniedImplCopyWithImpl(_$PermissionDeniedImpl _value,
+      $Res Function(_$PermissionDeniedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$PermissionDenied implements PermissionDenied {
-  const _$PermissionDenied();
+class _$PermissionDeniedImpl implements PermissionDenied {
+  const _$PermissionDeniedImpl();
 
   @override
   String toString() {
@@ -2648,7 +2657,7 @@ class _$PermissionDenied implements PermissionDenied {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$PermissionDenied);
+        (other.runtimeType == runtimeType && other is _$PermissionDeniedImpl);
   }
 
   @override
@@ -2820,29 +2829,30 @@ class _$PermissionDenied implements PermissionDenied {
 }
 
 abstract class PermissionDenied implements FirestoreExceptionHandler {
-  const factory PermissionDenied() = _$PermissionDenied;
+  const factory PermissionDenied() = _$PermissionDeniedImpl;
 }
 
 /// @nodoc
-abstract class _$$ResourceExhaustedCopyWith<$Res> {
-  factory _$$ResourceExhaustedCopyWith(
-          _$ResourceExhausted value, $Res Function(_$ResourceExhausted) then) =
-      __$$ResourceExhaustedCopyWithImpl<$Res>;
+abstract class _$$ResourceExhaustedImplCopyWith<$Res> {
+  factory _$$ResourceExhaustedImplCopyWith(_$ResourceExhaustedImpl value,
+          $Res Function(_$ResourceExhaustedImpl) then) =
+      __$$ResourceExhaustedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$ResourceExhaustedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$ResourceExhausted>
-    implements _$$ResourceExhaustedCopyWith<$Res> {
-  __$$ResourceExhaustedCopyWithImpl(
-      _$ResourceExhausted _value, $Res Function(_$ResourceExhausted) _then)
+class __$$ResourceExhaustedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res,
+        _$ResourceExhaustedImpl>
+    implements _$$ResourceExhaustedImplCopyWith<$Res> {
+  __$$ResourceExhaustedImplCopyWithImpl(_$ResourceExhaustedImpl _value,
+      $Res Function(_$ResourceExhaustedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$ResourceExhausted implements ResourceExhausted {
-  const _$ResourceExhausted();
+class _$ResourceExhaustedImpl implements ResourceExhausted {
+  const _$ResourceExhaustedImpl();
 
   @override
   String toString() {
@@ -2852,7 +2862,7 @@ class _$ResourceExhausted implements ResourceExhausted {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ResourceExhausted);
+        (other.runtimeType == runtimeType && other is _$ResourceExhaustedImpl);
   }
 
   @override
@@ -3024,29 +3034,29 @@ class _$ResourceExhausted implements ResourceExhausted {
 }
 
 abstract class ResourceExhausted implements FirestoreExceptionHandler {
-  const factory ResourceExhausted() = _$ResourceExhausted;
+  const factory ResourceExhausted() = _$ResourceExhaustedImpl;
 }
 
 /// @nodoc
-abstract class _$$UnauthenticatedCopyWith<$Res> {
-  factory _$$UnauthenticatedCopyWith(
-          _$Unauthenticated value, $Res Function(_$Unauthenticated) then) =
-      __$$UnauthenticatedCopyWithImpl<$Res>;
+abstract class _$$UnauthenticatedImplCopyWith<$Res> {
+  factory _$$UnauthenticatedImplCopyWith(_$UnauthenticatedImpl value,
+          $Res Function(_$UnauthenticatedImpl) then) =
+      __$$UnauthenticatedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnauthenticatedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Unauthenticated>
-    implements _$$UnauthenticatedCopyWith<$Res> {
-  __$$UnauthenticatedCopyWithImpl(
-      _$Unauthenticated _value, $Res Function(_$Unauthenticated) _then)
+class __$$UnauthenticatedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$UnauthenticatedImpl>
+    implements _$$UnauthenticatedImplCopyWith<$Res> {
+  __$$UnauthenticatedImplCopyWithImpl(
+      _$UnauthenticatedImpl _value, $Res Function(_$UnauthenticatedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unauthenticated implements Unauthenticated {
-  const _$Unauthenticated();
+class _$UnauthenticatedImpl implements Unauthenticated {
+  const _$UnauthenticatedImpl();
 
   @override
   String toString() {
@@ -3056,7 +3066,7 @@ class _$Unauthenticated implements Unauthenticated {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unauthenticated);
+        (other.runtimeType == runtimeType && other is _$UnauthenticatedImpl);
   }
 
   @override
@@ -3228,29 +3238,29 @@ class _$Unauthenticated implements Unauthenticated {
 }
 
 abstract class Unauthenticated implements FirestoreExceptionHandler {
-  const factory Unauthenticated() = _$Unauthenticated;
+  const factory Unauthenticated() = _$UnauthenticatedImpl;
 }
 
 /// @nodoc
-abstract class _$$UnavailableCopyWith<$Res> {
-  factory _$$UnavailableCopyWith(
-          _$Unavailable value, $Res Function(_$Unavailable) then) =
-      __$$UnavailableCopyWithImpl<$Res>;
+abstract class _$$UnavailableImplCopyWith<$Res> {
+  factory _$$UnavailableImplCopyWith(
+          _$UnavailableImpl value, $Res Function(_$UnavailableImpl) then) =
+      __$$UnavailableImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnavailableCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Unavailable>
-    implements _$$UnavailableCopyWith<$Res> {
-  __$$UnavailableCopyWithImpl(
-      _$Unavailable _value, $Res Function(_$Unavailable) _then)
+class __$$UnavailableImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$UnavailableImpl>
+    implements _$$UnavailableImplCopyWith<$Res> {
+  __$$UnavailableImplCopyWithImpl(
+      _$UnavailableImpl _value, $Res Function(_$UnavailableImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unavailable implements Unavailable {
-  const _$Unavailable();
+class _$UnavailableImpl implements Unavailable {
+  const _$UnavailableImpl();
 
   @override
   String toString() {
@@ -3260,7 +3270,7 @@ class _$Unavailable implements Unavailable {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unavailable);
+        (other.runtimeType == runtimeType && other is _$UnavailableImpl);
   }
 
   @override
@@ -3432,29 +3442,29 @@ class _$Unavailable implements Unavailable {
 }
 
 abstract class Unavailable implements FirestoreExceptionHandler {
-  const factory Unavailable() = _$Unavailable;
+  const factory Unavailable() = _$UnavailableImpl;
 }
 
 /// @nodoc
-abstract class _$$UnimplementedCopyWith<$Res> {
-  factory _$$UnimplementedCopyWith(
-          _$Unimplemented value, $Res Function(_$Unimplemented) then) =
-      __$$UnimplementedCopyWithImpl<$Res>;
+abstract class _$$UnimplementedImplCopyWith<$Res> {
+  factory _$$UnimplementedImplCopyWith(
+          _$UnimplementedImpl value, $Res Function(_$UnimplementedImpl) then) =
+      __$$UnimplementedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnimplementedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Unimplemented>
-    implements _$$UnimplementedCopyWith<$Res> {
-  __$$UnimplementedCopyWithImpl(
-      _$Unimplemented _value, $Res Function(_$Unimplemented) _then)
+class __$$UnimplementedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$UnimplementedImpl>
+    implements _$$UnimplementedImplCopyWith<$Res> {
+  __$$UnimplementedImplCopyWithImpl(
+      _$UnimplementedImpl _value, $Res Function(_$UnimplementedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unimplemented implements Unimplemented {
-  const _$Unimplemented();
+class _$UnimplementedImpl implements Unimplemented {
+  const _$UnimplementedImpl();
 
   @override
   String toString() {
@@ -3464,7 +3474,7 @@ class _$Unimplemented implements Unimplemented {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unimplemented);
+        (other.runtimeType == runtimeType && other is _$UnimplementedImpl);
   }
 
   @override
@@ -3636,27 +3646,29 @@ class _$Unimplemented implements Unimplemented {
 }
 
 abstract class Unimplemented implements FirestoreExceptionHandler {
-  const factory Unimplemented() = _$Unimplemented;
+  const factory Unimplemented() = _$UnimplementedImpl;
 }
 
 /// @nodoc
-abstract class _$$UnknownCopyWith<$Res> {
-  factory _$$UnknownCopyWith(_$Unknown value, $Res Function(_$Unknown) then) =
-      __$$UnknownCopyWithImpl<$Res>;
+abstract class _$$UnknownImplCopyWith<$Res> {
+  factory _$$UnknownImplCopyWith(
+          _$UnknownImpl value, $Res Function(_$UnknownImpl) then) =
+      __$$UnknownImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UnknownCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Unknown>
-    implements _$$UnknownCopyWith<$Res> {
-  __$$UnknownCopyWithImpl(_$Unknown _value, $Res Function(_$Unknown) _then)
+class __$$UnknownImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$UnknownImpl>
+    implements _$$UnknownImplCopyWith<$Res> {
+  __$$UnknownImplCopyWithImpl(
+      _$UnknownImpl _value, $Res Function(_$UnknownImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Unknown implements Unknown {
-  const _$Unknown();
+class _$UnknownImpl implements Unknown {
+  const _$UnknownImpl();
 
   @override
   String toString() {
@@ -3666,7 +3678,7 @@ class _$Unknown implements Unknown {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Unknown);
+        (other.runtimeType == runtimeType && other is _$UnknownImpl);
   }
 
   @override
@@ -3838,29 +3850,29 @@ class _$Unknown implements Unknown {
 }
 
 abstract class Unknown implements FirestoreExceptionHandler {
-  const factory Unknown() = _$Unknown;
+  const factory Unknown() = _$UnknownImpl;
 }
 
 /// @nodoc
-abstract class _$$UndefinedCopyWith<$Res> {
-  factory _$$UndefinedCopyWith(
-          _$Undefined value, $Res Function(_$Undefined) then) =
-      __$$UndefinedCopyWithImpl<$Res>;
+abstract class _$$UndefinedImplCopyWith<$Res> {
+  factory _$$UndefinedImplCopyWith(
+          _$UndefinedImpl value, $Res Function(_$UndefinedImpl) then) =
+      __$$UndefinedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$UndefinedCopyWithImpl<$Res>
-    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$Undefined>
-    implements _$$UndefinedCopyWith<$Res> {
-  __$$UndefinedCopyWithImpl(
-      _$Undefined _value, $Res Function(_$Undefined) _then)
+class __$$UndefinedImplCopyWithImpl<$Res>
+    extends _$FirestoreExceptionHandlerCopyWithImpl<$Res, _$UndefinedImpl>
+    implements _$$UndefinedImplCopyWith<$Res> {
+  __$$UndefinedImplCopyWithImpl(
+      _$UndefinedImpl _value, $Res Function(_$UndefinedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Undefined implements Undefined {
-  const _$Undefined();
+class _$UndefinedImpl implements Undefined {
+  const _$UndefinedImpl();
 
   @override
   String toString() {
@@ -3870,7 +3882,7 @@ class _$Undefined implements Undefined {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Undefined);
+        (other.runtimeType == runtimeType && other is _$UndefinedImpl);
   }
 
   @override
@@ -4042,5 +4054,5 @@ class _$Undefined implements Undefined {
 }
 
 abstract class Undefined implements FirestoreExceptionHandler {
-  const factory Undefined() = _$Undefined;
+  const factory Undefined() = _$UndefinedImpl;
 }

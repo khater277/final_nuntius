@@ -93,11 +93,11 @@ class _$CallNotificationDataCopyWithImpl<$Res,
 }
 
 /// @nodoc
-abstract class _$$_CallNotificationDataCopyWith<$Res>
+abstract class _$$CallNotificationDataImplCopyWith<$Res>
     implements $CallNotificationDataCopyWith<$Res> {
-  factory _$$_CallNotificationDataCopyWith(_$_CallNotificationData value,
-          $Res Function(_$_CallNotificationData) then) =
-      __$$_CallNotificationDataCopyWithImpl<$Res>;
+  factory _$$CallNotificationDataImplCopyWith(_$CallNotificationDataImpl value,
+          $Res Function(_$CallNotificationDataImpl) then) =
+      __$$CallNotificationDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -110,11 +110,11 @@ abstract class _$$_CallNotificationDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_CallNotificationDataCopyWithImpl<$Res>
-    extends _$CallNotificationDataCopyWithImpl<$Res, _$_CallNotificationData>
-    implements _$$_CallNotificationDataCopyWith<$Res> {
-  __$$_CallNotificationDataCopyWithImpl(_$_CallNotificationData _value,
-      $Res Function(_$_CallNotificationData) _then)
+class __$$CallNotificationDataImplCopyWithImpl<$Res>
+    extends _$CallNotificationDataCopyWithImpl<$Res, _$CallNotificationDataImpl>
+    implements _$$CallNotificationDataImplCopyWith<$Res> {
+  __$$CallNotificationDataImplCopyWithImpl(_$CallNotificationDataImpl _value,
+      $Res Function(_$CallNotificationDataImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -124,7 +124,7 @@ class __$$_CallNotificationDataCopyWithImpl<$Res>
     Object? priority = freezed,
     Object? callData = freezed,
   }) {
-    return _then(_$_CallNotificationData(
+    return _then(_$CallNotificationDataImpl(
       to: freezed == to
           ? _value.to
           : to // ignore: cast_nullable_to_non_nullable
@@ -143,12 +143,12 @@ class __$$_CallNotificationDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CallNotificationData implements _CallNotificationData {
-  _$_CallNotificationData(
+class _$CallNotificationDataImpl implements _CallNotificationData {
+  _$CallNotificationDataImpl(
       {this.to, this.priority, @JsonKey(name: 'data') this.callData});
 
-  factory _$_CallNotificationData.fromJson(Map<String, dynamic> json) =>
-      _$$_CallNotificationDataFromJson(json);
+  factory _$CallNotificationDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CallNotificationDataImplFromJson(json);
 
   @override
   final String? to;
@@ -167,7 +167,7 @@ class _$_CallNotificationData implements _CallNotificationData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CallNotificationData &&
+            other is _$CallNotificationDataImpl &&
             (identical(other.to, to) || other.to == to) &&
             (identical(other.priority, priority) ||
                 other.priority == priority) &&
@@ -182,13 +182,14 @@ class _$_CallNotificationData implements _CallNotificationData {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CallNotificationDataCopyWith<_$_CallNotificationData> get copyWith =>
-      __$$_CallNotificationDataCopyWithImpl<_$_CallNotificationData>(
-          this, _$identity);
+  _$$CallNotificationDataImplCopyWith<_$CallNotificationDataImpl>
+      get copyWith =>
+          __$$CallNotificationDataImplCopyWithImpl<_$CallNotificationDataImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CallNotificationDataToJson(
+    return _$$CallNotificationDataImplToJson(
       this,
     );
   }
@@ -199,10 +200,10 @@ abstract class _CallNotificationData implements CallNotificationData {
           {final String? to,
           final String? priority,
           @JsonKey(name: 'data') final CallData? callData}) =
-      _$_CallNotificationData;
+      _$CallNotificationDataImpl;
 
   factory _CallNotificationData.fromJson(Map<String, dynamic> json) =
-      _$_CallNotificationData.fromJson;
+      _$CallNotificationDataImpl.fromJson;
 
   @override
   String? get to;
@@ -213,6 +214,6 @@ abstract class _CallNotificationData implements CallNotificationData {
   CallData? get callData;
   @override
   @JsonKey(ignore: true)
-  _$$_CallNotificationDataCopyWith<_$_CallNotificationData> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$CallNotificationDataImplCopyWith<_$CallNotificationDataImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

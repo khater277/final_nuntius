@@ -2,11 +2,11 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
-import 'package:final_nuntius/core/shared_widgets/text_form_field.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/cubit/auth_cubit.dart';
 import 'package:final_nuntius/features/auth/presentation/widgets/set_image/image_view.dart';
+import 'package:final_nuntius/features/auth/presentation/widgets/set_image/name_text_field.dart';
 import 'package:final_nuntius/features/auth/presentation/widgets/set_image/set_image_head.dart';
 import 'package:final_nuntius/features/auth/presentation/widgets/set_image/set_image_next_button.dart';
 import 'package:final_nuntius/features/home/presentation/screens/home_screen.dart';
@@ -41,24 +41,14 @@ class _SetImageScreenState extends State<SetImageScreen> {
     return BlocConsumer<AuthCubit, AuthState>(
       listener: (context, state) {
         state.maybeWhen(
-          addUserToFirestoreError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
-          uploadImageToStorageError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
-          addUserToFirestore: () => Go.off(
-            context: context,
-            screen: const HomeScreen(),
-          ),
-          updateUserToken: () => Go.off(
-            context: context,
-            screen: const HomeScreen(),
-          ),
+          addUserToFirestoreError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
+          uploadImageToStorageError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
+          addUserToFirestore: () =>
+              Go.off(context: context, screen: const HomeScreen()),
+          updateUserToken: () =>
+              Go.off(context: context, screen: const HomeScreen()),
           orElse: () {},
         );
       },
@@ -94,15 +84,7 @@ class _SetImageScreenState extends State<SetImageScreen> {
                         SizedBox(height: AppHeight.h15),
                         ImageView(cubit: cubit),
                         SizedBox(height: AppHeight.h30),
-                        Padding(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: AppWidth.w20),
-                          child: CustomTextField(
-                            hintText: "enter your name..",
-                            controller: cubit.nameController!,
-                            inputType: TextInputType.name,
-                          ),
-                        ),
+                        NameTextField(nameController: cubit.nameController!),
                       ],
                     ),
                     SizedBox(

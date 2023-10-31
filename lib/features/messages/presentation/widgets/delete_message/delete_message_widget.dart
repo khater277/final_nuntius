@@ -8,10 +8,9 @@ import 'package:flutter/material.dart';
 
 class DeleteMessageWidget extends StatelessWidget {
   final String messageId;
-  const DeleteMessageWidget({
-    super.key,
-    required this.messageId,
-  });
+  final bool loadingCondition;
+  const DeleteMessageWidget(
+      {super.key, required this.messageId, required this.loadingCondition});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +20,7 @@ class DeleteMessageWidget extends StatelessWidget {
         text: "Are you sure you want to delete this message?",
         okPressed: () =>
             MessagesCubit.get(context).deleteMessage(messageId: messageId),
+        loadingCondition: loadingCondition,
       ),
       child: Row(
         children: [

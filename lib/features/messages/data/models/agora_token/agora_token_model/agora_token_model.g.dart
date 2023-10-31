@@ -6,12 +6,14 @@ part of 'agora_token_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_AgoraTokenModel _$$_AgoraTokenModelFromJson(Map<String, dynamic> json) =>
-    _$_AgoraTokenModel(
+_$AgoraTokenModelImpl _$$AgoraTokenModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$AgoraTokenModelImpl(
       rtcToken: json['rtcToken'] as String?,
     );
 
-Map<String, dynamic> _$$_AgoraTokenModelToJson(_$_AgoraTokenModel instance) =>
+Map<String, dynamic> _$$AgoraTokenModelImplToJson(
+        _$AgoraTokenModelImpl instance) =>
     <String, dynamic>{
       'rtcToken': instance.rtcToken,
     };

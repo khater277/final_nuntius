@@ -178,24 +178,25 @@ class _$CallsStateCopyWithImpl<$Res, $Val extends CallsState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -205,7 +206,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -378,29 +379,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements CallsState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitCallsCopyWith<$Res> {
-  factory _$$_InitCallsCopyWith(
-          _$_InitCalls value, $Res Function(_$_InitCalls) then) =
-      __$$_InitCallsCopyWithImpl<$Res>;
+abstract class _$$InitCallsImplCopyWith<$Res> {
+  factory _$$InitCallsImplCopyWith(
+          _$InitCallsImpl value, $Res Function(_$InitCallsImpl) then) =
+      __$$InitCallsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitCallsCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_InitCalls>
-    implements _$$_InitCallsCopyWith<$Res> {
-  __$$_InitCallsCopyWithImpl(
-      _$_InitCalls _value, $Res Function(_$_InitCalls) _then)
+class __$$InitCallsImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$InitCallsImpl>
+    implements _$$InitCallsImplCopyWith<$Res> {
+  __$$InitCallsImplCopyWithImpl(
+      _$InitCallsImpl _value, $Res Function(_$InitCallsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitCalls implements _InitCalls {
-  const _$_InitCalls();
+class _$InitCallsImpl implements _InitCalls {
+  const _$InitCallsImpl();
 
   @override
   String toString() {
@@ -410,7 +411,7 @@ class _$_InitCalls implements _InitCalls {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitCalls);
+        (other.runtimeType == runtimeType && other is _$InitCallsImpl);
   }
 
   @override
@@ -583,29 +584,29 @@ class _$_InitCalls implements _InitCalls {
 }
 
 abstract class _InitCalls implements CallsState {
-  const factory _InitCalls() = _$_InitCalls;
+  const factory _InitCalls() = _$InitCallsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenLoadingCopyWith<$Res> {
-  factory _$$_GenerateTokenLoadingCopyWith(_$_GenerateTokenLoading value,
-          $Res Function(_$_GenerateTokenLoading) then) =
-      __$$_GenerateTokenLoadingCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenLoadingImplCopyWith<$Res> {
+  factory _$$GenerateTokenLoadingImplCopyWith(_$GenerateTokenLoadingImpl value,
+          $Res Function(_$GenerateTokenLoadingImpl) then) =
+      __$$GenerateTokenLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GenerateTokenLoading>
-    implements _$$_GenerateTokenLoadingCopyWith<$Res> {
-  __$$_GenerateTokenLoadingCopyWithImpl(_$_GenerateTokenLoading _value,
-      $Res Function(_$_GenerateTokenLoading) _then)
+class __$$GenerateTokenLoadingImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GenerateTokenLoadingImpl>
+    implements _$$GenerateTokenLoadingImplCopyWith<$Res> {
+  __$$GenerateTokenLoadingImplCopyWithImpl(_$GenerateTokenLoadingImpl _value,
+      $Res Function(_$GenerateTokenLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GenerateTokenLoading implements _GenerateTokenLoading {
-  const _$_GenerateTokenLoading();
+class _$GenerateTokenLoadingImpl implements _GenerateTokenLoading {
+  const _$GenerateTokenLoadingImpl();
 
   @override
   String toString() {
@@ -615,7 +616,8 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GenerateTokenLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$GenerateTokenLoadingImpl);
   }
 
   @override
@@ -788,24 +790,24 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
 }
 
 abstract class _GenerateTokenLoading implements CallsState {
-  const factory _GenerateTokenLoading() = _$_GenerateTokenLoading;
+  const factory _GenerateTokenLoading() = _$GenerateTokenLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenSuccessCopyWith<$Res> {
-  factory _$$_GenerateTokenSuccessCopyWith(_$_GenerateTokenSuccess value,
-          $Res Function(_$_GenerateTokenSuccess) then) =
-      __$$_GenerateTokenSuccessCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenSuccessImplCopyWith<$Res> {
+  factory _$$GenerateTokenSuccessImplCopyWith(_$GenerateTokenSuccessImpl value,
+          $Res Function(_$GenerateTokenSuccessImpl) then) =
+      __$$GenerateTokenSuccessImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String token});
 }
 
 /// @nodoc
-class __$$_GenerateTokenSuccessCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GenerateTokenSuccess>
-    implements _$$_GenerateTokenSuccessCopyWith<$Res> {
-  __$$_GenerateTokenSuccessCopyWithImpl(_$_GenerateTokenSuccess _value,
-      $Res Function(_$_GenerateTokenSuccess) _then)
+class __$$GenerateTokenSuccessImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GenerateTokenSuccessImpl>
+    implements _$$GenerateTokenSuccessImplCopyWith<$Res> {
+  __$$GenerateTokenSuccessImplCopyWithImpl(_$GenerateTokenSuccessImpl _value,
+      $Res Function(_$GenerateTokenSuccessImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -813,7 +815,7 @@ class __$$_GenerateTokenSuccessCopyWithImpl<$Res>
   $Res call({
     Object? token = null,
   }) {
-    return _then(_$_GenerateTokenSuccess(
+    return _then(_$GenerateTokenSuccessImpl(
       null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
@@ -824,8 +826,8 @@ class __$$_GenerateTokenSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
-  const _$_GenerateTokenSuccess(this.token);
+class _$GenerateTokenSuccessImpl implements _GenerateTokenSuccess {
+  const _$GenerateTokenSuccessImpl(this.token);
 
   @override
   final String token;
@@ -839,7 +841,7 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GenerateTokenSuccess &&
+            other is _$GenerateTokenSuccessImpl &&
             (identical(other.token, token) || other.token == token));
   }
 
@@ -849,9 +851,10 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GenerateTokenSuccessCopyWith<_$_GenerateTokenSuccess> get copyWith =>
-      __$$_GenerateTokenSuccessCopyWithImpl<_$_GenerateTokenSuccess>(
-          this, _$identity);
+  _$$GenerateTokenSuccessImplCopyWith<_$GenerateTokenSuccessImpl>
+      get copyWith =>
+          __$$GenerateTokenSuccessImplCopyWithImpl<_$GenerateTokenSuccessImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1021,29 +1024,29 @@ class _$_GenerateTokenSuccess implements _GenerateTokenSuccess {
 
 abstract class _GenerateTokenSuccess implements CallsState {
   const factory _GenerateTokenSuccess(final String token) =
-      _$_GenerateTokenSuccess;
+      _$GenerateTokenSuccessImpl;
 
   String get token;
   @JsonKey(ignore: true)
-  _$$_GenerateTokenSuccessCopyWith<_$_GenerateTokenSuccess> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GenerateTokenSuccessImplCopyWith<_$GenerateTokenSuccessImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenErrorCopyWith<$Res> {
-  factory _$$_GenerateTokenErrorCopyWith(_$_GenerateTokenError value,
-          $Res Function(_$_GenerateTokenError) then) =
-      __$$_GenerateTokenErrorCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenErrorImplCopyWith<$Res> {
+  factory _$$GenerateTokenErrorImplCopyWith(_$GenerateTokenErrorImpl value,
+          $Res Function(_$GenerateTokenErrorImpl) then) =
+      __$$GenerateTokenErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GenerateTokenErrorCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GenerateTokenError>
-    implements _$$_GenerateTokenErrorCopyWith<$Res> {
-  __$$_GenerateTokenErrorCopyWithImpl(
-      _$_GenerateTokenError _value, $Res Function(_$_GenerateTokenError) _then)
+class __$$GenerateTokenErrorImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GenerateTokenErrorImpl>
+    implements _$$GenerateTokenErrorImplCopyWith<$Res> {
+  __$$GenerateTokenErrorImplCopyWithImpl(_$GenerateTokenErrorImpl _value,
+      $Res Function(_$GenerateTokenErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1051,7 +1054,7 @@ class __$$_GenerateTokenErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GenerateTokenError(
+    return _then(_$GenerateTokenErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -1062,8 +1065,8 @@ class __$$_GenerateTokenErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GenerateTokenError implements _GenerateTokenError {
-  const _$_GenerateTokenError(this.errorMsg);
+class _$GenerateTokenErrorImpl implements _GenerateTokenError {
+  const _$GenerateTokenErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -1077,7 +1080,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GenerateTokenError &&
+            other is _$GenerateTokenErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -1088,8 +1091,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
-      __$$_GenerateTokenErrorCopyWithImpl<_$_GenerateTokenError>(
+  _$$GenerateTokenErrorImplCopyWith<_$GenerateTokenErrorImpl> get copyWith =>
+      __$$GenerateTokenErrorImplCopyWithImpl<_$GenerateTokenErrorImpl>(
           this, _$identity);
 
   @override
@@ -1260,34 +1263,34 @@ class _$_GenerateTokenError implements _GenerateTokenError {
 
 abstract class _GenerateTokenError implements CallsState {
   const factory _GenerateTokenError(final String errorMsg) =
-      _$_GenerateTokenError;
+      _$GenerateTokenErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
+  _$$GenerateTokenErrorImplCopyWith<_$GenerateTokenErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_SetupSDKEngineCopyWith<$Res> {
-  factory _$$_SetupSDKEngineCopyWith(
-          _$_SetupSDKEngine value, $Res Function(_$_SetupSDKEngine) then) =
-      __$$_SetupSDKEngineCopyWithImpl<$Res>;
+abstract class _$$SetupSDKEngineImplCopyWith<$Res> {
+  factory _$$SetupSDKEngineImplCopyWith(_$SetupSDKEngineImpl value,
+          $Res Function(_$SetupSDKEngineImpl) then) =
+      __$$SetupSDKEngineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SetupSDKEngineCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_SetupSDKEngine>
-    implements _$$_SetupSDKEngineCopyWith<$Res> {
-  __$$_SetupSDKEngineCopyWithImpl(
-      _$_SetupSDKEngine _value, $Res Function(_$_SetupSDKEngine) _then)
+class __$$SetupSDKEngineImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$SetupSDKEngineImpl>
+    implements _$$SetupSDKEngineImplCopyWith<$Res> {
+  __$$SetupSDKEngineImplCopyWithImpl(
+      _$SetupSDKEngineImpl _value, $Res Function(_$SetupSDKEngineImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SetupSDKEngine implements _SetupSDKEngine {
-  const _$_SetupSDKEngine();
+class _$SetupSDKEngineImpl implements _SetupSDKEngine {
+  const _$SetupSDKEngineImpl();
 
   @override
   String toString() {
@@ -1297,7 +1300,7 @@ class _$_SetupSDKEngine implements _SetupSDKEngine {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SetupSDKEngine);
+        (other.runtimeType == runtimeType && other is _$SetupSDKEngineImpl);
   }
 
   @override
@@ -1470,24 +1473,25 @@ class _$_SetupSDKEngine implements _SetupSDKEngine {
 }
 
 abstract class _SetupSDKEngine implements CallsState {
-  const factory _SetupSDKEngine() = _$_SetupSDKEngine;
+  const factory _SetupSDKEngine() = _$SetupSDKEngineImpl;
 }
 
 /// @nodoc
-abstract class _$$_PushNotificationErrorCopyWith<$Res> {
-  factory _$$_PushNotificationErrorCopyWith(_$_PushNotificationError value,
-          $Res Function(_$_PushNotificationError) then) =
-      __$$_PushNotificationErrorCopyWithImpl<$Res>;
+abstract class _$$PushNotificationErrorImplCopyWith<$Res> {
+  factory _$$PushNotificationErrorImplCopyWith(
+          _$PushNotificationErrorImpl value,
+          $Res Function(_$PushNotificationErrorImpl) then) =
+      __$$PushNotificationErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_PushNotificationErrorCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_PushNotificationError>
-    implements _$$_PushNotificationErrorCopyWith<$Res> {
-  __$$_PushNotificationErrorCopyWithImpl(_$_PushNotificationError _value,
-      $Res Function(_$_PushNotificationError) _then)
+class __$$PushNotificationErrorImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$PushNotificationErrorImpl>
+    implements _$$PushNotificationErrorImplCopyWith<$Res> {
+  __$$PushNotificationErrorImplCopyWithImpl(_$PushNotificationErrorImpl _value,
+      $Res Function(_$PushNotificationErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1495,7 +1499,7 @@ class __$$_PushNotificationErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_PushNotificationError(
+    return _then(_$PushNotificationErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -1506,8 +1510,8 @@ class __$$_PushNotificationErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PushNotificationError implements _PushNotificationError {
-  const _$_PushNotificationError(this.errorMsg);
+class _$PushNotificationErrorImpl implements _PushNotificationError {
+  const _$PushNotificationErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -1521,7 +1525,7 @@ class _$_PushNotificationError implements _PushNotificationError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PushNotificationError &&
+            other is _$PushNotificationErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -1532,9 +1536,9 @@ class _$_PushNotificationError implements _PushNotificationError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PushNotificationErrorCopyWith<_$_PushNotificationError> get copyWith =>
-      __$$_PushNotificationErrorCopyWithImpl<_$_PushNotificationError>(
-          this, _$identity);
+  _$$PushNotificationErrorImplCopyWith<_$PushNotificationErrorImpl>
+      get copyWith => __$$PushNotificationErrorImplCopyWithImpl<
+          _$PushNotificationErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1704,34 +1708,34 @@ class _$_PushNotificationError implements _PushNotificationError {
 
 abstract class _PushNotificationError implements CallsState {
   const factory _PushNotificationError(final String errorMsg) =
-      _$_PushNotificationError;
+      _$PushNotificationErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_PushNotificationErrorCopyWith<_$_PushNotificationError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PushNotificationErrorImplCopyWith<_$PushNotificationErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_JoinCallLoadingCopyWith<$Res> {
-  factory _$$_JoinCallLoadingCopyWith(
-          _$_JoinCallLoading value, $Res Function(_$_JoinCallLoading) then) =
-      __$$_JoinCallLoadingCopyWithImpl<$Res>;
+abstract class _$$JoinCallLoadingImplCopyWith<$Res> {
+  factory _$$JoinCallLoadingImplCopyWith(_$JoinCallLoadingImpl value,
+          $Res Function(_$JoinCallLoadingImpl) then) =
+      __$$JoinCallLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_JoinCallLoadingCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_JoinCallLoading>
-    implements _$$_JoinCallLoadingCopyWith<$Res> {
-  __$$_JoinCallLoadingCopyWithImpl(
-      _$_JoinCallLoading _value, $Res Function(_$_JoinCallLoading) _then)
+class __$$JoinCallLoadingImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$JoinCallLoadingImpl>
+    implements _$$JoinCallLoadingImplCopyWith<$Res> {
+  __$$JoinCallLoadingImplCopyWithImpl(
+      _$JoinCallLoadingImpl _value, $Res Function(_$JoinCallLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_JoinCallLoading implements _JoinCallLoading {
-  const _$_JoinCallLoading();
+class _$JoinCallLoadingImpl implements _JoinCallLoading {
+  const _$JoinCallLoadingImpl();
 
   @override
   String toString() {
@@ -1741,7 +1745,7 @@ class _$_JoinCallLoading implements _JoinCallLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_JoinCallLoading);
+        (other.runtimeType == runtimeType && other is _$JoinCallLoadingImpl);
   }
 
   @override
@@ -1914,29 +1918,29 @@ class _$_JoinCallLoading implements _JoinCallLoading {
 }
 
 abstract class _JoinCallLoading implements CallsState {
-  const factory _JoinCallLoading() = _$_JoinCallLoading;
+  const factory _JoinCallLoading() = _$JoinCallLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnJoinChannelSuccessCopyWith<$Res> {
-  factory _$$_OnJoinChannelSuccessCopyWith(_$_OnJoinChannelSuccess value,
-          $Res Function(_$_OnJoinChannelSuccess) then) =
-      __$$_OnJoinChannelSuccessCopyWithImpl<$Res>;
+abstract class _$$OnJoinChannelSuccessImplCopyWith<$Res> {
+  factory _$$OnJoinChannelSuccessImplCopyWith(_$OnJoinChannelSuccessImpl value,
+          $Res Function(_$OnJoinChannelSuccessImpl) then) =
+      __$$OnJoinChannelSuccessImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnJoinChannelSuccessCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_OnJoinChannelSuccess>
-    implements _$$_OnJoinChannelSuccessCopyWith<$Res> {
-  __$$_OnJoinChannelSuccessCopyWithImpl(_$_OnJoinChannelSuccess _value,
-      $Res Function(_$_OnJoinChannelSuccess) _then)
+class __$$OnJoinChannelSuccessImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$OnJoinChannelSuccessImpl>
+    implements _$$OnJoinChannelSuccessImplCopyWith<$Res> {
+  __$$OnJoinChannelSuccessImplCopyWithImpl(_$OnJoinChannelSuccessImpl _value,
+      $Res Function(_$OnJoinChannelSuccessImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
-  const _$_OnJoinChannelSuccess();
+class _$OnJoinChannelSuccessImpl implements _OnJoinChannelSuccess {
+  const _$OnJoinChannelSuccessImpl();
 
   @override
   String toString() {
@@ -1946,7 +1950,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnJoinChannelSuccess);
+        (other.runtimeType == runtimeType &&
+            other is _$OnJoinChannelSuccessImpl);
   }
 
   @override
@@ -2119,29 +2124,29 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
 }
 
 abstract class _OnJoinChannelSuccess implements CallsState {
-  const factory _OnJoinChannelSuccess() = _$_OnJoinChannelSuccess;
+  const factory _OnJoinChannelSuccess() = _$OnJoinChannelSuccessImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnUserJoinedCopyWith<$Res> {
-  factory _$$_OnUserJoinedCopyWith(
-          _$_OnUserJoined value, $Res Function(_$_OnUserJoined) then) =
-      __$$_OnUserJoinedCopyWithImpl<$Res>;
+abstract class _$$OnUserJoinedImplCopyWith<$Res> {
+  factory _$$OnUserJoinedImplCopyWith(
+          _$OnUserJoinedImpl value, $Res Function(_$OnUserJoinedImpl) then) =
+      __$$OnUserJoinedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnUserJoinedCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_OnUserJoined>
-    implements _$$_OnUserJoinedCopyWith<$Res> {
-  __$$_OnUserJoinedCopyWithImpl(
-      _$_OnUserJoined _value, $Res Function(_$_OnUserJoined) _then)
+class __$$OnUserJoinedImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$OnUserJoinedImpl>
+    implements _$$OnUserJoinedImplCopyWith<$Res> {
+  __$$OnUserJoinedImplCopyWithImpl(
+      _$OnUserJoinedImpl _value, $Res Function(_$OnUserJoinedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnUserJoined implements _OnUserJoined {
-  const _$_OnUserJoined();
+class _$OnUserJoinedImpl implements _OnUserJoined {
+  const _$OnUserJoinedImpl();
 
   @override
   String toString() {
@@ -2151,7 +2156,7 @@ class _$_OnUserJoined implements _OnUserJoined {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnUserJoined);
+        (other.runtimeType == runtimeType && other is _$OnUserJoinedImpl);
   }
 
   @override
@@ -2324,29 +2329,29 @@ class _$_OnUserJoined implements _OnUserJoined {
 }
 
 abstract class _OnUserJoined implements CallsState {
-  const factory _OnUserJoined() = _$_OnUserJoined;
+  const factory _OnUserJoined() = _$OnUserJoinedImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnUserOfflineCopyWith<$Res> {
-  factory _$$_OnUserOfflineCopyWith(
-          _$_OnUserOffline value, $Res Function(_$_OnUserOffline) then) =
-      __$$_OnUserOfflineCopyWithImpl<$Res>;
+abstract class _$$OnUserOfflineImplCopyWith<$Res> {
+  factory _$$OnUserOfflineImplCopyWith(
+          _$OnUserOfflineImpl value, $Res Function(_$OnUserOfflineImpl) then) =
+      __$$OnUserOfflineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnUserOfflineCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_OnUserOffline>
-    implements _$$_OnUserOfflineCopyWith<$Res> {
-  __$$_OnUserOfflineCopyWithImpl(
-      _$_OnUserOffline _value, $Res Function(_$_OnUserOffline) _then)
+class __$$OnUserOfflineImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$OnUserOfflineImpl>
+    implements _$$OnUserOfflineImplCopyWith<$Res> {
+  __$$OnUserOfflineImplCopyWithImpl(
+      _$OnUserOfflineImpl _value, $Res Function(_$OnUserOfflineImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnUserOffline implements _OnUserOffline {
-  const _$_OnUserOffline();
+class _$OnUserOfflineImpl implements _OnUserOffline {
+  const _$OnUserOfflineImpl();
 
   @override
   String toString() {
@@ -2356,7 +2361,7 @@ class _$_OnUserOffline implements _OnUserOffline {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnUserOffline);
+        (other.runtimeType == runtimeType && other is _$OnUserOfflineImpl);
   }
 
   @override
@@ -2529,29 +2534,29 @@ class _$_OnUserOffline implements _OnUserOffline {
 }
 
 abstract class _OnUserOffline implements CallsState {
-  const factory _OnUserOffline() = _$_OnUserOffline;
+  const factory _OnUserOffline() = _$OnUserOfflineImpl;
 }
 
 /// @nodoc
-abstract class _$$_LeaveCallLoadingCopyWith<$Res> {
-  factory _$$_LeaveCallLoadingCopyWith(
-          _$_LeaveCallLoading value, $Res Function(_$_LeaveCallLoading) then) =
-      __$$_LeaveCallLoadingCopyWithImpl<$Res>;
+abstract class _$$LeaveCallLoadingImplCopyWith<$Res> {
+  factory _$$LeaveCallLoadingImplCopyWith(_$LeaveCallLoadingImpl value,
+          $Res Function(_$LeaveCallLoadingImpl) then) =
+      __$$LeaveCallLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LeaveCallLoadingCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_LeaveCallLoading>
-    implements _$$_LeaveCallLoadingCopyWith<$Res> {
-  __$$_LeaveCallLoadingCopyWithImpl(
-      _$_LeaveCallLoading _value, $Res Function(_$_LeaveCallLoading) _then)
+class __$$LeaveCallLoadingImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$LeaveCallLoadingImpl>
+    implements _$$LeaveCallLoadingImplCopyWith<$Res> {
+  __$$LeaveCallLoadingImplCopyWithImpl(_$LeaveCallLoadingImpl _value,
+      $Res Function(_$LeaveCallLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LeaveCallLoading implements _LeaveCallLoading {
-  const _$_LeaveCallLoading();
+class _$LeaveCallLoadingImpl implements _LeaveCallLoading {
+  const _$LeaveCallLoadingImpl();
 
   @override
   String toString() {
@@ -2561,7 +2566,7 @@ class _$_LeaveCallLoading implements _LeaveCallLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LeaveCallLoading);
+        (other.runtimeType == runtimeType && other is _$LeaveCallLoadingImpl);
   }
 
   @override
@@ -2734,29 +2739,29 @@ class _$_LeaveCallLoading implements _LeaveCallLoading {
 }
 
 abstract class _LeaveCallLoading implements CallsState {
-  const factory _LeaveCallLoading() = _$_LeaveCallLoading;
+  const factory _LeaveCallLoading() = _$LeaveCallLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_LeaveCallCopyWith<$Res> {
-  factory _$$_LeaveCallCopyWith(
-          _$_LeaveCall value, $Res Function(_$_LeaveCall) then) =
-      __$$_LeaveCallCopyWithImpl<$Res>;
+abstract class _$$LeaveCallImplCopyWith<$Res> {
+  factory _$$LeaveCallImplCopyWith(
+          _$LeaveCallImpl value, $Res Function(_$LeaveCallImpl) then) =
+      __$$LeaveCallImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LeaveCallCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_LeaveCall>
-    implements _$$_LeaveCallCopyWith<$Res> {
-  __$$_LeaveCallCopyWithImpl(
-      _$_LeaveCall _value, $Res Function(_$_LeaveCall) _then)
+class __$$LeaveCallImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$LeaveCallImpl>
+    implements _$$LeaveCallImplCopyWith<$Res> {
+  __$$LeaveCallImplCopyWithImpl(
+      _$LeaveCallImpl _value, $Res Function(_$LeaveCallImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LeaveCall implements _LeaveCall {
-  const _$_LeaveCall();
+class _$LeaveCallImpl implements _LeaveCall {
+  const _$LeaveCallImpl();
 
   @override
   String toString() {
@@ -2766,7 +2771,7 @@ class _$_LeaveCall implements _LeaveCall {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LeaveCall);
+        (other.runtimeType == runtimeType && other is _$LeaveCallImpl);
   }
 
   @override
@@ -2939,29 +2944,29 @@ class _$_LeaveCall implements _LeaveCall {
 }
 
 abstract class _LeaveCall implements CallsState {
-  const factory _LeaveCall() = _$_LeaveCall;
+  const factory _LeaveCall() = _$LeaveCallImpl;
 }
 
 /// @nodoc
-abstract class _$$_CancelCallLoadingCopyWith<$Res> {
-  factory _$$_CancelCallLoadingCopyWith(_$_CancelCallLoading value,
-          $Res Function(_$_CancelCallLoading) then) =
-      __$$_CancelCallLoadingCopyWithImpl<$Res>;
+abstract class _$$CancelCallLoadingImplCopyWith<$Res> {
+  factory _$$CancelCallLoadingImplCopyWith(_$CancelCallLoadingImpl value,
+          $Res Function(_$CancelCallLoadingImpl) then) =
+      __$$CancelCallLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CancelCallLoadingCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCallLoading>
-    implements _$$_CancelCallLoadingCopyWith<$Res> {
-  __$$_CancelCallLoadingCopyWithImpl(
-      _$_CancelCallLoading _value, $Res Function(_$_CancelCallLoading) _then)
+class __$$CancelCallLoadingImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$CancelCallLoadingImpl>
+    implements _$$CancelCallLoadingImplCopyWith<$Res> {
+  __$$CancelCallLoadingImplCopyWithImpl(_$CancelCallLoadingImpl _value,
+      $Res Function(_$CancelCallLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CancelCallLoading implements _CancelCallLoading {
-  const _$_CancelCallLoading();
+class _$CancelCallLoadingImpl implements _CancelCallLoading {
+  const _$CancelCallLoadingImpl();
 
   @override
   String toString() {
@@ -2971,7 +2976,7 @@ class _$_CancelCallLoading implements _CancelCallLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_CancelCallLoading);
+        (other.runtimeType == runtimeType && other is _$CancelCallLoadingImpl);
   }
 
   @override
@@ -3144,29 +3149,29 @@ class _$_CancelCallLoading implements _CancelCallLoading {
 }
 
 abstract class _CancelCallLoading implements CallsState {
-  const factory _CancelCallLoading() = _$_CancelCallLoading;
+  const factory _CancelCallLoading() = _$CancelCallLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_CancelCallCopyWith<$Res> {
-  factory _$$_CancelCallCopyWith(
-          _$_CancelCall value, $Res Function(_$_CancelCall) then) =
-      __$$_CancelCallCopyWithImpl<$Res>;
+abstract class _$$CancelCallImplCopyWith<$Res> {
+  factory _$$CancelCallImplCopyWith(
+          _$CancelCallImpl value, $Res Function(_$CancelCallImpl) then) =
+      __$$CancelCallImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CancelCallCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCall>
-    implements _$$_CancelCallCopyWith<$Res> {
-  __$$_CancelCallCopyWithImpl(
-      _$_CancelCall _value, $Res Function(_$_CancelCall) _then)
+class __$$CancelCallImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$CancelCallImpl>
+    implements _$$CancelCallImplCopyWith<$Res> {
+  __$$CancelCallImplCopyWithImpl(
+      _$CancelCallImpl _value, $Res Function(_$CancelCallImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CancelCall implements _CancelCall {
-  const _$_CancelCall();
+class _$CancelCallImpl implements _CancelCall {
+  const _$CancelCallImpl();
 
   @override
   String toString() {
@@ -3176,7 +3181,7 @@ class _$_CancelCall implements _CancelCall {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_CancelCall);
+        (other.runtimeType == runtimeType && other is _$CancelCallImpl);
   }
 
   @override
@@ -3349,24 +3354,24 @@ class _$_CancelCall implements _CancelCall {
 }
 
 abstract class _CancelCall implements CallsState {
-  const factory _CancelCall() = _$_CancelCall;
+  const factory _CancelCall() = _$CancelCallImpl;
 }
 
 /// @nodoc
-abstract class _$$_CancelCallErrorCopyWith<$Res> {
-  factory _$$_CancelCallErrorCopyWith(
-          _$_CancelCallError value, $Res Function(_$_CancelCallError) then) =
-      __$$_CancelCallErrorCopyWithImpl<$Res>;
+abstract class _$$CancelCallErrorImplCopyWith<$Res> {
+  factory _$$CancelCallErrorImplCopyWith(_$CancelCallErrorImpl value,
+          $Res Function(_$CancelCallErrorImpl) then) =
+      __$$CancelCallErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_CancelCallErrorCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_CancelCallError>
-    implements _$$_CancelCallErrorCopyWith<$Res> {
-  __$$_CancelCallErrorCopyWithImpl(
-      _$_CancelCallError _value, $Res Function(_$_CancelCallError) _then)
+class __$$CancelCallErrorImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$CancelCallErrorImpl>
+    implements _$$CancelCallErrorImplCopyWith<$Res> {
+  __$$CancelCallErrorImplCopyWithImpl(
+      _$CancelCallErrorImpl _value, $Res Function(_$CancelCallErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3374,7 +3379,7 @@ class __$$_CancelCallErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_CancelCallError(
+    return _then(_$CancelCallErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -3385,8 +3390,8 @@ class __$$_CancelCallErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_CancelCallError implements _CancelCallError {
-  const _$_CancelCallError(this.errorMsg);
+class _$CancelCallErrorImpl implements _CancelCallError {
+  const _$CancelCallErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -3400,7 +3405,7 @@ class _$_CancelCallError implements _CancelCallError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CancelCallError &&
+            other is _$CancelCallErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -3411,8 +3416,9 @@ class _$_CancelCallError implements _CancelCallError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CancelCallErrorCopyWith<_$_CancelCallError> get copyWith =>
-      __$$_CancelCallErrorCopyWithImpl<_$_CancelCallError>(this, _$identity);
+  _$$CancelCallErrorImplCopyWith<_$CancelCallErrorImpl> get copyWith =>
+      __$$CancelCallErrorImplCopyWithImpl<_$CancelCallErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3581,34 +3587,34 @@ class _$_CancelCallError implements _CancelCallError {
 }
 
 abstract class _CancelCallError implements CallsState {
-  const factory _CancelCallError(final String errorMsg) = _$_CancelCallError;
+  const factory _CancelCallError(final String errorMsg) = _$CancelCallErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_CancelCallErrorCopyWith<_$_CancelCallError> get copyWith =>
+  _$$CancelCallErrorImplCopyWith<_$CancelCallErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GetCallsLoadingCopyWith<$Res> {
-  factory _$$_GetCallsLoadingCopyWith(
-          _$_GetCallsLoading value, $Res Function(_$_GetCallsLoading) then) =
-      __$$_GetCallsLoadingCopyWithImpl<$Res>;
+abstract class _$$GetCallsLoadingImplCopyWith<$Res> {
+  factory _$$GetCallsLoadingImplCopyWith(_$GetCallsLoadingImpl value,
+          $Res Function(_$GetCallsLoadingImpl) then) =
+      __$$GetCallsLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetCallsLoadingCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GetCallsLoading>
-    implements _$$_GetCallsLoadingCopyWith<$Res> {
-  __$$_GetCallsLoadingCopyWithImpl(
-      _$_GetCallsLoading _value, $Res Function(_$_GetCallsLoading) _then)
+class __$$GetCallsLoadingImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GetCallsLoadingImpl>
+    implements _$$GetCallsLoadingImplCopyWith<$Res> {
+  __$$GetCallsLoadingImplCopyWithImpl(
+      _$GetCallsLoadingImpl _value, $Res Function(_$GetCallsLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetCallsLoading implements _GetCallsLoading {
-  const _$_GetCallsLoading();
+class _$GetCallsLoadingImpl implements _GetCallsLoading {
+  const _$GetCallsLoadingImpl();
 
   @override
   String toString() {
@@ -3618,7 +3624,7 @@ class _$_GetCallsLoading implements _GetCallsLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetCallsLoading);
+        (other.runtimeType == runtimeType && other is _$GetCallsLoadingImpl);
   }
 
   @override
@@ -3791,29 +3797,29 @@ class _$_GetCallsLoading implements _GetCallsLoading {
 }
 
 abstract class _GetCallsLoading implements CallsState {
-  const factory _GetCallsLoading() = _$_GetCallsLoading;
+  const factory _GetCallsLoading() = _$GetCallsLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetCallsCopyWith<$Res> {
-  factory _$$_GetCallsCopyWith(
-          _$_GetCalls value, $Res Function(_$_GetCalls) then) =
-      __$$_GetCallsCopyWithImpl<$Res>;
+abstract class _$$GetCallsImplCopyWith<$Res> {
+  factory _$$GetCallsImplCopyWith(
+          _$GetCallsImpl value, $Res Function(_$GetCallsImpl) then) =
+      __$$GetCallsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetCallsCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GetCalls>
-    implements _$$_GetCallsCopyWith<$Res> {
-  __$$_GetCallsCopyWithImpl(
-      _$_GetCalls _value, $Res Function(_$_GetCalls) _then)
+class __$$GetCallsImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GetCallsImpl>
+    implements _$$GetCallsImplCopyWith<$Res> {
+  __$$GetCallsImplCopyWithImpl(
+      _$GetCallsImpl _value, $Res Function(_$GetCallsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetCalls implements _GetCalls {
-  const _$_GetCalls();
+class _$GetCallsImpl implements _GetCalls {
+  const _$GetCallsImpl();
 
   @override
   String toString() {
@@ -3823,7 +3829,7 @@ class _$_GetCalls implements _GetCalls {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetCalls);
+        (other.runtimeType == runtimeType && other is _$GetCallsImpl);
   }
 
   @override
@@ -3996,24 +4002,24 @@ class _$_GetCalls implements _GetCalls {
 }
 
 abstract class _GetCalls implements CallsState {
-  const factory _GetCalls() = _$_GetCalls;
+  const factory _GetCalls() = _$GetCallsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetCallsErrorCopyWith<$Res> {
-  factory _$$_GetCallsErrorCopyWith(
-          _$_GetCallsError value, $Res Function(_$_GetCallsError) then) =
-      __$$_GetCallsErrorCopyWithImpl<$Res>;
+abstract class _$$GetCallsErrorImplCopyWith<$Res> {
+  factory _$$GetCallsErrorImplCopyWith(
+          _$GetCallsErrorImpl value, $Res Function(_$GetCallsErrorImpl) then) =
+      __$$GetCallsErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GetCallsErrorCopyWithImpl<$Res>
-    extends _$CallsStateCopyWithImpl<$Res, _$_GetCallsError>
-    implements _$$_GetCallsErrorCopyWith<$Res> {
-  __$$_GetCallsErrorCopyWithImpl(
-      _$_GetCallsError _value, $Res Function(_$_GetCallsError) _then)
+class __$$GetCallsErrorImplCopyWithImpl<$Res>
+    extends _$CallsStateCopyWithImpl<$Res, _$GetCallsErrorImpl>
+    implements _$$GetCallsErrorImplCopyWith<$Res> {
+  __$$GetCallsErrorImplCopyWithImpl(
+      _$GetCallsErrorImpl _value, $Res Function(_$GetCallsErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4021,7 +4027,7 @@ class __$$_GetCallsErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GetCallsError(
+    return _then(_$GetCallsErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -4032,8 +4038,8 @@ class __$$_GetCallsErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetCallsError implements _GetCallsError {
-  const _$_GetCallsError(this.errorMsg);
+class _$GetCallsErrorImpl implements _GetCallsError {
+  const _$GetCallsErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -4047,7 +4053,7 @@ class _$_GetCallsError implements _GetCallsError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetCallsError &&
+            other is _$GetCallsErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -4058,8 +4064,8 @@ class _$_GetCallsError implements _GetCallsError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetCallsErrorCopyWith<_$_GetCallsError> get copyWith =>
-      __$$_GetCallsErrorCopyWithImpl<_$_GetCallsError>(this, _$identity);
+  _$$GetCallsErrorImplCopyWith<_$GetCallsErrorImpl> get copyWith =>
+      __$$GetCallsErrorImplCopyWithImpl<_$GetCallsErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4228,10 +4234,10 @@ class _$_GetCallsError implements _GetCallsError {
 }
 
 abstract class _GetCallsError implements CallsState {
-  const factory _GetCallsError(final String errorMsg) = _$_GetCallsError;
+  const factory _GetCallsError(final String errorMsg) = _$GetCallsErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GetCallsErrorCopyWith<_$_GetCallsError> get copyWith =>
+  _$$GetCallsErrorImplCopyWith<_$GetCallsErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

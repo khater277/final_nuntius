@@ -117,24 +117,25 @@ class _$ContactsStateCopyWithImpl<$Res, $Val extends ContactsState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -144,7 +145,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -256,29 +257,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements ContactsState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsLoadingCopyWith<$Res> {
-  factory _$$_GetContactsLoadingCopyWith(_$_GetContactsLoading value,
-          $Res Function(_$_GetContactsLoading) then) =
-      __$$_GetContactsLoadingCopyWithImpl<$Res>;
+abstract class _$$GetContactsLoadingImplCopyWith<$Res> {
+  factory _$$GetContactsLoadingImplCopyWith(_$GetContactsLoadingImpl value,
+          $Res Function(_$GetContactsLoadingImpl) then) =
+      __$$GetContactsLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsLoadingCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_GetContactsLoading>
-    implements _$$_GetContactsLoadingCopyWith<$Res> {
-  __$$_GetContactsLoadingCopyWithImpl(
-      _$_GetContactsLoading _value, $Res Function(_$_GetContactsLoading) _then)
+class __$$GetContactsLoadingImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$GetContactsLoadingImpl>
+    implements _$$GetContactsLoadingImplCopyWith<$Res> {
+  __$$GetContactsLoadingImplCopyWithImpl(_$GetContactsLoadingImpl _value,
+      $Res Function(_$GetContactsLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsLoading implements _GetContactsLoading {
-  const _$_GetContactsLoading();
+class _$GetContactsLoadingImpl implements _GetContactsLoading {
+  const _$GetContactsLoadingImpl();
 
   @override
   String toString() {
@@ -288,7 +289,7 @@ class _$_GetContactsLoading implements _GetContactsLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContactsLoading);
+        (other.runtimeType == runtimeType && other is _$GetContactsLoadingImpl);
   }
 
   @override
@@ -400,29 +401,29 @@ class _$_GetContactsLoading implements _GetContactsLoading {
 }
 
 abstract class _GetContactsLoading implements ContactsState {
-  const factory _GetContactsLoading() = _$_GetContactsLoading;
+  const factory _GetContactsLoading() = _$GetContactsLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsCopyWith<$Res> {
-  factory _$$_GetContactsCopyWith(
-          _$_GetContacts value, $Res Function(_$_GetContacts) then) =
-      __$$_GetContactsCopyWithImpl<$Res>;
+abstract class _$$GetContactsImplCopyWith<$Res> {
+  factory _$$GetContactsImplCopyWith(
+          _$GetContactsImpl value, $Res Function(_$GetContactsImpl) then) =
+      __$$GetContactsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_GetContacts>
-    implements _$$_GetContactsCopyWith<$Res> {
-  __$$_GetContactsCopyWithImpl(
-      _$_GetContacts _value, $Res Function(_$_GetContacts) _then)
+class __$$GetContactsImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$GetContactsImpl>
+    implements _$$GetContactsImplCopyWith<$Res> {
+  __$$GetContactsImplCopyWithImpl(
+      _$GetContactsImpl _value, $Res Function(_$GetContactsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContacts implements _GetContacts {
-  const _$_GetContacts();
+class _$GetContactsImpl implements _GetContacts {
+  const _$GetContactsImpl();
 
   @override
   String toString() {
@@ -432,7 +433,7 @@ class _$_GetContacts implements _GetContacts {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContacts);
+        (other.runtimeType == runtimeType && other is _$GetContactsImpl);
   }
 
   @override
@@ -544,29 +545,29 @@ class _$_GetContacts implements _GetContacts {
 }
 
 abstract class _GetContacts implements ContactsState {
-  const factory _GetContacts() = _$_GetContacts;
+  const factory _GetContacts() = _$GetContactsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetContactsErrorCopyWith<$Res> {
-  factory _$$_GetContactsErrorCopyWith(
-          _$_GetContactsError value, $Res Function(_$_GetContactsError) then) =
-      __$$_GetContactsErrorCopyWithImpl<$Res>;
+abstract class _$$GetContactsErrorImplCopyWith<$Res> {
+  factory _$$GetContactsErrorImplCopyWith(_$GetContactsErrorImpl value,
+          $Res Function(_$GetContactsErrorImpl) then) =
+      __$$GetContactsErrorImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetContactsErrorCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_GetContactsError>
-    implements _$$_GetContactsErrorCopyWith<$Res> {
-  __$$_GetContactsErrorCopyWithImpl(
-      _$_GetContactsError _value, $Res Function(_$_GetContactsError) _then)
+class __$$GetContactsErrorImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$GetContactsErrorImpl>
+    implements _$$GetContactsErrorImplCopyWith<$Res> {
+  __$$GetContactsErrorImplCopyWithImpl(_$GetContactsErrorImpl _value,
+      $Res Function(_$GetContactsErrorImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetContactsError implements _GetContactsError {
-  const _$_GetContactsError();
+class _$GetContactsErrorImpl implements _GetContactsError {
+  const _$GetContactsErrorImpl();
 
   @override
   String toString() {
@@ -576,7 +577,7 @@ class _$_GetContactsError implements _GetContactsError {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetContactsError);
+        (other.runtimeType == runtimeType && other is _$GetContactsErrorImpl);
   }
 
   @override
@@ -688,29 +689,29 @@ class _$_GetContactsError implements _GetContactsError {
 }
 
 abstract class _GetContactsError implements ContactsState {
-  const factory _GetContactsError() = _$_GetContactsError;
+  const factory _GetContactsError() = _$GetContactsErrorImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitControllersCopyWith<$Res> {
-  factory _$$_InitControllersCopyWith(
-          _$_InitControllers value, $Res Function(_$_InitControllers) then) =
-      __$$_InitControllersCopyWithImpl<$Res>;
+abstract class _$$InitControllersImplCopyWith<$Res> {
+  factory _$$InitControllersImplCopyWith(_$InitControllersImpl value,
+          $Res Function(_$InitControllersImpl) then) =
+      __$$InitControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitControllersCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_InitControllers>
-    implements _$$_InitControllersCopyWith<$Res> {
-  __$$_InitControllersCopyWithImpl(
-      _$_InitControllers _value, $Res Function(_$_InitControllers) _then)
+class __$$InitControllersImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$InitControllersImpl>
+    implements _$$InitControllersImplCopyWith<$Res> {
+  __$$InitControllersImplCopyWithImpl(
+      _$InitControllersImpl _value, $Res Function(_$InitControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitControllers implements _InitControllers {
-  const _$_InitControllers();
+class _$InitControllersImpl implements _InitControllers {
+  const _$InitControllersImpl();
 
   @override
   String toString() {
@@ -720,7 +721,7 @@ class _$_InitControllers implements _InitControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitControllers);
+        (other.runtimeType == runtimeType && other is _$InitControllersImpl);
   }
 
   @override
@@ -832,29 +833,29 @@ class _$_InitControllers implements _InitControllers {
 }
 
 abstract class _InitControllers implements ContactsState {
-  const factory _InitControllers() = _$_InitControllers;
+  const factory _InitControllers() = _$InitControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeControllersCopyWith<$Res> {
-  factory _$$_DisposeControllersCopyWith(_$_DisposeControllers value,
-          $Res Function(_$_DisposeControllers) then) =
-      __$$_DisposeControllersCopyWithImpl<$Res>;
+abstract class _$$DisposeControllersImplCopyWith<$Res> {
+  factory _$$DisposeControllersImplCopyWith(_$DisposeControllersImpl value,
+          $Res Function(_$DisposeControllersImpl) then) =
+      __$$DisposeControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeControllersCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_DisposeControllers>
-    implements _$$_DisposeControllersCopyWith<$Res> {
-  __$$_DisposeControllersCopyWithImpl(
-      _$_DisposeControllers _value, $Res Function(_$_DisposeControllers) _then)
+class __$$DisposeControllersImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$DisposeControllersImpl>
+    implements _$$DisposeControllersImplCopyWith<$Res> {
+  __$$DisposeControllersImplCopyWithImpl(_$DisposeControllersImpl _value,
+      $Res Function(_$DisposeControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeControllers implements _DisposeControllers {
-  const _$_DisposeControllers();
+class _$DisposeControllersImpl implements _DisposeControllers {
+  const _$DisposeControllersImpl();
 
   @override
   String toString() {
@@ -864,7 +865,7 @@ class _$_DisposeControllers implements _DisposeControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeControllers);
+        (other.runtimeType == runtimeType && other is _$DisposeControllersImpl);
   }
 
   @override
@@ -976,29 +977,29 @@ class _$_DisposeControllers implements _DisposeControllers {
 }
 
 abstract class _DisposeControllers implements ContactsState {
-  const factory _DisposeControllers() = _$_DisposeControllers;
+  const factory _DisposeControllers() = _$DisposeControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_AddContactLoadingCopyWith<$Res> {
-  factory _$$_AddContactLoadingCopyWith(_$_AddContactLoading value,
-          $Res Function(_$_AddContactLoading) then) =
-      __$$_AddContactLoadingCopyWithImpl<$Res>;
+abstract class _$$AddContactLoadingImplCopyWith<$Res> {
+  factory _$$AddContactLoadingImplCopyWith(_$AddContactLoadingImpl value,
+          $Res Function(_$AddContactLoadingImpl) then) =
+      __$$AddContactLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_AddContactLoadingCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContactLoading>
-    implements _$$_AddContactLoadingCopyWith<$Res> {
-  __$$_AddContactLoadingCopyWithImpl(
-      _$_AddContactLoading _value, $Res Function(_$_AddContactLoading) _then)
+class __$$AddContactLoadingImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$AddContactLoadingImpl>
+    implements _$$AddContactLoadingImplCopyWith<$Res> {
+  __$$AddContactLoadingImplCopyWithImpl(_$AddContactLoadingImpl _value,
+      $Res Function(_$AddContactLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AddContactLoading implements _AddContactLoading {
-  const _$_AddContactLoading();
+class _$AddContactLoadingImpl implements _AddContactLoading {
+  const _$AddContactLoadingImpl();
 
   @override
   String toString() {
@@ -1008,7 +1009,7 @@ class _$_AddContactLoading implements _AddContactLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AddContactLoading);
+        (other.runtimeType == runtimeType && other is _$AddContactLoadingImpl);
   }
 
   @override
@@ -1120,29 +1121,29 @@ class _$_AddContactLoading implements _AddContactLoading {
 }
 
 abstract class _AddContactLoading implements ContactsState {
-  const factory _AddContactLoading() = _$_AddContactLoading;
+  const factory _AddContactLoading() = _$AddContactLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_AddContactCopyWith<$Res> {
-  factory _$$_AddContactCopyWith(
-          _$_AddContact value, $Res Function(_$_AddContact) then) =
-      __$$_AddContactCopyWithImpl<$Res>;
+abstract class _$$AddContactImplCopyWith<$Res> {
+  factory _$$AddContactImplCopyWith(
+          _$AddContactImpl value, $Res Function(_$AddContactImpl) then) =
+      __$$AddContactImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_AddContactCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContact>
-    implements _$$_AddContactCopyWith<$Res> {
-  __$$_AddContactCopyWithImpl(
-      _$_AddContact _value, $Res Function(_$_AddContact) _then)
+class __$$AddContactImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$AddContactImpl>
+    implements _$$AddContactImplCopyWith<$Res> {
+  __$$AddContactImplCopyWithImpl(
+      _$AddContactImpl _value, $Res Function(_$AddContactImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_AddContact implements _AddContact {
-  const _$_AddContact();
+class _$AddContactImpl implements _AddContact {
+  const _$AddContactImpl();
 
   @override
   String toString() {
@@ -1152,7 +1153,7 @@ class _$_AddContact implements _AddContact {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_AddContact);
+        (other.runtimeType == runtimeType && other is _$AddContactImpl);
   }
 
   @override
@@ -1264,24 +1265,24 @@ class _$_AddContact implements _AddContact {
 }
 
 abstract class _AddContact implements ContactsState {
-  const factory _AddContact() = _$_AddContact;
+  const factory _AddContact() = _$AddContactImpl;
 }
 
 /// @nodoc
-abstract class _$$_AddContactErrorCopyWith<$Res> {
-  factory _$$_AddContactErrorCopyWith(
-          _$_AddContactError value, $Res Function(_$_AddContactError) then) =
-      __$$_AddContactErrorCopyWithImpl<$Res>;
+abstract class _$$AddContactErrorImplCopyWith<$Res> {
+  factory _$$AddContactErrorImplCopyWith(_$AddContactErrorImpl value,
+          $Res Function(_$AddContactErrorImpl) then) =
+      __$$AddContactErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_AddContactErrorCopyWithImpl<$Res>
-    extends _$ContactsStateCopyWithImpl<$Res, _$_AddContactError>
-    implements _$$_AddContactErrorCopyWith<$Res> {
-  __$$_AddContactErrorCopyWithImpl(
-      _$_AddContactError _value, $Res Function(_$_AddContactError) _then)
+class __$$AddContactErrorImplCopyWithImpl<$Res>
+    extends _$ContactsStateCopyWithImpl<$Res, _$AddContactErrorImpl>
+    implements _$$AddContactErrorImplCopyWith<$Res> {
+  __$$AddContactErrorImplCopyWithImpl(
+      _$AddContactErrorImpl _value, $Res Function(_$AddContactErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1289,7 +1290,7 @@ class __$$_AddContactErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_AddContactError(
+    return _then(_$AddContactErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -1300,8 +1301,8 @@ class __$$_AddContactErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AddContactError implements _AddContactError {
-  const _$_AddContactError(this.errorMsg);
+class _$AddContactErrorImpl implements _AddContactError {
+  const _$AddContactErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -1315,7 +1316,7 @@ class _$_AddContactError implements _AddContactError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_AddContactError &&
+            other is _$AddContactErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -1326,8 +1327,9 @@ class _$_AddContactError implements _AddContactError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_AddContactErrorCopyWith<_$_AddContactError> get copyWith =>
-      __$$_AddContactErrorCopyWithImpl<_$_AddContactError>(this, _$identity);
+  _$$AddContactErrorImplCopyWith<_$AddContactErrorImpl> get copyWith =>
+      __$$AddContactErrorImplCopyWithImpl<_$AddContactErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1435,10 +1437,10 @@ class _$_AddContactError implements _AddContactError {
 }
 
 abstract class _AddContactError implements ContactsState {
-  const factory _AddContactError(final String errorMsg) = _$_AddContactError;
+  const factory _AddContactError(final String errorMsg) = _$AddContactErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_AddContactErrorCopyWith<_$_AddContactError> get copyWith =>
+  _$$AddContactErrorImplCopyWith<_$AddContactErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

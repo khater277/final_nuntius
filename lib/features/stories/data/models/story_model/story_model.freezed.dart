@@ -140,11 +140,11 @@ class _$StoryModelCopyWithImpl<$Res, $Val extends StoryModel>
 }
 
 /// @nodoc
-abstract class _$$_StoryModelCopyWith<$Res>
+abstract class _$$StoryModelImplCopyWith<$Res>
     implements $StoryModelCopyWith<$Res> {
-  factory _$$_StoryModelCopyWith(
-          _$_StoryModel value, $Res Function(_$_StoryModel) then) =
-      __$$_StoryModelCopyWithImpl<$Res>;
+  factory _$$StoryModelImplCopyWith(
+          _$StoryModelImpl value, $Res Function(_$StoryModelImpl) then) =
+      __$$StoryModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -163,11 +163,11 @@ abstract class _$$_StoryModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_StoryModelCopyWithImpl<$Res>
-    extends _$StoryModelCopyWithImpl<$Res, _$_StoryModel>
-    implements _$$_StoryModelCopyWith<$Res> {
-  __$$_StoryModelCopyWithImpl(
-      _$_StoryModel _value, $Res Function(_$_StoryModel) _then)
+class __$$StoryModelImplCopyWithImpl<$Res>
+    extends _$StoryModelCopyWithImpl<$Res, _$StoryModelImpl>
+    implements _$$StoryModelImplCopyWith<$Res> {
+  __$$StoryModelImplCopyWithImpl(
+      _$StoryModelImpl _value, $Res Function(_$StoryModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -186,7 +186,7 @@ class __$$_StoryModelCopyWithImpl<$Res>
     Object? viewersPhones = freezed,
     Object? canView = freezed,
   }) {
-    return _then(_$_StoryModel(
+    return _then(_$StoryModelImpl(
       id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -241,8 +241,8 @@ class __$$_StoryModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_StoryModel implements _StoryModel {
-  _$_StoryModel(
+class _$StoryModelImpl implements _StoryModel {
+  _$StoryModelImpl(
       {this.id,
       this.date,
       this.isImage,
@@ -256,8 +256,8 @@ class _$_StoryModel implements _StoryModel {
       this.viewersPhones,
       this.canView});
 
-  factory _$_StoryModel.fromJson(Map<String, dynamic> json) =>
-      _$$_StoryModelFromJson(json);
+  factory _$StoryModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$StoryModelImplFromJson(json);
 
   @override
   final String? id;
@@ -293,7 +293,7 @@ class _$_StoryModel implements _StoryModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_StoryModel &&
+            other is _$StoryModelImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.date, date) || other.date == date) &&
             (identical(other.isImage, isImage) || other.isImage == isImage) &&
@@ -330,12 +330,12 @@ class _$_StoryModel implements _StoryModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_StoryModelCopyWith<_$_StoryModel> get copyWith =>
-      __$$_StoryModelCopyWithImpl<_$_StoryModel>(this, _$identity);
+  _$$StoryModelImplCopyWith<_$StoryModelImpl> get copyWith =>
+      __$$StoryModelImplCopyWithImpl<_$StoryModelImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StoryModelToJson(
+    return _$$StoryModelImplToJson(
       this,
     );
   }
@@ -354,10 +354,10 @@ abstract class _StoryModel implements StoryModel {
       final String? text,
       final List<Map<String, dynamic>>? viewers,
       final List<String>? viewersPhones,
-      final List<String>? canView}) = _$_StoryModel;
+      final List<String>? canView}) = _$StoryModelImpl;
 
   factory _StoryModel.fromJson(Map<String, dynamic> json) =
-      _$_StoryModel.fromJson;
+      _$StoryModelImpl.fromJson;
 
   @override
   String? get id;
@@ -385,6 +385,6 @@ abstract class _StoryModel implements StoryModel {
   List<String>? get canView;
   @override
   @JsonKey(ignore: true)
-  _$$_StoryModelCopyWith<_$_StoryModel> get copyWith =>
+  _$$StoryModelImplCopyWith<_$StoryModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

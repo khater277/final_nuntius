@@ -190,7 +190,10 @@ class AuthCubit extends Cubit<AuthState> {
         name: nameController!.text.isNotEmpty ? nameController!.text : 'user',
         uId: await SharedPrefHelper.getUid(),
         phone: "+2${phoneController!.text}",
-        image: image ?? HiveHelper.getCurrentUser()!.image,
+        image: image ??
+            (HiveHelper.getCurrentUser() != null
+                ? HiveHelper.getCurrentUser()!.image
+                : ""),
         inCall: false,
         contacts: phones,
       );
@@ -214,7 +217,6 @@ class AuthCubit extends Cubit<AuthState> {
   Future<void> _handleContacts() async {
     for (int i = 0; i < contacts.length; i++) {
       final oldContact = contacts[i];
-      // print("=========>${oldContact} ${i + 1} ${contacts.length}");
       if (oldContact.phones!.isNotEmpty) {
         if (!oldContact.phones!.first.value!.startsWith('+2')) {
           final Contact newContact = Contact(
@@ -240,9 +242,11 @@ class AuthCubit extends Cubit<AuthState> {
     response.fold(
       (failure) {
         users = HiveHelper.getAllUsers() ?? [];
-        users.sort(
-          (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
-        );
+        if (users.isNotEmpty) {
+          users.sort(
+            (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
+          );
+        }
       },
       (usersData) {
         for (int i = 0; i < contacts.length; i++) {
@@ -265,9 +269,11 @@ class AuthCubit extends Cubit<AuthState> {
           }
         }
         HiveHelper.setAllUsers(users: users);
-        users.sort(
-          (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
-        );
+        if (users.isNotEmpty) {
+          users.sort(
+            (a, b) => a.name!.toLowerCase().compareTo(b.name!.toLowerCase()),
+          );
+        }
       },
     );
   }

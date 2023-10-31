@@ -112,7 +112,12 @@ class MessagesCubit extends Cubit<MessagesState> {
               .toList();
           createVideosThumbnails(
               replyToStoryVideoMessages: replyToStoryVideoMessages);
-          emit(MessagesState.getMessages(messages));
+          if (messages.isNotEmpty &&
+              messages.last.senderId != HiveHelper.getCurrentUser()!.uId) {
+            emit(const MessagesState.receiveMessage());
+          } else {
+            emit(MessagesState.getMessages(messages));
+          }
         });
       },
     );
@@ -331,8 +336,11 @@ class MessagesCubit extends Cubit<MessagesState> {
     }
   }
 
-  void showDeleteMessageBottomSheet(
-      {required BuildContext context, required String messageId}) {
+  void showDeleteMessageBottomSheet({
+    required BuildContext context,
+    required String messageId,
+    required bool loadingCondition,
+  }) {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -340,13 +348,14 @@ class MessagesCubit extends Cubit<MessagesState> {
       builder: (BuildContext context) {
         return DeleteMessageBottomSheet(
           messageId: messageId,
+          loadingCondition: loadingCondition,
         );
       },
     );
   }
 
   void deleteMessage({required String messageId}) async {
-    emit(const MessagesState.deleteMessageLoading());
+    emit(MessagesState.deleteMessageLoading(messageId));
     final response = await messagesRepository.deleteMessage(
       messageId: messageId,
       userPhone: user!.phone!,

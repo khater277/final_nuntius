@@ -15,6 +15,8 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.getMessages(List<MessageModel> messages) =
       _GetMessages;
 
+  const factory MessagesState.receiveMessage() = _ReceiveMessage;
+
   const factory MessagesState.getUserLoading() = _GetUserLoading;
   const factory MessagesState.getUser() = _GetUser;
 
@@ -41,7 +43,8 @@ class MessagesState with _$MessagesState {
   const factory MessagesState.openDocMessage() = _OpenDocMessage;
   const factory MessagesState.openDocMessageError(String errorMsg) =
       _OpenDocMessageError;
-  const factory MessagesState.deleteMessageLoading() = _DeleteMessageLoading;
+  const factory MessagesState.deleteMessageLoading(String messageId) =
+      _DeleteMessageLoading;
   const factory MessagesState.deleteMessage() = _DeleteMessage;
   const factory MessagesState.deleteMessageError(String errorMsg) =
       _DeleteMessageError;

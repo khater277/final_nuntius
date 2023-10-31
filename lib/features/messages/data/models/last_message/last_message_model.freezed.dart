@@ -140,11 +140,11 @@ class _$LastMessageModelCopyWithImpl<$Res, $Val extends LastMessageModel>
 }
 
 /// @nodoc
-abstract class _$$_LastMessageModelCopyWith<$Res>
+abstract class _$$LastMessageModelImplCopyWith<$Res>
     implements $LastMessageModelCopyWith<$Res> {
-  factory _$$_LastMessageModelCopyWith(
-          _$_LastMessageModel value, $Res Function(_$_LastMessageModel) then) =
-      __$$_LastMessageModelCopyWithImpl<$Res>;
+  factory _$$LastMessageModelImplCopyWith(_$LastMessageModelImpl value,
+          $Res Function(_$LastMessageModelImpl) then) =
+      __$$LastMessageModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -163,11 +163,11 @@ abstract class _$$_LastMessageModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_LastMessageModelCopyWithImpl<$Res>
-    extends _$LastMessageModelCopyWithImpl<$Res, _$_LastMessageModel>
-    implements _$$_LastMessageModelCopyWith<$Res> {
-  __$$_LastMessageModelCopyWithImpl(
-      _$_LastMessageModel _value, $Res Function(_$_LastMessageModel) _then)
+class __$$LastMessageModelImplCopyWithImpl<$Res>
+    extends _$LastMessageModelCopyWithImpl<$Res, _$LastMessageModelImpl>
+    implements _$$LastMessageModelImplCopyWith<$Res> {
+  __$$LastMessageModelImplCopyWithImpl(_$LastMessageModelImpl _value,
+      $Res Function(_$LastMessageModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -186,7 +186,7 @@ class __$$_LastMessageModelCopyWithImpl<$Res>
     Object? isDeleted = freezed,
     Object? isRead = freezed,
   }) {
-    return _then(_$_LastMessageModel(
+    return _then(_$LastMessageModelImpl(
       token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
@@ -241,8 +241,8 @@ class __$$_LastMessageModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_LastMessageModel implements _LastMessageModel {
-  _$_LastMessageModel(
+class _$LastMessageModelImpl implements _LastMessageModel {
+  _$LastMessageModelImpl(
       {this.token,
       this.image,
       this.senderID,
@@ -256,8 +256,8 @@ class _$_LastMessageModel implements _LastMessageModel {
       this.isDeleted,
       this.isRead});
 
-  factory _$_LastMessageModel.fromJson(Map<String, dynamic> json) =>
-      _$$_LastMessageModelFromJson(json);
+  factory _$LastMessageModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$LastMessageModelImplFromJson(json);
 
   @override
   final String? token;
@@ -293,7 +293,7 @@ class _$_LastMessageModel implements _LastMessageModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_LastMessageModel &&
+            other is _$LastMessageModelImpl &&
             (identical(other.token, token) || other.token == token) &&
             (identical(other.image, image) || other.image == image) &&
             (identical(other.senderID, senderID) ||
@@ -331,12 +331,13 @@ class _$_LastMessageModel implements _LastMessageModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_LastMessageModelCopyWith<_$_LastMessageModel> get copyWith =>
-      __$$_LastMessageModelCopyWithImpl<_$_LastMessageModel>(this, _$identity);
+  _$$LastMessageModelImplCopyWith<_$LastMessageModelImpl> get copyWith =>
+      __$$LastMessageModelImplCopyWithImpl<_$LastMessageModelImpl>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LastMessageModelToJson(
+    return _$$LastMessageModelImplToJson(
       this,
     );
   }
@@ -355,10 +356,10 @@ abstract class _LastMessageModel implements LastMessageModel {
       final bool? isVideo,
       final bool? isDoc,
       final bool? isDeleted,
-      final bool? isRead}) = _$_LastMessageModel;
+      final bool? isRead}) = _$LastMessageModelImpl;
 
   factory _LastMessageModel.fromJson(Map<String, dynamic> json) =
-      _$_LastMessageModel.fromJson;
+      _$LastMessageModelImpl.fromJson;
 
   @override
   String? get token;
@@ -386,6 +387,6 @@ abstract class _LastMessageModel implements LastMessageModel {
   bool? get isRead;
   @override
   @JsonKey(ignore: true)
-  _$$_LastMessageModelCopyWith<_$_LastMessageModel> get copyWith =>
+  _$$LastMessageModelImplCopyWith<_$LastMessageModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

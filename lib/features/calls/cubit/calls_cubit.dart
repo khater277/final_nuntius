@@ -47,11 +47,12 @@ class CallsCubit extends Cubit<CallsState> {
   }
 
   void setupAgoraSDKEngine({
-    String? userToken,
+    required String userToken,
     required String rtcToken,
     required String channelName,
     required String friendPhoneNumber,
     required CallType callType,
+    required bool receiveCall,
   }) async {
     emit(const CallsState.joinCallLoading());
     final callId = const Uuid().v4();
@@ -70,19 +71,18 @@ class CallsCubit extends Cubit<CallsState> {
           showMessage(
               "Local user uid:${connection.localUid} joined the channel");
           isJoined = true;
-          if (userToken != HiveHelper.getCurrentUser()!.token &&
-              userToken != null) {
+          if (!receiveCall && userToken != HiveHelper.getCurrentUser()!.token) {
             pushCallNotification(
               callType: callType,
               userToken: userToken,
               rtcToken: rtcToken,
               channelName: channelName,
             );
-            // addNewCall(
-            //   friendPhoneNumber: friendPhoneNumber,
-            //   callId: callId,
-            //   callType: callType,
-            // );
+            addNewCall(
+              friendPhoneNumber: friendPhoneNumber,
+              callId: callId,
+              callType: callType,
+            );
           } else {
             emit(const CallsState.onJoinChannelSuccess());
           }

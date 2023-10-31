@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:final_nuntius/core/errors/api/network_exceptions.dart';
 import 'package:final_nuntius/core/errors/firebase/auth/auth_exceptions.dart';
 import 'package:final_nuntius/core/errors/firebase/firestore/firestore_exceptions.dart';
@@ -6,10 +5,8 @@ import 'package:final_nuntius/core/errors/firebase/storage/storage_exceptions.da
 
 enum NetworkErrorTypes { api, auth, firestore, storage }
 
-abstract class Failure extends Equatable {
+abstract class Failure {
   String getMessage();
-  @override
-  List<Object?> get props => [];
 }
 
 class ServerFailure extends Failure {

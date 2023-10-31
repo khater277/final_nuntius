@@ -62,7 +62,8 @@ class UserDataAdapter extends TypeAdapter<UserData> {
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserData _$$_UserDataFromJson(Map<String, dynamic> json) => _$_UserData(
+_$UserDataImpl _$$UserDataImplFromJson(Map<String, dynamic> json) =>
+    _$UserDataImpl(
       token: json['token'] as String?,
       name: json['name'] as String?,
       uId: json['uId'] as String?,
@@ -74,7 +75,7 @@ _$_UserData _$$_UserDataFromJson(Map<String, dynamic> json) => _$_UserData(
       ),
     );
 
-Map<String, dynamic> _$$_UserDataToJson(_$_UserData instance) =>
+Map<String, dynamic> _$$UserDataImplToJson(_$UserDataImpl instance) =>
     <String, dynamic>{
       'token': instance.token,
       'name': instance.name,

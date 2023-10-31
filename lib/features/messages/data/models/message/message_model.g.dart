@@ -6,8 +6,8 @@ part of 'message_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_MessageModel _$$_MessageModelFromJson(Map<String, dynamic> json) =>
-    _$_MessageModel(
+_$MessageModelImpl _$$MessageModelImplFromJson(Map<String, dynamic> json) =>
+    _$MessageModelImpl(
       senderId: json['senderId'] as String?,
       receiverId: json['receiverId'] as String?,
       message: json['message'] as String?,
@@ -25,7 +25,7 @@ _$_MessageModel _$$_MessageModelFromJson(Map<String, dynamic> json) =>
       isStoryImageReply: json['isStoryImageReply'] as bool?,
     );
 
-Map<String, dynamic> _$$_MessageModelToJson(_$_MessageModel instance) =>
+Map<String, dynamic> _$$MessageModelImplToJson(_$MessageModelImpl instance) =>
     <String, dynamic>{
       'senderId': instance.senderId,
       'receiverId': instance.receiverId,

@@ -1,6 +1,5 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/auth/cubit/auth_cubit.dart';
 import 'package:final_nuntius/features/auth/presentation/screens/otp_screen.dart';
@@ -44,11 +43,8 @@ class _LoginScreenState extends State<LoginScreen> {
               phoneNumber: authCubit.phoneController!.text,
             ),
           ),
-          errorState: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          errorState: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           orElse: () {},
         );
       },

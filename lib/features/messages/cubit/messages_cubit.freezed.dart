@@ -27,6 +27,7 @@ mixin _$MessagesState {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -44,7 +45,7 @@ mixin _$MessagesState {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -76,6 +77,7 @@ mixin _$MessagesState {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -93,7 +95,7 @@ mixin _$MessagesState {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -124,6 +126,7 @@ mixin _$MessagesState {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -141,7 +144,7 @@ mixin _$MessagesState {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -174,6 +177,7 @@ mixin _$MessagesState {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -228,6 +232,7 @@ mixin _$MessagesState {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -275,6 +280,7 @@ mixin _$MessagesState {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -333,24 +339,25 @@ class _$MessagesStateCopyWithImpl<$Res, $Val extends MessagesState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -360,7 +367,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -378,6 +385,7 @@ class _$_Initial implements _Initial {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -395,7 +403,7 @@ class _$_Initial implements _Initial {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -430,6 +438,7 @@ class _$_Initial implements _Initial {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -447,7 +456,7 @@ class _$_Initial implements _Initial {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -481,6 +490,7 @@ class _$_Initial implements _Initial {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -498,7 +508,7 @@ class _$_Initial implements _Initial {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -537,6 +547,7 @@ class _$_Initial implements _Initial {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -594,6 +605,7 @@ class _$_Initial implements _Initial {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -644,6 +656,7 @@ class _$_Initial implements _Initial {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -688,29 +701,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements MessagesState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitControllersCopyWith<$Res> {
-  factory _$$_InitControllersCopyWith(
-          _$_InitControllers value, $Res Function(_$_InitControllers) then) =
-      __$$_InitControllersCopyWithImpl<$Res>;
+abstract class _$$InitControllersImplCopyWith<$Res> {
+  factory _$$InitControllersImplCopyWith(_$InitControllersImpl value,
+          $Res Function(_$InitControllersImpl) then) =
+      __$$InitControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitControllersCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_InitControllers>
-    implements _$$_InitControllersCopyWith<$Res> {
-  __$$_InitControllersCopyWithImpl(
-      _$_InitControllers _value, $Res Function(_$_InitControllers) _then)
+class __$$InitControllersImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$InitControllersImpl>
+    implements _$$InitControllersImplCopyWith<$Res> {
+  __$$InitControllersImplCopyWithImpl(
+      _$InitControllersImpl _value, $Res Function(_$InitControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitControllers implements _InitControllers {
-  const _$_InitControllers();
+class _$InitControllersImpl implements _InitControllers {
+  const _$InitControllersImpl();
 
   @override
   String toString() {
@@ -720,7 +733,7 @@ class _$_InitControllers implements _InitControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitControllers);
+        (other.runtimeType == runtimeType && other is _$InitControllersImpl);
   }
 
   @override
@@ -738,6 +751,7 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -755,7 +769,7 @@ class _$_InitControllers implements _InitControllers {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -790,6 +804,7 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -807,7 +822,7 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -841,6 +856,7 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -858,7 +874,7 @@ class _$_InitControllers implements _InitControllers {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -897,6 +913,7 @@ class _$_InitControllers implements _InitControllers {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -954,6 +971,7 @@ class _$_InitControllers implements _InitControllers {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -1004,6 +1022,7 @@ class _$_InitControllers implements _InitControllers {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -1048,29 +1067,29 @@ class _$_InitControllers implements _InitControllers {
 }
 
 abstract class _InitControllers implements MessagesState {
-  const factory _InitControllers() = _$_InitControllers;
+  const factory _InitControllers() = _$InitControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeControllersCopyWith<$Res> {
-  factory _$$_DisposeControllersCopyWith(_$_DisposeControllers value,
-          $Res Function(_$_DisposeControllers) then) =
-      __$$_DisposeControllersCopyWithImpl<$Res>;
+abstract class _$$DisposeControllersImplCopyWith<$Res> {
+  factory _$$DisposeControllersImplCopyWith(_$DisposeControllersImpl value,
+          $Res Function(_$DisposeControllersImpl) then) =
+      __$$DisposeControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeControllersCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_DisposeControllers>
-    implements _$$_DisposeControllersCopyWith<$Res> {
-  __$$_DisposeControllersCopyWithImpl(
-      _$_DisposeControllers _value, $Res Function(_$_DisposeControllers) _then)
+class __$$DisposeControllersImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$DisposeControllersImpl>
+    implements _$$DisposeControllersImplCopyWith<$Res> {
+  __$$DisposeControllersImplCopyWithImpl(_$DisposeControllersImpl _value,
+      $Res Function(_$DisposeControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeControllers implements _DisposeControllers {
-  const _$_DisposeControllers();
+class _$DisposeControllersImpl implements _DisposeControllers {
+  const _$DisposeControllersImpl();
 
   @override
   String toString() {
@@ -1080,7 +1099,7 @@ class _$_DisposeControllers implements _DisposeControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeControllers);
+        (other.runtimeType == runtimeType && other is _$DisposeControllersImpl);
   }
 
   @override
@@ -1098,6 +1117,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -1115,7 +1135,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -1150,6 +1170,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -1167,7 +1188,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -1201,6 +1222,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -1218,7 +1240,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -1257,6 +1279,7 @@ class _$_DisposeControllers implements _DisposeControllers {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -1314,6 +1337,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -1364,6 +1388,7 @@ class _$_DisposeControllers implements _DisposeControllers {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -1408,29 +1433,29 @@ class _$_DisposeControllers implements _DisposeControllers {
 }
 
 abstract class _DisposeControllers implements MessagesState {
-  const factory _DisposeControllers() = _$_DisposeControllers;
+  const factory _DisposeControllers() = _$DisposeControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendMessageLoadingCopyWith<$Res> {
-  factory _$$_SendMessageLoadingCopyWith(_$_SendMessageLoading value,
-          $Res Function(_$_SendMessageLoading) then) =
-      __$$_SendMessageLoadingCopyWithImpl<$Res>;
+abstract class _$$SendMessageLoadingImplCopyWith<$Res> {
+  factory _$$SendMessageLoadingImplCopyWith(_$SendMessageLoadingImpl value,
+          $Res Function(_$SendMessageLoadingImpl) then) =
+      __$$SendMessageLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SendMessageLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_SendMessageLoading>
-    implements _$$_SendMessageLoadingCopyWith<$Res> {
-  __$$_SendMessageLoadingCopyWithImpl(
-      _$_SendMessageLoading _value, $Res Function(_$_SendMessageLoading) _then)
+class __$$SendMessageLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$SendMessageLoadingImpl>
+    implements _$$SendMessageLoadingImplCopyWith<$Res> {
+  __$$SendMessageLoadingImplCopyWithImpl(_$SendMessageLoadingImpl _value,
+      $Res Function(_$SendMessageLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SendMessageLoading implements _SendMessageLoading {
-  const _$_SendMessageLoading();
+class _$SendMessageLoadingImpl implements _SendMessageLoading {
+  const _$SendMessageLoadingImpl();
 
   @override
   String toString() {
@@ -1440,7 +1465,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SendMessageLoading);
+        (other.runtimeType == runtimeType && other is _$SendMessageLoadingImpl);
   }
 
   @override
@@ -1458,6 +1483,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -1475,7 +1501,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -1510,6 +1536,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -1527,7 +1554,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -1561,6 +1588,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -1578,7 +1606,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -1617,6 +1645,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -1674,6 +1703,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -1724,6 +1754,7 @@ class _$_SendMessageLoading implements _SendMessageLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -1768,29 +1799,29 @@ class _$_SendMessageLoading implements _SendMessageLoading {
 }
 
 abstract class _SendMessageLoading implements MessagesState {
-  const factory _SendMessageLoading() = _$_SendMessageLoading;
+  const factory _SendMessageLoading() = _$SendMessageLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendMessageCopyWith<$Res> {
-  factory _$$_SendMessageCopyWith(
-          _$_SendMessage value, $Res Function(_$_SendMessage) then) =
-      __$$_SendMessageCopyWithImpl<$Res>;
+abstract class _$$SendMessageImplCopyWith<$Res> {
+  factory _$$SendMessageImplCopyWith(
+          _$SendMessageImpl value, $Res Function(_$SendMessageImpl) then) =
+      __$$SendMessageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SendMessageCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_SendMessage>
-    implements _$$_SendMessageCopyWith<$Res> {
-  __$$_SendMessageCopyWithImpl(
-      _$_SendMessage _value, $Res Function(_$_SendMessage) _then)
+class __$$SendMessageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$SendMessageImpl>
+    implements _$$SendMessageImplCopyWith<$Res> {
+  __$$SendMessageImplCopyWithImpl(
+      _$SendMessageImpl _value, $Res Function(_$SendMessageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SendMessage implements _SendMessage {
-  const _$_SendMessage();
+class _$SendMessageImpl implements _SendMessage {
+  const _$SendMessageImpl();
 
   @override
   String toString() {
@@ -1800,7 +1831,7 @@ class _$_SendMessage implements _SendMessage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SendMessage);
+        (other.runtimeType == runtimeType && other is _$SendMessageImpl);
   }
 
   @override
@@ -1818,6 +1849,7 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -1835,7 +1867,7 @@ class _$_SendMessage implements _SendMessage {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -1870,6 +1902,7 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -1887,7 +1920,7 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -1921,6 +1954,7 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -1938,7 +1972,7 @@ class _$_SendMessage implements _SendMessage {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -1977,6 +2011,7 @@ class _$_SendMessage implements _SendMessage {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -2034,6 +2069,7 @@ class _$_SendMessage implements _SendMessage {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -2084,6 +2120,7 @@ class _$_SendMessage implements _SendMessage {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -2128,24 +2165,24 @@ class _$_SendMessage implements _SendMessage {
 }
 
 abstract class _SendMessage implements MessagesState {
-  const factory _SendMessage() = _$_SendMessage;
+  const factory _SendMessage() = _$SendMessageImpl;
 }
 
 /// @nodoc
-abstract class _$$_SendMessageErrorCopyWith<$Res> {
-  factory _$$_SendMessageErrorCopyWith(
-          _$_SendMessageError value, $Res Function(_$_SendMessageError) then) =
-      __$$_SendMessageErrorCopyWithImpl<$Res>;
+abstract class _$$SendMessageErrorImplCopyWith<$Res> {
+  factory _$$SendMessageErrorImplCopyWith(_$SendMessageErrorImpl value,
+          $Res Function(_$SendMessageErrorImpl) then) =
+      __$$SendMessageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_SendMessageErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_SendMessageError>
-    implements _$$_SendMessageErrorCopyWith<$Res> {
-  __$$_SendMessageErrorCopyWithImpl(
-      _$_SendMessageError _value, $Res Function(_$_SendMessageError) _then)
+class __$$SendMessageErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$SendMessageErrorImpl>
+    implements _$$SendMessageErrorImplCopyWith<$Res> {
+  __$$SendMessageErrorImplCopyWithImpl(_$SendMessageErrorImpl _value,
+      $Res Function(_$SendMessageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2153,7 +2190,7 @@ class __$$_SendMessageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_SendMessageError(
+    return _then(_$SendMessageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -2164,8 +2201,8 @@ class __$$_SendMessageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_SendMessageError implements _SendMessageError {
-  const _$_SendMessageError(this.errorMsg);
+class _$SendMessageErrorImpl implements _SendMessageError {
+  const _$SendMessageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -2179,7 +2216,7 @@ class _$_SendMessageError implements _SendMessageError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_SendMessageError &&
+            other is _$SendMessageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -2190,8 +2227,9 @@ class _$_SendMessageError implements _SendMessageError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_SendMessageErrorCopyWith<_$_SendMessageError> get copyWith =>
-      __$$_SendMessageErrorCopyWithImpl<_$_SendMessageError>(this, _$identity);
+  _$$SendMessageErrorImplCopyWith<_$SendMessageErrorImpl> get copyWith =>
+      __$$SendMessageErrorImplCopyWithImpl<_$SendMessageErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2205,6 +2243,7 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -2222,7 +2261,7 @@ class _$_SendMessageError implements _SendMessageError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -2257,6 +2296,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -2274,7 +2314,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -2308,6 +2348,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -2325,7 +2366,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -2364,6 +2405,7 @@ class _$_SendMessageError implements _SendMessageError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -2421,6 +2463,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -2471,6 +2514,7 @@ class _$_SendMessageError implements _SendMessageError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -2515,34 +2559,37 @@ class _$_SendMessageError implements _SendMessageError {
 }
 
 abstract class _SendMessageError implements MessagesState {
-  const factory _SendMessageError(final String errorMsg) = _$_SendMessageError;
+  const factory _SendMessageError(final String errorMsg) =
+      _$SendMessageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_SendMessageErrorCopyWith<_$_SendMessageError> get copyWith =>
+  _$$SendMessageErrorImplCopyWith<_$SendMessageErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_CreateVideosThumbnailsCopyWith<$Res> {
-  factory _$$_CreateVideosThumbnailsCopyWith(_$_CreateVideosThumbnails value,
-          $Res Function(_$_CreateVideosThumbnails) then) =
-      __$$_CreateVideosThumbnailsCopyWithImpl<$Res>;
+abstract class _$$CreateVideosThumbnailsImplCopyWith<$Res> {
+  factory _$$CreateVideosThumbnailsImplCopyWith(
+          _$CreateVideosThumbnailsImpl value,
+          $Res Function(_$CreateVideosThumbnailsImpl) then) =
+      __$$CreateVideosThumbnailsImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CreateVideosThumbnailsCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_CreateVideosThumbnails>
-    implements _$$_CreateVideosThumbnailsCopyWith<$Res> {
-  __$$_CreateVideosThumbnailsCopyWithImpl(_$_CreateVideosThumbnails _value,
-      $Res Function(_$_CreateVideosThumbnails) _then)
+class __$$CreateVideosThumbnailsImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$CreateVideosThumbnailsImpl>
+    implements _$$CreateVideosThumbnailsImplCopyWith<$Res> {
+  __$$CreateVideosThumbnailsImplCopyWithImpl(
+      _$CreateVideosThumbnailsImpl _value,
+      $Res Function(_$CreateVideosThumbnailsImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
-  const _$_CreateVideosThumbnails();
+class _$CreateVideosThumbnailsImpl implements _CreateVideosThumbnails {
+  const _$CreateVideosThumbnailsImpl();
 
   @override
   String toString() {
@@ -2553,7 +2600,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CreateVideosThumbnails);
+            other is _$CreateVideosThumbnailsImpl);
   }
 
   @override
@@ -2571,6 +2618,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -2588,7 +2636,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -2623,6 +2671,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -2640,7 +2689,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -2674,6 +2723,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -2691,7 +2741,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -2730,6 +2780,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -2787,6 +2838,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -2837,6 +2889,7 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -2881,29 +2934,29 @@ class _$_CreateVideosThumbnails implements _CreateVideosThumbnails {
 }
 
 abstract class _CreateVideosThumbnails implements MessagesState {
-  const factory _CreateVideosThumbnails() = _$_CreateVideosThumbnails;
+  const factory _CreateVideosThumbnails() = _$CreateVideosThumbnailsImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMessagesLoadingCopyWith<$Res> {
-  factory _$$_GetMessagesLoadingCopyWith(_$_GetMessagesLoading value,
-          $Res Function(_$_GetMessagesLoading) then) =
-      __$$_GetMessagesLoadingCopyWithImpl<$Res>;
+abstract class _$$GetMessagesLoadingImplCopyWith<$Res> {
+  factory _$$GetMessagesLoadingImplCopyWith(_$GetMessagesLoadingImpl value,
+          $Res Function(_$GetMessagesLoadingImpl) then) =
+      __$$GetMessagesLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetMessagesLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetMessagesLoading>
-    implements _$$_GetMessagesLoadingCopyWith<$Res> {
-  __$$_GetMessagesLoadingCopyWithImpl(
-      _$_GetMessagesLoading _value, $Res Function(_$_GetMessagesLoading) _then)
+class __$$GetMessagesLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetMessagesLoadingImpl>
+    implements _$$GetMessagesLoadingImplCopyWith<$Res> {
+  __$$GetMessagesLoadingImplCopyWithImpl(_$GetMessagesLoadingImpl _value,
+      $Res Function(_$GetMessagesLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetMessagesLoading implements _GetMessagesLoading {
-  const _$_GetMessagesLoading();
+class _$GetMessagesLoadingImpl implements _GetMessagesLoading {
+  const _$GetMessagesLoadingImpl();
 
   @override
   String toString() {
@@ -2913,7 +2966,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetMessagesLoading);
+        (other.runtimeType == runtimeType && other is _$GetMessagesLoadingImpl);
   }
 
   @override
@@ -2931,6 +2984,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -2948,7 +3002,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -2983,6 +3037,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -3000,7 +3055,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -3034,6 +3089,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -3051,7 +3107,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -3090,6 +3146,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -3147,6 +3204,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -3197,6 +3255,7 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -3241,24 +3300,24 @@ class _$_GetMessagesLoading implements _GetMessagesLoading {
 }
 
 abstract class _GetMessagesLoading implements MessagesState {
-  const factory _GetMessagesLoading() = _$_GetMessagesLoading;
+  const factory _GetMessagesLoading() = _$GetMessagesLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMessagesCopyWith<$Res> {
-  factory _$$_GetMessagesCopyWith(
-          _$_GetMessages value, $Res Function(_$_GetMessages) then) =
-      __$$_GetMessagesCopyWithImpl<$Res>;
+abstract class _$$GetMessagesImplCopyWith<$Res> {
+  factory _$$GetMessagesImplCopyWith(
+          _$GetMessagesImpl value, $Res Function(_$GetMessagesImpl) then) =
+      __$$GetMessagesImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<MessageModel> messages});
 }
 
 /// @nodoc
-class __$$_GetMessagesCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetMessages>
-    implements _$$_GetMessagesCopyWith<$Res> {
-  __$$_GetMessagesCopyWithImpl(
-      _$_GetMessages _value, $Res Function(_$_GetMessages) _then)
+class __$$GetMessagesImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetMessagesImpl>
+    implements _$$GetMessagesImplCopyWith<$Res> {
+  __$$GetMessagesImplCopyWithImpl(
+      _$GetMessagesImpl _value, $Res Function(_$GetMessagesImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -3266,7 +3325,7 @@ class __$$_GetMessagesCopyWithImpl<$Res>
   $Res call({
     Object? messages = null,
   }) {
-    return _then(_$_GetMessages(
+    return _then(_$GetMessagesImpl(
       null == messages
           ? _value._messages
           : messages // ignore: cast_nullable_to_non_nullable
@@ -3277,8 +3336,8 @@ class __$$_GetMessagesCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetMessages implements _GetMessages {
-  const _$_GetMessages(final List<MessageModel> messages)
+class _$GetMessagesImpl implements _GetMessages {
+  const _$GetMessagesImpl(final List<MessageModel> messages)
       : _messages = messages;
 
   final List<MessageModel> _messages;
@@ -3298,7 +3357,7 @@ class _$_GetMessages implements _GetMessages {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetMessages &&
+            other is _$GetMessagesImpl &&
             const DeepCollectionEquality().equals(other._messages, _messages));
   }
 
@@ -3309,8 +3368,8 @@ class _$_GetMessages implements _GetMessages {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetMessagesCopyWith<_$_GetMessages> get copyWith =>
-      __$$_GetMessagesCopyWithImpl<_$_GetMessages>(this, _$identity);
+  _$$GetMessagesImplCopyWith<_$GetMessagesImpl> get copyWith =>
+      __$$GetMessagesImplCopyWithImpl<_$GetMessagesImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -3324,6 +3383,7 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -3341,7 +3401,7 @@ class _$_GetMessages implements _GetMessages {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -3376,6 +3436,7 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -3393,7 +3454,7 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -3427,6 +3488,7 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -3444,7 +3506,7 @@ class _$_GetMessages implements _GetMessages {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -3483,6 +3545,7 @@ class _$_GetMessages implements _GetMessages {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -3540,6 +3603,7 @@ class _$_GetMessages implements _GetMessages {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -3590,6 +3654,7 @@ class _$_GetMessages implements _GetMessages {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -3635,44 +3700,44 @@ class _$_GetMessages implements _GetMessages {
 
 abstract class _GetMessages implements MessagesState {
   const factory _GetMessages(final List<MessageModel> messages) =
-      _$_GetMessages;
+      _$GetMessagesImpl;
 
   List<MessageModel> get messages;
   @JsonKey(ignore: true)
-  _$$_GetMessagesCopyWith<_$_GetMessages> get copyWith =>
+  _$$GetMessagesImplCopyWith<_$GetMessagesImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GetUserLoadingCopyWith<$Res> {
-  factory _$$_GetUserLoadingCopyWith(
-          _$_GetUserLoading value, $Res Function(_$_GetUserLoading) then) =
-      __$$_GetUserLoadingCopyWithImpl<$Res>;
+abstract class _$$ReceiveMessageImplCopyWith<$Res> {
+  factory _$$ReceiveMessageImplCopyWith(_$ReceiveMessageImpl value,
+          $Res Function(_$ReceiveMessageImpl) then) =
+      __$$ReceiveMessageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetUserLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetUserLoading>
-    implements _$$_GetUserLoadingCopyWith<$Res> {
-  __$$_GetUserLoadingCopyWithImpl(
-      _$_GetUserLoading _value, $Res Function(_$_GetUserLoading) _then)
+class __$$ReceiveMessageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$ReceiveMessageImpl>
+    implements _$$ReceiveMessageImplCopyWith<$Res> {
+  __$$ReceiveMessageImplCopyWithImpl(
+      _$ReceiveMessageImpl _value, $Res Function(_$ReceiveMessageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetUserLoading implements _GetUserLoading {
-  const _$_GetUserLoading();
+class _$ReceiveMessageImpl implements _ReceiveMessage {
+  const _$ReceiveMessageImpl();
 
   @override
   String toString() {
-    return 'MessagesState.getUserLoading()';
+    return 'MessagesState.receiveMessage()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetUserLoading);
+        (other.runtimeType == runtimeType && other is _$ReceiveMessageImpl);
   }
 
   @override
@@ -3690,6 +3755,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -3707,7 +3773,373 @@ class _$_GetUserLoading implements _GetUserLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
+    required TResult Function() deleteMessage,
+    required TResult Function(String errorMsg) deleteMessageError,
+    required TResult Function(CallType callType) generateTokenLoading,
+    required TResult Function(
+            String token, String channelName, CallType callType)
+        generateToken,
+    required TResult Function(String errorMsg) generateTokenError,
+    required TResult Function() setupVoiceSDKEngine,
+    required TResult Function() onJoinChannelSuccess,
+    required TResult Function() onUserJoined,
+    required TResult Function() onUserOffline,
+    required TResult Function() joinVoiceCallLoading,
+    required TResult Function() joinVoiceCall,
+    required TResult Function(String errorMsg) joinVoiceCallError,
+    required TResult Function() leaveVoiceCallLoading,
+    required TResult Function() leaveVoiceCall,
+    required TResult Function() scrollDownLoading,
+    required TResult Function() scrollDown,
+  }) {
+    return receiveMessage();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? initControllers,
+    TResult? Function()? disposeControllers,
+    TResult? Function()? sendMessageLoading,
+    TResult? Function()? sendMessage,
+    TResult? Function(String errorMsg)? sendMessageError,
+    TResult? Function()? createVideosThumbnails,
+    TResult? Function()? getMessagesLoading,
+    TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
+    TResult? Function()? getUserLoading,
+    TResult? Function()? getUser,
+    TResult? Function(String errorMsg)? getMessagesError,
+    TResult? Function()? pickMessageImageLoading,
+    TResult? Function()? pickMessageImage,
+    TResult? Function(String errorMsg)? pickMessageImageError,
+    TResult? Function()? pickMessageVideoLoading,
+    TResult? Function()? pickMessageVideo,
+    TResult? Function(String errorMsg)? pickMessageVideoError,
+    TResult? Function()? pickMessageFileLoading,
+    TResult? Function()? pickMessageFile,
+    TResult? Function(String errorMsg)? pickMessageFileError,
+    TResult? Function()? closeMediaContainer,
+    TResult? Function()? getFilePercentage,
+    TResult? Function()? openDocMessageLoading,
+    TResult? Function()? openDocMessage,
+    TResult? Function(String errorMsg)? openDocMessageError,
+    TResult? Function(String messageId)? deleteMessageLoading,
+    TResult? Function()? deleteMessage,
+    TResult? Function(String errorMsg)? deleteMessageError,
+    TResult? Function(CallType callType)? generateTokenLoading,
+    TResult? Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult? Function(String errorMsg)? generateTokenError,
+    TResult? Function()? setupVoiceSDKEngine,
+    TResult? Function()? onJoinChannelSuccess,
+    TResult? Function()? onUserJoined,
+    TResult? Function()? onUserOffline,
+    TResult? Function()? joinVoiceCallLoading,
+    TResult? Function()? joinVoiceCall,
+    TResult? Function(String errorMsg)? joinVoiceCallError,
+    TResult? Function()? leaveVoiceCallLoading,
+    TResult? Function()? leaveVoiceCall,
+    TResult? Function()? scrollDownLoading,
+    TResult? Function()? scrollDown,
+  }) {
+    return receiveMessage?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? initControllers,
+    TResult Function()? disposeControllers,
+    TResult Function()? sendMessageLoading,
+    TResult Function()? sendMessage,
+    TResult Function(String errorMsg)? sendMessageError,
+    TResult Function()? createVideosThumbnails,
+    TResult Function()? getMessagesLoading,
+    TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
+    TResult Function()? getUserLoading,
+    TResult Function()? getUser,
+    TResult Function(String errorMsg)? getMessagesError,
+    TResult Function()? pickMessageImageLoading,
+    TResult Function()? pickMessageImage,
+    TResult Function(String errorMsg)? pickMessageImageError,
+    TResult Function()? pickMessageVideoLoading,
+    TResult Function()? pickMessageVideo,
+    TResult Function(String errorMsg)? pickMessageVideoError,
+    TResult Function()? pickMessageFileLoading,
+    TResult Function()? pickMessageFile,
+    TResult Function(String errorMsg)? pickMessageFileError,
+    TResult Function()? closeMediaContainer,
+    TResult Function()? getFilePercentage,
+    TResult Function()? openDocMessageLoading,
+    TResult Function()? openDocMessage,
+    TResult Function(String errorMsg)? openDocMessageError,
+    TResult Function(String messageId)? deleteMessageLoading,
+    TResult Function()? deleteMessage,
+    TResult Function(String errorMsg)? deleteMessageError,
+    TResult Function(CallType callType)? generateTokenLoading,
+    TResult Function(String token, String channelName, CallType callType)?
+        generateToken,
+    TResult Function(String errorMsg)? generateTokenError,
+    TResult Function()? setupVoiceSDKEngine,
+    TResult Function()? onJoinChannelSuccess,
+    TResult Function()? onUserJoined,
+    TResult Function()? onUserOffline,
+    TResult Function()? joinVoiceCallLoading,
+    TResult Function()? joinVoiceCall,
+    TResult Function(String errorMsg)? joinVoiceCallError,
+    TResult Function()? leaveVoiceCallLoading,
+    TResult Function()? leaveVoiceCall,
+    TResult Function()? scrollDownLoading,
+    TResult Function()? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (receiveMessage != null) {
+      return receiveMessage();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_InitControllers value) initControllers,
+    required TResult Function(_DisposeControllers value) disposeControllers,
+    required TResult Function(_SendMessageLoading value) sendMessageLoading,
+    required TResult Function(_SendMessage value) sendMessage,
+    required TResult Function(_SendMessageError value) sendMessageError,
+    required TResult Function(_CreateVideosThumbnails value)
+        createVideosThumbnails,
+    required TResult Function(_GetMessagesLoading value) getMessagesLoading,
+    required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
+    required TResult Function(_GetUserLoading value) getUserLoading,
+    required TResult Function(_GetUser value) getUser,
+    required TResult Function(_GetMessagesError value) getMessagesError,
+    required TResult Function(_PickMessageImageLoading value)
+        pickMessageImageLoading,
+    required TResult Function(_PickMessageImage value) pickMessageImage,
+    required TResult Function(_PickMessageImageError value)
+        pickMessageImageError,
+    required TResult Function(_PickMessageVideoLoading value)
+        pickMessageVideoLoading,
+    required TResult Function(_PickMessageVideo value) pickMessageVideo,
+    required TResult Function(_PickMessageVideoError value)
+        pickMessageVideoError,
+    required TResult Function(_PickMessageFileLoading value)
+        pickMessageFileLoading,
+    required TResult Function(_PickMessageFile value) pickMessageFile,
+    required TResult Function(_PickMessageFileError value) pickMessageFileError,
+    required TResult Function(_CloseMediaContainer value) closeMediaContainer,
+    required TResult Function(_GetFilePercentage value) getFilePercentage,
+    required TResult Function(_OpenDocMessageLoading value)
+        openDocMessageLoading,
+    required TResult Function(_OpenDocMessage value) openDocMessage,
+    required TResult Function(_OpenDocMessageError value) openDocMessageError,
+    required TResult Function(_DeleteMessageLoading value) deleteMessageLoading,
+    required TResult Function(_DeleteMessage value) deleteMessage,
+    required TResult Function(_DeleteMessageError value) deleteMessageError,
+    required TResult Function(_GenerateTokenLoading value) generateTokenLoading,
+    required TResult Function(_GenerateToken value) generateToken,
+    required TResult Function(_GenerateTokenError value) generateTokenError,
+    required TResult Function(_SetupVoiceSDKEngine value) setupVoiceSDKEngine,
+    required TResult Function(_OnJoinChannelSuccess value) onJoinChannelSuccess,
+    required TResult Function(_OnUserJoined value) onUserJoined,
+    required TResult Function(_OnUserOffline value) onUserOffline,
+    required TResult Function(_JoinVoiceCallLoading value) joinVoiceCallLoading,
+    required TResult Function(_JoinVoiceCall value) joinVoiceCall,
+    required TResult Function(_JoinVoiceCallError value) joinVoiceCallError,
+    required TResult Function(_LeaveVoiceCallLoading value)
+        leaveVoiceCallLoading,
+    required TResult Function(_LeaveVoiceCall value) leaveVoiceCall,
+    required TResult Function(_ScrollDownLoading value) scrollDownLoading,
+    required TResult Function(_ScrollDown value) scrollDown,
+  }) {
+    return receiveMessage(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_InitControllers value)? initControllers,
+    TResult? Function(_DisposeControllers value)? disposeControllers,
+    TResult? Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult? Function(_SendMessage value)? sendMessage,
+    TResult? Function(_SendMessageError value)? sendMessageError,
+    TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
+    TResult? Function(_GetUserLoading value)? getUserLoading,
+    TResult? Function(_GetUser value)? getUser,
+    TResult? Function(_GetMessagesError value)? getMessagesError,
+    TResult? Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult? Function(_PickMessageImage value)? pickMessageImage,
+    TResult? Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult? Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult? Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult? Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult? Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult? Function(_PickMessageFile value)? pickMessageFile,
+    TResult? Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult? Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult? Function(_GetFilePercentage value)? getFilePercentage,
+    TResult? Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult? Function(_OpenDocMessage value)? openDocMessage,
+    TResult? Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult? Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult? Function(_DeleteMessage value)? deleteMessage,
+    TResult? Function(_DeleteMessageError value)? deleteMessageError,
+    TResult? Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult? Function(_GenerateToken value)? generateToken,
+    TResult? Function(_GenerateTokenError value)? generateTokenError,
+    TResult? Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult? Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult? Function(_OnUserJoined value)? onUserJoined,
+    TResult? Function(_OnUserOffline value)? onUserOffline,
+    TResult? Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult? Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult? Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult? Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult? Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult? Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult? Function(_ScrollDown value)? scrollDown,
+  }) {
+    return receiveMessage?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_InitControllers value)? initControllers,
+    TResult Function(_DisposeControllers value)? disposeControllers,
+    TResult Function(_SendMessageLoading value)? sendMessageLoading,
+    TResult Function(_SendMessage value)? sendMessage,
+    TResult Function(_SendMessageError value)? sendMessageError,
+    TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
+    TResult Function(_GetMessagesLoading value)? getMessagesLoading,
+    TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
+    TResult Function(_GetUserLoading value)? getUserLoading,
+    TResult Function(_GetUser value)? getUser,
+    TResult Function(_GetMessagesError value)? getMessagesError,
+    TResult Function(_PickMessageImageLoading value)? pickMessageImageLoading,
+    TResult Function(_PickMessageImage value)? pickMessageImage,
+    TResult Function(_PickMessageImageError value)? pickMessageImageError,
+    TResult Function(_PickMessageVideoLoading value)? pickMessageVideoLoading,
+    TResult Function(_PickMessageVideo value)? pickMessageVideo,
+    TResult Function(_PickMessageVideoError value)? pickMessageVideoError,
+    TResult Function(_PickMessageFileLoading value)? pickMessageFileLoading,
+    TResult Function(_PickMessageFile value)? pickMessageFile,
+    TResult Function(_PickMessageFileError value)? pickMessageFileError,
+    TResult Function(_CloseMediaContainer value)? closeMediaContainer,
+    TResult Function(_GetFilePercentage value)? getFilePercentage,
+    TResult Function(_OpenDocMessageLoading value)? openDocMessageLoading,
+    TResult Function(_OpenDocMessage value)? openDocMessage,
+    TResult Function(_OpenDocMessageError value)? openDocMessageError,
+    TResult Function(_DeleteMessageLoading value)? deleteMessageLoading,
+    TResult Function(_DeleteMessage value)? deleteMessage,
+    TResult Function(_DeleteMessageError value)? deleteMessageError,
+    TResult Function(_GenerateTokenLoading value)? generateTokenLoading,
+    TResult Function(_GenerateToken value)? generateToken,
+    TResult Function(_GenerateTokenError value)? generateTokenError,
+    TResult Function(_SetupVoiceSDKEngine value)? setupVoiceSDKEngine,
+    TResult Function(_OnJoinChannelSuccess value)? onJoinChannelSuccess,
+    TResult Function(_OnUserJoined value)? onUserJoined,
+    TResult Function(_OnUserOffline value)? onUserOffline,
+    TResult Function(_JoinVoiceCallLoading value)? joinVoiceCallLoading,
+    TResult Function(_JoinVoiceCall value)? joinVoiceCall,
+    TResult Function(_JoinVoiceCallError value)? joinVoiceCallError,
+    TResult Function(_LeaveVoiceCallLoading value)? leaveVoiceCallLoading,
+    TResult Function(_LeaveVoiceCall value)? leaveVoiceCall,
+    TResult Function(_ScrollDownLoading value)? scrollDownLoading,
+    TResult Function(_ScrollDown value)? scrollDown,
+    required TResult orElse(),
+  }) {
+    if (receiveMessage != null) {
+      return receiveMessage(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _ReceiveMessage implements MessagesState {
+  const factory _ReceiveMessage() = _$ReceiveMessageImpl;
+}
+
+/// @nodoc
+abstract class _$$GetUserLoadingImplCopyWith<$Res> {
+  factory _$$GetUserLoadingImplCopyWith(_$GetUserLoadingImpl value,
+          $Res Function(_$GetUserLoadingImpl) then) =
+      __$$GetUserLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$GetUserLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetUserLoadingImpl>
+    implements _$$GetUserLoadingImplCopyWith<$Res> {
+  __$$GetUserLoadingImplCopyWithImpl(
+      _$GetUserLoadingImpl _value, $Res Function(_$GetUserLoadingImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$GetUserLoadingImpl implements _GetUserLoading {
+  const _$GetUserLoadingImpl();
+
+  @override
+  String toString() {
+    return 'MessagesState.getUserLoading()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$GetUserLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() initControllers,
+    required TResult Function() disposeControllers,
+    required TResult Function() sendMessageLoading,
+    required TResult Function() sendMessage,
+    required TResult Function(String errorMsg) sendMessageError,
+    required TResult Function() createVideosThumbnails,
+    required TResult Function() getMessagesLoading,
+    required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
+    required TResult Function() getUserLoading,
+    required TResult Function() getUser,
+    required TResult Function(String errorMsg) getMessagesError,
+    required TResult Function() pickMessageImageLoading,
+    required TResult Function() pickMessageImage,
+    required TResult Function(String errorMsg) pickMessageImageError,
+    required TResult Function() pickMessageVideoLoading,
+    required TResult Function() pickMessageVideo,
+    required TResult Function(String errorMsg) pickMessageVideoError,
+    required TResult Function() pickMessageFileLoading,
+    required TResult Function() pickMessageFile,
+    required TResult Function(String errorMsg) pickMessageFileError,
+    required TResult Function() closeMediaContainer,
+    required TResult Function() getFilePercentage,
+    required TResult Function() openDocMessageLoading,
+    required TResult Function() openDocMessage,
+    required TResult Function(String errorMsg) openDocMessageError,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -3742,6 +4174,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -3759,7 +4192,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -3793,6 +4226,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -3810,7 +4244,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -3849,6 +4283,7 @@ class _$_GetUserLoading implements _GetUserLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -3906,6 +4341,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -3956,6 +4392,7 @@ class _$_GetUserLoading implements _GetUserLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -4000,28 +4437,29 @@ class _$_GetUserLoading implements _GetUserLoading {
 }
 
 abstract class _GetUserLoading implements MessagesState {
-  const factory _GetUserLoading() = _$_GetUserLoading;
+  const factory _GetUserLoading() = _$GetUserLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetUserCopyWith<$Res> {
-  factory _$$_GetUserCopyWith(
-          _$_GetUser value, $Res Function(_$_GetUser) then) =
-      __$$_GetUserCopyWithImpl<$Res>;
+abstract class _$$GetUserImplCopyWith<$Res> {
+  factory _$$GetUserImplCopyWith(
+          _$GetUserImpl value, $Res Function(_$GetUserImpl) then) =
+      __$$GetUserImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetUserCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetUser>
-    implements _$$_GetUserCopyWith<$Res> {
-  __$$_GetUserCopyWithImpl(_$_GetUser _value, $Res Function(_$_GetUser) _then)
+class __$$GetUserImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetUserImpl>
+    implements _$$GetUserImplCopyWith<$Res> {
+  __$$GetUserImplCopyWithImpl(
+      _$GetUserImpl _value, $Res Function(_$GetUserImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetUser implements _GetUser {
-  const _$_GetUser();
+class _$GetUserImpl implements _GetUser {
+  const _$GetUserImpl();
 
   @override
   String toString() {
@@ -4031,7 +4469,7 @@ class _$_GetUser implements _GetUser {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetUser);
+        (other.runtimeType == runtimeType && other is _$GetUserImpl);
   }
 
   @override
@@ -4049,6 +4487,7 @@ class _$_GetUser implements _GetUser {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -4066,7 +4505,7 @@ class _$_GetUser implements _GetUser {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -4101,6 +4540,7 @@ class _$_GetUser implements _GetUser {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -4118,7 +4558,7 @@ class _$_GetUser implements _GetUser {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -4152,6 +4592,7 @@ class _$_GetUser implements _GetUser {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -4169,7 +4610,7 @@ class _$_GetUser implements _GetUser {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -4208,6 +4649,7 @@ class _$_GetUser implements _GetUser {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -4265,6 +4707,7 @@ class _$_GetUser implements _GetUser {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -4315,6 +4758,7 @@ class _$_GetUser implements _GetUser {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -4359,24 +4803,24 @@ class _$_GetUser implements _GetUser {
 }
 
 abstract class _GetUser implements MessagesState {
-  const factory _GetUser() = _$_GetUser;
+  const factory _GetUser() = _$GetUserImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetMessagesErrorCopyWith<$Res> {
-  factory _$$_GetMessagesErrorCopyWith(
-          _$_GetMessagesError value, $Res Function(_$_GetMessagesError) then) =
-      __$$_GetMessagesErrorCopyWithImpl<$Res>;
+abstract class _$$GetMessagesErrorImplCopyWith<$Res> {
+  factory _$$GetMessagesErrorImplCopyWith(_$GetMessagesErrorImpl value,
+          $Res Function(_$GetMessagesErrorImpl) then) =
+      __$$GetMessagesErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GetMessagesErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetMessagesError>
-    implements _$$_GetMessagesErrorCopyWith<$Res> {
-  __$$_GetMessagesErrorCopyWithImpl(
-      _$_GetMessagesError _value, $Res Function(_$_GetMessagesError) _then)
+class __$$GetMessagesErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetMessagesErrorImpl>
+    implements _$$GetMessagesErrorImplCopyWith<$Res> {
+  __$$GetMessagesErrorImplCopyWithImpl(_$GetMessagesErrorImpl _value,
+      $Res Function(_$GetMessagesErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -4384,7 +4828,7 @@ class __$$_GetMessagesErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GetMessagesError(
+    return _then(_$GetMessagesErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -4395,8 +4839,8 @@ class __$$_GetMessagesErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GetMessagesError implements _GetMessagesError {
-  const _$_GetMessagesError(this.errorMsg);
+class _$GetMessagesErrorImpl implements _GetMessagesError {
+  const _$GetMessagesErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -4410,7 +4854,7 @@ class _$_GetMessagesError implements _GetMessagesError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetMessagesError &&
+            other is _$GetMessagesErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -4421,8 +4865,9 @@ class _$_GetMessagesError implements _GetMessagesError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GetMessagesErrorCopyWith<_$_GetMessagesError> get copyWith =>
-      __$$_GetMessagesErrorCopyWithImpl<_$_GetMessagesError>(this, _$identity);
+  _$$GetMessagesErrorImplCopyWith<_$GetMessagesErrorImpl> get copyWith =>
+      __$$GetMessagesErrorImplCopyWithImpl<_$GetMessagesErrorImpl>(
+          this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -4436,6 +4881,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -4453,7 +4899,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -4488,6 +4934,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -4505,7 +4952,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -4539,6 +4986,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -4556,7 +5004,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -4595,6 +5043,7 @@ class _$_GetMessagesError implements _GetMessagesError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -4652,6 +5101,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -4702,6 +5152,7 @@ class _$_GetMessagesError implements _GetMessagesError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -4746,34 +5197,37 @@ class _$_GetMessagesError implements _GetMessagesError {
 }
 
 abstract class _GetMessagesError implements MessagesState {
-  const factory _GetMessagesError(final String errorMsg) = _$_GetMessagesError;
+  const factory _GetMessagesError(final String errorMsg) =
+      _$GetMessagesErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GetMessagesErrorCopyWith<_$_GetMessagesError> get copyWith =>
+  _$$GetMessagesErrorImplCopyWith<_$GetMessagesErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageImageLoadingCopyWith<$Res> {
-  factory _$$_PickMessageImageLoadingCopyWith(_$_PickMessageImageLoading value,
-          $Res Function(_$_PickMessageImageLoading) then) =
-      __$$_PickMessageImageLoadingCopyWithImpl<$Res>;
+abstract class _$$PickMessageImageLoadingImplCopyWith<$Res> {
+  factory _$$PickMessageImageLoadingImplCopyWith(
+          _$PickMessageImageLoadingImpl value,
+          $Res Function(_$PickMessageImageLoadingImpl) then) =
+      __$$PickMessageImageLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageImageLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImageLoading>
-    implements _$$_PickMessageImageLoadingCopyWith<$Res> {
-  __$$_PickMessageImageLoadingCopyWithImpl(_$_PickMessageImageLoading _value,
-      $Res Function(_$_PickMessageImageLoading) _then)
+class __$$PickMessageImageLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageImageLoadingImpl>
+    implements _$$PickMessageImageLoadingImplCopyWith<$Res> {
+  __$$PickMessageImageLoadingImplCopyWithImpl(
+      _$PickMessageImageLoadingImpl _value,
+      $Res Function(_$PickMessageImageLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageImageLoading implements _PickMessageImageLoading {
-  const _$_PickMessageImageLoading();
+class _$PickMessageImageLoadingImpl implements _PickMessageImageLoading {
+  const _$PickMessageImageLoadingImpl();
 
   @override
   String toString() {
@@ -4784,7 +5238,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageImageLoading);
+            other is _$PickMessageImageLoadingImpl);
   }
 
   @override
@@ -4802,6 +5256,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -4819,7 +5274,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -4854,6 +5309,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -4871,7 +5327,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -4905,6 +5361,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -4922,7 +5379,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -4961,6 +5418,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -5018,6 +5476,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -5068,6 +5527,7 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -5112,29 +5572,29 @@ class _$_PickMessageImageLoading implements _PickMessageImageLoading {
 }
 
 abstract class _PickMessageImageLoading implements MessagesState {
-  const factory _PickMessageImageLoading() = _$_PickMessageImageLoading;
+  const factory _PickMessageImageLoading() = _$PickMessageImageLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageImageCopyWith<$Res> {
-  factory _$$_PickMessageImageCopyWith(
-          _$_PickMessageImage value, $Res Function(_$_PickMessageImage) then) =
-      __$$_PickMessageImageCopyWithImpl<$Res>;
+abstract class _$$PickMessageImageImplCopyWith<$Res> {
+  factory _$$PickMessageImageImplCopyWith(_$PickMessageImageImpl value,
+          $Res Function(_$PickMessageImageImpl) then) =
+      __$$PickMessageImageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageImageCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImage>
-    implements _$$_PickMessageImageCopyWith<$Res> {
-  __$$_PickMessageImageCopyWithImpl(
-      _$_PickMessageImage _value, $Res Function(_$_PickMessageImage) _then)
+class __$$PickMessageImageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageImageImpl>
+    implements _$$PickMessageImageImplCopyWith<$Res> {
+  __$$PickMessageImageImplCopyWithImpl(_$PickMessageImageImpl _value,
+      $Res Function(_$PickMessageImageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageImage implements _PickMessageImage {
-  const _$_PickMessageImage();
+class _$PickMessageImageImpl implements _PickMessageImage {
+  const _$PickMessageImageImpl();
 
   @override
   String toString() {
@@ -5144,7 +5604,7 @@ class _$_PickMessageImage implements _PickMessageImage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickMessageImage);
+        (other.runtimeType == runtimeType && other is _$PickMessageImageImpl);
   }
 
   @override
@@ -5162,6 +5622,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -5179,7 +5640,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -5214,6 +5675,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -5231,7 +5693,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -5265,6 +5727,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -5282,7 +5745,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -5321,6 +5784,7 @@ class _$_PickMessageImage implements _PickMessageImage {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -5378,6 +5842,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -5428,6 +5893,7 @@ class _$_PickMessageImage implements _PickMessageImage {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -5472,24 +5938,25 @@ class _$_PickMessageImage implements _PickMessageImage {
 }
 
 abstract class _PickMessageImage implements MessagesState {
-  const factory _PickMessageImage() = _$_PickMessageImage;
+  const factory _PickMessageImage() = _$PickMessageImageImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageImageErrorCopyWith<$Res> {
-  factory _$$_PickMessageImageErrorCopyWith(_$_PickMessageImageError value,
-          $Res Function(_$_PickMessageImageError) then) =
-      __$$_PickMessageImageErrorCopyWithImpl<$Res>;
+abstract class _$$PickMessageImageErrorImplCopyWith<$Res> {
+  factory _$$PickMessageImageErrorImplCopyWith(
+          _$PickMessageImageErrorImpl value,
+          $Res Function(_$PickMessageImageErrorImpl) then) =
+      __$$PickMessageImageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_PickMessageImageErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageImageError>
-    implements _$$_PickMessageImageErrorCopyWith<$Res> {
-  __$$_PickMessageImageErrorCopyWithImpl(_$_PickMessageImageError _value,
-      $Res Function(_$_PickMessageImageError) _then)
+class __$$PickMessageImageErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageImageErrorImpl>
+    implements _$$PickMessageImageErrorImplCopyWith<$Res> {
+  __$$PickMessageImageErrorImplCopyWithImpl(_$PickMessageImageErrorImpl _value,
+      $Res Function(_$PickMessageImageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -5497,7 +5964,7 @@ class __$$_PickMessageImageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_PickMessageImageError(
+    return _then(_$PickMessageImageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -5508,8 +5975,8 @@ class __$$_PickMessageImageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PickMessageImageError implements _PickMessageImageError {
-  const _$_PickMessageImageError(this.errorMsg);
+class _$PickMessageImageErrorImpl implements _PickMessageImageError {
+  const _$PickMessageImageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -5523,7 +5990,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageImageError &&
+            other is _$PickMessageImageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -5534,9 +6001,9 @@ class _$_PickMessageImageError implements _PickMessageImageError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PickMessageImageErrorCopyWith<_$_PickMessageImageError> get copyWith =>
-      __$$_PickMessageImageErrorCopyWithImpl<_$_PickMessageImageError>(
-          this, _$identity);
+  _$$PickMessageImageErrorImplCopyWith<_$PickMessageImageErrorImpl>
+      get copyWith => __$$PickMessageImageErrorImplCopyWithImpl<
+          _$PickMessageImageErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -5550,6 +6017,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -5567,7 +6035,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -5602,6 +6070,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -5619,7 +6088,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -5653,6 +6122,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -5670,7 +6140,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -5709,6 +6179,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -5766,6 +6237,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -5816,6 +6288,7 @@ class _$_PickMessageImageError implements _PickMessageImageError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -5861,34 +6334,36 @@ class _$_PickMessageImageError implements _PickMessageImageError {
 
 abstract class _PickMessageImageError implements MessagesState {
   const factory _PickMessageImageError(final String errorMsg) =
-      _$_PickMessageImageError;
+      _$PickMessageImageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_PickMessageImageErrorCopyWith<_$_PickMessageImageError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PickMessageImageErrorImplCopyWith<_$PickMessageImageErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageVideoLoadingCopyWith<$Res> {
-  factory _$$_PickMessageVideoLoadingCopyWith(_$_PickMessageVideoLoading value,
-          $Res Function(_$_PickMessageVideoLoading) then) =
-      __$$_PickMessageVideoLoadingCopyWithImpl<$Res>;
+abstract class _$$PickMessageVideoLoadingImplCopyWith<$Res> {
+  factory _$$PickMessageVideoLoadingImplCopyWith(
+          _$PickMessageVideoLoadingImpl value,
+          $Res Function(_$PickMessageVideoLoadingImpl) then) =
+      __$$PickMessageVideoLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageVideoLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideoLoading>
-    implements _$$_PickMessageVideoLoadingCopyWith<$Res> {
-  __$$_PickMessageVideoLoadingCopyWithImpl(_$_PickMessageVideoLoading _value,
-      $Res Function(_$_PickMessageVideoLoading) _then)
+class __$$PickMessageVideoLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageVideoLoadingImpl>
+    implements _$$PickMessageVideoLoadingImplCopyWith<$Res> {
+  __$$PickMessageVideoLoadingImplCopyWithImpl(
+      _$PickMessageVideoLoadingImpl _value,
+      $Res Function(_$PickMessageVideoLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
-  const _$_PickMessageVideoLoading();
+class _$PickMessageVideoLoadingImpl implements _PickMessageVideoLoading {
+  const _$PickMessageVideoLoadingImpl();
 
   @override
   String toString() {
@@ -5899,7 +6374,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageVideoLoading);
+            other is _$PickMessageVideoLoadingImpl);
   }
 
   @override
@@ -5917,6 +6392,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -5934,7 +6410,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -5969,6 +6445,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -5986,7 +6463,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -6020,6 +6497,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -6037,7 +6515,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -6076,6 +6554,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -6133,6 +6612,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -6183,6 +6663,7 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -6227,29 +6708,29 @@ class _$_PickMessageVideoLoading implements _PickMessageVideoLoading {
 }
 
 abstract class _PickMessageVideoLoading implements MessagesState {
-  const factory _PickMessageVideoLoading() = _$_PickMessageVideoLoading;
+  const factory _PickMessageVideoLoading() = _$PickMessageVideoLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageVideoCopyWith<$Res> {
-  factory _$$_PickMessageVideoCopyWith(
-          _$_PickMessageVideo value, $Res Function(_$_PickMessageVideo) then) =
-      __$$_PickMessageVideoCopyWithImpl<$Res>;
+abstract class _$$PickMessageVideoImplCopyWith<$Res> {
+  factory _$$PickMessageVideoImplCopyWith(_$PickMessageVideoImpl value,
+          $Res Function(_$PickMessageVideoImpl) then) =
+      __$$PickMessageVideoImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageVideoCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideo>
-    implements _$$_PickMessageVideoCopyWith<$Res> {
-  __$$_PickMessageVideoCopyWithImpl(
-      _$_PickMessageVideo _value, $Res Function(_$_PickMessageVideo) _then)
+class __$$PickMessageVideoImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageVideoImpl>
+    implements _$$PickMessageVideoImplCopyWith<$Res> {
+  __$$PickMessageVideoImplCopyWithImpl(_$PickMessageVideoImpl _value,
+      $Res Function(_$PickMessageVideoImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageVideo implements _PickMessageVideo {
-  const _$_PickMessageVideo();
+class _$PickMessageVideoImpl implements _PickMessageVideo {
+  const _$PickMessageVideoImpl();
 
   @override
   String toString() {
@@ -6259,7 +6740,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickMessageVideo);
+        (other.runtimeType == runtimeType && other is _$PickMessageVideoImpl);
   }
 
   @override
@@ -6277,6 +6758,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -6294,7 +6776,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -6329,6 +6811,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -6346,7 +6829,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -6380,6 +6863,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -6397,7 +6881,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -6436,6 +6920,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -6493,6 +6978,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -6543,6 +7029,7 @@ class _$_PickMessageVideo implements _PickMessageVideo {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -6587,24 +7074,25 @@ class _$_PickMessageVideo implements _PickMessageVideo {
 }
 
 abstract class _PickMessageVideo implements MessagesState {
-  const factory _PickMessageVideo() = _$_PickMessageVideo;
+  const factory _PickMessageVideo() = _$PickMessageVideoImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageVideoErrorCopyWith<$Res> {
-  factory _$$_PickMessageVideoErrorCopyWith(_$_PickMessageVideoError value,
-          $Res Function(_$_PickMessageVideoError) then) =
-      __$$_PickMessageVideoErrorCopyWithImpl<$Res>;
+abstract class _$$PickMessageVideoErrorImplCopyWith<$Res> {
+  factory _$$PickMessageVideoErrorImplCopyWith(
+          _$PickMessageVideoErrorImpl value,
+          $Res Function(_$PickMessageVideoErrorImpl) then) =
+      __$$PickMessageVideoErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_PickMessageVideoErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageVideoError>
-    implements _$$_PickMessageVideoErrorCopyWith<$Res> {
-  __$$_PickMessageVideoErrorCopyWithImpl(_$_PickMessageVideoError _value,
-      $Res Function(_$_PickMessageVideoError) _then)
+class __$$PickMessageVideoErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageVideoErrorImpl>
+    implements _$$PickMessageVideoErrorImplCopyWith<$Res> {
+  __$$PickMessageVideoErrorImplCopyWithImpl(_$PickMessageVideoErrorImpl _value,
+      $Res Function(_$PickMessageVideoErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -6612,7 +7100,7 @@ class __$$_PickMessageVideoErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_PickMessageVideoError(
+    return _then(_$PickMessageVideoErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -6623,8 +7111,8 @@ class __$$_PickMessageVideoErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PickMessageVideoError implements _PickMessageVideoError {
-  const _$_PickMessageVideoError(this.errorMsg);
+class _$PickMessageVideoErrorImpl implements _PickMessageVideoError {
+  const _$PickMessageVideoErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -6638,7 +7126,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageVideoError &&
+            other is _$PickMessageVideoErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -6649,9 +7137,9 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PickMessageVideoErrorCopyWith<_$_PickMessageVideoError> get copyWith =>
-      __$$_PickMessageVideoErrorCopyWithImpl<_$_PickMessageVideoError>(
-          this, _$identity);
+  _$$PickMessageVideoErrorImplCopyWith<_$PickMessageVideoErrorImpl>
+      get copyWith => __$$PickMessageVideoErrorImplCopyWithImpl<
+          _$PickMessageVideoErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -6665,6 +7153,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -6682,7 +7171,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -6717,6 +7206,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -6734,7 +7224,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -6768,6 +7258,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -6785,7 +7276,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -6824,6 +7315,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -6881,6 +7373,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -6931,6 +7424,7 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -6976,34 +7470,36 @@ class _$_PickMessageVideoError implements _PickMessageVideoError {
 
 abstract class _PickMessageVideoError implements MessagesState {
   const factory _PickMessageVideoError(final String errorMsg) =
-      _$_PickMessageVideoError;
+      _$PickMessageVideoErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_PickMessageVideoErrorCopyWith<_$_PickMessageVideoError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PickMessageVideoErrorImplCopyWith<_$PickMessageVideoErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageFileLoadingCopyWith<$Res> {
-  factory _$$_PickMessageFileLoadingCopyWith(_$_PickMessageFileLoading value,
-          $Res Function(_$_PickMessageFileLoading) then) =
-      __$$_PickMessageFileLoadingCopyWithImpl<$Res>;
+abstract class _$$PickMessageFileLoadingImplCopyWith<$Res> {
+  factory _$$PickMessageFileLoadingImplCopyWith(
+          _$PickMessageFileLoadingImpl value,
+          $Res Function(_$PickMessageFileLoadingImpl) then) =
+      __$$PickMessageFileLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageFileLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFileLoading>
-    implements _$$_PickMessageFileLoadingCopyWith<$Res> {
-  __$$_PickMessageFileLoadingCopyWithImpl(_$_PickMessageFileLoading _value,
-      $Res Function(_$_PickMessageFileLoading) _then)
+class __$$PickMessageFileLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageFileLoadingImpl>
+    implements _$$PickMessageFileLoadingImplCopyWith<$Res> {
+  __$$PickMessageFileLoadingImplCopyWithImpl(
+      _$PickMessageFileLoadingImpl _value,
+      $Res Function(_$PickMessageFileLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageFileLoading implements _PickMessageFileLoading {
-  const _$_PickMessageFileLoading();
+class _$PickMessageFileLoadingImpl implements _PickMessageFileLoading {
+  const _$PickMessageFileLoadingImpl();
 
   @override
   String toString() {
@@ -7014,7 +7510,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageFileLoading);
+            other is _$PickMessageFileLoadingImpl);
   }
 
   @override
@@ -7032,6 +7528,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -7049,7 +7546,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -7084,6 +7581,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -7101,7 +7599,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -7135,6 +7633,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -7152,7 +7651,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -7191,6 +7690,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -7248,6 +7748,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -7298,6 +7799,7 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -7342,29 +7844,29 @@ class _$_PickMessageFileLoading implements _PickMessageFileLoading {
 }
 
 abstract class _PickMessageFileLoading implements MessagesState {
-  const factory _PickMessageFileLoading() = _$_PickMessageFileLoading;
+  const factory _PickMessageFileLoading() = _$PickMessageFileLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageFileCopyWith<$Res> {
-  factory _$$_PickMessageFileCopyWith(
-          _$_PickMessageFile value, $Res Function(_$_PickMessageFile) then) =
-      __$$_PickMessageFileCopyWithImpl<$Res>;
+abstract class _$$PickMessageFileImplCopyWith<$Res> {
+  factory _$$PickMessageFileImplCopyWith(_$PickMessageFileImpl value,
+          $Res Function(_$PickMessageFileImpl) then) =
+      __$$PickMessageFileImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickMessageFileCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFile>
-    implements _$$_PickMessageFileCopyWith<$Res> {
-  __$$_PickMessageFileCopyWithImpl(
-      _$_PickMessageFile _value, $Res Function(_$_PickMessageFile) _then)
+class __$$PickMessageFileImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageFileImpl>
+    implements _$$PickMessageFileImplCopyWith<$Res> {
+  __$$PickMessageFileImplCopyWithImpl(
+      _$PickMessageFileImpl _value, $Res Function(_$PickMessageFileImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickMessageFile implements _PickMessageFile {
-  const _$_PickMessageFile();
+class _$PickMessageFileImpl implements _PickMessageFile {
+  const _$PickMessageFileImpl();
 
   @override
   String toString() {
@@ -7374,7 +7876,7 @@ class _$_PickMessageFile implements _PickMessageFile {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickMessageFile);
+        (other.runtimeType == runtimeType && other is _$PickMessageFileImpl);
   }
 
   @override
@@ -7392,6 +7894,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -7409,7 +7912,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -7444,6 +7947,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -7461,7 +7965,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -7495,6 +7999,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -7512,7 +8017,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -7551,6 +8056,7 @@ class _$_PickMessageFile implements _PickMessageFile {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -7608,6 +8114,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -7658,6 +8165,7 @@ class _$_PickMessageFile implements _PickMessageFile {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -7702,24 +8210,24 @@ class _$_PickMessageFile implements _PickMessageFile {
 }
 
 abstract class _PickMessageFile implements MessagesState {
-  const factory _PickMessageFile() = _$_PickMessageFile;
+  const factory _PickMessageFile() = _$PickMessageFileImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickMessageFileErrorCopyWith<$Res> {
-  factory _$$_PickMessageFileErrorCopyWith(_$_PickMessageFileError value,
-          $Res Function(_$_PickMessageFileError) then) =
-      __$$_PickMessageFileErrorCopyWithImpl<$Res>;
+abstract class _$$PickMessageFileErrorImplCopyWith<$Res> {
+  factory _$$PickMessageFileErrorImplCopyWith(_$PickMessageFileErrorImpl value,
+          $Res Function(_$PickMessageFileErrorImpl) then) =
+      __$$PickMessageFileErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_PickMessageFileErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_PickMessageFileError>
-    implements _$$_PickMessageFileErrorCopyWith<$Res> {
-  __$$_PickMessageFileErrorCopyWithImpl(_$_PickMessageFileError _value,
-      $Res Function(_$_PickMessageFileError) _then)
+class __$$PickMessageFileErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$PickMessageFileErrorImpl>
+    implements _$$PickMessageFileErrorImplCopyWith<$Res> {
+  __$$PickMessageFileErrorImplCopyWithImpl(_$PickMessageFileErrorImpl _value,
+      $Res Function(_$PickMessageFileErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -7727,7 +8235,7 @@ class __$$_PickMessageFileErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_PickMessageFileError(
+    return _then(_$PickMessageFileErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -7738,8 +8246,8 @@ class __$$_PickMessageFileErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PickMessageFileError implements _PickMessageFileError {
-  const _$_PickMessageFileError(this.errorMsg);
+class _$PickMessageFileErrorImpl implements _PickMessageFileError {
+  const _$PickMessageFileErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -7753,7 +8261,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickMessageFileError &&
+            other is _$PickMessageFileErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -7764,9 +8272,10 @@ class _$_PickMessageFileError implements _PickMessageFileError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PickMessageFileErrorCopyWith<_$_PickMessageFileError> get copyWith =>
-      __$$_PickMessageFileErrorCopyWithImpl<_$_PickMessageFileError>(
-          this, _$identity);
+  _$$PickMessageFileErrorImplCopyWith<_$PickMessageFileErrorImpl>
+      get copyWith =>
+          __$$PickMessageFileErrorImplCopyWithImpl<_$PickMessageFileErrorImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -7780,6 +8289,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -7797,7 +8307,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -7832,6 +8342,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -7849,7 +8360,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -7883,6 +8394,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -7900,7 +8412,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -7939,6 +8451,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -7996,6 +8509,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -8046,6 +8560,7 @@ class _$_PickMessageFileError implements _PickMessageFileError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -8091,34 +8606,34 @@ class _$_PickMessageFileError implements _PickMessageFileError {
 
 abstract class _PickMessageFileError implements MessagesState {
   const factory _PickMessageFileError(final String errorMsg) =
-      _$_PickMessageFileError;
+      _$PickMessageFileErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_PickMessageFileErrorCopyWith<_$_PickMessageFileError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PickMessageFileErrorImplCopyWith<_$PickMessageFileErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_CloseMediaContainerCopyWith<$Res> {
-  factory _$$_CloseMediaContainerCopyWith(_$_CloseMediaContainer value,
-          $Res Function(_$_CloseMediaContainer) then) =
-      __$$_CloseMediaContainerCopyWithImpl<$Res>;
+abstract class _$$CloseMediaContainerImplCopyWith<$Res> {
+  factory _$$CloseMediaContainerImplCopyWith(_$CloseMediaContainerImpl value,
+          $Res Function(_$CloseMediaContainerImpl) then) =
+      __$$CloseMediaContainerImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_CloseMediaContainerCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_CloseMediaContainer>
-    implements _$$_CloseMediaContainerCopyWith<$Res> {
-  __$$_CloseMediaContainerCopyWithImpl(_$_CloseMediaContainer _value,
-      $Res Function(_$_CloseMediaContainer) _then)
+class __$$CloseMediaContainerImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$CloseMediaContainerImpl>
+    implements _$$CloseMediaContainerImplCopyWith<$Res> {
+  __$$CloseMediaContainerImplCopyWithImpl(_$CloseMediaContainerImpl _value,
+      $Res Function(_$CloseMediaContainerImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_CloseMediaContainer implements _CloseMediaContainer {
-  const _$_CloseMediaContainer();
+class _$CloseMediaContainerImpl implements _CloseMediaContainer {
+  const _$CloseMediaContainerImpl();
 
   @override
   String toString() {
@@ -8128,7 +8643,8 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_CloseMediaContainer);
+        (other.runtimeType == runtimeType &&
+            other is _$CloseMediaContainerImpl);
   }
 
   @override
@@ -8146,6 +8662,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -8163,7 +8680,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -8198,6 +8715,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -8215,7 +8733,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -8249,6 +8767,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -8266,7 +8785,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -8305,6 +8824,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -8362,6 +8882,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -8412,6 +8933,7 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -8456,29 +8978,29 @@ class _$_CloseMediaContainer implements _CloseMediaContainer {
 }
 
 abstract class _CloseMediaContainer implements MessagesState {
-  const factory _CloseMediaContainer() = _$_CloseMediaContainer;
+  const factory _CloseMediaContainer() = _$CloseMediaContainerImpl;
 }
 
 /// @nodoc
-abstract class _$$_GetFilePercentageCopyWith<$Res> {
-  factory _$$_GetFilePercentageCopyWith(_$_GetFilePercentage value,
-          $Res Function(_$_GetFilePercentage) then) =
-      __$$_GetFilePercentageCopyWithImpl<$Res>;
+abstract class _$$GetFilePercentageImplCopyWith<$Res> {
+  factory _$$GetFilePercentageImplCopyWith(_$GetFilePercentageImpl value,
+          $Res Function(_$GetFilePercentageImpl) then) =
+      __$$GetFilePercentageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetFilePercentageCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GetFilePercentage>
-    implements _$$_GetFilePercentageCopyWith<$Res> {
-  __$$_GetFilePercentageCopyWithImpl(
-      _$_GetFilePercentage _value, $Res Function(_$_GetFilePercentage) _then)
+class __$$GetFilePercentageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GetFilePercentageImpl>
+    implements _$$GetFilePercentageImplCopyWith<$Res> {
+  __$$GetFilePercentageImplCopyWithImpl(_$GetFilePercentageImpl _value,
+      $Res Function(_$GetFilePercentageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetFilePercentage implements _GetFilePercentage {
-  const _$_GetFilePercentage();
+class _$GetFilePercentageImpl implements _GetFilePercentage {
+  const _$GetFilePercentageImpl();
 
   @override
   String toString() {
@@ -8488,7 +9010,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_GetFilePercentage);
+        (other.runtimeType == runtimeType && other is _$GetFilePercentageImpl);
   }
 
   @override
@@ -8506,6 +9028,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -8523,7 +9046,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -8558,6 +9081,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -8575,7 +9099,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -8609,6 +9133,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -8626,7 +9151,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -8665,6 +9190,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -8722,6 +9248,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -8772,6 +9299,7 @@ class _$_GetFilePercentage implements _GetFilePercentage {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -8816,29 +9344,30 @@ class _$_GetFilePercentage implements _GetFilePercentage {
 }
 
 abstract class _GetFilePercentage implements MessagesState {
-  const factory _GetFilePercentage() = _$_GetFilePercentage;
+  const factory _GetFilePercentage() = _$GetFilePercentageImpl;
 }
 
 /// @nodoc
-abstract class _$$_OpenDocMessageLoadingCopyWith<$Res> {
-  factory _$$_OpenDocMessageLoadingCopyWith(_$_OpenDocMessageLoading value,
-          $Res Function(_$_OpenDocMessageLoading) then) =
-      __$$_OpenDocMessageLoadingCopyWithImpl<$Res>;
+abstract class _$$OpenDocMessageLoadingImplCopyWith<$Res> {
+  factory _$$OpenDocMessageLoadingImplCopyWith(
+          _$OpenDocMessageLoadingImpl value,
+          $Res Function(_$OpenDocMessageLoadingImpl) then) =
+      __$$OpenDocMessageLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OpenDocMessageLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessageLoading>
-    implements _$$_OpenDocMessageLoadingCopyWith<$Res> {
-  __$$_OpenDocMessageLoadingCopyWithImpl(_$_OpenDocMessageLoading _value,
-      $Res Function(_$_OpenDocMessageLoading) _then)
+class __$$OpenDocMessageLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OpenDocMessageLoadingImpl>
+    implements _$$OpenDocMessageLoadingImplCopyWith<$Res> {
+  __$$OpenDocMessageLoadingImplCopyWithImpl(_$OpenDocMessageLoadingImpl _value,
+      $Res Function(_$OpenDocMessageLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
-  const _$_OpenDocMessageLoading();
+class _$OpenDocMessageLoadingImpl implements _OpenDocMessageLoading {
+  const _$OpenDocMessageLoadingImpl();
 
   @override
   String toString() {
@@ -8848,7 +9377,8 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OpenDocMessageLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$OpenDocMessageLoadingImpl);
   }
 
   @override
@@ -8866,6 +9396,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -8883,7 +9414,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -8918,6 +9449,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -8935,7 +9467,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -8969,6 +9501,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -8986,7 +9519,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -9025,6 +9558,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -9082,6 +9616,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -9132,6 +9667,7 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -9176,29 +9712,29 @@ class _$_OpenDocMessageLoading implements _OpenDocMessageLoading {
 }
 
 abstract class _OpenDocMessageLoading implements MessagesState {
-  const factory _OpenDocMessageLoading() = _$_OpenDocMessageLoading;
+  const factory _OpenDocMessageLoading() = _$OpenDocMessageLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_OpenDocMessageCopyWith<$Res> {
-  factory _$$_OpenDocMessageCopyWith(
-          _$_OpenDocMessage value, $Res Function(_$_OpenDocMessage) then) =
-      __$$_OpenDocMessageCopyWithImpl<$Res>;
+abstract class _$$OpenDocMessageImplCopyWith<$Res> {
+  factory _$$OpenDocMessageImplCopyWith(_$OpenDocMessageImpl value,
+          $Res Function(_$OpenDocMessageImpl) then) =
+      __$$OpenDocMessageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OpenDocMessageCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessage>
-    implements _$$_OpenDocMessageCopyWith<$Res> {
-  __$$_OpenDocMessageCopyWithImpl(
-      _$_OpenDocMessage _value, $Res Function(_$_OpenDocMessage) _then)
+class __$$OpenDocMessageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OpenDocMessageImpl>
+    implements _$$OpenDocMessageImplCopyWith<$Res> {
+  __$$OpenDocMessageImplCopyWithImpl(
+      _$OpenDocMessageImpl _value, $Res Function(_$OpenDocMessageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OpenDocMessage implements _OpenDocMessage {
-  const _$_OpenDocMessage();
+class _$OpenDocMessageImpl implements _OpenDocMessage {
+  const _$OpenDocMessageImpl();
 
   @override
   String toString() {
@@ -9208,7 +9744,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OpenDocMessage);
+        (other.runtimeType == runtimeType && other is _$OpenDocMessageImpl);
   }
 
   @override
@@ -9226,6 +9762,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -9243,7 +9780,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -9278,6 +9815,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -9295,7 +9833,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -9329,6 +9867,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -9346,7 +9885,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -9385,6 +9924,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -9442,6 +9982,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -9492,6 +10033,7 @@ class _$_OpenDocMessage implements _OpenDocMessage {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -9536,24 +10078,24 @@ class _$_OpenDocMessage implements _OpenDocMessage {
 }
 
 abstract class _OpenDocMessage implements MessagesState {
-  const factory _OpenDocMessage() = _$_OpenDocMessage;
+  const factory _OpenDocMessage() = _$OpenDocMessageImpl;
 }
 
 /// @nodoc
-abstract class _$$_OpenDocMessageErrorCopyWith<$Res> {
-  factory _$$_OpenDocMessageErrorCopyWith(_$_OpenDocMessageError value,
-          $Res Function(_$_OpenDocMessageError) then) =
-      __$$_OpenDocMessageErrorCopyWithImpl<$Res>;
+abstract class _$$OpenDocMessageErrorImplCopyWith<$Res> {
+  factory _$$OpenDocMessageErrorImplCopyWith(_$OpenDocMessageErrorImpl value,
+          $Res Function(_$OpenDocMessageErrorImpl) then) =
+      __$$OpenDocMessageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_OpenDocMessageErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OpenDocMessageError>
-    implements _$$_OpenDocMessageErrorCopyWith<$Res> {
-  __$$_OpenDocMessageErrorCopyWithImpl(_$_OpenDocMessageError _value,
-      $Res Function(_$_OpenDocMessageError) _then)
+class __$$OpenDocMessageErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OpenDocMessageErrorImpl>
+    implements _$$OpenDocMessageErrorImplCopyWith<$Res> {
+  __$$OpenDocMessageErrorImplCopyWithImpl(_$OpenDocMessageErrorImpl _value,
+      $Res Function(_$OpenDocMessageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -9561,7 +10103,7 @@ class __$$_OpenDocMessageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_OpenDocMessageError(
+    return _then(_$OpenDocMessageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -9572,8 +10114,8 @@ class __$$_OpenDocMessageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_OpenDocMessageError implements _OpenDocMessageError {
-  const _$_OpenDocMessageError(this.errorMsg);
+class _$OpenDocMessageErrorImpl implements _OpenDocMessageError {
+  const _$OpenDocMessageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -9587,7 +10129,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_OpenDocMessageError &&
+            other is _$OpenDocMessageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -9598,8 +10140,8 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_OpenDocMessageErrorCopyWith<_$_OpenDocMessageError> get copyWith =>
-      __$$_OpenDocMessageErrorCopyWithImpl<_$_OpenDocMessageError>(
+  _$$OpenDocMessageErrorImplCopyWith<_$OpenDocMessageErrorImpl> get copyWith =>
+      __$$OpenDocMessageErrorImplCopyWithImpl<_$OpenDocMessageErrorImpl>(
           this, _$identity);
 
   @override
@@ -9614,6 +10156,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -9631,7 +10174,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -9666,6 +10209,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -9683,7 +10227,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -9717,6 +10261,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -9734,7 +10279,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -9773,6 +10318,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -9830,6 +10376,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -9880,6 +10427,7 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -9925,48 +10473,77 @@ class _$_OpenDocMessageError implements _OpenDocMessageError {
 
 abstract class _OpenDocMessageError implements MessagesState {
   const factory _OpenDocMessageError(final String errorMsg) =
-      _$_OpenDocMessageError;
+      _$OpenDocMessageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_OpenDocMessageErrorCopyWith<_$_OpenDocMessageError> get copyWith =>
+  _$$OpenDocMessageErrorImplCopyWith<_$OpenDocMessageErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_DeleteMessageLoadingCopyWith<$Res> {
-  factory _$$_DeleteMessageLoadingCopyWith(_$_DeleteMessageLoading value,
-          $Res Function(_$_DeleteMessageLoading) then) =
-      __$$_DeleteMessageLoadingCopyWithImpl<$Res>;
+abstract class _$$DeleteMessageLoadingImplCopyWith<$Res> {
+  factory _$$DeleteMessageLoadingImplCopyWith(_$DeleteMessageLoadingImpl value,
+          $Res Function(_$DeleteMessageLoadingImpl) then) =
+      __$$DeleteMessageLoadingImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String messageId});
 }
 
 /// @nodoc
-class __$$_DeleteMessageLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessageLoading>
-    implements _$$_DeleteMessageLoadingCopyWith<$Res> {
-  __$$_DeleteMessageLoadingCopyWithImpl(_$_DeleteMessageLoading _value,
-      $Res Function(_$_DeleteMessageLoading) _then)
+class __$$DeleteMessageLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$DeleteMessageLoadingImpl>
+    implements _$$DeleteMessageLoadingImplCopyWith<$Res> {
+  __$$DeleteMessageLoadingImplCopyWithImpl(_$DeleteMessageLoadingImpl _value,
+      $Res Function(_$DeleteMessageLoadingImpl) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? messageId = null,
+  }) {
+    return _then(_$DeleteMessageLoadingImpl(
+      null == messageId
+          ? _value.messageId
+          : messageId // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
 
-class _$_DeleteMessageLoading implements _DeleteMessageLoading {
-  const _$_DeleteMessageLoading();
+class _$DeleteMessageLoadingImpl implements _DeleteMessageLoading {
+  const _$DeleteMessageLoadingImpl(this.messageId);
+
+  @override
+  final String messageId;
 
   @override
   String toString() {
-    return 'MessagesState.deleteMessageLoading()';
+    return 'MessagesState.deleteMessageLoading(messageId: $messageId)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DeleteMessageLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$DeleteMessageLoadingImpl &&
+            (identical(other.messageId, messageId) ||
+                other.messageId == messageId));
   }
 
   @override
-  int get hashCode => runtimeType.hashCode;
+  int get hashCode => Object.hash(runtimeType, messageId);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$DeleteMessageLoadingImplCopyWith<_$DeleteMessageLoadingImpl>
+      get copyWith =>
+          __$$DeleteMessageLoadingImplCopyWithImpl<_$DeleteMessageLoadingImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -9980,6 +10557,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -9997,7 +10575,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -10017,7 +10595,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult Function() scrollDownLoading,
     required TResult Function() scrollDown,
   }) {
-    return deleteMessageLoading();
+    return deleteMessageLoading(messageId);
   }
 
   @override
@@ -10032,6 +10610,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -10049,7 +10628,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -10068,7 +10647,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function()? scrollDownLoading,
     TResult? Function()? scrollDown,
   }) {
-    return deleteMessageLoading?.call();
+    return deleteMessageLoading?.call(messageId);
   }
 
   @override
@@ -10083,6 +10662,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -10100,7 +10680,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -10121,7 +10701,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     required TResult orElse(),
   }) {
     if (deleteMessageLoading != null) {
-      return deleteMessageLoading();
+      return deleteMessageLoading(messageId);
     }
     return orElse();
   }
@@ -10139,6 +10719,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -10196,6 +10777,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -10246,6 +10828,7 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -10290,29 +10873,35 @@ class _$_DeleteMessageLoading implements _DeleteMessageLoading {
 }
 
 abstract class _DeleteMessageLoading implements MessagesState {
-  const factory _DeleteMessageLoading() = _$_DeleteMessageLoading;
+  const factory _DeleteMessageLoading(final String messageId) =
+      _$DeleteMessageLoadingImpl;
+
+  String get messageId;
+  @JsonKey(ignore: true)
+  _$$DeleteMessageLoadingImplCopyWith<_$DeleteMessageLoadingImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_DeleteMessageCopyWith<$Res> {
-  factory _$$_DeleteMessageCopyWith(
-          _$_DeleteMessage value, $Res Function(_$_DeleteMessage) then) =
-      __$$_DeleteMessageCopyWithImpl<$Res>;
+abstract class _$$DeleteMessageImplCopyWith<$Res> {
+  factory _$$DeleteMessageImplCopyWith(
+          _$DeleteMessageImpl value, $Res Function(_$DeleteMessageImpl) then) =
+      __$$DeleteMessageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DeleteMessageCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessage>
-    implements _$$_DeleteMessageCopyWith<$Res> {
-  __$$_DeleteMessageCopyWithImpl(
-      _$_DeleteMessage _value, $Res Function(_$_DeleteMessage) _then)
+class __$$DeleteMessageImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$DeleteMessageImpl>
+    implements _$$DeleteMessageImplCopyWith<$Res> {
+  __$$DeleteMessageImplCopyWithImpl(
+      _$DeleteMessageImpl _value, $Res Function(_$DeleteMessageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DeleteMessage implements _DeleteMessage {
-  const _$_DeleteMessage();
+class _$DeleteMessageImpl implements _DeleteMessage {
+  const _$DeleteMessageImpl();
 
   @override
   String toString() {
@@ -10322,7 +10911,7 @@ class _$_DeleteMessage implements _DeleteMessage {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DeleteMessage);
+        (other.runtimeType == runtimeType && other is _$DeleteMessageImpl);
   }
 
   @override
@@ -10340,6 +10929,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -10357,7 +10947,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -10392,6 +10982,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -10409,7 +11000,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -10443,6 +11034,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -10460,7 +11052,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -10499,6 +11091,7 @@ class _$_DeleteMessage implements _DeleteMessage {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -10556,6 +11149,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -10606,6 +11200,7 @@ class _$_DeleteMessage implements _DeleteMessage {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -10650,24 +11245,24 @@ class _$_DeleteMessage implements _DeleteMessage {
 }
 
 abstract class _DeleteMessage implements MessagesState {
-  const factory _DeleteMessage() = _$_DeleteMessage;
+  const factory _DeleteMessage() = _$DeleteMessageImpl;
 }
 
 /// @nodoc
-abstract class _$$_DeleteMessageErrorCopyWith<$Res> {
-  factory _$$_DeleteMessageErrorCopyWith(_$_DeleteMessageError value,
-          $Res Function(_$_DeleteMessageError) then) =
-      __$$_DeleteMessageErrorCopyWithImpl<$Res>;
+abstract class _$$DeleteMessageErrorImplCopyWith<$Res> {
+  factory _$$DeleteMessageErrorImplCopyWith(_$DeleteMessageErrorImpl value,
+          $Res Function(_$DeleteMessageErrorImpl) then) =
+      __$$DeleteMessageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_DeleteMessageErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_DeleteMessageError>
-    implements _$$_DeleteMessageErrorCopyWith<$Res> {
-  __$$_DeleteMessageErrorCopyWithImpl(
-      _$_DeleteMessageError _value, $Res Function(_$_DeleteMessageError) _then)
+class __$$DeleteMessageErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$DeleteMessageErrorImpl>
+    implements _$$DeleteMessageErrorImplCopyWith<$Res> {
+  __$$DeleteMessageErrorImplCopyWithImpl(_$DeleteMessageErrorImpl _value,
+      $Res Function(_$DeleteMessageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -10675,7 +11270,7 @@ class __$$_DeleteMessageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_DeleteMessageError(
+    return _then(_$DeleteMessageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -10686,8 +11281,8 @@ class __$$_DeleteMessageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_DeleteMessageError implements _DeleteMessageError {
-  const _$_DeleteMessageError(this.errorMsg);
+class _$DeleteMessageErrorImpl implements _DeleteMessageError {
+  const _$DeleteMessageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -10701,7 +11296,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_DeleteMessageError &&
+            other is _$DeleteMessageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -10712,8 +11307,8 @@ class _$_DeleteMessageError implements _DeleteMessageError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_DeleteMessageErrorCopyWith<_$_DeleteMessageError> get copyWith =>
-      __$$_DeleteMessageErrorCopyWithImpl<_$_DeleteMessageError>(
+  _$$DeleteMessageErrorImplCopyWith<_$DeleteMessageErrorImpl> get copyWith =>
+      __$$DeleteMessageErrorImplCopyWithImpl<_$DeleteMessageErrorImpl>(
           this, _$identity);
 
   @override
@@ -10728,6 +11323,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -10745,7 +11341,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -10780,6 +11376,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -10797,7 +11394,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -10831,6 +11428,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -10848,7 +11446,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -10887,6 +11485,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -10944,6 +11543,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -10994,6 +11594,7 @@ class _$_DeleteMessageError implements _DeleteMessageError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -11039,29 +11640,29 @@ class _$_DeleteMessageError implements _DeleteMessageError {
 
 abstract class _DeleteMessageError implements MessagesState {
   const factory _DeleteMessageError(final String errorMsg) =
-      _$_DeleteMessageError;
+      _$DeleteMessageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_DeleteMessageErrorCopyWith<_$_DeleteMessageError> get copyWith =>
+  _$$DeleteMessageErrorImplCopyWith<_$DeleteMessageErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenLoadingCopyWith<$Res> {
-  factory _$$_GenerateTokenLoadingCopyWith(_$_GenerateTokenLoading value,
-          $Res Function(_$_GenerateTokenLoading) then) =
-      __$$_GenerateTokenLoadingCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenLoadingImplCopyWith<$Res> {
+  factory _$$GenerateTokenLoadingImplCopyWith(_$GenerateTokenLoadingImpl value,
+          $Res Function(_$GenerateTokenLoadingImpl) then) =
+      __$$GenerateTokenLoadingImplCopyWithImpl<$Res>;
   @useResult
   $Res call({CallType callType});
 }
 
 /// @nodoc
-class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateTokenLoading>
-    implements _$$_GenerateTokenLoadingCopyWith<$Res> {
-  __$$_GenerateTokenLoadingCopyWithImpl(_$_GenerateTokenLoading _value,
-      $Res Function(_$_GenerateTokenLoading) _then)
+class __$$GenerateTokenLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GenerateTokenLoadingImpl>
+    implements _$$GenerateTokenLoadingImplCopyWith<$Res> {
+  __$$GenerateTokenLoadingImplCopyWithImpl(_$GenerateTokenLoadingImpl _value,
+      $Res Function(_$GenerateTokenLoadingImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11069,7 +11670,7 @@ class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
   $Res call({
     Object? callType = null,
   }) {
-    return _then(_$_GenerateTokenLoading(
+    return _then(_$GenerateTokenLoadingImpl(
       null == callType
           ? _value.callType
           : callType // ignore: cast_nullable_to_non_nullable
@@ -11080,8 +11681,8 @@ class __$$_GenerateTokenLoadingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GenerateTokenLoading implements _GenerateTokenLoading {
-  const _$_GenerateTokenLoading(this.callType);
+class _$GenerateTokenLoadingImpl implements _GenerateTokenLoading {
+  const _$GenerateTokenLoadingImpl(this.callType);
 
   @override
   final CallType callType;
@@ -11095,7 +11696,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GenerateTokenLoading &&
+            other is _$GenerateTokenLoadingImpl &&
             (identical(other.callType, callType) ||
                 other.callType == callType));
   }
@@ -11106,9 +11707,10 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GenerateTokenLoadingCopyWith<_$_GenerateTokenLoading> get copyWith =>
-      __$$_GenerateTokenLoadingCopyWithImpl<_$_GenerateTokenLoading>(
-          this, _$identity);
+  _$$GenerateTokenLoadingImplCopyWith<_$GenerateTokenLoadingImpl>
+      get copyWith =>
+          __$$GenerateTokenLoadingImplCopyWithImpl<_$GenerateTokenLoadingImpl>(
+              this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -11122,6 +11724,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -11139,7 +11742,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -11174,6 +11777,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -11191,7 +11795,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -11225,6 +11829,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -11242,7 +11847,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -11281,6 +11886,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -11338,6 +11944,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -11388,6 +11995,7 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -11433,29 +12041,29 @@ class _$_GenerateTokenLoading implements _GenerateTokenLoading {
 
 abstract class _GenerateTokenLoading implements MessagesState {
   const factory _GenerateTokenLoading(final CallType callType) =
-      _$_GenerateTokenLoading;
+      _$GenerateTokenLoadingImpl;
 
   CallType get callType;
   @JsonKey(ignore: true)
-  _$$_GenerateTokenLoadingCopyWith<_$_GenerateTokenLoading> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$GenerateTokenLoadingImplCopyWith<_$GenerateTokenLoadingImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenCopyWith<$Res> {
-  factory _$$_GenerateTokenCopyWith(
-          _$_GenerateToken value, $Res Function(_$_GenerateToken) then) =
-      __$$_GenerateTokenCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenImplCopyWith<$Res> {
+  factory _$$GenerateTokenImplCopyWith(
+          _$GenerateTokenImpl value, $Res Function(_$GenerateTokenImpl) then) =
+      __$$GenerateTokenImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String token, String channelName, CallType callType});
 }
 
 /// @nodoc
-class __$$_GenerateTokenCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateToken>
-    implements _$$_GenerateTokenCopyWith<$Res> {
-  __$$_GenerateTokenCopyWithImpl(
-      _$_GenerateToken _value, $Res Function(_$_GenerateToken) _then)
+class __$$GenerateTokenImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GenerateTokenImpl>
+    implements _$$GenerateTokenImplCopyWith<$Res> {
+  __$$GenerateTokenImplCopyWithImpl(
+      _$GenerateTokenImpl _value, $Res Function(_$GenerateTokenImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11465,7 +12073,7 @@ class __$$_GenerateTokenCopyWithImpl<$Res>
     Object? channelName = null,
     Object? callType = null,
   }) {
-    return _then(_$_GenerateToken(
+    return _then(_$GenerateTokenImpl(
       null == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
@@ -11484,8 +12092,8 @@ class __$$_GenerateTokenCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GenerateToken implements _GenerateToken {
-  const _$_GenerateToken(this.token, this.channelName, this.callType);
+class _$GenerateTokenImpl implements _GenerateToken {
+  const _$GenerateTokenImpl(this.token, this.channelName, this.callType);
 
   @override
   final String token;
@@ -11503,7 +12111,7 @@ class _$_GenerateToken implements _GenerateToken {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GenerateToken &&
+            other is _$GenerateTokenImpl &&
             (identical(other.token, token) || other.token == token) &&
             (identical(other.channelName, channelName) ||
                 other.channelName == channelName) &&
@@ -11517,8 +12125,8 @@ class _$_GenerateToken implements _GenerateToken {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GenerateTokenCopyWith<_$_GenerateToken> get copyWith =>
-      __$$_GenerateTokenCopyWithImpl<_$_GenerateToken>(this, _$identity);
+  _$$GenerateTokenImplCopyWith<_$GenerateTokenImpl> get copyWith =>
+      __$$GenerateTokenImplCopyWithImpl<_$GenerateTokenImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -11532,6 +12140,7 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -11549,7 +12158,7 @@ class _$_GenerateToken implements _GenerateToken {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -11584,6 +12193,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -11601,7 +12211,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -11635,6 +12245,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -11652,7 +12263,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -11691,6 +12302,7 @@ class _$_GenerateToken implements _GenerateToken {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -11748,6 +12360,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -11798,6 +12411,7 @@ class _$_GenerateToken implements _GenerateToken {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -11843,31 +12457,31 @@ class _$_GenerateToken implements _GenerateToken {
 
 abstract class _GenerateToken implements MessagesState {
   const factory _GenerateToken(final String token, final String channelName,
-      final CallType callType) = _$_GenerateToken;
+      final CallType callType) = _$GenerateTokenImpl;
 
   String get token;
   String get channelName;
   CallType get callType;
   @JsonKey(ignore: true)
-  _$$_GenerateTokenCopyWith<_$_GenerateToken> get copyWith =>
+  _$$GenerateTokenImplCopyWith<_$GenerateTokenImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GenerateTokenErrorCopyWith<$Res> {
-  factory _$$_GenerateTokenErrorCopyWith(_$_GenerateTokenError value,
-          $Res Function(_$_GenerateTokenError) then) =
-      __$$_GenerateTokenErrorCopyWithImpl<$Res>;
+abstract class _$$GenerateTokenErrorImplCopyWith<$Res> {
+  factory _$$GenerateTokenErrorImplCopyWith(_$GenerateTokenErrorImpl value,
+          $Res Function(_$GenerateTokenErrorImpl) then) =
+      __$$GenerateTokenErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_GenerateTokenErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_GenerateTokenError>
-    implements _$$_GenerateTokenErrorCopyWith<$Res> {
-  __$$_GenerateTokenErrorCopyWithImpl(
-      _$_GenerateTokenError _value, $Res Function(_$_GenerateTokenError) _then)
+class __$$GenerateTokenErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$GenerateTokenErrorImpl>
+    implements _$$GenerateTokenErrorImplCopyWith<$Res> {
+  __$$GenerateTokenErrorImplCopyWithImpl(_$GenerateTokenErrorImpl _value,
+      $Res Function(_$GenerateTokenErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -11875,7 +12489,7 @@ class __$$_GenerateTokenErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_GenerateTokenError(
+    return _then(_$GenerateTokenErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -11886,8 +12500,8 @@ class __$$_GenerateTokenErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_GenerateTokenError implements _GenerateTokenError {
-  const _$_GenerateTokenError(this.errorMsg);
+class _$GenerateTokenErrorImpl implements _GenerateTokenError {
+  const _$GenerateTokenErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -11901,7 +12515,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GenerateTokenError &&
+            other is _$GenerateTokenErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -11912,8 +12526,8 @@ class _$_GenerateTokenError implements _GenerateTokenError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
-      __$$_GenerateTokenErrorCopyWithImpl<_$_GenerateTokenError>(
+  _$$GenerateTokenErrorImplCopyWith<_$GenerateTokenErrorImpl> get copyWith =>
+      __$$GenerateTokenErrorImplCopyWithImpl<_$GenerateTokenErrorImpl>(
           this, _$identity);
 
   @override
@@ -11928,6 +12542,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -11945,7 +12560,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -11980,6 +12595,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -11997,7 +12613,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -12031,6 +12647,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -12048,7 +12665,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -12087,6 +12704,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -12144,6 +12762,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -12194,6 +12813,7 @@ class _$_GenerateTokenError implements _GenerateTokenError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -12239,34 +12859,34 @@ class _$_GenerateTokenError implements _GenerateTokenError {
 
 abstract class _GenerateTokenError implements MessagesState {
   const factory _GenerateTokenError(final String errorMsg) =
-      _$_GenerateTokenError;
+      _$GenerateTokenErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_GenerateTokenErrorCopyWith<_$_GenerateTokenError> get copyWith =>
+  _$$GenerateTokenErrorImplCopyWith<_$GenerateTokenErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_SetupVoiceSDKEngineCopyWith<$Res> {
-  factory _$$_SetupVoiceSDKEngineCopyWith(_$_SetupVoiceSDKEngine value,
-          $Res Function(_$_SetupVoiceSDKEngine) then) =
-      __$$_SetupVoiceSDKEngineCopyWithImpl<$Res>;
+abstract class _$$SetupVoiceSDKEngineImplCopyWith<$Res> {
+  factory _$$SetupVoiceSDKEngineImplCopyWith(_$SetupVoiceSDKEngineImpl value,
+          $Res Function(_$SetupVoiceSDKEngineImpl) then) =
+      __$$SetupVoiceSDKEngineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_SetupVoiceSDKEngineCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_SetupVoiceSDKEngine>
-    implements _$$_SetupVoiceSDKEngineCopyWith<$Res> {
-  __$$_SetupVoiceSDKEngineCopyWithImpl(_$_SetupVoiceSDKEngine _value,
-      $Res Function(_$_SetupVoiceSDKEngine) _then)
+class __$$SetupVoiceSDKEngineImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$SetupVoiceSDKEngineImpl>
+    implements _$$SetupVoiceSDKEngineImplCopyWith<$Res> {
+  __$$SetupVoiceSDKEngineImplCopyWithImpl(_$SetupVoiceSDKEngineImpl _value,
+      $Res Function(_$SetupVoiceSDKEngineImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
-  const _$_SetupVoiceSDKEngine();
+class _$SetupVoiceSDKEngineImpl implements _SetupVoiceSDKEngine {
+  const _$SetupVoiceSDKEngineImpl();
 
   @override
   String toString() {
@@ -12276,7 +12896,8 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_SetupVoiceSDKEngine);
+        (other.runtimeType == runtimeType &&
+            other is _$SetupVoiceSDKEngineImpl);
   }
 
   @override
@@ -12294,6 +12915,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -12311,7 +12933,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -12346,6 +12968,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -12363,7 +12986,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -12397,6 +13020,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -12414,7 +13038,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -12453,6 +13077,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -12510,6 +13135,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -12560,6 +13186,7 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -12604,29 +13231,29 @@ class _$_SetupVoiceSDKEngine implements _SetupVoiceSDKEngine {
 }
 
 abstract class _SetupVoiceSDKEngine implements MessagesState {
-  const factory _SetupVoiceSDKEngine() = _$_SetupVoiceSDKEngine;
+  const factory _SetupVoiceSDKEngine() = _$SetupVoiceSDKEngineImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnJoinChannelSuccessCopyWith<$Res> {
-  factory _$$_OnJoinChannelSuccessCopyWith(_$_OnJoinChannelSuccess value,
-          $Res Function(_$_OnJoinChannelSuccess) then) =
-      __$$_OnJoinChannelSuccessCopyWithImpl<$Res>;
+abstract class _$$OnJoinChannelSuccessImplCopyWith<$Res> {
+  factory _$$OnJoinChannelSuccessImplCopyWith(_$OnJoinChannelSuccessImpl value,
+          $Res Function(_$OnJoinChannelSuccessImpl) then) =
+      __$$OnJoinChannelSuccessImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnJoinChannelSuccessCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OnJoinChannelSuccess>
-    implements _$$_OnJoinChannelSuccessCopyWith<$Res> {
-  __$$_OnJoinChannelSuccessCopyWithImpl(_$_OnJoinChannelSuccess _value,
-      $Res Function(_$_OnJoinChannelSuccess) _then)
+class __$$OnJoinChannelSuccessImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OnJoinChannelSuccessImpl>
+    implements _$$OnJoinChannelSuccessImplCopyWith<$Res> {
+  __$$OnJoinChannelSuccessImplCopyWithImpl(_$OnJoinChannelSuccessImpl _value,
+      $Res Function(_$OnJoinChannelSuccessImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
-  const _$_OnJoinChannelSuccess();
+class _$OnJoinChannelSuccessImpl implements _OnJoinChannelSuccess {
+  const _$OnJoinChannelSuccessImpl();
 
   @override
   String toString() {
@@ -12636,7 +13263,8 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnJoinChannelSuccess);
+        (other.runtimeType == runtimeType &&
+            other is _$OnJoinChannelSuccessImpl);
   }
 
   @override
@@ -12654,6 +13282,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -12671,7 +13300,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -12706,6 +13335,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -12723,7 +13353,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -12757,6 +13387,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -12774,7 +13405,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -12813,6 +13444,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -12870,6 +13502,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -12920,6 +13553,7 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -12964,29 +13598,29 @@ class _$_OnJoinChannelSuccess implements _OnJoinChannelSuccess {
 }
 
 abstract class _OnJoinChannelSuccess implements MessagesState {
-  const factory _OnJoinChannelSuccess() = _$_OnJoinChannelSuccess;
+  const factory _OnJoinChannelSuccess() = _$OnJoinChannelSuccessImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnUserJoinedCopyWith<$Res> {
-  factory _$$_OnUserJoinedCopyWith(
-          _$_OnUserJoined value, $Res Function(_$_OnUserJoined) then) =
-      __$$_OnUserJoinedCopyWithImpl<$Res>;
+abstract class _$$OnUserJoinedImplCopyWith<$Res> {
+  factory _$$OnUserJoinedImplCopyWith(
+          _$OnUserJoinedImpl value, $Res Function(_$OnUserJoinedImpl) then) =
+      __$$OnUserJoinedImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnUserJoinedCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OnUserJoined>
-    implements _$$_OnUserJoinedCopyWith<$Res> {
-  __$$_OnUserJoinedCopyWithImpl(
-      _$_OnUserJoined _value, $Res Function(_$_OnUserJoined) _then)
+class __$$OnUserJoinedImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OnUserJoinedImpl>
+    implements _$$OnUserJoinedImplCopyWith<$Res> {
+  __$$OnUserJoinedImplCopyWithImpl(
+      _$OnUserJoinedImpl _value, $Res Function(_$OnUserJoinedImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnUserJoined implements _OnUserJoined {
-  const _$_OnUserJoined();
+class _$OnUserJoinedImpl implements _OnUserJoined {
+  const _$OnUserJoinedImpl();
 
   @override
   String toString() {
@@ -12996,7 +13630,7 @@ class _$_OnUserJoined implements _OnUserJoined {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnUserJoined);
+        (other.runtimeType == runtimeType && other is _$OnUserJoinedImpl);
   }
 
   @override
@@ -13014,6 +13648,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -13031,7 +13666,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -13066,6 +13701,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -13083,7 +13719,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -13117,6 +13753,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -13134,7 +13771,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -13173,6 +13810,7 @@ class _$_OnUserJoined implements _OnUserJoined {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -13230,6 +13868,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -13280,6 +13919,7 @@ class _$_OnUserJoined implements _OnUserJoined {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -13324,29 +13964,29 @@ class _$_OnUserJoined implements _OnUserJoined {
 }
 
 abstract class _OnUserJoined implements MessagesState {
-  const factory _OnUserJoined() = _$_OnUserJoined;
+  const factory _OnUserJoined() = _$OnUserJoinedImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnUserOfflineCopyWith<$Res> {
-  factory _$$_OnUserOfflineCopyWith(
-          _$_OnUserOffline value, $Res Function(_$_OnUserOffline) then) =
-      __$$_OnUserOfflineCopyWithImpl<$Res>;
+abstract class _$$OnUserOfflineImplCopyWith<$Res> {
+  factory _$$OnUserOfflineImplCopyWith(
+          _$OnUserOfflineImpl value, $Res Function(_$OnUserOfflineImpl) then) =
+      __$$OnUserOfflineImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnUserOfflineCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_OnUserOffline>
-    implements _$$_OnUserOfflineCopyWith<$Res> {
-  __$$_OnUserOfflineCopyWithImpl(
-      _$_OnUserOffline _value, $Res Function(_$_OnUserOffline) _then)
+class __$$OnUserOfflineImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$OnUserOfflineImpl>
+    implements _$$OnUserOfflineImplCopyWith<$Res> {
+  __$$OnUserOfflineImplCopyWithImpl(
+      _$OnUserOfflineImpl _value, $Res Function(_$OnUserOfflineImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnUserOffline implements _OnUserOffline {
-  const _$_OnUserOffline();
+class _$OnUserOfflineImpl implements _OnUserOffline {
+  const _$OnUserOfflineImpl();
 
   @override
   String toString() {
@@ -13356,7 +13996,7 @@ class _$_OnUserOffline implements _OnUserOffline {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_OnUserOffline);
+        (other.runtimeType == runtimeType && other is _$OnUserOfflineImpl);
   }
 
   @override
@@ -13374,6 +14014,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -13391,7 +14032,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -13426,6 +14067,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -13443,7 +14085,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -13477,6 +14119,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -13494,7 +14137,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -13533,6 +14176,7 @@ class _$_OnUserOffline implements _OnUserOffline {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -13590,6 +14234,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -13640,6 +14285,7 @@ class _$_OnUserOffline implements _OnUserOffline {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -13684,29 +14330,29 @@ class _$_OnUserOffline implements _OnUserOffline {
 }
 
 abstract class _OnUserOffline implements MessagesState {
-  const factory _OnUserOffline() = _$_OnUserOffline;
+  const factory _OnUserOffline() = _$OnUserOfflineImpl;
 }
 
 /// @nodoc
-abstract class _$$_JoinVoiceCallLoadingCopyWith<$Res> {
-  factory _$$_JoinVoiceCallLoadingCopyWith(_$_JoinVoiceCallLoading value,
-          $Res Function(_$_JoinVoiceCallLoading) then) =
-      __$$_JoinVoiceCallLoadingCopyWithImpl<$Res>;
+abstract class _$$JoinVoiceCallLoadingImplCopyWith<$Res> {
+  factory _$$JoinVoiceCallLoadingImplCopyWith(_$JoinVoiceCallLoadingImpl value,
+          $Res Function(_$JoinVoiceCallLoadingImpl) then) =
+      __$$JoinVoiceCallLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_JoinVoiceCallLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCallLoading>
-    implements _$$_JoinVoiceCallLoadingCopyWith<$Res> {
-  __$$_JoinVoiceCallLoadingCopyWithImpl(_$_JoinVoiceCallLoading _value,
-      $Res Function(_$_JoinVoiceCallLoading) _then)
+class __$$JoinVoiceCallLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$JoinVoiceCallLoadingImpl>
+    implements _$$JoinVoiceCallLoadingImplCopyWith<$Res> {
+  __$$JoinVoiceCallLoadingImplCopyWithImpl(_$JoinVoiceCallLoadingImpl _value,
+      $Res Function(_$JoinVoiceCallLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
-  const _$_JoinVoiceCallLoading();
+class _$JoinVoiceCallLoadingImpl implements _JoinVoiceCallLoading {
+  const _$JoinVoiceCallLoadingImpl();
 
   @override
   String toString() {
@@ -13716,7 +14362,8 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_JoinVoiceCallLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$JoinVoiceCallLoadingImpl);
   }
 
   @override
@@ -13734,6 +14381,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -13751,7 +14399,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -13786,6 +14434,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -13803,7 +14452,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -13837,6 +14486,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -13854,7 +14504,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -13893,6 +14543,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -13950,6 +14601,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -14000,6 +14652,7 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -14044,29 +14697,29 @@ class _$_JoinVoiceCallLoading implements _JoinVoiceCallLoading {
 }
 
 abstract class _JoinVoiceCallLoading implements MessagesState {
-  const factory _JoinVoiceCallLoading() = _$_JoinVoiceCallLoading;
+  const factory _JoinVoiceCallLoading() = _$JoinVoiceCallLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_JoinVoiceCallCopyWith<$Res> {
-  factory _$$_JoinVoiceCallCopyWith(
-          _$_JoinVoiceCall value, $Res Function(_$_JoinVoiceCall) then) =
-      __$$_JoinVoiceCallCopyWithImpl<$Res>;
+abstract class _$$JoinVoiceCallImplCopyWith<$Res> {
+  factory _$$JoinVoiceCallImplCopyWith(
+          _$JoinVoiceCallImpl value, $Res Function(_$JoinVoiceCallImpl) then) =
+      __$$JoinVoiceCallImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_JoinVoiceCallCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCall>
-    implements _$$_JoinVoiceCallCopyWith<$Res> {
-  __$$_JoinVoiceCallCopyWithImpl(
-      _$_JoinVoiceCall _value, $Res Function(_$_JoinVoiceCall) _then)
+class __$$JoinVoiceCallImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$JoinVoiceCallImpl>
+    implements _$$JoinVoiceCallImplCopyWith<$Res> {
+  __$$JoinVoiceCallImplCopyWithImpl(
+      _$JoinVoiceCallImpl _value, $Res Function(_$JoinVoiceCallImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_JoinVoiceCall implements _JoinVoiceCall {
-  const _$_JoinVoiceCall();
+class _$JoinVoiceCallImpl implements _JoinVoiceCall {
+  const _$JoinVoiceCallImpl();
 
   @override
   String toString() {
@@ -14076,7 +14729,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_JoinVoiceCall);
+        (other.runtimeType == runtimeType && other is _$JoinVoiceCallImpl);
   }
 
   @override
@@ -14094,6 +14747,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -14111,7 +14765,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -14146,6 +14800,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -14163,7 +14818,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -14197,6 +14852,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -14214,7 +14870,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -14253,6 +14909,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -14310,6 +14967,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -14360,6 +15018,7 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -14404,24 +15063,24 @@ class _$_JoinVoiceCall implements _JoinVoiceCall {
 }
 
 abstract class _JoinVoiceCall implements MessagesState {
-  const factory _JoinVoiceCall() = _$_JoinVoiceCall;
+  const factory _JoinVoiceCall() = _$JoinVoiceCallImpl;
 }
 
 /// @nodoc
-abstract class _$$_JoinVoiceCallErrorCopyWith<$Res> {
-  factory _$$_JoinVoiceCallErrorCopyWith(_$_JoinVoiceCallError value,
-          $Res Function(_$_JoinVoiceCallError) then) =
-      __$$_JoinVoiceCallErrorCopyWithImpl<$Res>;
+abstract class _$$JoinVoiceCallErrorImplCopyWith<$Res> {
+  factory _$$JoinVoiceCallErrorImplCopyWith(_$JoinVoiceCallErrorImpl value,
+          $Res Function(_$JoinVoiceCallErrorImpl) then) =
+      __$$JoinVoiceCallErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_JoinVoiceCallErrorCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_JoinVoiceCallError>
-    implements _$$_JoinVoiceCallErrorCopyWith<$Res> {
-  __$$_JoinVoiceCallErrorCopyWithImpl(
-      _$_JoinVoiceCallError _value, $Res Function(_$_JoinVoiceCallError) _then)
+class __$$JoinVoiceCallErrorImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$JoinVoiceCallErrorImpl>
+    implements _$$JoinVoiceCallErrorImplCopyWith<$Res> {
+  __$$JoinVoiceCallErrorImplCopyWithImpl(_$JoinVoiceCallErrorImpl _value,
+      $Res Function(_$JoinVoiceCallErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -14429,7 +15088,7 @@ class __$$_JoinVoiceCallErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_JoinVoiceCallError(
+    return _then(_$JoinVoiceCallErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -14440,8 +15099,8 @@ class __$$_JoinVoiceCallErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_JoinVoiceCallError implements _JoinVoiceCallError {
-  const _$_JoinVoiceCallError(this.errorMsg);
+class _$JoinVoiceCallErrorImpl implements _JoinVoiceCallError {
+  const _$JoinVoiceCallErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -14455,7 +15114,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_JoinVoiceCallError &&
+            other is _$JoinVoiceCallErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -14466,8 +15125,8 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_JoinVoiceCallErrorCopyWith<_$_JoinVoiceCallError> get copyWith =>
-      __$$_JoinVoiceCallErrorCopyWithImpl<_$_JoinVoiceCallError>(
+  _$$JoinVoiceCallErrorImplCopyWith<_$JoinVoiceCallErrorImpl> get copyWith =>
+      __$$JoinVoiceCallErrorImplCopyWithImpl<_$JoinVoiceCallErrorImpl>(
           this, _$identity);
 
   @override
@@ -14482,6 +15141,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -14499,7 +15159,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -14534,6 +15194,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -14551,7 +15212,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -14585,6 +15246,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -14602,7 +15264,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -14641,6 +15303,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -14698,6 +15361,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -14748,6 +15412,7 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -14793,34 +15458,35 @@ class _$_JoinVoiceCallError implements _JoinVoiceCallError {
 
 abstract class _JoinVoiceCallError implements MessagesState {
   const factory _JoinVoiceCallError(final String errorMsg) =
-      _$_JoinVoiceCallError;
+      _$JoinVoiceCallErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_JoinVoiceCallErrorCopyWith<_$_JoinVoiceCallError> get copyWith =>
+  _$$JoinVoiceCallErrorImplCopyWith<_$JoinVoiceCallErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_LeaveVoiceCallLoadingCopyWith<$Res> {
-  factory _$$_LeaveVoiceCallLoadingCopyWith(_$_LeaveVoiceCallLoading value,
-          $Res Function(_$_LeaveVoiceCallLoading) then) =
-      __$$_LeaveVoiceCallLoadingCopyWithImpl<$Res>;
+abstract class _$$LeaveVoiceCallLoadingImplCopyWith<$Res> {
+  factory _$$LeaveVoiceCallLoadingImplCopyWith(
+          _$LeaveVoiceCallLoadingImpl value,
+          $Res Function(_$LeaveVoiceCallLoadingImpl) then) =
+      __$$LeaveVoiceCallLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LeaveVoiceCallLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_LeaveVoiceCallLoading>
-    implements _$$_LeaveVoiceCallLoadingCopyWith<$Res> {
-  __$$_LeaveVoiceCallLoadingCopyWithImpl(_$_LeaveVoiceCallLoading _value,
-      $Res Function(_$_LeaveVoiceCallLoading) _then)
+class __$$LeaveVoiceCallLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$LeaveVoiceCallLoadingImpl>
+    implements _$$LeaveVoiceCallLoadingImplCopyWith<$Res> {
+  __$$LeaveVoiceCallLoadingImplCopyWithImpl(_$LeaveVoiceCallLoadingImpl _value,
+      $Res Function(_$LeaveVoiceCallLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
-  const _$_LeaveVoiceCallLoading();
+class _$LeaveVoiceCallLoadingImpl implements _LeaveVoiceCallLoading {
+  const _$LeaveVoiceCallLoadingImpl();
 
   @override
   String toString() {
@@ -14830,7 +15496,8 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LeaveVoiceCallLoading);
+        (other.runtimeType == runtimeType &&
+            other is _$LeaveVoiceCallLoadingImpl);
   }
 
   @override
@@ -14848,6 +15515,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -14865,7 +15533,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -14900,6 +15568,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -14917,7 +15586,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -14951,6 +15620,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -14968,7 +15638,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -15007,6 +15677,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -15064,6 +15735,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -15114,6 +15786,7 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -15158,29 +15831,29 @@ class _$_LeaveVoiceCallLoading implements _LeaveVoiceCallLoading {
 }
 
 abstract class _LeaveVoiceCallLoading implements MessagesState {
-  const factory _LeaveVoiceCallLoading() = _$_LeaveVoiceCallLoading;
+  const factory _LeaveVoiceCallLoading() = _$LeaveVoiceCallLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_LeaveVoiceCallCopyWith<$Res> {
-  factory _$$_LeaveVoiceCallCopyWith(
-          _$_LeaveVoiceCall value, $Res Function(_$_LeaveVoiceCall) then) =
-      __$$_LeaveVoiceCallCopyWithImpl<$Res>;
+abstract class _$$LeaveVoiceCallImplCopyWith<$Res> {
+  factory _$$LeaveVoiceCallImplCopyWith(_$LeaveVoiceCallImpl value,
+          $Res Function(_$LeaveVoiceCallImpl) then) =
+      __$$LeaveVoiceCallImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_LeaveVoiceCallCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_LeaveVoiceCall>
-    implements _$$_LeaveVoiceCallCopyWith<$Res> {
-  __$$_LeaveVoiceCallCopyWithImpl(
-      _$_LeaveVoiceCall _value, $Res Function(_$_LeaveVoiceCall) _then)
+class __$$LeaveVoiceCallImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$LeaveVoiceCallImpl>
+    implements _$$LeaveVoiceCallImplCopyWith<$Res> {
+  __$$LeaveVoiceCallImplCopyWithImpl(
+      _$LeaveVoiceCallImpl _value, $Res Function(_$LeaveVoiceCallImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_LeaveVoiceCall implements _LeaveVoiceCall {
-  const _$_LeaveVoiceCall();
+class _$LeaveVoiceCallImpl implements _LeaveVoiceCall {
+  const _$LeaveVoiceCallImpl();
 
   @override
   String toString() {
@@ -15190,7 +15863,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_LeaveVoiceCall);
+        (other.runtimeType == runtimeType && other is _$LeaveVoiceCallImpl);
   }
 
   @override
@@ -15208,6 +15881,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -15225,7 +15899,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -15260,6 +15934,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -15277,7 +15952,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -15311,6 +15986,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -15328,7 +16004,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -15367,6 +16043,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -15424,6 +16101,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -15474,6 +16152,7 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -15518,29 +16197,29 @@ class _$_LeaveVoiceCall implements _LeaveVoiceCall {
 }
 
 abstract class _LeaveVoiceCall implements MessagesState {
-  const factory _LeaveVoiceCall() = _$_LeaveVoiceCall;
+  const factory _LeaveVoiceCall() = _$LeaveVoiceCallImpl;
 }
 
 /// @nodoc
-abstract class _$$_ScrollDownLoadingCopyWith<$Res> {
-  factory _$$_ScrollDownLoadingCopyWith(_$_ScrollDownLoading value,
-          $Res Function(_$_ScrollDownLoading) then) =
-      __$$_ScrollDownLoadingCopyWithImpl<$Res>;
+abstract class _$$ScrollDownLoadingImplCopyWith<$Res> {
+  factory _$$ScrollDownLoadingImplCopyWith(_$ScrollDownLoadingImpl value,
+          $Res Function(_$ScrollDownLoadingImpl) then) =
+      __$$ScrollDownLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ScrollDownLoadingCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_ScrollDownLoading>
-    implements _$$_ScrollDownLoadingCopyWith<$Res> {
-  __$$_ScrollDownLoadingCopyWithImpl(
-      _$_ScrollDownLoading _value, $Res Function(_$_ScrollDownLoading) _then)
+class __$$ScrollDownLoadingImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$ScrollDownLoadingImpl>
+    implements _$$ScrollDownLoadingImplCopyWith<$Res> {
+  __$$ScrollDownLoadingImplCopyWithImpl(_$ScrollDownLoadingImpl _value,
+      $Res Function(_$ScrollDownLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ScrollDownLoading implements _ScrollDownLoading {
-  const _$_ScrollDownLoading();
+class _$ScrollDownLoadingImpl implements _ScrollDownLoading {
+  const _$ScrollDownLoadingImpl();
 
   @override
   String toString() {
@@ -15550,7 +16229,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ScrollDownLoading);
+        (other.runtimeType == runtimeType && other is _$ScrollDownLoadingImpl);
   }
 
   @override
@@ -15568,6 +16247,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -15585,7 +16265,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -15620,6 +16300,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -15637,7 +16318,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -15671,6 +16352,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -15688,7 +16370,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -15727,6 +16409,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -15784,6 +16467,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -15834,6 +16518,7 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -15878,29 +16563,29 @@ class _$_ScrollDownLoading implements _ScrollDownLoading {
 }
 
 abstract class _ScrollDownLoading implements MessagesState {
-  const factory _ScrollDownLoading() = _$_ScrollDownLoading;
+  const factory _ScrollDownLoading() = _$ScrollDownLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_ScrollDownCopyWith<$Res> {
-  factory _$$_ScrollDownCopyWith(
-          _$_ScrollDown value, $Res Function(_$_ScrollDown) then) =
-      __$$_ScrollDownCopyWithImpl<$Res>;
+abstract class _$$ScrollDownImplCopyWith<$Res> {
+  factory _$$ScrollDownImplCopyWith(
+          _$ScrollDownImpl value, $Res Function(_$ScrollDownImpl) then) =
+      __$$ScrollDownImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_ScrollDownCopyWithImpl<$Res>
-    extends _$MessagesStateCopyWithImpl<$Res, _$_ScrollDown>
-    implements _$$_ScrollDownCopyWith<$Res> {
-  __$$_ScrollDownCopyWithImpl(
-      _$_ScrollDown _value, $Res Function(_$_ScrollDown) _then)
+class __$$ScrollDownImplCopyWithImpl<$Res>
+    extends _$MessagesStateCopyWithImpl<$Res, _$ScrollDownImpl>
+    implements _$$ScrollDownImplCopyWith<$Res> {
+  __$$ScrollDownImplCopyWithImpl(
+      _$ScrollDownImpl _value, $Res Function(_$ScrollDownImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_ScrollDown implements _ScrollDown {
-  const _$_ScrollDown();
+class _$ScrollDownImpl implements _ScrollDown {
+  const _$ScrollDownImpl();
 
   @override
   String toString() {
@@ -15910,7 +16595,7 @@ class _$_ScrollDown implements _ScrollDown {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_ScrollDown);
+        (other.runtimeType == runtimeType && other is _$ScrollDownImpl);
   }
 
   @override
@@ -15928,6 +16613,7 @@ class _$_ScrollDown implements _ScrollDown {
     required TResult Function() createVideosThumbnails,
     required TResult Function() getMessagesLoading,
     required TResult Function(List<MessageModel> messages) getMessages,
+    required TResult Function() receiveMessage,
     required TResult Function() getUserLoading,
     required TResult Function() getUser,
     required TResult Function(String errorMsg) getMessagesError,
@@ -15945,7 +16631,7 @@ class _$_ScrollDown implements _ScrollDown {
     required TResult Function() openDocMessageLoading,
     required TResult Function() openDocMessage,
     required TResult Function(String errorMsg) openDocMessageError,
-    required TResult Function() deleteMessageLoading,
+    required TResult Function(String messageId) deleteMessageLoading,
     required TResult Function() deleteMessage,
     required TResult Function(String errorMsg) deleteMessageError,
     required TResult Function(CallType callType) generateTokenLoading,
@@ -15980,6 +16666,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult? Function()? createVideosThumbnails,
     TResult? Function()? getMessagesLoading,
     TResult? Function(List<MessageModel> messages)? getMessages,
+    TResult? Function()? receiveMessage,
     TResult? Function()? getUserLoading,
     TResult? Function()? getUser,
     TResult? Function(String errorMsg)? getMessagesError,
@@ -15997,7 +16684,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult? Function()? openDocMessageLoading,
     TResult? Function()? openDocMessage,
     TResult? Function(String errorMsg)? openDocMessageError,
-    TResult? Function()? deleteMessageLoading,
+    TResult? Function(String messageId)? deleteMessageLoading,
     TResult? Function()? deleteMessage,
     TResult? Function(String errorMsg)? deleteMessageError,
     TResult? Function(CallType callType)? generateTokenLoading,
@@ -16031,6 +16718,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult Function()? createVideosThumbnails,
     TResult Function()? getMessagesLoading,
     TResult Function(List<MessageModel> messages)? getMessages,
+    TResult Function()? receiveMessage,
     TResult Function()? getUserLoading,
     TResult Function()? getUser,
     TResult Function(String errorMsg)? getMessagesError,
@@ -16048,7 +16736,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult Function()? openDocMessageLoading,
     TResult Function()? openDocMessage,
     TResult Function(String errorMsg)? openDocMessageError,
-    TResult Function()? deleteMessageLoading,
+    TResult Function(String messageId)? deleteMessageLoading,
     TResult Function()? deleteMessage,
     TResult Function(String errorMsg)? deleteMessageError,
     TResult Function(CallType callType)? generateTokenLoading,
@@ -16087,6 +16775,7 @@ class _$_ScrollDown implements _ScrollDown {
         createVideosThumbnails,
     required TResult Function(_GetMessagesLoading value) getMessagesLoading,
     required TResult Function(_GetMessages value) getMessages,
+    required TResult Function(_ReceiveMessage value) receiveMessage,
     required TResult Function(_GetUserLoading value) getUserLoading,
     required TResult Function(_GetUser value) getUser,
     required TResult Function(_GetMessagesError value) getMessagesError,
@@ -16144,6 +16833,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult? Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult? Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult? Function(_GetMessages value)? getMessages,
+    TResult? Function(_ReceiveMessage value)? receiveMessage,
     TResult? Function(_GetUserLoading value)? getUserLoading,
     TResult? Function(_GetUser value)? getUser,
     TResult? Function(_GetMessagesError value)? getMessagesError,
@@ -16194,6 +16884,7 @@ class _$_ScrollDown implements _ScrollDown {
     TResult Function(_CreateVideosThumbnails value)? createVideosThumbnails,
     TResult Function(_GetMessagesLoading value)? getMessagesLoading,
     TResult Function(_GetMessages value)? getMessages,
+    TResult Function(_ReceiveMessage value)? receiveMessage,
     TResult Function(_GetUserLoading value)? getUserLoading,
     TResult Function(_GetUser value)? getUser,
     TResult Function(_GetMessagesError value)? getMessagesError,
@@ -16238,5 +16929,5 @@ class _$_ScrollDown implements _ScrollDown {
 }
 
 abstract class _ScrollDown implements MessagesState {
-  const factory _ScrollDown() = _$_ScrollDown;
+  const factory _ScrollDown() = _$ScrollDownImpl;
 }

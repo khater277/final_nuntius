@@ -6,8 +6,9 @@ part of 'contact_story_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ContactStoryModel _$$_ContactStoryModelFromJson(Map<String, dynamic> json) =>
-    _$_ContactStoryModel(
+_$ContactStoryModelImpl _$$ContactStoryModelImplFromJson(
+        Map<String, dynamic> json) =>
+    _$ContactStoryModelImpl(
       user: json['user'] == null
           ? null
           : UserData.fromJson(json['user'] as Map<String, dynamic>),
@@ -19,8 +20,8 @@ _$_ContactStoryModel _$$_ContactStoryModelFromJson(Map<String, dynamic> json) =>
           : StoryModel.fromJson(json['lastStoryModel'] as Map<String, dynamic>),
     );
 
-Map<String, dynamic> _$$_ContactStoryModelToJson(
-        _$_ContactStoryModel instance) =>
+Map<String, dynamic> _$$ContactStoryModelImplToJson(
+        _$ContactStoryModelImpl instance) =>
     <String, dynamic>{
       'user': instance.user,
       'stories': instance.stories,

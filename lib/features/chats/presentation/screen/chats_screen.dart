@@ -1,10 +1,11 @@
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/no_items_founded.dart';
 import 'package:final_nuntius/core/shared_widgets/sliver_scrollable_view.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
+import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
-import 'package:final_nuntius/features/chats/presentation/widgets/chat_builder.dart';
+import 'package:final_nuntius/features/chats/presentation/widgets/chats/chat_items.dart';
+import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,6 +20,7 @@ class _ChatsScreenState extends State<ChatsScreen> {
   @override
   void initState() {
     ChatsCubit.get(context).getChats(context);
+    ChatsCubit.get(context).initChats(users: HomeCubit.get(context).users);
 
     super.initState();
   }
@@ -27,13 +29,11 @@ class _ChatsScreenState extends State<ChatsScreen> {
   Widget build(BuildContext context) {
     return BlocConsumer<ChatsCubit, ChatsState>(
       listener: (context, state) {
-        // state.maybeWhen(
-        //   getChats: (lastMessages, users) {
-        //     this.lastMessages = lastMessages;
-        //     this.users = users;
-        //   },
-        //   orElse: () {},
-        // );
+        state.maybeWhen(
+          getChatsError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
+          orElse: () {},
+        );
       },
       builder: (context, state) {
         final ChatsCubit cubit = ChatsCubit.get(context);
@@ -48,26 +48,9 @@ class _ChatsScreenState extends State<ChatsScreen> {
                         "no chats founded , start now new chats with your friends.",
                     icon: IconBroken.Chat,
                   )
-                : Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Flexible(
-                        fit: FlexFit.loose,
-                        child: ListView.separated(
-                            shrinkWrap: true,
-                            physics: const NeverScrollableScrollPhysics(),
-                            itemBuilder: (context, index) {
-                              return ChatBuilder(
-                                user: cubit.users[index],
-                                lastMessage: cubit.lastMessages[index],
-                              );
-                            },
-                            separatorBuilder: (context, index) => Divider(
-                                  color: AppColors.grey.withOpacity(0.08),
-                                ),
-                            itemCount: cubit.users.length),
-                      )
-                    ],
+                : ChatsItems(
+                    users: cubit.users,
+                    lastMessages: cubit.lastMessages,
                   ),
           ),
         );

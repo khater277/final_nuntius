@@ -111,10 +111,11 @@ class _$UserDataCopyWithImpl<$Res, $Val extends UserData>
 }
 
 /// @nodoc
-abstract class _$$_UserDataCopyWith<$Res> implements $UserDataCopyWith<$Res> {
-  factory _$$_UserDataCopyWith(
-          _$_UserData value, $Res Function(_$_UserData) then) =
-      __$$_UserDataCopyWithImpl<$Res>;
+abstract class _$$UserDataImplCopyWith<$Res>
+    implements $UserDataCopyWith<$Res> {
+  factory _$$UserDataImplCopyWith(
+          _$UserDataImpl value, $Res Function(_$UserDataImpl) then) =
+      __$$UserDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -128,11 +129,11 @@ abstract class _$$_UserDataCopyWith<$Res> implements $UserDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_UserDataCopyWithImpl<$Res>
-    extends _$UserDataCopyWithImpl<$Res, _$_UserData>
-    implements _$$_UserDataCopyWith<$Res> {
-  __$$_UserDataCopyWithImpl(
-      _$_UserData _value, $Res Function(_$_UserData) _then)
+class __$$UserDataImplCopyWithImpl<$Res>
+    extends _$UserDataCopyWithImpl<$Res, _$UserDataImpl>
+    implements _$$UserDataImplCopyWith<$Res> {
+  __$$UserDataImplCopyWithImpl(
+      _$UserDataImpl _value, $Res Function(_$UserDataImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -146,7 +147,7 @@ class __$$_UserDataCopyWithImpl<$Res>
     Object? inCall = freezed,
     Object? contacts = freezed,
   }) {
-    return _then(_$_UserData(
+    return _then(_$UserDataImpl(
       token: freezed == token
           ? _value.token
           : token // ignore: cast_nullable_to_non_nullable
@@ -181,8 +182,8 @@ class __$$_UserDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_UserData implements _UserData {
-  _$_UserData(
+class _$UserDataImpl implements _UserData {
+  _$UserDataImpl(
       {@HiveField(0) this.token,
       @HiveField(1) this.name,
       @HiveField(2) this.uId,
@@ -192,8 +193,8 @@ class _$_UserData implements _UserData {
       @HiveField(6) final Map<String, String>? contacts})
       : _contacts = contacts;
 
-  factory _$_UserData.fromJson(Map<String, dynamic> json) =>
-      _$$_UserDataFromJson(json);
+  factory _$UserDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$UserDataImplFromJson(json);
 
   @override
   @HiveField(0)
@@ -233,7 +234,7 @@ class _$_UserData implements _UserData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_UserData &&
+            other is _$UserDataImpl &&
             (identical(other.token, token) || other.token == token) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.uId, uId) || other.uId == uId) &&
@@ -251,12 +252,12 @@ class _$_UserData implements _UserData {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_UserDataCopyWith<_$_UserData> get copyWith =>
-      __$$_UserDataCopyWithImpl<_$_UserData>(this, _$identity);
+  _$$UserDataImplCopyWith<_$UserDataImpl> get copyWith =>
+      __$$UserDataImplCopyWithImpl<_$UserDataImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UserDataToJson(
+    return _$$UserDataImplToJson(
       this,
     );
   }
@@ -270,9 +271,10 @@ abstract class _UserData implements UserData {
       @HiveField(3) final String? phone,
       @HiveField(4) final String? image,
       @HiveField(5) final bool? inCall,
-      @HiveField(6) final Map<String, String>? contacts}) = _$_UserData;
+      @HiveField(6) final Map<String, String>? contacts}) = _$UserDataImpl;
 
-  factory _UserData.fromJson(Map<String, dynamic> json) = _$_UserData.fromJson;
+  factory _UserData.fromJson(Map<String, dynamic> json) =
+      _$UserDataImpl.fromJson;
 
   @override
   @HiveField(0)
@@ -297,6 +299,6 @@ abstract class _UserData implements UserData {
   Map<String, String>? get contacts;
   @override
   @JsonKey(ignore: true)
-  _$$_UserDataCopyWith<_$_UserData> get copyWith =>
+  _$$UserDataImplCopyWith<_$UserDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

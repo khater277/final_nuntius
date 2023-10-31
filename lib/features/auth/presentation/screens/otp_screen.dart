@@ -23,11 +23,8 @@ class OtpScreen extends StatelessWidget {
             context: context,
             screen: const SetImageScreen(),
           ),
-          errorState: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          errorState: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           orElse: () {},
         );
       },

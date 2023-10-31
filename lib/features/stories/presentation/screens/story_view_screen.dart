@@ -1,7 +1,6 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
 import 'package:final_nuntius/features/stories/data/models/story_model/story_model.dart';
@@ -43,11 +42,8 @@ class _StoryViewScreenState extends State<StoryViewScreen> {
       listener: (context, state) {
         state.maybeWhen(
           replyToStory: () => Go.back(context: context),
-          replyToStoryError: (errorMsg) => showSnackBar(
-            context: context,
-            message: errorMsg,
-            color: AppColors.red,
-          ),
+          replyToStoryError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           orElse: () {},
         );
       },

@@ -120,10 +120,11 @@ class _$CallDataCopyWithImpl<$Res, $Val extends CallData>
 }
 
 /// @nodoc
-abstract class _$$_CallDataCopyWith<$Res> implements $CallDataCopyWith<$Res> {
-  factory _$$_CallDataCopyWith(
-          _$_CallData value, $Res Function(_$_CallData) then) =
-      __$$_CallDataCopyWithImpl<$Res>;
+abstract class _$$CallDataImplCopyWith<$Res>
+    implements $CallDataCopyWith<$Res> {
+  factory _$$CallDataImplCopyWith(
+          _$CallDataImpl value, $Res Function(_$CallDataImpl) then) =
+      __$$CallDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -139,11 +140,11 @@ abstract class _$$_CallDataCopyWith<$Res> implements $CallDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_CallDataCopyWithImpl<$Res>
-    extends _$CallDataCopyWithImpl<$Res, _$_CallData>
-    implements _$$_CallDataCopyWith<$Res> {
-  __$$_CallDataCopyWithImpl(
-      _$_CallData _value, $Res Function(_$_CallData) _then)
+class __$$CallDataImplCopyWithImpl<$Res>
+    extends _$CallDataCopyWithImpl<$Res, _$CallDataImpl>
+    implements _$$CallDataImplCopyWith<$Res> {
+  __$$CallDataImplCopyWithImpl(
+      _$CallDataImpl _value, $Res Function(_$CallDataImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -159,7 +160,7 @@ class __$$_CallDataCopyWithImpl<$Res>
     Object? phoneNumber = freezed,
     Object? clickAction = freezed,
   }) {
-    return _then(_$_CallData(
+    return _then(_$CallDataImpl(
       type: freezed == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -202,8 +203,8 @@ class __$$_CallDataCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_CallData implements _CallData {
-  _$_CallData(
+class _$CallDataImpl implements _CallData {
+  _$CallDataImpl(
       {this.type,
       this.callType,
       this.callId,
@@ -214,8 +215,8 @@ class _$_CallData implements _CallData {
       this.phoneNumber,
       @JsonKey(name: 'click_action') this.clickAction});
 
-  factory _$_CallData.fromJson(Map<String, dynamic> json) =>
-      _$$_CallDataFromJson(json);
+  factory _$CallDataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$CallDataImplFromJson(json);
 
   @override
   final String? type;
@@ -247,7 +248,7 @@ class _$_CallData implements _CallData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_CallData &&
+            other is _$CallDataImpl &&
             (identical(other.type, type) || other.type == type) &&
             (identical(other.callType, callType) ||
                 other.callType == callType) &&
@@ -273,12 +274,12 @@ class _$_CallData implements _CallData {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_CallDataCopyWith<_$_CallData> get copyWith =>
-      __$$_CallDataCopyWithImpl<_$_CallData>(this, _$identity);
+  _$$CallDataImplCopyWith<_$CallDataImpl> get copyWith =>
+      __$$CallDataImplCopyWithImpl<_$CallDataImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CallDataToJson(
+    return _$$CallDataImplToJson(
       this,
     );
   }
@@ -286,17 +287,19 @@ class _$_CallData implements _CallData {
 
 abstract class _CallData implements CallData {
   factory _CallData(
-      {final String? type,
-      final String? callType,
-      final String? callId,
-      final String? token,
-      final String? userToken,
-      final String? channelName,
-      @JsonKey(name: 'senderID') final String? senderId,
-      final String? phoneNumber,
-      @JsonKey(name: 'click_action') final String? clickAction}) = _$_CallData;
+          {final String? type,
+          final String? callType,
+          final String? callId,
+          final String? token,
+          final String? userToken,
+          final String? channelName,
+          @JsonKey(name: 'senderID') final String? senderId,
+          final String? phoneNumber,
+          @JsonKey(name: 'click_action') final String? clickAction}) =
+      _$CallDataImpl;
 
-  factory _CallData.fromJson(Map<String, dynamic> json) = _$_CallData.fromJson;
+  factory _CallData.fromJson(Map<String, dynamic> json) =
+      _$CallDataImpl.fromJson;
 
   @override
   String? get type;
@@ -320,6 +323,6 @@ abstract class _CallData implements CallData {
   String? get clickAction;
   @override
   @JsonKey(ignore: true)
-  _$$_CallDataCopyWith<_$_CallData> get copyWith =>
+  _$$CallDataImplCopyWith<_$CallDataImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

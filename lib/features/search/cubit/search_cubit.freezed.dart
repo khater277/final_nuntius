@@ -97,24 +97,25 @@ class _$SearchStateCopyWithImpl<$Res, $Val extends SearchState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial implements _Initial {
-  const _$_Initial();
+class _$InitialImpl implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString() {
@@ -124,7 +125,7 @@ class _$_Initial implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -216,29 +217,29 @@ class _$_Initial implements _Initial {
 }
 
 abstract class _Initial implements SearchState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_InitControllersCopyWith<$Res> {
-  factory _$$_InitControllersCopyWith(
-          _$_InitControllers value, $Res Function(_$_InitControllers) then) =
-      __$$_InitControllersCopyWithImpl<$Res>;
+abstract class _$$InitControllersImplCopyWith<$Res> {
+  factory _$$InitControllersImplCopyWith(_$InitControllersImpl value,
+          $Res Function(_$InitControllersImpl) then) =
+      __$$InitControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitControllersCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_InitControllers>
-    implements _$$_InitControllersCopyWith<$Res> {
-  __$$_InitControllersCopyWithImpl(
-      _$_InitControllers _value, $Res Function(_$_InitControllers) _then)
+class __$$InitControllersImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$InitControllersImpl>
+    implements _$$InitControllersImplCopyWith<$Res> {
+  __$$InitControllersImplCopyWithImpl(
+      _$InitControllersImpl _value, $Res Function(_$InitControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_InitControllers implements _InitControllers {
-  const _$_InitControllers();
+class _$InitControllersImpl implements _InitControllers {
+  const _$InitControllersImpl();
 
   @override
   String toString() {
@@ -248,7 +249,7 @@ class _$_InitControllers implements _InitControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InitControllers);
+        (other.runtimeType == runtimeType && other is _$InitControllersImpl);
   }
 
   @override
@@ -340,29 +341,29 @@ class _$_InitControllers implements _InitControllers {
 }
 
 abstract class _InitControllers implements SearchState {
-  const factory _InitControllers() = _$_InitControllers;
+  const factory _InitControllers() = _$InitControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_DisposeControllersCopyWith<$Res> {
-  factory _$$_DisposeControllersCopyWith(_$_DisposeControllers value,
-          $Res Function(_$_DisposeControllers) then) =
-      __$$_DisposeControllersCopyWithImpl<$Res>;
+abstract class _$$DisposeControllersImplCopyWith<$Res> {
+  factory _$$DisposeControllersImplCopyWith(_$DisposeControllersImpl value,
+          $Res Function(_$DisposeControllersImpl) then) =
+      __$$DisposeControllersImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_DisposeControllersCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_DisposeControllers>
-    implements _$$_DisposeControllersCopyWith<$Res> {
-  __$$_DisposeControllersCopyWithImpl(
-      _$_DisposeControllers _value, $Res Function(_$_DisposeControllers) _then)
+class __$$DisposeControllersImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$DisposeControllersImpl>
+    implements _$$DisposeControllersImplCopyWith<$Res> {
+  __$$DisposeControllersImplCopyWithImpl(_$DisposeControllersImpl _value,
+      $Res Function(_$DisposeControllersImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_DisposeControllers implements _DisposeControllers {
-  const _$_DisposeControllers();
+class _$DisposeControllersImpl implements _DisposeControllers {
+  const _$DisposeControllersImpl();
 
   @override
   String toString() {
@@ -372,7 +373,7 @@ class _$_DisposeControllers implements _DisposeControllers {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_DisposeControllers);
+        (other.runtimeType == runtimeType && other is _$DisposeControllersImpl);
   }
 
   @override
@@ -464,32 +465,33 @@ class _$_DisposeControllers implements _DisposeControllers {
 }
 
 abstract class _DisposeControllers implements SearchState {
-  const factory _DisposeControllers() = _$_DisposeControllers;
+  const factory _DisposeControllers() = _$DisposeControllersImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnChangeSearchTextFieldLoadingCopyWith<$Res> {
-  factory _$$_OnChangeSearchTextFieldLoadingCopyWith(
-          _$_OnChangeSearchTextFieldLoading value,
-          $Res Function(_$_OnChangeSearchTextFieldLoading) then) =
-      __$$_OnChangeSearchTextFieldLoadingCopyWithImpl<$Res>;
+abstract class _$$OnChangeSearchTextFieldLoadingImplCopyWith<$Res> {
+  factory _$$OnChangeSearchTextFieldLoadingImplCopyWith(
+          _$OnChangeSearchTextFieldLoadingImpl value,
+          $Res Function(_$OnChangeSearchTextFieldLoadingImpl) then) =
+      __$$OnChangeSearchTextFieldLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnChangeSearchTextFieldLoadingCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_OnChangeSearchTextFieldLoading>
-    implements _$$_OnChangeSearchTextFieldLoadingCopyWith<$Res> {
-  __$$_OnChangeSearchTextFieldLoadingCopyWithImpl(
-      _$_OnChangeSearchTextFieldLoading _value,
-      $Res Function(_$_OnChangeSearchTextFieldLoading) _then)
+class __$$OnChangeSearchTextFieldLoadingImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res,
+        _$OnChangeSearchTextFieldLoadingImpl>
+    implements _$$OnChangeSearchTextFieldLoadingImplCopyWith<$Res> {
+  __$$OnChangeSearchTextFieldLoadingImplCopyWithImpl(
+      _$OnChangeSearchTextFieldLoadingImpl _value,
+      $Res Function(_$OnChangeSearchTextFieldLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnChangeSearchTextFieldLoading
+class _$OnChangeSearchTextFieldLoadingImpl
     implements _OnChangeSearchTextFieldLoading {
-  const _$_OnChangeSearchTextFieldLoading();
+  const _$OnChangeSearchTextFieldLoadingImpl();
 
   @override
   String toString() {
@@ -500,7 +502,7 @@ class _$_OnChangeSearchTextFieldLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_OnChangeSearchTextFieldLoading);
+            other is _$OnChangeSearchTextFieldLoadingImpl);
   }
 
   @override
@@ -593,29 +595,31 @@ class _$_OnChangeSearchTextFieldLoading
 
 abstract class _OnChangeSearchTextFieldLoading implements SearchState {
   const factory _OnChangeSearchTextFieldLoading() =
-      _$_OnChangeSearchTextFieldLoading;
+      _$OnChangeSearchTextFieldLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_OnChangeSearchTextFieldCopyWith<$Res> {
-  factory _$$_OnChangeSearchTextFieldCopyWith(_$_OnChangeSearchTextField value,
-          $Res Function(_$_OnChangeSearchTextField) then) =
-      __$$_OnChangeSearchTextFieldCopyWithImpl<$Res>;
+abstract class _$$OnChangeSearchTextFieldImplCopyWith<$Res> {
+  factory _$$OnChangeSearchTextFieldImplCopyWith(
+          _$OnChangeSearchTextFieldImpl value,
+          $Res Function(_$OnChangeSearchTextFieldImpl) then) =
+      __$$OnChangeSearchTextFieldImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_OnChangeSearchTextFieldCopyWithImpl<$Res>
-    extends _$SearchStateCopyWithImpl<$Res, _$_OnChangeSearchTextField>
-    implements _$$_OnChangeSearchTextFieldCopyWith<$Res> {
-  __$$_OnChangeSearchTextFieldCopyWithImpl(_$_OnChangeSearchTextField _value,
-      $Res Function(_$_OnChangeSearchTextField) _then)
+class __$$OnChangeSearchTextFieldImplCopyWithImpl<$Res>
+    extends _$SearchStateCopyWithImpl<$Res, _$OnChangeSearchTextFieldImpl>
+    implements _$$OnChangeSearchTextFieldImplCopyWith<$Res> {
+  __$$OnChangeSearchTextFieldImplCopyWithImpl(
+      _$OnChangeSearchTextFieldImpl _value,
+      $Res Function(_$OnChangeSearchTextFieldImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_OnChangeSearchTextField implements _OnChangeSearchTextField {
-  const _$_OnChangeSearchTextField();
+class _$OnChangeSearchTextFieldImpl implements _OnChangeSearchTextField {
+  const _$OnChangeSearchTextFieldImpl();
 
   @override
   String toString() {
@@ -626,7 +630,7 @@ class _$_OnChangeSearchTextField implements _OnChangeSearchTextField {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_OnChangeSearchTextField);
+            other is _$OnChangeSearchTextFieldImpl);
   }
 
   @override
@@ -718,5 +722,5 @@ class _$_OnChangeSearchTextField implements _OnChangeSearchTextField {
 }
 
 abstract class _OnChangeSearchTextField implements SearchState {
-  const factory _OnChangeSearchTextField() = _$_OnChangeSearchTextField;
+  const factory _OnChangeSearchTextField() = _$OnChangeSearchTextFieldImpl;
 }

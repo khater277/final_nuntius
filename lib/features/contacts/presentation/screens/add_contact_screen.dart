@@ -1,10 +1,12 @@
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/contacts/cubit/contacts_cubit.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_app_bar.dart';
-import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_text_field_and_title.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_company_text_field.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_email_text_field.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_first_and_last_names_text_fields.dart';
+import 'package:final_nuntius/features/contacts/presentation/widgets/add_contact/add_contact_phone_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -41,13 +43,8 @@ class _AddContactsScreenState extends State<AddContactsScreen> {
                 "${ContactsCubit.get(context).lastNameController!.text} added to your contacts",
             color: AppColors.blue,
           ),
-          addContactError: (errorMsg) {
-            showSnackBar(
-              context: context,
-              message: errorMsg,
-              color: AppColors.red,
-            );
-          },
+          addContactError: (errorMsg) =>
+              errorSnackBar(context: context, errorMsg: errorMsg),
           orElse: () {},
         );
       },
@@ -63,73 +60,19 @@ class _AddContactsScreenState extends State<AddContactsScreen> {
                   child: Column(
                     children: [
                       SizedBox(height: AppHeight.h10),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: AddContactTextFieldAndTitle(
-                              controller: cubit.firstNameController!,
-                              title: "First name",
-                              hint: 'first name..',
-                              inputType: TextInputType.name,
-                              icon: IconBroken.Profile,
-                              validator: (value) {
-                                if (cubit.firstNameController!.text.isEmpty) {
-                                  return """can't be empty""";
-                                }
-                                return null;
-                              },
-                            ),
-                          ),
-                          SizedBox(width: AppWidth.w10),
-                          Expanded(
-                            child: AddContactTextFieldAndTitle(
-                              controller: cubit.lastNameController!,
-                              title: "Last name",
-                              hint: 'last name..',
-                              inputType: TextInputType.name,
-                              icon: IconBroken.Profile,
-                              validator: (value) {
-                                if (cubit.lastNameController!.text.isEmpty) {
-                                  return """can't be empty""";
-                                }
-                                return null;
-                              },
-                            ),
-                          ),
-                        ],
+                      AddContactFirstAndLastNamesTextFields(
+                        firstNameController: cubit.firstNameController!,
+                        lastNameController: cubit.lastNameController!,
                       ),
                       SizedBox(height: AppHeight.h15),
-                      AddContactTextFieldAndTitle(
-                        controller: cubit.phoneController!,
-                        title: 'Phone number',
-                        hint: 'phone number..',
-                        inputType: TextInputType.phone,
-                        icon: IconBroken.Call,
-                        validator: (value) {
-                          if (cubit.phoneController!.text.isEmpty) {
-                            return """can't be empty""";
-                          } else if (cubit.phoneController!.text.length != 11) {
-                            return "invalid phone number";
-                          }
-                          return null;
-                        },
-                      ),
+                      AddContactPhoneTextField(
+                          phoneController: cubit.phoneController!),
                       SizedBox(height: AppHeight.h15),
-                      AddContactTextFieldAndTitle(
-                        controller: cubit.emailController!,
-                        title: 'Email',
-                        hint: 'email address..',
-                        inputType: TextInputType.emailAddress,
-                        icon: IconBroken.Message,
-                      ),
+                      AddContactEmailTextField(
+                          emailController: cubit.emailController!),
                       SizedBox(height: AppHeight.h15),
-                      AddContactTextFieldAndTitle(
-                        controller: cubit.companyController!,
-                        title: 'Company',
-                        hint: 'company..',
-                        inputType: TextInputType.text,
-                        icon: IconBroken.Work,
-                      ),
+                      AddContactCompanyTextField(
+                          companyController: cubit.companyController!),
                     ],
                   ),
                 ),

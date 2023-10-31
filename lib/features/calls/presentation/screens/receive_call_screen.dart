@@ -9,8 +9,8 @@ import 'package:final_nuntius/core/utils/app_fonts.dart';
 import 'package:final_nuntius/core/utils/app_sounds.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/calls/cubit/calls_cubit.dart';
-import 'package:final_nuntius/features/calls/presentation/widgets/recieve_call/accept_button.dart';
-import 'package:final_nuntius/features/calls/presentation/widgets/recieve_call/cancel_button.dart';
+import 'package:final_nuntius/features/calls/presentation/widgets/receive_call/accept_button.dart';
+import 'package:final_nuntius/features/calls/presentation/widgets/receive_call/cancel_button.dart';
 import 'package:final_nuntius/features/calls/presentation/widgets/voice_call/call_profile_image.dart';
 import 'package:final_nuntius/features/calls/presentation/widgets/voice_call/call_status_text.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
@@ -58,10 +58,11 @@ class _ReceiveCallScreenState extends State<ReceiveCallScreen> {
     });
 
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
-      print("ASSSSSSSSSSSSSSSSSSSSSd");
       if (message.data['type'] == 'cancel-call' &&
           message.data['phoneNumber'] == widget.phoneNumber) {
-        Go.back(context: context);
+        if (mounted) {
+          Go.back(context: context);
+        }
       }
     });
 
@@ -110,12 +111,13 @@ class _ReceiveCallScreenState extends State<ReceiveCallScreen> {
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         CancelButton(
-                          callType: CallType.video,
+                          callType: widget.callType,
                           userToken: widget.userToken,
                         ),
                         AcceptButton(
                           callType: widget.callType,
                           rtcToken: widget.rtcToken,
+                          userToken: widget.userToken,
                           channelName: widget.channelName,
                           image: widget.image,
                           name: widget.name,

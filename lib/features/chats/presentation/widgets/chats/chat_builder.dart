@@ -2,10 +2,10 @@ import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/auth/data/models/user_data/user_data.dart';
 import 'package:final_nuntius/features/chats/presentation/widgets/chat_last_message/chat_last_message.dart';
-import 'package:final_nuntius/features/chats/presentation/widgets/chat_name_and_date.dart';
+import 'package:final_nuntius/features/chats/presentation/widgets/chats/chat_name_and_date.dart';
+import 'package:final_nuntius/features/chats/presentation/widgets/chats/swipe_to_delete.dart';
 import 'package:final_nuntius/features/contacts/presentation/widgets/contacts/user_image.dart';
 import 'package:final_nuntius/features/messages/data/models/last_message/last_message_model.dart';
 import 'package:final_nuntius/features/messages/presentation/screens/messages_screen.dart';
@@ -80,39 +80,6 @@ class ChatBuilder extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  ActionPane swipeToDelete({
-    required BuildContext context,
-    // required String chatID,
-    double? rightPadding,
-    double? leftPadding,
-  }) {
-    return ActionPane(
-      dismissible: DismissiblePane(onDismissed: () {
-        print("ASD");
-      }),
-      dragDismissible: false,
-      motion: Padding(
-        padding: EdgeInsets.only(
-          right: rightPadding ?? 0,
-          left: leftPadding ?? 0,
-        ),
-        child: const ScrollMotion(),
-      ),
-      children: [
-        SlidableAction(
-          onPressed: (value) {
-            // AppCubit.get(context).deleteChat(chatID: chatID);
-          },
-          backgroundColor: const Color(0xFFFE4A49),
-          foregroundColor: Colors.white,
-          icon: IconBroken.Delete,
-          label: 'Delete',
-          borderRadius: BorderRadius.circular(AppSize.s8),
-        ),
-      ],
     );
   }
 }

@@ -15,21 +15,24 @@ import 'package:flutter/material.dart';
 class MessageBubble extends StatelessWidget {
   final MessageModel message;
   final bool isLastMessage;
+  final bool loadingCondition;
+
   const MessageBubble({
     super.key,
     required this.message,
     required this.isLastMessage,
+    required this.loadingCondition,
   });
 
   @override
   Widget build(BuildContext context) {
     bool isMyMessage = message.senderId == HiveHelper.getCurrentUser()!.uId;
     return GestureDetector(
-      onLongPress: () =>
-          MessagesCubit.get(context).showDeleteMessageBottomSheet(
-        context: context,
-        messageId: message.messageId!,
-      ),
+      onLongPress: () => MessagesCubit.get(context)
+          .showDeleteMessageBottomSheet(
+              context: context,
+              messageId: message.messageId!,
+              loadingCondition: loadingCondition),
       child: Padding(
         padding: EdgeInsets.only(bottom: isLastMessage ? AppHeight.h10 : 0),
         child: Row(
@@ -49,8 +52,12 @@ class MessageBubble extends StatelessWidget {
                         ? MediaQuery.sizeOf(context).width * 0.5
                         : 0.0),
                 padding: EdgeInsets.symmetric(
-                  vertical: message.message != "" ? AppHeight.h8 : 0,
-                  horizontal: message.message != "" ? AppWidth.w12 : 0,
+                  vertical: message.message != "" || message.isDeleted == true
+                      ? AppHeight.h8
+                      : 0,
+                  horizontal: message.message != "" || message.isDeleted == true
+                      ? AppWidth.w12
+                      : 0,
                 ).subtract(EdgeInsets.only(
                   top: message.isStoryReply == true ? AppHeight.h6 : 0,
                   right: message.isStoryReply == true ? AppWidth.w8 : 0,

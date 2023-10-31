@@ -1,15 +1,11 @@
-import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/firebase/fcm_helper.dart';
 import 'package:final_nuntius/core/local_notifications/local_notifications_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
-import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/chats/cubit/chats_cubit.dart';
 import 'package:final_nuntius/features/home/cubit/home_cubit.dart';
 import 'package:final_nuntius/features/home/presentation/widgets/app_nav_bar.dart';
-import 'package:final_nuntius/features/home/presentation/widgets/stories_fab.dart';
+import 'package:final_nuntius/features/home/presentation/widgets/stories_floating_buttons.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
-import 'package:final_nuntius/features/stories/presentation/screens/add_text_story_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -46,8 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<HomeCubit, HomeState>(
-      listener: (context, state) {},
+    return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         final cubit = HomeCubit.get(context);
         return state.maybeMap(
@@ -65,36 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ? BlocBuilder<StoriesCubit, StoriesState>(
                     builder: (context, state) {
                       final storiesCubit = StoriesCubit.get(context);
-                      return Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          StoriesFab(
-                            onPressed: () {
-                              Go.to(
-                                  context: context,
-                                  screen: const AddTextStoryScreen());
-                            },
-                            icon: IconBroken.Edit,
-                            tag: "btn1",
-                          ),
-                          SizedBox(height: AppHeight.h6),
-                          StoriesFab(
-                            onPressed: () {
-                              storiesCubit.pickStoryImage();
-                            },
-                            icon: IconBroken.Image,
-                            tag: "btn2",
-                          ),
-                          SizedBox(height: AppHeight.h6),
-                          StoriesFab(
-                            onPressed: () {
-                              storiesCubit.pickStoryVideo();
-                            },
-                            icon: IconBroken.Video,
-                            tag: "btn3",
-                          ),
-                        ],
-                      );
+                      return StoriesFloatingButtons(storiesCubit: storiesCubit);
                     },
                   )
                 : null,

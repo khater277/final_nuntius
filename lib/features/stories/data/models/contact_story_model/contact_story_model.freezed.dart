@@ -102,11 +102,11 @@ class _$ContactStoryModelCopyWithImpl<$Res, $Val extends ContactStoryModel>
 }
 
 /// @nodoc
-abstract class _$$_ContactStoryModelCopyWith<$Res>
+abstract class _$$ContactStoryModelImplCopyWith<$Res>
     implements $ContactStoryModelCopyWith<$Res> {
-  factory _$$_ContactStoryModelCopyWith(_$_ContactStoryModel value,
-          $Res Function(_$_ContactStoryModel) then) =
-      __$$_ContactStoryModelCopyWithImpl<$Res>;
+  factory _$$ContactStoryModelImplCopyWith(_$ContactStoryModelImpl value,
+          $Res Function(_$ContactStoryModelImpl) then) =
+      __$$ContactStoryModelImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -119,11 +119,11 @@ abstract class _$$_ContactStoryModelCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ContactStoryModelCopyWithImpl<$Res>
-    extends _$ContactStoryModelCopyWithImpl<$Res, _$_ContactStoryModel>
-    implements _$$_ContactStoryModelCopyWith<$Res> {
-  __$$_ContactStoryModelCopyWithImpl(
-      _$_ContactStoryModel _value, $Res Function(_$_ContactStoryModel) _then)
+class __$$ContactStoryModelImplCopyWithImpl<$Res>
+    extends _$ContactStoryModelCopyWithImpl<$Res, _$ContactStoryModelImpl>
+    implements _$$ContactStoryModelImplCopyWith<$Res> {
+  __$$ContactStoryModelImplCopyWithImpl(_$ContactStoryModelImpl _value,
+      $Res Function(_$ContactStoryModelImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -133,7 +133,7 @@ class __$$_ContactStoryModelCopyWithImpl<$Res>
     Object? stories = freezed,
     Object? lastStoryModel = freezed,
   }) {
-    return _then(_$_ContactStoryModel(
+    return _then(_$ContactStoryModelImpl(
       user: freezed == user
           ? _value.user
           : user // ignore: cast_nullable_to_non_nullable
@@ -152,13 +152,13 @@ class __$$_ContactStoryModelCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ContactStoryModel implements _ContactStoryModel {
-  _$_ContactStoryModel(
+class _$ContactStoryModelImpl implements _ContactStoryModel {
+  _$ContactStoryModelImpl(
       {this.user, final List<StoryModel>? stories, this.lastStoryModel})
       : _stories = stories;
 
-  factory _$_ContactStoryModel.fromJson(Map<String, dynamic> json) =>
-      _$$_ContactStoryModelFromJson(json);
+  factory _$ContactStoryModelImpl.fromJson(Map<String, dynamic> json) =>
+      _$$ContactStoryModelImplFromJson(json);
 
   @override
   final UserData? user;
@@ -184,7 +184,7 @@ class _$_ContactStoryModel implements _ContactStoryModel {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_ContactStoryModel &&
+            other is _$ContactStoryModelImpl &&
             (identical(other.user, user) || other.user == user) &&
             const DeepCollectionEquality().equals(other._stories, _stories) &&
             (identical(other.lastStoryModel, lastStoryModel) ||
@@ -199,13 +199,13 @@ class _$_ContactStoryModel implements _ContactStoryModel {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_ContactStoryModelCopyWith<_$_ContactStoryModel> get copyWith =>
-      __$$_ContactStoryModelCopyWithImpl<_$_ContactStoryModel>(
+  _$$ContactStoryModelImplCopyWith<_$ContactStoryModelImpl> get copyWith =>
+      __$$ContactStoryModelImplCopyWithImpl<_$ContactStoryModelImpl>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ContactStoryModelToJson(
+    return _$$ContactStoryModelImplToJson(
       this,
     );
   }
@@ -215,10 +215,10 @@ abstract class _ContactStoryModel implements ContactStoryModel {
   factory _ContactStoryModel(
       {final UserData? user,
       final List<StoryModel>? stories,
-      final StoryModel? lastStoryModel}) = _$_ContactStoryModel;
+      final StoryModel? lastStoryModel}) = _$ContactStoryModelImpl;
 
   factory _ContactStoryModel.fromJson(Map<String, dynamic> json) =
-      _$_ContactStoryModel.fromJson;
+      _$ContactStoryModelImpl.fromJson;
 
   @override
   UserData? get user;
@@ -228,6 +228,6 @@ abstract class _ContactStoryModel implements ContactStoryModel {
   StoryModel? get lastStoryModel;
   @override
   @JsonKey(ignore: true)
-  _$$_ContactStoryModelCopyWith<_$_ContactStoryModel> get copyWith =>
+  _$$ContactStoryModelImplCopyWith<_$ContactStoryModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

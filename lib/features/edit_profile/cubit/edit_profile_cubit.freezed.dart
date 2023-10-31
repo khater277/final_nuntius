@@ -148,24 +148,25 @@ class _$EditProfileStateCopyWithImpl<$Res, $Val extends EditProfileState>
 }
 
 /// @nodoc
-abstract class _$$_InitialCopyWith<$Res> {
-  factory _$$_InitialCopyWith(
-          _$_Initial value, $Res Function(_$_Initial) then) =
-      __$$_InitialCopyWithImpl<$Res>;
+abstract class _$$InitialImplCopyWith<$Res> {
+  factory _$$InitialImplCopyWith(
+          _$InitialImpl value, $Res Function(_$InitialImpl) then) =
+      __$$InitialImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_Initial>
-    implements _$$_InitialCopyWith<$Res> {
-  __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
+class __$$InitialImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$InitialImpl>
+    implements _$$InitialImplCopyWith<$Res> {
+  __$$InitialImplCopyWithImpl(
+      _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_Initial with DiagnosticableTreeMixin implements _Initial {
-  const _$_Initial();
+class _$InitialImpl with DiagnosticableTreeMixin implements _Initial {
+  const _$InitialImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -181,7 +182,7 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_Initial);
+        (other.runtimeType == runtimeType && other is _$InitialImpl);
   }
 
   @override
@@ -324,31 +325,32 @@ class _$_Initial with DiagnosticableTreeMixin implements _Initial {
 }
 
 abstract class _Initial implements EditProfileState {
-  const factory _Initial() = _$_Initial;
+  const factory _Initial() = _$InitialImpl;
 }
 
 /// @nodoc
-abstract class _$$_initEditProfileScreenCopyWith<$Res> {
-  factory _$$_initEditProfileScreenCopyWith(_$_initEditProfileScreen value,
-          $Res Function(_$_initEditProfileScreen) then) =
-      __$$_initEditProfileScreenCopyWithImpl<$Res>;
+abstract class _$$initEditProfileScreenImplCopyWith<$Res> {
+  factory _$$initEditProfileScreenImplCopyWith(
+          _$initEditProfileScreenImpl value,
+          $Res Function(_$initEditProfileScreenImpl) then) =
+      __$$initEditProfileScreenImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_initEditProfileScreenCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_initEditProfileScreen>
-    implements _$$_initEditProfileScreenCopyWith<$Res> {
-  __$$_initEditProfileScreenCopyWithImpl(_$_initEditProfileScreen _value,
-      $Res Function(_$_initEditProfileScreen) _then)
+class __$$initEditProfileScreenImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$initEditProfileScreenImpl>
+    implements _$$initEditProfileScreenImplCopyWith<$Res> {
+  __$$initEditProfileScreenImplCopyWithImpl(_$initEditProfileScreenImpl _value,
+      $Res Function(_$initEditProfileScreenImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_initEditProfileScreen
+class _$initEditProfileScreenImpl
     with DiagnosticableTreeMixin
     implements _initEditProfileScreen {
-  const _$_initEditProfileScreen();
+  const _$initEditProfileScreenImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -365,7 +367,8 @@ class _$_initEditProfileScreen
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_initEditProfileScreen);
+        (other.runtimeType == runtimeType &&
+            other is _$initEditProfileScreenImpl);
   }
 
   @override
@@ -508,31 +511,33 @@ class _$_initEditProfileScreen
 }
 
 abstract class _initEditProfileScreen implements EditProfileState {
-  const factory _initEditProfileScreen() = _$_initEditProfileScreen;
+  const factory _initEditProfileScreen() = _$initEditProfileScreenImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickProfileImageLoadingCopyWith<$Res> {
-  factory _$$_PickProfileImageLoadingCopyWith(_$_PickProfileImageLoading value,
-          $Res Function(_$_PickProfileImageLoading) then) =
-      __$$_PickProfileImageLoadingCopyWithImpl<$Res>;
+abstract class _$$PickProfileImageLoadingImplCopyWith<$Res> {
+  factory _$$PickProfileImageLoadingImplCopyWith(
+          _$PickProfileImageLoadingImpl value,
+          $Res Function(_$PickProfileImageLoadingImpl) then) =
+      __$$PickProfileImageLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickProfileImageLoadingCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_PickProfileImageLoading>
-    implements _$$_PickProfileImageLoadingCopyWith<$Res> {
-  __$$_PickProfileImageLoadingCopyWithImpl(_$_PickProfileImageLoading _value,
-      $Res Function(_$_PickProfileImageLoading) _then)
+class __$$PickProfileImageLoadingImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$PickProfileImageLoadingImpl>
+    implements _$$PickProfileImageLoadingImplCopyWith<$Res> {
+  __$$PickProfileImageLoadingImplCopyWithImpl(
+      _$PickProfileImageLoadingImpl _value,
+      $Res Function(_$PickProfileImageLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickProfileImageLoading
+class _$PickProfileImageLoadingImpl
     with DiagnosticableTreeMixin
     implements _PickProfileImageLoading {
-  const _$_PickProfileImageLoading();
+  const _$PickProfileImageLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -550,7 +555,7 @@ class _$_PickProfileImageLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickProfileImageLoading);
+            other is _$PickProfileImageLoadingImpl);
   }
 
   @override
@@ -693,31 +698,31 @@ class _$_PickProfileImageLoading
 }
 
 abstract class _PickProfileImageLoading implements EditProfileState {
-  const factory _PickProfileImageLoading() = _$_PickProfileImageLoading;
+  const factory _PickProfileImageLoading() = _$PickProfileImageLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickProfileImageCopyWith<$Res> {
-  factory _$$_PickProfileImageCopyWith(
-          _$_PickProfileImage value, $Res Function(_$_PickProfileImage) then) =
-      __$$_PickProfileImageCopyWithImpl<$Res>;
+abstract class _$$PickProfileImageImplCopyWith<$Res> {
+  factory _$$PickProfileImageImplCopyWith(_$PickProfileImageImpl value,
+          $Res Function(_$PickProfileImageImpl) then) =
+      __$$PickProfileImageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PickProfileImageCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_PickProfileImage>
-    implements _$$_PickProfileImageCopyWith<$Res> {
-  __$$_PickProfileImageCopyWithImpl(
-      _$_PickProfileImage _value, $Res Function(_$_PickProfileImage) _then)
+class __$$PickProfileImageImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$PickProfileImageImpl>
+    implements _$$PickProfileImageImplCopyWith<$Res> {
+  __$$PickProfileImageImplCopyWithImpl(_$PickProfileImageImpl _value,
+      $Res Function(_$PickProfileImageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_PickProfileImage
+class _$PickProfileImageImpl
     with DiagnosticableTreeMixin
     implements _PickProfileImage {
-  const _$_PickProfileImage();
+  const _$PickProfileImageImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -734,7 +739,7 @@ class _$_PickProfileImage
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PickProfileImage);
+        (other.runtimeType == runtimeType && other is _$PickProfileImageImpl);
   }
 
   @override
@@ -877,24 +882,25 @@ class _$_PickProfileImage
 }
 
 abstract class _PickProfileImage implements EditProfileState {
-  const factory _PickProfileImage() = _$_PickProfileImage;
+  const factory _PickProfileImage() = _$PickProfileImageImpl;
 }
 
 /// @nodoc
-abstract class _$$_PickProfileImageErrorCopyWith<$Res> {
-  factory _$$_PickProfileImageErrorCopyWith(_$_PickProfileImageError value,
-          $Res Function(_$_PickProfileImageError) then) =
-      __$$_PickProfileImageErrorCopyWithImpl<$Res>;
+abstract class _$$PickProfileImageErrorImplCopyWith<$Res> {
+  factory _$$PickProfileImageErrorImplCopyWith(
+          _$PickProfileImageErrorImpl value,
+          $Res Function(_$PickProfileImageErrorImpl) then) =
+      __$$PickProfileImageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_PickProfileImageErrorCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_PickProfileImageError>
-    implements _$$_PickProfileImageErrorCopyWith<$Res> {
-  __$$_PickProfileImageErrorCopyWithImpl(_$_PickProfileImageError _value,
-      $Res Function(_$_PickProfileImageError) _then)
+class __$$PickProfileImageErrorImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$PickProfileImageErrorImpl>
+    implements _$$PickProfileImageErrorImplCopyWith<$Res> {
+  __$$PickProfileImageErrorImplCopyWithImpl(_$PickProfileImageErrorImpl _value,
+      $Res Function(_$PickProfileImageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -902,7 +908,7 @@ class __$$_PickProfileImageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_PickProfileImageError(
+    return _then(_$PickProfileImageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -913,10 +919,10 @@ class __$$_PickProfileImageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_PickProfileImageError
+class _$PickProfileImageErrorImpl
     with DiagnosticableTreeMixin
     implements _PickProfileImageError {
-  const _$_PickProfileImageError(this.errorMsg);
+  const _$PickProfileImageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -939,7 +945,7 @@ class _$_PickProfileImageError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_PickProfileImageError &&
+            other is _$PickProfileImageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -950,9 +956,9 @@ class _$_PickProfileImageError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_PickProfileImageErrorCopyWith<_$_PickProfileImageError> get copyWith =>
-      __$$_PickProfileImageErrorCopyWithImpl<_$_PickProfileImageError>(
-          this, _$identity);
+  _$$PickProfileImageErrorImplCopyWith<_$PickProfileImageErrorImpl>
+      get copyWith => __$$PickProfileImageErrorImplCopyWithImpl<
+          _$PickProfileImageErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1092,38 +1098,39 @@ class _$_PickProfileImageError
 
 abstract class _PickProfileImageError implements EditProfileState {
   const factory _PickProfileImageError(final String errorMsg) =
-      _$_PickProfileImageError;
+      _$PickProfileImageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_PickProfileImageErrorCopyWith<_$_PickProfileImageError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$PickProfileImageErrorImplCopyWith<_$PickProfileImageErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_GetProfileImagePercentageCopyWith<$Res> {
-  factory _$$_GetProfileImagePercentageCopyWith(
-          _$_GetProfileImagePercentage value,
-          $Res Function(_$_GetProfileImagePercentage) then) =
-      __$$_GetProfileImagePercentageCopyWithImpl<$Res>;
+abstract class _$$GetProfileImagePercentageImplCopyWith<$Res> {
+  factory _$$GetProfileImagePercentageImplCopyWith(
+          _$GetProfileImagePercentageImpl value,
+          $Res Function(_$GetProfileImagePercentageImpl) then) =
+      __$$GetProfileImagePercentageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_GetProfileImagePercentageCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_GetProfileImagePercentage>
-    implements _$$_GetProfileImagePercentageCopyWith<$Res> {
-  __$$_GetProfileImagePercentageCopyWithImpl(
-      _$_GetProfileImagePercentage _value,
-      $Res Function(_$_GetProfileImagePercentage) _then)
+class __$$GetProfileImagePercentageImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res,
+        _$GetProfileImagePercentageImpl>
+    implements _$$GetProfileImagePercentageImplCopyWith<$Res> {
+  __$$GetProfileImagePercentageImplCopyWithImpl(
+      _$GetProfileImagePercentageImpl _value,
+      $Res Function(_$GetProfileImagePercentageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_GetProfileImagePercentage
+class _$GetProfileImagePercentageImpl
     with DiagnosticableTreeMixin
     implements _GetProfileImagePercentage {
-  const _$_GetProfileImagePercentage();
+  const _$GetProfileImagePercentageImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1141,7 +1148,7 @@ class _$_GetProfileImagePercentage
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_GetProfileImagePercentage);
+            other is _$GetProfileImagePercentageImpl);
   }
 
   @override
@@ -1284,33 +1291,34 @@ class _$_GetProfileImagePercentage
 }
 
 abstract class _GetProfileImagePercentage implements EditProfileState {
-  const factory _GetProfileImagePercentage() = _$_GetProfileImagePercentage;
+  const factory _GetProfileImagePercentage() = _$GetProfileImagePercentageImpl;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileImageLoadingCopyWith<$Res> {
-  factory _$$_updateProfileImageLoadingCopyWith(
-          _$_updateProfileImageLoading value,
-          $Res Function(_$_updateProfileImageLoading) then) =
-      __$$_updateProfileImageLoadingCopyWithImpl<$Res>;
+abstract class _$$updateProfileImageLoadingImplCopyWith<$Res> {
+  factory _$$updateProfileImageLoadingImplCopyWith(
+          _$updateProfileImageLoadingImpl value,
+          $Res Function(_$updateProfileImageLoadingImpl) then) =
+      __$$updateProfileImageLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_updateProfileImageLoadingCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileImageLoading>
-    implements _$$_updateProfileImageLoadingCopyWith<$Res> {
-  __$$_updateProfileImageLoadingCopyWithImpl(
-      _$_updateProfileImageLoading _value,
-      $Res Function(_$_updateProfileImageLoading) _then)
+class __$$updateProfileImageLoadingImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res,
+        _$updateProfileImageLoadingImpl>
+    implements _$$updateProfileImageLoadingImplCopyWith<$Res> {
+  __$$updateProfileImageLoadingImplCopyWithImpl(
+      _$updateProfileImageLoadingImpl _value,
+      $Res Function(_$updateProfileImageLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_updateProfileImageLoading
+class _$updateProfileImageLoadingImpl
     with DiagnosticableTreeMixin
     implements _updateProfileImageLoading {
-  const _$_updateProfileImageLoading();
+  const _$updateProfileImageLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1328,7 +1336,7 @@ class _$_updateProfileImageLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_updateProfileImageLoading);
+            other is _$updateProfileImageLoadingImpl);
   }
 
   @override
@@ -1471,31 +1479,31 @@ class _$_updateProfileImageLoading
 }
 
 abstract class _updateProfileImageLoading implements EditProfileState {
-  const factory _updateProfileImageLoading() = _$_updateProfileImageLoading;
+  const factory _updateProfileImageLoading() = _$updateProfileImageLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileImageCopyWith<$Res> {
-  factory _$$_updateProfileImageCopyWith(_$_updateProfileImage value,
-          $Res Function(_$_updateProfileImage) then) =
-      __$$_updateProfileImageCopyWithImpl<$Res>;
+abstract class _$$updateProfileImageImplCopyWith<$Res> {
+  factory _$$updateProfileImageImplCopyWith(_$updateProfileImageImpl value,
+          $Res Function(_$updateProfileImageImpl) then) =
+      __$$updateProfileImageImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_updateProfileImageCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileImage>
-    implements _$$_updateProfileImageCopyWith<$Res> {
-  __$$_updateProfileImageCopyWithImpl(
-      _$_updateProfileImage _value, $Res Function(_$_updateProfileImage) _then)
+class __$$updateProfileImageImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$updateProfileImageImpl>
+    implements _$$updateProfileImageImplCopyWith<$Res> {
+  __$$updateProfileImageImplCopyWithImpl(_$updateProfileImageImpl _value,
+      $Res Function(_$updateProfileImageImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_updateProfileImage
+class _$updateProfileImageImpl
     with DiagnosticableTreeMixin
     implements _updateProfileImage {
-  const _$_updateProfileImage();
+  const _$updateProfileImageImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1512,7 +1520,7 @@ class _$_updateProfileImage
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_updateProfileImage);
+        (other.runtimeType == runtimeType && other is _$updateProfileImageImpl);
   }
 
   @override
@@ -1655,24 +1663,26 @@ class _$_updateProfileImage
 }
 
 abstract class _updateProfileImage implements EditProfileState {
-  const factory _updateProfileImage() = _$_updateProfileImage;
+  const factory _updateProfileImage() = _$updateProfileImageImpl;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileImageErrorCopyWith<$Res> {
-  factory _$$_updateProfileImageErrorCopyWith(_$_updateProfileImageError value,
-          $Res Function(_$_updateProfileImageError) then) =
-      __$$_updateProfileImageErrorCopyWithImpl<$Res>;
+abstract class _$$updateProfileImageErrorImplCopyWith<$Res> {
+  factory _$$updateProfileImageErrorImplCopyWith(
+          _$updateProfileImageErrorImpl value,
+          $Res Function(_$updateProfileImageErrorImpl) then) =
+      __$$updateProfileImageErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_updateProfileImageErrorCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileImageError>
-    implements _$$_updateProfileImageErrorCopyWith<$Res> {
-  __$$_updateProfileImageErrorCopyWithImpl(_$_updateProfileImageError _value,
-      $Res Function(_$_updateProfileImageError) _then)
+class __$$updateProfileImageErrorImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$updateProfileImageErrorImpl>
+    implements _$$updateProfileImageErrorImplCopyWith<$Res> {
+  __$$updateProfileImageErrorImplCopyWithImpl(
+      _$updateProfileImageErrorImpl _value,
+      $Res Function(_$updateProfileImageErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -1680,7 +1690,7 @@ class __$$_updateProfileImageErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_updateProfileImageError(
+    return _then(_$updateProfileImageErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -1691,10 +1701,10 @@ class __$$_updateProfileImageErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_updateProfileImageError
+class _$updateProfileImageErrorImpl
     with DiagnosticableTreeMixin
     implements _updateProfileImageError {
-  const _$_updateProfileImageError(this.errorMsg);
+  const _$updateProfileImageErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -1717,7 +1727,7 @@ class _$_updateProfileImageError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_updateProfileImageError &&
+            other is _$updateProfileImageErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -1728,10 +1738,9 @@ class _$_updateProfileImageError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_updateProfileImageErrorCopyWith<_$_updateProfileImageError>
-      get copyWith =>
-          __$$_updateProfileImageErrorCopyWithImpl<_$_updateProfileImageError>(
-              this, _$identity);
+  _$$updateProfileImageErrorImplCopyWith<_$updateProfileImageErrorImpl>
+      get copyWith => __$$updateProfileImageErrorImplCopyWithImpl<
+          _$updateProfileImageErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -1871,37 +1880,38 @@ class _$_updateProfileImageError
 
 abstract class _updateProfileImageError implements EditProfileState {
   const factory _updateProfileImageError(final String errorMsg) =
-      _$_updateProfileImageError;
+      _$updateProfileImageErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_updateProfileImageErrorCopyWith<_$_updateProfileImageError>
+  _$$updateProfileImageErrorImplCopyWith<_$updateProfileImageErrorImpl>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileNameLoadingCopyWith<$Res> {
-  factory _$$_updateProfileNameLoadingCopyWith(
-          _$_updateProfileNameLoading value,
-          $Res Function(_$_updateProfileNameLoading) then) =
-      __$$_updateProfileNameLoadingCopyWithImpl<$Res>;
+abstract class _$$updateProfileNameLoadingImplCopyWith<$Res> {
+  factory _$$updateProfileNameLoadingImplCopyWith(
+          _$updateProfileNameLoadingImpl value,
+          $Res Function(_$updateProfileNameLoadingImpl) then) =
+      __$$updateProfileNameLoadingImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_updateProfileNameLoadingCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileNameLoading>
-    implements _$$_updateProfileNameLoadingCopyWith<$Res> {
-  __$$_updateProfileNameLoadingCopyWithImpl(_$_updateProfileNameLoading _value,
-      $Res Function(_$_updateProfileNameLoading) _then)
+class __$$updateProfileNameLoadingImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$updateProfileNameLoadingImpl>
+    implements _$$updateProfileNameLoadingImplCopyWith<$Res> {
+  __$$updateProfileNameLoadingImplCopyWithImpl(
+      _$updateProfileNameLoadingImpl _value,
+      $Res Function(_$updateProfileNameLoadingImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_updateProfileNameLoading
+class _$updateProfileNameLoadingImpl
     with DiagnosticableTreeMixin
     implements _updateProfileNameLoading {
-  const _$_updateProfileNameLoading();
+  const _$updateProfileNameLoadingImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -1919,7 +1929,7 @@ class _$_updateProfileNameLoading
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_updateProfileNameLoading);
+            other is _$updateProfileNameLoadingImpl);
   }
 
   @override
@@ -2062,31 +2072,31 @@ class _$_updateProfileNameLoading
 }
 
 abstract class _updateProfileNameLoading implements EditProfileState {
-  const factory _updateProfileNameLoading() = _$_updateProfileNameLoading;
+  const factory _updateProfileNameLoading() = _$updateProfileNameLoadingImpl;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileNameCopyWith<$Res> {
-  factory _$$_updateProfileNameCopyWith(_$_updateProfileName value,
-          $Res Function(_$_updateProfileName) then) =
-      __$$_updateProfileNameCopyWithImpl<$Res>;
+abstract class _$$updateProfileNameImplCopyWith<$Res> {
+  factory _$$updateProfileNameImplCopyWith(_$updateProfileNameImpl value,
+          $Res Function(_$updateProfileNameImpl) then) =
+      __$$updateProfileNameImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_updateProfileNameCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileName>
-    implements _$$_updateProfileNameCopyWith<$Res> {
-  __$$_updateProfileNameCopyWithImpl(
-      _$_updateProfileName _value, $Res Function(_$_updateProfileName) _then)
+class __$$updateProfileNameImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$updateProfileNameImpl>
+    implements _$$updateProfileNameImplCopyWith<$Res> {
+  __$$updateProfileNameImplCopyWithImpl(_$updateProfileNameImpl _value,
+      $Res Function(_$updateProfileNameImpl) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$_updateProfileName
+class _$updateProfileNameImpl
     with DiagnosticableTreeMixin
     implements _updateProfileName {
-  const _$_updateProfileName();
+  const _$updateProfileNameImpl();
 
   @override
   String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
@@ -2103,7 +2113,7 @@ class _$_updateProfileName
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_updateProfileName);
+        (other.runtimeType == runtimeType && other is _$updateProfileNameImpl);
   }
 
   @override
@@ -2246,24 +2256,26 @@ class _$_updateProfileName
 }
 
 abstract class _updateProfileName implements EditProfileState {
-  const factory _updateProfileName() = _$_updateProfileName;
+  const factory _updateProfileName() = _$updateProfileNameImpl;
 }
 
 /// @nodoc
-abstract class _$$_updateProfileNameErrorCopyWith<$Res> {
-  factory _$$_updateProfileNameErrorCopyWith(_$_updateProfileNameError value,
-          $Res Function(_$_updateProfileNameError) then) =
-      __$$_updateProfileNameErrorCopyWithImpl<$Res>;
+abstract class _$$updateProfileNameErrorImplCopyWith<$Res> {
+  factory _$$updateProfileNameErrorImplCopyWith(
+          _$updateProfileNameErrorImpl value,
+          $Res Function(_$updateProfileNameErrorImpl) then) =
+      __$$updateProfileNameErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String errorMsg});
 }
 
 /// @nodoc
-class __$$_updateProfileNameErrorCopyWithImpl<$Res>
-    extends _$EditProfileStateCopyWithImpl<$Res, _$_updateProfileNameError>
-    implements _$$_updateProfileNameErrorCopyWith<$Res> {
-  __$$_updateProfileNameErrorCopyWithImpl(_$_updateProfileNameError _value,
-      $Res Function(_$_updateProfileNameError) _then)
+class __$$updateProfileNameErrorImplCopyWithImpl<$Res>
+    extends _$EditProfileStateCopyWithImpl<$Res, _$updateProfileNameErrorImpl>
+    implements _$$updateProfileNameErrorImplCopyWith<$Res> {
+  __$$updateProfileNameErrorImplCopyWithImpl(
+      _$updateProfileNameErrorImpl _value,
+      $Res Function(_$updateProfileNameErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -2271,7 +2283,7 @@ class __$$_updateProfileNameErrorCopyWithImpl<$Res>
   $Res call({
     Object? errorMsg = null,
   }) {
-    return _then(_$_updateProfileNameError(
+    return _then(_$updateProfileNameErrorImpl(
       null == errorMsg
           ? _value.errorMsg
           : errorMsg // ignore: cast_nullable_to_non_nullable
@@ -2282,10 +2294,10 @@ class __$$_updateProfileNameErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_updateProfileNameError
+class _$updateProfileNameErrorImpl
     with DiagnosticableTreeMixin
     implements _updateProfileNameError {
-  const _$_updateProfileNameError(this.errorMsg);
+  const _$updateProfileNameErrorImpl(this.errorMsg);
 
   @override
   final String errorMsg;
@@ -2308,7 +2320,7 @@ class _$_updateProfileNameError
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_updateProfileNameError &&
+            other is _$updateProfileNameErrorImpl &&
             (identical(other.errorMsg, errorMsg) ||
                 other.errorMsg == errorMsg));
   }
@@ -2319,9 +2331,9 @@ class _$_updateProfileNameError
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$_updateProfileNameErrorCopyWith<_$_updateProfileNameError> get copyWith =>
-      __$$_updateProfileNameErrorCopyWithImpl<_$_updateProfileNameError>(
-          this, _$identity);
+  _$$updateProfileNameErrorImplCopyWith<_$updateProfileNameErrorImpl>
+      get copyWith => __$$updateProfileNameErrorImplCopyWithImpl<
+          _$updateProfileNameErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -2461,10 +2473,10 @@ class _$_updateProfileNameError
 
 abstract class _updateProfileNameError implements EditProfileState {
   const factory _updateProfileNameError(final String errorMsg) =
-      _$_updateProfileNameError;
+      _$updateProfileNameErrorImpl;
 
   String get errorMsg;
   @JsonKey(ignore: true)
-  _$$_updateProfileNameErrorCopyWith<_$_updateProfileNameError> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$updateProfileNameErrorImplCopyWith<_$updateProfileNameErrorImpl>
+      get copyWith => throw _privateConstructorUsedError;
 }

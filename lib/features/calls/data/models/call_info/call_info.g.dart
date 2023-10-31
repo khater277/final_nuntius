@@ -6,7 +6,8 @@ part of 'call_info.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CallInfo _$$_CallInfoFromJson(Map<String, dynamic> json) => _$_CallInfo(
+_$CallInfoImpl _$$CallInfoImplFromJson(Map<String, dynamic> json) =>
+    _$CallInfoImpl(
       callModel: json['callModel'] == null
           ? null
           : CallModel.fromJson(json['callModel'] as Map<String, dynamic>),
@@ -14,7 +15,7 @@ _$_CallInfo _$$_CallInfoFromJson(Map<String, dynamic> json) => _$_CallInfo(
       image: json['image'] as String?,
     );
 
-Map<String, dynamic> _$$_CallInfoToJson(_$_CallInfo instance) =>
+Map<String, dynamic> _$$CallInfoImplToJson(_$CallInfoImpl instance) =>
     <String, dynamic>{
       'callModel': instance.callModel,
       'name': instance.name,

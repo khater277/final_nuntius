@@ -6,7 +6,8 @@ part of 'call_model.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_CallModel _$$_CallModelFromJson(Map<String, dynamic> json) => _$_CallModel(
+_$CallModelImpl _$$CallModelImplFromJson(Map<String, dynamic> json) =>
+    _$CallModelImpl(
       callId: json['callId'] as String?,
       phoneNumber: json['phoneNumber'] as String?,
       callType: $enumDecodeNullable(_$CallTypeEnumMap, json['callType']),
@@ -14,7 +15,7 @@ _$_CallModel _$$_CallModelFromJson(Map<String, dynamic> json) => _$_CallModel(
       dateTime: json['dateTime'] as String?,
     );
 
-Map<String, dynamic> _$$_CallModelToJson(_$_CallModel instance) =>
+Map<String, dynamic> _$$CallModelImplToJson(_$CallModelImpl instance) =>
     <String, dynamic>{
       'callId': instance.callId,
       'phoneNumber': instance.phoneNumber,

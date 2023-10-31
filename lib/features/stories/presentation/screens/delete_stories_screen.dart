@@ -1,14 +1,12 @@
 import 'package:final_nuntius/config/navigation.dart';
-import 'package:final_nuntius/core/shared_widgets/alert_dialog.dart';
 import 'package:final_nuntius/core/shared_widgets/back_button.dart';
 import 'package:final_nuntius/core/shared_widgets/circle_indicator.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
 import 'package:final_nuntius/core/shared_widgets/text.dart';
-import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_enums.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
-import 'package:final_nuntius/core/utils/icons_broken.dart';
 import 'package:final_nuntius/features/stories/cubit/stories_cubit.dart';
+import 'package:final_nuntius/features/stories/presentation/widgets/delete_stories/delete_story_button.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/delete_stories/story_content.dart';
 import 'package:final_nuntius/features/stories/presentation/widgets/delete_stories/story_type_and_time.dart';
 import 'package:flutter/material.dart';
@@ -39,11 +37,8 @@ class _DeleteStoriesScreenState extends State<DeleteStoriesScreen> {
       body: BlocConsumer<StoriesCubit, StoriesState>(
         listener: (context, state) {
           state.maybeWhen(
-            deleteStoryError: (errorMsg) => showSnackBar(
-              context: context,
-              message: errorMsg,
-              color: AppColors.red,
-            ),
+            deleteStoryError: (errorMsg) =>
+                errorSnackBar(context: context, errorMsg: errorMsg),
             deleteStory: () {
               StoriesCubit.get(context).cancelLoading();
               Go.back(context: context);
@@ -87,24 +82,11 @@ class _DeleteStoriesScreenState extends State<DeleteStoriesScreen> {
                                   : MessageType.doc,
                         ),
                         const Spacer(),
-                        GestureDetector(
-                          onTap: () {
-                            showAlertDialog(
-                              context: context,
-                              text:
-                                  "Are you sure you want to delete this story?",
-                              okPressed: () => cubit.deleteStory(
-                                  storyId: cubit.myStories[index].id!),
-                              loadingCondition: state ==
-                                  StoriesState.deleteStoryLoading(
-                                      cubit.myStories[index].id!),
-                            );
-                          },
-                          child: Icon(
-                            IconBroken.Delete,
-                            size: AppSize.s17,
-                            color: AppColors.blue,
-                          ),
+                        DeleteStoryButton(
+                          storyModel: cubit.myStories[index],
+                          loadingCondition: state ==
+                              StoriesState.deleteStoryLoading(
+                                  cubit.myStories[index].id!),
                         )
                       ],
                     ),
