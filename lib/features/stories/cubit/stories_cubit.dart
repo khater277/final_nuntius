@@ -212,7 +212,6 @@ class StoriesCubit extends Cubit<StoriesState> {
       },
       (snapshots) {
         snapshots.listen((event) async {
-          emit(const StoriesState.getMyStoriesLoading());
           List<StoryModel> myStories = [];
           for (var doc in event.docs) {
             final story = StoryModel.fromJson(doc.data());
@@ -226,10 +225,13 @@ class StoriesCubit extends Cubit<StoriesState> {
           }
           this.myStories = myStories;
           print("================>${this.myStories.length}");
-          if (stopLoading) {
-            emit(const StoriesState.getMyStories());
-          }
-          stopLoading = false;
+          // if (stopLoading) {
+          // if(m)
+          // emit(const StoriesState.getMyStoriesLoading());
+          emit(const StoriesState.initStoryView());
+          emit(const StoriesState.getMyStories());
+          // }
+          // stopLoading = false;
         });
       },
     );
@@ -315,10 +317,12 @@ class StoriesCubit extends Cubit<StoriesState> {
         List<String> viewsDateTime = [];
         for (var viewer in viewers) {
           final viewerModel = ViewerModel.fromJson(viewer);
-          UserData? userData = users
+          UserData? userData = this
+              .users
               .firstWhereOrNull((element) => element.uId == viewerModel.id);
           if (userData != null) {
             users.add(userData);
+            viewsDateTime.add(viewerModel.dateTime!);
           } else {
             UserData notContactUser = UserData(
               uId: viewerModel.id,
@@ -449,7 +453,6 @@ class StoriesCubit extends Cubit<StoriesState> {
 
     storyModel.viewersPhones!.add(HiveHelper.getCurrentUser()!.phone!);
 
-    // print("=========>${storyModel.toJson()}");
     final response = await storiesRepository.updateStory(
       storyModel: storyModel,
       phoneNumber: contactStoryModel!.user!.phone!,

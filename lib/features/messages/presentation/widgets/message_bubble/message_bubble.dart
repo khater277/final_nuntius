@@ -28,11 +28,12 @@ class MessageBubble extends StatelessWidget {
   Widget build(BuildContext context) {
     bool isMyMessage = message.senderId == HiveHelper.getCurrentUser()!.uId;
     return GestureDetector(
-      onLongPress: () => MessagesCubit.get(context)
-          .showDeleteMessageBottomSheet(
+      onLongPress: () => message.senderId == HiveHelper.getCurrentUser()!.uId
+          ? MessagesCubit.get(context).showDeleteMessageBottomSheet(
               context: context,
               messageId: message.messageId!,
-              loadingCondition: loadingCondition),
+              loadingCondition: loadingCondition)
+          : null,
       child: Padding(
         padding: EdgeInsets.only(bottom: isLastMessage ? AppHeight.h10 : 0),
         child: Row(

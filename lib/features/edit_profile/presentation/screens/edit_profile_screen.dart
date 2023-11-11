@@ -1,6 +1,7 @@
 import 'package:final_nuntius/config/navigation.dart';
 import 'package:final_nuntius/core/hive/hive_helper.dart';
 import 'package:final_nuntius/core/shared_widgets/snack_bar.dart';
+import 'package:final_nuntius/core/shared_widgets/text.dart';
 import 'package:final_nuntius/core/utils/app_colors.dart';
 import 'package:final_nuntius/core/utils/app_values.dart';
 import 'package:final_nuntius/features/edit_profile/cubit/edit_profile_cubit.dart';
@@ -8,6 +9,7 @@ import 'package:final_nuntius/features/edit_profile/presentation/widgets/app_bar
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_name.dart';
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_phone_number.dart';
 import 'package:final_nuntius/features/edit_profile/presentation/widgets/my_profile_image.dart';
+import 'package:final_nuntius/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -50,6 +52,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
+                  LargeHeadText(text: userToken!),
                   MyProfileImage(image: HiveHelper.getCurrentUser()!.image!),
                   SizedBox(height: AppHeight.h6),
                   if (state ==

@@ -23,14 +23,14 @@ Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 
   print("Handling a background message from : $user");
 }
-
+String? userToken;
 void main() async {
   WidgetsFlutterBinding();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  final x = await FirebaseMessaging.instance.getToken();
-  print(x);
+  userToken = await FirebaseMessaging.instance.getToken();
+  print(userToken);
   await SharedPrefHelper.init();
   await HiveHelper.init();
   await Permission.contacts.request();

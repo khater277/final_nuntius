@@ -60,7 +60,7 @@ class MyStory extends StatelessWidget {
               ],
             ),
             const Spacer(),
-            const EditMyStories(),
+            if (cubit.myStories.isNotEmpty) const EditMyStories(),
           ],
         ),
       ),

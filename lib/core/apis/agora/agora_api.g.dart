@@ -13,7 +13,7 @@ class _AgoraApi implements AgoraApi {
     this._dio, {
     this.baseUrl,
   }) {
-    baseUrl ??= 'http://192.168.1.4:8082/rtc/';
+    baseUrl ??= 'http://192.168.1.2:8082/rtc/';
   }
 
   final Dio _dio;
